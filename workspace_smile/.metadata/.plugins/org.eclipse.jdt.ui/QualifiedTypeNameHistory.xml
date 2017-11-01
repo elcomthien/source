@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.gson.internal.LinkedTreeMap"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.dao.eSmileDao"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.ObjFaculty"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.FacultyModel"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.dao.FacultyDao"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.SmileModel"/>
+<fullyQualifiedTypeName name="com.elcom.DBI.SubProParam"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.util.ConvertUtil"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.RatingModel"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.util.UnicodeConverter"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.ObjResult"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.service.eSmileServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.RatingDetailModel"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.StaffRatingModel"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.DataDetailModel"/>
+<fullyQualifiedTypeName name="com.elcom.ehotel.esmile.model.DataStandardModel"/>
+</qualifiedTypeNameHistroy>

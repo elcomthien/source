@@ -1,0 +1,5 @@
+package com.elcom.ehotel.esmile.model;
+
+public class EmailModel {
+
+}
