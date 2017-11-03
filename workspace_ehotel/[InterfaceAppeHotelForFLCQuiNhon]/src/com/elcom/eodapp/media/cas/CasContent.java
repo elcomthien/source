@@ -358,4 +358,22 @@ public class CasContent {
 	    broker.executeSubPro(SQL.sqlupdatestatusstbftpapk,params);
 		return "OK";
 	}
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public String updatestatusbox(String keystb,String status)
+	{
+		String Rs = "";
+		Vector params = new Vector(2);
+		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
+	    params.add(out_data);
+		SubProParam  keystb_ = new SubProParam(new String(keystb),SubProParam.IN);
+	    params.add(keystb_);
+	    SubProParam  status_ = new SubProParam(new BigDecimal(status),SubProParam.IN);
+	    params.add(status_);
+	    
+	    params = broker.executeSubPro(SQL.sqlupdatestatusbox,params);
+	    out_data = (SubProParam) params.get(0);
+		Rs = out_data.getString();
+		return Rs;
+	}
 }

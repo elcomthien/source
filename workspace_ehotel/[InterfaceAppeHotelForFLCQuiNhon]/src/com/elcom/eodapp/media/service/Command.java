@@ -29,6 +29,7 @@ public interface Command {
 	public static int com_stbftpapk = 47;
 	public static int com_updatestatusstbftpapk = 48;
 	public static int com_setKeyStbIntoRoom = 49;
+	public static int com_updatestatusbox = 50;
 	//them cho phan welcome khach
 	public static int com_getwelcome = 34;
 	//them cho phan dong bo gio cho cac stb khong the nho thoi gian

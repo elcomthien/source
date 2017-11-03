@@ -73,6 +73,18 @@ public class eService {
 	public void setService_code(String service_code) {
 		this.service_code = service_code;
 	}
+	public String getItype() {
+		return itype;
+	}
+	public void setItype(String itype) {
+		this.itype = itype;
+	}
+	public String getColorbg() {
+		return colorbg;
+	}
+	public void setColorbg(String colorbg) {
+		this.colorbg = colorbg;
+	}
 	
 	
 }

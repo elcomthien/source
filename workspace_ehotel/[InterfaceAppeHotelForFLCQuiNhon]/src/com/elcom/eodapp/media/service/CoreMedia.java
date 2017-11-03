@@ -520,6 +520,14 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(xml);
 			out.println(xml);
 			return;
+		}else if (lenh == Command.com_updatestatusbox) {
+			String status = request.getParameter(Param.status); 
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " status: " + status);
+			
+			String xml = casdao.updatestatusbox(keystb,status);
+			System.out.println(xml);
+			out.println(xml);
+			return;
 		}
 
 	}
