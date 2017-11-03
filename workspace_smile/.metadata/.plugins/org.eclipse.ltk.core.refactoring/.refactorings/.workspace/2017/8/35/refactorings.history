@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;WS_eHotel_eSmile_HongDuc&apos; to &apos;WS_eHotel_eSmile_Tablet_HongDuc&apos;" description="Rename resource &apos;WS_eHotel_eSmile_HongDuc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/WS_eHotel_eSmile_HongDuc" name="WS_eHotel_eSmile_Tablet_HongDuc" stamp="1503990277671" updateReferences="true"/>
-</session>

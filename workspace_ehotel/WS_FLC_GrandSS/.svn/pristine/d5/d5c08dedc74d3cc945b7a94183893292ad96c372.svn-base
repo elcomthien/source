@@ -1,0 +1,5 @@
+package com.elcom.ehotel.admin.model;
+
+public class PMSInfoContentModel {
+
+}

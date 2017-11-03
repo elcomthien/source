@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;fid&apos; in &apos;com.elcom.ehotel.esmile.dao.eSmileDao.getRatingType(...)&apos; to &apos;sid&apos;&#x0D;&#x0A;- Original project: &apos;WS_eHotel_eSmile_Admin_HongDuc&apos;&#x0D;&#x0A;- Original element: &apos;com.elcom.ehotel.esmile.dao.eSmileDao.getRatingType(String, String).fid&apos;&#x0D;&#x0A;- Renamed element: &apos;fid&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;fid&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.elcom.ehotel.esmile.dao{eSmileDao.java[eSmileDao~getRatingType~QString;~QString;@fid!32220!32229!32227!32229!QString;!0!true" name="sid" references="true" stamp="1504423568704" version="1.0"/>
-</session>
