@@ -230,7 +230,6 @@ public int addModFavorite(String keystb,int contentid)
     return retVal;
 }
 //-------------------------------------------------------------------------------------
-@SuppressWarnings("unchecked")
 public int removeFavorite(String keystb,int contentid)
 {
 	Vector vRs = new Vector();
@@ -252,7 +251,7 @@ public int removeFavorite(String keystb,int contentid)
     return retVal;
 }
 	//---------------------------------------------------------------------------------------------------------------------------
-	  @SuppressWarnings("unchecked")
+	  @SuppressWarnings({ "unchecked", "unused" })
 	private String loadDataSubjectXML(Vector vRs) throws IOException{
 		    String jsonText = "";
 		    JSONObject obj = new JSONObject();
