@@ -1,0 +1,15 @@
+package com.elcom.ehotel.admin.service;
+
+import java.util.List;
+
+import com.elcom.ehotel.admin.dao.PMSDiningDao;
+import com.elcom.ehotel.admin.model.PMSDiningSubjectModel;
+import com.elcom.ehotel.admin.util.ConvertUtil;
+
+public class PMSDiningService {
+	private PMSDiningDao pmsDiningDao = new PMSDiningDao();
+
+	public List<PMSDiningSubjectModel> getSubjectDining(String parentId, String langId) {
+		return pmsDiningDao.getSubjectDining(ConvertUtil.convertToInteger(parentId), ConvertUtil.convertToInteger(langId));
+	}
+}
