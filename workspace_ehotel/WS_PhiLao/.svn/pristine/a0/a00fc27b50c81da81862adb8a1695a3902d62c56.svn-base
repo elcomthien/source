@@ -1,0 +1,92 @@
+package com.elcom.ehotel.admin.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.elcom.ehotel.admin.model.PMSFolioGuestModel;
+import com.elcom.ehotel.admin.model.PMSFolioRoomModel;
+import com.elcom.ehotel.admin.service.PMSFolioService;
+import com.elcom.ehotel.admin.util.LogUtil;
+import com.google.gson.Gson;
+
+public class PMSFolioController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	private PMSFolioService pmsFolioService = new PMSFolioService();
+
+	public PMSFolioController() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+		response.setContentType("application/json");
+		response.setCharacterEncoding("UTF-8");
+
+		if (action.equals("getlistfolio")) {
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "getlistfolio", "none");
+
+			List<PMSFolioRoomModel> list = new ArrayList<PMSFolioRoomModel>();
+			list = pmsFolioService.getListFolio();
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getlistguest")) {
+			String folionum = request.getParameter("folionum");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "getlistguest", "folionum," + folionum);
+
+			List<PMSFolioGuestModel> list = new ArrayList<PMSFolioGuestModel>();
+			list = pmsFolioService.getListGuestForFolio(folionum);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		String action = request.getParameter("action");
+
+		if (action.equals("addorupdateguest")) {
+			String folionum = request.getParameter("folionum");
+			String clientId = request.getParameter("clientid");
+			String firstName = request.getParameter("firstname");
+			String lastName = request.getParameter("lastname");
+			String personal = request.getParameter("personal");
+			String roomShare = request.getParameter("roomshare");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "addorupdateguest", "folionum," + folionum + ",clientId," + clientId
+					+ ",firstName," + firstName + ",lastName," + lastName + ",personal," + personal + ",roomShare," + roomShare);
+
+			PMSFolioGuestModel guest = new PMSFolioGuestModel();
+			guest.setFolionum(folionum);
+			guest.setClientid(clientId);
+			guest.setFirstname(firstName);
+			guest.setLastname(lastName);
+			guest.setClientname(personal);
+			guest.setRoomsharer(roomShare);
+
+			int rs = pmsFolioService.addOrUpdateGuest(guest);
+			out.println(rs);
+
+		}
+
+		if (action.equals("removeguest")) {
+			String folionum = request.getParameter("folionum");
+			String clientid = request.getParameter("clientid");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "removeguest", "folionum," + folionum + ",clientid," + clientid);
+
+			int rs = pmsFolioService.deleteGuest(folionum, clientid);
+			out.println(rs);
+		}
+	}
+
+}

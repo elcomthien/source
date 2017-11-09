@@ -51,7 +51,7 @@ public interface Command {
 	public static int com_getHomeService = 104;
 	public static int com_getMainMenu = 105;
 	public static int com_getOultetImage = 106;
-	public static int com_getSubMenu = 107;     //danh sach của chu đề cấp con serivece dining
+	public static int com_getSubMenu = 107;     //danh sach cn serivece dining
 	public static int com_getItemOfService = 108; //danh sach cac non an thuoc chu de nao do
 	public static int com_getBills = 109; 
 	public static int com_getItemOfAttractions = 110;  //danh sach item thuoc Attractons
@@ -64,5 +64,7 @@ public interface Command {
 	public static int com_getCountries = 118;    
 	public static int com_getWeatherToday = 119;
 	public static int com_getWeatherInWeek = 120;
+	public static int com_getPopup = 140;
+	public static int com_setViewPopup = 141;
 	
 }

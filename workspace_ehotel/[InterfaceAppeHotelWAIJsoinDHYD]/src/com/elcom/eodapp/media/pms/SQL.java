@@ -20,5 +20,6 @@ public interface SQL {
 	public static final String sqlGetCountries = "{call PMSAPP.getCountries(?,?)}";
 	public static final String sqlGetWeatherToday = "{call PMSAPP.getWeatherToday(?,?)}";
 	public static final String sqlGetWeatherInWeek = "{call PMSAPP.getWeathersInWeek(?,?,?)}";
-	
+	public static final String sqlgetPopup = "{call PMSAPP.getPopup(?,?)}";
+	public static final String sqlsetViewPopup = "{call PMSAPP.setViewPopup(?,?,?)}";
 }
