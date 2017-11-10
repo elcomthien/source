@@ -30,8 +30,11 @@ import com.elcom.eodapp.media.util.DateHelper;
 
 public class PmsContent {
 	private static IMBroker broker = IMBroker.getInstance();
+	@SuppressWarnings("unused")
 	private static final Logger logger = LogManager.getLogger(PmsContent.class);
+	@SuppressWarnings("unused")
 	private static final String pattern = "MM/dd/yyyy HH:mm:ss";
+	@SuppressWarnings("unused")
 	private static Configuration config = null;
 
 	static {
@@ -722,6 +725,7 @@ public class PmsContent {
 	}
 
 	// -------------------------------------------------------------------------------
+	@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 	public String orderRoomService(eItemOrder item, String smartcard) {
 		System.out.println("--------Processing orderRoomService[smartcard=" + smartcard + "]");
 		String Rs = "0";
@@ -751,6 +755,7 @@ public class PmsContent {
 		return Rs;
 	}
 
+	@SuppressWarnings({ "unchecked", "unused" })
 	public String getExchangeRates(int fromRow, int noRows) {
 		String xml = "";
 		Vector<String> outParam = new Vector<String>();
@@ -803,6 +808,7 @@ public class PmsContent {
 		return xml;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String getCountries(String level) {
 		String xml = "";
 		Vector params = new Vector(2);
@@ -845,6 +851,7 @@ public class PmsContent {
 	}
 
 	// ----------------------------------------------------------------------
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String getWeatherToday(String day) {
 		String xml = "";
 		Vector params = new Vector(2);
@@ -889,6 +896,7 @@ public class PmsContent {
 	}
 
 	// ----------------------------------------------------------------------
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public String getWeatherInWeek(String countruid, String sn) {
 		String xml = "";
 		Vector params = new Vector(3);
@@ -1286,7 +1294,7 @@ public class PmsContent {
 		xml = "";
 		xml = xml + "<ehotel version='1.0' code='A0002' cache='1'>\r\n";
 		xml = xml + "<name>ELCOM-HCM</name>\r\n";
-		for (int i = 0; i < outParam.size(); i += 11) {
+		for (int i = 0; i < outParam.size(); i += 12) {
 			xml = xml + "<item id='" + outParam.get(i) + "'>\r\n";
 			xml = xml + "<name><![CDATA[" + outParam.get(i + 1) + "]]></name>\r\n";
 			xml = xml + "<service><![CDATA[" + outParam.get(i + 2) + "]]></service>\r\n";
@@ -1298,13 +1306,14 @@ public class PmsContent {
 			xml = xml + "<status>" + outParam.get(i + 8) + "</status>\r\n";
 			xml = xml + "<image>" + outParam.get(i + 9) + "</image>\r\n";
 			xml = xml + "<unit>" + outParam.get(i + 10) + "</unit>\r\n";
+			xml = xml + "<description>" + outParam.get(i + 11) + "</description>\r\n";
 			xml = xml + "</item>\r\n";
 		}
 		xml = xml + "</ehotel>";
 		return xml;
 	}
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 	public String insertViewChannel(String keystb, String channelid) {
 		String rs = "-1";
 		Vector params = new Vector();

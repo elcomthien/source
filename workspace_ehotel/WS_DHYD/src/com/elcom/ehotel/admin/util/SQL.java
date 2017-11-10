@@ -164,5 +164,5 @@ public class SQL {
 	public static final String ADD_POPUP = "BEGIN EPMS.addPopup(?,?,?,?,?); END;";
 	public static final String EDIT_POPUP = "BEGIN EPMS.editPopup(?,?,?,?,?); END;";
 	public static final String DELETE_POPUP = "BEGIN EPMS.deletePopup(?,?); END;";
-	public static final String POST_POPUP = "BEGIN EPMS.portPopup(?,?,?); END;";
+	public static final String POST_POPUP = "BEGIN EPMS.postPopup(?,?,?); END;";
 }
