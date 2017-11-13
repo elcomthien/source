@@ -75,4 +75,8 @@ public class PMSFolioService {
 	public int postPopup(String id, String listroom) {
 		return pmsFolioDao.postPopup(id, listroom);
 	}
+	
+	public List<HashMap<String, String>> getRoomPopup(String id) {
+		return pmsFolioDao.getRoomPopup(id);
+	}
 }

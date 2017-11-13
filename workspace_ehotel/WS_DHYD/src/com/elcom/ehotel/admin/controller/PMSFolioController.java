@@ -87,9 +87,20 @@ public class PMSFolioController extends HttpServlet {
 			list = pmsFolioService.getListPopup(type);
 			response.getWriter().write(new Gson().toJson(list));
 		}
+
+		if (action.equals("getroompopup")) {
+			String id = request.getParameter("id");
+			LogUtil.logControl(PMSFolioController.class.toString(), "getroompopup", "id,,," + id);
+
+			List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+			list = pmsFolioService.getRoomPopup(id);
+			response.getWriter().write(new Gson().toJson(list));
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("application/json");
+		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		String action = request.getParameter("action");
 

@@ -439,8 +439,37 @@ public class PMSFolioDao {
 		return rs;
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, String>> getRoomPopup(String id) {
+		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_ROOM_POPUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(1);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_ROOM_POPUP, params, "id", outParam.size() / 3);
+		for (int i = 0; i < outParam.size(); i += 3) {
+			HashMap<String, String> hmap = new HashMap<String, String>();
+			hmap.put("room", outParam.get(i));
+			hmap.put("serinumber", outParam.get(i + 1));
+			hmap.put("ispopup", outParam.get(i + 2));
+			list.add(hmap);
+		}
+		return list;
+	}
+
 	public static void main(String[] args) {
 		PMSFolioDao p = new PMSFolioDao();
-		System.out.println(p.getListSmartcard());
+		System.out.println(p.getRoomPopup("20"));
 	}
 }
