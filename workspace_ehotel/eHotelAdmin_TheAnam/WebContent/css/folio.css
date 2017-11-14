@@ -1,0 +1,143 @@
+.form_header_900 {
+	width: 920px;;
+	height: 46px;
+	background: transparent url("../images/900_header.png") no-repeat center
+		bottom;
+}
+
+.form_center_900 {
+	width: 922px;
+	height: auto;
+	background: transparent url("../images/900_center.png") repeat-y center
+		top;
+}
+
+.form_bottom_900 {
+	width: 920px;
+	height: 9px;
+	background: transparent url("../images/900_bottom.png") no-repeat top;
+}
+
+.folio_listroom {
+	width: 100%;
+	height: 220px;
+}
+
+.tab_menu_1 {
+	float: left;
+	width: 200px;
+	background: transparent url("../images/bg_menu.png") repeat-x center
+		bottom;
+}
+
+.tab_menu_2 {
+	height: 25;
+	width: 100%;
+	background: transparent url("../images/bg_menu.png") repeat-x center
+		bottom;
+}
+
+.tab_menu_item_1 {
+	color: white;
+	float: left;
+	height: 100%;
+	width: 80px;
+	background: transparent url("../images/button_normal_1.png") no-repeat
+		center bottom;
+	cursor: pointer;
+}
+
+.item_menu2 {
+	margin-top: 5px;
+	font-weight: 600;
+	font-size: 15;
+}
+
+.tab_menu_item_1_sel {
+	float: left;
+	height: 100%;
+	width: 80px;
+	background: transparent url("../images/button_focus_1.png") no-repeat
+		center bottom;
+	cursor: pointer;
+}
+
+.inforoom_center {
+	background: transparent url("../images/700_center.png") repeat-y center
+		center;
+	overflow: scroll;
+}
+
+.inforoom_bottom {
+	float: left;
+	width: 730;
+	height: 6px;
+	background: transparent url("../images/730_bottom.png") no-repeat center
+		top;
+}
+
+.div_liststb {
+	width: 100%;
+	height: 200px;
+}
+
+.div_addSTB {
+	width: 100%;
+	height: 25px;
+	float: left;
+}
+
+.div_addstb1 {
+	width: 160px;
+	height: 25px;
+}
+
+.add_stb_top {
+	width: 570px;;
+	height: 20px;
+	background: transparent url("../images/570_top.png") no-repeat center
+		bottom;
+}
+
+.add_stb_bottom {
+	width: 570px;;
+	height: 20px;
+	background: transparent url("../images/570_bottom.png") no-repeat center
+		top;
+}
+
+.add_stb_center {
+	width: 570px;;
+	background: transparent url("../images/570_center.png") repeat-y center
+		top;
+}
+
+.div_listaddstb {
+	float: left;
+	width: 550;
+	margin-left: 10px;
+	height: 190;
+}
+
+.div_listbill {
+	width: 100%;
+	height: 180px;
+}
+
+.div_listallstb {
+	width: 780px;
+	height: 280px;
+	border: 1px solid #dddddd;
+	margin-top: 15px;
+}
+
+.div_page_row {
+	float: left;
+	width: 100%;
+	height: 20px;
+}
+
+.div_page_stb {
+	width: 220px;
+	height: 20px;
+}

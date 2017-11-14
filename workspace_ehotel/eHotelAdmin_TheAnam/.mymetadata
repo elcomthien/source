@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="eHotelAdmin"
+  id="myeclipse.1320634027017"
+  context-root="/eHotelAdmin"
+  j2ee-spec="1.4"
+  archive="eHotelAdmin.war">
+  <attributes>
+    <attribute name="webrootdir" value="eHotelAdmin" />
+  </attributes>
+</project-module>
+

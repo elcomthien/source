@@ -1,0 +1,56 @@
+package com.elcom.ehotel.admin.dao;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+import com.elcom.DBI.SubProParam;
+import com.elcom.ehotel.admin.model.PMSDiningSubjectModel;
+import com.elcom.ehotel.admin.util.LogUtil;
+import com.elcom.ehotel.admin.util.SQL;
+
+public class PMSDiningDao {
+
+	@SuppressWarnings("unchecked")
+	public List<PMSDiningSubjectModel> getSubjectDining(int parentId, int langId) {
+		List<PMSDiningSubjectModel> list = new ArrayList<PMSDiningSubjectModel>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(parentId), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(langId), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_DINING_SUBJECT, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.GET_SUBJECT_INFO, params, "parentId,langid", outParam.size() / 7);
+		for (int i = 0; i < outParam.size(); i = i + 7) {
+			PMSDiningSubjectModel dn = new PMSDiningSubjectModel();
+			dn.setId(outParam.get(i));
+			dn.setName(outParam.get(i + 1));
+			dn.setActive(outParam.get(i + 2));
+			dn.setMenuno(outParam.get(i + 3));
+			dn.setImage(outParam.get(i + 4));
+			dn.setIndex(outParam.get(i + 5));
+			dn.setParent(outParam.get(i + 6));
+			dn.setLangId(String.valueOf(langId));
+			list.add(dn);
+		}
+		return list;
+	}
+
+	public static void main(String[] args) {
+		PMSDiningDao p = new PMSDiningDao();
+		System.out.println(p.getSubjectDining(1, 2));
+	}
+}

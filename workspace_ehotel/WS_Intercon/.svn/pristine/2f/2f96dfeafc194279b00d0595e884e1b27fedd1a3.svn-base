@@ -1,0 +1,51 @@
+package com.elcom.ehotel.admin.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+import com.elcom.DBI.SubProParam;
+import com.elcom.ehotel.admin.model.PMSExchangeRateModel;
+import com.elcom.ehotel.admin.util.LogUtil;
+import com.elcom.ehotel.admin.util.SQL;
+
+public class PMSExchangeRateDao {
+	@SuppressWarnings("unchecked")
+	public List<PMSExchangeRateModel> getListExchangeRate() {
+		List<PMSExchangeRateModel> list = new ArrayList<PMSExchangeRateModel>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_EXCHANGE, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(0);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.GET_LIST_EXCHANGE, params, "none", outParam.size() / 10);
+		for (int i = 0; i < outParam.size(); i = i + 10) {
+			PMSExchangeRateModel ex = new PMSExchangeRateModel();
+			ex.setId(outParam.get(i));
+			ex.setName(outParam.get(i + 1));
+			ex.setCode(outParam.get(i + 2));
+			ex.setBuy(outParam.get(i + 3));
+			ex.setSell(outParam.get(i + 4));
+			ex.setTransfer(outParam.get(i + 5));
+			ex.setImage(outParam.get(i + 6));
+			ex.setIcon(outParam.get(i + 7));
+			ex.setInvisible(outParam.get(i + 8));
+			ex.setIndex(outParam.get(i + 9));
+			list.add(ex);
+		}
+		return list;
+	}
+	
+	public static void main(String[] args) {
+		PMSExchangeRateDao p = new PMSExchangeRateDao();
+		System.out.println(p.getListExchangeRate());
+	}
+}

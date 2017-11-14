@@ -1,0 +1,14 @@
+package com.elcom.ehotel.admin.service;
+
+import java.util.List;
+
+import com.elcom.ehotel.admin.dao.PMSExchangeRateDao;
+import com.elcom.ehotel.admin.model.PMSExchangeRateModel;
+
+public class PMSExchangeRateService {
+	private PMSExchangeRateDao pmsExchangeRateDao = new PMSExchangeRateDao();
+
+	public List<PMSExchangeRateModel> getListExchangeRate() {
+		return pmsExchangeRateDao.getListExchangeRate();
+	}
+}

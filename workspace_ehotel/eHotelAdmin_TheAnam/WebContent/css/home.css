@@ -1,0 +1,38 @@
+.ic_home {
+	cursor: pointer;
+}
+
+.top_form_login {
+	width: 100%;
+	height: 40px;
+	background: transparent url("../images/bg_menu_top.png") repeat-x center
+		top;
+}
+
+.icon_key {
+	float: left;
+	height: 100%;
+	width: 50px;
+	background: transparent url("../icon/keys.png") no-repeat center center;
+}
+
+.text_service {
+	float: left;
+	width: 100%;
+	font-weight: 600;
+}
+
+.link_service a:link {
+	border-style: none;
+	color: red;
+	background-color: gray;
+}
+
+.link_service a:hover {
+	color: red;
+}
+
+.form_login {
+	background: transparent url("../images/bg_login.png") repeat-x center
+		top;
+}

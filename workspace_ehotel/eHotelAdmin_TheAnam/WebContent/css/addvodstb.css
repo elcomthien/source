@@ -1,0 +1,12 @@
+.div_listvod {
+	
+}
+
+.text_pagesize {
+	float: left;
+}
+
+.div_bodytable {
+	overflow: auto;
+	height: 300px;
+}
