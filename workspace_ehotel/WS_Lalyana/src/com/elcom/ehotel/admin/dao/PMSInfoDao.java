@@ -272,6 +272,6 @@ public class PMSInfoDao {
 
 	public static void main(String[] args) {
 		PMSInfoDao p = new PMSInfoDao();
-		System.out.println(p.getListSubjectInfo(25, 2));
+		System.out.println(p.getListContentInfo(5, 2));
 	}
 }

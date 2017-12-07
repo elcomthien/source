@@ -3,7 +3,6 @@ package com.elcom.ehotel.admin.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -37,20 +36,9 @@ public class UserManagerController extends HttpServlet {
 			list = userManagerService.getListUser();
 			response.getWriter().write(new Gson().toJson(list));
 		}
-
-		if (action.equals("getlistrole")) {
-
-			LogUtil.logControl(UserManagerController.class.toString(), "getlistuser", "none");
-
-			List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
-			list = userManagerService.getListRold();
-			response.getWriter().write(new Gson().toJson(list));
-		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("application/json");
-		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		String action = request.getParameter("action");
 		if (action.equals("adduser")) {
@@ -60,10 +48,9 @@ public class UserManagerController extends HttpServlet {
 			String address = request.getParameter("address");
 			String department = request.getParameter("department");
 			String active = request.getParameter("active");
-			String roleid = request.getParameter("roleid");
 
 			LogUtil.logControl(UserManagerController.class.toString(), "adduser", "user,,," + user + ",,,pass,,," + pass + ",,,name,,,"
-					+ name + ",,,address,,," + address + ",,,department,,," + department + ",,,active,,," + active + ",,,roleid,,," + roleid);
+					+ name + ",,,address,,," + address + ",,,department,,," + department + ",,,active,,," + active);
 
 			UserManagerModel um = new UserManagerModel();
 			um.setUser(user);
@@ -72,7 +59,6 @@ public class UserManagerController extends HttpServlet {
 			um.setAddress(address);
 			um.setDepartment(department);
 			um.setActive(active);
-			um.setRoleid(roleid);
 
 			int rs = userManagerService.addUser(um);
 			out.println(rs);
@@ -85,10 +71,9 @@ public class UserManagerController extends HttpServlet {
 			String address = request.getParameter("address");
 			String department = request.getParameter("department");
 			String active = request.getParameter("active");
-			String roleid = request.getParameter("roleid");
 
 			LogUtil.logControl(UserManagerController.class.toString(), "adduser", "id,,," + id + ",,,name,,," + name + ",,,address,,,"
-					+ address + ",,,department,,," + department + ",,,active,,," + active + ",,,roleid,,," + roleid);
+					+ address + ",,,department,,," + department + ",,,active,,," + active);
 
 			UserManagerModel um = new UserManagerModel();
 			um.setId(id);
@@ -97,7 +82,6 @@ public class UserManagerController extends HttpServlet {
 			um.setAddress(address);
 			um.setDepartment(department);
 			um.setActive(active);
-			um.setRoleid(roleid);
 
 			int rs = userManagerService.editUser(um);
 			out.println(rs);
@@ -108,10 +92,9 @@ public class UserManagerController extends HttpServlet {
 			String newpass = request.getParameter("newpass");
 			String oldpass = request.getParameter("oldpass");
 
-			LogUtil.logControl(UserManagerController.class.toString(), "changepass", "id,,," + id + ",,,oldpass,,," + oldpass
-					+ ",,,newpass,,," + newpass);
+			LogUtil.logControl(UserManagerController.class.toString(), "changepass", "id,,," + id + ",,,oldpass,,," + oldpass+",,,newpass,,," + newpass);
 
-			int rs = userManagerService.changePass(id, newpass, oldpass);
+			int rs = userManagerService.changePass(id,newpass, oldpass);
 			out.println(rs);
 		}
 
@@ -121,16 +104,6 @@ public class UserManagerController extends HttpServlet {
 			LogUtil.logControl(UserManagerController.class.toString(), "deleteuser", "id,,," + id);
 
 			int rs = userManagerService.deleteUser(id);
-			out.println(rs);
-		}
-
-		if (action.equals("changepassadmin")) {
-			String id = request.getParameter("id");
-			String newpass = request.getParameter("newpass");
-
-			LogUtil.logControl(UserManagerController.class.toString(), "changepass", "id,,," + id + ",,,newpass,,," + newpass);
-
-			int rs = userManagerService.changePassAdmin(id, newpass);
 			out.println(rs);
 		}
 

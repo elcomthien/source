@@ -1,0 +1,99 @@
+package com.elcom.ehotel.admin.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.elcom.ehotel.admin.model.PMSLanguageModel;
+import com.elcom.ehotel.admin.service.PMSLanguageService;
+import com.elcom.ehotel.admin.util.ConvertUtil;
+import com.elcom.ehotel.admin.util.LogUtil;
+import com.google.gson.Gson;
+
+public class PMSLanguageController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private PMSLanguageService pmsLanguageService = new PMSLanguageService();
+
+	public PMSLanguageController() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+
+		if (action.equals("getlistlanguage")) {
+			LogUtil.logControl(PMSLanguageController.class.toString(), "getlistlanguage", "none");
+
+			List<PMSLanguageModel> list = new ArrayList<PMSLanguageModel>();
+			list = pmsLanguageService.getListLanguage();
+			response.setContentType("application/json");
+			response.setCharacterEncoding("UTF-8");
+			response.getWriter().write(new Gson().toJson(list));
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+		String action = request.getParameter("action");
+
+		if (action.equals("addlanguage")) {
+			String name = "";
+			String code = "";
+			String image = "";
+			name = request.getParameter("name");
+			code = request.getParameter("code");
+			image = request.getParameter("image");
+
+			LogUtil.logControl(PMSLanguageController.class.toString(), "addlanguage", "name|" + name + "|code|" + code + "|image|" + image);
+
+			PMSLanguageModel lang = new PMSLanguageModel();
+			lang.setName(name);
+			lang.setCode(code);
+			lang.setFlagimage(image);
+
+			int rs = pmsLanguageService.addNewLanguage(lang);
+			out.print(rs);
+		}
+
+		if (action.equals("editlanguage")) {
+			String langId = "";
+			String name = "";
+			String code = "";
+			String image = "";
+			langId = request.getParameter("langId");
+			name = request.getParameter("name");
+			code = request.getParameter("code");
+			image = request.getParameter("image");
+
+			LogUtil.logControl(PMSLanguageController.class.toString(), "editlanguage", "langId|" + langId + "|name|" + name + "|code|" + code
+					+ "|image|" + image);
+
+			PMSLanguageModel lang = new PMSLanguageModel();
+			lang.setIdLang(langId);
+			lang.setName(name);
+			lang.setCode(code);
+			lang.setFlagimage(image);
+
+			int rs = pmsLanguageService.editLanguage(lang);
+			out.print(rs);
+		}
+
+		if (action.equals("deletelanguage")) {
+			String langId = "";
+			langId = request.getParameter("langId");
+
+			LogUtil.logControl(PMSLanguageController.class.toString(), "deletelanguage", "langId|" + langId);
+
+			int rs = pmsLanguageService.delteLanguage(ConvertUtil.convertToInteger(langId));
+
+			out.print(rs);
+		}
+	}
+
+}

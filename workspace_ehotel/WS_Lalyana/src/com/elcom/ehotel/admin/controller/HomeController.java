@@ -1,7 +1,7 @@
 package com.elcom.ehotel.admin.controller;
 
 import java.io.IOException;
-import java.util.HashMap;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.elcom.ehotel.admin.service.HomeService;
 import com.elcom.ehotel.admin.util.LogUtil;
-import com.google.gson.Gson;
 
 public class HomeController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -25,9 +24,7 @@ public class HomeController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("application/json");
-		response.setCharacterEncoding("UTF-8");
-//		PrintWriter out = response.getWriter();
+		PrintWriter out = response.getWriter();
 		String action = request.getParameter("action");
 
 		if (action.equals("checklogin")) {
@@ -39,8 +36,8 @@ public class HomeController extends HttpServlet {
 			LogUtil.logControl(HomeController.class.toString(), "checklogin", "username,,," + username + ",,,password,,," + password);
 
 			// iduser = -1: account is not exist; = -2: wrong password
-			HashMap<String, String> map = homeService.checkLogin(username, password);
-			response.getWriter().write(new Gson().toJson(map));
+			int userid = homeService.checkLogin(username, password);
+			out.println(userid);
 		}
 	}
 

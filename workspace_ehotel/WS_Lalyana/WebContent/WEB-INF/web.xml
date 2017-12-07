@@ -104,7 +104,8 @@
     <servlet-name>UserActiveController</servlet-name>
     <url-pattern>/active</url-pattern>
   </servlet-mapping>
-  <servlet>
+  
+   <servlet>
     <servlet-name>UserManagerController</servlet-name>
     <servlet-class>com.elcom.ehotel.admin.controller.UserManagerController</servlet-class>
   </servlet>
@@ -112,22 +113,7 @@
     <servlet-name>UserManagerController</servlet-name>
     <url-pattern>/user</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>FlightController</servlet-name>
-    <servlet-class>com.elcom.ehotel.admin.controller.FlightController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>FlightController</servlet-name>
-    <url-pattern>/flight</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>WorldClockController</servlet-name>
-    <servlet-class>com.elcom.ehotel.admin.controller.WorldClockController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>WorldClockController</servlet-name>
-    <url-pattern>/clock</url-pattern>
-  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

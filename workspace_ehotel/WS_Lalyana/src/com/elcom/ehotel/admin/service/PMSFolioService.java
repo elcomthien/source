@@ -2,7 +2,6 @@ package com.elcom.ehotel.admin.service;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.elcom.ehotel.admin.dao.PMSFolioDao;
 import com.elcom.ehotel.admin.model.PMSFolioGuestModel;
@@ -38,6 +37,7 @@ public class PMSFolioService {
 		mess.setTitle(UnicodeConverter.encodeUnicode(mess.getTitle()));
 		mess.setContent(UnicodeConverter.encodeUnicode(mess.getContent()));
 		mess.setSender(UnicodeConverter.encodeUnicode(mess.getSender()));
+		mess.setTop(UnicodeConverter.encodeUnicode(mess.getTop()));
 		return pmsFolioDao.addMessageFolio(mess);
 	}
 
@@ -55,17 +55,5 @@ public class PMSFolioService {
 
 	public List<HashMap<String, String>> getListSmartcard() {
 		return pmsFolioDao.getListSmartcard();
-	}
-	
-	public Map<String, Object> getListFolioPreview() {
-		return pmsFolioDao.getListFolioPreview();
-	}
-	
-	public int updatePreview(String room, String ispreview) {
-		return pmsFolioDao.updatePreview(room, ispreview);
-	}
-	
-	public int publicPreview() {
-		return pmsFolioDao.publicPreview();
 	}
 }

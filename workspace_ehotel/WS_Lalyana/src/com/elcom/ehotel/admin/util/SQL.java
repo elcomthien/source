@@ -35,13 +35,11 @@ public class SQL {
 	public static final String GET_LIST_GUEST = "BEGIN EPMS.getGuests(?,?); END;";
 	public static final String ADD_OR_UPDATE_GUEST = "BEGIN EPMS.addorupdateguest(?,?,?,?,?,?,?); END;";
 	public static final String DELETE_GUEST = "BEGIN EPMS.deleteGuestInFolio(?,?,?); END;";
-	public static final String GET_LIST_FOLIO_PREVIEW = "BEGIN EPMS.getListRoomPreview(?); END;";
-	public static final String UPDATE_FOLIO_PREVIEW = "BEGIN EPMS.updateIsPreview(?,?,?); END;";
-	public static final String PUBLIC_PREVIEW = "BEGIN EPMS.publicContent(?); END;";
 
 	// pms folio message
 	public static final String GET_LIST_MESSAGE = "BEGIN EPMS.getMessages(?,?,?); END;";
 	public static final String ADD_MESSAGE_FOLIO = "BEGIN EPMS.addMessageFolio(?,?,?,?,?); END;";
+	public static final String ADD_MESSAGE_LIST_FOLIO = "BEGIN EPMS.addMessageListFolio(?,?,?,?,?,?); END;";
 	public static final String DELETE_MESSAGE_FOLIO = "BEGIN EPMS.deleteMessageFolio(?,?,?); END;";
 
 	// pms language
@@ -148,31 +146,17 @@ public class SQL {
 	// user active
 	public static final String ADD_USER_ACTIVE = "BEGIN EPMS.addUserActivities(?,?,?,?); END;";
 	public static final String GET_USER_ACTIVE = "BEGIN EPMS.getUserActivities(?,?,?); END;";
-
+	
 	// welcome media
 	public static final String GET_WELCOME_MEDIA = "BEGIN EPMS.getMediaWelcome(?,?); END;";
 	public static final String ADD_WELCOME_MEDIA = "BEGIN EPMS.addMediaWelcome(?,?,?,?); END;";
 	public static final String EDIT_WELCOME_MEDIA = "BEGIN EPMS.editMediaWelcome(?,?,?,?,?,?); END;";
 	public static final String DELETE_WELCOME_MEDIA = "BEGIN EPMS.deleteMediaWelcome(?,?); END;";
-
+	
 	// user manager
 	public static final String GET_LIST_USER = "BEGIN EUSER.getListUser(?); END;";
-	public static final String ADD_USER = "BEGIN EUSER.addUser(?,?,?,?,?,?,?,?); END;";
-	public static final String EDIT_USER = "BEGIN EUSER.editUser(?,?,?,?,?,?,?); END;";
+	public static final String ADD_USER = "BEGIN EUSER.addUser(?,?,?,?,?,?,?); END;";
+	public static final String EDIT_USER = "BEGIN EUSER.editUser(?,?,?,?,?,?); END;";
 	public static final String DELETE_USER = "BEGIN EUSER.deleteUser(?,?); END;";
 	public static final String CHANGE_PASS = "BEGIN EUSER.changePass(?,?,?,?); END;";
-	public static final String CHANGE_PASS_ADMIN = "BEGIN EUSER.changePassword(?,?,?); END;";
-	public static final String GET_LIST_ROLE = "BEGIN EUSER.getListRole(?); END;";
-
-	// flight shedule
-	public static final String GET_LIST_AIRPORT = "BEGIN EPMS.getListAirport(?,?); END;";
-	public static final String ADD_AIRPORT = "BEGIN EPMS.addAirport(?,?,?,?); END;";
-	public static final String EDIT_AIRPORT = "BEGIN EPMS.editAirport(?,?,?,?,?,?,?,?); END;";
-	public static final String DELETE_AIRPORT = "BEGIN EPMS.deleteAirport(?,?); END;";
-
-	// world clock
-	public static final String GET_LIST_WORLDCLOCK = "BEGIN EPMS.getWorldClock(?); END;";
-	public static final String ADD_WORLDCLOCK = "BEGIN EPMS.addWorldClock(?,?,?,?,?); END;";
-	public static final String EDIT_WORLDCLOCK = "BEGIN EPMS.editWorldClock(?,?,?,?,?,?,?,?); END;";
-	public static final String DELETE_WORLDCLOCK = "BEGIN EPMS.deleteWorldClock(?,?); END;";
 }

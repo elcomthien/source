@@ -11,7 +11,6 @@ public class UserManagerModel {
 	private String address = "";
 	private String department = "";
 	private String active = "";
-	private String roleid = "";
 	private List<HashMap<String, String>> role = null;
 
 	public String getId() {
@@ -78,18 +77,10 @@ public class UserManagerModel {
 		this.role = role;
 	}
 
-	public String getRoleid() {
-		return roleid;
-	}
-
-	public void setRoleid(String roleid) {
-		this.roleid = roleid;
-	}
-
 	@Override
 	public String toString() {
 		return "UserManagerModel [id=" + id + ", user=" + user + ", pass=" + pass + ", name=" + name + ", address=" + address
-				+ ", department=" + department + ", active=" + active + ", roleid=" + roleid + ", role=" + role + "]";
+				+ ", department=" + department + ", active=" + active + ", role=" + role + "]";
 	}
 
 }

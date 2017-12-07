@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -79,14 +78,6 @@ public class PMSFolioController extends HttpServlet {
 			list = pmsFolioService.getListSmartcard();
 			response.getWriter().write(new Gson().toJson(list));
 		}
-
-		if (action.equals("getlistfoliopreview")) {
-			LogUtil.logControl(PMSFolioController.class.toString(), "getlistfoliopreview", "none");
-
-			Map<String, Object> map = new HashMap<String, Object>();
-			map = pmsFolioService.getListFolioPreview();
-			response.getWriter().write(new Gson().toJson(map));
-		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -101,9 +92,8 @@ public class PMSFolioController extends HttpServlet {
 			String personal = request.getParameter("personal");
 			String roomShare = request.getParameter("roomshare");
 
-			LogUtil.logControl(PMSFolioController.class.toString(), "addorupdateguest", "folionum,,," + folionum + ",,,clientId,,,"
-					+ clientId + ",,,firstName,,," + firstName + ",,,lastName,,," + lastName + ",,,personal,,," + personal
-					+ ",,,roomShare,,," + roomShare);
+			LogUtil.logControl(PMSFolioController.class.toString(), "addorupdateguest", "folionum,,," + folionum + ",,,clientId,,," + clientId
+					+ ",,,firstName,,," + firstName + ",,,lastName,,," + lastName + ",,,personal,,," + personal + ",,,roomShare,,," + roomShare);
 
 			PMSFolioGuestModel guest = new PMSFolioGuestModel();
 			guest.setFolionum(folionum);
@@ -132,15 +122,17 @@ public class PMSFolioController extends HttpServlet {
 			String title = request.getParameter("title");
 			String content = request.getParameter("content");
 			String sender = request.getParameter("sender");
+			String top = request.getParameter("short");
 
-			LogUtil.logControl(PMSFolioController.class.toString(), "addmessage", "folionum,,," + folionum + ",,,title,,," + title
-					+ ",,,content,,," + content + ",,,sender,,," + sender);
+			LogUtil.logControl(PMSFolioController.class.toString(), "addmessage", "folionum|" + folionum + "|title|" + title + "|content|"
+					+ content + "|sender|" + sender + "|short|" + top);
 
 			PMSFolioMessageModel mess = new PMSFolioMessageModel();
 			mess.setRoomId(folionum);
 			mess.setTitle(title);
 			mess.setContent(content);
 			mess.setSender(sender);
+			mess.setTop(top);
 
 			int rs = pmsFolioService.addMessageFolio(mess);
 			out.println(rs);
@@ -162,23 +154,6 @@ public class PMSFolioController extends HttpServlet {
 			LogUtil.logControl(PMSFolioController.class.toString(), "deletesmartcard", "serinumber,,," + serinumber);
 
 			int rs = pmsFolioService.deleteSmartcard(serinumber);
-			out.println(rs);
-		}
-
-		if (action.equals("setroompreview")) {
-			String room = request.getParameter("room");
-			String preview = request.getParameter("preview");
-			LogUtil.logControl(PMSFolioController.class.toString(), "setroompreview", "room,,," + room + ",,,preview,,," + preview);
-
-			int rs = pmsFolioService.updatePreview(room, preview);
-			out.println(rs);
-		}
-
-		if (action.equals("publicpreview")) {
-
-			LogUtil.logControl(PMSFolioController.class.toString(), "publicpreview", "none");
-
-			int rs = pmsFolioService.publicPreview();
 			out.println(rs);
 		}
 	}
