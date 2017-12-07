@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-32">
+        <def>&lt;p&gt;&lt;strong&gt;Món chính&lt;br /&gt;&lt;/strong&gt;Trái cây theo mùa | vị yogurt | bánh muffin $14.75&lt;br /&gt;Bánh mì bơ sữa | Si rô vermont maple syrup $10.50&lt;br /&gt;Cá hồi hun khói Na Uy | Cà chua cắt lát | bạch quả | của hành đỏ | Bánh mì tròn nướng $16&lt;br /&gt;Bánh Beigian waffle | dâu tươi | kem chantilly $11.5&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Nước uống&lt;br /&gt;&lt;/strong&gt;Cam ép | Nho ép | Thơm | Táo | Dâu tây | carrot | Cà chua $5&lt;br /&gt;Cà phê | cà phê ryan brother’s micro brewed $3.5&lt;br /&gt;Sữa | tươi hoặc sôcôla $5&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Bánh ngọt&lt;br /&gt;&lt;/strong&gt;Jump start | Chuối | ổi | phấn hoa mật ong | nhân sâm $6&lt;br /&gt;Bột ngọt| quýt | dứa | sữa nhiều đạm $6&lt;/p&gt;</def>
+        <name>Res</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/Turndown.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/bg/Turndown.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/Turndown.png</urlIcon>
+    </item>
+</ehotel>

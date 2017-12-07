@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="219">
+        <buyRate>21105.84</buyRate>
+        <code>AUD</code>
+        <exRateVN>21233.24</exRateVN>
+        <name>AUST.DOLLAR</name>
+        <sellRate>21530.67</sellRate>
+        <symbol>AUD</symbol>
+        <transferRate>21233.24</transferRate>
+        <url>Exchange/AUD.png</url>
+        <urlBg>Exchange/AUD_.png</urlBg>
+        <urlICon>Exchange/AUD_.png</urlICon>
+    </item>
+    <item id="220">
+        <buyRate>20035.07</buyRate>
+        <code>CAD</code>
+        <exRateVN>20217.02</exRateVN>
+        <name>CANADIAN DOLLAR</name>
+        <sellRate>20500.21</sellRate>
+        <symbol>CAD</symbol>
+        <transferRate>20217.02</transferRate>
+        <url>Exchange/CAD.png</url>
+        <urlBg>Exchange/CAD_.png</urlBg>
+        <urlICon>Exchange/CAD_.png</urlICon>
+    </item>
+    <item id="223">
+        <buyRate>26924.77</buyRate>
+        <code>EUR</code>
+        <exRateVN>27005.79</exRateVN>
+        <name>EURO</name>
+        <sellRate>27384.08</sellRate>
+        <symbol>EUR</symbol>
+        <transferRate>27005.79</transferRate>
+        <url>Exchange/EUR.png</url>
+        <urlBg>Exchange/EUR_.png</urlBg>
+        <urlICon>Exchange/EUR_.png</urlICon>
+    </item>
+    <item id="224">
+        <buyRate>30822.64</buyRate>
+        <code>GBP</code>
+        <exRateVN>31039.92</exRateVN>
+        <name>BRITISH POUND</name>
+        <sellRate>31411.83</sellRate>
+        <symbol>GBP</symbol>
+        <transferRate>31039.92</transferRate>
+        <url>Exchange/GBP.png</url>
+        <urlBg>Exchange/GBP_.png</urlBg>
+        <urlICon>Exchange/GBP_.png</urlICon>
+    </item>
+    <item id="225">
+        <buyRate>2656.99</buyRate>
+        <code>HKD</code>
+        <exRateVN>2675.72</exRateVN>
+        <name>HONGKONG DOLLAR</name>
+        <sellRate>2724.08</sellRate>
+        <symbol>HKD</symbol>
+        <transferRate>2675.72</transferRate>
+        <url>Exchange/HKD.png</url>
+        <urlBg>Exchange/HKD_.png</urlBg>
+        <urlICon>Exchange/HKD_.png</urlICon>
+    </item>
+    <item id="221">
+        <buyRate>21688.54</buyRate>
+        <code>CHF</code>
+        <exRateVN>21841.43</exRateVN>
+        <name>SWISS FRANCE</name>
+        <sellRate>22147.38</sellRate>
+        <symbol>CHF</symbol>
+        <transferRate>21841.43</transferRate>
+        <url>Exchange/HKD.png</url>
+        <urlBg>Exchange/HKD_.png</urlBg>
+        <urlICon>Exchange/HKD_.png</urlICon>
+    </item>
+    <item id="226">
+        <buyRate>0</buyRate>
+        <code>INR</code>
+        <exRateVN>377.43</exRateVN>
+        <name>INDIAN RUPEE</name>
+        <sellRate>393.59</sellRate>
+        <symbol>INR</symbol>
+        <transferRate>377.43</transferRate>
+        <url>Exchange/INR.png</url>
+        <urlBg>Exchange/INR_.png</urlBg>
+        <urlICon>Exchange/INR_.png</urlICon>
+    </item>
+    <item id="222">
+        <buyRate>0</buyRate>
+        <code>DKK</code>
+        <exRateVN>3614.98</exRateVN>
+        <name>DANISH KRONE</name>
+        <sellRate>3680.31</sellRate>
+        <symbol>DKK</symbol>
+        <transferRate>3614.98</transferRate>
+        <url>Exchange/INR.png</url>
+        <urlBg>Exchange/INR_.png</urlBg>
+        <urlICon>Exchange/INR_.png</urlICon>
+    </item>
+    <item id="227">
+        <buyRate>214.36</buyRate>
+        <code>JPY</code>
+        <exRateVN>216.53</exRateVN>
+        <name>JAPANESE YEN</name>
+        <sellRate>219.56</sellRate>
+        <symbol>JPY</symbol>
+        <transferRate>216.53</transferRate>
+        <url>Exchange/JPY.png</url>
+        <urlBg>Exchange/JPY_.png</urlBg>
+        <urlICon>Exchange/JPY_.png</urlICon>
+    </item>
+    <item id="228">
+        <buyRate>0</buyRate>
+        <code>KRW</code>
+        <exRateVN>17.26</exRateVN>
+        <name>SOUTH KOREAN WON</name>
+        <sellRate>21.14</sellRate>
+        <symbol>KRW</symbol>
+        <transferRate>17.26</transferRate>
+        <url>Exchange/KRW.png</url>
+        <urlBg>Exchange/KRW_.png</urlBg>
+        <urlICon>Exchange/KRW_.png</urlICon>
+    </item>
+    <item id="229">
+        <buyRate>0</buyRate>
+        <code>KWD</code>
+        <exRateVN>72855.69</exRateVN>
+        <name>KUWAITI DINAR</name>
+        <sellRate>74469.63</sellRate>
+        <symbol>KWD</symbol>
+        <transferRate>72855.69</transferRate>
+        <url>Exchange/KWD.png</url>
+        <urlBg>Exchange/KWD_.png</urlBg>
+        <urlICon>Exchange/KWD_.png</urlICon>
+    </item>
+    <item id="230">
+        <buyRate>0</buyRate>
+        <code>MYR</code>
+        <exRateVN>6675.84</exRateVN>
+        <name>MALAYSIAN RINGGIT</name>
+        <sellRate>6769.35</sellRate>
+        <symbol>MYR</symbol>
+        <transferRate>6675.84</transferRate>
+        <url>Exchange/MYR.png</url>
+        <urlBg>Exchange/MYR_.png</urlBg>
+        <urlICon>Exchange/MYR_.png</urlICon>
+    </item>
+    <item id="231">
+        <buyRate>0</buyRate>
+        <code>NOK</code>
+        <exRateVN>3621.86</exRateVN>
+        <name>NORWEGIAN KRONER</name>
+        <sellRate>3687.31</sellRate>
+        <symbol>NOK</symbol>
+        <transferRate>3621.86</transferRate>
+        <url>Exchange/NOK.png</url>
+        <urlBg>Exchange/NOK_.png</urlBg>
+        <urlICon>Exchange/NOK_.png</urlICon>
+    </item>
+    <item id="232">
+        <buyRate>0</buyRate>
+        <code>RUB</code>
+        <exRateVN>617.92</exRateVN>
+        <name>RUSSIAN RUBLE</name>
+        <sellRate>756.69</sellRate>
+        <symbol>RUB</symbol>
+        <transferRate>617.92</transferRate>
+        <url>Exchange/RUB.png</url>
+        <urlBg>Exchange/RUB_.png</urlBg>
+        <urlICon>Exchange/RUB_.png</urlICon>
+    </item>
+    <item id="233">
+        <buyRate>0</buyRate>
+        <code>SEK</code>
+        <exRateVN>3237.5</exRateVN>
+        <name>SWEDISH KRONA</name>
+        <sellRate>3296</sellRate>
+        <symbol>SEK</symbol>
+        <transferRate>3237.5</transferRate>
+        <url>Exchange/SEK.png</url>
+        <urlBg>Exchange/SEK_.png</urlBg>
+        <urlICon>Exchange/SEK_.png</urlICon>
+    </item>
+    <item id="234">
+        <buyRate>16479.04</buyRate>
+        <code>SGD</code>
+        <exRateVN>16595.21</exRateVN>
+        <name>SINGAPORE DOLLAR</name>
+        <sellRate>16895.12</sellRate>
+        <symbol>SGD</symbol>
+        <transferRate>16595.21</transferRate>
+        <url>Exchange/SGD.png</url>
+        <urlBg>Exchange/SGD_.png</urlBg>
+        <urlICon>Exchange/SGD_.png</urlICon>
+    </item>
+    <item id="235">
+        <buyRate>689.41</buyRate>
+        <code>THB</code>
+        <exRateVN>689.41</exRateVN>
+        <name>THAI BAHT</name>
+        <sellRate>718.92</sellRate>
+        <symbol>THB</symbol>
+        <transferRate>689.41</transferRate>
+        <url>Exchange/THB.png</url>
+        <urlBg>Exchange/THB_.png</urlBg>
+        <urlICon>Exchange/THB_.png</urlICon>
+    </item>
+    <item id="236">
+        <buyRate>20920</buyRate>
+        <code>USD</code>
+        <exRateVN>20920</exRateVN>
+        <name>US DOLLAR</name>
+        <sellRate>20960</sellRate>
+        <symbol>USD</symbol>
+        <transferRate>20920</transferRate>
+        <url>Exchange/USD.png</url>
+        <urlBg>Exchange/USD_.png</urlBg>
+        <urlICon>Exchange/USD_.png</urlICon>
+    </item>
+</ehotel>

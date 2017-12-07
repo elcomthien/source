@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="174">
+        <name>Chanel</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363357050574.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363357056574.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363357056574.png</urlIcon>
+    </item>
+    <item id="179">
+        <name>Nike</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363357038587.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363357032812.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363357032812.png</urlIcon>
+    </item>
+</ehotel>

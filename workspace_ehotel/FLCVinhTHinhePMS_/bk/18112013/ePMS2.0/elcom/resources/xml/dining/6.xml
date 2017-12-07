@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="6" icode="8">
+        <currency>16</currency>
+        <currency_large>16</currency_large>
+        <currency_small>16</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Kiwi, xoài, đu đủ, và dâu tây tươi]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Florida Sunrise]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/colddishes_4.png</imageicon>
+        <printname>Florida Sunrise</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/colddishes_4.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/colddishes_4.png</imagebg>
+    </item>
+    <item menuid="6" icode="7">
+        <currency>30</currency>
+        <currency_large>30</currency_large>
+        <currency_small>30</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Roquefort, pho mát camembert, emmental, pho mát cứng tillamook được phục vụ với mứt quả quả sung, mật ong và bánh qui.]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Pho mát Symphony]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/colddishes_3.png</imageicon>
+        <printname>Pho mát Symphony</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/colddishes_3.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/colddishes_3.png</imagebg>
+    </item>
+    <item menuid="6" icode="6">
+        <currency>18</currency>
+        <currency_large>18</currency_large>
+        <currency_small>18</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Pho mát ricotta tươi và mật ong, phục vụ  kèm với bánh mì tròn nhỏ nướng với thảo dược]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Buongiormo]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/colddishes_2.png</imageicon>
+        <printname>Buongiormo</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/colddishes_2.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/colddishes_2.png</imagebg>
+    </item>
+    <item menuid="6" icode="5">
+        <currency>12</currency>
+        <currency_large>12</currency_large>
+        <currency_small>12</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Quả hạnh nhân, trái cây và sữa chua ít chất béo]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Berry Granola Parfait]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/colddishes_1.png</imageicon>
+        <printname>Berry Granola Parfait</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/colddishes_1.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/colddishes_1.png</imagebg>
+    </item>
+</ehotel>

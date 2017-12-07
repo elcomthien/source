@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="21">
+        <name>Daily Activities</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/bg/1360115061638.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/dailyactivities.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/bg/dailyactivities.png</urlIcon>
+    </item>
+    <item id="22">
+        <name>The Spa</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/thespa.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/thespa.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/thespa.png</urlIcon>
+    </item>
+    <item id="23">
+        <name>Ocean Sport</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/oceansport.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/oceansport.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/oceansport.png</urlIcon>
+    </item>
+    <item id="24">
+        <name>Tennis</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/tennis.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/tennis.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/tennis.png</urlIcon>
+    </item>
+</ehotel>

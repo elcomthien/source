@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="26">
+        <def>&lt;p&gt;Met2 Fitness (GYM): Met2 Finess offers unparalleled personal fitness and health services. Part of the hotels two entertaiment floors, Met2 Fitness features state-of-the-art equipment, private training sessions and yoga classes. At Met2 Fitness you will rediscover body-mind-spirit wellness with exceptional fitness, yoga, health and diet programs and packaged sessions to fit your budget and busy schedule. For mor information call, 305-421-8770&lt;/p&gt;</def>
+        <name>Met2 Fitness (GYM)</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889514819.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="27">
+        <def>&lt;p&gt;Le Chocolatier: Le Chocolatier Fine Handmade Chocolate has been part of the unique Miami landscape for 30 years since 1980, evolving its chocolate expertise to the pinnacle of exquisite artstry and ultimate taste. Open Monday – Friday, 10:00am – 7:00pm&lt;/p&gt;&lt;ul&gt;&lt;li&gt;W Wine Boutique: Open Daily 10:00am – 10:00pm&lt;/li&gt;&lt;li&gt;Essentials Gift Shop: Open Daily 7:00am – 10:00pm&lt;/li&gt;&lt;/ul&gt;</def>
+        <name>Shopping</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363800212826.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="28">
+        <def>&lt;p&gt;Take an invigorating swim in our stainless steel outdoor pool, or relax in thewhirlpool. Both are located on the 19&lt;sup&gt;th&lt;/sup&gt; Floor. No matter how busy your itinerary may be when you’re travelling, there is always time for your regular fitness workout. You’ll find everything you need to keep up with your routine at our Techno Gym equipped Fitness Center. During your stay, you can enjoy a relaxing swim in uor outdoor pool or take advantage of our state-of-the-art equipment. Open Daily, 6:00am – 11:00pm&lt;/p&gt;</def>
+        <name>Swimming</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889525586.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="29">
+        <def>&lt;p&gt;Sport Arena: Sport Arena with regulation Basktball Count and Tennis Count.&lt;/p&gt;&lt;p&gt;-  Billiard Room: Those seeking more leisurely sports pursuits will enjoy hotel’s Billiard Room, featuring a top-of-the-line midnight blue Brunswick Treviso pool table, and its Virtual Bowling Alley.&lt;/p&gt;&lt;p&gt;- Bowling Alley: By combining today’s high-tech video and simulation games, bowlling is brought to the next generation of fun. From a classic game to bowling in outer space, to a cyber ketchup factory or penguin-themed arctic alley, once entered into the games “virtual world”, the possibilities are endless&lt;/p&gt;</def>
+        <name>Sport Arena</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889554738.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

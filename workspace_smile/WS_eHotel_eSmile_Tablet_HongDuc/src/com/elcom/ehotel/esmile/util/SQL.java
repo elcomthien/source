@@ -51,7 +51,7 @@ public class SQL {
 	public static final String GET_KEY = "{call ETABLET.getKey(?,?)}";
 	
 	public static final String SET_LANG = "{call ETABLET.setLang(?,?,?)}";
-	public static final String REGISTER_TABLET = "{call ETABLET.registerTablet(?,?,?,?,?)}";
+	public static final String REGISTER_TABLET = "{call ETABLET.registerTablet1(?,?,?,?,?)}";
 	
 	public static final String CHECK_KEY_MOBILE = "{call ETABLET.checkKeyMobile(?,?)}";
 	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-37">
+        <def>&lt;p&gt;Sweet Treats&lt;br /&gt;Orange &amp;amp; Cranberry Scones $3.50&lt;br /&gt;Carrot Cake $4.00 per slice&lt;br /&gt;Chocolate Flourless $4.50 per slice&lt;br /&gt;7 layer chocolate terrine $4.50 per slice&lt;br /&gt;&lt;br /&gt;Salads &amp;amp; Sandwiches&lt;br /&gt;Grilled Chicken Caesar Salad $6.00&lt;br /&gt;Turkey Reuben Panini  $7.95&lt;br /&gt;Roast Beef, Smoked Cheddar &amp;amp; Caramelized Onion Panini $7.00&lt;br /&gt;Chipotle Beaf and Manchego Empanada $7.00&lt;br /&gt;Black Bean &amp;amp; Corn with Pepperjack Empanada $6.50&lt;br /&gt;&lt;br /&gt;Signature Drinks&lt;br /&gt;Red Sangria $6.50&lt;br /&gt;Red Wine, Crème de Cassis, Wild Berries &amp;amp; Spiced Syrup $6.50&lt;br /&gt;Champagne, Apples, Grapes &amp;amp; Grapefruit Juice $6.50&lt;/p&gt;</def>
+        <name>Mid day</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864426120.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="6">
+        <def>&lt;br&gt;Dear Guest&lt;br&gt;Welcome to ELCOM Luxury hotel!&lt;br&gt;Whether you are visiting for business or pleasure we invite you to enjoy all our hotel and great city have to offer.&lt;br&gt;As part of the $1 billion Metropolitan project, ELCOM Luxury has been created to surround you with all that stirs your senses, where innovation and technology enable you. And, inspore individual expression, in the creation of luxury that personally avolves in an intimate, private, exclusive enviroment.While visiting the hotel we hope that you will take advantage of our wide variety of amenities. If you need assistance, our starff will provide you with the finest in personal service. At any time please contact one of our At Your Service staff by dialing 0.&lt;br&gt;Thank you for choosing the ELCOM luxury and enjoy HCM.&lt;br&gt;Sincerely Your,&lt;br&gt;Florencia Tabeni&lt;br&gt;General Manager</def>
+        <name>Introduction</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305687314990.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/bg/1305687314990.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1305687314990.png</urlIcon>
+    </item>
+</ehotel>

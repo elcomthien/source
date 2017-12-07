@@ -1,0 +1,670 @@
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+178   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+179   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist false
+180   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+77    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+107   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+108   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+72    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+95    INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+96    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+81    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+98    INFO  [main] dao.ePMSDao - [getMainMenu with params:smartcard=2001, homeServiceId=1] : returnValue(size=6)
+99    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+2     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getSubMenu(?,?,?)}
+112   INFO  [main] dao.ePMSDao - [getSubMenu with params: mainMenuId=1,smartcard=2001] : returnValue(size=5)
+113   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+72    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+99    INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=5] : returnValue(size=7)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+86    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+118   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=5] : returnValue(size=7)
+123   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\Hotel is exist false
+123   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\Hotel
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+81    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+107   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=5] : returnValue(size=7)
+111   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\Hotel is exist false
+111   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\Hotel
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+79    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+107   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=5] : returnValue(size=7)
+110   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel is exist false
+111   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+15    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+89    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+128   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=5] : returnValue(size=7)
+134   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+72    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+94    INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=1] : returnValue(size=1)
+98    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+77    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+100   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=1] : returnValue(size=1)
+104   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+73    INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+95    INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=1] : returnValue(size=1)
+98    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\hotel is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+80    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfService(?,?,?,?,?)}
+131   INFO  [main] dao.ePMSDao - [getItemOfService with params: smartcard=2001,subMenuId=1] : returnValue(size=0)
+137   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining is exist false
+137   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+73    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+93    INFO  [main] dao.ePMSDao - [getMainMenu with params:smartcard=2001, homeServiceId=7] : returnValue(size=2)
+94    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+93    INFO  [main] dao.ePMSDao - [getMainMenu with params:smartcard=2001, homeServiceId=7] : returnValue(size=2)
+94    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+72    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+91    INFO  [main] dao.ePMSDao - [getMainMenu with params:smartcard=2001, homeServiceId=7] : returnValue(size=2)
+92    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+73    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfService(?,?,?,?,?)}
+94    INFO  [main] dao.ePMSDao - [getItemOfService with params: smartcard=2001,subMenuId=5] : returnValue(size=4)
+97    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfService(?,?,?,?,?)}
+101   INFO  [main] dao.ePMSDao - [getItemOfService with params: smartcard=2001,subMenuId=5] : returnValue(size=4)
+105   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getServiceItemInfo(?,?)}
+202   ERROR [main] dao.ePMSDao - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETSERVICEITEMINFO'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+203   INFO  [main] dao.ePMSDao - getServiceItemInfo with params:[itemId=4] 
+208   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+85    INFO  [main] dao.eBaseDao - {call PMSAPP.getServiceItemInfo(?,?,?)}
+135   INFO  [main] dao.ePMSDao - getServiceItemInfo with params:[itemId=4] 
+139   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\dining is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+39    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1093  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDao.getExchangeRates(ePMSDao.java:1012)
+	at elcom.utils.TestDao.getExchangeRates(TestDao.java:101)
+	at elcom.utils.TestDao.main(TestDao.java:108)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+1226  INFO  [main] dao.eBaseDao - {call PMSAPP.getExchangeRate(?,?,?)}
+1227  ERROR [main] dao.ePMSDao - 
+1275  INFO  [main] dao.ePMSDao - getExchangeRates with params:[fromRow=-1noRows=-1]  : returnValue(size=0)
+1286  INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist false
+1286  INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+92    INFO  [main] dao.eBaseDao - {call PMSAPP.getExchangeRate(?,?,?)}
+196   INFO  [main] dao.ePMSDao - getExchangeRates with params:[fromRow=-1noRows=-1]  : returnValue(size=18)
+200   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSAPP.getAdverImages(?,?,?)}
+147   INFO  [main] dao.ePMSDao - getAdverImages with params:serviceType=MUSIC] : returnValue(size=6)
+153   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\advertise is exist false
+153   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\advertise
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+106   INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=1] : returnValue(size=0)
+110   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist false
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getMainMenu(?,?,?)}
+96    INFO  [main] dao.ePMSDao - [getMainMenu with params:smartcard=2001, homeServiceId=8] : returnValue(size=5)
+97    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+79    INFO  [main] dao.eBaseDao - {call PMSAPP.getSubMenu(?,?,?)}
+107   INFO  [main] dao.ePMSDao - [getSubMenu with params: mainMenuId=10,smartcard=2001] : returnValue(size=4)
+108   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home is exist false
+108   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\home
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+93    INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=26] : returnValue(size=0)
+97    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist false
+97    INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+95    INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=10] : returnValue(size=4)
+99    INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+78    INFO  [main] dao.eBaseDao - {call PMSAPP.getWeathersInWeek(?,?,?)}
+96    INFO  [main] dao.ePMSDao - [getWeathersInWeek with params countryId=2] : returnValue(size=4)
+100   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\weather is exist false
+100   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\weather
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+39    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1523  INFO  [main] dao.eBaseDao - {call PMSAPP.getMessages(?,?)}
+2290  INFO  [main] dao.ePMSDao - getMessages with params:[smartcard=2001]  : returnValue(size=1)
+2333  INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\message is exist false
+2334  INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\message
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+109   INFO  [main] dao.eBaseDao - {call PMSAPP.getFolioMessages(?,?,?,?)}
+345   ERROR [main] dao.ePMSDao - ORA-00904: "MESSAGE_CONTENT": invalid identifier
+ORA-06512: at "EHOTEL2.PMSAPP", line 1585
+ORA-06512: at line 1
+
+348   INFO  [main] dao.ePMSDao - getFolioMessages with params:[smartcard=2001,fromRow=-1,noRows=-1]  : returnValue(size=0)
+355   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\message is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+114   INFO  [main] dao.eBaseDao - {call PMSAPP.getFolioMessages(?,?,?,?)}
+154   ERROR [main] dao.ePMSDao - ORA-00942: table or view does not exist
+ORA-06512: at "EHOTEL2.PMSAPP", line 1589
+ORA-06512: at line 1
+
+155   INFO  [main] dao.ePMSDao - getFolioMessages with params:[smartcard=2001,fromRow=-1,noRows=-1]  : returnValue(size=0)
+160   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\message is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+108   INFO  [main] dao.eBaseDao - {call PMSAPP.getItemByCheckNo(?,?,?)}
+343   INFO  [main] dao.DataUtils - startDate=9/04/2012
+344   INFO  [main] dao.ePMSDao - [getItemByCheckNo with params:smartcard=2001, checkNo=70000543] : returnValue(size=1)
+345   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\bill is exist false
+346   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\pms\bill
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+18    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+2181  INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+2969  INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+2969  INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+145   INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+355   INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+355   INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+129   INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+218   INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+219   INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+85    INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+182   INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+182   INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+17    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+3847  INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+4778  INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+4778  INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+116   INFO  [main] dao.eBaseDao - {call PMSAPP.countTotalBilling(?,?)}
+378   INFO  [main] dao.ePMSDao - ORA-01722: invalid number
+ORA-06512: at "EHOTEL2.PMSAPP", line 1169
+ORA-06512: at line 1
+
+378   INFO  [main] dao.ePMSDao - [countBillTotal with params:smartcard=2001] : returnValue(size=)]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+179   INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1573  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDaoEx.getItemOfAttractions(ePMSDaoEx.java:119)
+	at elcom.utils.TestDao.getItemOfAttractions(TestDao.java:122)
+	at elcom.utils.TestDao.main(TestDao.java:139)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+1588  INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+1634  ERROR [main] dao.ePMSDaoEx - 
+1637  INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=10] : returnValue(size=0)
+1717  INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+87    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+199   INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=10] : returnValue(size=4)
+203   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\pms\attraction is exist true
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+17    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+345   INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+717   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=6] : returnValue(size=12)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+22    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+125   INFO  [main] dao.eBaseDao - {call PMSAPP.getOultetImage(?,?,?,?)}
+244   INFO  [main] dao.ePMSDao - [getOutletImage with params:smartcard=2001, subMenuId=6] : returnValue(size=12)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+70    INFO  [main] dao.eBaseDao - {call PMSAPP.getItemOfAttractions(?,?,?)}
+106   INFO  [main] dao.ePMSDaoEx - getItemOfAttractions with params:smartcard=2001,menuId=10] : returnValue(size=4)
+110   INFO  [main] xml.eBaseXML - Path folder=D:\workspace\ehotel2.0\ePMS2.0\elcom\resources\xml\attraction is exist false
+110   INFO  [main] xml.eBaseXML - create folder=D:\workspace\ehotel2.0\ePMS2.0\elcom\resources\xml\attraction
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+19    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+490   INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+559   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+93    INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+95    INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+76    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+112   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+108   INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+147   ERROR [main] dao.ePMSDao - ORA-01403: no data found
+ORA-06512: at "EHOTEL2.PMSAPP", line 327
+ORA-06512: at line 1
+
+148   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1262  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDao.getHomeService(ePMSDao.java:242)
+	at elcom.utils.TestDao.getHomeService(TestDao.java:73)
+	at elcom.utils.TestDao.main(TestDao.java:145)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+1332  INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+1333  ERROR [main] dao.ePMSDao - 
+1336  INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+72    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+574   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+2     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+70    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+103   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+36    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+730   INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+1025  INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+10    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+130   INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+742   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+32    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1716  INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+1864  INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+35    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1203  INFO  [main] dao.eBaseDao - {call PMSAPP.getGames(?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+84    INFO  [main] dao.eBaseDao - {call PMSAPP.getGames(?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+88    INFO  [main] dao.eBaseDao - {call PMSAPP.getGames(?,?)}
+102   INFO  [main] dao.ePMSDaoEx - getLocations with params:smartcard=2001] : returnValue(size=6)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+89    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+122   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=20)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+45    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+3660  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDao.getHomeService(ePMSDao.java:242)
+	at elcom.utils.TestDao.getHomeService(TestDao.java:74)
+	at elcom.utils.TestDao.main(TestDao.java:152)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+3673  INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+3673  ERROR [main] dao.ePMSDao - 
+3675  INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+87    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+81    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+122   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+84    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+115   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+77    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+110   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+81    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+118   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+79    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+110   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+86    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+116   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+79    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+148   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+83    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+117   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+20    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1062  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDao.getPromotions(ePMSDao.java:206)
+	at elcom.utils.TestDao.testPromotions(TestDao.java:36)
+	at elcom.utils.TestDao.main(TestDao.java:152)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+1082  INFO  [main] dao.eBaseDao - {call PMSAPP. getPromotions(?,?)}
+1082  ERROR [main] dao.ePMSDao - 
+1119  INFO  [main] dao.ePMSDao - getPromotions with params[smartcard=2003] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+100   INFO  [main] dao.eBaseDao - {call PMSAPP. getPromotions(?,?)}
+202   INFO  [main] dao.ePMSDao - getPromotions with params[smartcard=2003] : returnValue(size=4)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+78    INFO  [main] dao.eBaseDao - {call PMSAPP. getPromotions(?,?)}
+105   INFO  [main] dao.ePMSDao - getPromotions with params[smartcard=2003] : returnValue(size=4)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1105  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:601)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:198)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:184)
+	at sun.rmi.server.UnicastRef.newCall(UnicastRef.java:322)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Naming.java:84)
+	at elcom.connect.DBIManager.lookup(DBIManager.java:33)
+	at elcom.connect.DBIManager.mkConnectDBI(DBIManager.java:26)
+	at elcom.connect.DBIManager.getConn(DBIManager.java:21)
+	at elcom.connect.PmsConnection.getDBICore(PmsConnection.java:46)
+	at elcom.dao.eBaseDao.initSystem(eBaseDao.java:44)
+	at elcom.dao.eBaseDao.executeSubPro(eBaseDao.java:92)
+	at elcom.dao.ePMSDaoEx.getGames(ePMSDaoEx.java:732)
+	at elcom.utils.TestDao.getGames(TestDao.java:147)
+	at elcom.utils.TestDao.main(TestDao.java:163)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:351)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:213)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:200)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at java.net.Socket.connect(Socket.java:478)
+	at java.net.Socket.<init>(Socket.java:375)
+	at java.net.Socket.<init>(Socket.java:189)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(RMIDirectSocketFactory.java:22)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(RMIMasterSocketFactory.java:128)
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:595)
+	... 14 more
+1108  INFO  [main] dao.eBaseDao - {call PMSAPP.getGames(?,?)}
+1109  ERROR [main] dao.ePMSDaoEx - 
+1112  INFO  [main] dao.ePMSDaoEx - getLocations with params:smartcard=2001] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+77    INFO  [main] dao.eBaseDao - {call PMSAPP.getGames(?,?)}
+185   INFO  [main] dao.ePMSDaoEx - getLocations with params:smartcard=2001] : returnValue(size=6)
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+33    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+559   INFO  [main] dao.eBaseDao - {call eVOD.getVersions(?)}
+883   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+74    INFO  [main] dao.eBaseDao - {call PMSApp.getVersions(?)}
+125   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+2     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+73    INFO  [main] dao.eBaseDao - {call PMSApp.getVersions(?)}
+119   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSApp.getVersions(?)}
+108   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+75    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+104   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+15    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+87    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+112   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+17    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+86    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+115   ERROR [main] dao.ePMSDaoEx - ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'GETVERSIONS'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+78    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+94    INFO  [main] dao.ePMSDaoEx - [--> getVersions  with params: returnValue(size =3]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+70    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+89    INFO  [main] dao.ePMSDaoEx - [--> getVersions  with params: returnValue(size =3]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+73    INFO  [main] dao.eBaseDao - {call PMSAPP.getVersions(?)}
+85    INFO  [main] dao.ePMSDaoEx - [--> getVersions  with params: returnValue(size =3]
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+15    INFO  [main] connect.DBIManager - url =rmi://localhost:11002/DBInterface
+95    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+0     INFO  [main] connect.PathDef - D:\workspace\ehotel2.0\ePMS2.0/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11002/DBInterface
+82    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
+206   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)

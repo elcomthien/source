@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="0.3" code="AAVMC">
+<item code="E00"   name="syn_home"  version="0.1" 	path="elcom/resources/xml/home.zip" ></item>
+</ehotel>

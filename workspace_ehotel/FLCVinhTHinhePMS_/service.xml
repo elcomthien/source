@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="24">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>INFO</name>
+        <name_vn>THONG TIN</name_vn>
+        <service_code>E01</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1397786753924.png</url>
+        <urlLink>elcom.ehotel.info.INFO</urlLink>
+    </item>
+    <item id="6">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>HOUSEKEEPING</name>
+        <name_vn>DỊCH VỤ PHÒNG</name_vn>
+        <service_code>E06</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939130550.png</url>
+        <urlLink>elcom.ehotel.hk.HOUSEKEEPING</urlLink>
+    </item>
+    <item id="7">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk</def>
+        <name>DINING</name>
+        <name_vn>ẤM THỰC</name_vn>
+        <service_code>E07</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939157111.png</url>
+        <urlLink>elcom.ehotel.service.SERVICE</urlLink>
+    </item>
+</ehotel>

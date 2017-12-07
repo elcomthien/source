@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-37">
+        <def>&lt;p&gt;&lt;strong&gt;Khẩu vị ngọt&lt;br /&gt;&lt;/strong&gt;Bánh cam và dâu  $3.50&lt;br /&gt;Bánh Cà rốt $4.00/ miếng&lt;br /&gt;Sô cô la không bột $4.50/ miếng&lt;br /&gt;Sô cô la terrine $4.50/ miếng&lt;br /&gt; &lt;br /&gt;&lt;strong&gt;Salads &amp;amp; Sandwiches&lt;br /&gt;&lt;/strong&gt;Gà nướng Caesar Salad $6.00&lt;br /&gt;Reuben Panini Thổ Nhĩ Kỳ  $7.95&lt;br /&gt;Bò nướng, Pho mát hun khói &amp;amp; Caramelized Onion Panini $7.00&lt;br /&gt;Thịt bò Chipotle và Manchego Empanada $7.00&lt;br /&gt;Đậu đen  &amp;amp; Bắp với Pepperjack Empanada $6.50&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;Nước uống &lt;br /&gt;&lt;/strong&gt;Sangria đỏ $6.50&lt;br /&gt;Vang đỏ, Crème de Cassis, Dâu rừng &amp;amp; siro nhiều vị $6.50&lt;/p&gt;</def>
+        <name>Trưa chiều</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864426120.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+</ehotel>

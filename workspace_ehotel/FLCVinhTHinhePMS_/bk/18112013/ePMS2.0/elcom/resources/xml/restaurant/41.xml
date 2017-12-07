@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-34">
+        <def>&lt;p&gt;Small plates&lt;br /&gt;Peekytoe crab fritter | red and golden beets | creole remoulade | vanilla oil $14&lt;br /&gt;Spicy shrimp bruschetta $10&lt;br /&gt;Crispy calamari | grilled lemon tzatziki sauce $9&lt;br /&gt;Trio of spreads | hummus | artichoke | eggplant $6&lt;br /&gt;Grilled asparagus | walnut crama | parmesan | arugula $9&lt;/p&gt;&lt;p&gt;Soups and Salads&lt;br /&gt;Soup du jour $7&lt;br /&gt;Chicken tortilla soup $7&lt;br /&gt;Endive salad | blue cheese | truffle vinaigrette $8&lt;br /&gt;The wedge | red onion | gorgonzola | italian buttermilk dressing $8&lt;br /&gt;Heirloom tomato &amp;amp; buffalo mozzarella | fresh basil | summer melon | olive oil $9&lt;/p&gt;&lt;p&gt;Meat and poultry&lt;br /&gt;Grilled skirt steak | herbed french fries | chimichurri sauce $30&lt;br /&gt;Peruvian style rotisserie chicken | crispy plantains | pio sauce $26&lt;br /&gt;Grilled pork chop | white polenta | gorogonzola | pio bordelaise $28&lt;br /&gt;Rbi black anaus buraer | barmesan oarlic fries $15&lt;/p&gt;</def>
+        <name>Dinner Menu</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864145480.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/bg/Laundry.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/Laundry.png</urlIcon>
+    </item>
+</ehotel>

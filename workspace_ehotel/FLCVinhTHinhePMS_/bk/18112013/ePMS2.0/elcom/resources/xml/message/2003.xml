@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="903">
+        <numNo>12345</numNo>
+        <content_bottom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[  ]]&gt;</content_bottom>
+        <content_top xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;]]&gt;</content_top>
+        <room>1</room>
+        <isConfirm>0</isConfirm>
+        <isRead>1</isRead>
+        <sender>Bo Nhi</sender>
+        <subject>Bo Nhi</subject>
+        <type>NORMAL</type>
+    </item>
+</ehotel>

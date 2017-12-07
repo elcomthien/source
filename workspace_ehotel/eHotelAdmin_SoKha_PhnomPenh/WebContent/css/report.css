@@ -1,0 +1,60 @@
+.div_time {
+	border: 1px solid red;
+}
+
+.buttom_calenda {
+	background: transparent url("../images/calendar.png") no-repeat center
+		bottom;
+	cursor: pointer;
+}
+
+.bt_charst {
+	margin-left: 70px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: transparent url("../icon/chart.png") no-repeat center bottom;
+	cursor: pointer;
+}
+
+.bt_excel {
+	margin-left: 50px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: transparent url("../icon/excel.png") no-repeat center bottom;
+	cursor: pointer;
+}
+
+.bt_print {
+	margin-left: 10px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: transparent url("../icon/print_icon.png") no-repeat center bottom;
+	cursor: pointer;
+}
+
+.bt_close {
+	height: 32px;
+	width: 32px;
+	float: right;
+	cursor: pointer;
+}
+
+.div_formchar {
+	width: 810px;
+	height: 500;
+	border: 2px solid #A7800A;
+	position: relative;
+	z-index: 1002;
+	background-color: white;
+	top: 500;
+	left: 500px;
+}
+
+.ifarme_charts {
+	width: 800px;
+	height: 450px;
+	float: left;
+}

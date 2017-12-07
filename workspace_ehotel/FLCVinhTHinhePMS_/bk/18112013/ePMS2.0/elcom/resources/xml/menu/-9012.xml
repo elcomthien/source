@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <name>Breakfast All Day</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864032975.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864037398.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864037398.png</urlIcon>
+    </item>
+    <item id="3">
+        <name>All Day Dining</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363863332245.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363863335462.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363863335462.png</urlIcon>
+    </item>
+    <item id="4">
+        <name>Alcoholic Beverages</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864320138.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864325126.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864325126.png</urlIcon>
+    </item>
+</ehotel>

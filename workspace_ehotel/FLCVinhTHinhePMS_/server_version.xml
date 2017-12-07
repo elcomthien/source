@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item code="E00" name="Home" version="1234" path="resources/xml/home/home.zip"/>
+    <item code="E00" name="Home" version="1234" path="resources/xml/home/home.zip"/>
+    <item code="E00" name="Home" version="1234" path="resources/xml/home/home.zip"/>
+    <item code="E00" name="Home" version="1234" path="resources/xml/home/home.zip"/>
+    <item code="E01" name="Hotel" version="1" path="resources/xml/hotel/hotel.zip"/>
+    <item code="E01" name="Hotel" version="1" path="resources/xml/hotel/hotel.zip"/>
+    <item code="E01" name="Hotel" version="1" path="resources/xml/hotel/hotel.zip"/>
+    <item code="E01" name="Hotel" version="1" path="resources/xml/hotel/hotel.zip"/>
+    <item code="E09" name="Promotion" version="1254" path="resources/xml/promotion/promotion.zip"/>
+    <item code="E09" name="Promotion" version="1254" path="resources/xml/promotion/promotion.zip"/>
+    <item code="E09" name="Promotion" version="1254" path="resources/xml/promotion/promotion.zip"/>
+    <item code="E09" name="Promotion" version="1254" path="resources/xml/promotion/promotion.zip"/>
+</ehotel>

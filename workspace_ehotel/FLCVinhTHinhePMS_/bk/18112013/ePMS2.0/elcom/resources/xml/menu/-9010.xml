@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="43">
+        <name>Airport shuttle</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AirportShuttle.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AirportShuttle_bg.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AirportShuttle.png</urlIcon>
+    </item>
+    <item id="44">
+        <name>National car</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/NationalCar.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/NationalCar_bg.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/NationalCar.png</urlIcon>
+    </item>
+    <item id="45">
+        <name>Taxi</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/Taxi.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/Taxi_bg.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/Taxi.png</urlIcon>
+    </item>
+</ehotel>

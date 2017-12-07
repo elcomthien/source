@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="26" id="27">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Classical Cafe</name>
+        <status>0</status>
+        <x>10.771219167632028</x>
+        <y>106.69288588190079</y>
+    </item>
+    <item menuid="26" id="27">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Classical Cafe</name>
+        <status>0</status>
+        <x>10.771219167632028</x>
+        <y>106.69288588190079</y>
+    </item>
+    <item menuid="26" id="28">
+        <address>381 Nguyen Trai, Phuong 07, Quan 5, Thanh pho Ho Chi Minh</address>
+        <distance>12km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Bo Gia</name>
+        <status>0</status>
+        <x>10.750278</x>
+        <y>106.670278</y>
+    </item>
+    <item menuid="26" id="28">
+        <address>381 Nguyen Trai, Phuong 07, Quan 5, Thanh pho Ho Chi Minh</address>
+        <distance>12km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Bo Gia</name>
+        <status>0</status>
+        <x>10.750278</x>
+        <y>106.670278</y>
+    </item>
+    <item menuid="26" id="29">
+        <address>30E1 Chu Van An, Phuong 26, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>5km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Goc Pho</name>
+        <status>0</status>
+        <x>10.800833</x>
+        <y>106.708611</y>
+    </item>
+    <item menuid="26" id="29">
+        <address>30E1 Chu Van An, Phuong 26, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>5km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Goc Pho</name>
+        <status>0</status>
+        <x>10.800833</x>
+        <y>106.708611</y>
+    </item>
+    <item menuid="26" id="30">
+        <address>454 Le Quang Dinh, Phuong 11, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>2.4km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem New Day</name>
+        <status>0</status>
+        <x>10.801111</x>
+        <y>106.690278</y>
+    </item>
+    <item menuid="26" id="30">
+        <address>454 Le Quang Dinh, Phuong 11, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>2.4km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem New Day</name>
+        <status>0</status>
+        <x>10.801111</x>
+        <y>106.690278</y>
+    </item>
+    <item menuid="26" id="31">
+        <address>148Bis Le Thi Rieng, Phuong Ben Thanh, Quan 1, Thanh pho Ho Chi Minh</address>
+        <distance>22km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Pink2</name>
+        <status>0</status>
+        <x>10.767222</x>
+        <y>106.689167</y>
+    </item>
+    <item menuid="26" id="31">
+        <address>148Bis Le Thi Rieng, Phuong Ben Thanh, Quan 1, Thanh pho Ho Chi Minh</address>
+        <distance>22km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Pink2</name>
+        <status>0</status>
+        <x>10.767222</x>
+        <y>106.689167</y>
+    </item>
+    <item menuid="26" id="32">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="32">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="37">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>4.5km</distance>
+        <langId>1</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="37">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>4.5km</distance>
+        <langId>2</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="38">
+        <address>63 Duong CN1, Phuong Son Ky, Quan Tan Phu, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Cafe Big Ben</name>
+        <status>0</status>
+        <x>10.81790555555556</x>
+        <y>106.61437222222222</y>
+    </item>
+    <item menuid="26" id="38">
+        <address>63 Duong CN1, Phuong Son Ky, Quan Tan Phu, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Cafe Big Ben</name>
+        <status>0</status>
+        <x>10.81790555555556</x>
+        <y>106.61437222222222</y>
+    </item>
+    <item menuid="26" id="62">
+        <distance>6.8km</distance>
+        <langId>1</langId>
+        <name>CafeCamry</name>
+        <status>0</status>
+        <x>10.830271131266139</x>
+        <y>106.7263412475586</y>
+    </item>
+    <item menuid="26" id="62">
+        <distance>6.8km</distance>
+        <langId>2</langId>
+        <name>CafeCamry</name>
+        <status>0</status>
+        <x>10.830271131266139</x>
+        <y>106.7263412475586</y>
+    </item>
+</ehotel>

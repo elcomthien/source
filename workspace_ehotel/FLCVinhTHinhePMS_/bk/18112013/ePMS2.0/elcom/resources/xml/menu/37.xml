@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-999">
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+    </item>
+    <item id="39">
+        <name>Breakfast menu</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/Breakfastmenu.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864068757.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864068757.png</urlIcon>
+    </item>
+    <item id="40">
+        <name>Lunch menu</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864108540.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864113817.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864113817.png</urlIcon>
+    </item>
+    <item id="41">
+        <name>Dinner menu</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/Dinnermenu.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864129378.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864129378.png</urlIcon>
+    </item>
+    <item id="42">
+        <name>Coffee &amp; Bar</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/Coffeeandbar.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864178279.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864178279.png</urlIcon>
+    </item>
+</ehotel>

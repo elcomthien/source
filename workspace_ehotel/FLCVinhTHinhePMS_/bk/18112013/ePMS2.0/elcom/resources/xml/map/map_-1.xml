@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="-1" id="1">
+        <address>Ho Tram, Phuoc Thuan Ward, Xuyen Moc District, Ba Ria Vung Tau Province</address>
+        <langId>1</langId>
+        <name>Carmelina Beach Resort</name>
+        <status>1</status>
+        <x>10.474167</x>
+        <y>107.441111</y>
+    </item>
+    <item menuid="-1" id="1">
+        <address>Ho Tram, Phuoc Thuan Ward, Xuyen Moc District, Ba Ria Vung Tau Province</address>
+        <langId>2</langId>
+        <name>Carmelina Beach Resort</name>
+        <status>1</status>
+        <x>10.474167</x>
+        <y>107.441111</y>
+    </item>
+    <item menuid="25" id="23">
+        <address>131/6M Nguyen Thai Son, 3 Ward, District Go Vap, HCMC.</address>
+        <distance>2km</distance>
+        <langId>1</langId>
+        <name>Cay Trung Ca</name>
+        <status>0</status>
+        <x>10.834099235590479</x>
+        <y>106.70497757775502</y>
+    </item>
+    <item menuid="25" id="23">
+        <address>131/6M Nguyen Thai Son, 3 Ward, District Go Vap, HCMC.</address>
+        <distance>2km</distance>
+        <langId>2</langId>
+        <name>Cay Trung Ca</name>
+        <status>0</status>
+        <x>10.834099235590479</x>
+        <y>106.70497757775502</y>
+    </item>
+    <item menuid="25" id="25">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>3.4km</distance>
+        <langId>1</langId>
+        <name>KFC</name>
+        <status>0</status>
+        <x>10.770223154182078</x>
+        <y>106.69382197284699</y>
+    </item>
+    <item menuid="25" id="25">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>3.4km</distance>
+        <langId>2</langId>
+        <name>KFC</name>
+        <status>0</status>
+        <x>10.770223154182078</x>
+        <y>106.69382197284699</y>
+    </item>
+    <item menuid="27" id="26">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <def>null</def>
+        <distance>12km</distance>
+        <langId>1</langId>
+        <name>Le Lai</name>
+        <status>1</status>
+        <x>10.771382534602475</x>
+        <y>106.6941304268837</y>
+    </item>
+    <item menuid="27" id="26">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <def>null</def>
+        <distance>12km</distance>
+        <langId>2</langId>
+        <name>Le Lai</name>
+        <status>1</status>
+        <x>10.771382534602475</x>
+        <y>106.6941304268837</y>
+    </item>
+    <item menuid="26" id="27">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Classical Cafe</name>
+        <status>0</status>
+        <x>10.771219167632028</x>
+        <y>106.69288588190079</y>
+    </item>
+    <item menuid="26" id="27">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Classical Cafe</name>
+        <status>0</status>
+        <x>10.771219167632028</x>
+        <y>106.69288588190079</y>
+    </item>
+    <item menuid="26" id="28">
+        <address>381 Nguyen Trai, Phuong 07, Quan 5, Thanh pho Ho Chi Minh</address>
+        <distance>12km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Bo Gia</name>
+        <status>0</status>
+        <x>10.750278</x>
+        <y>106.670278</y>
+    </item>
+    <item menuid="26" id="28">
+        <address>381 Nguyen Trai, Phuong 07, Quan 5, Thanh pho Ho Chi Minh</address>
+        <distance>12km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Bo Gia</name>
+        <status>0</status>
+        <x>10.750278</x>
+        <y>106.670278</y>
+    </item>
+    <item menuid="26" id="29">
+        <address>30E1 Chu Van An, Phuong 26, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>5km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Goc Pho</name>
+        <status>0</status>
+        <x>10.800833</x>
+        <y>106.708611</y>
+    </item>
+    <item menuid="26" id="29">
+        <address>30E1 Chu Van An, Phuong 26, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>5km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Goc Pho</name>
+        <status>0</status>
+        <x>10.800833</x>
+        <y>106.708611</y>
+    </item>
+    <item menuid="26" id="30">
+        <address>454 Le Quang Dinh, Phuong 11, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>2.4km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem New Day</name>
+        <status>0</status>
+        <x>10.801111</x>
+        <y>106.690278</y>
+    </item>
+    <item menuid="26" id="30">
+        <address>454 Le Quang Dinh, Phuong 11, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>2.4km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem New Day</name>
+        <status>0</status>
+        <x>10.801111</x>
+        <y>106.690278</y>
+    </item>
+    <item menuid="26" id="31">
+        <address>148Bis Le Thi Rieng, Phuong Ben Thanh, Quan 1, Thanh pho Ho Chi Minh</address>
+        <distance>22km</distance>
+        <langId>1</langId>
+        <name>Cafe - Kem Pink2</name>
+        <status>0</status>
+        <x>10.767222</x>
+        <y>106.689167</y>
+    </item>
+    <item menuid="26" id="31">
+        <address>148Bis Le Thi Rieng, Phuong Ben Thanh, Quan 1, Thanh pho Ho Chi Minh</address>
+        <distance>22km</distance>
+        <langId>2</langId>
+        <name>Cafe - Kem Pink2</name>
+        <status>0</status>
+        <x>10.767222</x>
+        <y>106.689167</y>
+    </item>
+    <item menuid="26" id="32">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="32">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="25" id="33">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>34km</distance>
+        <langId>1</langId>
+        <name>Curry Shika</name>
+        <status>0</status>
+        <x>10.769762035732022</x>
+        <y>106.69215095663071</y>
+    </item>
+    <item menuid="25" id="33">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>34km</distance>
+        <langId>2</langId>
+        <name>Curry Shika</name>
+        <status>0</status>
+        <x>10.769762035732022</x>
+        <y>106.69215095663071</y>
+    </item>
+    <item menuid="25" id="34">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>25km</distance>
+        <langId>1</langId>
+        <name>SamYan SeaFeed</name>
+        <status>0</status>
+        <x>10.769472189486764</x>
+        <y>106.69214022779465</y>
+    </item>
+    <item menuid="25" id="34">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>25km</distance>
+        <langId>2</langId>
+        <name>SamYan SeaFeed</name>
+        <status>0</status>
+        <x>10.769472189486764</x>
+        <y>106.69214022779465</y>
+    </item>
+    <item menuid="25" id="35">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>15km</distance>
+        <langId>1</langId>
+        <name>ShangHai Food</name>
+        <status>0</status>
+        <x>10.77084236927988</x>
+        <y>106.69345987462998</y>
+    </item>
+    <item menuid="25" id="35">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>15km</distance>
+        <langId>2</langId>
+        <name>ShangHai Food</name>
+        <status>0</status>
+        <x>10.77084236927988</x>
+        <y>106.69345987462998</y>
+    </item>
+    <item menuid="25" id="36">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Zen Plaza</name>
+        <status>0</status>
+        <x>10.770731701144584</x>
+        <y>106.69208658361435</y>
+    </item>
+    <item menuid="25" id="36">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Zen Plaza</name>
+        <status>0</status>
+        <x>10.770731701144584</x>
+        <y>106.69208658361435</y>
+    </item>
+    <item menuid="26" id="37">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>4.5km</distance>
+        <langId>1</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="37">
+        <address>161 Dien Biên Phu, Phuong 15, Quan Binh Thanh, Thanh pho Ho Chi Minh</address>
+        <distance>4.5km</distance>
+        <langId>2</langId>
+        <name>Cafe Boulevard</name>
+        <status>0</status>
+        <x>10.81138888888889</x>
+        <y>106.68900555555556</y>
+    </item>
+    <item menuid="26" id="38">
+        <address>63 Duong CN1, Phuong Son Ky, Quan Tan Phu, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Cafe Big Ben</name>
+        <status>0</status>
+        <x>10.81790555555556</x>
+        <y>106.61437222222222</y>
+    </item>
+    <item menuid="26" id="38">
+        <address>63 Duong CN1, Phuong Son Ky, Quan Tan Phu, Thanh pho Ho Chi Minh</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Cafe Big Ben</name>
+        <status>0</status>
+        <x>10.81790555555556</x>
+        <y>106.61437222222222</y>
+    </item>
+    <item menuid="26" id="62">
+        <distance>6.8km</distance>
+        <langId>1</langId>
+        <name>CafeCamry</name>
+        <status>0</status>
+        <x>10.830271131266139</x>
+        <y>106.7263412475586</y>
+    </item>
+    <item menuid="26" id="62">
+        <distance>6.8km</distance>
+        <langId>2</langId>
+        <name>CafeCamry</name>
+        <status>0</status>
+        <x>10.830271131266139</x>
+        <y>106.7263412475586</y>
+    </item>
+</ehotel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-35">
+        <def>&lt;p&gt;Café Granada đã chính thức khai trương. Tại đây, bạn có thể thưởng thức bữa sáng, trưa hoặc mua mang về.  Các món bánh sanwitch tươi ngon, salad , Grab và-Go Sandwiches và Trung tâm kinh doanh với internet tốc độ cao có sẵn.&lt;/p&gt;</def>
+        <name>OverCofee</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864439419.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/bg/Mainternace.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/Mainternace.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item room_code="313" id="2">
+        <name>CARMELINA BEACH RESORT :) </name>
+        <arrival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[08/10/2013 09:21:24]]&gt;</arrival>
+        <depature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[08/10/2013 09:21:24]]&gt;</depature>
+        <guest_title>ABC</guest_title>
+        <langCode>EN</langCode>
+        <phone>123</phone>
+    </item>
+</ehotel>

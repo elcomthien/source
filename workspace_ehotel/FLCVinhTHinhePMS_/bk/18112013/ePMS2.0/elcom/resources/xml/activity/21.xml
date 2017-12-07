@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item ICode="-1">
+        <def>&lt;p&gt;&lt;strong&gt;- 9 am&lt;/strong&gt;: Mo’olelo Tour – Main Lobby. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 11 am&lt;/strong&gt;: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. $5.00 per person.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 4 pm&lt;/strong&gt;: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 5 pm&lt;/strong&gt;: Pu (Conch) Blowing Lessons  Ocean View Terrace. Complimentary.&lt;/p&gt;</def>
+        <name>Mondays</name>
+    </item>
+    <item ICode="-2">
+        <def>&lt;p&gt;&lt;strong&gt;- 9 am&lt;/strong&gt;: Kai ola Tour (Marine Life) – Bottom of the Grand Staircase. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 11 am&lt;/strong&gt;: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. $5.00 per person.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 5 pm&lt;/strong&gt;: Pu (Conch) Blowing Lessons  Ocean View Terrace. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 8-9 pm&lt;/strong&gt;: Star Gazing – Kohala Tennis Count #1 – Star Gaze Hawaii offers a guided tour of the clear Hawaiian night sky. Cost: Adults $30, Childrent ages 5-11 $15, Childrent under 5 – free (All minors must be accompanied by a paid adult)&lt;/p&gt;</def>
+        <name>Tuesdays</name>
+    </item>
+    <item ICode="-3">
+        <def>&lt;p&gt;&lt;strong&gt;- 9 am&lt;/strong&gt;: La’au Tour – Top of Kamehameha Court. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 4 pm&lt;/strong&gt;: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 5 pm&lt;/strong&gt;: Pu (Conch) Blowing Lessons  Ocean View Terrace. Complimentary.&lt;/p&gt;</def>
+        <name>Wednesdays</name>
+    </item>
+    <item ICode="-4">
+        <def>&lt;p&gt;- 8.30 am: Stand Up Paddle Board Introdution – Saltwater Lagoon – Get in on the hottest new water activity! $25 per person.&lt;/p&gt;&lt;p&gt;- 9 am: Kai ola Tour (Marine Life) – Bottom of the Grand Staircase. Complimentary.&lt;/p&gt;&lt;p&gt;- 10 am: Snorkeling Introduction – Kona Pool – Snorkling is easy when you learn from our experienced Ocean Sports staff in the sefety of shallow water. Bring your swimsuit, sunsreen and a smile! Complimentary.&lt;/p&gt;&lt;p&gt;- 11 am: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. $5.00 per person.&lt;/p&gt;</def>
+        <name>Thurdays</name>
+    </item>
+    <item ICode="-5">
+        <def>&lt;p&gt;&lt;strong&gt;- 9 am&lt;/strong&gt;: Mo’olelo Tour – Main Lobby. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 11 am&lt;/strong&gt;: Water Aerobics – Kona Pool – Get wet, have fun and get fit! Join our certified instructors for a great water workout set to upbeat music. $5.00 per person.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 5 pm&lt;/strong&gt;: Pu (Conch) Blowing Lessons  Ocean View Terrace. Complimentary&lt;/p&gt;</def>
+        <name>Fridays</name>
+    </item>
+    <item ICode="-6">
+        <def>&lt;p&gt;&lt;strong&gt;- 8.30 am&lt;/strong&gt;: Stand Up Paddle Board Introdution – Saltwater Lagoon – Get in on the hottest new water activity! $25 per person.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 9 am&lt;/strong&gt;: La’au Tour – Top of Kamehameha Court. Complimentary.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;- 5 pm&lt;/strong&gt;: Pu (Conch) Blowing Lessons  Ocean View Terrace. Complimentary.&lt;/p&gt;</def>
+        <name>Saturdays</name>
+    </item>
+    <item ICode="-7">
+        <def>&lt;p&gt;&lt;b&gt;5 pm&lt;/b&gt;: Pu (Conch) Blowing &lt;i&gt;Lessons  Ocean&lt;/i&gt; View Terrace. Complimentary.&lt;/p&gt;</def>
+        <name>Sundays</name>
+    </item>
+</ehotel>

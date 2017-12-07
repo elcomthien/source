@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="-9014" iCode="1">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Extra Bathrobe</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="2">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Extra Linen</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="3">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Extra Towels</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="4">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Extra Amenlty Set</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="8">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Toilet Paper</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="9">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Shower Gel</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="10">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Shower Cap</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="11">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Shampoo</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="12">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Bath Soap</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="13">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Pillow Foam</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="14">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Pillow Feather</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraLinen.png</urlIcon>
+    </item>
+    <item menuid="-9014" iCode="15">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Hangers</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraTowels.png</urlIcon>
+    </item>
+</ehotel>

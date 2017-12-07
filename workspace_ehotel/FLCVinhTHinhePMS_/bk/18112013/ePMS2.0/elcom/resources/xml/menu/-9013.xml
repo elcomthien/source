@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="37">
+        <name>Marina</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/Veranda.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864247302.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864247302.png</urlIcon>
+    </item>
+    <item id="38">
+        <name>Phi Lao Bar Cafe</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/Coffee.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864352352.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864352352.png</urlIcon>
+    </item>
+</ehotel>

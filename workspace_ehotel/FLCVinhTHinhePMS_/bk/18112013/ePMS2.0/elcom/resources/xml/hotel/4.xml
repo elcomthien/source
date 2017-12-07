@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="17">
+        <def>&lt;h3&gt;Business Services&lt;/h3&gt; - Business Services: Copy service; Fax service; Full-service business center; network/internet printing; Notary public; overnight delivery/pickup; post/parcel&lt;br&gt;- Business Center: a business center is located next to the front desk. The business center features 2 Mac computers and a printer. Open 24 hours.</def>
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380627.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/bg/1305521380627.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1305521380627.png</urlIcon>
+    </item>
+</ehotel>

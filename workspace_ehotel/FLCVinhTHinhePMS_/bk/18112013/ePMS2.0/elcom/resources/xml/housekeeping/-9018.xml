@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="-9018" iCode="5">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Đèn giường ngủ</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</urlIcon>
+    </item>
+    <item menuid="-9018" iCode="6">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Nghẹt toilet</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance2.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance2.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance2.png</urlIcon>
+    </item>
+    <item menuid="-9018" iCode="7">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Khóa an tòan</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</urlIcon>
+    </item>
+</ehotel>

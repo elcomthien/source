@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A10002" cache="1">
+<item>
+	<name>eHotelMain</name>
+	<file>/ePMS2.0/elcom/resources/apk/eHotelMain2.0.0.1.apk</file>
+	<creatdate>20120114</creatdate> 
+	<required>false</required>
+</item>
+</ehotel>

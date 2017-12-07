@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="185">
+        <name>Imported Beer</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363350425907.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363350428175.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363350428175.png</urlIcon>
+    </item>
+    <item id="186">
+        <name>Sparkling Wine</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363859672986.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363859676809.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363859676809.png</urlIcon>
+    </item>
+    <item id="200">
+        <name>Cocktails</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363858159031.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363858160831.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363858160831.png</urlIcon>
+    </item>
+    <item id="202">
+        <name>Vang Trắng</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363858748746.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363858752164.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363858752164.png</urlIcon>
+    </item>
+    <item id="203">
+        <name>Vang đỏ</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363859281554.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363859286232.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363859286232.png</urlIcon>
+    </item>
+    <item id="204">
+        <name>Bia địa phương</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363859818831.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363859820792.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363859820792.png</urlIcon>
+    </item>
+    <item id="205">
+        <name>Rượu mạnh</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363860149788.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363860156805.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363860156805.png</urlIcon>
+    </item>
+</ehotel>

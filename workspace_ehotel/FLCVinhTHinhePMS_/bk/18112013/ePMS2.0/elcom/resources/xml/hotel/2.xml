@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="12">
+        <def>&lt;p&gt;Power Outlets&lt;/p&gt;&lt;p&gt;There are additional outlets in each guest room on the bedside lamp and two outlets on the media hub for your convenience. There is also a duplex outlet located in the bathroom. Please be advised that when exiting the room that the EVOLVE system will terminate power from all electrical outlets with the exception of your media hub.&lt;/p&gt;</def>
+        <name>Power Outlets</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889727842.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="13">
+        <def>&lt;p&gt;Other Room Amenities&lt;/p&gt;&lt;p&gt;-  Ice bucket, glasses, and a refrigerator are located in the dresser&lt;br /&gt;-  Hairdryers and additional toilet paper are are located in the drawer in the bathroom. If your guest room does not have a drawer in the bathroom these item will be locate in the closet.&lt;br /&gt;-   Spare pillows, blankets, ironing boeard, irons and rebes can be found in the closet.;&lt;br /&gt;-    TV – you can access in room movie and premium as well as local programing.&lt;/p&gt;</def>
+        <name>Other Room Amenities</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363447786030.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="14">
+        <def>&lt;p&gt;1. Welcome Channel&lt;br /&gt;2. Promo&lt;br /&gt;3. Hotel&lt;br /&gt;4. AXN HD&lt;br /&gt;5. StarMovie HD&lt;br /&gt;6. HBO HD&lt;br /&gt;7. Fox Sport HD&lt;br /&gt;8. AnimalPlanet&lt;br /&gt;9. StarSport&lt;br /&gt;10. CineMax&lt;br /&gt;11. HTV1&lt;br /&gt;12. HTV2&lt;br /&gt;13. HTV3&lt;br /&gt;14. HTV4&lt;br /&gt;15. HTV7&lt;br /&gt;16. HTV9&lt;br /&gt;17. Thừa Thiên Huế&lt;br /&gt;18. DAK LAK&lt;br /&gt;19. Lào Cai&lt;br /&gt;20. Bình Phước&lt;br /&gt;21. Sóc Trăng&lt;br /&gt;22. Long An&lt;br /&gt;23. Đồng Tháp&lt;br /&gt;24. Du Lịch&lt;br /&gt;25. Quảng Nam&lt;br /&gt;26. Thể Thao&lt;br /&gt;27. BTV1&lt;br /&gt;28. BTV2&lt;br /&gt;29. Gia Đình&lt;br /&gt;30. Thuần Việt&lt;br /&gt;31. HOME SHOPPING&lt;br /&gt;32. Phụ Nữ&lt;br /&gt;33. FBNC&lt;br /&gt;34. VTV4&lt;br /&gt;35. Vĩnh Phúc&lt;br /&gt;36. Khánh Hòa&lt;br /&gt;37. Phim&lt;br /&gt;38. VTV2&lt;br /&gt;39. VTC 1&lt;br /&gt;40. VTC 10&lt;br /&gt;41. VTC 11&lt;br /&gt;42. VTC 14&lt;br /&gt;43. VTC 16&lt;br /&gt;44. VietNamNET&lt;br /&gt;45. Hải Phòng&lt;br /&gt;46. Thanh Hóa&lt;br /&gt;47. Nghệ An&lt;br /&gt;48. Vĩnh Long&lt;br /&gt;49. QTV 1&lt;br /&gt;50. QTV 3&lt;br /&gt;51. Tuyên Quang&lt;br /&gt;52. Thái nguyên&lt;br /&gt;53. Hòa Bình&lt;br /&gt;54. Quảng Ngãi&lt;br /&gt;55. Ninh Thuận&lt;br /&gt;56. Lâm Đồng&lt;br /&gt;57. Gia Lai&lt;br /&gt;58. Kiên Giang&lt;br /&gt;59. Ninh Bình&lt;br /&gt;60. Trà Vinh&lt;br /&gt;61. Đồng Nai 1&lt;br /&gt;62. Đồng Nai 2&lt;br /&gt;63. Vinh Long 2&lt;br /&gt;64. An Giang&lt;br /&gt;65. Bình Thuận&lt;br /&gt;66. An Ninh TV&lt;br /&gt;67. VTV1&lt;br /&gt;68. VOV TV&lt;br /&gt;69. VTV3&lt;br /&gt;70. Bình Phước 2&lt;br /&gt;71. Vũng Tàu&lt;br /&gt;72. QPVN&lt;/p&gt;</def>
+        <name>TV Listing</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889620898.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="15">
+        <def>&lt;p&gt;Room to Room Calls | 8+ Room Number | No Charge &lt;br /&gt; 113 | No Charge &lt;br /&gt; Direct Dial | 9 + Area Code + Number | $0.10 minute afer your first 60 minute &lt;br /&gt; Long Distance Demostric | 9 + Area Code + Number | $0.40 minute afer your first 60 minute&lt;/p&gt;</def>
+        <name>Telephone</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889628430.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

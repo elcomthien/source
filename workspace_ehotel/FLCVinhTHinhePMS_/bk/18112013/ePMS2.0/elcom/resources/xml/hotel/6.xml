@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-38">
+        <def>&lt;p&gt;Luôn luôn giữa thẻ khóa phòng của quí khách ở vị trí an toàn. Nếu quí khách để lạc mất thẻ khóa phòng, xin vui lòng thông báo cho nhân viên phục vụ. Để nhận được thẻ khóa phòng mới, quí khách sẽ được yêu cầu cung cấp các thông tin nhận dạng phù hợp.&lt;/p&gt;</def>
+        <name>Thẻ khóa phòng</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889581253.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-39">
+        <def>&lt;p&gt;Vui lòng không cho phép người lạ và phòng. Bât kỳ mối lo ngại nào đó về một người khả nghi, vui lòng báo cho bộ phận an ninh.&lt;/p&gt;</def>
+        <name>Sự cảnh giác</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance1.png</urlIcon>
+    </item>
+    <item id="-41">
+        <def>&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;span class=&quot;longtext&quot;&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: VI;&quot; lang=&quot;VI&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Để thuận tiện cho quí khách, két sắt an toàn đều được trang bị miễn phí cho mỗi phòng&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</def>
+        <name>Giữ an toàn trong phòng</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/mainternance3.png</urlIcon>
+    </item>
+    <item id="-42">
+        <def>&lt;p&gt;Để tăng cường an ninh, vui lòng khóa trái cửa từ bên trong khi ở phòng , việc này sẽ ngăn chặn việc mở cửa từ bên ngòai. Khi không muốn bị làm phiền, bạn có thể treo thông điệp “Do Not Disturb” ở ngòai cửa.&lt;/p&gt;</def>
+        <name>Khóa cửa phòng</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889572994.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-43">
+        <def>&lt;p&gt;Có thêm 1 két sắt được đặt sẵn tại quầy lễ tân và được phục vụ miễn phí cho quí khách.&lt;/p&gt;</def>
+        <name>Két sắt</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889698965.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-44">
+        <def>&lt;p&gt;Kịp thời báo cáo bất kỳ cuộc gọi đáng ngờ hoặc bị quấy nhiễu cho bộ phận an ninh.&lt;/p&gt;</def>
+        <name>Cuộc gọi</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363800778339.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-45">
+        <def>  &lt;p&gt;Trong trường hợp &quot;khẩn cấp đe dọa tính mạng&quot; xin vui lòng gọi 113 từ bất kỳ điện thoại nào trong khách sạn. Ngay sau khi gọi 113 xin vui lòng báo cáo khẩn cấp đến cho bảo vệ bằng cách nhấn sô nội bộ 55. Nhân viên an ninh sẽ ngay lập tức đến trợ giúp bạn.&lt;/p&gt;</def>
+        <name>Trợ giúp khẩn cấp</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889470835.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-46">
+        <def>&lt;p&gt;Đối với trường hợp không khẩn cấp (để báo cáo bị thương nhẹ, thiệt hại, khiếu nại tiếng ồn, và các khiếu nại khác), vui lòng gọi số nội bộ 55. Khi đó cần cung cấp tên đầy đủ, số phòng để nhân viên an ninh đến hỗ trợ trong thời gian sớm nhất.&lt;/p&gt;</def>
+        <name>Trợ giúp không khẩn cấp</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/AUD_.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/AUD_.png</urlIcon>
+    </item>
+    <item id="-47">
+        <def>&lt;p&gt;Khi có báo động cháy nổ, đèn cảnh báo trong phòng sẽ nhấp nháy, đồng thời loa thông báo được bật lên, xin hãy lắng nghe cẩn thận các thông báo để được hướng dẫn thêm.&lt;/p&gt;</def>
+        <name>Báo động cháy</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/CAD_.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/CAD_.png</urlIcon>
+    </item>
+    <item id="-48">
+        <def>&lt;p&gt;Không sử dụng thang máy, sử dụng cầu thang thoát hiểm dành cho quí khách. Khi cần thiết phải sơ tán, thông báo sẽ được đọc lên thông qua hệ thống PA. Vui lòng đến cầu thang gần nhất và di chuyển một cách bình tĩnh xuống cầu thang  ra khỏi tòa nhà và đứng để được hướng dẫn tiếp. Ngoài ra cũng cần tham khảo bản đồ sơ tán được đặt trên mặt sau của mỗi cánh cửa ra vào phòng.&lt;/p&gt;</def>
+        <name>Lệnh sơ tán khi có báo cháy</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/EUR_.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/EUR_.png</urlIcon>
+    </item>
+    <item id="-49">
+        <def>&lt;p&gt;Trong trường hợp khẩn cấp do ảnh hưởng thời tiết xấu, thông báo sẽ được phát thông qua hệ thống PA.&lt;/p&gt;</def>
+        <name>Thông báo về ảnh hưởng do thời tiết</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/GBP.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlIcon>
+    </item>
+</ehotel>

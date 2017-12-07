@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="44617">
+        <amount>3,990,000 VND</amount>
+        <code>Lâm Nguyễn Minh Hữu</code>
+        <room>115</room>
+        <quanlity>23</quanlity>
+        <serviceType>USER</serviceType>
+        <startDate>13/06/18</startDate>
+        <unit>USD</unit>
+    </item>
+    <item id="44618">
+        <amount>30,000,0.0</amount>
+        <code>Extrabed (115)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44619">
+        <amount>170,000,0.0</amount>
+        <code>Accommodation (115)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44620">
+        <amount>1,000,0.0</amount>
+        <code>Transportation(Transportation)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44621">
+        <amount>1,000,0.0</amount>
+        <code>Telephone(Telephone)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44622">
+        <amount>1,000,0.0</amount>
+        <code>Souvenir(Souvenir)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44623">
+        <amount>1,000,0.0</amount>
+        <code>Room Service(Restaurant Room Service)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44624">
+        <amount>10,000,0.0</amount>
+        <code>Restaurant(Restaurant)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44625">
+        <amount>1,000,0.0</amount>
+        <code>Restaurant(Restaurant)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44626">
+        <amount>4,000,0.0</amount>
+        <code>Restaurant(Extra Breakfast)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44627">
+        <amount>36,000,0.0</amount>
+        <code>Others(Bed sheet(Drap giường) 1,8 m)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44628">
+        <amount>105,000,0.0</amount>
+        <code>Others(Áo &amp; Mền lớn)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44629">
+        <amount>1,500,0.0</amount>
+        <code>Minibar(Pepsi)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44630">
+        <amount>1,000,0.0</amount>
+        <code>Minibar(Jack Fruit)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44631">
+        <amount>3,500,0.0</amount>
+        <code>Minibar(Heineken)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44632">
+        <amount>5,000,0.0</amount>
+        <code>Minibar(333)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44633">
+        <amount>5,000,0.0</amount>
+        <code>Massage + SPA(Sauna + Massage )</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44634">
+        <amount>10,000,0.0</amount>
+        <code>Massage + SPA(Massage Body)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44635">
+        <amount>8,000,0.0</amount>
+        <code>Massage + SPA(Food Massage)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44636">
+        <amount>1,000,0.0</amount>
+        <code>Karaoke(Karaoke)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44637">
+        <amount>1,000,0.0</amount>
+        <code>Business Center(Internet)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44638">
+        <amount>1,000,0.0</amount>
+        <code>Business Center(BAN DO)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44639">
+        <amount>1,000,0.0</amount>
+        <code>Bar Coffee(Bar Cafe)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+    <item id="44640">
+        <amount>1,000,0.0</amount>
+        <code>Banquet(Banquet)</code>
+        <room>115</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>19/06/13</startDate>
+        <unit>VND</unit>
+    </item>
+</ehotel>

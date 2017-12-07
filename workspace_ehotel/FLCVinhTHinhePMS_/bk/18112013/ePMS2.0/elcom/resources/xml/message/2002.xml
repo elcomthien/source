@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1331">
+        <numNo>190001009</numNo>
+        <content_bottom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Please contact The Front Desk if any information is inaccurate&lt;br /&gt;Service Center&lt;/p&gt;]]&gt;</content_bottom>
+        <content_top xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Your request has been completed. SANG NGUYEN, Thank you for your taxi request .&lt;br /&gt;Room:SANG NGUYEN&lt;br /&gt;Room:2&lt;br /&gt;Due Date:21/02/2013&lt;br /&gt;Due Time:03:48PM]]&gt;</content_top>
+        <room>2</room>
+        <isConfirm>0</isConfirm>
+        <isRead>1</isRead>
+        <sender>Service Center</sender>
+        <subject>Taxi Request </subject>
+        <type>NORMAL</type>
+    </item>
+</ehotel>

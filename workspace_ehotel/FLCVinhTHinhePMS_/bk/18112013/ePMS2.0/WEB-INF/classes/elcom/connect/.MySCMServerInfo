@@ -1,0 +1,6 @@
+SCMBranch=eHotel_2.0_ELC
+SCMRepository=eHotel_2.0_ELC/App/eHotelPMS/src/elcom/connect
+ConfigReader.java;1594224467;1;1313984274;
+DBIManager.java;2216243244;1;1313984274;
+PmsConnection.java;3221250140;2;1321269876;
+PathDef.java;4258474556;2;1322218534;

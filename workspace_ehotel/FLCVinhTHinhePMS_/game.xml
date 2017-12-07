@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <action>com.rovio.angrybirds</action>
+        <EN>Angry Birds</EN>
+        <image>Game/1305521380711.png</image>
+        <url>/ePMS2.0/resources/apk/game/Angry_Birds_v1.4.2.apk</url>
+        <VN>Angry Birds</VN>
+    </item>
+    <item id="2">
+        <action>com.ArtInGames.AirAttackHD</action>
+        <EN>Air Attack</EN>
+        <image>Game/1305521380712.png</image>
+        <url>/ePMS2.0/resources/apk/game/AirAttack_HD_1.apk</url>
+        <VN>Air Attack</VN>
+    </item>
+    <item id="3">
+        <action>com.halfbrick.fruitninja</action>
+        <EN>Ninja Fruit</EN>
+        <image>Game/ninja-fruit.png</image>
+        <url>/ePMS2.0/resources/apk/game/fruit-ninja-v1.7.7.apk</url>
+        <VN>Ninja Fruit</VN>
+    </item>
+    <item id="4">
+        <action>com.baileyz.aquarium</action>
+        <EN>Fish Live</EN>
+        <image>Game/item_fish-live.png</image>
+        <url>/ePMS2.0/resources/apk/game/com.baileyz.aquarium-1.apk</url>
+        <VN>Fish Live</VN>
+    </item>
+    <item id="5">
+        <action>vn.sunnet.game.chinachess</action>
+        <EN>Action China Chess</EN>
+        <image>Game/item_chines-chess.png</image>
+        <url>/ePMS2.0/resources/apk/game/vn.sunnet.game.chinachess-3.apk</url>
+        <VN>Action China Chess</VN>
+    </item>
+    <item id="6">
+        <action>com.rovio.angrybirdsseasons</action>
+        <EN>Angry Birds Seasons</EN>
+        <image>Game/item_angrybirds-seasons.png</image>
+        <url>/ePMS2.0/resources/apk/game/com.rovio.angrybirdsseasons-241.apk</url>
+        <VN>Angry Birds Seasons</VN>
+    </item>
+</ehotel>

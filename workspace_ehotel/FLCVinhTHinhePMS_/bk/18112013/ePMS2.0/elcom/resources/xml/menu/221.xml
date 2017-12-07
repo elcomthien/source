@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="222">
+        <name>Canh Chua</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1372303167509.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/noimage.gif</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1372303167509.png</urlIcon>
+    </item>
+</ehotel>

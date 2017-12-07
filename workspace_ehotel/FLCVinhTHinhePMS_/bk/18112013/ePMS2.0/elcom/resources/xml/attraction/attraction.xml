@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="10" ICode="5">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[201 East Randoiph Street&lt;br /&gt;(312) 354-3222]]&gt;</address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Tổ chức hơn 525 sự kiện mỗi năm, công viên Millennium là nơi trao giải thưởng về nghệ thuật, âm nhạc, kiến trúc, và các tác phẩm nghệ  thuật khác. Mở cửa từ tháng 7 năm 2004, công viên có hàng triệu khách thăm quan, là điểm đến nổi tiếng trong địa phương, cả nước cũng như trên quốc tế. Là kết quả của sự hợp tác giữa thành phố Chicago và cộng đồng nhân đạo.]]&gt;</def>
+        <name>Công viên Millenium</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</urlImage>
+    </item>
+    <item menuid="10" ICode="6">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Wendalla Chicago Architectural Boat Tour&lt;br /&gt;400 North Michigan Avenue&lt;br /&gt;(312) 789-2342]]&gt;</address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Được sở hữu và điều hành bởi một gia đinh, tọa lạc tại đầu đường Magnificent Mile, sứ mệnh quan trọng là mang đến cho gia đình sự an tòan, thỏai mái, vui tươi. Các nhân viên dày dặn kinh nghiệm và các hướng dẫn viên được đào tạo bởi Wendella sẽ luôn làm hài lòng quý khách mỗi khi bước lên tàu của chúng tôi]]&gt;</def>
+        <name>Architectural Tour</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</urlImage>
+    </item>
+    <item menuid="10" ICode="8">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[The Art Institute of Chicago&lt;br /&gt;111 South Michigan Avenue&lt;br /&gt;(312) 443-3600]]&gt;</address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Học viện nghệ thuật của Chicago là một nhà bảo tàng nghệ thuật nổi tiếng thế giới bộ sưu tập vĩnh viễn lớn nhất thứ ba tại Hoa Kỳ. Một bảo tàng bách khoa, Viện Nghệ thuật thu thập, bảo quản, và hiển thị các hoạt động trong mọi môi trường từ tất cả các nền văn hóa và thời kỳ lịch sử cũng như tổ chức các triển lãm đặc biệt. Tại đây có hơn 260,000 tác phẩm nghệ thuật và bộ sưu tập. Bảo tàng có bộ sưu tập đặc biệt mạnh mẽ của bức tranh ấn tượng và sau Impresssioni
+st, châu Âu đầu thế kỷ 20 bức tranh và điêu khắc, nghệ thuật đương đại, bản in Nhật Bản, và nhiếp ảnh.]]&gt;</def>
+        <name>Nhà bảo tàng  nghệ thuật</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</urlImage>
+    </item>
+    <item menuid="10" ICode="7">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[1200 South Lake Shore Drive&lt;br /&gt;(312) 939-9076]]&gt;</address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Viện hải dương học John G.shedd, hoạt động phi chính phủ phục vụ cộng đồng trong việc giáo dục và khảo sát, là một trong những viện hải dương học trong nhà lớn nhất thế giới. Hiện nay viện có đến hơn 32,600 sinh vật biển của khỏang 1,500 lòai bao gồm cá, rùa,… được lấy từ hồ  Michigan, Shedd Aquarium được biết đến như một “Viện Hải dương học của thế giới”.]]&gt;</def>
+        <name>Shedd Aquarium</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</urlImage>
+    </item>
+</ehotel>

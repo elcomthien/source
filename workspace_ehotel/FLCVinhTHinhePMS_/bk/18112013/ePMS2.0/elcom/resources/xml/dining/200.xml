@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="200" icode="146">
+        <currency>3</currency>
+        <currency_large>3</currency_large>
+        <currency_small>3</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Jose Cuevo-Fresh Orange Juice - Grenadine&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Tequila Sunrise]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858254392.png</imageicon>
+        <printname>Tequila Sunrise</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858254392.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858254392.png</imagebg>
+    </item>
+    <item menuid="200" icode="147">
+        <currency>4</currency>
+        <currency_large>4</currency_large>
+        <currency_small>4</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Beefeater Gin-Dry Martini&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Martini Classic]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858282702.png</imageicon>
+        <printname>Martini Classic</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858282702.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858282702.png</imagebg>
+    </item>
+    <item menuid="200" icode="148">
+        <currency>5</currency>
+        <currency_large>5</currency_large>
+        <currency_small>5</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Vodka Bloody Mary Mix&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Bloody Mary]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858310543.png</imageicon>
+        <printname>Bloody Mary</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858310543.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858310543.png</imagebg>
+    </item>
+    <item menuid="200" icode="149">
+        <currency>6</currency>
+        <currency_large>6</currency_large>
+        <currency_small>6</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Bacardi Simple Syrup Fresh Blackberries - Mint - Lime Wedges&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Blackberry Mojito]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858333773.png</imageicon>
+        <printname>Blackberry Mojito</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858333773.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858333773.png</imagebg>
+    </item>
+    <item menuid="200" icode="150">
+        <currency>5</currency>
+        <currency_large>5</currency_large>
+        <currency_small>5</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Vodka - Trible Sec - Sour Apple Liqueur - Fresh Lemon Juice&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Apple Martini]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858353257.png</imageicon>
+        <printname>Apple Martini</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858353257.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858353257.png</imagebg>
+    </item>
+    <item menuid="200" icode="151">
+        <currency>3</currency>
+        <currency_large>3</currency_large>
+        <currency_small>3</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Campari-Sweet Vermouth-Club Soda&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Americano]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858370894.png</imageicon>
+        <printname>Americano</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858370894.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858370894.png</imagebg>
+    </item>
+</ehotel>

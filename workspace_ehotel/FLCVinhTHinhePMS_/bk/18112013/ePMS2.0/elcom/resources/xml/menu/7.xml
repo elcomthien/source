@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-9012">
+        <name>In-room dining</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363863332245.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363863335462.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363863335462.png</urlIcon>
+    </item>
+    <item id="-9013">
+        <name>Restaurant</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/dining_2.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/dining_2.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/dining_2.png</urlIcon>
+    </item>
+</ehotel>

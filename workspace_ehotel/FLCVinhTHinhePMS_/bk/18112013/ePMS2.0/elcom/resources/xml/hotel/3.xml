@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="16">
+        <def>&lt;p&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;Carmelina Beach Resort offers a variety of services and amenities including: babysitting; barber/beauty shop; buffer breakfast; Car Rental; coffee/tea in-room; game room; gift/newsstand; newspaper delivered to room, on request; newspaper in lobby; room service; safe deposit box, front desk; shoeshine; valet dry-cleaning&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Services &amp; Amenities</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380626.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

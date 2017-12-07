@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-1">
+        <def>Vina Sun Taxi</def>
+        <name>Vina Sun Taxi</name>
+    </item>
+    <item id="-2">
+        <def>Ariport Taxi</def>
+        <name>Ariport Taxi</name>
+    </item>
+    <item id="-3">
+        <def>Mai Linh Taxi</def>
+        <name>Mai Linh Taxi</name>
+    </item>
+    <item id="-4">
+        <def>SaiGon Tourist</def>
+        <name>SaiGon Tourist</name>
+    </item>
+    <item id="-5">
+        <def>Future Taxi</def>
+        <name>Future Taxi</name>
+    </item>
+</ehotel>

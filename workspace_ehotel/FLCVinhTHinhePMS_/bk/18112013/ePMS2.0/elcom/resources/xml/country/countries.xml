@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="7">
+        <def>VTU</def>
+        <name>Vung Tau</name>
+        <url>Weather/vungtau.png</url>
+        <urlBg>Weather/vungtau.png</urlBg>
+        <urlICon>Weather/vungtau.png</urlICon>
+    </item>
+    <item id="2">
+        <def>HCM</def>
+        <name>TP.HCM</name>
+        <url>Weather/tphcm.png</url>
+        <urlBg>Weather/tphcm.png</urlBg>
+        <urlICon>Weather/tphcm.png</urlICon>
+    </item>
+    <item id="8">
+        <def>CMU</def>
+        <name>Ca Mau</name>
+        <url>Weather/camau.png</url>
+        <urlBg>Weather/camau.png</urlBg>
+        <urlICon>Weather/camau.png</urlICon>
+    </item>
+    <item id="1">
+        <def>CTO</def>
+        <name>Can Tho</name>
+        <url>Weather/cantho.png</url>
+        <urlBg>Weather/cantho.png</urlBg>
+        <urlICon>Weather/cantho.png</urlICon>
+    </item>
+    <item id="3">
+        <def>HNI</def>
+        <name>Ha Noi</name>
+        <url>Weather/hanoi.png</url>
+        <urlBg>Weather/hanoi.png</urlBg>
+        <urlICon>Weather/hanoi.png</urlICon>
+    </item>
+    <item id="5">
+        <def>HPG</def>
+        <name>Hai Phong</name>
+        <url>Weather/haiphong.png</url>
+        <urlBg>Weather/haiphong.png</urlBg>
+        <urlICon>Weather/haiphong.png</urlICon>
+    </item>
+    <item id="6">
+        <def>NTG</def>
+        <name>Nha Trang</name>
+        <url>Weather/nhatrang.png</url>
+        <urlBg>Weather/nhatrang.png</urlBg>
+        <urlICon>Weather/nhatrang.png</urlICon>
+    </item>
+</ehotel>

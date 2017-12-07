@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="25" id="21">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>10km</distance>
+        <langId>1</langId>
+        <name>Cay Khe</name>
+        <status>0</status>
+        <x>10.83155439424755</x>
+        <y>106.70522434098439</y>
+    </item>
+    <item menuid="25" id="21">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>10km</distance>
+        <langId>2</langId>
+        <name>Cay Khe</name>
+        <status>0</status>
+        <x>10.83155439424755</x>
+        <y>106.70522434098439</y>
+    </item>
+    <item menuid="25" id="23">
+        <address>131/6M Nguyen Thai Son, 3 Ward, District Go Vap, HCMC.</address>
+        <distance>2km</distance>
+        <langId>1</langId>
+        <name>Cay Trung Ca</name>
+        <status>0</status>
+        <x>10.834099235590479</x>
+        <y>106.70497757775502</y>
+    </item>
+    <item menuid="25" id="23">
+        <address>131/6M Nguyen Thai Son, 3 Ward, District Go Vap, HCMC.</address>
+        <distance>2km</distance>
+        <langId>2</langId>
+        <name>Cay Trung Ca</name>
+        <status>0</status>
+        <x>10.834099235590479</x>
+        <y>106.70497757775502</y>
+    </item>
+    <item menuid="25" id="22">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>20km</distance>
+        <langId>1</langId>
+        <name>Cay Bang</name>
+        <status>0</status>
+        <x>10.829218969572592</x>
+        <y>106.70600352270321</y>
+    </item>
+    <item menuid="25" id="22">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>20km</distance>
+        <langId>2</langId>
+        <name>Cay Bang</name>
+        <status>0</status>
+        <x>10.829218969572592</x>
+        <y>106.70600352270321</y>
+    </item>
+    <item menuid="25" id="25">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>3.4km</distance>
+        <langId>1</langId>
+        <name>KFC</name>
+        <status>0</status>
+        <x>10.770223154182078</x>
+        <y>106.69382197284699</y>
+    </item>
+    <item menuid="25" id="25">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>3.4km</distance>
+        <langId>2</langId>
+        <name>KFC</name>
+        <status>0</status>
+        <x>10.770223154182078</x>
+        <y>106.69382197284699</y>
+    </item>
+    <item menuid="25" id="33">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>34km</distance>
+        <langId>1</langId>
+        <name>Curry Shika</name>
+        <status>0</status>
+        <x>10.769762035732022</x>
+        <y>106.69215095663071</y>
+    </item>
+    <item menuid="25" id="33">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>34km</distance>
+        <langId>2</langId>
+        <name>Curry Shika</name>
+        <status>0</status>
+        <x>10.769762035732022</x>
+        <y>106.69215095663071</y>
+    </item>
+    <item menuid="25" id="34">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>25km</distance>
+        <langId>1</langId>
+        <name>SamYan SeaFeed</name>
+        <status>0</status>
+        <x>10.769472189486764</x>
+        <y>106.69214022779465</y>
+    </item>
+    <item menuid="25" id="34">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>25km</distance>
+        <langId>2</langId>
+        <name>SamYan SeaFeed</name>
+        <status>0</status>
+        <x>10.769472189486764</x>
+        <y>106.69214022779465</y>
+    </item>
+    <item menuid="25" id="35">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>15km</distance>
+        <langId>1</langId>
+        <name>ShangHai Food</name>
+        <status>0</status>
+        <x>10.77084236927988</x>
+        <y>106.69345987462998</y>
+    </item>
+    <item menuid="25" id="35">
+        <address>214/19/8C Nguyen Van Nguyen, Tan Dinh Ward, District 01, HCMC.</address>
+        <distance>15km</distance>
+        <langId>2</langId>
+        <name>ShangHai Food</name>
+        <status>0</status>
+        <x>10.77084236927988</x>
+        <y>106.69345987462998</y>
+    </item>
+    <item menuid="25" id="36">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>1</langId>
+        <name>Zen Plaza</name>
+        <status>0</status>
+        <x>10.770731701144584</x>
+        <y>106.69208658361435</y>
+    </item>
+    <item menuid="25" id="36">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>3km</distance>
+        <langId>2</langId>
+        <name>Zen Plaza</name>
+        <status>0</status>
+        <x>10.770731701144584</x>
+        <y>106.69208658361435</y>
+    </item>
+</ehotel>

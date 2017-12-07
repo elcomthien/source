@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="3">
+        <def>Background welcome03</def>
+        <name>Welcome03</name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/bg03.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/bg03.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/bg03.png</urlIcon>
+    </item>
+    <item id="4">
+        <def>Background welcome04</def>
+        <name>Welcome04</name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/bg04.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/bg04.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/bg04.png</urlIcon>
+    </item>
+</ehotel>

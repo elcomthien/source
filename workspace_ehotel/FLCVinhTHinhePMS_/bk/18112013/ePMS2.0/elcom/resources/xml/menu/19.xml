@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-9010">
+        <name>Ground Transportation</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/GroundTransportation.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/GroundTransportation.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/GroundTransportation.png</urlIcon>
+    </item>
+    <item id="-9011">
+        <name>Airline information</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AirlineInformation.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AirlineInformation.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AirlineInformation.png</urlIcon>
+    </item>
+</ehotel>

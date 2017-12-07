@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-148">
+        <def>Adv3</def>
+        <name>Adv3</name>
+        <url>/ePMS2.0/elcom/resources/image/Adv/slide_3.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Adv/slide_3.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Adv/slide_3.png</urlIcon>
+    </item>
+    <item id="-147">
+        <def>Adv2</def>
+        <name>Adv2</name>
+        <url>/ePMS2.0/elcom/resources/image/Adv/slide_2.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Adv/slide_2.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Adv/slide_2.png</urlIcon>
+    </item>
+</ehotel>

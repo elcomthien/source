@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-33">
+        <def>&lt;p&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Lấy cảm hứng từ những cây ô liu, vườn và biệt thự rải rác trên bờ biển Địa Trung Hải, nhà hàng Veranda Fireside Lounge mang phong cách cổ điển và hiện đại, là nơi mà bạn không thể bỏ qua.&lt;br /&gt;&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Với phong cách tươi mới và hiện đại, thực đơn tại Veranda bao gồm những món đặc trưng vùng Địa Trung Hải và Nam California. Mỗi món được chế biến từ đội ngũ đầu bếp của Resort bằng cách sử dụng nguồn nguyên liệu tại địa phương với thành phần đặc trưng riêng vốn có. &lt;/u&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;Veranda là một nơi hoàn hảo phục vụ các món từ thức ăn nhẹ đến thực đơn tối dưới không gian tràn ngập các vì sao &lt;/u&gt;&lt;span class=&quot;hps&quot;&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: VI;&quot; lang=&quot;VI&quot;&gt;hoặc&lt;/u&gt;&lt;/u&gt;&lt;span class=&quot;hps&quot;&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: VI;&quot; lang=&quot;VI&quot;&gt;tập hợp&lt;/u&gt;&lt;/u&gt;&lt;span class=&quot;hps&quot;&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: VI;&quot; lang=&quot;VI&quot;&gt;xung quanh&lt;/u&gt;&lt;/u&gt;&lt;span class=&quot;hps&quot;&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: VI;&quot; lang=&quot;VI&quot;&gt;ngọn lửa&lt;/u&gt;&lt;/u&gt;&lt;span class=&quot;longtext&quot;&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;với &lt;/u&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;cocktail. Hãy đến và tận hưởng. &lt;/u&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864514024.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/bg/CleanRoom.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/CleanRoom.png</urlIcon>
+    </item>
+</ehotel>

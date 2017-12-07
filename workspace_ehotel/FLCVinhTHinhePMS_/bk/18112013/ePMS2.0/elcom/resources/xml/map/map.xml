@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="25" id="22">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>20km</distance>
+        <langId>1</langId>
+        <name>Cay Bang</name>
+        <status>2</status>
+        <x>10.829218969572592</x>
+        <y>106.70600352270321</y>
+    </item>
+    <item menuid="25" id="22">
+        <address>562/10 Truong Dinh 5 Ward, District 10, HCMC.</address>
+        <distance>20km</distance>
+        <langId>2</langId>
+        <name>Cay Bang</name>
+        <status>2</status>
+        <x>10.829218969572592</x>
+        <y>106.70600352270321</y>
+    </item>
+</ehotel>

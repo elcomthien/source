@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="9" icode="15">
+        <currency>4</currency>
+        <currency_large>4</currency_large>
+        <currency_small>4</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Tea or herbal infusions]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Tea or Herbal Infusions]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_7.png</imageicon>
+        <printname>Tea or herbal infusions</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_7.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_7.png</imagebg>
+    </item>
+    <item menuid="9" icode="14">
+        <currency>5</currency>
+        <currency_large>5</currency_large>
+        <currency_small>5</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Sodas, Iced Tea, Lemonade]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Soft Drinks]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_6.png</imageicon>
+        <printname>Sodas, Iced Tea, Lemonade</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_6.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_6.png</imagebg>
+    </item>
+    <item menuid="9" icode="13">
+        <currency>3</currency>
+        <currency_large>3</currency_large>
+        <currency_small>3</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Hot or cold, skim milk, soy]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Milk]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_5.png</imageicon>
+        <printname>Hot or cold, skim milk, soy</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_5.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_5.png</imagebg>
+    </item>
+    <item menuid="9" icode="12">
+        <currency>6</currency>
+        <currency_large>6</currency_large>
+        <currency_small>6</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Fiji, Voss, Vinh Hao, Danh Thanh]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Bottled Water]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_4.png</imageicon>
+        <printname>Fiji, Voss, Vinh Hao, Danh Thanh</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_4.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_4.png</imagebg>
+    </item>
+    <item menuid="9" icode="11">
+        <currency>5</currency>
+        <currency_large>5</currency_large>
+        <currency_small>5</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Orange, Apple, Cranberry, Tomato, Pineapple]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Juice]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_3.png</imageicon>
+        <printname>Orange, Apple, Cranberry, Tomato, Pineapple</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_3.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_3.png</imagebg>
+    </item>
+    <item menuid="9" icode="10">
+        <currency>4</currency>
+        <currency_large>4</currency_large>
+        <currency_small>4</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Hot chocolate]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Hot chocolate]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_2.png</imageicon>
+        <printname>Hot chocolate</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_2.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_2.png</imagebg>
+    </item>
+    <item menuid="9" icode="9">
+        <currency>5</currency>
+        <currency_large>5</currency_large>
+        <currency_small>5</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Regular or decaf]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Freshly Brewed illy Coffee]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/beverages_1.png</imageicon>
+        <printname>Freshly Brewed illy Coffee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/beverages_1.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/beverages_1.png</imagebg>
+    </item>
+</ehotel>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="2">
+        <name>What’s in your room</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380618.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/bg/1305521380618.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1305521380618.png</urlIcon>
+    </item>
+    <item id="3">
+        <name>Services &amp; Amenities</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380626.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="4">
+        <name>Business Services</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380627.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/bg/1305521380627.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1305521380627.png</urlIcon>
+    </item>
+    <item id="5">
+        <name>Hotel Amenities</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380616.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/bg/1305521380616.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1305521380616.png</urlIcon>
+    </item>
+    <item id="6">
+        <name>Safety &amp; security</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1363889671317.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/1363889674716.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1363889674716.png</urlIcon>
+    </item>
+</ehotel>

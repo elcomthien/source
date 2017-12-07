@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1170">
+        <def>&lt;p&gt;&lt;u&gt;&lt;i&gt;&lt;b&gt;ta sẽ tiêu diệt các thành phần nổi loạn&lt;/b&gt;&lt;/i&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>hu hu</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1372302336188.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

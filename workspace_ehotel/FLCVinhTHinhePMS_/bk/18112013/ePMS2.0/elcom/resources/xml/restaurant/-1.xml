@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-36">
+        <def>&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;strong style=&quot;mso-bidi-font-weight: normal;&quot;&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Vào buổi sáng sớm khi thức dậy&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Trứng và pho mát Muffin $4.50&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Trứng B.L.T Muffin $5.50&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Trứng và pho mát Empanada $6.25&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11pt;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Cá hồi xông khói Bagel và chanh, Phô mai xông khói $7.00&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: FR;&quot; lang=&quot;FR&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Assorted Danish, Croissants &amp;amp; Muffins $3.50&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11pt; mso-ansi-language: FR;&quot; lang=&quot;FR&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Ya-ourt Parfait với dâu tây tươi $3.50&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</def>
+        <name>Early morning</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864406861.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/ExtraBathrobe.png</urlIcon>
+    </item>
+</ehotel>
