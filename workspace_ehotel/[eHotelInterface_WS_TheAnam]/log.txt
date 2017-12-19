@@ -1,0 +1,1103 @@
+0     INFO  [pool-1-thread-1] service.CoreSoKhaImpl - Ip: 10.10.16.119 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:111,ROOM_NUMER:111,GUEST_ARV_DATE:111,GUEST_DEPT_DATE:111,GUEST_FIRST_NAME:111,GUEST_LAST_NAME:111,GUEST_NAME:111,GUEST_LANGUAGE:111,GUEST_GROUP:111GUEST_TITLE:,111,GUEST_VIP_STATUS:111,GUEST_TV_RIGHT:111, GUEST_VIDEO_RIGHT:111,GUEST_BIRTHDAY111,SHARE_FLAG:111,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+12    INFO  [pool-1-thread-1] service.PMSOperaService - FunctionGI | RN: 111 | G#: 111 | GS: 111 | GF: 111 | GN: 111 | GL: 111 | GG: 111 | GT: 111 | GA: 111 | GD: 111 | DA:  | TI:  | WF: NOTHING
+2531  WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 47 more
+4085  WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 48 more
+5626  WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 49 more
+7146  WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 50 more
+8658  WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 51 more
+10170 WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 52 more
+11686 WARN  [pool-1-thread-1] dbi.IMBroker - Calling remote method failed. Trying again!
+java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.invoke(Unknown Source)
+	at com.elcom.DBI.DBI_Impl_Stub.executeSubPro(DBI_Impl_Stub.java:184)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:122)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:141)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.service.CoreSoKhaImpl.GuestCheckin(CoreSoKhaImpl.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 53 more
+0     INFO  [pool-1-thread-2] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:,ROOM_NUMER:,GUEST_ARV_DATE:,GUEST_DEPT_DATE:,GUEST_FIRST_NAME:,GUEST_LAST_NAME:,GUEST_NAME:,GUEST_LANGUAGE:,GUEST_GROUP:GUEST_TITLE:,,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+162   INFO  [pool-1-thread-2] service.PMSOperaService - FunctionGI | RN: NOTHING | G#: NOTHING | GS: NOTHING | GF: NOTHING | GN: NOTHING | GL: NOTHING | GG: NOTHING | GT: NOTHING | GA: NOTHING | GD: NOTHING | DA:  | TI:  | WF: NOTHING
+21506 ERROR [pool-1-thread-2] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 51 more
+0     INFO  [pool-1-thread-1] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:,ROOM_NUMER:,GUEST_ARV_DATE:,GUEST_DEPT_DATE:,GUEST_FIRST_NAME:,GUEST_LAST_NAME:,GUEST_NAME:,GUEST_LANGUAGE:,GUEST_GROUP:GUEST_TITLE:,,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+6     INFO  [pool-1-thread-1] service.PMSOperaService - FunctionGI | RN: NOTHING | G#: NOTHING | GS: NOTHING | GF: NOTHING | GN: NOTHING | GL: NOTHING | GG: NOTHING | GT: NOTHING | GA: NOTHING | GD: NOTHING | DA:  | TI:  | WF: NOTHING
+21042 ERROR [pool-1-thread-1] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.MethodUtil.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.api.server.InstanceResolver$1.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.InvokerTube$2.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.EndpointMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.server.sei.SEIInvokerTube.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.server.WSEndpointImpl$2.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter$HttpToolkit.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.HttpAdapter.handle(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handleExchange(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.server.WSHttpHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Source)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+	at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 51 more
+0     ERROR [main] json.SoKhaParser - Unexpected character (') at position 1.
+0     ERROR [main] json.SoKhaParser - Unexpected character (G) at position 0.
+29    INFO  [main] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:,ROOM_NUMER:,GUEST_ARV_DATE:,GUEST_DEPT_DATE:,GUEST_FIRST_NAME:,GUEST_LAST_NAME:,GUEST_NAME:,GUEST_LANGUAGE:,GUEST_GROUP:GUEST_TITLE:,,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+30    INFO  [main] service.PMSOperaService - FunctionGI | RN: NOTHING | G#: NOTHING | GS: NOTHING | GF: NOTHING | GN: NOTHING | GL: NOTHING | GG: NOTHING | GT: NOTHING | GA: NOTHING | GD: NOTHING | DA:  | TI:  | WF: NOTHING
+21285 ERROR [main] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:100)
+	at com.elcom.eodapp.ehotel.main.CorePublisher.main(CorePublisher.java:24)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 15 more
+1     ERROR [main] json.SoKhaParser - java.lang.NullPointerException
+28    INFO  [main] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:,ROOM_NUMER:,GUEST_ARV_DATE:,GUEST_DEPT_DATE:,GUEST_FIRST_NAME:,GUEST_LAST_NAME:,GUEST_NAME:,GUEST_LANGUAGE:,GUEST_GROUP:GUEST_TITLE:,,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+30    INFO  [main] service.PMSOperaService - FunctionGI | RN: NOTHING | G#: NOTHING | GS: NOTHING | GF: NOTHING | GN: NOTHING | GL: NOTHING | GG: NOTHING | GT: NOTHING | GA: NOTHING | GD: NOTHING | DA:  | TI:  | WF: NOTHING
+21311 ERROR [main] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:100)
+	at com.elcom.eodapp.ehotel.main.CorePublisher.main(CorePublisher.java:24)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 15 more
+0     ERROR [main] json.SoKhaParser - java.lang.NullPointerException
+30    INFO  [main] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:,ROOM_NUMER:,GUEST_ARV_DATE:,GUEST_DEPT_DATE:,GUEST_FIRST_NAME:,GUEST_LAST_NAME:,GUEST_NAME:,GUEST_LANGUAGE:,GUEST_GROUP:GUEST_TITLE:,,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+31    INFO  [main] service.PMSOperaService - FunctionGI | RN: NOTHING | G#: NOTHING | GS: NOTHING | GF: NOTHING | GN: NOTHING | GL: NOTHING | GG: NOTHING | GT: NOTHING | GA: NOTHING | GD: NOTHING | DA:  | TI:  | WF: NOTHING
+21280 ERROR [main] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:101)
+	at com.elcom.eodapp.ehotel.main.CorePublisher.main(CorePublisher.java:24)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 15 more
+0     INFO  [main] utils.DataAdapter - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestCheckin(RESERVATION_NUMER:1924459,ROOM_NUMER:220,GUEST_ARV_DATE:2018-12-13,GUEST_DEPT_DATE:2018-12-13,GUEST_FIRST_NAME:Esperanza,GUEST_LAST_NAME:Dionisio,GUEST_NAME:Esperanza Dionisio,GUEST_LANGUAGE:,GUEST_GROUP:718787GUEST_TITLE:,Ms,GUEST_VIP_STATUS:,GUEST_TV_RIGHT:, GUEST_VIDEO_RIGHT:,GUEST_BIRTHDAY,SHARE_FLAG:0,GUEST_PIN:,DATE:,TIME:,SWAP_FLAG:)
+7     INFO  [main] service.PMSOperaService - FunctionGI | RN: 220 | G#: 1924459 | GS: 0 | GF: Esperanza | GN: Esperanza Dionisio | GL: NOTHING | GG: 718787 | GT: Ms | GA: 2018-12-13 | GD: 2018-12-13 | DA:  | TI:  | WF: NOTHING
+21265 ERROR [main] dbi.DBIPool - Connect to the DBI failed in times: 1
+java.rmi.ConnectException: Connection refused to host: 172.16.9.159; nested exception is: 
+	java.net.ConnectException: Connection timed out: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at com.elcom.pms.opera.dbi.DBIPool.getNewDBI(DBIPool.java:77)
+	at com.elcom.pms.opera.dbi.DBIPool.getDBI(DBIPool.java:30)
+	at com.elcom.pms.opera.dbi.IMBroker.executeSubPro(IMBroker.java:119)
+	at com.elcom.pms.opera.dao.PMSOperaDAO.functionGI(PMSOperaDAO.java:55)
+	at com.elcom.pms.opera.service.PMSOperaService.functionGI(PMSOperaService.java:23)
+	at com.elcom.eodapp.ehotel.service.CoreDao.GuestCheckin(CoreDao.java:71)
+	at com.elcom.eodapp.ehotel.utils.DataAdapter.GuestCheckin(DataAdapter.java:39)
+	at com.elcom.eodapp.ehotel.service.json.CoreImpl.GuestCheckin(CoreImpl.java:101)
+	at com.elcom.eodapp.ehotel.main.CorePublisher.main(CorePublisher.java:24)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 15 more
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+109   ERROR [pool-1-thread-1] xpo.XPOProcessor - expected 2 parameter(s) but received: 5. Expected parameters: 
+sRoomNo:{http://www.w3.org/2001/XMLSchema}string
+sGuestNo:{http://www.w3.org/2001/XMLSchema}string Got parameters:
+java.lang.String
+java.lang.String
+null
+null
+null
+81806 INFO  [pool-1-thread-2] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+81808 ERROR [pool-1-thread-2] xpo.XPOProcessor - expected 2 parameter(s) but received: 5. Expected parameters: 
+sRoomNo:{http://www.w3.org/2001/XMLSchema}string
+sGuestNo:{http://www.w3.org/2001/XMLSchema}string Got parameters:
+java.lang.String
+java.lang.String
+null
+null
+null
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+282   ERROR [pool-1-thread-1] xpo.XPOProcessor - expected 2 parameter(s) but received: 5. Expected parameters: 
+sRoomNo:{http://www.w3.org/2001/XMLSchema}string
+sGuestNo:{http://www.w3.org/2001/XMLSchema}string Got parameters:
+java.lang.String
+java.lang.String
+null
+null
+null
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+35    ERROR [pool-1-thread-1] xpo.XPOProcessor - operation style: "rpc" not supported
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+36    ERROR [pool-1-thread-1] xpo.XPOProcessor - operation style: "rpc" not supported
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1136  ERROR [pool-1-thread-1] xpo.XPOProcessor - unexpected element type: expected={http://schemas.xmlsoap.org/soap/encoding/}Array, actual={http://www.w3.org/2001/XMLSchema}string
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+3681  ERROR [pool-1-thread-1] xpo.XPOProcessor - unexpected element type: expected={http://www.w3.org/2001/XMLSchema}QName, actual={http://www.w3.org/2001/XMLSchema}string
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+712   ERROR [pool-1-thread-1] xpo.XPOProcessor - deserialization error: java.lang.NullPointerException
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+730   ERROR [pool-1-thread-1] xpo.XPOProcessor - deserialization error: java.lang.NullPointerException
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+690   ERROR [pool-1-thread-1] xpo.XPOProcessor - deserialization error: java.lang.NullPointerException
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+3715  ERROR [pool-1-thread-1] xpo.XPOProcessor - deserialization error: java.lang.NullPointerException
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+2763  ERROR [pool-1-thread-1] xpo.XPOProcessor - deserialization error: java.lang.NullPointerException
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "1924459","Guest-Room": "101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+2     ERROR [main] cfg.ConfigurationLoader - Building ConfigurationLoader failed.
+java.lang.NumberFormatException: For input string: "8080;"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.build(ConfigurationLoader.java:68)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.<init>(ConfigurationLoader.java:19)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.getInstance(ConfigurationLoader.java:26)
+	at com.elcom.eodapp.ehotel.main.MainProcess.<init>(MainProcess.java:22)
+	at com.elcom.eodapp.ehotel.main.Program.main(Program.java:5)
+2     ERROR [main] cfg.ConfigurationLoader - Building ConfigurationLoader failed.
+java.lang.NumberFormatException: For input string: "8080;"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.build(ConfigurationLoader.java:68)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.<init>(ConfigurationLoader.java:19)
+	at com.elcom.eodapp.ehotel.cfg.ConfigurationLoader.getInstance(ConfigurationLoader.java:26)
+	at com.elcom.eodapp.ehotel.main.MainProcess.<init>(MainProcess.java:22)
+	at com.elcom.eodapp.ehotel.main.Program.main(Program.java:5)
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+1595  INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:8080 error
+1596  ERROR [pool-1-thread-1] processor.PostXML - java.net.ConnectException: Connection refused: connect
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+3205  INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+183   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+171   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+201   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+201   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+172   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+161   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+21011 INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 error
+21011 ERROR [pool-1-thread-1] processor.PostXML - java.net.ConnectException: Connection timed out: connect
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+211   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+281   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+1011  INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+2452  INFO  [pool-1-thread-1] processor.DataAdapter - Ip: 10.10.30.224 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+6383  ERROR [pool-1-thread-1] dbi.IMBroker - java.sql.SQLException: ORA-04098: trigger 'EHOTEL_SOKHA.SYN_DB_PMSFOLIOMESSAGE' is invalid and failed re-validation
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+224   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+183   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+977   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+164   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+879   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN1101, G#:177095) is success
+135947 INFO  [pool-1-thread-2] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+136116 INFO  [pool-1-thread-2] processor.PostXML - Connect 203.155.100.231:80 is success!
+136622 INFO  [pool-1-thread-2] xpo.XposProcessor - guestMessage(RN1101, G#:177095) is success
+330860 INFO  [pool-1-thread-3] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+331031 INFO  [pool-1-thread-3] processor.PostXML - Connect 203.155.100.231:80 is success!
+331485 INFO  [pool-1-thread-3] xpo.XposProcessor - guestMessage(RN1101, G#:177095) is success
+418081 INFO  [pool-1-thread-4] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+418218 INFO  [pool-1-thread-4] processor.PostXML - Connect 203.155.100.231:80 is success!
+419593 INFO  [pool-1-thread-4] xpo.XposProcessor - guestMessage(RN1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+153   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+657   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+166   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+750   ERROR [pool-1-thread-1] xpo.XposProcessor - java.lang.NullPointerException
+751   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+130   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+1126  ERROR [pool-1-thread-1] xpo.XposProcessor - java.lang.NullPointerException
+1130  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+1     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+133   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+851   ERROR [pool-1-thread-1] xpo.XposProcessor - java.lang.NullPointerException
+852   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+178   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+1203  INFO  [pool-1-thread-1] xpo.XposProcessor - code:1
+1203  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+456458 INFO  [pool-1-thread-2] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+456624 INFO  [pool-1-thread-2] processor.PostXML - Connect 203.155.100.231:80 is success!
+457161 INFO  [pool-1-thread-2] xpo.XposProcessor - code:1
+457162 INFO  [pool-1-thread-2] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+902353 INFO  [pool-1-thread-3] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+902536 INFO  [pool-1-thread-3] processor.PostXML - Connect 203.155.100.231:80 is success!
+903314 INFO  [pool-1-thread-3] xpo.XposProcessor - code:1
+903314 INFO  [pool-1-thread-3] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+1612833 INFO  [pool-1-thread-4] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+1613014 INFO  [pool-1-thread-4] processor.PostXML - Connect 203.155.100.231:80 is success!
+1614024 INFO  [pool-1-thread-4] xpo.XposProcessor - code:1
+1614024 INFO  [pool-1-thread-4] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+1683996 INFO  [pool-1-thread-5] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+1684157 INFO  [pool-1-thread-5] processor.PostXML - Connect 203.155.100.231:80 is success!
+1685667 INFO  [pool-1-thread-5] xpo.XposProcessor - code:1
+1685677 INFO  [pool-1-thread-5] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+171   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+871   INFO  [pool-1-thread-1] xpo.XposProcessor - ws result:false
+871   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+171   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+1121  INFO  [pool-1-thread-1] xpo.XposProcessor - ws result:false
+1121  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+171   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+711   INFO  [pool-1-thread-1] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+8251  ERROR [pool-1-thread-1] dbi.IMBroker - java.sql.SQLException: ORA-04098: trigger 'EHOTEL_SOKHA.SYN_DB_PMSFOLIOMESSAGE' is invalid and failed re-validation
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+8261  INFO  [pool-1-thread-1] xpo.XposProcessor - ws result:false
+8261  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+232447 INFO  [pool-1-thread-2] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+232802 INFO  [pool-1-thread-2] processor.PostXML - Connect 203.155.100.231:80 is success!
+233572 INFO  [pool-1-thread-2] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+233743 ERROR [pool-1-thread-2] dbi.IMBroker - java.sql.SQLException: ORA-01858: a non-numeric character was found where a numeric was expected
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+233743 INFO  [pool-1-thread-2] xpo.XposProcessor - ws result:false
+233753 INFO  [pool-1-thread-2] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) is success
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+151   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+661   INFO  [pool-1-thread-1] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+971   ERROR [pool-1-thread-1] dbi.IMBroker - java.sql.SQLException: ORA-01841: (full) year must be between -4713 and +9999, and not be 0
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+981   INFO  [pool-1-thread-1] xpo.XposProcessor - core result:false
+981   INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) finish
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+181   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+731   INFO  [pool-1-thread-1] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+1051  ERROR [pool-1-thread-1] dbi.IMBroker - java.sql.SQLException: ORA-01841: (full) year must be between -4713 and +9999, and not be 0
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+1051  INFO  [pool-1-thread-1] xpo.XposProcessor - core result:false
+1061  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) finish
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+171   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+1121  INFO  [pool-1-thread-1] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestRoomMove(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+1452  ERROR [pool-1-thread-1] dbi.IMBroker - java.sql.SQLException: ORA-01841: (full) year must be between -4713 and +9999, and not be 0
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+1452  INFO  [pool-1-thread-1] xpo.XposProcessor - core result:false
+1462  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) finish
+0     INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "177095","Guest-Room": "1101","Room-ShareFlag": "0"}
+181   INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+812   INFO  [pool-1-thread-1] sokha.CoreSoKhaInterface - Ip: 10.10.16.126 => Ver: 0.9 - In Core.GuestMessageTextOnline(GUEST_RESERVATION:177095,GUEST_ROOM:1101,MESSAGE_ID:001,MESSAGE_TEXT:This is a sample message.&lt;CR&gt;&lt;LF&gt;It contains formatting information&lt;CR&gt;&lt;LF&gt; because it will be printed directly by&lt;CR&gt;&lt;LF&gt;the other system.&lt;FF&gt;,LAST_UPDATE:2015-03-03 17:31:26)
+1255  INFO  [pool-1-thread-1] xpo.XposProcessor - core result:true
+1255  INFO  [pool-1-thread-1] xpo.XposProcessor - guestMessage(RN:1101, G#:177095) finish
+0     INFO  [Thread eHotel Connect] conn.eHotelConnection - Server 10.10.16.126 started on port 9999
+141   INFO  [Thread eHotel Connect] conn.eHotelConnection - Waiting for connection.....
+30    INFO  [Thread-2] processor.BillProcessor - Connect 203.155.100.231:80 is success!
+41481 INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+41564 INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+41784 INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - <SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:guestMessageResponse xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"><responseCode xsi:type="xsd:string">1</responseCode><responseMessage xsi:type="xsd:string">operation success</responseMessage><responseData xsi:type="xsd:string">{&quot;0&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;789&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}, &quot;1&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;790&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}, &quot;2&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;791&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}}</responseData></ns1:guestMessageResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+42118 ERROR [pool-1-thread-1] processor.SOAPParser_SoKha - javax.xml.ws.WebServiceException: Unsupported endpoint address: 
+42119 INFO  [pool-1-thread-1] xpo.XposXmlProcessor - guestMessage(RN:2000, G#:123456) finish
+0     INFO  [Thread eHotel Connect] conn.eHotelConnection - Server 10.10.16.126 started on port 9999
+7     INFO  [Thread eHotel Connect] conn.eHotelConnection - Waiting for connection.....
+68    INFO  [Thread-2] processor.BillProcessor - Connect 203.155.100.231:80 is success!
+5498  INFO  [pool-1-thread-1] json.CoreImpl - GuestMessageWaiting <== {"Guest-Reservation": "123456","Guest-Room": "2000"}
+5596  INFO  [pool-1-thread-1] processor.PostXML - Connect 203.155.100.231:80 is success!
+5851  INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - <SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:guestMessageResponse xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"><responseCode xsi:type="xsd:string">1</responseCode><responseMessage xsi:type="xsd:string">operation success</responseMessage><responseData xsi:type="xsd:string">{&quot;0&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;789&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}, &quot;1&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;790&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}, &quot;2&quot; : {
+						&quot;roomno&quot; : &quot;2000&quot;,
+						&quot;guestno&quot; : &quot;123456&quot;,
+						&quot;message_id&quot; : &quot;791&quot;,
+						&quot;message_text&quot; : &quot;Please call back Mr James Bond to arrange for meeting. Thank you.&quot;,
+						&quot;last_update&quot; : &quot;&quot;
+					}}</responseData></ns1:guestMessageResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+6207  INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - process soap guestMessage id:791 true
+6302  INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - process soap guestMessage id:790 true
+6382  INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - process soap guestMessage id:789 true
+6383  INFO  [pool-1-thread-1] processor.SOAPParser_SoKha - guestMessageoperation success
+6385  INFO  [pool-1-thread-1] xpo.XposXmlProcessor - guestMessage(RN:2000, G#:123456) finish
+0     INFO  [Thread receive bill] processor.BillProcessor - Start receive bill
+28    INFO  [Thread eHotel Connect] conn.eHotelConnection - Server 10.10.16.187 started on port 1999
+116   INFO  [Thread eHotel Connect] conn.eHotelConnection - Waiting for connection.....
+923   INFO  [Thread send bill] processor.BillProcessor - Connect 203.155.100.231:80 is success!
+0     INFO  [Thread eHotel Connect] conn.eHotelConnection - Server 10.10.16.214 started on port 1999
+115   INFO  [Thread eHotel Connect] conn.eHotelConnection - Waiting for connection.....
+13248 ERROR [Thread eHotel Connect] conn.eHotelConnection - Process data from eHotel socket error.
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at java.io.BufferedReader.read1(Unknown Source)
+	at java.io.BufferedReader.read(Unknown Source)
+	at java.io.Reader.read(Unknown Source)
+	at com.elcom.eodapp.ehotel.service.conn.eHotelConnection.ProcessData(eHotelConnection.java:93)
+	at com.elcom.eodapp.ehotel.service.conn.eHotelConnection.run(eHotelConnection.java:47)
+0     INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+16    INFO  [Thread eHotel Connect] conn.eHotelConnection - Server 172.16.9.100 started on port 1999
+27    INFO  [Thread eHotel Connect] conn.eHotelConnection - Waiting for connection.....
+5027  INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+10027 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+15027 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+20028 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+25028 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+30028 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+35029 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+40029 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+45029 INFO  [Thread process bill] processor.BillProcessor - No bill need to process
+50029 INFO  [Thread process bill] processor.BillProcessor - No bill need to process

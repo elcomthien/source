@@ -62,26 +62,26 @@ public class PMSDiningController extends HttpServlet {
 			String parentId = "";
 			String name = "";
 			String image = "";
-			String imageIC = "";
+			// String imageIC = "";
 			String active = "";
 			String index = "";
 
 			parentId = request.getParameter("parentid");
 			name = request.getParameter("name");
 			image = request.getParameter("image");
-			imageIC = request.getParameter("imageic");
-			imageIC = "none";
+			// imageIC = request.getParameter("imageic");
+			// imageIC = "none";
 			active = request.getParameter("active");
 			index = request.getParameter("index");
 
 			LogUtil.logControl(PMSDiningController.class.toString(), "addsubjectdining", "parentId,,," + parentId + ",,,name,,," + name
-					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,active,,," + active + ",,,index,,," + index);
+					+ ",,,image,,," + image + ",,,imageic,,," + image + ",,,active,,," + active + ",,,index,,," + index);
 
 			PMSDiningSubjectModel sub = new PMSDiningSubjectModel();
 			sub.setParent(parentId);
 			sub.setName(name);
 			sub.setImage(image);
-			sub.setImageIC(imageIC);
+			sub.setImageIC(image);
 			sub.setActive(active);
 			sub.setIndex(index);
 
@@ -93,7 +93,7 @@ public class PMSDiningController extends HttpServlet {
 			String subjectId = "";
 			String name = "";
 			String image = "";
-			String imageIC = "";
+//			String imageIC = "";
 			String active = "";
 			String index = "";
 			String langId = "";
@@ -101,20 +101,21 @@ public class PMSDiningController extends HttpServlet {
 			subjectId = request.getParameter("subjectid");
 			name = request.getParameter("name");
 			image = request.getParameter("image");
-			imageIC = request.getParameter("imageic");
-			imageIC = "none";
+			// imageIC = request.getParameter("imageic");
+			// imageIC = "none";
 			active = request.getParameter("active");
 			index = request.getParameter("index");
 			langId = request.getParameter("langid");
 
 			LogUtil.logControl(PMSDiningController.class.toString(), "editsubjectdining", "subjectId,,," + subjectId + ",,,name,,," + name
-					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,active,,," + active + ",,,index,,," + index + ",,,langId,,," + langId);
+					+ ",,,image,,," + image + ",,,imageic,,," + image + ",,,active,,," + active + ",,,index,,," + index + ",,,langId,,,"
+					+ langId);
 
 			PMSDiningSubjectModel sub = new PMSDiningSubjectModel();
 			sub.setId(subjectId);
 			sub.setName(name);
 			sub.setImage(image);
-			sub.setImageIC(imageIC);
+			sub.setImageIC(image);
 			sub.setActive(active);
 			sub.setIndex(index);
 			sub.setLangId(langId);
@@ -153,8 +154,9 @@ public class PMSDiningController extends HttpServlet {
 			active = request.getParameter("active");
 			index = request.getParameter("index");
 
-			LogUtil.logControl(PMSDiningController.class.toString(), "additemdining", "parentId,,," + subjectId + ",,,name,,," + name + ",,,def,,,"
-					+ def + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,image,,," + image + ",,,active,,," + active + ",,,index,,," + index);
+			LogUtil.logControl(PMSDiningController.class.toString(), "additemdining", "parentId,,," + subjectId + ",,,name,,," + name
+					+ ",,,def,,," + def + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,image,,," + image + ",,,active,,," + active
+					+ ",,,index,,," + index);
 
 			PMSDiningItemModel item = new PMSDiningItemModel();
 			item.setSubjectId(subjectId);
@@ -191,9 +193,9 @@ public class PMSDiningController extends HttpServlet {
 			index = request.getParameter("index");
 			langId = request.getParameter("langId");
 
-			LogUtil.logControl(PMSDiningController.class.toString(), "edititemdining", "itemid,,," + itemId + ",,,name,,," + name + ",,,def,,," + def
-					+ ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,image,,," + image + ",,,active,,," + active + ",,,index,,," + index
-					+ ",,,langId,,," + langId);
+			LogUtil.logControl(PMSDiningController.class.toString(), "edititemdining", "itemid,,," + itemId + ",,,name,,," + name
+					+ ",,,def,,," + def + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,image,,," + image + ",,,active,,," + active
+					+ ",,,index,,," + index + ",,,langId,,," + langId);
 
 			PMSDiningItemModel item = new PMSDiningItemModel();
 			item.setId(itemId);

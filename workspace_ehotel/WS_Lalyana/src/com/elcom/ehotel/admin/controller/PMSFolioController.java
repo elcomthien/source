@@ -137,6 +137,31 @@ public class PMSFolioController extends HttpServlet {
 			int rs = pmsFolioService.addMessageFolio(mess);
 			out.println(rs);
 		}
+		
+		if (action.equals("editmessage")) {
+			String folionum = request.getParameter("folionum");
+			String messageid = request.getParameter("messageid");
+			String title = request.getParameter("title");
+			String content = request.getParameter("content");
+			String sender = request.getParameter("sender");
+			String top = request.getParameter("short");
+			String langid = request.getParameter("langid");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "editmessage", "folionum|" + folionum + "|messageid|" + messageid + "|title|" + title + "|content|"
+					+ content + "|sender|" + sender + "|short|" + top + "|langid|" + langid);
+
+			PMSFolioMessageModel mess = new PMSFolioMessageModel();
+			mess.setRoomId(folionum);
+			mess.setMessageId(messageid);
+			mess.setTitle(title);
+			mess.setContent(content);
+			mess.setSender(sender);
+			mess.setTop(top);
+			mess.setLangId(langid);
+
+			int rs = pmsFolioService.editMessageFolio(mess);
+			out.println(rs);
+		}
 
 		if (action.equals("deletemessage")) {
 			String folionum = request.getParameter("folionum");

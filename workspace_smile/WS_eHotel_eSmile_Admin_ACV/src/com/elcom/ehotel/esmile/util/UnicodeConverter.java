@@ -30,7 +30,6 @@ public class UnicodeConverter {
 					if (param != null && param.getType() == SubProParam.IN) {
 						String value = param.getString();
 						if (value != null) {
-							// TODO do not remove this command
 							value = value.trim();
 							// System.out.println("param " + (i + 1) + " before encode:" + value);
 							value = encodeUnicode(value);
@@ -42,7 +41,6 @@ public class UnicodeConverter {
 				} else if (item instanceof String) {
 					String value = (String) item;
 					if (value != null) {
-						// TODO do not remove this command
 						value = value.trim();
 						// System.out.println("param " + (i + 1) + " before encode:" + value);
 						value = UnicodeConverter.encodeUnicode(value);

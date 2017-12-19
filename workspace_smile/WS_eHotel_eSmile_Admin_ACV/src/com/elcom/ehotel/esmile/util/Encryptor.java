@@ -91,8 +91,10 @@ public class Encryptor {
 	public static void main(String[] args) throws InvalidKeyException, NoSuchAlgorithmException, InvalidKeySpecException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, IOException {
 //		System.err.println(encryptPassword("admin"));
 //		System.err.println(encryptPasswordBySHA("admin"));
-		System.out.println(encryptPassword("123"));
-//		System.out.println(encryptPasswordBySHA("flcquynhon"));
+//		System.out.println(encryptPassword("order"));
+		System.out.println(encryptPassword("flcquynhon"));
 //		System.out.println(decryptPasswordDES("25f9e794323b453885f5181f1b624d0b"));
+		
+//		ecbc4621adac2dde7c15dad274daed02
 	}
 }

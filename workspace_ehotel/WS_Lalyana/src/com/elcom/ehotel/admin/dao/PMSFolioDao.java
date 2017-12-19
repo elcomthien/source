@@ -203,6 +203,40 @@ public class PMSFolioDao {
 		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.ADD_MESSAGE_LIST_FOLIO, params, "folionum,title,content,sender,short", rs);
 		return rs;
 	}
+	
+	@SuppressWarnings("unchecked")
+	public int editMessageFolio(PMSFolioMessageModel mess) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(mess.getRoomId()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getMessageId()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getTitle()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getContent()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getSender()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getTop()), 0);
+		params.add(in);
+		in = new SubProParam(new String(mess.getLangId()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.EDIT_MESSAGE_FOLIO, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(7);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.EDIT_MESSAGE_FOLIO, params, "folionum,messageid,title,content,sender,short,langid", rs);
+		return rs;
+	}
 
 	@SuppressWarnings("unchecked")
 	public int deleteMessage(int folionum, int messId) {

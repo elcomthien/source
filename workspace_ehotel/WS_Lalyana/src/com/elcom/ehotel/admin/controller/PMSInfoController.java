@@ -64,18 +64,18 @@ public class PMSInfoController extends HttpServlet {
 			String serviceId = request.getParameter("serviceid");
 			String subjectName = request.getParameter("subjectname");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+//			String imageIC = request.getParameter("imageic");
 			String invisible = request.getParameter("invisible");
 			String index = request.getParameter("index");
 
 			LogUtil.logControl(PMSInfoController.class.toString(), "addsubjectinfo", "serviceId,,," + serviceId + ",,,subjectName,,," + subjectName
-					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,index,,," + index);
+					+ ",,,image,,," + image + ",,,imageic,,," + image + ",,,invisible,,," + invisible + ",,,index,,," + index);
 
 			PMSInfoSubjectModel info = new PMSInfoSubjectModel();
 			info.setServiceId(serviceId);
 			info.setSubjectName(UnicodeConverter.encodeUnicode(subjectName));
 			info.setImage(image);
-			info.setImageIC(imageIC);
+			info.setImageIC(image);
 			info.setInvisible(invisible);
 			info.setIndex(index);
 
@@ -88,13 +88,13 @@ public class PMSInfoController extends HttpServlet {
 			String subjectId = request.getParameter("subjectid");
 			String subjectName = request.getParameter("subjectname");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+//			String imageIC = request.getParameter("imageic");
 			String invisible = request.getParameter("invisible");
 			String index = request.getParameter("index");
 			String langId = request.getParameter("langid");
 
 			LogUtil.logControl(PMSInfoController.class.toString(), "editsubjectinfo", "subjectId,,," + subjectId + ",,,subjectId,,," + subjectId
-					+ ",,,subjectName,,," + subjectName + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible
+					+ ",,,subjectName,,," + subjectName + ",,,image,,," + image + ",,,imageic,,," + image + ",,,invisible,,," + invisible
 					+ ",,,index,,," + index + ",,,langId,,," + langId);
 
 			PMSInfoSubjectModel info = new PMSInfoSubjectModel();
@@ -102,7 +102,7 @@ public class PMSInfoController extends HttpServlet {
 			info.setSubjectId(subjectId);
 			info.setSubjectName(UnicodeConverter.encodeUnicode(subjectName));
 			info.setImage(image);
-			info.setImageIC(imageIC);
+			info.setImageIC(image);
 			info.setInvisible(invisible);
 			info.setIndex(index);
 			info.setLangId(langId);

@@ -40,6 +40,7 @@ public class SQL {
 	public static final String GET_LIST_MESSAGE = "BEGIN EPMS.getMessages(?,?,?); END;";
 	public static final String ADD_MESSAGE_FOLIO = "BEGIN EPMS.addMessageFolio(?,?,?,?,?); END;";
 	public static final String ADD_MESSAGE_LIST_FOLIO = "BEGIN EPMS.addMessageListFolio(?,?,?,?,?,?); END;";
+	public static final String EDIT_MESSAGE_FOLIO = "BEGIN EPMS.editMessageFolio(?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_MESSAGE_FOLIO = "BEGIN EPMS.deleteMessageFolio(?,?,?); END;";
 
 	// pms language

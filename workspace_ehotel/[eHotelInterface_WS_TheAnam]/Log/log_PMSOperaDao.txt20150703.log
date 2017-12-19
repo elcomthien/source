@@ -1,0 +1,31 @@
+[dd/mm/yyyy hh:mm:ss messageLog]
+03/07/2015 11:02:07  XL | 1101 | 177095 | 001 | This is a sample message.&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt;It contains formatting information&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt; because it will be printed directly by&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt;the other system.&amp;lt;FF&amp;gt; | NOTHING | NOTHING | WF: NOTHING
+03/07/2015 11:02:15  Send message to guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-04098: trigger 'EHOTEL_SOKHA.SYN_DB_PMSFOLIOMESSAGE' is invalid and failed re-validation
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+03/07/2015 11:06:00  XL | 1101 | 177095 | 001 | This is a sample message.&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt;It contains formatting information&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt; because it will be printed directly by&amp;lt;CR&amp;gt;&amp;lt;LF&amp;gt;the other system.&amp;lt;FF&amp;gt; | NOTHING | NOTHING | WF: NOTHING
+03/07/2015 11:06:00  Send message to guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-01858: a non-numeric character was found where a numeric was expected
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XL", line 11
+ORA-06512: at line 1
+
+03/07/2015 19:15:15  XI | 2000 | 123456 | Breakfast Charge | 0.31 | Y | NOTHING | NOTHING
+03/07/2015 19:15:16  Get bill request for guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-01722: invalid number
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XI", line 16
+ORA-06512: at line 1
+
+03/07/2015 19:15:35  XI | 2000 | 123456 | Payment Payment Payment Folio#146350 (1) | 0.80 | Y | NOTHING | NOTHING
+03/07/2015 19:15:36  Get bill request for guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-01722: invalid number
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XI", line 16
+ORA-06512: at line 1
+
+03/07/2015 19:15:46  XI | 2000 | 123456 | Room Charge (ROM) | 1.00 | Y | NOTHING | NOTHING
+03/07/2015 19:15:46  Get bill request for guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-01722: invalid number
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XI", line 16
+ORA-06512: at line 1
+
+03/07/2015 19:15:50  XI | 2000 | 123456 | Breakfast Charge | 0.31 | Y | NOTHING | NOTHING
+03/07/2015 19:15:50  Get bill request for guest write?????com.elcom.pms.opera.dbi.IMBrokerSysException: ORA-01722: invalid number
+ORA-06512: at "EHOTEL_SOKHA.FUNCTION_XI", line 16
+ORA-06512: at line 1
+

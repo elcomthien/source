@@ -40,6 +40,14 @@ public class PMSFolioService {
 		mess.setTop(UnicodeConverter.encodeUnicode(mess.getTop()));
 		return pmsFolioDao.addMessageFolio(mess);
 	}
+	
+	public int editMessageFolio(PMSFolioMessageModel mess) {
+		mess.setTitle(UnicodeConverter.encodeUnicode(mess.getTitle()));
+		mess.setContent(UnicodeConverter.encodeUnicode(mess.getContent()));
+		mess.setSender(UnicodeConverter.encodeUnicode(mess.getSender()));
+		mess.setTop(UnicodeConverter.encodeUnicode(mess.getTop()));
+		return pmsFolioDao.editMessageFolio(mess);
+	}
 
 	public int deleteMessageFolio(String folionum, String messId) {
 		return pmsFolioDao.deleteMessage(ConvertUtil.convertToInteger(folionum), ConvertUtil.convertToInteger(messId));

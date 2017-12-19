@@ -59,16 +59,16 @@ public class ModController extends HttpServlet {
 		if (action.equals("addsubject")) {
 			String name = request.getParameter("name");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+			// String imageIC = request.getParameter("imageic");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(ModController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,," + imageIC
-					+ ",,,invisible,,," + invisible);
+			LogUtil.logControl(ModController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,,"
+					+ image + ",,,invisible,,," + invisible);
 
 			ModSubjectModel mod = new ModSubjectModel();
 			mod.setName(name);
 			mod.setImage(image);
-			mod.setImageIC(imageIC);
+			mod.setImageIC(image);
 			mod.setInvisible(invisible);
 
 			int rs = modService.addSubjectMod(mod);
@@ -79,18 +79,18 @@ public class ModController extends HttpServlet {
 			String idSubject = request.getParameter("idsubject");
 			String name = request.getParameter("name");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+			// String imageIC = request.getParameter("imageic");
 			String invisible = request.getParameter("invisible");
 			String langid = request.getParameter("langid");
 
-			LogUtil.logControl(ModController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,image,,,"
-					+ image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,langid,,," + langid);
+			LogUtil.logControl(ModController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,imageic,,," + image + ",,,invisible,,," + invisible + ",,,langid,,," + langid);
 
 			ModSubjectModel mod = new ModSubjectModel();
 			mod.setIdSubject(idSubject);
 			mod.setName(name);
 			mod.setImage(image);
-			mod.setImageIC(imageIC);
+			mod.setImageIC(image);
 			mod.setInvisible(invisible);
 			mod.setLangid(langid);
 
@@ -113,8 +113,8 @@ public class ModController extends HttpServlet {
 			String url = request.getParameter("url");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(ModController.class.toString(), "addmod", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,url,,," + url
-					+ ",,,invisible,,," + invisible);
+			LogUtil.logControl(ModController.class.toString(), "addmod", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,url,,,"
+					+ url + ",,,invisible,,," + invisible);
 
 			ModContentModel con = new ModContentModel();
 			con.setIdSubject(idSubject);
@@ -133,8 +133,8 @@ public class ModController extends HttpServlet {
 			String invisible = request.getParameter("invisible");
 			String langid = request.getParameter("langid");
 
-			LogUtil.logControl(ModController.class.toString(), "editmod", "idSubject,,," + idSubject + ",,,idContent,,," + idContent + ",,,name,,,"
-					+ name + ",,,invisible,,," + invisible + ",,,langid,,," + langid);
+			LogUtil.logControl(ModController.class.toString(), "editmod", "idSubject,,," + idSubject + ",,,idContent,,," + idContent
+					+ ",,,name,,," + name + ",,,invisible,,," + invisible + ",,,langid,,," + langid);
 
 			ModContentModel con = new ModContentModel();
 			con.setIdSubject(idSubject);

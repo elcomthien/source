@@ -86,17 +86,17 @@ public class VodController extends HttpServlet {
 		if (action.equals("addsubject")) {
 			String name = request.getParameter("name");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+//			String imageIC = request.getParameter("imageic");
 			String invisible = request.getParameter("invisible");
 			String type = request.getParameter("type");
 
-			LogUtil.logControl(VodController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible
+			LogUtil.logControl(VodController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,," + image + ",,,invisible,,," + invisible
 					+ ",,,type,,," + type);
 
 			VodSubjectModel vod = new VodSubjectModel();
 			vod.setName(name);
 			vod.setImage(image);
-			vod.setImageIC(imageIC);
+			vod.setImageIC(image);
 			vod.setInvisible(invisible);
 			vod.setType(type);
 
@@ -108,18 +108,18 @@ public class VodController extends HttpServlet {
 			String idSubject = request.getParameter("idsubject");
 			String name = request.getParameter("name");
 			String image = request.getParameter("image");
-			String imageIC = request.getParameter("imageic");
+//			String imageIC = request.getParameter("imageic");
 			String langid = request.getParameter("langid");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(VodController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,image,,," + image  + ",,,imageic,,," + imageIC
+			LogUtil.logControl(VodController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,image,,," + image  + ",,,imageic,,," + image
 					+ ",,,langid,,," + langid + ",,,invisible,,," + invisible);
 
 			VodSubjectModel vod = new VodSubjectModel();
 			vod.setId(idSubject);
 			vod.setName(name);
 			vod.setImage(image);
-			vod.setImageIC(imageIC);
+			vod.setImageIC(image);
 			vod.setLangid(langid);
 			vod.setInvisible(invisible);
 
