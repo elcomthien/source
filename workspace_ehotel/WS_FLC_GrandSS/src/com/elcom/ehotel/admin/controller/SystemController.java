@@ -26,7 +26,7 @@ public class SystemController extends HttpServlet {
 	private SystemService systemService = new SystemService();
 	private PerformanceUtil performanceUtil = new PerformanceUtil();
 	private WelcomeMediaService welcomeMediaService = new WelcomeMediaService();
-	
+
 	public SystemController() {
 		super();
 	}
@@ -75,17 +75,17 @@ public class SystemController extends HttpServlet {
 			list = systemService.getListServiceForParent(langId, parentId);
 			response.getWriter().write(new Gson().toJson(list));
 		}
-		
+
 		if (action.equals("getperformace")) {
 			LogUtil.logControl(SystemController.class.toString(), "getperformace", "none");
-			
+
 			List<PerformanceModel> list = new ArrayList<PerformanceModel>();
 			list.add(performanceUtil.getInfoCPU());
 			list.add(performanceUtil.getInfoMemory());
 			list.add(performanceUtil.getInfoRam());
 			response.getWriter().write(new Gson().toJson(list));
 		}
-		
+
 		if (action.equals("getwelcomemedia")) {
 			String type = request.getParameter("type");
 			LogUtil.logControl(SystemController.class.toString(), "getwelcomemedia", "type,,," + type);
@@ -93,6 +93,14 @@ public class SystemController extends HttpServlet {
 			List<WelcomeMediaModel> list = new ArrayList<WelcomeMediaModel>();
 			list = welcomeMediaService.getWelcomeMedia(type);
 			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getbackgroundmain")) {
+			LogUtil.logControl(SystemController.class.toString(), "getbackgroundmain", "none");
+
+			HashMap<String, String> map = new HashMap<String, String>();
+			map = systemService.getBackgroundMain();
+			response.getWriter().write(new Gson().toJson(map));
 		}
 	}
 
@@ -109,15 +117,16 @@ public class SystemController extends HttpServlet {
 			String invisible = request.getParameter("invisible");
 			String color = request.getParameter("color");
 
-			LogUtil.logControl(SystemController.class.toString(), "editsystemservice", "idservice,,," + id + ",,,name,,," + name + ",,,image,,," + image
-					+ ",,,langid,,," + langid + ",,,index,,," + index + ",,,invisible,,," + invisible+ ",,,color,,," + color);
+			LogUtil.logControl(SystemController.class.toString(), "editsystemservice", "idservice,,," + id + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,langid,,," + langid + ",,,index,,," + index + ",,,invisible,,," + invisible
+					+ ",,,color,,," + color);
 
 			SystemServiceModel service = new SystemServiceModel();
 			service.setId(id);
 			service.setName(name);
 			service.setImage(image);
 			service.setIndex(index);
-			service .setInvisible(invisible);
+			service.setInvisible(invisible);
 			service.setColor(color);
 
 			int rs = systemService.editSystemService(service, langid);
@@ -139,8 +148,8 @@ public class SystemController extends HttpServlet {
 			String logo = request.getParameter("logo");
 			String logosmall = request.getParameter("logosmall");
 
-			LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02 + ",,,logo,,," + logo
-					+ ",,,logosmall,,," + logosmall);
+			LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02
+					+ ",,,logo,,," + logo + ",,,logosmall,,," + logosmall);
 
 			int rs = systemService.updateTextWelcome(line01, line02, logo, logosmall);
 			out.println(rs);
@@ -153,8 +162,8 @@ public class SystemController extends HttpServlet {
 			String setbg = request.getParameter("setbg");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(SystemController.class.toString(), "addadvertise", "name,,," + name + ",,,image,,," + image + ",,,type,,," + type + ",,,setbg,,,"
-					+ setbg + ",,,invisible,,," + invisible);
+			LogUtil.logControl(SystemController.class.toString(), "addadvertise", "name,,," + name + ",,,image,,," + image + ",,,type,,,"
+					+ type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
 
 			SystemAdvertiseModel adv = new SystemAdvertiseModel();
 			adv.setName(name);
@@ -175,8 +184,8 @@ public class SystemController extends HttpServlet {
 			String setbg = request.getParameter("setbg");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(SystemController.class.toString(), "editadvertise", "advertiseid,,," + advid + ",,,name,,," + name + ",,,image,,," + image
-					+ ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
+			LogUtil.logControl(SystemController.class.toString(), "editadvertise", "advertiseid,,," + advid + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
 
 			SystemAdvertiseModel adv = new SystemAdvertiseModel();
 			adv.setId(advid);
@@ -198,7 +207,7 @@ public class SystemController extends HttpServlet {
 			int rs = systemService.deleteAdvertise(advid);
 			out.println(rs);
 		}
-		
+
 		if (action.equals("addwelcomemedia")) {
 			String name = request.getParameter("name");
 			String filename = request.getParameter("filename");
@@ -243,6 +252,15 @@ public class SystemController extends HttpServlet {
 			LogUtil.logControl(SystemController.class.toString(), "deletewelcomemedia", "id,,," + id);
 
 			int rs = welcomeMediaService.deleteWelcomeMedia(id);
+			out.println(rs);
+		}
+
+		if (action.equals("updatebackgroundmain")) {
+			String image = request.getParameter("image");
+
+			LogUtil.logControl(SystemController.class.toString(), "updatebackgroundmain", "image,,," + image);
+
+			int rs = systemService.updateBackgroundMain(image);
 			out.println(rs);
 		}
 

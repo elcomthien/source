@@ -19,13 +19,11 @@ public class SystemService {
 
 	public int editSystemService(SystemServiceModel service, String langid) {
 		service.setName(UnicodeConverter.encodeUnicode(service.getName()));
-		return systemDao.editSystemService(service,
-				ConvertUtil.convertToInteger(langid));
+		return systemDao.editSystemService(service, ConvertUtil.convertToInteger(langid));
 	}
 
 	public int updateStatusSystemSerivce(String idService) {
-		return systemDao.updateStatusSystemSerivce(ConvertUtil
-				.convertToInteger(idService));
+		return systemDao.updateStatusSystemSerivce(ConvertUtil.convertToInteger(idService));
 	}
 
 	public HashMap<String, String> getTextWelcome() {
@@ -53,8 +51,16 @@ public class SystemService {
 	public int deleteAdvertise(String advid) {
 		return systemDao.deleteAdvertise(ConvertUtil.convertToInteger(advid));
 	}
-	
-	public List<SystemServiceModel> getListServiceForParent(String langid, String parentid){
+
+	public List<SystemServiceModel> getListServiceForParent(String langid, String parentid) {
 		return systemDao.getServiceForParent(ConvertUtil.convertToInteger(langid), ConvertUtil.convertToInteger(parentid));
+	}
+
+	public HashMap<String, String> getBackgroundMain() {
+		return systemDao.getBackgroundMain();
+	}
+
+	public int updateBackgroundMain(String image) {
+		return systemDao.updateBackgroundMain(image);
 	}
 }

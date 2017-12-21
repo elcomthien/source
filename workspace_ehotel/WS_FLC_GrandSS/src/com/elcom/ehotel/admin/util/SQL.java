@@ -153,5 +153,9 @@ public class SQL {
 	public static final String DELETE_WELCOME_MEDIA = "BEGIN EPMS.deleteMediaWelcome(?,?); END;";
 	
 	public static final String CHANGE_STATUS_REBOOT = "BEGIN EPMS.changeStatusReboot(?,?); END;";
+	
+	//background main
+	public static final String GET_BACKGOUND_MAIN = "BEGIN EPMS.getBackgroundMain(?); END;";
+	public static final String UPDATE_BACKGROUND_MAIN = "BEGIN EPMS.updateBackgroundMain(?,?); END;";
 
 }

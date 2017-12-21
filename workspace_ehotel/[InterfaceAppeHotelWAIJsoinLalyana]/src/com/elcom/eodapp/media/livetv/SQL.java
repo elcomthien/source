@@ -25,5 +25,5 @@ public interface SQL {
 	          " where bc_service_channel.subjectid = ? and bc_channels.channelid = bc_service_channel.channelid and bc_service_channel.status = 1  ORDER BY bc_channels.channelcode ";
 		  
 	  public static final String countLiveTv = "begin ? := vod.countLiveTv(?); end;";
-
+	  public static final String GET_CHANNEL_SUBJECT = "BEGIN PMSAPP.getChannelSubject(?,?); END;";
 }

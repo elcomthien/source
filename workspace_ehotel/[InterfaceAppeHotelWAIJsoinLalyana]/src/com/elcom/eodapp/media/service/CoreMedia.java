@@ -357,8 +357,13 @@ public class CoreMedia extends HttpServlet {
 		} else
 		// Danh sach kenh thuoc chu de livetv
 		if (lenh == Command.com_getlivechannel) {
-			System.out.println("Ip: " + ip + " - In getLiveTvSubject(" + channelid + ")");
-			String json = livedao.getLivetvChannelList(new Integer(channelid).intValue());
+//			System.out.println("Ip: " + ip + " - In getLiveTvSubject(" + channelid + ")");
+//			String json = livedao.getLivetvChannelList(new Integer(channelid).intValue());
+//			System.out.println(json);
+//			out.println(json);
+//			return;
+			String subjectid = request.getParameter(Param.subjectid);
+			String json = livedao.getListChannel(subjectid);
 			System.out.println(json);
 			out.println(json);
 			return;

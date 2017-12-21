@@ -297,12 +297,55 @@ public class SystemDao {
 			service.setImage(outParam.get(i + 2));
 			service.setIndex(outParam.get(i + 3));
 			service.setInvisible(outParam.get(i + 4));
-//			service.setColor(outParam.get(i + 5));
-//			service.setType(outParam.get(i + 6));
+			// service.setColor(outParam.get(i + 5));
+			// service.setType(outParam.get(i + 6));
 			System.out.println(service.toString());
 			list.add(service);
 		}
 		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public HashMap<String, String> getBackgroundMain() {
+		HashMap<String, String> map = new HashMap<String, String>();
+		String rs = "-1";
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam subOut = new SubProParam(new String(), SubProParam.OUT);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_BACKGOUND_MAIN, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(0);
+				rs = paramOUT.getString().trim();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(SystemDao.class.toString(), SQL.GET_BACKGOUND_MAIN, params, "none", 1);
+		map.put("image", rs);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int updateBackgroundMain(String image) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(image), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), SubProParam.OUT);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.UPDATE_BACKGROUND_MAIN, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(1);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(SystemDao.class.toString(), SQL.UPDATE_BACKGROUND_MAIN, params, "image", rs);
+		return rs;
 	}
 	
 	public static void main(String[] args) {
