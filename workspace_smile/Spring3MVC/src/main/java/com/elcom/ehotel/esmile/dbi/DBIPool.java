@@ -7,7 +7,6 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import com.elcom.DBI.DBI;
-import com.elcom.ehotel.esmile.util.Config;
 
 public class DBIPool {
 	private static final Logger logger = LogManager.getLogger(DBIPool.class);

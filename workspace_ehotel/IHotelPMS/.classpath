@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/commons-codec.jar"/>
+	<classpathentry kind="lib" path="lib/commons-net-1.4.1.jar"/>
+	<classpathentry kind="lib" path="lib/DBI.jar"/>
+	<classpathentry kind="lib" path="lib/ELCOMEHotelCoreComm.jar"/>
+	<classpathentry kind="lib" path="lib/EodHelper.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/MailSMTP.jar"/>
+	<classpathentry kind="lib" path="lib/TienTXUtil.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc.jar"/>
+	<classpathentry kind="lib" path="lib/eHotelUtils.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

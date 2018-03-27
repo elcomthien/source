@@ -12,6 +12,14 @@ public class ManagerFile {
 	 *            duong dan file copy
 	 */
 	public void copy(String path1, String path2) {
+		String path3 = path2.replace("Service01", "Service02");
+		String path4 = path2.replace("Service01", "Service03");
+		duplicateImage(path1, path2);
+		duplicateImage(path1, path3);
+		duplicateImage(path1, path4);
+	}
+
+	public void duplicateImage(String path1, String path2) {
 		try {
 			File filein = new File(path1);
 			File fileou = new File(path2);

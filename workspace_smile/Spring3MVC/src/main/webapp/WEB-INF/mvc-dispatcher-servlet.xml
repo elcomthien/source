@@ -16,7 +16,7 @@
 	<bean id="loginService" class="com.elcom.ehotel.esmile.service.LoginServiceImpl" />
 	<bean id="loginDao" class="com.elcom.ehotel.esmile.dao.LoginDaoImpl" />
 	
-	<bean id="layoutService" class="com.elcom.ehotel.esmile.service.LayoutServiceImpl" />
-	<bean id="layoutDao" class="com.elcom.ehotel.esmile.dao.LayoutDaoImpl" />
+	<bean id="esmileService" class="com.elcom.ehotel.esmile.service.eSmileServiceImpl" />
+	<bean id="esmileDao" class="com.elcom.ehotel.esmile.dao.eSmileDaoImpl" />
 
 </beans>

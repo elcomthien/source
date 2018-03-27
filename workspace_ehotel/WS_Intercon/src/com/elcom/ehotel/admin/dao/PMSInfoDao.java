@@ -120,7 +120,8 @@ public class PMSInfoDao {
 			ex.printStackTrace();
 		}
 
-		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.EDIT_SUBJECT_INFO, params, "serviceId,subjectId,name,image,imageic,invisible,index,langid", rs);
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.EDIT_SUBJECT_INFO, params,
+				"serviceId,subjectId,name,image,imageic,invisible,index,langid", rs);
 
 		return rs;
 	}
@@ -172,8 +173,8 @@ public class PMSInfoDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.GET_CONTENT_INFO, params, "subjectid,langid", outParam.size() / 5);
-		for (int i = 0; i < outParam.size(); i = i + 5) {
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.GET_CONTENT_INFO, params, "subjectid,langid", outParam.size() / 6);
+		for (int i = 0; i < outParam.size(); i = i + 6) {
 			PMSInfoContentModel info = new PMSInfoContentModel();
 			info.setSubjectId(outParam.get(i));
 			info.setContentId(outParam.get(i + 1));
@@ -181,6 +182,7 @@ public class PMSInfoDao {
 			info.setDescription(outParam.get(i + 3));
 			// info.setImage(outParam.get(i + 4));
 			info.setInvisible(outParam.get(i + 4));
+			info.setIndex(outParam.get(i + 5));
 			list.add(info);
 		}
 		return list;
@@ -198,24 +200,26 @@ public class PMSInfoDao {
 		params.add(in);
 		in = new SubProParam(new String(info.getInvisible()), 0);
 		params.add(in);
+		in = new SubProParam(new String(info.getIndex()), 0);
+		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
 		params.add(subOut);
 		try {
 			params = SQL.broker.executeSubPro(SQL.ADD_CONTENT_INFO, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(4);
+				SubProParam paramOUT = (SubProParam) params.get(5);
 				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 
-		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.ADD_CONTENT_INFO, params, "subjectId,name,description,invisible", rs);
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.ADD_CONTENT_INFO, params, "subjectId,name,description,invisible,index", rs);
 
 		return rs;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public int editContentInfo(PMSInfoContentModel info) {
 		int rs = -1;
@@ -228,26 +232,28 @@ public class PMSInfoDao {
 		params.add(in);
 		in = new SubProParam(new String(info.getLangId()), 0);
 		params.add(in);
+		in = new SubProParam(new String(info.getIndex()), 0);
+		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
 		params.add(subOut);
 		try {
 			params = SQL.broker.executeSubPro(SQL.EDIT_CONTENT_INFO, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(4);
+				SubProParam paramOUT = (SubProParam) params.get(5);
 				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 
-		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.EDIT_CONTENT_INFO, params, "contentId,name,invisible,langId", rs);
+		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.EDIT_CONTENT_INFO, params, "contentId,name,invisible,langId,index", rs);
 
 		return rs;
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	public int deleteContentInfo(int contentId){
+	public int deleteContentInfo(int contentId) {
 		int rs = -1;
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new BigDecimal(contentId), 0);
@@ -266,7 +272,7 @@ public class PMSInfoDao {
 		}
 
 		LogUtil.logDao(PMSInfoDao.class.toString(), SQL.DELETE_CONTENT_INFO, params, "contentid", rs);
-		
+
 		return rs;
 	}
 

@@ -1,0 +1,115 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CoreSoKhaInterfaceService WSDL service -->
+
+  <service name="CoreSoKhaInterface" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://sokha.ehotel.eodapp.elcom.com"/>
+      <parameter name="wsdlServiceElement" value="CoreSoKhaInterfaceService"/>
+      <parameter name="schemaQualified" value="http://common.ehotel.eodapp.elcom.com,http://sokha.ehotel.eodapp.elcom.com"/>
+      <parameter name="wsdlServicePort" value="CoreSoKhaInterface"/>
+      <parameter name="className" value="com.elcom.eodapp.ehotel.sokha.CoreSoKhaInterfaceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="CoreSoKhaInterface"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="guestRoomAndChangeMove" qname="operNS:GuestRoomAndChangeMove" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestRoomAndChangeMoveReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:GUEST_EXROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_RESERVATION" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_EXSHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_SHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ARV_DATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_DEPT_DATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_FIRST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LAST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LANGUAGE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_GROUP" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TITLE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_VIP_STATUS" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TV_RIGHT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_VIDEO_RIGHT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestMessageTextOnline" qname="operNS:GuestMessageTextOnline" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestMessageTextOnlineReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:GUEST_ROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_RESERVATION" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_ID" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_TEXT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:LAST_UPDATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="deleteBillItem" qname="operNS:DeleteBillItem" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:DeleteBillItemReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestCheckout" qname="operNS:GuestCheckout" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestCheckoutReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:GUEST_RESERVATION" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_SHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestRoomMove" qname="operNS:GuestRoomMove" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestRoomMoveReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:GUEST_EXROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_RESERVATION" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_EXSHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_SHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestBillItem" qname="operNS:GuestBillItem" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestBillItemReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ITEM_DESC" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ITEM_AMOUNT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DISPLAY_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestBillReq" qname="operNS:GuestBillReq" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestBillReqReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:oBill" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestPostReq" qname="operNS:GuestPostReq" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestPostReqReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:oPost" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestCheckin" qname="operNS:GuestCheckin" xmlns:operNS="http://sokha.ehotel.eodapp.elcom.com" returnQName="retNS:GuestCheckinReturn" xmlns:retNS="http://sokha.ehotel.eodapp.elcom.com" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:GUEST_ARV_DATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_DEPT_DATE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_FIRST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LAST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_NAME" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_RESERVATION" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ROOM" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LANGUAGE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_GROUP" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TITLE" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_VIP_STATUS" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TV_RIGHT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_VIDEO_RIGHT" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_BIRTHDAY" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_SHARE_FLAG" xmlns:pns="http://sokha.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="guestBillReq guestPostReq guestRoomMove guestMessageTextOnline guestRoomAndChangeMove guestCheckin deleteBillItem guestBillItem guestCheckout"/>
+
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oPost"
+        type="java:com.elcom.eodapp.ehotel.common.OPost"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oBill"
+        type="java:com.elcom.eodapp.ehotel.common.OBill"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

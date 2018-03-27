@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.ehotel.eodapp.elcom.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.ehotel.eodapp.elcom.com" xmlns:intf="http://service.ehotel.eodapp.elcom.com" xmlns:tns1="http://common.ehotel.eodapp.elcom.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://service.ehotel.eodapp.elcom.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://common.ehotel.eodapp.elcom.com"/>
+   <element name="guestMessageTextOnline">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="MESSAGE_ID" type="xsd:string"/>
+      <element name="MESSAGE_TEXT" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageTextOnlineResponse">
+    <complexType>
+     <sequence>
+      <element name="guestMessageTextOnlineReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageDelete">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="MESSAGE_ID" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageDeleteResponse">
+    <complexType>
+     <sequence>
+      <element name="guestMessageDeleteReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillBalan">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="BALANCE_AMOUNT" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillBalanResponse">
+    <complexType>
+     <sequence>
+      <element name="guestBillBalanReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageText">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="MESSAGE_ID" type="xsd:string"/>
+      <element name="MESSAGE_TEXT" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageTextResponse">
+    <complexType>
+     <sequence>
+      <element name="guestMessageTextReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFunctionNew">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getFunctionNewResponse">
+    <complexType>
+     <sequence>
+      <element name="getFunctionNewReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestChangeData">
+    <complexType>
+     <sequence>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="SHARE_FLAG" type="xsd:string"/>
+      <element name="GUEST_FIRST_NAME" type="xsd:string"/>
+      <element name="GUEST_NAME" type="xsd:string"/>
+      <element name="GUEST_LANGUAGE" type="xsd:string"/>
+      <element name="GUEST_GROUP_NUMBER" type="xsd:string"/>
+      <element name="GUEST_TITLE" type="xsd:string"/>
+      <element name="GUEST_ARV_DATE" type="xsd:string"/>
+      <element name="GUEST_DEPT_DATE" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestChangeDataResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestChangeDataReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestRoomEquipment">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="CLASS_SERVICE" type="xsd:string"/>
+      <element name="MSG_LIGHT_STATUS" type="xsd:string"/>
+      <element name="MINIBAR_RIGHT" type="xsd:string"/>
+      <element name="TV_RIGHT" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestRoomEquipmentResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestRoomEquipmentReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestPostAnswer">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="ANSWER_STATUS" type="xsd:string"/>
+      <element name="CLEAR_TEXT" type="xsd:string"/>
+      <element name="SEQ_NUMBER" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestPostAnswerResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestPostAnswerReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestRoomEquipReq">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestRoomEquipReqResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="guestRoomEquipReqReturn" type="tns1:oRoomData"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageDeleteReq">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestMessageDeleteReqResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="guestMessageDeleteReqReturn" type="tns1:oMessageDel"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestCheckout">
+    <complexType>
+     <sequence>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="SWAP_FLAG" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestCheckoutResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestCheckoutReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestRoomMove">
+    <complexType>
+     <sequence>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="GUEST_NAME" type="xsd:string"/>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="ROOM_NUMER_OLD" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestRoomMoveResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestRoomMoveReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillReq">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillReqResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="guestBillReqReturn" type="tns1:oBill"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillItem">
+    <complexType>
+     <sequence>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="ITEM_DESC" type="xsd:string"/>
+      <element name="ITEM_AMOUNT" type="xsd:string"/>
+      <element name="DISPLAY_FLAG" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestBillItemResponse">
+    <complexType>
+     <sequence>
+      <element name="guestBillItemReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestPostReq">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guestPostReqResponse">
+    <complexType>
+     <sequence>
+      <element maxOccurs="unbounded" name="guestPostReqReturn" type="tns1:oPost"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="synDatabase">
+    <complexType>
+     <sequence>
+      <element name="fun" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="synDatabaseResponse">
+    <complexType>
+     <sequence>
+      <element name="synDatabaseReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestCheckin">
+    <complexType>
+     <sequence>
+      <element name="RESERVATION_NUMER" type="xsd:string"/>
+      <element name="GUEST_ARV_DATE" type="xsd:string"/>
+      <element name="GUEST_DEPT_DATE" type="xsd:string"/>
+      <element name="GUEST_TITLE" type="xsd:string"/>
+      <element name="GUEST_FIRST_NAME" type="xsd:string"/>
+      <element name="GUEST_NAME" type="xsd:string"/>
+      <element name="ROOM_NUMER" type="xsd:string"/>
+      <element name="GUEST_PIN" type="xsd:string"/>
+      <element name="SHARE_FLAG" type="xsd:string"/>
+      <element name="GUEST_LANGUAGE" type="xsd:string"/>
+      <element name="GUEST_GROUP_NUMBER" type="xsd:string"/>
+      <element name="DATE" type="xsd:string"/>
+      <element name="TIME" type="xsd:string"/>
+      <element name="SWAP_FLAG" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="GuestCheckinResponse">
+    <complexType>
+     <sequence>
+      <element name="GuestCheckinReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://common.ehotel.eodapp.elcom.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="oRoomData">
+    <sequence>
+     <element name="CLEAR_TEXT" nillable="true" type="xsd:string"/>
+     <element name="ROOM_NUMBER" nillable="true" type="xsd:string"/>
+     <element name="ROOM_STATUS" nillable="true" type="xsd:string"/>
+     <element name="USERID" nillable="true" type="xsd:string"/>
+     <element name="VOICE_MAIL" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="oMessageDel">
+    <sequence>
+     <element name="MESSAGE_ID" nillable="true" type="xsd:string"/>
+     <element name="RESERVATION_NUMER" nillable="true" type="xsd:string"/>
+     <element name="ROOM_NUMBER" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="oBill">
+    <sequence>
+     <element name="RESERVATION_NUMER" nillable="true" type="xsd:string"/>
+     <element name="ROOM_NUMER" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <complexType name="oPost">
+    <sequence>
+     <element name="CLEAR_TEXT" nillable="true" type="xsd:string"/>
+     <element name="DATE" nillable="true" type="xsd:string"/>
+     <element name="DIALED_DIGITS" nillable="true" type="xsd:string"/>
+     <element name="DURATION" nillable="true" type="xsd:string"/>
+     <element name="MINIBAR_ARTICLE" nillable="true" type="xsd:string"/>
+     <element name="NUMOF_ARTICLE" nillable="true" type="xsd:string"/>
+     <element name="POSTING_TYPE" nillable="true" type="xsd:string"/>
+     <element name="POST_AMOUNT" nillable="true" type="xsd:string"/>
+     <element name="POST_CALL_TYPE" nillable="true" type="xsd:string"/>
+     <element name="POST_SEQ_NUMBER" nillable="true" type="xsd:string"/>
+     <element name="ROOM_NUMBER" nillable="true" type="xsd:string"/>
+     <element name="SALES_OUTLET" nillable="true" type="xsd:string"/>
+     <element name="TAX_PULSE" nillable="true" type="xsd:string"/>
+     <element name="TIME" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="guestMessageDeleteReqResponse">
+
+      <wsdl:part element="impl:guestMessageDeleteReqResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageTextOnlineResponse">
+
+      <wsdl:part element="impl:guestMessageTextOnlineResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageTextRequest">
+
+      <wsdl:part element="impl:guestMessageText" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageDeleteResponse">
+
+      <wsdl:part element="impl:guestMessageDeleteResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="synDatabaseResponse">
+
+      <wsdl:part element="impl:synDatabaseResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestPostReqResponse">
+
+      <wsdl:part element="impl:guestPostReqResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageDeleteReqRequest">
+
+      <wsdl:part element="impl:guestMessageDeleteReq" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestChangeDataRequest">
+
+      <wsdl:part element="impl:GuestChangeData" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestPostAnswerRequest">
+
+      <wsdl:part element="impl:GuestPostAnswer" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestCheckoutResponse">
+
+      <wsdl:part element="impl:GuestCheckoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillReqResponse">
+
+      <wsdl:part element="impl:guestBillReqResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="synDatabaseRequest">
+
+      <wsdl:part element="impl:synDatabase" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestPostAnswerResponse">
+
+      <wsdl:part element="impl:GuestPostAnswerResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestPostReqRequest">
+
+      <wsdl:part element="impl:guestPostReq" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestRoomEquipmentRequest">
+
+      <wsdl:part element="impl:GuestRoomEquipment" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestRoomEquipReqResponse">
+
+      <wsdl:part element="impl:guestRoomEquipReqResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestCheckoutRequest">
+
+      <wsdl:part element="impl:GuestCheckout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageTextOnlineRequest">
+
+      <wsdl:part element="impl:guestMessageTextOnline" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageTextResponse">
+
+      <wsdl:part element="impl:guestMessageTextResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestCheckinRequest">
+
+      <wsdl:part element="impl:GuestCheckin" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestMessageDeleteRequest">
+
+      <wsdl:part element="impl:guestMessageDelete" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestRoomMoveResponse">
+
+      <wsdl:part element="impl:GuestRoomMoveResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFunctionNewResponse">
+
+      <wsdl:part element="impl:getFunctionNewResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillBalanResponse">
+
+      <wsdl:part element="impl:guestBillBalanResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getFunctionNewRequest">
+
+      <wsdl:part element="impl:getFunctionNew" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestRoomEquipReqRequest">
+
+      <wsdl:part element="impl:guestRoomEquipReq" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillItemResponse">
+
+      <wsdl:part element="impl:guestBillItemResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestRoomMoveRequest">
+
+      <wsdl:part element="impl:GuestRoomMove" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillBalanRequest">
+
+      <wsdl:part element="impl:guestBillBalan" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillReqRequest">
+
+      <wsdl:part element="impl:guestBillReq" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestRoomEquipmentResponse">
+
+      <wsdl:part element="impl:GuestRoomEquipmentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guestBillItemRequest">
+
+      <wsdl:part element="impl:guestBillItem" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestChangeDataResponse">
+
+      <wsdl:part element="impl:GuestChangeDataResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="GuestCheckinResponse">
+
+      <wsdl:part element="impl:GuestCheckinResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="CoreInterface">
+
+      <wsdl:operation name="guestMessageTextOnline">
+
+         <wsdl:input message="impl:guestMessageTextOnlineRequest" name="guestMessageTextOnlineRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestMessageTextOnlineResponse" name="guestMessageTextOnlineResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageDelete">
+
+         <wsdl:input message="impl:guestMessageDeleteRequest" name="guestMessageDeleteRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestMessageDeleteResponse" name="guestMessageDeleteResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillBalan">
+
+         <wsdl:input message="impl:guestBillBalanRequest" name="guestBillBalanRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestBillBalanResponse" name="guestBillBalanResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageText">
+
+         <wsdl:input message="impl:guestMessageTextRequest" name="guestMessageTextRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestMessageTextResponse" name="guestMessageTextResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFunctionNew">
+
+         <wsdl:input message="impl:getFunctionNewRequest" name="getFunctionNewRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getFunctionNewResponse" name="getFunctionNewResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestChangeData">
+
+         <wsdl:input message="impl:GuestChangeDataRequest" name="GuestChangeDataRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestChangeDataResponse" name="GuestChangeDataResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestRoomEquipment">
+
+         <wsdl:input message="impl:GuestRoomEquipmentRequest" name="GuestRoomEquipmentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestRoomEquipmentResponse" name="GuestRoomEquipmentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestPostAnswer">
+
+         <wsdl:input message="impl:GuestPostAnswerRequest" name="GuestPostAnswerRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestPostAnswerResponse" name="GuestPostAnswerResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestRoomEquipReq">
+
+         <wsdl:input message="impl:guestRoomEquipReqRequest" name="guestRoomEquipReqRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestRoomEquipReqResponse" name="guestRoomEquipReqResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageDeleteReq">
+
+         <wsdl:input message="impl:guestMessageDeleteReqRequest" name="guestMessageDeleteReqRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestMessageDeleteReqResponse" name="guestMessageDeleteReqResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestCheckout">
+
+         <wsdl:input message="impl:GuestCheckoutRequest" name="GuestCheckoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestCheckoutResponse" name="GuestCheckoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestRoomMove">
+
+         <wsdl:input message="impl:GuestRoomMoveRequest" name="GuestRoomMoveRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestRoomMoveResponse" name="GuestRoomMoveResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillReq">
+
+         <wsdl:input message="impl:guestBillReqRequest" name="guestBillReqRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestBillReqResponse" name="guestBillReqResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillItem">
+
+         <wsdl:input message="impl:guestBillItemRequest" name="guestBillItemRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestBillItemResponse" name="guestBillItemResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestPostReq">
+
+         <wsdl:input message="impl:guestPostReqRequest" name="guestPostReqRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guestPostReqResponse" name="guestPostReqResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="synDatabase">
+
+         <wsdl:input message="impl:synDatabaseRequest" name="synDatabaseRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:synDatabaseResponse" name="synDatabaseResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestCheckin">
+
+         <wsdl:input message="impl:GuestCheckinRequest" name="GuestCheckinRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:GuestCheckinResponse" name="GuestCheckinResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="CoreInterfaceSoapBinding" type="impl:CoreInterface">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="guestMessageTextOnline">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestMessageTextOnlineRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestMessageTextOnlineResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageDelete">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestMessageDeleteRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestMessageDeleteResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillBalan">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestBillBalanRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestBillBalanResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageText">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestMessageTextRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestMessageTextResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getFunctionNew">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getFunctionNewRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getFunctionNewResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestChangeData">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestChangeDataRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestChangeDataResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestRoomEquipment">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestRoomEquipmentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestRoomEquipmentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestPostAnswer">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestPostAnswerRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestPostAnswerResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestRoomEquipReq">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestRoomEquipReqRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestRoomEquipReqResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestMessageDeleteReq">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestMessageDeleteReqRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestMessageDeleteReqResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestCheckout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestCheckoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestCheckoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestRoomMove">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestRoomMoveRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestRoomMoveResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillReq">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestBillReqRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestBillReqResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestBillItem">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestBillItemRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestBillItemResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guestPostReq">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guestPostReqRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guestPostReqResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="synDatabase">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="synDatabaseRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="synDatabaseResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="GuestCheckin">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="GuestCheckinRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="GuestCheckinResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="CoreInterfaceService">
+
+      <wsdl:port binding="impl:CoreInterfaceSoapBinding" name="CoreInterface">
+
+         <wsdlsoap:address location="http://localhost:8080/eHotelInterface/services/CoreInterface"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -68,8 +68,9 @@ public class PMSInfoController extends HttpServlet {
 			String invisible = request.getParameter("invisible");
 			String index = request.getParameter("index");
 
-			LogUtil.logControl(PMSInfoController.class.toString(), "addsubjectinfo", "serviceId,,," + serviceId + ",,,subjectName,,," + subjectName
-					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,index,,," + index);
+			LogUtil.logControl(PMSInfoController.class.toString(), "addsubjectinfo", "serviceId,,," + serviceId + ",,,subjectName,,,"
+					+ subjectName + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,index,,,"
+					+ index);
 
 			PMSInfoSubjectModel info = new PMSInfoSubjectModel();
 			info.setServiceId(serviceId);
@@ -93,9 +94,9 @@ public class PMSInfoController extends HttpServlet {
 			String index = request.getParameter("index");
 			String langId = request.getParameter("langid");
 
-			LogUtil.logControl(PMSInfoController.class.toString(), "editsubjectinfo", "subjectId,,," + subjectId + ",,,subjectId,,," + subjectId
-					+ ",,,subjectName,,," + subjectName + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible
-					+ ",,,index,,," + index + ",,,langId,,," + langId);
+			LogUtil.logControl(PMSInfoController.class.toString(), "editsubjectinfo", "subjectId,,," + subjectId + ",,,subjectId,,,"
+					+ subjectId + ",,,subjectName,,," + subjectName + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,,"
+					+ invisible + ",,,index,,," + index + ",,,langId,,," + langId);
 
 			PMSInfoSubjectModel info = new PMSInfoSubjectModel();
 			info.setServiceId(serviceId);
@@ -115,7 +116,8 @@ public class PMSInfoController extends HttpServlet {
 			String serviceId = request.getParameter("serviceid");
 			String subjectId = request.getParameter("subjectid");
 
-			LogUtil.logControl(PMSInfoController.class.toString(), "deletesubjectinfo", "serviceId,,," + serviceId + ",,,subjectId,,," + subjectId);
+			LogUtil.logControl(PMSInfoController.class.toString(), "deletesubjectinfo", "serviceId,,," + serviceId + ",,,subjectId,,,"
+					+ subjectId);
 
 			int rs = pmsInfoService.deleteSubjectInfo(serviceId, subjectId);
 			out.print(rs);
@@ -126,15 +128,17 @@ public class PMSInfoController extends HttpServlet {
 			String name = request.getParameter("name");
 			String description = request.getParameter("description");
 			String invisible = request.getParameter("invisible");
+			String index = request.getParameter("index");
 
 			LogUtil.logControl(PMSInfoController.class.toString(), "addcontentinfo", "subjectId,,," + subjectId + ",,,name,,," + name
-					+ ",,,description,,," + description + ",,,invisible,,," + invisible);
+					+ ",,,description,,," + description + ",,,invisible,,," + invisible + ",,,index,,," + index);
 
 			PMSInfoContentModel info = new PMSInfoContentModel();
 			info.setSubjectId(subjectId);
 			info.setName(name);
 			info.setDescription(description);
 			info.setInvisible(invisible);
+			info.setIndex(index);
 
 			int rs = pmsInfoService.addContentInfo(info);
 			out.print(rs);
@@ -145,15 +149,17 @@ public class PMSInfoController extends HttpServlet {
 			String name = request.getParameter("name");
 			String invisible = request.getParameter("invisible");
 			String langId = request.getParameter("langid");
+			String index = request.getParameter("index");
 
 			LogUtil.logControl(PMSInfoController.class.toString(), "editcontentinfo", "subjectId,,," + contentId + ",,,name,,," + name
-					+ ",,,invisible,,," + invisible + ",,,langId,,," + langId);
+					+ ",,,invisible,,," + invisible + ",,,langId,,," + langId + ",,,index,,," + index);
 
 			PMSInfoContentModel info = new PMSInfoContentModel();
 			info.setContentId(contentId);
 			info.setName(name);
 			info.setInvisible(invisible);
 			info.setLangId(langId);
+			info.setIndex(index);
 
 			int rs = pmsInfoService.editContentInfo(info);
 			out.print(rs);

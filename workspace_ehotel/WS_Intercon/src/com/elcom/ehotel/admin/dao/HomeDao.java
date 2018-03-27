@@ -30,7 +30,7 @@ public class HomeDao {
 			ex.printStackTrace();
 		}
 
-		LogUtil.logDao(HomeDao.class.toString(), SQL.CHECK_LOGIN, params, "uaername,password", 1);
+		LogUtil.logDao(HomeDao.class.toString(), SQL.CHECK_LOGIN, params, "user,pass", 1);
 		HashMap<String, String> map = new HashMap<String, String>();
 		String[] arr = rs.split(",");
 		if (arr[0].equals("-1")) {
@@ -41,9 +41,11 @@ public class HomeDao {
 			map.put("message", "invalid password");
 		} else {
 			map.put("status", "1");
+//			map.put("message", "OK");
 			map.put("id", arr[0]);
 			map.put("role", arr[1]);
 		}
+		System.out.println(map);
 		return map;
 	}
 }

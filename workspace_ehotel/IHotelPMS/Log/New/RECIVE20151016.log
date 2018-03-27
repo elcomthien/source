@@ -1,0 +1,434 @@
+[dd/mm/yyyy hh:mm:ss messageLog]
+16/10/2015 15:19:25  !------------------------------------------------------------------------------------------------
+16/10/2015 15:19:25  eHotel recieve file = [PMS151016031925.ftp]
+16/10/2015 15:19:25  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016031925.ftp (No such file or directory)]
+16/10/2015 15:19:25  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016031925.ftp
+16/10/2015 15:20:51  !------------------------------------------------------------------------------------------------
+16/10/2015 15:20:51  eHotel recieve file = [PMS151016032051.ftp]
+16/10/2015 15:20:51  Move [PMS151016032051.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016032051.ftp]
+16/10/2015 15:24:02  !------------------------------------------------------------------------------------------------
+16/10/2015 15:24:02  eHotel recieve file = [PMS151016032400.ftp]
+16/10/2015 15:24:02  aLine=====================================================================
+16/10/2015 15:24:02  Before process data = [XO|RN012|G#59212|T#59670|TC4449|BI50000|CUVND|BDMinibar - Beverage|BA0.00VND&0USD|DA151016|TI15:24:25|] , [fileName=PMS151016032400.ftp]
+16/10/2015 15:24:02  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:02  data :[RN012] is necessary =true in command
+16/10/2015 15:24:02  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:02  data :[T#59670] is necessary =true in command
+16/10/2015 15:24:02  data :[TC4449] is necessary =true in command
+16/10/2015 15:24:02  data :[BI50000] is necessary =true in command
+16/10/2015 15:24:02  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:02  data :[BDMinibar - Beverage] is necessary =true in command
+16/10/2015 15:24:02  data :[BA0.00VND&0USD] is necessary =true in command
+16/10/2015 15:24:02  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:02  data :[TI15:24:25] is necessary =true in command
+16/10/2015 15:24:02  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:02  After process data.ParamValue=[RN012,G#59212,T#59670,TC4449,BI50000,CUVND,BDMinibar - Beverage,BA0.00VND&0USD,DA151016,TI15:24:25,XO]
+16/10/2015 15:24:02  Check request bill again with XO?
+16/10/2015 15:24:02  InterfaceDao.LoadInfoRequest: SQL={call PMS_INTERFACE.getRequestList(?,?)}
+16/10/2015 15:24:02  ProcessInfoRequest=XR|RN012|G#59212|
+16/10/2015 15:24:02  Process data is successful!
+16/10/2015 15:24:02  Move [PMS151016032400.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016032400.ftp]
+16/10/2015 15:24:10  !------------------------------------------------------------------------------------------------
+16/10/2015 15:24:10  eHotel recieve file = [PMS151016032409.ftp]
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XI|RN012|G#59212|TC8126|BI604999.39|CUVND|BDRoom service - Tối/Evening #142097|DA151012|TI16:33:58|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[TC8126] is necessary =true in command
+16/10/2015 15:24:10  data :[BI604999.39] is necessary =true in command
+16/10/2015 15:24:10  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:10  data :[BDRoom service - T&#7889;i/Evening #142097] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151012] is necessary =true in command
+16/10/2015 15:24:10  data :[TI16:33:58] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,TC8126,BI604999.39,CUVND,BDRoom service - T&#7889;i/Evening #142097,DA151012,TI16:33:58,-900009,-900009,XI]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XI|RN012|G#59212|TC8449|BI589999.42|CUVND|BDMINIBAR|DA151013|TI17:44:13|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[TC8449] is necessary =true in command
+16/10/2015 15:24:10  data :[BI589999.42] is necessary =true in command
+16/10/2015 15:24:10  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:10  data :[BDMINIBAR] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151013] is necessary =true in command
+16/10/2015 15:24:10  data :[TI17:44:13] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,TC8449,BI589999.42,CUVND,BDMINIBAR,DA151013,TI17:44:13,-900009,-900009,XI]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XI|RN012|G#59212|TC8449|BI259999.75|CUVND|BDMINIBAR|DA151014|TI16:23:46|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[TC8449] is necessary =true in command
+16/10/2015 15:24:10  data :[BI259999.75] is necessary =true in command
+16/10/2015 15:24:10  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:10  data :[BDMINIBAR] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151014] is necessary =true in command
+16/10/2015 15:24:10  data :[TI16:23:46] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,TC8449,BI259999.75,CUVND,BDMINIBAR,DA151014,TI16:23:46,-900009,-900009,XI]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XI|RN012|G#59212|TC8449|BI494999.52|CUVND|BDMINIBAR|DA151015|TI16:35:42|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[TC8449] is necessary =true in command
+16/10/2015 15:24:10  data :[BI494999.52] is necessary =true in command
+16/10/2015 15:24:10  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:10  data :[BDMINIBAR] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151015] is necessary =true in command
+16/10/2015 15:24:10  data :[TI16:35:42] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,TC8449,BI494999.52,CUVND,BDMINIBAR,DA151015,TI16:35:42,-900009,-900009,XI]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XI|RN012|G#59212|TC3004|BI49999.95|CUVND|BDMinibar - Beverage|DA151016|TI15:24:25|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[TC3004] is necessary =true in command
+16/10/2015 15:24:10  data :[BI49999.95] is necessary =true in command
+16/10/2015 15:24:10  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:10  data :[BDMinibar - Beverage] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:10  data :[TI15:24:25] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,TC3004,BI49999.95,CUVND,BDMinibar - Beverage,DA151016,TI15:24:25,-900009,-900009,XI]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  aLine=====================================================================
+16/10/2015 15:24:10  Before process data = [XB|RN012|G#59212|BA0USD&1999998.03VND|DA151016|TI15:24:37|] , [fileName=PMS151016032409.ftp]
+16/10/2015 15:24:10  DataInput[balanceTransaction] is  enought main field.
+16/10/2015 15:24:10  data :[RN012] is necessary =true in command
+16/10/2015 15:24:10  data :[G#59212] is necessary =true in command
+16/10/2015 15:24:10  data :[BA0USD&1999998.03VND] is necessary =true in command
+16/10/2015 15:24:10  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:10  data :[TI15:24:37] is necessary =true in command
+16/10/2015 15:24:10  After process data.ParamInput=[{call PMS_INTERFACE.balanceTransaction(?,?,?,?,?,?)}]
+16/10/2015 15:24:10  After process data.ParamValue=[RN012,G#59212,BA0USD&1999998.03VND,DA151016,TI15:24:37,XB]
+16/10/2015 15:24:10  Process data is successful!
+16/10/2015 15:24:10  Move [PMS151016032409.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016032409.ftp]
+16/10/2015 15:24:38  !------------------------------------------------------------------------------------------------
+16/10/2015 15:24:38  eHotel recieve file = [PMS151016032436.ftp]
+16/10/2015 15:24:38  aLine=====================================================================
+16/10/2015 15:24:38  Before process data = [XO|RN124|G#61982|T#59679|TC4449|BI140000|CUVND|BDMinibar - Beverage|BA0.00VND&0USD|DA151016|TI15:25:02|] , [fileName=PMS151016032436.ftp]
+16/10/2015 15:24:38  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:38  data :[RN124] is necessary =true in command
+16/10/2015 15:24:38  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:38  data :[T#59679] is necessary =true in command
+16/10/2015 15:24:38  data :[TC4449] is necessary =true in command
+16/10/2015 15:24:38  data :[BI140000] is necessary =true in command
+16/10/2015 15:24:38  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:38  data :[BDMinibar - Beverage] is necessary =true in command
+16/10/2015 15:24:38  data :[BA0.00VND&0USD] is necessary =true in command
+16/10/2015 15:24:38  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:38  data :[TI15:25:02] is necessary =true in command
+16/10/2015 15:24:38  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:38  After process data.ParamValue=[RN124,G#61982,T#59679,TC4449,BI140000,CUVND,BDMinibar - Beverage,BA0.00VND&0USD,DA151016,TI15:25:02,XO]
+16/10/2015 15:24:38  Check request bill again with XO?
+16/10/2015 15:24:38  InterfaceDao.LoadInfoRequest: SQL={call PMS_INTERFACE.getRequestList(?,?)}
+16/10/2015 15:24:38  ProcessInfoRequest=XR|RN124|G#61982|
+16/10/2015 15:24:38  Process data is successful!
+16/10/2015 15:24:38  Move [PMS151016032436.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016032436.ftp]
+16/10/2015 15:24:54  !------------------------------------------------------------------------------------------------
+16/10/2015 15:24:54  eHotel recieve file = [PMS151016032454.ftp]
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8520|BI-200.00|CUUSD|BDIncurring deposit|DA151013|TI13:28:04|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8520] is necessary =true in command
+16/10/2015 15:24:54  data :[BI-200.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUUSD] is necessary =true in command
+16/10/2015 15:24:54  data :[BDIncurring deposit] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151013] is necessary =true in command
+16/10/2015 15:24:54  data :[TI13:28:04] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8520,BI-200.00,CUUSD,BDIncurring deposit,DA151013,TI13:28:04,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8112|BI70000.00|CUVND|BDBLUE LAGOON - Trưa/AfterNoon #142157|DA151013|TI13:31:18|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8112] is necessary =true in command
+16/10/2015 15:24:54  data :[BI70000.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDBLUE LAGOON - Tr&#432;a/AfterNoon #142157] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151013] is necessary =true in command
+16/10/2015 15:24:54  data :[TI13:31:18] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8112,BI70000.00,CUVND,BDBLUE LAGOON - Tr&#432;a/AfterNoon #142157,DA151013,TI13:31:18,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8112|BI70000.00|CUVND|BDBLUE LAGOON - Trưa/AfterNoon #142229|DA151014|TI14:48:28|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8112] is necessary =true in command
+16/10/2015 15:24:54  data :[BI70000.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDBLUE LAGOON - Tr&#432;a/AfterNoon #142229] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151014] is necessary =true in command
+16/10/2015 15:24:54  data :[TI14:48:28] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8112,BI70000.00,CUVND,BDBLUE LAGOON - Tr&#432;a/AfterNoon #142229,DA151014,TI14:48:28,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8114|BI139876.00|CUVND|BDBLUE LAGOON - Tối/Evening #142253|DA151014|TI20:36:35|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8114] is necessary =true in command
+16/10/2015 15:24:54  data :[BI139876.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDBLUE LAGOON - T&#7889;i/Evening #142253] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151014] is necessary =true in command
+16/10/2015 15:24:54  data :[TI20:36:35] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8114,BI139876.00,CUVND,BDBLUE LAGOON - T&#7889;i/Evening #142253,DA151014,TI20:36:35,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8404|BI2400000.00|CUVND|BDSPA #142273|DA151015|TI12:52:59|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8404] is necessary =true in command
+16/10/2015 15:24:54  data :[BI2400000.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDSPA #142273] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151015] is necessary =true in command
+16/10/2015 15:24:54  data :[TI12:52:59] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8404,BI2400000.00,CUVND,BDSPA #142273,DA151015,TI12:52:59,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8449|BI139999.86|CUVND|BDMINIBAR|DA151015|TI16:34:26|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8449] is necessary =true in command
+16/10/2015 15:24:54  data :[BI139999.86] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDMINIBAR] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151015] is necessary =true in command
+16/10/2015 15:24:54  data :[TI16:34:26] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8449,BI139999.86,CUVND,BDMINIBAR,DA151015,TI16:34:26,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC8114|BI140000.00|CUVND|BDBLUE LAGOON - Tối/Evening #142307|DA151015|TI19:21:17|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC8114] is necessary =true in command
+16/10/2015 15:24:54  data :[BI140000.00] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDBLUE LAGOON - T&#7889;i/Evening #142307] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151015] is necessary =true in command
+16/10/2015 15:24:54  data :[TI19:21:17] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC8114,BI140000.00,CUVND,BDBLUE LAGOON - T&#7889;i/Evening #142307,DA151015,TI19:21:17,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XI|RN124|G#61982|TC3004|BI139999.86|CUVND|BDMinibar - Beverage|DA151016|TI15:25:02|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[TC3004] is necessary =true in command
+16/10/2015 15:24:54  data :[BI139999.86] is necessary =true in command
+16/10/2015 15:24:54  data :[CUVND] is necessary =true in command
+16/10/2015 15:24:54  data :[BDMinibar - Beverage] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:54  data :[TI15:25:02] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,TC3004,BI139999.86,CUVND,BDMinibar - Beverage,DA151016,TI15:25:02,-900009,-900009,XI]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  aLine=====================================================================
+16/10/2015 15:24:54  Before process data = [XB|RN124|G#61982|BA-200.00USD&3099875.72VND|DA151016|TI15:25:22|] , [fileName=PMS151016032454.ftp]
+16/10/2015 15:24:54  DataInput[balanceTransaction] is  enought main field.
+16/10/2015 15:24:54  data :[RN124] is necessary =true in command
+16/10/2015 15:24:54  data :[G#61982] is necessary =true in command
+16/10/2015 15:24:54  data :[BA-200.00USD&3099875.72VND] is necessary =true in command
+16/10/2015 15:24:54  data :[DA151016] is necessary =true in command
+16/10/2015 15:24:54  data :[TI15:25:22] is necessary =true in command
+16/10/2015 15:24:54  After process data.ParamInput=[{call PMS_INTERFACE.balanceTransaction(?,?,?,?,?,?)}]
+16/10/2015 15:24:54  After process data.ParamValue=[RN124,G#61982,BA-200.00USD&3099875.72VND,DA151016,TI15:25:22,XB]
+16/10/2015 15:24:54  Process data is successful!
+16/10/2015 15:24:54  Move [PMS151016032454.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016032454.ftp]
+16/10/2015 15:32:14  !------------------------------------------------------------------------------------------------
+16/10/2015 15:32:14  eHotel recieve file = [PMS151016033214.ftp]
+16/10/2015 15:32:14  Move [PMS151016033214.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016033214.ftp]
+16/10/2015 15:45:25  !------------------------------------------------------------------------------------------------
+16/10/2015 15:45:25  eHotel recieve file = [PMS151016034525.ftp]
+16/10/2015 15:45:25  Move [PMS151016034525.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016034525.ftp]
+16/10/2015 15:45:25  Error process FTPConnect=[FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016034525.ftp]
+16/10/2015 15:45:25  Error process at aLine=[]|Cause :FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016034525.ftp]
+16/10/2015 15:45:25  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016034525.ftp
+16/10/2015 15:47:53  !------------------------------------------------------------------------------------------------
+16/10/2015 15:47:53  eHotel recieve file = [PMS151016034751.ftp]
+16/10/2015 15:47:53  aLine=====================================================================
+16/10/2015 15:47:53  Before process data = [XO|RN9901|G#60548|T#58033|TC4449|BI1000000|CUVND|BD* Valet & Laundry/DV giat ui|BA0.00VND&0USD|DA151016|TI15:48:17|] , [fileName=PMS151016034751.ftp]
+16/10/2015 15:47:53  DataInput[recievTransaction] is  enought main field.
+16/10/2015 15:47:53  data :[RN9901] is necessary =true in command
+16/10/2015 15:47:53  data :[G#60548] is necessary =true in command
+16/10/2015 15:47:53  data :[T#58033] is necessary =true in command
+16/10/2015 15:47:53  data :[TC4449] is necessary =true in command
+16/10/2015 15:47:53  data :[BI1000000] is necessary =true in command
+16/10/2015 15:47:53  data :[CUVND] is necessary =true in command
+16/10/2015 15:47:53  data :[BD* Valet &amp; Laundry/DV giat ui] is necessary =true in command
+16/10/2015 15:47:53  data :[BA0.00VND&0USD] is necessary =true in command
+16/10/2015 15:47:53  data :[DA151016] is necessary =true in command
+16/10/2015 15:47:53  data :[TI15:48:17] is necessary =true in command
+16/10/2015 15:47:53  After process data.ParamInput=[{call PMS_INTERFACE.recievTransaction(?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:47:53  After process data.ParamValue=[RN9901,G#60548,T#58033,TC4449,BI1000000,CUVND,BD* Valet &amp; Laundry/DV giat ui,BA0.00VND&0USD,DA151016,TI15:48:17,XO]
+16/10/2015 15:47:53  Check request bill again with XO?
+16/10/2015 15:47:53  InterfaceDao.LoadInfoRequest: SQL={call PMS_INTERFACE.getRequestList(?,?)}
+16/10/2015 15:47:53  Process data is successful!
+16/10/2015 15:47:53  Move [PMS151016034751.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016034751.ftp]
+16/10/2015 15:50:41  !------------------------------------------------------------------------------------------------
+16/10/2015 15:50:41  eHotel recieve file = [PMS151016035040.ftp]
+16/10/2015 15:50:41  aLine=====================================================================
+16/10/2015 15:50:41  Before process data = [GC|RN|G#62011|GTMs.|GFRAN|GNKIM |] , [fileName=PMS151016035040.ftp]
+16/10/2015 15:50:41  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 15:50:41  data :[RN] is necessary =true in command
+16/10/2015 15:50:41  data :[G#62011] is necessary =true in command
+16/10/2015 15:50:41  data :[GTMs.] is necessary =true in command
+16/10/2015 15:50:41  data :[GFRAN] is necessary =true in command
+16/10/2015 15:50:41  data :[GNKIM ] is necessary =true in command
+16/10/2015 15:50:41  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:50:41  After process data.ParamValue=[RN,G#62011,GTMs.,GFRAN,GNKIM ,-900009,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 15:50:41  Process data is successful!
+16/10/2015 15:50:41  aLine=====================================================================
+16/10/2015 15:50:41  Before process data = [GC|RN|G#62115|GTMr.|GFGUEBUM|GNKIM |] , [fileName=PMS151016035040.ftp]
+16/10/2015 15:50:41  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 15:50:41  data :[RN] is necessary =true in command
+16/10/2015 15:50:41  data :[G#62115] is necessary =true in command
+16/10/2015 15:50:41  data :[GTMr.] is necessary =true in command
+16/10/2015 15:50:41  data :[GFGUEBUM] is necessary =true in command
+16/10/2015 15:50:41  data :[GNKIM ] is necessary =true in command
+16/10/2015 15:50:41  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:50:41  After process data.ParamValue=[RN,G#62115,GTMr.,GFGUEBUM,GNKIM ,-900009,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 15:50:41  Process data is successful!
+16/10/2015 15:50:41  Move [PMS151016035040.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016035040.ftp]
+16/10/2015 15:51:11  !------------------------------------------------------------------------------------------------
+16/10/2015 15:51:11  eHotel recieve file = [PMS151016035110.ftp]
+16/10/2015 15:51:11  aLine=====================================================================
+16/10/2015 15:51:11  Before process data = [GC|RN|G#62113|GTMr.|GFJUNSEOK|GNOH |] , [fileName=PMS151016035110.ftp]
+16/10/2015 15:51:11  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 15:51:11  data :[RN] is necessary =true in command
+16/10/2015 15:51:11  data :[G#62113] is necessary =true in command
+16/10/2015 15:51:11  data :[GTMr.] is necessary =true in command
+16/10/2015 15:51:11  data :[GFJUNSEOK] is necessary =true in command
+16/10/2015 15:51:11  data :[GNOH ] is necessary =true in command
+16/10/2015 15:51:11  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:51:11  After process data.ParamValue=[RN,G#62113,GTMr.,GFJUNSEOK,GNOH ,-900009,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 15:51:11  Process data is successful!
+16/10/2015 15:51:11  aLine=====================================================================
+16/10/2015 15:51:11  Before process data = [GC|RN|G#62114|GTMs.|GFHWA JUNG|GNLEE |] , [fileName=PMS151016035110.ftp]
+16/10/2015 15:51:11  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 15:51:11  data :[RN] is necessary =true in command
+16/10/2015 15:51:11  data :[G#62114] is necessary =true in command
+16/10/2015 15:51:11  data :[GTMs.] is necessary =true in command
+16/10/2015 15:51:11  data :[GFHWA JUNG] is necessary =true in command
+16/10/2015 15:51:11  data :[GNLEE ] is necessary =true in command
+16/10/2015 15:51:11  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 15:51:11  After process data.ParamValue=[RN,G#62114,GTMs.,GFHWA JUNG,GNLEE ,-900009,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 15:51:11  Process data is successful!
+16/10/2015 15:51:11  Move [PMS151016035110.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016035110.ftp]
+16/10/2015 16:00:09  !------------------------------------------------------------------------------------------------
+16/10/2015 16:00:09  eHotel recieve file = [PMS151016040009.ftp]
+16/10/2015 16:00:09  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016040009.ftp (No such file or directory)]
+16/10/2015 16:00:09  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016040009.ftp
+16/10/2015 16:07:53  !------------------------------------------------------------------------------------------------
+16/10/2015 16:07:53  eHotel recieve file = [PMS151016040753.ftp]
+16/10/2015 16:07:53  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016040753.ftp (No such file or directory)]
+16/10/2015 16:07:53  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016040753.ftp
+16/10/2015 16:16:12  !------------------------------------------------------------------------------------------------
+16/10/2015 16:16:12  eHotel recieve file = [PMS151016041612.ftp]
+16/10/2015 16:16:12  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016041612.ftp (No such file or directory)]
+16/10/2015 16:16:12  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016041612.ftp
+16/10/2015 16:30:10  !------------------------------------------------------------------------------------------------
+16/10/2015 16:30:10  eHotel recieve file = [PMS151016043010.ftp]
+16/10/2015 16:30:10  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016043010.ftp (No such file or directory)]
+16/10/2015 16:30:10  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016043010.ftp
+16/10/2015 16:35:20  !------------------------------------------------------------------------------------------------
+16/10/2015 16:35:20  eHotel recieve file = [PMS151016043520.ftp]
+16/10/2015 16:35:20  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016043520.ftp (No such file or directory)]
+16/10/2015 16:35:20  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016043520.ftp
+16/10/2015 16:42:16  !------------------------------------------------------------------------------------------------
+16/10/2015 16:42:16  eHotel recieve file = [PMS151016044216.ftp]
+16/10/2015 16:42:16  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016044216.ftp (No such file or directory)]
+16/10/2015 16:42:16  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016044216.ftp
+16/10/2015 16:48:51  !------------------------------------------------------------------------------------------------
+16/10/2015 16:48:51  eHotel recieve file = [PMS151016044851.ftp]
+16/10/2015 16:48:51  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016044851.ftp (No such file or directory)]
+16/10/2015 16:48:51  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016044851.ftp
+16/10/2015 16:56:35  !------------------------------------------------------------------------------------------------
+16/10/2015 16:56:35  eHotel recieve file = [PMS151016045635.ftp]
+16/10/2015 16:56:35  aLine=====================================================================
+16/10/2015 16:56:35  Before process data = [GC|RN009|G#62116|GTChild|GFThao|GNNguyen Thi|GLVNM|] , [fileName=PMS151016045635.ftp]
+16/10/2015 16:56:35  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 16:56:35  data :[RN009] is necessary =true in command
+16/10/2015 16:56:35  data :[G#62116] is necessary =true in command
+16/10/2015 16:56:35  data :[GTChild] is necessary =true in command
+16/10/2015 16:56:35  data :[GFThao] is necessary =true in command
+16/10/2015 16:56:35  data :[GNNguyen Thi] is necessary =true in command
+16/10/2015 16:56:35  data :[GLVNM] is necessary =true in command
+16/10/2015 16:56:35  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 16:56:35  After process data.ParamValue=[RN009,G#62116,GTChild,GFThao,GNNguyen Thi,GLVNM,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 16:56:35  Process data is successful!
+16/10/2015 16:56:35  Move [PMS151016045635.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016045635.ftp]
+16/10/2015 16:56:45  !------------------------------------------------------------------------------------------------
+16/10/2015 16:56:45  eHotel recieve file = [PMS151016045644.ftp]
+16/10/2015 16:56:45  aLine=====================================================================
+16/10/2015 16:56:45  Before process data = [GC|RN009|G#62116|GTMs.|GFThao|GNNguyen Thi|GLVNM|] , [fileName=PMS151016045644.ftp]
+16/10/2015 16:56:45  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 16:56:45  data :[RN009] is necessary =true in command
+16/10/2015 16:56:45  data :[G#62116] is necessary =true in command
+16/10/2015 16:56:45  data :[GTMs.] is necessary =true in command
+16/10/2015 16:56:45  data :[GFThao] is necessary =true in command
+16/10/2015 16:56:45  data :[GNNguyen Thi] is necessary =true in command
+16/10/2015 16:56:45  data :[GLVNM] is necessary =true in command
+16/10/2015 16:56:45  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 16:56:45  After process data.ParamValue=[RN009,G#62116,GTMs.,GFThao,GNNguyen Thi,GLVNM,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 16:56:45  Process data is successful!
+16/10/2015 16:56:45  Move [PMS151016045644.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016045644.ftp]
+16/10/2015 16:57:01  !------------------------------------------------------------------------------------------------
+16/10/2015 16:57:01  eHotel recieve file = [PMS151016045701.ftp]
+16/10/2015 16:57:01  Error process at aLine=[]|Cause :/ehotel/service/app/PMSAppCon/PMSDown/PMS151016045701.ftp (No such file or directory)]
+16/10/2015 16:57:01  FileCopy: no such source file: /ehotel/service/app/PMSAppCon/PMSDown/PMS151016045701.ftp
+16/10/2015 16:57:27  !------------------------------------------------------------------------------------------------
+16/10/2015 16:57:27  eHotel recieve file = [PMS151016045725.ftp]
+16/10/2015 16:57:27  aLine=====================================================================
+16/10/2015 16:57:27  Before process data = [GC|RN009|G#62117|GTChild|GFTrân|GNNguyen Ngọc Bảo|GLVNM|] , [fileName=PMS151016045725.ftp]
+16/10/2015 16:57:27  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 16:57:27  data :[RN009] is necessary =true in command
+16/10/2015 16:57:27  data :[G#62117] is necessary =true in command
+16/10/2015 16:57:27  data :[GTChild] is necessary =true in command
+16/10/2015 16:57:27  data :[GFTr&#226;n] is necessary =true in command
+16/10/2015 16:57:27  data :[GNNguyen Ng&#7885;c B&#7843;o] is necessary =true in command
+16/10/2015 16:57:27  data :[GLVNM] is necessary =true in command
+16/10/2015 16:57:27  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 16:57:27  After process data.ParamValue=[RN009,G#62117,GTChild,GFTr&#226;n,GNNguyen Ng&#7885;c B&#7843;o,GLVNM,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 16:57:27  Process data is successful!
+16/10/2015 16:57:27  Move [PMS151016045725.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016045725.ftp]
+16/10/2015 16:59:33  !------------------------------------------------------------------------------------------------
+16/10/2015 16:59:33  eHotel recieve file = [PMS151016045932.ftp]
+16/10/2015 16:59:33  aLine=====================================================================
+16/10/2015 16:59:33  Before process data = [GC|RN009|G#62064|GTMr.|GFBảo|GNNguyễn Ngọc|GLVNM|] , [fileName=PMS151016045932.ftp]
+16/10/2015 16:59:33  DataInput[changeGuestInfo] is  enought main field.
+16/10/2015 16:59:33  data :[RN009] is necessary =true in command
+16/10/2015 16:59:33  data :[G#62064] is necessary =true in command
+16/10/2015 16:59:33  data :[GTMr.] is necessary =true in command
+16/10/2015 16:59:33  data :[GFB&#7843;o] is necessary =true in command
+16/10/2015 16:59:33  data :[GNNguy&#7877;n Ng&#7885;c] is necessary =true in command
+16/10/2015 16:59:33  data :[GLVNM] is necessary =true in command
+16/10/2015 16:59:33  After process data.ParamInput=[{call PMS_INTERFACE.changeGuestInfo(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}]
+16/10/2015 16:59:33  After process data.ParamValue=[RN009,G#62064,GTMr.,GFB&#7843;o,GNNguy&#7877;n Ng&#7885;c,GLVNM,-900009,-900009,-900009,-900009,-900009,-900009,-900009,GC]
+16/10/2015 16:59:33  Process data is successful!
+16/10/2015 16:59:33  Move [PMS151016045932.ftp] into dir=[/ehotel/service/app/PMSAppCon/PMSProcessed/PMS151016045932.ftp]

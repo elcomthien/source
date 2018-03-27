@@ -1127,4 +1127,9 @@ public class ePMSProcess extends HttpServlet {
 				+ "]");
 		log.info("--------------------------------------------------------------");
 	}
+	
+	public static void main(String[] args) {
+		ePMSProcess e = new ePMSProcess();
+		System.out.println(e.checkSynData("20021"));
+	}
 }

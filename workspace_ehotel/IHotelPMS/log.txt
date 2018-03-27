@@ -1,0 +1,36 @@
+0     INFO  [main] processor.MainObject - Start run program
+7     ERROR [main] processor.MainObject - Connect web service  error.
+8     ERROR [main] processor.MainObject - no protocol: 
+11    INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+61    INFO  [main] processor.MainObject - Started successfully.
+62    INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)
+0     INFO  [main] processor.MainObject - Start run program
+18    ERROR [main] processor.MainObject - Connect web service  error.
+19    ERROR [main] processor.MainObject - no protocol: 
+21    INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+67    INFO  [main] processor.MainObject - Started successfully.
+67    INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)
+1     INFO  [main] processor.MainObject - Start run program
+62    ERROR [main] processor.MainObject - Connect web service  error.
+63    ERROR [main] processor.MainObject - no protocol: 
+65    INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+175   INFO  [main] processor.MainObject - Started successfully.
+175   INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)
+0     INFO  [main] processor.MainObject - Start run program
+5     ERROR [main] processor.MainObject - Connect web service  error.
+9     ERROR [main] processor.MainObject - no protocol: 
+12    INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+38    INFO  [main] processor.MainObject - Started successfully.
+38    INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)
+0     INFO  [main] processor.MainObject - Start run program
+1796  INFO  [main] processor.MainObject - Connect web service http://localhost:8123/eHotelInterface/services/CoreInterface?wsdl is success!
+1805  INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+1821  INFO  [main] processor.MainObject - Started successfully.
+1821  INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)
+0     INFO  [main] processor.MainObject - Start run program
+0     INFO  [main] processor.MainObject - Start run program
+0     INFO  [main] processor.MainObject - Start run program
+3138  INFO  [main] processor.MainObject - Connect web service http://localhost:8123/eHotelInterface/services/CoreInterface?wsdl is success!
+3173  INFO  [main] processor.MainObject - Attempting to start XML-RPC Server port:60006.....
+3277  INFO  [main] processor.MainObject - Started successfully.
+3277  INFO  [main] processor.MainObject - Accepting requests. (Halt program to stop.)

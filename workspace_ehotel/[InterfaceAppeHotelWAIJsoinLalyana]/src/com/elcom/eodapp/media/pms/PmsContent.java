@@ -562,7 +562,7 @@ public class PmsContent {
 			obj.put("id", icon.getItemCode());
 			obj.put("name", UnicodeConverter.encodeUnicode(icon.getItemNname()));
 			obj.put("printname", UnicodeConverter.encodeUnicode(icon.getPrintName()));
-			obj.put("def", UnicodeConverter.encodeUnicode(icon.getPrintName()));
+			obj.put("def", UnicodeConverter.encodeUnicode(icon.getItemDef()));
 			obj.put("menuno", icon.getPrintName());
 			obj.put("itemunit", icon.getItemUnit());
 			obj.put("currency", icon.getItemCurrency());

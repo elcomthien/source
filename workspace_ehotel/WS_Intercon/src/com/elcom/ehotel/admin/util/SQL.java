@@ -58,8 +58,8 @@ public class SQL {
 
 	// pms hotel infomation content
 	public static final String GET_CONTENT_INFO = "BEGIN EPMS.getItemsOfHotelInfo(?,?,?); END;";
-	public static final String ADD_CONTENT_INFO = "BEGIN EPMS.addItemInfo(?,?,?,?,?); END;";
-	public static final String EDIT_CONTENT_INFO = "BEGIN EPMS.editItemInfo(?,?,?,?,?); END;";
+	public static final String ADD_CONTENT_INFO = "BEGIN EPMS.addItemInfo(?,?,?,?,?,?); END;";
+	public static final String EDIT_CONTENT_INFO = "BEGIN EPMS.editItemInfo(?,?,?,?,?,?); END;";
 	public static final String DELETE_CONTENT_INFO = "BEGIN EPMS.removeItemOfHotelInfo(?,?); END;";
 
 	// pms exchange rate

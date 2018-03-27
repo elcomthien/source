@@ -1,0 +1,115 @@
+.footer {
+	float: left;
+	width: 100%;
+	height: 84px;
+	background: transparent url("../img/footer.png") repeat-x top;
+}
+
+.footer_center {
+	width: 1024px;
+	height: 100%;
+	background: transparent url("../img/ehoteladmin_16.png") no-repeat top;
+}
+
+.header {
+	width: 100%;
+	height: 108px;
+	background: transparent url("../img/bg_header.png") repeat-x center top;
+}
+
+.logo {
+	margin-top: 0px;
+	height: 100%;
+	background: transparent url("../img/admin_logo.png") no-repeat 30px 0;
+	width: 200px;
+	left: 0px;
+	float: left;
+}
+
+.header_center {
+	height: 100%;
+}
+
+table.dataTable thead { /*background-color: #1c94c4;*/
+	background-color: #FAEBD7;
+	color: #6495ED;
+	line-height: 28px;
+}
+
+.tableInDialog {
+	width: 100%;
+}
+
+.tableInDialog tr {
+	height: 15px;
+}
+
+.tableInDialog tr.stbselected {
+	background-color: #BDE5F8;
+}
+
+.fontsizetr {
+	font-size: 14px;
+}
+
+.div_login {
+	width: 300px;
+	height: 100%;
+	float: right;
+}
+
+.tittel {
+	margin-top: 0px;
+	height: 100%;
+	background: transparent url("../img/order-manager.png") no-repeat 30px 0;
+	width: 200px;
+	left: 0px;
+	float: lest;
+}
+
+.icon_key {
+	float: left;
+	height: 100%;
+	width: 50px;
+	background: transparent url("../img/keys.png") no-repeat center center;
+}
+
+.form_login {
+	background: transparent url("../img/bg_login.png") repeat-x center top;
+}
+
+.content {
+	float: left;
+	width: 100%;
+	height: auto;
+	min-height: 320px;
+	background: transparent url("../img/bg_content.png") repeat-x center 0;
+}
+.cssconfirm{
+	font-size: 18px;
+	color: blue;
+	font-weight: bold;
+}
+.cssdelete{
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+}
+.cssdeny{
+	font-size: 18px;
+	color: red;
+	font-weight: bold;
+}
+.flicker {
+	-webkit-animation: glowing 1500ms infinite;
+	-moz-animation: glowing 1500ms infinite;
+	-o-animation: glowing 1500ms infinite;
+	animation: glowing 1500ms infinite;
+}
+
+.bg-red{
+	background-color: sandybrown;;
+}
+.bg-yellow{
+	background-color: yellow;
+}

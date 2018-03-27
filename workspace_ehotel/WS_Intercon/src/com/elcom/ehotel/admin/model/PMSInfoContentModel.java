@@ -8,6 +8,7 @@ public class PMSInfoContentModel {
 	private String image = "";
 	private String invisible = "";
 	private String langId = "";
+	private String index = "";
 
 	public String getSubjectId() {
 		return subjectId;
@@ -57,10 +58,18 @@ public class PMSInfoContentModel {
 		this.invisible = invisible;
 	}
 
+	public String getIndex() {
+		return index;
+	}
+
+	public void setIndex(String index) {
+		this.index = index;
+	}
+
 	@Override
 	public String toString() {
-		return "PMSInfoContentModel [subjectId=" + subjectId + ", contentId=" + contentId + ", name=" + name + ", description=" + description
-				+ ", image=" + image + ", invisible=" + invisible + "]";
+		return "PMSInfoContentModel [subjectId=" + subjectId + ", contentId=" + contentId + ", name=" + name + ", description="
+				+ description + ", image=" + image + ", invisible=" + invisible + ", langId=" + langId + ", index=" + index + "]";
 	}
 
 	public String getLangId() {

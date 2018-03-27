@@ -668,3 +668,9 @@ PL/SQL: Statement ignored
 4     INFO  [main] connect.DBIManager - url =rmi://localhost:11002/DBInterface
 82    INFO  [main] dao.eBaseDao - {call PMSAPP.getHomeService(?,?)}
 206   INFO  [main] dao.ePMSDao - [getHomeService with params: smartcard=2001] : returnValue(size=18)
+0     INFO  [main] connect.PathDef - D:\Source\github\source\workspace_ehotel\FLCVinhTHinhePMS_/Config/eodapp.properties
+56    INFO  [main] server.ePMSProcess - ----------------------------------------------------------
+56    INFO  [main] server.ePMSProcess - --------CheckSynData[smartcard=20021]
+0     INFO  [main] connect.PathDef - D:\Source\github\source\workspace_ehotel\FLCVinhTHinhePMS_/Config/eodapp.properties
+6     INFO  [main] server.ePMSProcess - ----------------------------------------------------------
+6     INFO  [main] server.ePMSProcess - --------CheckSynData[smartcard=20021]

@@ -1,0 +1,169 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CoreInterfaceService WSDL service -->
+
+  <service name="CoreInterface" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.ehotel.eodapp.elcom.com"/>
+      <parameter name="wsdlServiceElement" value="CoreInterfaceService"/>
+      <parameter name="schemaQualified" value="http://common.ehotel.eodapp.elcom.com,http://service.ehotel.eodapp.elcom.com"/>
+      <parameter name="wsdlServicePort" value="CoreInterface"/>
+      <parameter name="className" value="com.elcom.eodapp.ehotel.service.CoreInterfaceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="CoreInterface"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="guestMessageTextOnline" qname="operNS:guestMessageTextOnline" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestMessageTextOnlineReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_ID" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_TEXT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestMessageDelete" qname="operNS:guestMessageDelete" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestMessageDeleteReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_ID" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestBillBalan" qname="operNS:guestBillBalan" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestBillBalanReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:BALANCE_AMOUNT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestMessageText" qname="operNS:guestMessageText" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestMessageTextReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_ID" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MESSAGE_TEXT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getFunctionNew" qname="operNS:getFunctionNew" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:getFunctionNewReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestChangeData" qname="operNS:GuestChangeData" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestChangeDataReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:SHARE_FLAG" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_FIRST_NAME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_NAME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LANGUAGE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_GROUP_NUMBER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TITLE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ARV_DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_DEPT_DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestRoomEquipment" qname="operNS:GuestRoomEquipment" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestRoomEquipmentReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:CLASS_SERVICE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MSG_LIGHT_STATUS" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:MINIBAR_RIGHT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TV_RIGHT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestPostAnswer" qname="operNS:GuestPostAnswer" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestPostAnswerReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ANSWER_STATUS" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:CLEAR_TEXT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:SEQ_NUMBER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestRoomEquipReq" qname="operNS:guestRoomEquipReq" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestRoomEquipReqReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:oRoomData" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestMessageDeleteReq" qname="operNS:guestMessageDeleteReq" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestMessageDeleteReqReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:oMessageDel" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestCheckout" qname="operNS:GuestCheckout" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestCheckoutReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:SWAP_FLAG" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestRoomMove" qname="operNS:GuestRoomMove" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestRoomMoveReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_NAME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_NUMER_OLD" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestBillReq" qname="operNS:guestBillReq" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestBillReqReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:oBill" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestBillItem" qname="operNS:guestBillItem" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestBillItemReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ITEM_DESC" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ITEM_AMOUNT" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DISPLAY_FLAG" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestPostReq" qname="operNS:guestPostReq" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:guestPostReqReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:oPost" xmlns:rtns="http://common.ehotel.eodapp.elcom.com" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="synDatabase" qname="operNS:synDatabase" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:synDatabaseReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:fun" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guestCheckin" qname="operNS:GuestCheckin" xmlns:operNS="http://service.ehotel.eodapp.elcom.com" returnQName="retNS:GuestCheckinReturn" xmlns:retNS="http://service.ehotel.eodapp.elcom.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:RESERVATION_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_ARV_DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_DEPT_DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_TITLE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_FIRST_NAME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_NAME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ROOM_NUMER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_PIN" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:SHARE_FLAG" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_LANGUAGE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:GUEST_GROUP_NUMBER" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:DATE" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:TIME" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:SWAP_FLAG" xmlns:pns="http://service.ehotel.eodapp.elcom.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="guestMessageDeleteReq guestBillReq guestMessageTextOnline guestRoomMove guestMessageDelete getFunctionNew guestRoomEquipReq guestCheckin guestChangeData guestRoomEquipment guestBillItem synDatabase guestPostReq guestBillBalan guestMessageText guestCheckout guestPostAnswer"/>
+
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oPost"
+        type="java:com.elcom.eodapp.ehotel.common.OPost"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oMessageDel"
+        type="java:com.elcom.eodapp.ehotel.common.OMessageDel"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oRoomData"
+        type="java:com.elcom.eodapp.ehotel.common.ORoomData"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://common.ehotel.eodapp.elcom.com"
+        qname="ns:oBill"
+        type="java:com.elcom.eodapp.ehotel.common.OBill"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>
