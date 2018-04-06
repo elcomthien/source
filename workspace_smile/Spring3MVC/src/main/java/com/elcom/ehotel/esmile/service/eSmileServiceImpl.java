@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.elcom.ehotel.esmile.dao.eSmileDao;
 import com.elcom.ehotel.esmile.model.Params;
+import com.elcom.ehotel.esmile.util.Config;
+import com.elcom.ehotel.esmile.util.ConvertUtil;
 import com.elcom.ehotel.esmile.util.Encryptor;
+import com.elcom.ehotel.esmile.util.FileUtil;
 
 public class eSmileServiceImpl implements eSmileService {
 	@Autowired
@@ -217,12 +220,12 @@ public class eSmileServiceImpl implements eSmileService {
 
 	@Override
 	public HashMap<String, Object> editDevice(Params params) {
-		return esmileDao.getListDevice(params);
+		return esmileDao.editDevice(params);
 	}
 
 	@Override
 	public HashMap<String, Object> deleteDevice(Params params) {
-		return esmileDao.getListDevice(params);
+		return esmileDao.deleteDevice(params);
 	}
 
 	@Override
@@ -249,24 +252,121 @@ public class eSmileServiceImpl implements eSmileService {
 	public HashMap<String, Object> getListAccount(Params params) {
 		return esmileDao.getListAccount(params);
 	}
-	
+
 	@Override
 	public HashMap<String, Object> getListActivity(Params params) {
 		return esmileDao.getListActivity(params);
 	}
-	
+
 	@Override
 	public HashMap<String, Object> addZone(Params params) {
 		return esmileDao.addZone(params);
 	}
-	
+
 	@Override
 	public HashMap<String, Object> editZone(Params params) {
 		return esmileDao.editZone(params);
 	}
-	
+
 	@Override
 	public HashMap<String, Object> deleteZone(Params params) {
 		return esmileDao.deleteZone(params);
+	}
+
+	@Override
+	public HashMap<String, Object> updateStatusZone(Params params) {
+		return esmileDao.updateStatusZone(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getListLayout(Params params) {
+		return esmileDao.getListLayout(params);
+	}
+
+	@Override
+	public HashMap<String, Object> saveReport(Params params) {
+		Config config = new Config();
+		params.setRepeat("once");
+		params.setIschedule("save");
+		params.setIsfinish("1");
+		params.setUrl(config.getLinkjson());
+		params.setPathsave(config.getPathsave());
+		HashMap<String, Object> map = esmileDao.saveReport(params);
+		if (ConvertUtil.convertToInteger(map.get("status_code").toString()) != 200) {
+			return map;
+		}
+		HashMap<String, Object> data = new HashMap<String, Object>();
+		if (params.getReport_type().equals("overview"))
+			data = esmileDao.getReportOverview(params);
+		else if (params.getReport_type().equals("feedback"))
+			data = esmileDao.getReportFeedback(params);
+		else if (params.getReport_type().equals("respone"))
+			data = esmileDao.getReportResponse(params);
+		FileUtil.writeFileJson(params.getPathsave() + map.get("report_id") + ".json", data);
+		return map;
+	}
+
+	@Override
+	public HashMap<String, Object> scheduleReport(Params params) {
+		params.setIschedule("schedule");
+		params.setIsfinish("0");
+		return esmileDao.saveReport(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getSaveReport(Params params) {
+		return esmileDao.getSaveReport(params);
+	}
+
+	@Override
+	public HashMap<String, Object> deleteScheduleReport(Params params) {
+		return esmileDao.deleteScheduleReport(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getScheduleReport(Params params) {
+		return esmileDao.getScheduleReport(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getRespondent(Params params) {
+		return esmileDao.getRespondent(params);
+	}
+
+	@Override
+	public HashMap<String, Object> addTagsRespondent(Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for (int i = 0; i < params.getData().size(); i++) {
+			map = esmileDao.addTagsRespondent(params.getSession_id(), params.getData().get(i));
+		}
+		return map;
+	}
+
+	@Override
+	public HashMap<String, Object> updateFlag(Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for (int i = 0; i < params.getData().size(); i++) {
+			map = esmileDao.updateFlag(params.getSession_id(), params.getData().get(i));
+		}
+		return map;
+	}
+
+	@Override
+	public HashMap<String, Object> updateImportant(Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		for (int i = 0; i < params.getData().size(); i++) {
+			map = esmileDao.updateImportant(params.getSession_id(), params.getData().get(i));
+		}
+		return map;
+	}
+
+	@Override
+	public HashMap<String, Object> deleteRespondent(Params params) {
+		return esmileDao.deleteRespondent(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getReportDevice(Params params) {
+		return esmileDao.getReportDevice(params);
 	}
 }

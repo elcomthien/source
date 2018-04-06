@@ -429,4 +429,109 @@ public class eSmileController {
 		System.out.println("-----> Result: " + map);
 		return map;
 	}
+
+	@RequestMapping(value = { "updatestatuszone" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> updateStatusZone(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.updateStatusZone(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getlistlayout" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getListLayout(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getListLayout(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "savereport" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> saveReport(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.saveReport(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "schedulereport" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> scheduleReport(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.scheduleReport(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getsavereport" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getSaveReport(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getSaveReport(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "deletescheduleReport" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> deleteScheduleReport(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.deleteScheduleReport(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getschedulereport" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getScheduleReport(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getScheduleReport(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getrespondent" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getRespondent(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getRespondent(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "addtagsrespondent" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> addTagsRespondent(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.addTagsRespondent(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "updateflag" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> updateFlag(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.updateFlag(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "updateimportant" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> updateImportant(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.updateImportant(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "deleterespondent" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> deleteRespondent(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.deleteRespondent(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getreportdevice" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getReportDevice(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getReportDevice(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
 }

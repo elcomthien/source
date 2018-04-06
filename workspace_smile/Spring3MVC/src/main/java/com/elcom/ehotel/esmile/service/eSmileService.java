@@ -105,5 +105,31 @@ public interface eSmileService {
 	public HashMap<String, Object> editZone(Params params);
 	
 	public HashMap<String, Object> deleteZone(Params params);
+	
+	public HashMap<String, Object> updateStatusZone(Params params);
+	
+	public HashMap<String, Object> getListLayout(Params params);
+	
+	public HashMap<String, Object> saveReport(Params params);
+	
+	public HashMap<String, Object> scheduleReport(Params params);
+	
+	public HashMap<String, Object> getSaveReport(Params params);
+	
+	public HashMap<String, Object> deleteScheduleReport(Params params);
+	
+	public HashMap<String, Object> getScheduleReport(Params params);
+	
+	public HashMap<String, Object> getRespondent(Params params);
+	
+	public HashMap<String, Object> addTagsRespondent(Params params);
+	
+	public HashMap<String, Object> updateFlag(Params params);
+	
+	public HashMap<String, Object> updateImportant(Params params);
+	
+	public HashMap<String, Object> deleteRespondent(Params params);
+	
+	public HashMap<String, Object> getReportDevice(Params params);
 
 }

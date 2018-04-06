@@ -1220,8 +1220,8 @@ public class eSmileDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.DELETE_NOTIFY, params, "none", outParam.size() / 1);
 		if (outParam.size() > 0) {
-			LogUtil.logDao(eSmileDao.class.toString(), SQL.DELETE_NOTIFY, params, "none", outParam.size() / 1);
 			for (int i = 0; i < outParam.size(); i++) {
 				String rs = outParam.get(i);
 				if (Integer.parseInt(rs) > 0) {

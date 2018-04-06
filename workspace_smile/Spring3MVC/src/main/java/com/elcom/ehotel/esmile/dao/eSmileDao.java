@@ -2,6 +2,7 @@ package com.elcom.ehotel.esmile.dao;
 
 import java.util.HashMap;
 
+import com.elcom.ehotel.esmile.model.DataPostRatingModel;
 import com.elcom.ehotel.esmile.model.Params;
 
 public interface eSmileDao {
@@ -9,7 +10,7 @@ public interface eSmileDao {
 	public HashMap<String, Object> addLayout(Params params);
 
 	public HashMap<String, Object> editLayout(Params params);
-	
+
 	public HashMap<String, Object> updateStatusLayout(Params params);
 
 	public HashMap<String, Object> deleteLayout(Params params);
@@ -57,7 +58,7 @@ public interface eSmileDao {
 	public HashMap<String, Object> getPlugin(Params params);
 
 	public HashMap<String, Object> editPlugin(Params params);
-	
+
 	public HashMap<String, Object> deletePlugin(Params params);
 
 	public HashMap<String, Object> addPluginEmail(Params params);
@@ -69,41 +70,64 @@ public interface eSmileDao {
 	public HashMap<String, Object> postPlugin(Params params);
 
 	public HashMap<String, Object> getFeedbackPluginDeatail(Params params);
-	
+
 	public HashMap<String, Object> getFeedbackPlugin(Params params);
-	
+
 	public HashMap<String, Object> getPluginEmail(Params params);
-	
+
 	public HashMap<String, Object> getPluginById(Params params);
-	
+
 	public HashMap<String, Object> getReportOverview(Params params);
-	
+
 	public HashMap<String, Object> getReportResponse(Params params);
-	
+
 	public HashMap<String, Object> getReportFeedback(Params params);
-	
+
 	public HashMap<String, Object> getListDevice(Params params);
-	
+
 	public HashMap<String, Object> editDevice(Params params);
-	
+
 	public HashMap<String, Object> deleteDevice(Params params);
-	
+
 	public HashMap<String, Object> addLayoutEmail(Params params);
-	
+
 	public HashMap<String, Object> getListLocation(Params params);
-	
+
 	public HashMap<String, Object> addRole(Params params);
-	
+
 	public HashMap<String, Object> editRole(Params params);
-	
+
 	public HashMap<String, Object> getListAccount(Params params);
-	
+
 	public HashMap<String, Object> getListActivity(Params params);
-	
+
 	public HashMap<String, Object> addZone(Params params);
-	
+
 	public HashMap<String, Object> editZone(Params params);
-	
+
 	public HashMap<String, Object> deleteZone(Params params);
 
+	public HashMap<String, Object> updateStatusZone(Params params);
+	
+	public HashMap<String, Object> getListLayout(Params params);
+	
+	public HashMap<String, Object> saveReport(Params params);
+
+	public HashMap<String, Object> getSaveReport(Params params);
+	
+	public HashMap<String, Object> deleteScheduleReport(Params params);
+	
+	public HashMap<String, Object> getScheduleReport(Params params);
+	
+	public HashMap<String, Object> getRespondent(Params params);
+	
+	public HashMap<String, Object> addTagsRespondent(String session_id, DataPostRatingModel params);
+	
+	public HashMap<String, Object> updateFlag(String session_id, DataPostRatingModel params);
+	
+	public HashMap<String, Object> updateImportant(String session_id, DataPostRatingModel params);
+	
+	public HashMap<String, Object> deleteRespondent(Params params);
+	
+	public HashMap<String, Object> getReportDevice(Params params);
 }

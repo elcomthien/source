@@ -64,8 +64,8 @@ public class Params {
 	List<ObjectPluginModel> app_object = new ArrayList<ObjectPluginModel>();
 	String subject = "";
 	String from = "";
-	String[] to = null;
-	String[] cc = null;
+	String[] to = {};
+	String[] cc = {};
 	String auto_send = "";
 	String content = "";
 	String content_url = "";
@@ -73,20 +73,28 @@ public class Params {
 	List<SelectedPostPluginModel> selected = new ArrayList<SelectedPostPluginModel>();
 	String date_from = "";
 	String date_to = "";
-	String[] filter_day = null;
-	String[] filter_tags = null;
-	String[] filter_time = null;
-	String[] filter_source = null;
-	String[] filter_device = null;
-	String[] filter_type = null;
-	String[] list_device = null;
+	String[] filter_day = {};
+	String[] filter_tags = {};
+	String[] filter_time = {};
+	String[] filter_source = {};
+	String[] filter_device = {};
+	String[] filter_type = {};
+	String[] list_device = {};
 	String url = "";
-	String[] privileges = null;
-	String[] tags = null;
-	String[] location = null;
-	String[] account = null;
+	String[] privileges = {};
+	String[] tags = {};
+	String[] location = {};
+	String[] account = {};
 	String zone_name = "";
 	String zone_image = "";
+	String save_name = "";
+	String report_type = "";
+	String repeat = "";
+	String isfinish = "";
+	String ischedule = "";
+	String pathsave = "";
+	String schedule_id = "";
+	String[] respondent_id = {};
 
 	public String getUser_name() {
 		return user_name;
@@ -744,6 +752,70 @@ public class Params {
 		this.zone_image = zone_image;
 	}
 
+	public String getSave_name() {
+		return save_name;
+	}
+
+	public void setSave_name(String save_name) {
+		this.save_name = save_name;
+	}
+
+	public String getReport_type() {
+		return report_type;
+	}
+
+	public void setReport_type(String report_type) {
+		this.report_type = report_type;
+	}
+
+	public String getRepeat() {
+		return repeat;
+	}
+
+	public void setRepeat(String repeat) {
+		this.repeat = repeat;
+	}
+
+	public String getIsfinish() {
+		return isfinish;
+	}
+
+	public void setIsfinish(String isfinish) {
+		this.isfinish = isfinish;
+	}
+
+	public String getIschedule() {
+		return ischedule;
+	}
+
+	public void setIschedule(String ischedule) {
+		this.ischedule = ischedule;
+	}
+
+	public String getPathsave() {
+		return pathsave;
+	}
+
+	public void setPathsave(String pathsave) {
+		this.pathsave = pathsave;
+	}
+
+	public String getSchedule_id() {
+		return schedule_id;
+	}
+
+	public void setSchedule_id(String schedule_id) {
+		this.schedule_id = schedule_id;
+	}
+
+	public String[] getRespondent_id() {
+		return respondent_id;
+	}
+
+	public void setRespondent_id(String[] respondent_id) {
+		this.respondent_id = respondent_id;
+	}
+
 	@Override
 	public String toString() {
 		return "Params [user_name=" + user_name + ", password=" + password + ", role_id=" + role_id + ", role_name=" + role_name
@@ -768,7 +840,9 @@ public class Params {
 				+ ", filter_device=" + Arrays.toString(filter_device) + ", filter_type=" + Arrays.toString(filter_type) + ", list_device="
 				+ Arrays.toString(list_device) + ", url=" + url + ", privileges=" + Arrays.toString(privileges) + ", tags="
 				+ Arrays.toString(tags) + ", location=" + Arrays.toString(location) + ", account=" + Arrays.toString(account)
-				+ ", zone_name=" + zone_name + ", zone_image=" + zone_image + "]";
+				+ ", zone_name=" + zone_name + ", zone_image=" + zone_image + ", save_name=" + save_name + ", report_type=" + report_type
+				+ ", repeat=" + repeat + ", isfinish=" + isfinish + ", ischedule=" + ischedule + ", pathsave=" + pathsave
+				+ ", schedule_id=" + schedule_id + ", respondent_id=" + Arrays.toString(respondent_id) + "]";
 	}
 
 	public static void main(String[] args) {

@@ -11,6 +11,7 @@ public class SQL {
 	public static final String UPDATE_STATUS_LAYOUT = "BEGIN PRO_UPDATESTATUSLAYOUT(?,?,?,?,?); END;";
 	public static final String DELETE_LAYOUT = "BEGIN PRO_DELETELAYOUT(?,?,?); END;";
 	public static final String ADD_LAYOUT_EMAIL = "BEGIN PRO_ADD_LAYOUT_EMAIL(?,?,?,?,?,?,?); END;";
+	public static final String GET_LIST_LAYOUT = "BEGIN PRO_GET_LIST_LAYOUT(?,?,?); END;";
 
 	public static final String LOGIN = "BEGIN PRO_LOGIN(?,?,?); END;";
 	public static final String ADD_PAGE = "BEGIN PRO_ADDPAGE(?,?,?,?,?,?,?); END;";
@@ -22,18 +23,19 @@ public class SQL {
 
 	public static final String GET_LIST_ACCOUNT = "BEGIN PRO_GET_LIST_ACCOUNT(?,?,?); END;";
 	public static final String ADD_ACCOUNT = "BEGIN PRO_ADDACCOUNT(?,?,?,?,?,?,?,?,?,?,?,?); END;";
-	public static final String EDIT_ACCOUNT = "BEGIN PRO_EDITACCOUNT(?,?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String EDIT_ACCOUNT = "BEGIN PRO_EDITACCOUNT(?,?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String RESET_PASSWORD = "BEGIN PRO_RESETPASSWORD(?,?,?,?,?); END;";
 	public static final String DELETE_ACCOUNT = "BEGIN PRO_DELETEACCOUNT(?,?,?,?); END;";
 
-	public static final String GET_ROLE = "BEGIN PRO_GETROLE(?,?); END;";
-	public static final String ADD_ROLE = "BEGIN PRO_ADD_ROLE(?,?,?,?,?); END;";
-	public static final String EDIT_ROLE = "BEGIN PRO_EDIT_ROLE(?,?,?,?,?); END;";
+	public static final String GET_ROLE = "BEGIN PRO_GETROLE(?,?,?); END;";
+	public static final String ADD_ROLE = "BEGIN PRO_ADD_ROLE(?,?,?,?,?,?); END;";
+	public static final String EDIT_ROLE = "BEGIN PRO_EDIT_ROLE(?,?,?,?,?,?,?); END;";
 
 	public static final String GET_ZONE = "BEGIN PRO_GETZONE(?,?); END;";
 	public static final String ADD_ZONE = "BEGIN PRO_ADD_ZONE(?,?,?,?,?,?,?); END;";
 	public static final String EDIT_ZONE = "BEGIN PRO_EDIT_ZONE(?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_ZONE = "BEGIN PRO_DELETE_ZONE(?,?,?); END;";
+	public static final String UPDATE_STATUS_ZONE = "BEGIN PRO_UPDATE_STATUS_ZONE(?,?,?,?); END;";
 
 	public static final String POST_RATING_LAYOUT = "BEGIN PRO_POST_RATING_LAYOUT(?,?,?,?,?,?,?); END;";
 	public static final String POST_RATING_PAGE = "BEGIN PRO_POST_RATING_PAGE(?,?,?,?,?); END;";
@@ -44,10 +46,10 @@ public class SQL {
 
 	public static final String GET_INFO_FILTER = "BEGIN PRO_GETINFOFILTER(?,?,?); END;";
 
-	public static final String GET_DEVICE = "BEGIN PRO_GET_LIST_DEVICE(?,?); END;";
+	public static final String GET_DEVICE = "BEGIN PRO_GET_LIST_DEVICE(?,?,?); END;";
 	public static final String ADD_DEVICE = "BEGIN PRO_ADDDEVICE(?,?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String EDIT_DEVICE = "BEGIN PRO_EDIT_DEVICE(?,?,?,?,?,?,?,?,?,?,?); END;";
-	public static final String DELETE_DEVICE = "BEGIN PRO_DELETE_DEVICE(?,?,?); END;";
+	public static final String DELETE_DEVICE = "BEGIN PRO_DELETE_DEVICE(?,?,?,?); END;";
 
 	public static final String GET_FEEDBACK_LAYOUT = "BEGIN PRO_GETFEEDBACKLAYOUT(?,?,?); END;";
 
@@ -67,13 +69,27 @@ public class SQL {
 	public static final String BOX_LOGIN = "BEGIN PRO_BOX_LOGIN(?,?); END;";
 	public static final String BOX_GET_LINK = "BEGIN PRO_BOX_GETLINK(?,?,?); END;";
 
-	public static final String GET_LIST_LOCATION = "BEGIN PRO_GET_LIST_LOCATION(?,?); END;";
+	public static final String GET_LIST_LOCATION = "BEGIN PRO_GET_LIST_LOCATION(?,?,?); END;";
 
 	// ///report
 	public static final String GET_REPORT_OVERVIEW = "BEGIN PRO_GET_REPORT_OVERVIEW(?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String GET_REPORT_RESPONSE = "BEGIN PRO_GET_REPORT_RESPONSE(?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String GET_REPORT_FEEDBACK = "BEGIN PRO_GET_REPORT_FEEDBACK(?,?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String GET_REPORT_DEVICE = "BEGIN PRO_GET_REPORT_DEVICE(?,?,?,?,?); END;";
+	
+	public static final String SAVE_REPORT = "BEGIN PRO_SAVE_REPORT(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String GET_SAVE_REPORT = "BEGIN PRO_GET_SAVE_REPORT(?,?,?); END;";
+	public static final String DELETE_SCHEDULE_REPORT = "BEGIN PRO_DELETE_SCHEDULE_REPORT(?,?,?); END;";
+	public static final String GET_SCHEDULE_REPORT = "BEGIN PRO_GET_SCHEDULE_REPORT(?,?,?); END;";
+	
+	
+	public static final String GET_RESPONDENT = "BEGIN PRO_GET_RESPONDENT(?,?,?,?,?); END;";
+	public static final String ADD_TAGS_RESPONDENT = "BEGIN PRO_ADD_TAGS_RESPONDENT(?,?,?,?); END;";
+	public static final String UPDATE_FLAG = "BEGIN PRO_UPDATE_FLAG(?,?,?,?); END;";
+	public static final String UPDATE_IMPORTANT = "BEGIN PRO_UPDATE_IMPORTANT(?,?,?,?); END;";
+	public static final String DELETE_RESPONDENT = "BEGIN PRO_DELETE_RESPONDENT(?,?,?); END;";
 
 	public static final String LOG_ACTIVITY = "BEGIN PRO_ADD_ACTIVITY(?,?,?,?,?,?); END;";
 	public static final String GET_LIST_ACTIVITY = "BEGIN PRO_GET_ACTIVITY(?,?,?,?); END;";
+	
 }
