@@ -142,10 +142,10 @@ public class eSmileController {
 		return map;
 	}
 
-	@RequestMapping(value = { "getzone" }, method = RequestMethod.POST)
-	public @ResponseBody HashMap<String, Object> getZone(@RequestBody Params params) {
+	@RequestMapping(value = { "getlistzone" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getListZone(@RequestBody Params params) {
 		HashMap<String, Object> map = new HashMap<String, Object>();
-		map = esmileService.getZone(params);
+		map = esmileService.getListZone(params);
 		System.out.println("-----> Result: " + map);
 		return map;
 	}
@@ -530,6 +530,94 @@ public class eSmileController {
 	public @ResponseBody HashMap<String, Object> getReportDevice(@RequestBody Params params) {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map = esmileService.getReportDevice(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getrespondentdetail" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getRespondentDetail(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getRespondentDetail(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getzone" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getZone(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getZone(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getgeolocationdevice" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getGeoLocationDevice(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getGeoLocationDevice(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getdashboarddevice" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getDashboardDevice(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getDashboardDevice(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getdashboardoverview" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getDashboardOverview(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getDashboardOverview(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "renewalsession" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> renewalSession(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.renewalSession(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "boxgetinfo" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> boxGetInfo(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.boxGetInfo(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "setbackground" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> setBackground(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.setBackground(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getnotification" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getNotification(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getNotification(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "getlayoutemail" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> getLayoutEmail(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.getLayoutEmail(params);
+		System.out.println("-----> Result: " + map);
+		return map;
+	}
+
+	@RequestMapping(value = { "setsendemail" }, method = RequestMethod.POST)
+	public @ResponseBody HashMap<String, Object> setSendEmail(@RequestBody Params params) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map = esmileService.setSendEmail(params);
 		System.out.println("-----> Result: " + map);
 		return map;
 	}

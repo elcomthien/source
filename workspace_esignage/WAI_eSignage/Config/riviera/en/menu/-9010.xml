@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="223">
+        <name>STRETCH LIMOUSINE FORD</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/1375095866288.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/1375095874151.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/1375095866288.png</urlIcon>
+    </item>
+    <item id="224">
+        <name>CAMARY 2009</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/1375095884234.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/1375095888964.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/1375095884234.png</urlIcon>
+    </item>
+    <item id="225">
+        <name>TOYOTA HIACE 12 Seats</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/1375095896941.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/1375095901368.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/1375095896941.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,77 @@
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+10    INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+1070  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at ehotel.connect.DBIManager.lookup(DBIManager.java:34)
+	at ehotel.connect.DBIManager.mkConnectDBI(DBIManager.java:27)
+	at ehotel.connect.DBIManager.getConn(DBIManager.java:23)
+	at ehotel.connect.DBIConnection.getDBICore(DBIConnection.java:43)
+	at ehotel.dao.eBaseDao.initSystem(eBaseDao.java:51)
+	at ehotel.dao.eBaseDao.<init>(eBaseDao.java:43)
+	at ehotel.abs.pms.PMSEHotel.<init>(PMSEHotel.java:20)
+	at ehotel.abs.pms.ServiceSystemPMS.<init>(ServiceSystemPMS.java:15)
+	at ehotel.abs.pms.ServiceSystemPMS.main(ServiceSystemPMS.java:283)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 15 more
+1080  INFO  [main] connect.DBIManager - url =rmi://localhost:11004/DBInterface
+2091  ERROR [main] connect.DBIManager - registry could not be contacted
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at sun.rmi.transport.tcp.TCPEndpoint.newSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.createConnection(Unknown Source)
+	at sun.rmi.transport.tcp.TCPChannel.newConnection(Unknown Source)
+	at sun.rmi.server.UnicastRef.newCall(Unknown Source)
+	at sun.rmi.registry.RegistryImpl_Stub.lookup(Unknown Source)
+	at java.rmi.Naming.lookup(Unknown Source)
+	at ehotel.connect.DBIManager.lookup(DBIManager.java:34)
+	at ehotel.connect.DBIManager.mkConnectDBI(DBIManager.java:27)
+	at ehotel.connect.DBIManager.getConn(DBIManager.java:23)
+	at ehotel.connect.DBIConnection.getDBICore(DBIConnection.java:43)
+	at ehotel.dao.eBaseDao.initSystem(eBaseDao.java:51)
+	at ehotel.dao.eBaseDao.executeSubPro(eBaseDao.java:101)
+	at ehotel.abs.pms.ServiceSystemPMS.getAllServices(ServiceSystemPMS.java:55)
+	at ehotel.abs.pms.ServiceSystemPMS.main(ServiceSystemPMS.java:284)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createSocket(Unknown Source)
+	... 14 more
+2091  INFO  [main] dao.eBaseDao - {call eMain.getAllServices(?,?)}
+2091  ERROR [main] pms.ServiceSystemPMS - 
+2091  INFO  [main] pms.ServiceSystemPMS - [getAllServices(sql={call eMain.getAllServices(?,?)}) with params: langid=2] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+0     INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+120   INFO  [main] dao.eBaseDao - {call eMain.getAllServices(?,?)}
+580   INFO  [main] pms.ServiceSystemPMS - [getAllServices(sql={call eMain.getAllServices(?,?)}) with params: langid=2] : returnValue(size=38)
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+10    INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+110   INFO  [main] dao.eBaseDao - {call eMain.getAllServices(?,?)}
+690   INFO  [main] pms.ServiceSystemPMS - [getAllServices(sql={call eMain.getAllServices(?,?)}) with params: langid=2] : returnValue(size=38)
+690   INFO  [main] dao.eBaseDao - {call eMain.getAllServices(?,?)}
+1140  INFO  [main] pms.ServiceSystemPMS - [getAllServices(sql={call eMain.getAllServices(?,?)}) with params: langid=2] : returnValue(size=38)

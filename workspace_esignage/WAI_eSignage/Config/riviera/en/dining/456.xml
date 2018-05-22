@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="300" menuid="456">
+        <currency>270,000</currency>
+        <currency_large>270,000</currency_large>
+        <currency_small>270,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Crispy beer battered red snapper filet with homemade junky potato chips,</p><p>tartare sauce and fresh lime</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Red snapper and jumbo chips]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Red snapper and jumbo chips</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747072461.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="301" menuid="456">
+        <currency>290,000</currency>
+        <currency_large>290,000</currency_large>
+        <currency_small>290,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Slow roasted salmon filet with baby potatoes,spinach, beets and balsamico&#160; syrup</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Pacific salmon]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Pacific salmon</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747081546.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="302" menuid="456">
+        <currency>300,000</currency>
+        <currency_large>300,000</currency_large>
+        <currency_small>300,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Served on creamy mashed potatoes with baby vegetables, apple sauce&#160;</p><p>and pommery mustard sauce</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Grilled pork medallions]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Grilled pork medallions</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747090397.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="303" menuid="456">
+        <currency>330,000</currency>
+        <currency_large>330,000</currency_large>
+        <currency_small>330,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>With bean cassoulet,roast sweet potatoes and&#160; orange thyme jus</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Five spice roasted quail]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Five spice roasted quail</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747100043.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="304" menuid="456">
+        <currency>340,000</currency>
+        <currency_large>340,000</currency_large>
+        <currency_small>340,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Tender pieces of red wine braised venison , caramelized chestnuts,spaetzle,</p><p>forest mushrooms and lingonberry confit</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[New Zealand west coast venison]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>New Zealand west coast venison</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747109147.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="305" menuid="456">
+        <currency>360,000</currency>
+        <currency_large>360,000</currency_large>
+        <currency_small>360,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>On sweet potato cake ,fava beans&#160; with rosemary garlic reduction and mint jelly</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Merri Valley lamb loin]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Merri Valley lamb loin</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747118240.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="306" menuid="456">
+        <currency>380,000</currency>
+        <currency_large>380,000</currency_large>
+        <currency_small>380,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Breaded and golden fried oysters, prawns, snapper, calamari and mussels&#160;</p><p>served with homemade fries and garlic lemon aioli.</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Nha Trang fisherman&#8217;s platter]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Nha Trang fisherman&#8217;s platter</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747009263.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="307" menuid="456">
+        <currency>270,000</currency>
+        <currency_large>270,000</currency_large>
+        <currency_small>270,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p><b>-bolognaise , </b>a hearty beef ragout cooked Bologna style with red wine &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;</p><p><b>-carbonara, </b>a rich creamy sauce of bacon, parmesan cheese and egg</p><p><b>-marinara </b>,nha trang fresh seafood in home made tomato sauce</p><p><b>-salmone, </b>fresh salmon with garlic and white wine cream sauce</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Spaghetti,tagliatelle or penne of your choice]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Spaghetti,tagliatelle or penne of your choice</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421747020718.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="308" menuid="456">
+        <currency>350,000</currency>
+        <currency_large>350,000</currency_large>
+        <currency_small>350,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>With baby spinach,cherry tomatoes, forest mushrooms and parmigiano&#160;</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Potato Gnocchi]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Potato Gnocchi</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421746996323.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+</ehotel>

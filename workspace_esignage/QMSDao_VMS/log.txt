@@ -1,0 +1,8 @@
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@4b0ab323 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@54281d4b - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@851052d - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7f2ad19e - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@332611a7 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@332611a7 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@332611a7 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7f2ad19e - pool: 0

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1797">
+        <def>&lt;p&gt;Caramel Latte &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;80.000&lt;/p&gt;&lt;p&gt;Choc Macadamia Latte &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;80.000&lt;/p&gt;&lt;p&gt;Very Vanilla Latte &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; 80.000&lt;/p&gt;&lt;p&gt;Viet-Aussie Latte &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;80.000&lt;/p&gt;</def>
+        <name>ESPRESSO ESPRESSION</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</urlIcon>
+    </item>
+</ehotel>

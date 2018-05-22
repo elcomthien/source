@@ -1,0 +1,212 @@
+1     INFO  [main] store.ProgDao - {call dbadcenter.sp_getContentLayout(?,?,?,?,?)}sernumber: 2001 | mac: 00:00:01 | idplaylist: 1
+1     INFO  [main] store.ProgDao - {call dbadcenter.sp_getContentLayout(?,?,?,?,?)}sernumber: 2001 | mac: 00:00:01 | idplaylist: 1
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getContentLayout(?,?,?,?,?)}sernumber: 2001 | mac: 00:00:01 | idplaylist: 1
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getContentLayout(?,?,?,?,?)}sernumber: 2001 | mac: 00:00:01 | idplaylist: 1
+21989 ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.broker.ConPool.getNewConn(ConPool.java:92)
+	at com.elcom.adcenter.broker.ConPool.getConn(ConPool.java:42)
+	at com.elcom.adcenter.broker.IMBroker.executeSubPro(IMBroker.java:186)
+	at com.elcom.adcenter.store.ProgDao.getStringContentGeneral2(ProgDao.java:114)
+	at com.elcom.adcenter.store.ProgDao.spgetContentLayout(ProgDao.java:127)
+	at com.elcom.adcenter.store.ProgDao.main(ProgDao.java:229)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 20 more
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getContentLayout(?,?,?,?,?)}sernumber: 2001 | mac: 00:00:01 | idplaylist: 1
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getInfoStb(?,?,?)}sernumber: 2001 | mac: 00:00:01
+1     INFO  [main] store.ProgDao - {call dbadcenter.sp_getInfoStb(?,?,?)}sernumber: 2001 | mac: 00:00:01
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getInfoStb(?,?,?)}sernumber: 2001 | mac: 00:00:01
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getInfoStb(?,?,?)}sernumber: 2001 | mac: 00:00:01
+1     INFO  [main] store.ProgDao - {call dbadcenter.sp_getInfoStb(?,?,?)}sernumber: 2001 | mac: 00:00:01
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getChanngeTemplate(?,?,?)}sernumber: 2001 | mac: 00:00:01
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getChanngeTemplate(?,?,?)}sernumber: 2001 | mac: 00:00:01
+0     INFO  [main] store.ProgDao - {call dbadcenter.sp_getChanngeTemplate(?,?,?)}sernumber: 2001 | mac: 00:00:01
+3111  INFO  [main] broker.ConPool - ConPool.getConnFromPool = null - pool: 0
+5138  ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.broker.ConPool.getNewConn(ConPool.java:92)
+	at com.elcom.adcenter.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.broker.IMBroker.executeSubPro(IMBroker.java:190)
+	at com.elcom.adcenter.store.ProgDao.getStringGenerals(ProgDao.java:93)
+	at com.elcom.adcenter.store.ProgDao.updateIpAdressBox(ProgDao.java:391)
+	at com.elcom.adcenter.store.ProgDao.main(ProgDao.java:398)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 20 more
+3100  INFO  [main] broker.ConPool - ConPool.getConnFromPool = null - pool: 0
+5134  ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.broker.ConPool.getNewConn(ConPool.java:92)
+	at com.elcom.adcenter.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.broker.IMBroker.executeSubPro(IMBroker.java:190)
+	at com.elcom.adcenter.store.ProgDao.getStringGenerals(ProgDao.java:93)
+	at com.elcom.adcenter.store.ProgDao.updateIpAdressBox(ProgDao.java:391)
+	at com.elcom.adcenter.store.ProgDao.main(ProgDao.java:398)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 20 more
+3061  INFO  [main] broker.ConPool - ConPool.getConnFromPool = null - pool: 0
+5101  ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1116)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:348)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2391)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2428)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2213)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:797)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:305)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.broker.ConPool.getNewConn(ConPool.java:92)
+	at com.elcom.adcenter.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.broker.IMBroker.executeSubPro(IMBroker.java:190)
+	at com.elcom.adcenter.store.ProgDao.getStringGenerals(ProgDao.java:93)
+	at com.elcom.adcenter.store.ProgDao.updateIpAdressBox(ProgDao.java:391)
+	at com.elcom.adcenter.store.ProgDao.main(ProgDao.java:398)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:298)
+	... 20 more
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@52621f0c - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@52621f0c - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@52621f0c - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@7b40aa23 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@25533ae9 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@25533ae9 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@25533ae9 - pool: 0
+0     INFO  [main] broker.ConPool - ConPool.getConnFromPool = com.mysql.jdbc.JDBC4Connection@22c88c75 - pool: 0

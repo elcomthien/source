@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1809">
+        <def>&lt;p&gt;Red Bull&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 60.000&lt;/p&gt;</def>
+        <name>ENERGY BOOSTER</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</urlIcon>
+    </item>
+</ehotel>

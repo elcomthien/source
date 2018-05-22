@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="259" menuid="451">
+        <currency>160,000</currency>
+        <currency_large>160,000</currency_large>
+        <currency_small>160,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>on crunchy italian country bread with buffalo mozzarella and pesto</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Bruschetta with olives and cherry tomatoes]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Bruschetta with olives and cherry tomatoes</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421663180678.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="260" menuid="451">
+        <currency>180000</currency>
+        <currency_large>180000</currency_large>
+        <currency_small>180000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Deep fried prawns, squid and fish with taro wrapped in rice paper rolls</p>
+<p>with fresh herbs and fish sauce</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Vietnamese seafood spring rolls]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421663234220.png</imageicon>
+        <printname>Vietnamese seafood spring rolls</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421663242669.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421663234220.png</imagebg>
+    </item>
+    <item icode="273" menuid="451">
+        <currency>230,000</currency>
+        <currency_large>230,000</currency_large>
+        <currency_small>230,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Chicken&#160; satay with spicy peanut sauce and cucumber pickles</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Thai chicken satay's]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Thai chicken satay's</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718880764.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="274" menuid="451">
+        <currency>230,000</currency>
+        <currency_large>230,000</currency_large>
+        <currency_small>230,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Deep fried crab cake in polenta crust with lemon garlic aiioli,mesclun salad and</u></p>
+<p class="p1"><span class="s1">tomato salsa&#160;</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Polenta crumbed crab cake]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Polenta crumbed crab cake</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718831272.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="275" menuid="451">
+        <currency>250,000</currency>
+        <currency_large>250,000</currency_large>
+        <currency_small>250,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Organic dalat romaine lettuce tossed in a creamy caesar dressing with crispy bacon,</u></p>
+<p class="p1"><span class="s1">Anchovies,parmigiano shavings, garlic crostini and poached egg</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Caesar salad]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Caesar salad</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718819524.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="276" menuid="451">
+        <currency>260,000</currency>
+        <currency_large>260,000</currency_large>
+        <currency_small>260,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>With pickled beets , goats cheese, caramelized walnuts, arugula and balsamico syrup</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Honey and spice roasted pumpkins]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Honey and spice roasted pumpkins</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718810441.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="277" menuid="451">
+        <currency>270,000</currency>
+        <currency_large>270,000</currency_large>
+        <currency_small>270,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Marinated with fresh lime,chili,fish sauce and fresh herbs</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Vietnamese  green mango and tiger prawn salad]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Vietnamese  green mango and tiger prawn salad</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718799730.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+</ehotel>

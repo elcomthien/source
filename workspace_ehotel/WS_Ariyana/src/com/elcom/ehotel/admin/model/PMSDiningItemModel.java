@@ -11,6 +11,7 @@ public class PMSDiningItemModel {
 	private String image = "";
 	private String langid = "";
 	private String subjectId = "";
+	private String detail = "";
 
 	public String getId() {
 		return id;
@@ -92,10 +93,19 @@ public class PMSDiningItemModel {
 		this.subjectId = subjectId;
 	}
 
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
+	}
+
 	@Override
 	public String toString() {
-		return "PMSDiningContentModel [id=" + id + ", name=" + name + ", def=" + def + ", active=" + active + ", price=" + price + ", iunit=" + iunit
-				+ ", index=" + index + ", image=" + image + ", langid=" + langid + ", subjectId=" + subjectId + "]";
+		return "PMSDiningItemModel [id=" + id + ", name=" + name + ", def=" + def + ", active=" + active + ", price=" + price + ", iunit="
+				+ iunit + ", index=" + index + ", image=" + image + ", langid=" + langid + ", subjectId=" + subjectId + ", detail="
+				+ detail + "]";
 	}
 
 }

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="32362">
+        <amount>471 USD &amp; 3VND</amount>
+        <code>SOKHA HOTEL</code>
+        <room>111</room>
+        <quanlity>41</quanlity>
+        <serviceType>USER</serviceType>
+        <startDate>17/10/14</startDate>
+        <unit>USD</unit>
+    </item>
+    <item id="32363">
+        <amount>12</amount>
+        <code>Continental Breakfast</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>17/10/14</startDate>
+        <startTime>07:14 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32364">
+        <amount>5.0</amount>
+        <code>Transporter 3</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>16/10/14</startDate>
+        <startTime>16/10/2014</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32365">
+        <amount>12</amount>
+        <code>Tatami Room</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>16/10/14</startDate>
+        <startTime>06:20 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32366">
+        <amount>3</amount>
+        <code>Imported Beer</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>16/10/14</startDate>
+        <startTime>07:27 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32367">
+        <amount>16</amount>
+        <code>Florida Sunrise</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>16/10/14</startDate>
+        <startTime>07:25 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32368">
+        <amount>1.0</amount>
+        <code>Iron Man</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>24/06/14</startDate>
+        <startTime>24/06/2014</startTime>
+        <unit>VND</unit>
+    </item>
+    <item id="32369">
+        <amount>1.0</amount>
+        <code>Cats</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>23/06/14</startDate>
+        <startTime>23/06/2014</startTime>
+        <unit>VND</unit>
+    </item>
+    <item id="32370">
+        <amount>1.0</amount>
+        <code>Zombieland</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>17/06/14</startDate>
+        <startTime>17/06/2014</startTime>
+        <unit>VND</unit>
+    </item>
+    <item id="32371">
+        <amount>2.0</amount>
+        <code>Go</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>13/06/14</startDate>
+        <startTime>13/06/2014</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32372">
+        <amount>0.0</amount>
+        <code>Just Go with It</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>13/06/14</startDate>
+        <startTime>13/06/2014</startTime>
+        <unit>VND</unit>
+    </item>
+    <item id="32373">
+        <amount>0.0</amount>
+        <code>Flirting</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>12/06/14</startDate>
+        <startTime>12/06/2014</startTime>
+        <unit>VND</unit>
+    </item>
+    <item id="32374">
+        <amount>2.0</amount>
+        <code>Phim test 01</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>11/06/14</startDate>
+        <startTime>11/06/2014</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32375">
+        <amount>2.0</amount>
+        <code>Phim test 01</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>11/06/14</startDate>
+        <startTime>11/06/2014</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32376">
+        <amount>16</amount>
+        <code>Belgian Waffle</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>09/06/14</startDate>
+        <startTime>10:37 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32377">
+        <amount>3</amount>
+        <code>Imported Beer</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>07/06/14</startDate>
+        <startTime>03:13 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32378">
+        <amount>12</amount>
+        <code>Fresh Fruit Cake</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>02:04 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32379">
+        <amount>16</amount>
+        <code>Veuve Clicquot, Yellow Lab</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>10:41 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32380">
+        <amount>18</amount>
+        <code>Piper Sonoma, Brut, Califor</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>10:41 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32381">
+        <amount>30</amount>
+        <code>Taittinger, La Francaise, Brut</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>10:41 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32382">
+        <amount>3</amount>
+        <code>Imported Beer</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>10:41 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32383">
+        <amount>30</amount>
+        <code>Cheese Symphony</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>11:28 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32384">
+        <amount>5</amount>
+        <code>Soft Drinks</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>11:28 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32385">
+        <amount>16</amount>
+        <code>Nicoise</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>11:28 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32386">
+        <amount>30</amount>
+        <code>Cheese Symphony</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>09:42 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32387">
+        <amount>16</amount>
+        <code>Belgian Waffle</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>05/06/14</startDate>
+        <startTime>09:26 AM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32388">
+        <amount>16</amount>
+        <code>Nicoise</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>06:10 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32389">
+        <amount>14</amount>
+        <code>Oyster Chowder</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>06:10 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32390">
+        <amount>12</amount>
+        <code>Green Mango with Prawn Salad</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>06:07 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32391">
+        <amount>12</amount>
+        <code>Tatami Room</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>06:01 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32392">
+        <amount>12</amount>
+        <code>Tatami Room</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>05:58 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32393">
+        <amount>18</amount>
+        <code>Piper Sonoma, Brut, Califor</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>05:25 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32394">
+        <amount>30</amount>
+        <code>Taittinger, La Francaise, Brut</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>05:25 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32395">
+        <amount>18</amount>
+        <code>Piper Sonoma, Brut, Califor</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>02:58 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32396">
+        <amount>30</amount>
+        <code>Taittinger, La Francaise, Brut</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>02:58 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32397">
+        <amount>3</amount>
+        <code>Imported Beer</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>02:13 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32398">
+        <amount>12</amount>
+        <code>Tatami Room</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>02:06 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32399">
+        <amount>12</amount>
+        <code>Coffee</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>01:55 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32400">
+        <amount>3</amount>
+        <code>Imported Beer</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>04/06/14</startDate>
+        <startTime>01:45 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32401">
+        <amount>2.0</amount>
+        <code>Phim test 01</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>29/05/14</startDate>
+        <startTime>29/05/2014</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32402">
+        <amount>12</amount>
+        <code>Dining Area</code>
+        <room>111</room>
+        <quanlity>4</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>29/05/14</startDate>
+        <startTime>12:25 PM</startTime>
+        <unit>USD</unit>
+    </item>
+    <item id="32403">
+        <amount>16</amount>
+        <code>Belgian Waffle</code>
+        <room>111</room>
+        <quanlity>1</quanlity>
+        <serviceType>DATA</serviceType>
+        <startDate>29/05/14</startDate>
+        <startTime>12:14 PM</startTime>
+        <unit>USD</unit>
+    </item>
+</ehotel>

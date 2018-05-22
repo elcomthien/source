@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="407">
+        <name>Classic Premium Gelato per scoop 40,000</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421639121527.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421639121527.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421639121527.png</urlIcon>
+    </item>
+    <item id="409">
+        <name>Toppings per item 25,000</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</urlIcon>
+    </item>
+    <item id="408">
+        <name>Creative Premium Gelato per scoop 45,000</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</urlIcon>
+    </item>
+</ehotel>

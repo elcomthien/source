@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1543">
+        <def><![CDATA[FOR MORE INFORMATION:<br/>
+info@rivieraresortspa.com<<br/><br/>
+Northern Peninsula Cam Ranh, Nha Trang City, Khanh Hoa Province, Vietnam<br/><br/>
+<b>Tel :  (+84)  58 398 9898</b><br/>
+<b>Fax: (+84) 58 398 9899 </b><br/><br/>
+Email: info@rivieraresortspa.com<br/>
+Website: www.rivieraresortspa.com]]></def>
+        <name>Contact Infomation</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1416214144061.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

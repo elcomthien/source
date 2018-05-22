@@ -1,0 +1,247 @@
+.div_layer_vitual {
+	display: block;
+	position: absolute;
+	background: transparent url("../images/bg_layer.png") no-repeat center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.bg_alertBox {
+	display: block;
+	position: absolute;
+	background: transparent url("../images/bg_layer.png") no-repeat center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+}
+
+.div_alertBox {
+	width: 300px;
+	border: 2px solid #A7800A;
+	position: absolute;
+	z-index: 1009;
+	background-color: white;
+}
+
+.form_textbox {
+	position: absolute;
+	width: 420px;
+	height: 250;
+	background-color: white;
+	border-left: 5px outset #A7800A;
+	border-right: 3px inset #A7800A;
+	border-bottom: 4px inset #A7800A;
+	border-top: 4px outset #A7800A;
+}
+
+.form_title_subject {
+	float: left;
+	width: 100%;
+	height: 35px;
+}
+
+.form_textbox_subject {
+	width: 100%;
+	height: 35px;
+	float: left;
+}
+
+.title_subject {
+	float: left;
+	width: 100%;
+	height: 30px;
+	background-color: #D3D0BE;
+}
+
+.div_title_form_new {
+	margin-top: 5px;
+	font-size: 20px;
+	color: #000066;
+	width: 100%;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.form_textbox_input {
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+}
+
+.div_image_input {
+	width: 50px;
+	float: left;
+	height: 20;
+	margin-top: 10px;
+}
+
+.form_1 {
+	float: left;
+	width: 200;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.left_textbox {
+	float: left;
+	height: 100px;
+	width: 250;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+.right_textbox {
+	float: left;
+	height: 150;
+	width: 150;
+	margin-top: 20px;
+}
+
+.div_form_titile {
+	width: 100%;
+	height: 15px;
+}
+
+.form_textbox_top {
+	height: 6px;
+	width: 236;
+}
+
+.div_name_input {
+	float: left;
+	width: 50px;;
+	height: 20px;
+	float: left;
+}
+
+.form_textbox_center {
+	width: 100%;
+	float: left;
+}
+
+.form_textbox_bottom {
+	float: left;
+	height: 7px;
+	width: 236;
+}
+
+.div_conformBox {
+	width: 300px;
+	height: auto;
+	border: 2px solid #A7800A;
+	position: absolute;
+	z-index: 10000;
+	background-color: white;
+}
+
+.button_ok {
+	cursor: pointer;
+	float: left;
+	width: 85;
+	height: 33;
+	background: transparent url("../images/button.png") no-repeat center
+		center;
+}
+
+.button_ok a {
+	height: 20px;
+	margin-top: 30px;
+}
+
+.form_textbox_cancel {
+	width: 85;
+	height: 33;
+	background: transparent url("../images/button.png") no-repeat center
+		center;
+}
+
+.conformBox_info {
+	width: 100%;
+	min-height: 80px;
+	height: 80px;
+}
+
+.conformBox_title {
+	width: 100%;
+	height: 30px;
+}
+
+.div_1 {
+	width: 145px;
+	height: 33px;
+}
+
+.div_0 {
+	width: 100%;
+	height: 33px;
+	height: 40px;
+}
+
+.div_bt_alert {
+	height: 100%;
+	width: 80px;
+}
+
+.botton_text {
+	margin-top: 7px;
+}
+
+.icon_alert {
+	background: transparent url("../icon/alert.png") no-repeat center center;
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+}
+
+.icon_success {
+	background: transparent url("../icon/success.png") no-repeat center center;
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+}
+
+
+.icon_help {
+	background: transparent url("../icon/help_blue.png") no-repeat center
+		center;
+	height: 60px;
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+}
+
+.messages_box {
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+
+.subject_textbox_input {
+	float: left;
+	width: 100%;
+	height: 30px;
+}
+
+.subject_name_input {
+	float: left;
+	width: 120px;
+	text-align: left;
+	text-indent: 10px;
+	margin-top: 8px;
+}
+
+.subject_div_image {
+	margin-top: 20p;
+	float: left;
+	margin-left: 20px;
+	border: 1px solid #dddddd;
+}

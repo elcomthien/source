@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>HOTEL INFORMATION</name>
+        <name_vn>THÔNG TIN KHÁCH SẠN</name_vn>
+        <service_code>E01</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939104604.png</url>
+        <urlLink>elcom.ehotel.info.INFO</urlLink>
+    </item>
+    <item id="4">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_Video.apk@elcom.ehotel.vod</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_Video.apk@elcom.ehotel.vod</def>
+        <name>MOVIES</name>
+        <name_vn>PHIM</name_vn>
+        <service_code>E04</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939068789.png</url>
+        <urlLink>elcom.ehotel.vod.VOD_20141126</urlLink>
+    </item>
+    <item id="2">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>TELEVISION</name>
+        <name_vn>TRUYỀN HÌNH</name_vn>
+        <service_code>E02</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939095919.png</url>
+        <urlLink>elcom.ehotel.iptv.IPTV_20141223</urlLink>
+    </item>
+    <item id="3">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>MUSIC</name>
+        <name_vn>ÂM NHẠC</name_vn>
+        <service_code>E03</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939078567.png</url>
+        <urlLink>elcom.ehotel.mod.MOD</urlLink>
+    </item>
+    <item id="7">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk</def>
+        <name>DINING</name>
+        <name_vn>ẤM THỰC</name_vn>
+        <service_code>E07</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939157111.png</url>
+        <urlLink>elcom.ehotel.service.SERVICE</urlLink>
+    </item>
+    <item id="12">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>BILL</name>
+        <name_vn>HÓA ĐƠN</name_vn>
+        <service_code>E12</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939239355.png</url>
+        <urlLink>elcom.ehotel.bill.BILL</urlLink>
+    </item>
+    <item id="12">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>BILL</name>
+        <name_vn>HÓA ĐƠN</name_vn>
+        <service_code>E12</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939239355.png</url>
+        <urlLink>elcom.ehotel.bill.BILL</urlLink>
+    </item>
+    <item id="6">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>HOUSEKEEPING</name>
+        <name_vn>DỊCH VỤ PHÒNG</name_vn>
+        <service_code>E06</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939130550.png</url>
+        <urlLink>elcom.ehotel.hk.HOUSEKEEPING</urlLink>
+    </item>
+    <item id="18">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_HotelActivity.apk</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_HotelActivity.apk</def>
+        <name>ACTIVITY</name>
+        <name_vn>HOẠT ĐỘNG VUI CHƠI</name_vn>
+        <service_code>APK0018</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939121281.png</url>
+        <urlLink>elcom.ehotel.act.RESORTACTIVITY</urlLink>
+    </item>
+    <item id="10">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>GAME</name>
+        <name_vn>TRÒ CHƠI</name_vn>
+        <service_code>E10</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939223223.png</url>
+        <urlLink>elcom.ehotel.container.CONTAINER</urlLink>
+    </item>
+    <item id="9">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>INTERNET</name>
+        <name_vn>Internet</name_vn>
+        <service_code>E09</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939139835.png</url>
+        <urlLink>com.android.browser</urlLink>
+    </item>
+    <item id="8">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>LOCAL ATTRACTIONS</name>
+        <name_vn>CÁC ĐIỂM ĐẾN</name_vn>
+        <service_code>E08</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939147945.png</url>
+        <urlLink>elcom.ehotel.local.LOCAL</urlLink>
+    </item>
+    <item id="11">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>MAPS</name>
+        <name_vn>BẢN ĐỒ VÀ CHỈ DẪN</name_vn>
+        <service_code>E11</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939247737.png</url>
+        <urlLink>elcom.ehotel.map.MAP</urlLink>
+    </item>
+    <item id="11">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>MAPS</name>
+        <name_vn>BẢN ĐỒ VÀ CHỈ DẪN</name_vn>
+        <service_code>E11</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939247737.png</url>
+        <urlLink>elcom.ehotel.map.MAP</urlLink>
+    </item>
+    <item id="16">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>MESSAGE</name>
+        <name_vn>TIN NHẮN</name_vn>
+        <service_code>E16</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1374570310270.png</url>
+        <urlLink>elcom.ehotel.msg.MSG</urlLink>
+    </item>
+    <item id="15">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>WEATHER</name>
+        <name_vn>THỜI TIẾT</name_vn>
+        <service_code>E15</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939202830.png</url>
+        <urlLink>elcom.ehotel.weather.WEATHER</urlLink>
+    </item>
+    <item id="13">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotelExchange.apk</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotelExchange.apk</def>
+        <name>EXCHANGE RATE</name>
+        <name_vn>TỶ GIÁ NGOẠI TỆ</name_vn>
+        <service_code>E13</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939231579.png</url>
+        <urlLink>elcom.ehotel.exchange.EXCHANGE</urlLink>
+    </item>
+    <item id="21">
+        <apkcode>/ePMS2.0/elcom/resources/apk/game/Angry_Birds_v1.4.2.apk</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/game/Angry_Birds_v1.4.2.apk</def>
+        <name>STORAGE</name>
+        <name_vn>KHO LƯU TRỮ</name_vn>
+        <service_code>E21</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1374570310270.png</url>
+        <urlLink>elcom.ehotel.storage.STORAGE</urlLink>
+    </item>
+    <item id="17">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>OTA</name>
+        <name_vn>OTA</name_vn>
+        <service_code>E17</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363342484306.png</url>
+        <urlLink>com.elcom.ehotel.updateota</urlLink>
+    </item>
+</ehotel>

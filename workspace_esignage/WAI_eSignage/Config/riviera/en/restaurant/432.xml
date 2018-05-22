@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1827">
+        <def>&lt;p align=&quot;center&quot;&gt;Tahitian Vanilla&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Ginger Lemongrass&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Vietnamese&#160; Coffee Cinnamon&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Chocolate Orange&lt;/p&gt;</def>
+        <name>Crème Brulee Variations</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</urlIcon>
+    </item>
+</ehotel>

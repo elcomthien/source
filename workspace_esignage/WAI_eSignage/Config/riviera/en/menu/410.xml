@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="412">
+        <name>ESPRESSO ESPRESSION</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421643688131.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421643694865.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421643688131.png</urlIcon>
+    </item>
+    <item id="411">
+        <name>CLASSIC COFFEES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421642146212.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421642154147.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421642146212.png</urlIcon>
+    </item>
+</ehotel>

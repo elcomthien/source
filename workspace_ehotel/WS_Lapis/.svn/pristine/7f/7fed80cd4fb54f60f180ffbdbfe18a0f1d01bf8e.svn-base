@@ -1,0 +1,44 @@
+package com.elcom.ehotel.admin.service;
+
+import java.util.List;
+
+import com.elcom.ehotel.admin.dao.PMSDiningDao;
+import com.elcom.ehotel.admin.model.PMSDiningItemModel;
+import com.elcom.ehotel.admin.model.PMSDiningSubjectModel;
+import com.elcom.ehotel.admin.util.ConvertUtil;
+
+public class PMSDiningService {
+	private PMSDiningDao pmsDiningDao = new PMSDiningDao();
+
+	public List<PMSDiningSubjectModel> getSubjectDining(String parentId, String langId) {
+		return pmsDiningDao.getSubjectDining(ConvertUtil.convertToInteger(parentId), ConvertUtil.convertToInteger(langId));
+	}
+
+	public int addSubjectDining(PMSDiningSubjectModel sub) {
+		return pmsDiningDao.addSubjectDining(sub);
+	}
+
+	public int editSubjectDining(PMSDiningSubjectModel sub) {
+		return pmsDiningDao.editSubjectDining(sub);
+	}
+
+	public int deleteSubjectDining(String subId) {
+		return pmsDiningDao.deleteSubjectDining(subId);
+	}
+
+	public List<PMSDiningItemModel> getItemDining(String subjectId, String langId) {
+		return pmsDiningDao.getItemDining(subjectId, langId);
+	}
+
+	public int addItemDining(PMSDiningItemModel item) {
+		return pmsDiningDao.addItemDining(item);
+	}
+
+	public int editItemDining(PMSDiningItemModel item) {
+		return pmsDiningDao.editItemDining(item);
+	}
+
+	public int deleteItemDining(String itemId) {
+		return pmsDiningDao.deleteItemDining(itemId);
+	}
+}

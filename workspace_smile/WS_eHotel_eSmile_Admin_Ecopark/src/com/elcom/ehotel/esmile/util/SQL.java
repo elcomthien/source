@@ -71,6 +71,7 @@ public class SQL {
 	public static final String DELETE_SERVICE = "BEGIN EADMIN.deleteService(?,?); END;";
 
 	public static final String EDIT_RATING = "BEGIN EADMIN.editRating(?,?,?,?,?,?); END;";
+	public static final String DELETE_RATING = "BEGIN EADMIN.deleteRating(?,?); END;";
 
 	public static final String GET_VOTE_SURVEY = "BEGIN EADMIN.getVoteSurvey(?,?,?,?,?); END;";
 
@@ -121,5 +122,7 @@ public class SQL {
 	public static final String EDIT_ROLE = "BEGIN EADMIN.editRole(?,?,?,?); END;";
 	public static final String DELETE_ROLE = "BEGIN EADMIN.deleteRole(?,?); END;";
 	public static final String CHANGE_PASSWORD = "BEGIN EADMIN.changePassword(?,?,?,?,?,?); END;";
+	
+	public static final String ADD_RATING = "BEGIN EADMIN.addRating(?,?,?,?); END;";
 
 }

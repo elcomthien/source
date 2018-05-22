@@ -1,0 +1,45 @@
+package com.elcom.ehotel.admin.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.elcom.ehotel.admin.model.PMSInfoSubjectModel;
+import com.elcom.ehotel.admin.service.PMSInfoService;
+import com.elcom.ehotel.admin.util.LogUtil;
+import com.google.gson.Gson;
+
+public class PMSInfoController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+private PMSInfoService pmsInfoService = new PMSInfoService();
+	public PMSInfoController() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("application/json");
+		response.setCharacterEncoding("UTF-8");
+		String action =  request.getParameter("action");
+		
+		if(action.equals("getsubjectinfo")){
+			String serviceId = request.getParameter("serviceid");
+			String langId = request.getParameter("langid");
+			
+			LogUtil.logControl(PMSInfoController.class.toString(), "getsubjectinfo", "serviceId," + serviceId +",langId," + langId);
+			
+			List<PMSInfoSubjectModel> list = new ArrayList<PMSInfoSubjectModel>();
+			list = pmsInfoService.getListSubjectInfo(serviceId, langId);
+			
+			response.getWriter().write(new Gson().toJson(list));
+			
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+}

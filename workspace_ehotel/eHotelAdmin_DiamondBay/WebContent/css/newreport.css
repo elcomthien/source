@@ -1,0 +1,96 @@
+.form_header {
+	width: 1000px;;
+	height: 46px;
+	background: transparent url("../images/1000_header.png") no-repeat center
+		bottom;
+}
+
+.form_center {
+	width: 1000px;
+	height: auto;
+	background: transparent url("../images/1000_center.png") repeat-y center
+		top;
+}
+
+.form_bottom {
+	width: 1000px;
+	height: 9px;
+	background: transparent url("../images/1000_bottom.png") no-repeat top;
+}
+
+.form_detail_prom {
+	width: 620;
+	height: 460;
+	background-color: white;
+	z-index: 1002;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border: 3px solid #A7800A;
+}
+
+.pms_name_input {
+	float: left;
+	width: 120px;
+	text-align: left;
+	text-indent: 10px;
+	margin-top: 8px;
+}
+
+.pms_textbox_input {
+	float: left;
+	width: 100%;
+	height: 30px;
+}
+
+.div_formother {
+	width: 100%;
+	height: 330px;
+}
+
+.div_formother1 {
+	width: 100%;
+	height: 330px;
+	overflow-y: scroll;
+}
+
+.div_Title_prom {
+	width: 100%;
+	height: 30px;
+	float: left;
+	font-size: 22px;
+	color: #000066;
+	background-color: #D3D0BE;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.mytable2_row1 {
+	cursor: pointer;
+	height: 60px;
+	background: transparent url("../images/60_row1.png") repeat-x center
+		bottom;
+}
+
+.mytable2_row2 {
+	cursor: pointer;
+	height: 60px;
+	background: transparent url("../images/60_row2.png") repeat-x center
+		bottom;
+}
+
+.mytable2_row_sel {
+	cursor: pointer;
+	height: 60px;
+	background-color: #cccccc;
+}
+
+.im_ontable {
+	height: 50px;
+	width: 90px;
+}
+
+.div_bottom_table {
+	width: 100%;
+	height: 20px;
+}

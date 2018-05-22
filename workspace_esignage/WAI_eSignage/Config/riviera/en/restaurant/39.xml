@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-32">
+        <def>&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0in 0in 0pt;&quot;&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;&lt;b&gt;Small Plates&lt;/b&gt;&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-family: Times New Roman; font-size: x-small;&quot;&gt;Seasonal fruit sampler, flavored yogurt, baked muffin $14.75&lt;span&gt;&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-family: Times New Roman; font-size: x-small;&quot;&gt;Buttermilk pancakes, vermont maple syrup $10.50&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-family: Times New Roman; font-size: x-small;&quot;&gt;Norwegian smoked salmon, sliced tomatoes, capers, red onion, toasted bagel $16&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-family: Times New Roman; font-size: x-small;&quot;&gt;Beigian waffle, fresh strawbrries, chantilly cream $11.5&lt;span&gt;&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;span style=&quot;font-family: Times New Roman;&quot;&gt;Beverages&lt;span&gt;&amp;lt;br/&amp;gt;- &lt;span style=&quot;font-family: Times New Roman; font-size: x-small;&quot;&gt;Juice orange, grapefruit, pineapple, apple, cranberry, carrot, tomato $5&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Breakfast</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/Turndown.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/Turndown.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/Turndown.png</urlIcon>
+    </item>
+</ehotel>

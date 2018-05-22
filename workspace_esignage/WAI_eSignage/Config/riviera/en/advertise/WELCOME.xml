@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1707">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[  ]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[WELCOME_RIVIERA_01]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421390316376.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421390309074.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/1418896247646.png</urlIcon>
+    </item>
+    <item id="1708">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[  ]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[WELCOME_RIVIERA_02]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421390343151.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421390336026.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/1418896459028.png</urlIcon>
+    </item>
+    <item id="1709">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[  ]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[WELCOME_RIVIERA_03]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421390392902.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421390377254.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/1418896511342.png</urlIcon>
+    </item>
+    <item id="1710">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[  ]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[WELCOME_RIVIERA_04]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421390425229.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421390420389.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/1418896577726.png</urlIcon>
+    </item>
+    <item id="1711">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[  ]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[WELCOME_RIVIERA_05]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421390529315.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421390524465.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Welcome/1418896611973.png</urlIcon>
+    </item>
+</ehotel>

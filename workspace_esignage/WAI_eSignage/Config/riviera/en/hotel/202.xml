@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1462">
+        <def>&lt;div class=&quot;page&quot; title=&quot;Page 3&quot;&gt;&lt;div class=&quot;section&quot;&gt;&lt;div class=&quot;layoutArea&quot;&gt;&lt;div class=&quot;column&quot;&gt;&lt;p&gt;&lt;span&gt;Sokha Phnom Penh is an unrivalled luxurious hotel with the grandeur of an elegant lobby combined with the finest Angkor sculptural carpentry and stone craftsmanship. &lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Sokha Phnom Penh is strategically located on Chroy Changvar peninsula, opposite to the Royal Palace and approximately 13 km from Phnom Penh International Airport. 10 minutes drive into the centre of the city and popular attractions, Sokha Phnom Penh provides true Cambodian hospitality &lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;combined with the “Sokha” experience. &lt;/u&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</def>
+        <name>SOKHA PHNOM PENH HOTEL &amp; RESIDENCE</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/coffee_middayafternoon.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

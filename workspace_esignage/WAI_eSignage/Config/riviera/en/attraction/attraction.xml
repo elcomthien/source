@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item ICode="16" menuid="12">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Helicopter Tours]]></address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Come to a tour with a style, luxury, full with wonderful memories. Hope to see you soon on board one of our Air flights above the city. We have two types of Helicopter Tour arround city. All you need is choose which one do you prefer to have your tour.</p>]]></def>
+        <name>Helicopter Tours</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/null</urlImage>
+    </item>
+    <item ICode="11" menuid="12">
+        <address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Big Bus Tour]]></address>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Whether you are staying at the Beach and want to visit the City or staying the City and want to visit the Beach, Big Bus offers you the perfect solution. All tours have the hop-on, hop-off facility and tickets are available for both 24 and 48 hours so that you can customize your Big Bus tour to suit your needs.</p>]]></def>
+        <name>Big Bus Tour</name>
+        <status>0</status>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+        <urlImage>/ePMS2.0/elcom/resources/image/null</urlImage>
+    </item>
+</ehotel>

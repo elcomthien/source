@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Periodic>
+	<item id="17">
+		<name>17</name>
+		<start_day>2012-08-13</start_day>
+		<stop_day>2012-08-13</stop_day>
+	</item>
+	<item id="16">
+		<name>16</name>
+		<start_day>2012-08-14</start_day>
+		<stop_day>2012-08-14</stop_day>
+	</item>
+	<item id="18">
+		<name>18</name>
+		<start_day>2012-08-15</start_day>
+		<stop_day>2012-08-19</stop_day>
+	</item>
+</Periodic>

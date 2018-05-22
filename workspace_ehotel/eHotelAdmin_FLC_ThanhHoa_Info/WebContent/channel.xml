@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<livetv version="0.1">
+	<item id="1">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>AXN</namechannel>
+		<namenumber>AXN</namenumber>
+		<status>1</status>
+		<url>http://172.16.9.16:8888</url>
+	</item>
+	<item id="2">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>CCTV</namechannel>
+		<namenumber>CCTV</namenumber>
+		<status>1</status>
+		<url>http://172.16.9.16:8889</url>
+	</item>
+	<item id="3">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>ESPN</namechannel>
+		<namenumber>ASPN</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8890</url>
+	</item>
+	<item id="4">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>HBO</namechannel>
+		<namenumber>HBO</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8890</url>
+	</item>
+	<item id="5">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>LUXE</namechannel>
+		<namenumber>LUXE</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8891</url>
+	</item>
+	<item id="6">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>NGC</namechannel>
+		<namenumber>NGC</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8892</url>
+	</item>
+	<item id="7">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>NHK</namechannel>
+		<namenumber>NHK</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8893</url>
+	</item>
+	<item id="8">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>VTC1</namechannel>
+		<namenumber>VTC1</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8894</url>
+	</item>
+	<item id="9">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>VTC2</namechannel>
+		<namenumber>VTC2</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8895</url>
+	</item>
+	<item id="10">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>VTC3</namechannel>
+		<namenumber>VTC3</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8896</url>
+	</item>
+	<item id="11">
+		<image>/ebop/resources/image/livetv/item_wetv.png</image>
+		<namechannel>VTC-TheThao</namechannel>
+		<namenumber>VTC-TheThao</namenumber>
+		<status>1</status>
+		<url>http://http://172.16.9.16:8897</url>
+	</item>
+</livetv>

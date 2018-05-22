@@ -1,0 +1,4 @@
+DOMAIN_SERVER_FILE_CAPTURE=http://103.254.12.200/Giamsat/
+PATH_SOURCE=http://103.254.12.200/mp3/
+END_POINT=http://172.16.9.188:9090/VmsaBopRvcAdv_Version2/services/AdcenterAdminService?wsdl
+PATH_MONITORING=/var/www/html/Giamsat/

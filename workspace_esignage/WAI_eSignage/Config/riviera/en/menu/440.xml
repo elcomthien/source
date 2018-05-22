@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="442">
+        <name>Sweet Treats</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421656283362.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421656288309.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421656288309.png</urlIcon>
+    </item>
+    <item id="441">
+        <name>CHILDREN&#8217;S MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421655491330.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421655496677.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421655491330.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,407 @@
+package elcom.abop.util;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Properties;
+import java.util.Random;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
+
+import elcom.abop.bean.ObjectABOP;
+import elcom.abop.common.Constant;
+import elcom.abop.common.ConstantProperties;
+
+
+public class UtilBasic {
+	public static ArrayList<ObjectABOP> abopContent = new ArrayList<ObjectABOP>();
+	private static final Logger logger = Logger.getLogger(UtilBasic.class);
+	public String os = System.getProperty("os.name").toLowerCase();
+
+	public static String getResource(String path, String key) {
+		Properties props = new Properties();
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(path);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			props.load(fis);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		String value = props.getProperty(key);
+		try {
+			fis.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return value;
+	}
+
+	public static String parseDate(String date) {
+		String[] arr = date.split("-");
+		return arr[2] + "-" + arr[1] + "-" + arr[0];
+	}
+
+	public static String subString(String note, int length) {
+		if (note.isEmpty()) {
+			return "";
+		}
+		if (note.length() <= length) {
+			return note;
+		} else {
+			return (note.substring(0, length) + "...");
+		}
+	}
+
+	public static String convertFileType(String str) {
+		if (str.equalsIgnoreCase("1"))
+			return "Video";
+		else if (str.equalsIgnoreCase("2"))
+			return "";
+		else if (str.equalsIgnoreCase("3"))
+			return "Image";
+		else if (str.equalsIgnoreCase("4"))
+			return "Video";
+		else if (str.equalsIgnoreCase("5"))
+			return "Text";
+		else if (str.equalsIgnoreCase("6"))
+			return "Browser";
+		else if (str.equalsIgnoreCase("7"))
+			return "Image";
+		else if (str.equalsIgnoreCase("8"))
+			return "Image";
+		else if (str.equalsIgnoreCase("9"))
+			return "Video";
+		return "";
+	}
+
+	public static String convertTypeFile(String str) {
+		if (str.equalsIgnoreCase("Video"))
+			return "1";
+		else if (str.equalsIgnoreCase("2"))
+			return "";
+		else if (str.equalsIgnoreCase("Image"))
+			return "3";
+		else if (str.equalsIgnoreCase("Video"))
+			return "4";
+		else if (str.equalsIgnoreCase("Text"))
+			return "5";
+		else if (str.equalsIgnoreCase("Browser"))
+			return "6";
+		else if (str.equalsIgnoreCase("Image"))
+			return "7";
+		else if (str.equalsIgnoreCase("Image"))
+			return "8";
+		else if (str.equalsIgnoreCase("Video"))
+			return "9";
+		return "";
+	}
+
+	public static ArrayList<ObjectABOP> autoComplete(String type, String txt) {
+		ArrayList<ObjectABOP> obj = new ArrayList<ObjectABOP>();
+		int size = abopContent.size();
+		for (int i = 0; i < size; i++) {
+			if ("0".equals(type)
+					&& abopContent.get(i).getNameFull().toUpperCase()
+							.startsWith(txt.toUpperCase())) {
+				obj.add(abopContent.get(i));
+			} else if (convertFileType(type).equals(
+					abopContent.get(i).getType())
+					&& abopContent.get(i).getNameFull().toUpperCase()
+							.startsWith(txt.toUpperCase())) {
+				obj.add(abopContent.get(i));
+			}
+		}
+		return obj;
+	}
+
+	public static String getSequence() {
+		final String alphabet = "0123456789ABCDE";
+		final int N = alphabet.length();
+		String result = "";
+		Random r = new Random();
+		for (int i = 0; i < 50; i++) {
+			result += (alphabet.charAt(r.nextInt(N)));
+		}
+		return result;
+	}
+
+	private static String getHex(byte buf[]) {
+		StringBuilder o = new StringBuilder(buf.length * 3);
+		for (int i = 0; i < buf.length; i++) {
+			int n = (int) buf[i] & 0xff;
+			o.append("%");
+			if (n < 0x10) {
+				o.append("0");
+			}
+			o.append(Long.toString(n, 16).toUpperCase());
+		}
+		return o.toString();
+	}
+
+	public static final String ALLOWED_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.!~*'()";
+
+	public static String encodeURIComponent(String input) {
+		if (StringUtils.isEmpty(input)) {
+			return input;
+		}
+
+		int l = input.length();
+		StringBuilder o = new StringBuilder(l * 3);
+		try {
+			for (int i = 0; i < l; i++) {
+				String e = input.substring(i, i + 1);
+				if (ALLOWED_CHARS.indexOf(e) == -1) {
+					byte[] b = e.getBytes("utf-8");
+					o.append(getHex(b));
+					continue;
+				}
+				o.append(e);
+			}
+			return o.toString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return input;
+	}
+
+	public static String decodeURIComponent(String encodedURI) {
+		char actualChar;
+
+		StringBuffer buffer = new StringBuffer();
+
+		int bytePattern, sumb = 0;
+
+		for (int i = 0, more = -1; i < encodedURI.length(); i++) {
+			actualChar = encodedURI.charAt(i);
+
+			switch (actualChar) {
+			case '%': {
+				actualChar = encodedURI.charAt(++i);
+				int hb = (Character.isDigit(actualChar) ? actualChar - '0'
+						: 10 + Character.toLowerCase(actualChar) - 'a') & 0xF;
+				actualChar = encodedURI.charAt(++i);
+				int lb = (Character.isDigit(actualChar) ? actualChar - '0'
+						: 10 + Character.toLowerCase(actualChar) - 'a') & 0xF;
+				bytePattern = (hb << 4) | lb;
+				break;
+			}
+			case '+': {
+				bytePattern = ' ';
+				break;
+			}
+			default: {
+				bytePattern = actualChar;
+			}
+			}
+
+			if ((bytePattern & 0xc0) == 0x80) { // 10xxxxxx
+				sumb = (sumb << 6) | (bytePattern & 0x3f);
+				if (--more == 0)
+					buffer.append((char) sumb);
+			} else if ((bytePattern & 0x80) == 0x00) { // 0xxxxxxx
+				buffer.append((char) bytePattern);
+			} else if ((bytePattern & 0xe0) == 0xc0) { // 110xxxxx
+				sumb = bytePattern & 0x1f;
+				more = 1;
+			} else if ((bytePattern & 0xf0) == 0xe0) { // 1110xxxx
+				sumb = bytePattern & 0x0f;
+				more = 2;
+			} else if ((bytePattern & 0xf8) == 0xf0) { // 11110xxx
+				sumb = bytePattern & 0x07;
+				more = 3;
+			} else if ((bytePattern & 0xfc) == 0xf8) { // 111110xx
+				sumb = bytePattern & 0x03;
+				more = 4;
+			} else { // 1111110x
+				sumb = bytePattern & 0x01;
+				more = 5;
+			}
+		}
+		return buffer.toString();
+	}
+
+	/**
+	 * get image newest on
+	 * 
+	 * @param serinumber
+	 * @param number
+	 *            is number file get
+	 * @return name file newest
+	 */
+	public static String getImageCaptureScreenNewest(String serinumber,
+			String number) {
+		String result = "";
+		logger.info("ls " + ConstantProperties.PATH_MONITORING
+				+ " -rt | tail -" + number);
+		String[] executeCmd = new String[] {
+				"/bin/bash",
+				"-c",
+				"ls " + ConstantProperties.PATH_MONITORING + " -rt | tail -"
+						+ number };
+		Runtime run = Runtime.getRuntime();
+		String lsString = null;
+		Process runtimeProcess = null;
+		try {
+			runtimeProcess = run.exec(executeCmd);
+			BufferedReader bufferedReader = new BufferedReader(
+					new InputStreamReader(runtimeProcess.getInputStream()));
+			while ((lsString = bufferedReader.readLine()) != null) {
+				if (number.equals("1")) {
+					result = lsString.substring(lsString.lastIndexOf("/") + 1,
+							lsString.length());
+				} else if (number.equals("2")) {
+					result += lsString.substring(lsString.lastIndexOf("/") + 1,
+							lsString.length()) + ";";
+				}
+				logger.info("====================" + lsString);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return result;
+	}
+
+	public static void getInfoImage(String[] strName) {
+		ArrayList<ObjectABOP> capture = new ArrayList<ObjectABOP>();
+		if (strName.length == 2) {
+			for (int i = 0; i < strName.length; i++) {
+				if (strName[i].indexOf(Constant.getObjectBean().getData()
+						+ "2_") == 0) {
+					String xywh = strName[i].substring(strName[i].indexOf("_",
+							strName[i].indexOf("_") + 1), strName[i]
+							.lastIndexOf("."));
+					String[] str = xywh.split("_");
+					ObjectABOP abop = new ObjectABOP();
+					abop.setUrl(ConstantProperties.DMSV_FILE_CAPTURE
+							+ strName[i]);
+					abop.setLeft(str[1]);
+					abop.setTop(str[2]);
+					abop.setWidth(str[3]);
+					abop.setHeight(str[4]);
+					abop.setRandom(UtilBasic.getSequence());
+					capture.add(abop);
+				}
+				if (strName[i]
+						.indexOf(Constant.getObjectBean().getData() + "_") == 0) {
+					String xywh = strName[i].substring(strName[i].indexOf("_",
+							strName[i].indexOf("_") + 1), strName[i]
+							.lastIndexOf("."));
+					String[] str = xywh.split("_");
+					ObjectABOP abop = new ObjectABOP();
+					abop.setUrl(ConstantProperties.DMSV_FILE_CAPTURE
+							+ strName[i]);
+					abop.setLeft(str[1]);
+					abop.setTop(str[2]);
+					abop.setWidth(str[3]);
+					abop.setHeight(str[4]);
+					abop.setRandom(UtilBasic.getSequence());
+					capture.add(abop);
+				}
+			}
+		}
+		Constant.getObjectBean().setLayout(capture);
+	}
+
+	public static String getParentPath(String path) {
+		String parentPath = path.substring(0, path.length() - 2);
+		int i = parentPath.lastIndexOf(System.getProperty("file.separator"));
+		parentPath = parentPath.substring(0, i + 1);
+		return parentPath;
+	}
+	
+	public boolean pingIp(String ip)
+	{
+		boolean flag = false;
+		if ( isWindows() ) {
+			//do nothing, neu la windows thi ko can lam gi vi khong co ham
+			String lsString = null;
+			//command to ping ip
+			String[] listCmd = new String[] {"cmd.exe ","/c"," ping -n 1 " + ip};
+			Runtime run = Runtime.getRuntime();
+			Process runtimeProcess = null;
+			try {
+				runtimeProcess = run.exec(listCmd); 
+				BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(runtimeProcess.getInputStream()));
+				while ((lsString = bufferedReader.readLine()) != null)
+				{
+					if (lsString.indexOf("Destination Host Unreachable") >= 0) {
+						return false;
+					}
+					else if (lsString.indexOf("Request timed out") >= 0) {
+						return false;
+					}
+					else if (lsString.indexOf("100% loss") >= 0) {
+						return false;
+					}
+					else {
+						flag = true;
+					}
+				}
+				run.freeMemory();
+			}
+			catch (IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		if ( isUnix() ) {
+			System.out.println("ip=" + ip);
+			if (ip == null) {
+				return false;
+			}
+			else {
+				String lsString = null;
+				//command to ping ip
+				String[] listCmd = new String[] {"/bin/bash","-c","ping -c 1 " + ip};
+				Runtime run = Runtime.getRuntime();
+				Process runtimeProcess = null;
+				try {
+					runtimeProcess = run.exec(listCmd); 
+					BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(runtimeProcess.getInputStream()));
+					while ((lsString = bufferedReader.readLine()) != null)
+					{
+						System.out.println(lsString);
+						if (lsString.indexOf("Destination Host Unreachable") >= 0) {
+							return false;
+						}
+						else if (lsString.indexOf("Request timed out") >= 0) {
+							return false;
+						}
+						else if (lsString.indexOf("100% loss") >= 0) {
+							return false;
+						}
+						else {
+							flag = true;
+						}
+					}
+					run.freeMemory();
+				}
+				catch (IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		}
+		return flag;
+	}
+	
+	public boolean isWindows() {
+		return (os.indexOf("win") >= 0);
+	}
+	public boolean isUnix() {
+		return (os.indexOf("nix") >= 0 || os.indexOf("nux") >= 0);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(System.getProperty("os.name").toLowerCase());
+	}
+}

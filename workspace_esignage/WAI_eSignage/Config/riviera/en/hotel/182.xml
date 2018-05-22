@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1382">
+        <def>&lt;p&gt;Hello&lt;/p&gt;</def>
+        <name>Noi dung 01</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1403143502042.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1383">
+        <def>&lt;p&gt;你好&lt;/p&gt;</def>
+        <name>内容</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/null</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

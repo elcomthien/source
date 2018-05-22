@@ -39,7 +39,11 @@ public interface Param {
 	public static String typetvbox = "typetvbox";
 	public static String day = "day";
 	public static String coutrid = "coutrid";
-	
-	
-	
+	public static String location = "location";
+	public static String station = "station";
+	public static String date = "date";
+	public static String route = "route";
+	public static String airline = "airline";
+	public static String flighttype = "flighttype";
+
 }

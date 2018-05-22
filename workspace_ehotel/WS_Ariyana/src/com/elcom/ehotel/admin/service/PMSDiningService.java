@@ -3,6 +3,7 @@ package com.elcom.ehotel.admin.service;
 import java.util.List;
 
 import com.elcom.ehotel.admin.dao.PMSDiningDao;
+import com.elcom.ehotel.admin.model.PMSDiningDetailModel;
 import com.elcom.ehotel.admin.model.PMSDiningItemModel;
 import com.elcom.ehotel.admin.model.PMSDiningSubjectModel;
 import com.elcom.ehotel.admin.util.ConvertUtil;
@@ -49,5 +50,23 @@ public class PMSDiningService {
 
 	public int deleteItemDining(String itemId) {
 		return pmsDiningDao.deleteItemDining(itemId);
+	}
+
+	public List<PMSDiningDetailModel> getItemDetail(String id, String langid) {
+		return pmsDiningDao.getItemDetail(id, langid);
+	}
+
+	public int addItemDetail(PMSDiningDetailModel item) {
+		item.setDetail(UnicodeConverter.encodeUnicode(item.getDetail()));
+		return pmsDiningDao.addItemDetail(item);
+	}
+
+	public int editItemDetail(PMSDiningDetailModel item) {
+		item.setDetail(UnicodeConverter.encodeUnicode(item.getDetail()));
+		return pmsDiningDao.editItemDetail(item);
+	}
+
+	public int deleteItemDetail(String id) {
+		return pmsDiningDao.deleteItemDetail(id);
 	}
 }

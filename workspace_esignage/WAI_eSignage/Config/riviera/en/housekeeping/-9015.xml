@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item iCode="103" menuid="-9015">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Test</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421740480606.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

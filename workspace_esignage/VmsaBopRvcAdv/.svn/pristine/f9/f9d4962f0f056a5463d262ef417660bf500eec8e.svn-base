@@ -1,0 +1,633 @@
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+17    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+533   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1036  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1538  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2039  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2541  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3043  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3545  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+4047  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+87    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+589   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1093  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1594  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2095  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2596  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3098  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3599  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+4143  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+14    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+516   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+1017  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+1518  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+2019  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+2522  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+3023  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+3525  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+4027  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 105
+31    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+546   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1048  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1550  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2052  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2554  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3056  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3558  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+4060  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+16    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+518   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1020  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1522  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2023  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2526  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3027  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3529  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+4030  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_admingetContentGroup(?,?,?)} | param size: 2
+2     INFO  [main] group.GroupDao - pram 0 = 105
+3     INFO  [main] group.GroupDao - pram 1 = 0
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call ABOPDB.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetConfig(?,?)} | param size: 1
+2     INFO  [main] group.GroupDao - pram 0 = 
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+361   INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+3744  INFO  [main] group.GroupDao - pram 0 = 105
+11215 INFO  [main] group.GroupDao - pram 1 = Playlist_new
+13206 INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = 105
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+40    INFO  [main] group.GroupDao - pram 0 = 105
+40    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+40    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = 105
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+5322  INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+320   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+250   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+289   INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+379   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+370   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 105 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+360   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = -1
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 110 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+360   INFO  [main] group.GroupDao - 110 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyName(?,?)} | param size: 2
+30    INFO  [main] content.ServiceContentDao - pram 0 = 0
+30    INFO  [main] content.ServiceContentDao - pram 1 = 0
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyName(?,?)} | param size: 2
+0     INFO  [main] content.ServiceContentDao - pram 0 = 2
+0     INFO  [main] content.ServiceContentDao - pram 1 = HaNoi_Daily_tmdang
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+30    INFO  [main] content.ServiceContentDao - pram 0 = 2
+30    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+30    INFO  [main] content.ServiceContentDao - pram 2 = 19:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_admingetScheduleDailyGroup(?,?)} | param size: 1
+0     INFO  [main] content.ServiceContentDao - pram 0 = 2
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+0     INFO  [main] content.ServiceContentDao - pram 0 = 15
+0     INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+0     INFO  [main] content.ServiceContentDao - pram 2 = 22:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+211   INFO  [main] content.ServiceContentDao - pram 0 = 15
+211   INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+211   INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+0     INFO  [main] content.ServiceContentDao - pram 0 = 15
+0     INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+0     INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+50    INFO  [main] content.ServiceContentDao - pram 0 = 16
+50    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+50    INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - id:16
+30    INFO  [main] content.ServiceContentDao - starttime:07:00:00
+30    INFO  [main] content.ServiceContentDao - stoptime:10:10:00
+30    INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+30    INFO  [main] content.ServiceContentDao - pram 0 = 16
+30    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+30    INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@15dfd77
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@1abc7b9
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@1abc7b9
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@c55e36

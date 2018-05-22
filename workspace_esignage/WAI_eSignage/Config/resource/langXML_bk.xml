@@ -1,0 +1,2306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lang xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<content id="1">
+		<KH>Movie content manager</KH>
+		<EN>Movie content manager</EN>
+		<CH>Movie content manager</CH>
+		<JP>Movie content manager</JP>
+		<KR>Movie content manager</KR>
+	</content>
+	<content id="2">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CH>Name</CH>
+		<JP>Name</JP>
+		<KR>Name</KR>
+	</content>
+	<content id="3">
+		<KH>Actors</KH>
+		<EN>Actors</EN>
+		<CH>Actors</CH>
+		<JP>Actors</JP>
+		<KR>Actors</KR>
+	</content>
+	<content id="4">
+		<KH>Director</KH>
+		<EN>Director</EN>
+		<CH>Director</CH>
+		<JP>Director</JP>
+		<KR>Director</KR>
+	</content>
+	<content id="5">
+		<KH>Exchange.Rate</KH>
+		<EN>Exchange.Rate</EN>
+		<CH>Exchange.Rate</CH>
+		<JP>Exchange.Rate</JP>
+		<KR>Exchange.Rate</KR>
+	</content>
+	<content id="6">
+		<KH>Setting</KH>
+		<EN>Setting</EN>
+		<CH>Setting</CH>
+		<JP>Setting</JP>
+		<KR>Setting</KR>
+	</content>
+	<content id="7">
+		<KH>List of Movies</KH>
+		<EN>List of Movies</EN>
+		<CH>List of Movies</CH>
+		<JP>List of Movies</JP>
+		<KR>List of Movies</KR>
+	</content>
+	<content id="8">
+		<KH>List</KH>
+		<EN>List</EN>
+		<CH>List</CH>
+		<JP>List</JP>
+		<KR>List</KR>
+	</content>
+	<content id="9">
+		<KH>Add</KH>
+		<EN>Add</EN>
+		<CH>Add</CH>
+		<JP>Add</JP>
+		<KR>Add</KR>
+	</content>
+	<content id="10">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CH>Subject</CH>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+	</content>
+	<content id="11">
+		<KH>Add Subject</KH>
+		<EN>Add Subject</EN>
+		<CH>Add Subject</CH>
+		<JP>Add Subject</JP>
+		<KR>Add Subject</KR>
+	</content>
+	<content id="12">
+		<KH>Hotel manager</KH>
+		<EN>Hotel manager</EN>
+		<CH>Hotel manager</CH>
+		<JP>Hotel manager</JP>
+		<KR>Hotel manager</KR>
+	</content>
+	<content id="13">
+		<KH>Title</KH>
+		<EN>Title</EN>
+		<CH>Title</CH>
+		<JP>Title</JP>
+		<KR>Title</KR>
+	</content>
+	<content id="14">
+		<KH>Are you sure to delete?</KH>
+		<EN>Are you sure to delete?</EN>
+		<CH>Are you sure to delete?</CH>
+		<JP>Are you sure to delete?</JP>
+		<KR>Are you sure to delete?</KR>
+	</content>
+	<content id="15">
+		<KH>New</KH>
+		<EN>New</EN>
+		<CH>New</CH>
+		<JP>New</JP>
+		<KR>New</KR>
+	</content>
+	<content id="16">
+		<KH>Content</KH>
+		<EN>Content</EN>
+		<CH>Content</CH>
+		<JP>Content</JP>
+		<KR>Content</KR>
+	</content>
+	<content id="17">
+		<KH>Service</KH>
+		<EN>Service</EN>
+		<CH>Service</CH>
+		<JP>Service</JP>
+		<KR>Service</KR>
+	</content>
+	<content id="18">
+		<KH>System</KH>
+		<EN>System</EN>
+		<CH>System</CH>
+		<JP>System</JP>
+		<KR>System</KR>
+	</content>
+	<content id="19">
+		<KH>Report</KH>
+		<EN>Report</EN>
+		<CH>Report</CH>
+		<JP>Report</JP>
+		<KR>Report</KR>
+	</content>
+	<content id="20">
+		<KH>Live TV</KH>
+		<EN>Live TV</EN>
+		<CH>Live TV</CH>
+		<JP>Live TV</JP>
+		<KR>Live TV</KR>
+	</content>
+	<content id="21">
+		<KH>Info</KH>
+		<EN>Info</EN>
+		<CH>Info</CH>
+		<JP>Info</JP>
+		<KR>Info</KR>
+	</content>
+		<content id="22">
+		<KH>Config</KH>
+		<EN>Config</EN>
+		<CH>Config</CH>
+		<JP>Config</JP>
+		<KR>Config</KR>
+	</content>
+	<content id="price">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CH>Price</CH>
+		<JP>Price</JP>
+		<KR>Price</KR>
+	</content>
+	<content id="stt">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CH>No</CH>
+		<JP>No</JP>
+		<KR>No</KR>
+	</content>
+	<content id="HotelMgn">
+		<KH>Hotel information management</KH>
+		<EN>Hotel information management</EN>
+		<CH>Hotel information management</CH>
+		<JP>Hotel information management</JP>
+		<KR>Hotel information management</KR>
+	</content>
+	<content id="FolioMgn">
+		<KH>Folio and Stb management</KH>
+		<EN>Folio and Stb management</EN>
+		<CH>Folio and Stb management</CH>
+		<JP>Folio and Stb management</JP>
+		<KR>Folio and Stb management</KR>
+	</content>
+	<content id="DiningMgn">
+		<KH>Dining information management</KH>
+		<EN>Dining information management</EN>
+		<CH>Dining information management</CH>
+		<JP>Dining information management</JP>
+		<KR>Dining information management</KR>
+	</content>
+	<content id="Attration-ActivitiesMgn">
+		<KH>Activiti-Attaraction management</KH>
+		<EN>Activiti-Attaraction management</EN>
+		<CH>Activiti-Attaraction management</CH>
+		<JP>Activiti-Attaraction management</JP>
+		<KR>Activiti-Attaraction management</KR>
+	</content>
+	<content id="TransportationMgn">
+		<KH>Transportation management</KH>
+		<EN>Transportation management</EN>
+		<CH>Transportation management</CH>
+		<JP>Transportation management</JP>
+		<KR>Transportation management</KR>
+	</content>
+	<content id="HousekeepingMgn">
+		<KH>Housekeeping management</KH>
+		<EN>Housekeeping management</EN>
+		<CH>Housekeeping management</CH>
+		<JP>Housekeeping management</JP>
+		<KR>Housekeeping management</KR>
+	</content>
+	<content id="MapMgn_map">
+		<KH>Map Direction management</KH>
+		<EN>Map Direction management</EN>
+		<CH>Map Direction management</CH>
+		<JP>Map Direction management</JP>
+		<KR>Map Direction management</KR>
+	</content>
+	<content id="reset_pin">
+		<KH>Do you want to reset pincode?</KH>
+		<EN>Do you want to reset pincode?</EN>
+		<CH>Do you want to reset pincode?</CH>
+		<JP>Do you want to reset pincode?</JP>
+		<KR>Do you want to reset pincode?</KR>
+	</content>
+	<content id="OtherMgn">
+		<KH>Others management</KH>
+		<EN>Others management</EN>
+		<CH>Others management</CH>
+		<JP>Others management</JP>
+		<KR>Others management</KR>
+	</content>
+	<content id="Subject">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CH>Subject</CH>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+	</content>
+	<content id="AddSubject">
+		<KH>Add Subject</KH>
+		<EN>Add Subject</EN>
+		<CH>Add Subject</CH>
+		<JP>Add Subject</JP>
+		<KR>Add Subject</KR>
+	</content>
+	<content id="EditSubject">
+		<KH>Edit Subject</KH>
+		<EN>Edit Subject</EN>
+		<CH>Edit Subject</CH>
+		<JP>Edit Subject</JP>
+		<KR>Edit Subject</KR>
+	</content>
+	<content id="pls_Subject">
+		<KH>Please enter the full name of the subject.</KH>
+		<EN>Please enter the full name of the subject</EN>
+		<CH>Please enter the full name of the subject</CH>
+		<JP>Please enter the full name of the subject</JP>
+		<KR>Please enter the full name of the subject</KR>
+	</content>
+	<content id="DeleteSubject">
+		<KH>Delete Subject</KH>
+		<EN>Delete Subject</EN>
+		<CH>Delete Subject</CH>
+		<JP>Delete Subject</JP>
+		<KR>Delete Subject</KR>
+	</content>
+	<content id="AddItem">
+		<KH>Add Item</KH>
+		<EN>Add Item</EN>
+		<CH>Add Item</CH>
+		<JP>Add Item</JP>
+		<KR>Add Item</KR>
+	</content>
+	<content id="RemoveItem">
+		<KH>Delete Item</KH>
+		<EN>Delete Item</EN>
+		<CH>Delete Item</CH>
+		<JP>Delete Item</JP>
+		<KR>Delete Item</KR>
+	</content>
+	<content id="DetailItem">
+		<KH>View Item</KH>
+		<EN>View Item</EN>
+		<CH>View Item</CH>
+		<JP>View Item</JP>
+		<KR>View Item</KR>
+	</content>
+	<content id="ChangeSubject">
+		<KH>Change subject</KH>
+		<EN>Change subject</EN>
+		<CH>Change subject</CH>
+		<JP>Change subject</JP>
+		<KR>Change subject</KR>
+	</content>
+	<content id="ChangeStatus">
+		<KH>Change status</KH>
+		<EN>Change status</EN>
+		<CH>Change status</CH>
+		<JP>Change status</JP>
+		<KR>Change status</KR>
+	</content>
+	<content id="Status">
+		<KH>Status</KH>
+		<EN>Status</EN>
+		<CH>Status</CH>
+		<JP>Status</JP>
+		<KR>Status</KR>
+	</content>
+	<content id="No">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CH>No</CH>
+		<JP>No</JP>
+		<KR>No</KR>
+	</content>
+	<content id="room">
+		<KH>Room</KH>
+		<EN>Room</EN>
+		<CH>Room</CH>
+		<JP>Room</JP>
+		<KR>Room</KR>
+	</content>
+	<content id="Name_guest">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CH>Name</CH>
+		<JP>Name</JP>
+		<KR>Name</KR>
+	</content>
+	<content id="Description">
+		<KH>Description</KH>
+		<EN>Description</EN>
+		<CH>Description</CH>
+		<JP>Description</JP>
+		<KR>Description</KR>
+	</content>
+	<content id="Image">
+		<KH>Image</KH>
+		<EN>Image</EN>
+		<CH>Image</CH>
+		<JP>Image</JP>
+		<KR>Image</KR>
+	</content>
+	<content id="Background">
+		<KH>Background</KH>
+		<EN>Background</EN>
+		<CH>Background</CH>
+		<JP>Background</JP>
+		<KR>Background</KR>
+	</content>
+	<content id="stb_assigned">
+		<KH>STB is assigned to room</KH>
+		<EN>STB is assigned to room</EN>
+		<CH>STB is assigned to room</CH>
+		<JP>STB is assigned to room</JP>
+		<KR>STB is assigned to room</KR>
+	</content>
+	<content id="insert_stb">
+		<KH>Please select STB!</KH>
+		<EN>Please select STB!</EN>
+		<CH>Please select STB!</CH>
+		<JP>Please select STB!</JP>
+		<KR>Please select STB!</KR>
+	</content>
+	<content id="remove_stb_check">
+		<KH>Please check any stb to remove.</KH>
+		<EN>Please check any stb to remove.</EN>
+		<CH>Please check any stb to remove.</CH>
+		<JP>Please check any stb to remove.</JP>
+		<KR>Please check any stb to remove.</KR>
+	</content>
+	<content id="checkout">
+		<KH>Do you really want to check out?</KH>
+		<EN>Do you really want to check out?</EN>
+		<CH>Do you really want to check out?</CH>
+		<JP>Do you really want to check out?</JP>
+		<KR>Do you really want to check out?</KR>
+	</content>
+	<content id="remove_stb">
+		<KH>Do you really want to remove STB?</KH>
+		<EN>Do you really want to remove STB?</EN>
+		<CH>Do you really want to remove STB?</CH>
+		<JP>Do you really want to remove STB?</JP>
+		<KR>Do you really want to remove STB?</KR>
+	</content>
+	<content id="RoomList">
+		<KH>Rooms</KH>
+		<EN>Rooms</EN>
+		<CH>Rooms</CH>
+		<JP>Rooms</JP>
+		<KR>Rooms</KR>
+	</content>
+	<content id="addSTBroom">
+		<KH>Assign STB to room</KH>
+		<EN>Assign STB to room</EN>
+		<CH>Assign STB to room</CH>
+		<JP>Assign STB to room</JP>
+		<KR>Assign STB to room</KR>
+	</content>
+	<content id="removestb">
+		<KH>Remove</KH>
+		<EN>Remove</EN>
+		<CH>Remove</CH>
+		<JP>Remove</JP>
+		<KR>Remove</KR>
+	</content>
+	<content id="dbclickaddSettopbox">
+		<KH>Double click to add STB to room</KH>
+		<EN>Double click to add STB to room</EN>
+		<CH>Double click to add STB to room</CH>
+		<JP>Double click to add STB to room</JP>
+		<KR>Double click to add STB to room</KR>
+	</content>
+	<content id="addstb">
+		<KH>Add</KH>
+		<EN>Add</EN>
+		<CH>Add</CH>
+		<JP>Add</JP>
+		<KR>Add</KR>
+	</content>
+	<content id="STB">
+		<KH>Settop box</KH>
+		<EN>Settop box</EN>
+		<CH>Settop box</CH>
+		<JP>Settop box</JP>
+		<KR>Settop box</KR>
+	</content>
+	<content id="Guest">
+		<KH>Guest Info</KH>
+		<EN>Guest Info</EN>
+		<CH>Guest Info</CH>
+		<JP>Guest Info</JP>
+		<KR>Guest Info</KR>
+	</content>
+	<content id="Message">
+		<KH>Messages</KH>
+		<EN>Messages</EN>
+		<CH>Messages</CH>
+		<JP>Messages</JP>
+		<KR>Messages</KR>
+	</content>
+	<content id="SetUp">
+		<KH>Setup</KH>
+		<EN>Setup</EN>
+		<CH>Setup</CH>
+		<JP>Setup</JP>
+		<KR>Setup</KR>
+	</content>
+	<content id="Bill">
+		<KH>Bill</KH>
+		<EN>Bill</EN>
+		<CH>Bill</CH>
+		<JP>Bill</JP>
+		<KR>Bill</KR>
+	</content>
+	<content id="Hotel">
+		<KH>Hotel</KH>
+		<EN>Hotel</EN>
+		<CH>Hotel</CH>
+		<JP>Hotel</JP>
+		<KR>Hotel</KR>
+	</content>
+	<content id="Activites">
+		<KH>Activities</KH>
+		<EN>Activities</EN>
+		<CH>Activities</CH>
+		<JP>Activities</JP>
+		<KR>Activities</KR>
+	</content>
+	<content id="Attractions">
+		<KH>Attractions</KH>
+		<EN>Attractions</EN>
+		<CH>Attractions</CH>
+		<JP>Attractions</JP>
+		<KR>Attractions</KR>
+	</content>
+	<content id="Promotions">
+		<KH>Promotions</KH>
+		<EN>Promotions</EN>
+		<CH>Promotions</CH>
+		<JP>Promotions</JP>
+		<KR>Promotions</KR>
+	</content>
+	<content id="ExchangeRate">
+		<KH>Exchange</KH>
+		<EN>Exchange</EN>
+		<CH>Exchange</CH>
+		<JP>Exchange</JP>
+		<KR>Exchange</KR>
+	</content>
+	<content id="Advertise">
+		<KH>Advertise</KH>
+		<EN>Advertise</EN>
+		<CH>Advertise</CH>
+		<JP>Advertise</JP>
+		<KR>Advertise</KR>
+	</content>
+	<content id="urllink">
+		<KH>Airline Information</KH>
+		<EN>Airline Information</EN>
+		<CH>Airline Information</CH>
+		<JP>Airline Information</JP>
+		<KR>Airline Information</KR>
+	</content>
+	<content id="Transport">
+		<KH>Transport</KH>
+		<EN>Transport</EN>
+		<CH>Transport</CH>
+		<JP>Transport</JP>
+		<KR>Transport</KR>
+	</content>
+	<content id="FolioType">
+		<KH>Room Type</KH>
+		<EN>Room Type</EN>
+		<CH>Room Type</CH>
+		<JP>Room Type</JP>
+		<KR>Room Type</KR>
+	</content>
+	<content id="NameGuest">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CH>Name</CH>
+		<JP>Name</JP>
+		<KR>Name</KR>
+	</content>
+	<content id="CheckInDate">
+		<KH>Checkin date</KH>
+		<EN>Checkin date</EN>
+		<CH>Checkin date</CH>
+		<JP>Checkin date</JP>
+		<KR>Checkin date</KR>
+	</content>
+	<content id="CheckOutDate">
+		<KH>Checkout date</KH>
+		<EN>Checkout date</EN>
+		<CH>Checkout date</CH>
+		<JP>Checkout date</JP>
+		<KR>Checkout date</KR>
+	</content>
+	<content id="MainGuest">
+		<KH>Khách chính</KH>
+		<EN>Main Guest</EN>
+		<CH>Main Guest</CH>
+		<JP>Main Guest</JP>
+		<KR>Main Guest</KR>
+	</content>
+	<content id="Content">
+		<KH>Content</KH>
+		<EN>Content</EN>
+		<CH>Content</CH>
+		<JP>Content</JP>
+		<KR>Content</KR>
+	</content>
+	<content id="Sender">
+		<KH>Sender</KH>
+		<EN>Sender</EN>
+		<CH>Sender</CH>
+		<JP>Sender</JP>
+		<KR>Sender</KR>
+	</content>
+	<content id="subject_mess">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CH>Subject</CH>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+	</content>
+	<content id="SendDate">
+		<KH>Date</KH>
+		<EN>Date</EN>
+		<CH>Date</CH>
+		<JP>Date</JP>
+		<KR>Date</KR>
+	</content>
+	<content id="Name">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CH>Name</CH>
+		<JP>Name</JP>
+		<KR>Name</KR>
+	</content>
+	<content id="Price">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CH>Price</CH>
+		<JP>Price</JP>
+		<KR>Price</KR>
+	</content>
+	<content id="Quantity">
+		<KH>Quantity</KH>
+		<EN>Quantity</EN>
+		<CH>Quantity</CH>
+		<JP>Quantity</JP>
+		<KR>Quantity</KR>
+	</content>
+	<content id="Amount">
+		<KH>Amount</KH>
+		<EN>Amount</EN>
+		<CH>Amount</CH>
+		<JP>Amount</JP>
+		<KR>Amount</KR>
+	</content>
+	<content id="Unit">
+		<KH>Unit</KH>
+		<EN>Unit</EN>
+		<CH>Unit</CH>
+		<JP>Unit</JP>
+		<KR>Unit</KR>
+	</content>
+	<content id="Currency">
+		<KH>Currency</KH>
+		<EN>Currency</EN>
+		<CH>Currency</CH>
+		<JP>Currency</JP>
+		<KR>Currency</KR>
+	</content>
+	<content id="Code_money">
+		<KH>Code</KH>
+		<EN>Code</EN>
+		<CH>Code</CH>
+		<JP>Code</JP>
+		<KR>Code</KR>
+	</content>
+	<content id="Buy">
+		<KH>Buy</KH>
+		<EN>Buy</EN>
+		<CH>Buy</CH>
+		<JP>Buy</JP>
+		<KR>Buy</KR>
+	</content>
+	<content id="Transfer">
+		<KH>Transfer</KH>
+		<EN>Transfer</EN>
+		<CH>Transfer</CH>
+		<JP>Transfer</JP>
+		<KR>Transfer</KR>
+	</content>
+	<content id="Sell">
+		<KH>Sale</KH>
+		<EN>Sale</EN>
+		<CH>Sale</CH>
+		<JP>Sale</JP>
+		<KR>Sale</KR>
+	</content>
+	<content id="type">
+		<KH>Type</KH>
+		<EN>Type</EN>
+		<CH>Type</CH>
+		<JP>Type</JP>
+		<KR>Type</KR>
+	</content>
+	<content id="create_date">
+		<KH>Create Date</KH>
+		<EN>Create Date</EN>
+		<CH>Create Date</CH>
+		<JP>Create Date</JP>
+		<KR>Create Date</KR>
+	</content>
+	<content id="smartcard">
+		<KH>Smartcard</KH>
+		<EN>Smartcard</EN>
+		<CH>Smartcard</CH>
+		<JP>Smartcard</JP>
+		<KR>Smartcard</KR>
+	</content>
+	<content id="Address">
+		<KH>Address</KH>
+		<EN>Address</EN>
+		<CH>Address</CH>
+		<JP>Address</JP>
+		<KR>Address</KR>
+	</content>
+	<content id="Transport">
+		<KH>Transport</KH>
+		<EN>Transport</EN>
+		<CH>Transport</CH>
+		<JP>Transport</JP>
+		<KR>Transport</KR>
+	</content>
+	<content id="label_cancel">
+		<KH>Cancel</KH>
+		<EN>Cancel</EN>
+		<CH>Cancel</CH>
+		<JP>Cancel</JP>
+		<KR>Cancel</KR>
+	</content>
+	<content id="VOD">
+		<KH>VOD</KH>
+		<EN>VOD</EN>
+		<CH>VOD</CH>
+		<JP>VOD</JP>
+		<KR>VOD</KR>
+	</content>
+	<content id="lable_ok">
+		<KH>OK</KH>
+		<EN>OK</EN>
+		<CH>OK</CH>
+		<JP>OK</JP>
+		<KR>OK</KR>
+	</content>
+	<content id="VodCntManager">
+		<KH>Video Service Management</KH>
+		<EN>Video Service Management</EN>
+		<CH>Video Service Management</CH>
+		<JP>Video Service Management</JP>
+		<KR>Video Service Management</KR>
+	</content>
+	<content id="ConfigManager">
+		<KH>Config FTP Server</KH>
+		<EN>Config FTP Server</EN>
+		<CH>Config FTP Server</CH>
+		<JP>Config FTP Server</JP>
+		<KR>Config FTP Server</KR>
+	</content>
+	<content id="AudioCntManager">
+		<KH>Quản lý nội dung nhạc</KH>
+		<EN>Music Service Management</EN>
+		<CH>Music Service Management</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="LiveCntManager">
+		<KH>Quản lý nội dung liveTV</KH>
+		<EN>LiveTV Service Management</EN>
+		<CH>LiveTV Service Management</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="VodSvcManager">
+		<KH>Quản lý dịch vụ phim</KH>
+		<EN>Video Service Management</EN>
+		<CH>Video Service Management</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AudioCntManager">
+		<KH>Quản lý dịch vụ nhạc</KH>
+		<EN>Music Service Management</EN>
+		<CH>Music Service Management</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="LiveCntManager">
+		<KH>Quản lý dịch vụ liveTV</KH>
+		<EN>LiveTV Service Management</EN>
+		<CH>LiveTV Service Management</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="List">
+		<KH>Danh sách</KH>
+		<EN>List</EN>
+		<CH>List</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AddMovie">
+		<KH>Chuyển phim</KH>
+		<EN>Upload Movie</EN>
+		<CH>Upload Movie</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Subject">
+		<KH>Chủ đề</KH>
+		<EN>Subject</EN>
+		<CH>Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AddSubject">
+		<KH>Thêm chủ đề</KH>
+		<EN>Add Subject</EN>
+		<CH>Add Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="EditSubject">
+		<KH>Sửa chủ đề</KH>
+		<EN>Edit Subject</EN>
+		<CH>Edit Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="DeleteSubject">
+		<KH>Xóa chủ đề</KH>
+		<EN>Delete Subject</EN>
+		<CH>Delete Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ViewVideo">
+		<KH>Thông tin phim</KH>
+		<EN>View Movie</EN>
+		<CH>View Movie</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="DeleteVideo">
+		<KH>Xóa phim</KH>
+		<EN>Delete Movie</EN>
+		<CH>Delete Movie</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="SetTitle">
+		<KH>Thay đổi phụ đề</KH>
+		<EN>Set Subtitle</EN>
+		<CH>Set Subtitle</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="SetTrailer">
+		<KH>Thay đổi quảng cáo</KH>
+		<EN>Set Trailer</EN>
+		<CH>Set Trailer</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ChangeSubject">
+		<KH>Thay đổi chủ đề</KH>
+		<EN>Change subject</EN>
+		<CH>Change subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ChangeVisible">
+		<KH>Thay đổi trạng thái</KH>
+		<EN>Change status</EN>
+		<CH>Change status</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeimage">
+		<KH>thay đổi hình</KH>
+		<EN>to change image</EN>
+		<CH>to change image</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="setNewReleases">
+		<KH>Cập nhật phiên bản mới</KH>
+		<EN>Set New Releases</EN>
+		<CH>Set New Releases</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Title">
+		<KH>Tên phim</KH>
+		<EN>Title</EN>
+		<CH>Title</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="movies_name">
+		<KH>Tên phim</KH>
+		<EN>Movies Name</EN>
+		<CH>Movies Name</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Actors">
+		<KH>Diễn viên</KH>
+		<EN>Actors</EN>
+		<CH>Actors</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Director">
+		<KH>Đạo diễn</KH>
+		<EN>Director</EN>
+		<CH>Director</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Trailer">
+		<KH>Phim quảng cáo</KH>
+		<EN>Trailer</EN>
+		<CH>Trailer</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Subtitle">
+		<KH>Phụ đề</KH>
+		<EN>Subtitle</EN>
+		<CH>Subtitle</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Status">
+		<KH>Trạng thái</KH>
+		<EN>Status</EN>
+		<CH>Status</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NewReleases">
+		<KH>Phiên bản mới</KH>
+		<EN>New Releases</EN>
+		<CH>New Releases</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Name">
+		<KH>Tên</KH>
+		<EN>Name</EN>
+		<CH>Name</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Language">
+		<KH>Ngôn ngữ</KH>
+		<EN>Language</EN>
+		<CH>Language</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="OK">
+		<KH>Đồng ý</KH>
+		<EN>OK</EN>
+		<CH>OK</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Cancel">
+		<KH>Hủy</KH>
+		<EN>Cancel</EN>
+		<CH>Cancel</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Delete">
+		<KH>Xóa</KH>
+		<EN>Delete</EN>
+		<CH>Delete</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="image_">
+		<KH>Hình</KH>
+		<EN>Image</EN>
+		<CH>Image</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Description">
+		<KH>Mô tả</KH>
+		<EN>Description</EN>
+		<CH>Description</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="FilePath">
+		<KH>Đường dẫn</KH>
+		<EN>Path</EN>
+		<CH>Path</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Price_movie">
+		<KH>Giá phim</KH>
+		<EN>Price</EN>
+		<CH>Price</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="MovieInfor">
+		<KH>Thông tin phim</KH>
+		<EN>Moive Information</EN>
+		<CH>Moive Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="MovieInfor">
+		<KH>Thông tin phim</KH>
+		<EN>Moive Information</EN>
+		<CH>Moive Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="CurrentSubject">
+		<KH>Chủ đề hiện tại</KH>
+		<EN>Current subject</EN>
+		<CH>Current subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="select_subject">
+		<KH>Chọn chủ đề</KH>
+		<EN>Select Subject</EN>
+		<CH>Select Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NewSubject">
+		<KH>Chủ đề mới</KH>
+		<EN>New subject</EN>
+		<CH>New subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="lyric">
+		<KH>Lời bài hát</KH>
+		<EN>Lyric</EN>
+		<CH>Lyric</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AudioTitle">
+		<KH>Tên bài hát</KH>
+		<EN>Title</EN>
+		<CH>Title</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Singer">
+		<KH>Ca sỹ</KH>
+		<EN>Singer</EN>
+		<CH>Singer</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="edit_song">
+		<KH>Sửa bài hát</KH>
+		<EN>Edit Song</EN>
+		<CH>Edit Song</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Album">
+		<KH>Tập nhạc</KH>
+		<EN>Album</EN>
+		<CH>Album</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="DeleteSong">
+		<KH>Xóa bài hát</KH>
+		<EN>Delete Song</EN>
+		<CH>Delete Song</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="DoubleClickToAdd">
+		<KH>Thêm phim</KH>
+		<EN>Double click to add movie</EN>
+		<CH>Double click to add movie</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="detailMove">
+		<KH>Chi tiết phim</KH>
+		<EN>Detail Movies</EN>
+		<CH>Detail Movies</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="delete_move">
+		<KH>Xóa phim</KH>
+		<EN>Delete Movies</EN>
+		<CH>Delete Movies</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="set_subtitle">
+		<KH>Đặt phụ đề</KH>
+		<EN>Set Subtitle</EN>
+		<CH>Set Subtitle</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="set_trailer">
+		<KH>Đặt trailer</KH>
+		<EN>Set trailer</EN>
+		<CH>Set trailer</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="not_set">
+		<KH>Chưa Có</KH>
+		<EN>Not set</EN>
+		<CH>Not set</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="info_movie">
+		<KH>Thông tin phim</KH>
+		<EN>Information Movies</EN>
+		<CH>Information Movies</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="movie_add_service">
+		<KH>Thêm phim vào dịch vụ</KH>
+		<EN>Add movies to service</EN>
+		<CH>Add movies to service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="click_add">
+		<KH>Chọn phim để thêm</KH>
+		<EN>Double click to add to Service</EN>
+		<CH>Double click to add to Service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="click_remove">
+		<KH>Nhấp 2 lần để xóa</KH>
+		<EN>Double click remove Service</EN>
+		<CH>Double click remove Service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ctn_subject">
+		<KH>Chủ đề nội dung</KH>
+		<EN>Content Subject</EN>
+		<CH>Content Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="srv_subject">
+		<KH>Chủ đề dịch vụ</KH>
+		<EN>Service Content</EN>
+		<CH>Service Content</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pricelarge">
+		<KH>Giá lớn</KH>
+		<EN>Price Large</EN>
+		<CH>Price Large</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pricesmall">
+		<KH>Giá nhỏ</KH>
+		<EN>Price Small</EN>
+		<CH>Price Small</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="price_pms">
+		<KH>Giá</KH>
+		<EN>Price</EN>
+		<CH>Price</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="housekeeping">
+		<KH>Dịch vụ phòng</KH>
+		<EN>House Keeping</EN>
+		<CH>House Keeping</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="login">
+		<KH>Đăng nhập</KH>
+		<EN>Login</EN>
+		<CH>Login</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="user">
+		<KH>Người dùng</KH>
+		<EN>User Name</EN>
+		<CH>用户名</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="restaurant">
+		<KH>Nhà hàng</KH>
+		<EN>Restaurant</EN>
+		<CH>Restaurant</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="dinning">
+		<KH>Ẩm thực</KH>
+		<EN>Dining</EN>
+		<CH>Dining</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="mod_toservice">
+		<KH>nhấp 2 lần để thêm vào dịch vụ</KH>
+		<EN>Double click to add to Service</EN>
+		<CH>Double click to add to Service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_name">
+		<KH>Vui lòng nhập tên.</KH>
+		<EN>Please select Name.</EN>
+		<CH>Please select Name.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_address">
+		<KH>Vui lòng điền địa chỉ</KH>
+		<EN>Please select address.</EN>
+		<CH>Please select address.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_ratename">
+		<KH>Vui lòng điền tên tiền tệ</KH>
+		<EN>Please input rate name.</EN>
+		<CH>Please input rate name.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ple_ratecode">
+		<KH>Vui lòng điền mã tiền tệ.</KH>
+		<EN>Please input rate code.</EN>
+		<CH>Please input rate code.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_ratesell">
+		<KH>Vui lòng nhập giá bán tiền tệ.</KH>
+		<EN>please input sell.</EN>
+		<CH>please input sell.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_ratetranfer">
+		<KH>Vui lòng nhập chuyển khoản</KH>
+		<EN>Please input tranfer.</EN>
+		<CH>Please input tranfer.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_ratebuy">
+		<KH>Vui lòng nhập giá mua.</KH>
+		<EN>Please input buy.</EN>
+		<CH>Please input buy.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_select">
+		<KH>Vui lòng chọn thể loại</KH>
+		<EN>Please select type.</EN>
+		<CH>Please select type.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_inputprice">
+		<KH>Vui lòng nhập giá sản phẩm</KH>
+		<EN>Please input price .</EN>
+		<CH>Please input price .</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_price_small">
+		<KH>Vui lòng nhập giá Sản phẩm nhỏ.</KH>
+		<EN>Please input price small.</EN>
+		<CH>Please input price small.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_price_large">
+		<KH>Vui lòng nhập giá Sản phẩm lớn</KH>
+		<EN>Please input price large.</EN>
+		<CH>Please input price large.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ple_namevod">
+		<KH>Vui lòng nhập tên phim</KH>
+		<EN>please input name of movies.</EN>
+		<CH>please input name of movies.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_selectsubject">
+		<KH>Vui lòng chọn chủ đề !</KH>
+		<EN>Please select subject !.</EN>
+		<CH>Please select subject !.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_price_input">
+		<KH>Vui lòng nhập giá.</KH>
+		<EN>Please input price</EN>
+		<CH>Please input price</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pls_selectmovies">
+		<KH>Vui lòng chọn phim để thêm.</KH>
+		<EN>Please select movies.</EN>
+		<CH>Please select movies.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="calenda_now">
+		<KH>Ngày kết thúc không vược hôm nay.</KH>
+		<EN>Today is maximun day.</EN>
+		<CH>Today is maximun day.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="notrole">
+		<KH>Bạn không có quyền truy cập</KH>
+		<EN>You do not have permission to access </EN>
+		<CH>You do not have permission to access </CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="roomcode">
+		<KH>Mã phòng</KH>
+		<EN>Room Code</EN>
+		<CH>Room Code</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="room_checkout">
+		<KH>Phòng đang trống</KH>
+		<EN>Room is checkout.</EN>
+		<CH>Room is checkout.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="ifo_notdelsub">
+		<KH>Chủ đề không xóa được.</KH>
+		<EN>This subject is not allowed to delete.</EN>
+		<CH>This subject is not allowed to delete.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_film">
+		<KH>Thống kê phim</KH>
+		<EN>Statistics of film</EN>
+		<CH>Statistics of film</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_audio">
+		<KH>Thống kê nhạc</KH>
+		<EN>Statistics of audio</EN>
+		<CH>Statistics of audio</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_livetv">
+		<KH>Thống kê truyền hình</KH>
+		<EN>Statistics of livetv</EN>
+		<CH>Statistics of livetv</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_genres">
+		<KH>Thống kê dịch vụ theo thể loại</KH>
+		<EN>Statistics genres</EN>
+		<CH>Statistics genres</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_of_movies">
+		<KH>Thống kê dịch vụ phim</KH>
+		<EN>Statistics of movies</EN>
+		<CH>Statistics of movies</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_of_audios">
+		<KH>Thống kê dịch vụ nhạc</KH>
+		<EN>Statistics of audios</EN>
+		<CH>Statistics of audios</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_of_livetvs">
+		<KH>Thống kê dịch vụ truyền hình</KH>
+		<EN>Statistics of livetv</EN>
+		<CH>Statistics of livetv</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="transportstatic">
+		<KH>Thống kê vận chuyển</KH>
+		<EN>Static transport</EN>
+		<CH>Static transport</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="reporttype">
+		<KH>Loại báo cáo</KH>
+		<EN>Report type</EN>
+		<CH>Report type</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="select_year">
+		<KH>Chọn năm</KH>
+		<EN>Select year</EN>
+		<CH>Select year</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="select_month">
+		<KH>Chọn tháng</KH>
+		<EN>Select month</EN>
+		<CH>Select month</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="to_date">
+		<KH>Đến ngày</KH>
+		<EN>To date</EN>
+		<CH>To date</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="from_date">
+		<KH>Ngày bắt đầu</KH>
+		<EN>From date</EN>
+		<CH>From date</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Monthly">
+		<KH>Tháng</KH>
+		<EN>Monthly</EN>
+		<CH>Monthly</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_month">
+		<KH>Thống kê dịch vụ hàng tháng năm</KH>
+		<EN>Yearly Statistics</EN>
+		<CH>Yearly Statistics</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="Weekly">
+		<KH>Tuần</KH>
+		<EN>Weekly</EN>
+		<CH>Weekly</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_week">
+		<KH>Thống kê dịch vụ hàng ngày theo tháng</KH>
+		<EN>Monthly Statistics</EN>
+		<CH>Monthly Statistics</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="numberl_service">
+		<KH>Số lần sử dụng dịch vụ</KH>
+		<EN>Number of times for using the service</EN>
+		<CH>Number of times for using the service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="static_roomservice">
+		<KH>Thống kê dịch vụ phòng</KH>
+		<EN>Room service Statistics</EN>
+		<CH>Room service Statistics</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="note_report">
+		<KH>Đây là bảng thống kê về số lượng sử dụng dịch vụ cho mỗi tháng.Sau mỗi lần chọn xem được tính 1 lần</KH>
+		<EN>Note: This is a statistical quantity for each month are using the service or viewing movie.Just be counted at once after being chosing to view.</EN>
+		<CH>Note: This is a statistical quantity for each month are using the service or viewing movie.Just be counted at once after being chosing to view.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="listwaitingvod">
+		<KH>Danh sách phim chờ thêm</KH>
+		<EN>List movies </EN>
+		<CH>List movies </CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="listaddvod">
+		<KH>Danh sách phim đã thêm</KH>
+		<EN>List movie completed</EN>
+		<CH>List movie completed</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="SynVodStb">
+		<KH>Đồng bộ phim</KH>
+		<EN>Syn Vod</EN>
+		<CH>Syn Vod</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="exist_movie">
+		<KH>Phim đã được thêm</KH>
+		<EN>This movie exist.</EN>
+		<CH>This movie exist.</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="coord_x">
+		<KH>Toạ độ X</KH>
+		<EN>X</EN>
+		<CH>X</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="coord_y">
+		<KH>Toạ độ Y</KH>
+		<EN>Y</EN>
+		<CH>Y</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="update">
+		<KH>Cập nhật</KH>
+		<EN>Update</EN>
+		<CH>Update</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="search">
+		<KH>Tìm kiếm</KH>
+		<EN>Search</EN>
+		<CH>Search</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="distance">
+		<KH>Khoảng cách</KH>
+		<EN>Distance</EN>
+		<CH>Distance</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="add">
+		<KH>Thêm mới</KH>
+		<EN>Add</EN>
+		<CH>Add</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkName">
+		<KH>Chưa nhập tên</KH>
+		<EN>Name is empty</EN>
+		<CH>Name is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkDistance">
+		<KH>Chưa nhập khoảng cách</KH>
+		<EN>Distance is empty</EN>
+		<CH>Distance is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkX">
+		<KH>Chưa nhập toạ độ X</KH>
+		<EN>X is empty</EN>
+		<CH>X is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkY">
+		<KH>Chưa nhập toạ độ Y</KH>
+		<EN>Y is empty</EN>
+		<CH>Y is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkAdd">
+		<KH>Thêm bị lỗi</KH>
+		<EN>Add failed</EN>
+		<CH>Add failed</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkCoord">
+		<KH>Thay đổi thông tin tọa độ (x,y)</KH>
+		<EN>Update coordinates</EN>
+		<CH>Update coordinates</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changLocation">
+		<KH>Thay đổi thông tin vị trí</KH>
+		<EN>Update Location</EN>
+		<CH>Update Location</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkUpdate">
+		<KH>Cập nhật bị lỗi</KH>
+		<EN>Updated failed</EN>
+		<CH>Updated failed</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeWay">
+		<KH>Tìm đường</KH>
+		<EN>Way</EN>
+		<CH>Way</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeMap">
+		<KH>Vị trí</KH>
+		<EN>My Location</EN>
+		<CH>My Location</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeLocation">
+		<KH>Địa điểm</KH>
+		<EN>Locations</EN>
+		<CH>Locations</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeMapTap">
+		<KH>Thông tin khách sạn</KH>
+		<EN>Hotel Information</EN>
+		<CH>Hotel Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeLocationTap">
+		<KH>Thông tin đia điểm</KH>
+		<EN>Location Information</EN>
+		<CH>Location Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="no">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CH>No</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="department">
+		<KH>Phòng ban</KH>
+		<EN>Department</EN>
+		<CH>Department</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="createDate">
+		<KH>Ngày tạo</KH>
+		<EN>CreateDate</EN>
+		<CH>CreateDate</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="active">
+		<KH>Trạng thái</KH>
+		<EN>Active</EN>
+		<CH>Active</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="totalUser">
+		<KH>Tổng số Users</KH>
+		<EN>List of Users</EN>
+		<CH>List of Users</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="createNewUser">
+		<KH>Tạo mới User</KH>
+		<EN>Create new user</EN>
+		<CH>Create new user</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="account">
+		<KH>Tài khoản</KH>
+		<EN>Account</EN>
+		<CH>Account</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="password">
+		<KH>Mật khẩu</KH>
+		<EN>Password</EN>
+		<CH>密码</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="cfPassword">
+		<KH>Nhập lại mật khẩu</KH>
+		<EN>Re-enter Password</EN>
+		<CH>Re-enter Password</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkAccount">
+		<KH>Tài khoản chưa nhập</KH>
+		<EN>Account is empty</EN>
+		<CH>Account is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkPass">
+		<KH>Chưa nhập mật khẩu</KH>
+		<EN>Password is empty</EN>
+		<CH>Password is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkcfPass">
+		<KH>Chưa nhập lại mật khẩu</KH>
+		<EN>Confirm Password is empty</EN>
+		<CH>Confirm Password is empty</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkMachPass">
+		<KH>Mật khẩu không khớp</KH>
+		<EN>Password do not match</EN>
+		<CH>Password do not match</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="userInfo">
+		<KH>Thông tin User</KH>
+		<EN>User Information</EN>
+		<CH>User Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkDelete">
+		<KH>Xoá bị lỗi </KH>
+		<EN>Deleted failed</EN>
+		<CH>Deleted failed</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkAddEx">
+		<KH>Tài khoản bị trùng </KH>
+		<EN>Account exists!</EN>
+		<CH>Account exists!</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkDeleteFrom">
+		<KH>Bạn có muốn xoá không !</KH>
+		<EN>Are you sure delete !</EN>
+		<CH>Are you sure delete !</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NewSubjectMenu">
+		<KH>Tạo nhóm mới</KH>
+		<EN>Create New Group</EN>
+		<CH>Create New Group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkAddMenuEx">
+		<KH>Tên nhóm bị trùng</KH>
+		<EN>Group exists!</EN>
+		<CH>Group exists!</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkUpdateMenuEx">
+		<KH>Cập nhật nhóm</KH>
+		<EN>Update group</EN>
+		<CH>Update group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NamePms">
+		<KH>Gán quyền</KH>
+		<EN>Group Permission</EN>
+		<CH>Group Permission</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="errorStatus">
+		<KH>Không thành công</KH>
+		<EN>Change status error</EN>
+		<CH>Change status error</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NameGrant">
+		<KH>Gán quyền</KH>
+		<EN>Grant permission</EN>
+		<CH>Grant permission</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NameAssigned">
+		<KH>Quyền được gán</KH>
+		<EN>Role is assigned</EN>
+		<CH>Role is assigned</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NameNotAssigned">
+		<KH>Quyền chưa được gán</KH>
+		<EN>Role not is assigned</EN>
+		<CH>Role not is assigned</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AddUser">
+		<KH>Thêm User</KH>
+		<EN>Add User</EN>
+		<CH>Add User</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="AccountLength">
+		<KH>Tài khoản chỉ tối đa 6 ký tự</KH>
+		<EN>Account only up to 6 characters</EN>
+		<CH>Account only up to 6 characters</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="group">
+		<KH>Nhóm</KH>
+		<EN>Group</EN>
+		<CH>Group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="list">
+		<KH>Danh sách</KH>
+		<EN>List</EN>
+		<CH>List</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changegroup">
+		<KH>Thay đổi nhóm</KH>
+		<EN>Change group</EN>
+		<CH>Change group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="addgroup">
+		<KH>Thêm nhóm</KH>
+		<EN>Add group</EN>
+		<CH>Add group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="creategroup">
+		<KH>Thêm nhóm mới</KH>
+		<EN>Create new group</EN>
+		<CH>Create new group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="deletegroup">
+		<KH>Xoá nhóm</KH>
+		<EN>Delete group</EN>
+		<CH>Delete group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updategroup">
+		<KH>Sửa nhóm</KH>
+		<EN>Edit group</EN>
+		<CH>Edit group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pmsgroup">
+		<KH>Gán quyền nhóm</KH>
+		<EN>Group permission</EN>
+		<CH>Group permission</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="grantPms">
+		<KH>Gán quyền</KH>
+		<EN>Grant permission</EN>
+		<CH>Grant permission</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="detailuser">
+		<KH>Xem chi tiết</KH>
+		<EN>Detail user</EN>
+		<CH>Detail user</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="deleteuserg">
+		<KH>Xoá user khỏi nhóm</KH>
+		<EN>Delete user from group</EN>
+		<CH>Delete user from group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="deleteusers">
+		<KH>Xoá user khỏi hệ thống</KH>
+		<EN>Delete user from system</EN>
+		<CH>Delete user from system</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeStatus">
+		<KH>Thay đổi trạng thái</KH>
+		<EN>Change status</EN>
+		<CH>Change status</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changegroupPms">
+		<KH>Gán nhóm cho user</KH>
+		<EN>Change group</EN>
+		<CH>Change group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="userNameGroup">
+		<KH>Tên đăng nhập</KH>
+		<EN>User name</EN>
+		<CH>User name</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="NameGroupPMS">
+		<KH>Nhóm quyền</KH>
+		<EN>Group</EN>
+		<CH>Group</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changePass">
+		<KH>Thay đổi mật khẩu</KH>
+		<EN>Change password</EN>
+		<CH>Change password</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="code">
+		<KH>Mã</KH>
+		<EN>Code</EN>
+		<CH>Code</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="liveTV">
+		<KH>liveTV</KH>
+		<EN>liveTV</EN>
+		<CH>liveTV</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="addLiveTv">
+		<KH>Thêm kênh</KH>
+		<EN>Add LiveTV</EN>
+		<CH>Add LiveTV</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="deleteLiveTv">
+		<KH>Xoá kênh</KH>
+		<EN>Delete LiveTV</EN>
+		<CH>Delete LiveTV</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updateLiveTv">
+		<KH>Sửa kênh</KH>
+		<EN>Edit LiveTV</EN>
+		<CH>Edit LiveTV</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="detailLiveTv">
+		<KH>Xem chi tiết</KH>
+		<EN>Detail LiveTV</EN>
+		<CH>Detail LiveTV</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="editLiveTV">
+		<KH>Sửa LiveTV</KH>
+		<EN>Edit Live</EN>
+		<CH>Edit Live</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkEditEx">
+		<KH>Tên đã tồn tại </KH>
+		<EN>Name exists!</EN>
+		<CH>Name exists!</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="serviceName">
+		<KH>Dịch vụ</KH>
+		<EN>Service name</EN>
+		<CH>Service name</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="content">
+		<KH>Nội dung </KH>
+		<EN>Content</EN>
+		<CH>Content</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="contentSubject">
+		<KH>Chủ đề phía dịch vụ</KH>
+		<EN>Service Subject</EN>
+		<CH>Service Subject</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="total">
+		<KH>Tổng</KH>
+		<EN>Total</EN>
+		<CH>Total</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="changeIma">
+		<KH>để thay đổi hình</KH>
+		<EN>to change image</EN>
+		<CH>to change image</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="dbclickaddchannel">
+		<KH> Nhấp chuột 2 lần để thêm kênh</KH>
+		<EN>Double click to add channel</EN>
+		<CH>Double click to add channel</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="dbclickremovechannel">
+		<KH>Nhấp chuột 2 lần để gỡ kênh </KH>
+		<EN>Double click to remove channel</EN>
+		<CH>Double click to remove channel</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="subjectLength">
+		<KH>Chủ đề chỉ tối đa 30 ký tự</KH>
+		<EN>Subject only up to 30 characters</EN>
+		<CH>Subject only up to 30 characters</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="subjectName">
+		<KH>Xin vui lòng nhập tên</KH>
+		<EN>Please input subject name</EN>
+		<CH>Please input subject name</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="subjectInfo">
+		<KH>Thông tin chủ đề</KH>
+		<EN>Subject Infomation</EN>
+		<CH>Subject Infomation</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="subjectInfoLive">
+		<KH>Thông tin kênh</KH>
+		<EN>Livetv Information</EN>
+		<CH>Livetv Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="selectItem">
+		<KH>Xin vui lòng chọn item</KH>
+		<EN>Please select item !</EN>
+		<CH>Please select item !</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="activeanddeactive">
+		<KH>Kích hoạt/Chưa kích hoạt</KH>
+		<EN>Active/Deactive</EN>
+		<CH>Active/Deactive</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="running">
+		<KH>Đang chạy</KH>
+		<EN>Running</EN>
+		<CH>Running</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="stop">
+		<KH>Dừng</KH>
+		<EN>Stopped</EN>
+		<CH>Stopped</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="frompage">
+		<KH>Từ trang</KH>
+		<EN>From page</EN>
+		<CH>From page</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="topage">
+		<KH>Đến trang </KH>
+		<EN>To page</EN>
+		<CH>To page</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="processall">
+		<KH>Đồng bộ tất cả</KH>
+		<EN>Process all</EN>
+		<CH>Process all</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="view">
+		<KH>Xem</KH>
+		<EN>View</EN>
+		<CH>View</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="date">
+		<KH>Ngày</KH>
+		<EN>Date</EN>
+		<CH>Date</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="start">
+		<KH>Chạy</KH>
+		<EN>Start</EN>
+		<CH>Start</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="stop">
+		<KH>Dừng</KH>
+		<EN>Stop</EN>
+		<CH>Stop</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="configtimeout">
+		<KH>Cấu hình timeout</KH>
+		<EN>Timeout Config</EN>
+		<CH>Timeout Config</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkVideo">
+		<KH>Xem phim</KH>
+		<EN>Check video</EN>
+		<CH>Check video</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkAudio">
+		<KH>Nghe nhạc</KH>
+		<EN>Check audio</EN>
+		<CH>Check audio</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkLinkLiveTV">
+		<KH>Kiểm tra link</KH>
+		<EN>Check LiveTV link</EN>
+		<CH>Check LiveTV link</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="serviceSystem">
+		<KH>Service</KH>
+		<EN>Service</EN>
+		<CH>Service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="action">
+		<KH>Mã xử lý</KH>
+		<EN>Action</EN>
+		<CH>Action</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="detailApk">
+		<KH>Apk detail</KH>
+		<EN>Apk detail</EN>
+		<CH>Apk detail</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updateorder">
+		<KH>Update order</KH>
+		<EN>Update order</EN>
+		<CH>Update order</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updateapkvalue">
+		<KH>Update APK</KH>
+		<EN>Update APK</EN>
+		<CH>Update APK</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updatestatus">
+		<KH>Update status</KH>
+		<EN>Update status</EN>
+		<CH>Update status</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="updateservice">
+		<KH>Update service</KH>
+		<EN>Update service</EN>
+		<CH>Update service</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="servicesysteminformation">
+		<KH>Service System Information</KH>
+		<EN>Service System Information</EN>
+		<CH>Service System Information</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="serviceorder">
+		<KH>Thứ tự</KH>
+		<EN>Order</EN>
+		<CH>Order</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="numberonly">
+		<KH>Chỉ chấp nhận số</KH>
+		<EN>Please enter number only</EN>
+		<CH>Please enter number only</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="daemon">
+		<KH>Dịch vụ</KH>
+		<EN>Daemon</EN>
+		<CH>Daemon</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="xemlog">
+		<KH>Log</KH>
+		<EN>Log</EN>
+		<CH>Log</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="notinsubject">
+		<KH>Tất cả chủ đề</KH>
+		<EN>All subject </EN>
+		<CH>All subject </CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="shoppingtitle">
+		<KH>Mua sắm</KH>
+		<EN>Shopping</EN>
+		<CH>Shopping</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="shoppingtableft">
+		<KH>Mua sắm</KH>
+		<EN>Shopping</EN>
+		<CH>Shopping</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="checkpingip">
+		<KH>Kiểm tra</KH>
+		<EN>Check ping</EN>
+		<CH>Check ping</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pingsuccess">
+		<KH>Ping ip thành công!</KH>
+		<EN>Ping ip success!</EN>
+		<CH>Ping ip success!</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+	<content id="pingunsuccess">
+		<KH>Ping ip không thành công!</KH>
+		<EN>Ping ip unsuccess!</EN>
+		<CH>Ping ip unsuccess!</CH>
+		<JP></JP>
+		<KR></KR>
+	</content>
+</lang>

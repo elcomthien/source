@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %c.%M:%L - %m%n" />
+		</layout>
+	</appender>
+	<appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender">
+		<!--param name="target" value="System.err"/ -->
+		<param name="File" value="${log.dir}/log.txt" />
+		<param name="Append" value="false" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd 
+hh:mm:ss},%6.6r]%5p%x[%M](%C{1}:%L) - %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="debug" />
+			<param name="LevelMax" value="fatal" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+
+	<appender name="htmlFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${log.dir}/lra.html" />
+		<param name="Append" value="false" />
+		<layout class="org.apache.log4j.HTMLLayout">
+			<param name="Title" value="LRA log Information" />
+			<param name="LocationInfo" value="true" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMin" value="info" />
+			<param name="LevelMax" value="fatal" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+	</appender>
+	
+	<logger name="elcom.abop.action">
+		<level value="INFO" />
+		<appender-ref ref="FILE" />
+	</logger>
+	<!-- specify the logging level for loggers from other libraries -->
+	<logger name="com.opensymphony">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="org.apache.struts2">
+		<level value="ERROR" />
+	</logger>
+
+	<!-- for all other loggers log only info and above log messages -->
+	<root>
+		<priority value="ERROR" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</log4j:configuration> 

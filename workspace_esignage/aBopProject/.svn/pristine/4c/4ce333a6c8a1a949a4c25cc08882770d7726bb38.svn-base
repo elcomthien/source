@@ -1,0 +1,25 @@
+package elcom.abop.test;
+
+import org.apache.axis2.util.URL;
+import org.apache.commons.io.FileUtils;
+
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;
+import org.apache.commons.io.FileUtils;
+import java.io.IOException;
+import java.util.PropertyResourceBundle;
+
+import elcom.abop.common.Constant;
+import elcom.abop.util.ModelService;
+import elcom.abop.util.ParseXmlService;
+import elcom.abop.util.UtilBasic;
+import elcom.abop.util.XmlService;
+
+public class main {
+
+	public static void main(String[] args) throws Exception {
+		String xml = XmlService.getUser("admin", "12345");
+		String result = ModelService.getUser(xml);
+		System.out.println(result);
+	}
+}

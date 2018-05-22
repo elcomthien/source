@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="17">
+        <def>&lt;h3&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt; - &lt;b style=&quot;font-size: 12px;&quot;&gt;Business Services&lt;/b&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;: &lt;br /&gt;&lt;/u&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Copy service&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Fax service&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Full-service business center&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Network/internet printing&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Notary public&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Overnight delivery/pickup&lt;br /&gt;&lt;/u&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Post/parcel &lt;/u&gt;&lt;/h3&gt;&lt;p&gt;- &lt;b&gt;Business Center&lt;/b&gt;: &lt;br /&gt;A business center is located next to the front desk. &lt;br /&gt;The business center features 2 Mac computers and a printer. &lt;br /&gt;Open 24 hours.&lt;/p&gt;</def>
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380627.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

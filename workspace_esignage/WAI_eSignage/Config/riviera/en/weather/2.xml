@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="23287">
+        <def>Sunny</def>
+        <maxTemperature>35</maxTemperature>
+        <minTemperature>23</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>01/31/2015</postedDate>
+        <sday>7</sday>
+        <seatemp>0</seatemp>
+        <temperature>35</temperature>
+    </item>
+    <item id="23288">
+        <def>Sunny</def>
+        <maxTemperature>36</maxTemperature>
+        <minTemperature>23</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>02/01/2015</postedDate>
+        <sday>8</sday>
+        <seatemp>0</seatemp>
+        <temperature>36</temperature>
+    </item>
+    <item id="23289">
+        <def>Partly Cloudy</def>
+        <maxTemperature>36</maxTemperature>
+        <minTemperature>24</minTemperature>
+        <picImage>wsymbol_0002_sunny_intervals.png</picImage>
+        <postedDate>02/02/2015</postedDate>
+        <sday>2</sday>
+        <seatemp>0</seatemp>
+        <temperature>36</temperature>
+    </item>
+    <item id="23290">
+        <def>Partly Cloudy</def>
+        <maxTemperature>36</maxTemperature>
+        <minTemperature>24</minTemperature>
+        <picImage>wsymbol_0002_sunny_intervals.png</picImage>
+        <postedDate>02/03/2015</postedDate>
+        <sday>3</sday>
+        <seatemp>0</seatemp>
+        <temperature>36</temperature>
+    </item>
+    <item id="23291">
+        <def>Sunny</def>
+        <maxTemperature>36</maxTemperature>
+        <minTemperature>23</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>02/04/2015</postedDate>
+        <sday>4</sday>
+        <seatemp>0</seatemp>
+        <temperature>36</temperature>
+    </item>
+</ehotel>

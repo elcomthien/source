@@ -1,0 +1,222 @@
+.div_name_movie1 {
+	float: left;
+	width: 100px;
+	height: 20px;
+}
+
+.form_detail_sysAdmin {
+	width: 400;
+	height: 260;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.form_add_Movie_sysAdmin {
+	width: 470;
+	height: 320;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.form_updateMK_sysAdmin {
+	width: 470;
+	height: 230;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.left_Title_movie1 {
+	float: left;
+	width: 350px;
+	margin-top: 10;
+	margin-left: 10px;
+}
+
+.form_add_menu_sysAdmin {
+	width: 400;
+	height: 150;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.form_change_subject_admin {
+	width: 620;
+	height: 370;
+	background-color: white;
+	border: 1px solid #dddddd;
+	margin-top: 10px;
+}
+
+.list_select_sub_admin {
+	width: 200px;
+	outline: #8e8f8f;
+	border: 2px solid #8e8f8f;
+}
+
+.div_Title_song_admin {
+	height: 30px;
+	float: left;
+	font-size: 22px;
+	color: #000066;
+	background-color: #D3D0BE;
+	text-align: left;
+	text-indent: 10px;
+	cursor: move;
+	width: 100%;
+}
+
+.change_subject_top_admin {
+	float: left;
+	width: 100%;
+	height: 16px;
+	background: transparent url("../images/change_370_top.png") no-repeat
+		center bottom;
+}
+
+.change_subject_center_admin {
+	float: left;
+	width: 100%;
+	height: auto;
+	background: transparent url("../images/change_370_center.png") repeat-y
+		center;
+}
+
+.left_change_subject_admin {
+	float: left;
+	width: 200px;
+	height: 280px;
+	margin-left: 50px;
+}
+
+.right_change_subject_admin {
+	float: right;
+	width: 210px;
+	height: 280px;
+	margin-right: 60px;
+}
+
+.change_subject_bottom_admin {
+	float: left;
+	width: 100%;
+	height: 6px;
+	background: transparent url("../images/change_370_bottom.png") no-repeat
+		center top;
+}
+
+.div_sub_buton_admin {
+	height: 25px;
+	width: 180;
+	padding-top: 80px;
+}
+
+.icon_contextmenuplay_admin {
+	background: transparent url("../icon/green_info.png") no-repeat left
+		center;
+}
+
+.treeviewleaves_admin {
+	float: left;
+	background: transparent url("../icon/wlm.png") no-repeat left center;
+	text-align: left;
+	text-indent: 20px;
+}
+
+.div_sub_buton_tt {
+	height: 25px;
+	width: 100%;
+}
+
+.treeviewleaves_admin_tt {
+	float: left;
+	background: transparent url("../icon/sort_desc_alt.png") no-repeat left
+		center;
+	text-align: left;
+	text-indent: 20px;
+}
+
+.div_sub_buton_admin_pms {
+	height: 40px;
+	width: 180;
+}
+
+.left_Title_movie111 {
+	float: left;
+	width: 350px;
+	margin-top: 10;
+	margin-left: 10px;
+}
+
+.form_change_subject_admin_changeG {
+	width: 500px;
+	height: 315px;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 2px solid #A7800A;
+}
+
+.div_sub_buton_admin_role {
+	height: 35px;
+	width: 180;
+}
+
+.menu_center_ttt {
+	height: auto;
+	background: transparent url("../images/menu_center.png") repeat-y center
+		top;
+}
+
+.left_change_subject_adpms {
+	float: left;
+	width: 175px;
+	height: 165px;
+	margin-left: 35px;
+}
+
+.right_change_subject_adpms {
+	float: right;
+	width: 150px;
+	height: 165px;
+	margin-right: 30px;
+}
+
+.list_select_sub_adpms {
+	width: 175px;
+	outline: #8e8f8f;
+	border: 2px solid #8e8f8f;
+}
+
+.right_change_subject_adpms {
+	float: right;
+	width: 150px;
+	height: 180px;
+}
+
+.form_change_subject_admin_changeGG {
+	width: 400;
+	height: 315;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 2px solid #A7800A;
+}

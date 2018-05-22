@@ -1,0 +1,20 @@
+.div-text-config{
+	text-align: right;
+	vertical-align: middle;
+	margin-top: 7px;
+}
+.button-width-config{
+	width: 100px;
+}
+.h2-title-config{
+	text-align: inherit;
+	height: 30px;
+	margin-bottom: 3px;
+	padding: 6px 0px 2px 25px;
+	color: #ffffff;
+	background-color: #006666;
+	border-radius: 5px;
+	font-size: 20px;
+	vertical-align: middle;
+	line-height: 30px;
+}

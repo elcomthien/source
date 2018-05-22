@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="440">
+        <name>RIVIERA CHILDREN MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421655452378.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421655436688.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421655436688.png</urlIcon>
+    </item>
+    <item id="449">
+        <name>ROOM SERVICE MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421662462148.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421662523893.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421662462148.png</urlIcon>
+    </item>
+</ehotel>

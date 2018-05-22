@@ -84,6 +84,10 @@ public class SQL {
 	public static final String ADD_ITEM_DINING = "BEGIN EPMS.addItemDining(?,?,?,?,?,?,?,?,?); END;";
 	public static final String EDIT_ITEM_DINING = "BEGIN EPMS.editItemDining(?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_ITEM_DINING = "BEGIN EPMS.deleteItemDining(?,?); END;";
+	public static final String GET_ITEM_DETAIL = "BEGIN EPMS.getItemDetail(?,?,?); END;";
+	public static final String ADD_ITEM_DETAIL = "BEGIN EPMS.addItemDetail(?,?,?,?,?); END;";
+	public static final String EDIT_ITEM_DETAIL = "BEGIN EPMS.editItemDetail(?,?,?,?,?,?); END;";
+	public static final String DELETE_ITEM_DETAIL = "BEGIN EPMS.deleteItemDetail(?,?); END;";
 
 	// pms smartcard
 	public static final String GET_SMARTCARD_FOLIO = "BEGIN EPMS.getSmartcardFolio(?,?); END;";
@@ -166,4 +170,6 @@ public class SQL {
 	public static final String GET_LIST_ROLE = "BEGIN EUSER.getListRole(?); END;";
 	
 	public static final String GET_LIST_ORDER = "BEGIN EPMS.getListOrder(?,?,?,?); END;";
+	
+	public static final String CHANGE_STATUS_REBOOT = "BEGIN EPMS.changeStatusReboot(?,?); END;";
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="243">
+        <name>Guest Directory</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421396678530.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/1421396684834.jpg</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1421396684834.jpg</urlIcon>
+    </item>
+    <item id="262">
+        <name>Contact</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421396699084.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Hotel/1421396703279.jpg</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Hotel/1421396703279.jpg</urlIcon>
+    </item>
+</ehotel>

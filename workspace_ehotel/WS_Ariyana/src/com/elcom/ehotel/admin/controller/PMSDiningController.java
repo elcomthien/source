@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.elcom.ehotel.admin.model.PMSDiningDetailModel;
 import com.elcom.ehotel.admin.model.PMSDiningItemModel;
 import com.elcom.ehotel.admin.model.PMSDiningSubjectModel;
 import com.elcom.ehotel.admin.service.PMSDiningService;
@@ -49,6 +50,18 @@ public class PMSDiningController extends HttpServlet {
 
 			List<PMSDiningItemModel> list = new ArrayList<PMSDiningItemModel>();
 			list = pmsDiningService.getItemDining(itemId, langId);
+
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getitemdetail")) {
+			String itemId = request.getParameter("iditem");
+			String langId = request.getParameter("langid");
+
+			LogUtil.logControl(PMSDiningController.class.toString(), "getitemdetail", "itemId,,," + itemId + ",,,langId,,," + langId);
+
+			List<PMSDiningDetailModel> list = new ArrayList<PMSDiningDetailModel>();
+			list = pmsDiningService.getItemDetail(itemId, langId);
 
 			response.getWriter().write(new Gson().toJson(list));
 		}
@@ -93,7 +106,7 @@ public class PMSDiningController extends HttpServlet {
 			String subjectId = "";
 			String name = "";
 			String image = "";
-//			String imageIC = "";
+			// String imageIC = "";
 			String active = "";
 			String index = "";
 			String langId = "";
@@ -220,6 +233,68 @@ public class PMSDiningController extends HttpServlet {
 			LogUtil.logControl(PMSDiningController.class.toString(), "deleteitemdining", "itemid,,," + itemId);
 
 			int rs = pmsDiningService.deleteItemDining(itemId);
+			out.print(rs);
+		}
+
+		if (action.equals("additemdetail")) {
+			String itemId = "";
+			String detail = "";
+			String invisible = "";
+			String index = "";
+
+			itemId = request.getParameter("iditem");
+			detail = request.getParameter("def");
+			invisible = request.getParameter("invisible");
+			index = request.getParameter("index");
+
+			LogUtil.logControl(PMSDiningController.class.toString(), "additemdetail", "itemId,,," + itemId + ",,,detail,,," + detail
+					+ ",,,invisible,,," + invisible + ",,,index,,," + index);
+
+			PMSDiningDetailModel item = new PMSDiningDetailModel();
+			item.setId(itemId);
+			item.setDetail(detail);
+			item.setInvisible(invisible);
+			item.setIndex(index);
+
+			int rs = pmsDiningService.addItemDetail(item);
+			out.print(rs);
+		}
+
+		if (action.equals("edititemdetail")) {
+			String itemId = "";
+			String detail = "";
+			String invisible = "";
+			String index = "";
+			String langid = "";
+
+			itemId = request.getParameter("id");
+			detail = request.getParameter("def");
+			invisible = request.getParameter("invisible");
+			index = request.getParameter("index");
+			langid = request.getParameter("langid");
+
+			LogUtil.logControl(PMSDiningController.class.toString(), "edititemdetail", "Id,,," + itemId + ",,,detail,,," + detail
+					+ ",,,invisible,,," + invisible + ",,,index,,," + index + ",,,langid,,," + langid);
+
+			PMSDiningDetailModel item = new PMSDiningDetailModel();
+			item.setId(itemId);
+			item.setDetail(detail);
+			item.setInvisible(invisible);
+			item.setIndex(index);
+			item.setLangid(langid);
+
+			int rs = pmsDiningService.editItemDetail(item);
+			out.print(rs);
+		}
+
+		if (action.equals("deleteitemdetail")) {
+			String itemId = "";
+
+			itemId = request.getParameter("id");
+
+			LogUtil.logControl(PMSDiningController.class.toString(), "deleteitemdetail", "Id,,," + itemId);
+
+			int rs = pmsDiningService.deleteItemDetail(itemId);
 			out.print(rs);
 		}
 

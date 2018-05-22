@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item ICode="96">
+        <def>&lt;p&gt;Jasmine Spa offers exclusive accommodation for hairs, makeup, beauty and nail service. Whether coming in to the salon for a trim or a make-over, you will leave looking and feeling beautiful.&lt;/p&gt;</def>
+        <name>Overview</name>
+    </item>
+</ehotel>

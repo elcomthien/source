@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>TH&#212;NG TIN KH&#193;CH S&#7840;N</name>
+        <name_vn>HOTEL INFORMATION</name_vn>
+        <service_code>E01</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939104604.png</url>
+        <urlLink>elcom.ehotel.info.INFO</urlLink>
+    </item>
+    <item id="7">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk@elcom.ehotel.dinning</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_Dinning.apk@elcom.ehotel.dinning</def>
+        <name>&#7844;M TH&#7920;C</name>
+        <name_vn>DINING</name_vn>
+        <service_code>E07</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939157111.png</url>
+        <urlLink>elcom.ehotel.service.SERVICE_20150120</urlLink>
+    </item>
+    <item id="6">
+        <apkcode>/ePMS2.0/elcom/resources/apk/eHotel2_HouseKeeping.apk@elcom.ehotel.housekeeping</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/eHotel2_HouseKeeping.apk@elcom.ehotel.housekeeping</def>
+        <name>D&#7882;CH V&#7908; PH&#210;NG</name>
+        <name_vn>HOUSEKEEPING</name_vn>
+        <service_code>E06</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939130550.png</url>
+        <urlLink>elcom.ehotel.hk.HOUSEKEEPING_20150120</urlLink>
+    </item>
+    <item id="10">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>TR&#210; CH&#416;I</name>
+        <name_vn>GAME</name_vn>
+        <service_code>E10</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/1358939223223.png</url>
+        <urlLink>elcom.ehotel.container.CONTAINER</urlLink>
+    </item>
+    
+    <item id="16">
+        <apkcode>/ePMS2.0/elcom/resources/apk/</apkcode>
+        <def>/ePMS2.0/elcom/resources/apk/</def>
+        <name>TIN NH&#7854;N</name>
+        <name_vn>MESSAGES</name_vn>
+        <service_code>E16</service_code>
+        <url>/ePMS2.0/elcom/resources/image/Main/mess.png</url>
+        <urlLink>elcom.ehotel.msg.MSG</urlLink>
+    </item>
+</ehotel>

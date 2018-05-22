@@ -1,0 +1,6 @@
+package com.elcom.adcenter.store;
+
+public interface SQL {
+	static final String sp_qmsinsert_rawdata = "{call sp_qmsinsert_rawdata(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+	
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <act_load>0</act_load>
+        <action>com.rovio.angrybirds</action>
+        <EN>Angry Birds</EN>
+        <image>/ePMS2.0/elcom/resources/image/Game/1305521380711.png</image>
+        <service>E10</service>
+        <url>/ePMS2.0/elcom/resources/apk/game/Angry_Birds_v1.4.2.apk</url>
+        <VN>Angry Birds</VN>
+    </item>
+    <item id="3">
+        <act_load>0</act_load>
+        <action>com.halfbrick.fruitninja</action>
+        <EN>Ninja Fruit</EN>
+        <image>/ePMS2.0/elcom/resources/image/Game/ninja-fruit.png</image>
+        <service>E10</service>
+        <url>/ePMS2.0/elcom/resources/apk/game/fruit-ninja-v1.7.7.apk</url>
+        <VN>Ninja Fruit</VN>
+    </item>
+    <item id="4">
+        <act_load>0</act_load>
+        <action>com.baileyz.aquarium</action>
+        <EN>Fish Live</EN>
+        <image>/ePMS2.0/elcom/resources/image/Game/item_fish-live.png</image>
+        <service>E10</service>
+        <url>/ePMS2.0/elcom/resources/apk/game/com.baileyz.aquarium-1.apk</url>
+        <VN>Fish Live</VN>
+    </item>
+    <item id="6">
+        <act_load>0</act_load>
+        <action>com.rovio.angrybirdsseasons</action>
+        <EN>Angry Birds Seasons</EN>
+        <image>/ePMS2.0/elcom/resources/image/Game/item_angrybirds-seasons.png</image>
+        <service>E10</service>
+        <url>/ePMS2.0/elcom/resources/apk/game/com.rovio.angrybirdsseasons-241.apk</url>
+        <VN>Angry Birds Seasons</VN>
+    </item>
+</ehotel>

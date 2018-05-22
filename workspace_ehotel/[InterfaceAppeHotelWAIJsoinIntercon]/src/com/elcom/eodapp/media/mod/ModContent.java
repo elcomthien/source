@@ -251,8 +251,7 @@ public int removeFavorite(String keystb,int contentid)
     return retVal;
 }
 	//---------------------------------------------------------------------------------------------------------------------------
-	  @SuppressWarnings({ "unchecked", "unused" })
-	private String loadDataSubjectXML(Vector vRs) throws IOException{
+	  private String loadDataSubjectXML(Vector vRs) throws IOException{
 		    String jsonText = "";
 		    JSONObject obj = new JSONObject();
 		    JSONArray ja = new JSONArray();

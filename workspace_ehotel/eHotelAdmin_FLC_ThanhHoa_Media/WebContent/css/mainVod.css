@@ -1,0 +1,220 @@
+.form_detail_Movie {
+	width: 550;
+	height: 450;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.left_Title_movie {
+	float: left;
+	width: 315px;
+	margin-top: 10;
+	margin-left: 10px;
+}
+
+.right_Title_movie {
+	float: left;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+}
+
+.div_name_movie {
+	float: left;
+	width: 60px;
+	height: 20px;
+}
+
+.div_inbox_detail {
+	margin-top: 5px;
+	height: 23px;
+	float: left;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.div_des_textare {
+	float: left;
+	margin-left: 10px;
+}
+
+.div_info_movie {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.div_des_movie {
+	width: 100%;
+	height: 210px;
+	margin-top: 5px;
+	float: left;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.div_desc_detail {
+	float: left;
+}
+
+.form_addContent {
+	width: 680px;
+	min-height: 350px;
+	height: auto;
+}
+
+.left_form_addContent {
+	float: left;
+	width: 307px;
+	min-height: 150px;
+	border: 1px solid #a0a0a0;
+	height: auto;
+}
+
+.right_form_addContent {
+	float: left;
+	width: 307px;
+	min-height: 150px;
+	border: 1px solid #a0a0a0;
+}
+
+.table2 {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 98%;
+	background-color: white;
+}
+
+.table2 th {
+	height: 31px;
+	background: transparent url("../images/bg_table_header.png") repeat-x
+		center bottom;
+	color: #666666;
+}
+
+.table2 td {
+	
+}
+
+.mytable2_row1 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row1.png") repeat-x
+		center bottom;
+}
+
+.mytable2_row2 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row2.png") repeat-x
+		center bottom;
+}
+
+.div_drop_subject {
+	position: absolute;
+	width: 200px;
+	height: 340px;
+	background: transparent url("../images/contextmenu.png") repeat-x left
+		top;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+	overflow: auto;
+}
+
+.textbox_input_vod {
+	border: 1px solid #DDDDDD;
+	height: 20px;
+	float: left;
+	width: 240px;
+}
+
+.div_page_add {
+	width: 150px;
+	height: 20px;
+}
+
+.div_name_pms {
+	width: 100%;
+	height: 30px;
+}
+
+div.tableContainer {
+	clear: both;
+	height: 290px;
+	overflow: auto;
+}
+
+tbody.scrollContent {
+	display: block;
+	height: 256px;
+	overflow: auto;
+}
+/* Reset overflow value to hidden for all non-IE browsers. */
+div.tableContainer { /*overflow: hidden;*/
+	
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+}
+
+tbody.scrollContent td,tbody.scrollContent tr.normalRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+tbody.scrollContent tr.alternateRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+thead.fixedHeader th {
+	width: 250px;
+}
+
+thead.fixedHeader th+th {
+	width: 90px
+}
+
+tbody.scrollContent td {
+	width: 250px
+}
+
+tbody.scrollContent td+td {
+	width: 90px;
+}
+
+thead.fixedHeader tr {
+	position: relative
+}
+
+thead.fixedHeader tr {
+	display: block
+}
+
+.add_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 40px;
+	background: transparent url("../icon/arrow_right.png") no-repeat top
+		center;
+}
+
+.remove_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+	background: transparent url("../icon/arrow_left.png") no-repeat top
+		center;
+}

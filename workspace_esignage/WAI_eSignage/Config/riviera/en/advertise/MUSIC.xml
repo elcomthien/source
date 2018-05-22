@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="-149">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv4]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv4]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421659437894.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421659414128.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Adv/slide_4.png</urlIcon>
+    </item>
+    <item id="-148">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv3]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv3]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421659480534.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421659463054.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Adv/slide_3.png</urlIcon>
+    </item>
+    <item id="-147">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv2]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adv2]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Welcome/1421659549707.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Welcome/1421659520283.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Adv/slide_2.png</urlIcon>
+    </item>
+</ehotel>

@@ -13,5 +13,6 @@ public interface SQL {
 	public static final String sqlcheckpay = "begin ? := vod.checkpay(?,?,?); end;";
 	public static final String sqlgetLangs = "begin ? := vod.getLangs(?,?); end;";
 	public static final String sqlsetKeyStbIntoRoom = "begin ? := vod.setKeyStbIntoRoom(?,?,?); end;";
+	public static final String sqlupdatestatusbox = "begin ? := vod.updateStatusStb(?,?); end;";
 
 }

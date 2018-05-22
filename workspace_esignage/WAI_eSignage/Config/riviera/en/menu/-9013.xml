@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="406">
+        <name>Home made Italian Gelato</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421638983214.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421638989548.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421638983214.png</urlIcon>
+    </item>
+    <item id="431">
+        <name>RIVIERA DESSERT MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652215619.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652224487.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652215619.png</urlIcon>
+    </item>
+    <item id="428">
+        <name>RIVIERA CHILDREN MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421651899912.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421651905656.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421651899912.png</urlIcon>
+    </item>
+    <item id="414">
+        <name>RIVIERA BEVERAGE LIST</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421647579513.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421647585219.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421647579513.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="219">
+        <buyRate>19323.46</buyRate>
+        <code>AUD</code>
+        <exRateVN>19440.1</exRateVN>
+        <name>AUST.DOLLAR</name>
+        <sellRate>19614.79</sellRate>
+        <symbol>AUD</symbol>
+        <transferRate>19440.1</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</urlICon>
+    </item>
+    <item id="1">
+        <buyRate>0</buyRate>
+        <code>SAR</code>
+        <exRateVN>5471.41</exRateVN>
+        <name>SAUDI RIAL</name>
+        <sellRate>5815.34</sellRate>
+        <symbol>SAR</symbol>
+        <transferRate>5471.41</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/</urlICon>
+    </item>
+    <item id="223">
+        <buyRate>28593.11</buyRate>
+        <code>EUR</code>
+        <exRateVN>28679.15</exRateVN>
+        <name>EURO</name>
+        <sellRate>28936.86</sellRate>
+        <symbol>EUR</symbol>
+        <transferRate>28679.15</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</urlICon>
+    </item>
+    <item id="224">
+        <buyRate>35175.74</buyRate>
+        <code>GBP</code>
+        <exRateVN>35423.71</exRateVN>
+        <name>BRITISH POUND</name>
+        <sellRate>35742.03</sellRate>
+        <symbol>GBP</symbol>
+        <transferRate>35423.71</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/GBP.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlICon>
+    </item>
+    <item id="225">
+        <buyRate>2690.81</buyRate>
+        <code>HKD</code>
+        <exRateVN>2709.78</exRateVN>
+        <name>HONGKONG DOLLAR</name>
+        <sellRate>2745.09</sellRate>
+        <symbol>HKD</symbol>
+        <transferRate>2709.78</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/HKD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/HKD_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/HKD_.png</urlICon>
+    </item>
+    <item id="221">
+        <buyRate>23288.55</buyRate>
+        <code>CHF</code>
+        <exRateVN>23452.72</exRateVN>
+        <name>SWISS FRANCE</name>
+        <sellRate>23758.31</sellRate>
+        <symbol>CHF</symbol>
+        <transferRate>23452.72</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/HKD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/HKD_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/HKD_.png</urlICon>
+    </item>
+    <item id="226">
+        <buyRate>0</buyRate>
+        <code>INR</code>
+        <exRateVN>354.08</exRateVN>
+        <name>INDIAN RUPEE</name>
+        <sellRate>368.88</sellRate>
+        <symbol>INR</symbol>
+        <transferRate>354.08</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/INR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/INR_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/INR_.png</urlICon>
+    </item>
+    <item id="222">
+        <buyRate>0</buyRate>
+        <code>DKK</code>
+        <exRateVN>3801.7</exRateVN>
+        <name>DANISH KRONE</name>
+        <sellRate>3921.19</sellRate>
+        <symbol>DKK</symbol>
+        <transferRate>3801.7</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/INR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/INR_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/INR_.png</urlICon>
+    </item>
+    <item id="227">
+        <buyRate>204.4</buyRate>
+        <code>JPY</code>
+        <exRateVN>206.46</exRateVN>
+        <name>JAPANESE YEN</name>
+        <sellRate>208.32</sellRate>
+        <symbol>JPY</symbol>
+        <transferRate>206.46</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/JPY.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/JPY_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/JPY_.png</urlICon>
+    </item>
+    <item id="228">
+        <buyRate>0</buyRate>
+        <code>KRW</code>
+        <exRateVN>18.76</exRateVN>
+        <name>SOUTH KOREAN WON</name>
+        <sellRate>22.95</sellRate>
+        <symbol>KRW</symbol>
+        <transferRate>18.76</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/KRW.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/KRW_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/KRW_.png</urlICon>
+    </item>
+    <item id="229">
+        <buyRate>0</buyRate>
+        <code>KWD</code>
+        <exRateVN>74310.17</exRateVN>
+        <name>KUWAITI DINAR</name>
+        <sellRate>75883.12</sellRate>
+        <symbol>KWD</symbol>
+        <transferRate>74310.17</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/KWD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/KWD_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/KWD_.png</urlICon>
+    </item>
+    <item id="230">
+        <buyRate>0</buyRate>
+        <code>MYR</code>
+        <exRateVN>6555.05</exRateVN>
+        <name>MALAYSIAN RINGGIT</name>
+        <sellRate>6640.47</sellRate>
+        <symbol>MYR</symbol>
+        <transferRate>6555.05</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/MYR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/MYR_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/MYR_.png</urlICon>
+    </item>
+    <item id="231">
+        <buyRate>0</buyRate>
+        <code>NOK</code>
+        <exRateVN>3491.51</exRateVN>
+        <name>NORWEGIAN KRONER</name>
+        <sellRate>3601.25</sellRate>
+        <symbol>NOK</symbol>
+        <transferRate>3491.51</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/NOK.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/NOK_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/NOK_.png</urlICon>
+    </item>
+    <item id="232">
+        <buyRate>0</buyRate>
+        <code>RUB</code>
+        <exRateVN>563.28</exRateVN>
+        <name>RUSSIAN RUBLE</name>
+        <sellRate>689.11</sellRate>
+        <symbol>RUB</symbol>
+        <transferRate>563.28</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/RUB.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/RUB_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/RUB_.png</urlICon>
+    </item>
+    <item id="233">
+        <buyRate>0</buyRate>
+        <code>SEK</code>
+        <exRateVN>3142.92</exRateVN>
+        <name>SWEDISH KRONA</name>
+        <sellRate>3222.31</sellRate>
+        <symbol>SEK</symbol>
+        <transferRate>3142.92</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/SEK.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/SEK_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/SEK_.png</urlICon>
+    </item>
+    <item id="234">
+        <buyRate>16616.51</buyRate>
+        <code>SGD</code>
+        <exRateVN>16733.65</exRateVN>
+        <name>SINGAPORE DOLLAR</name>
+        <sellRate>17019.64</sellRate>
+        <symbol>SGD</symbol>
+        <transferRate>16733.65</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/SGD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/SGD_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/SGD_.png</urlICon>
+    </item>
+    <item id="235">
+        <buyRate>636.58</buyRate>
+        <code>THB</code>
+        <exRateVN>636.58</exRateVN>
+        <name>THAI BAHT</name>
+        <sellRate>663.19</sellRate>
+        <symbol>THB</symbol>
+        <transferRate>636.58</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/THB.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/THB_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/THB_.png</urlICon>
+    </item>
+    <item id="236">
+        <buyRate>21120</buyRate>
+        <code>USD</code>
+        <exRateVN>21120</exRateVN>
+        <name>US DOLLAR</name>
+        <sellRate>21170</sellRate>
+        <symbol>USD</symbol>
+        <transferRate>21120</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/USD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/USD_.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/USD_.png</urlICon>
+    </item>
+    <item id="220">
+        <buyRate>19153.51</buyRate>
+        <code>CAD</code>
+        <exRateVN>19327.46</exRateVN>
+        <name>CANADIAN DOLLAR</name>
+        <sellRate>19579.3</sellRate>
+        <symbol>CAD</symbol>
+        <transferRate>19327.46</transferRate>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</urlICon>
+    </item>
+</ehotel>

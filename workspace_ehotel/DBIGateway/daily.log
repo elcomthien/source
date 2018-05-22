@@ -1,0 +1,18 @@
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+10    INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+117   INFO  [main] dao.eBaseDao - {call ePMS.getBillCharges(?,?,?,?)}
+428   INFO  [main] pms.FolioStbPMS - [getBillCharges(sql={call ePMS.getBillCharges(?,?,?,?)}) with params:folioNum=1245, from=0,tto=6] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+115   INFO  [main] dao.eBaseDao - {call ePMS.countBill(?,?)}
+430   INFO  [main] pms.FolioStbPMS - [countFolio(sql={call ePMS.countBill(?,?)}) with no params returnValue=5]
+431   INFO  [main] dao.eBaseDao - {call ePMS.getBillCharges(?,?,?,?)}
+740   INFO  [main] pms.FolioStbPMS - [getBillCharges(sql={call ePMS.getBillCharges(?,?,?,?)}) with params:folioNum=1245, from=0,tto=6] : returnValue(size=0)
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+111   INFO  [main] dao.eBaseDao - {call ePMS.countBill(?,?)}
+414   INFO  [main] pms.FolioStbPMS - [countFolio(sql={call ePMS.countBill(?,?)}) with no params returnValue=5]
+0     INFO  [main] connect.PathDef - D:\Source\workspace_ehotel\DBIGateway/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://localhost:10002/DBInterface
+111   INFO  [main] dao.eBaseDao - {call ePMS.getBillCharges(?,?,?,?)}
+422   INFO  [main] pms.FolioStbPMS - [getBillCharges(sql={call ePMS.getBillCharges(?,?,?,?)}) with params:folioNum=1245, from=0,tto=6] : returnValue(size=0)

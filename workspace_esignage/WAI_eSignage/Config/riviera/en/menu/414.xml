@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="416">
+        <name>ESPRESSO ESPRESSION</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421647763490.png</urlIcon>
+    </item>
+    <item id="415">
+        <name>CLASSIC COFFEES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421647614772.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421647614772.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421647614772.png</urlIcon>
+    </item>
+    <item id="417">
+        <name>RIVIERA  SIGNATURE SPIRIT COFFEES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421647944363.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421647944363.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421647944363.png</urlIcon>
+    </item>
+    <item id="418">
+        <name>SPECIALITY TEAS</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421648167335.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421648167335.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421648167335.png</urlIcon>
+    </item>
+    <item id="419">
+        <name>FRAPPES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421648430627.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421648430627.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421648430627.png</urlIcon>
+    </item>
+    <item id="439">
+        <name>BEERS</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421653310133.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421653310133.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421653310133.png</urlIcon>
+    </item>
+    <item id="422">
+        <name>ENERGY BOOSTER</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421649133050.png</urlIcon>
+    </item>
+    <item id="427">
+        <name>FRESH FRUIT JUICES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421651744109.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421651744109.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421651744109.png</urlIcon>
+    </item>
+    <item id="437">
+        <name>WATER</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652874460.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652874460.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652874460.png</urlIcon>
+    </item>
+    <item id="438">
+        <name>SIGNATURE MOCKTAIL</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421653203339.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421653203339.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421653203339.png</urlIcon>
+    </item>
+    <item id="421">
+        <name>SODA OF AND ICE TEA</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421648858808.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421648858808.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421648858808.png</urlIcon>
+    </item>
+</ehotel>

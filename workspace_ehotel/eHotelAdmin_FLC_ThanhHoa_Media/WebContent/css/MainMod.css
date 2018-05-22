@@ -1,0 +1,197 @@
+.ul_ftp_file {
+	color: #878888;
+	float: left;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding-left: 0px;
+	height: 100%;
+}
+
+.ul_ftp_file li {
+	float: left;
+	width: 100%;
+	width: 400px;
+	height: 20px;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.ul_ftp_file li a {
+	text-decoration: none;
+	height: 20px;
+	width: 100%;
+}
+
+.itemfolder {
+	height: 100%;
+	float: left;
+	color: #878888;
+	text-align: left;
+	text-indent: 20px;
+	background: transparent url("../icon/filder_close.png") no-repeat left
+		top;
+}
+
+.itemfile {
+	height: 100%;
+	float: left;
+	color: #878888;
+	text-align: left;
+	text-indent: 20px;
+	background: transparent url("../icon/blank_document.png") no-repeat left
+		center;
+}
+
+.div_formFtpmp3 {
+	float: left;
+	width: 300px;
+	height: 310px;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	margin-top: 15px;
+}
+
+.tableMp3 {
+	background-color: #878888;
+}
+
+.tableMp3 tr {
+	background-color: white;
+	height: 25px;
+}
+
+.form_addContent {
+	width: 680px;
+	height: 300px;
+}
+
+.left_form_addContent {
+	float: left;
+	width: 307px;
+	min-height: 150px;
+	border: 1px solid #a0a0a0;
+	height: auto;
+}
+
+.right_form_addContent {
+	margin-left: 5px;
+	float: left;
+	width: 307px;
+	min-height: 150px;
+	border: 1px solid #a0a0a0;
+}
+
+.table2 {
+	margin-top: 3px;
+	margin-left: 2px;
+	width: 98%;
+	background-color: white;
+}
+
+.table2 th {
+	height: 31px;
+	background: transparent url("../images/bg_table_header.png") repeat-x
+		center bottom;
+	color: #666666;
+}
+
+.div_drop_subject {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	background: transparent url("../images/contextmenu.png") repeat-x left
+		top;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+}
+
+.div_page_add {
+	width: 150px;
+	height: 20px;
+}
+
+.div_linkadd {
+	
+}
+
+.menutree {
+	min-height: 200px;
+}
+
+div.tableContainer {
+	clear: both;
+	height: 240px;
+	overflow: auto;
+}
+
+tbody.scrollContent {
+	display: block;
+	height: 256px;
+	/*overflow: auto;*/
+}
+/* Reset overflow value to hidden for all non-IE browsers. */
+div.tableContainer { /*overflow: hidden;*/
+	
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+}
+
+tbody.scrollContent td,tbody.scrollContent tr.normalRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+tbody.scrollContent tr.alternateRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+thead.fixedHeader th {
+	width: 250px;
+}
+
+thead.fixedHeader th+th {
+	width: 90px
+}
+
+tbody.scrollContent td {
+	width: 250px
+}
+
+tbody.scrollContent td+td {
+	width: 90px;
+}
+
+thead.fixedHeader tr {
+	position: relative
+}
+
+thead.fixedHeader tr {
+	display: block
+}
+
+.add_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 40px;
+	background: transparent url("../icon/arrow_right.png") no-repeat top
+		center;
+}
+
+.remove_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+	background: transparent url("../icon/arrow_left.png") no-repeat top
+		center;
+}

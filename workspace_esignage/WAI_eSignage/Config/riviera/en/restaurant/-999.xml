@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1305">
+        <def>&lt;p&gt;Open&lt;span&gt;: 6.00 am till 10.00 pm&amp;lt;br/&amp;gt;Number of Seats&lt;span&gt;: 54 persons&amp;lt;br/&amp;gt;&lt;br /&gt;&lt;span&gt;Turmeric Restaurant located on the first floor boasts the impressive interior design and finest locale in the heart of Phnom Penh. &lt;br /&gt;Turmeric serves a variety of Asian and Western food for breakfast, lunch and dinner in a la carte and set menu.&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1375169345038.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1375169345038.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1375169345038.png</urlIcon>
+    </item>
+</ehotel>

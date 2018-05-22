@@ -1,0 +1,77 @@
+package elcom.abop.bean;
+
+public class ObjectQMS {
+	private String bgheader = "";
+	private String bgbodyeven = "";
+	private String bgbodyodd = "";
+	private String clheader = "";
+	private String clbody = "";
+	private String fzheader = "";
+	private String fzbody = "";
+	private String font = "";
+
+	public String getBgheader() {
+		return bgheader;
+	}
+
+	public void setBgheader(String bgheader) {
+		this.bgheader = bgheader;
+	}
+
+	public String getBgbodyeven() {
+		return bgbodyeven;
+	}
+
+	public void setBgbodyeven(String bgbodyeven) {
+		this.bgbodyeven = bgbodyeven;
+	}
+
+	public String getBgbodyodd() {
+		return bgbodyodd;
+	}
+
+	public void setBgbodyodd(String bgbodyodd) {
+		this.bgbodyodd = bgbodyodd;
+	}
+
+	public String getClheader() {
+		return clheader;
+	}
+
+	public void setClheader(String clheader) {
+		this.clheader = clheader;
+	}
+
+	public String getClbody() {
+		return clbody;
+	}
+
+	public void setClbody(String clbody) {
+		this.clbody = clbody;
+	}
+
+	public String getFzheader() {
+		return fzheader;
+	}
+
+	public void setFzheader(String fzheader) {
+		this.fzheader = fzheader;
+	}
+
+	public String getFzbody() {
+		return fzbody;
+	}
+
+	public void setFzbody(String fzbody) {
+		this.fzbody = fzbody;
+	}
+
+	public String getFont() {
+		return font;
+	}
+
+	public void setFont(String font) {
+		this.font = font;
+	}
+
+}

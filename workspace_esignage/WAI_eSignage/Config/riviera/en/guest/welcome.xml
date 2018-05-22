@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <item id="974" room_code="101">
+        <name>  REVIERA RESORT &amp; SPA</name>
+        <arrival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[29/01/0015 00:00:00]]></arrival>
+        <depature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[29/01/0015 00:00:00]]></depature>
+        <langCode>EN</langCode>
+	<server_local>172.16.8.188:8383</server_local>
+    </item>
+</ehotel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="-9014">
+        <name>Minibar</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421740336401.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/1421740341660.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/1421740341660.png</urlIcon>
+    </item>
+    <!--<item id="-9015">
+        <name>In room Amenities</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421741283954.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/1421741289563.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/1421741289563.png</urlIcon>
+    </item>-->
+    <item id="-9018">
+        <name>Laundry</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421740359592.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/1421740364684.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/1421740364684.png</urlIcon>
+    </item>
+</ehotel>

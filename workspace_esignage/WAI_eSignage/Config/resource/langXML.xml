@@ -1,0 +1,2915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><lang xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<content id="1">
+		<KH>Movie content manager</KH>
+		<EN>Movie content manager</EN>
+		<CN>Movie content manager</CN>
+		<JP>Movie content manager</JP>
+		<KR>Movie content manager</KR>
+		<VN>Movie content manager</VN>
+	</content>
+	<content id="2">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CN>Name</CN>
+		<JP>Name</JP>
+		<KR>Name</KR>
+		<VN>Name</VN>
+	</content>
+	<content id="3">
+		<KH>Actors</KH>
+		<EN>Actors</EN>
+		<CN>Actors</CN>
+		<JP>Actors</JP>
+		<KR>Actors</KR>
+		<VN>Actors</VN>
+	</content>
+	<content id="4">
+		<KH>Director</KH>
+		<EN>Director</EN>
+		<CN>Director</CN>
+		<JP>Director</JP>
+		<KR>Director</KR>
+		<VN>Director</VN>
+	</content>
+	<content id="5">
+		<KH>Exchange.Rate</KH>
+		<EN>Exchange.Rate</EN>
+		<CN>Exchange.Rate</CN>
+		<JP>Exchange.Rate</JP>
+		<KR>Exchange.Rate</KR>
+		<VN>Exchange.Rate</VN>
+	</content>
+	<content id="6">
+		<KH>Setting</KH>
+		<EN>Setting</EN>
+		<CN>Setting</CN>
+		<JP>Setting</JP>
+		<KR>Setting</KR>
+		<VN>Setting</VN>
+	</content>
+	<content id="7">
+		<KH>List of Movies</KH>
+		<EN>List of Movies</EN>
+		<CN>List of Movies</CN>
+		<JP>List of Movies</JP>
+		<KR>List of Movies</KR>
+		<VN>List of Movies</VN>
+	</content>
+	<content id="8">
+		<KH>List</KH>
+		<EN>List</EN>
+		<CN>List</CN>
+		<JP>List</JP>
+		<KR>List</KR>
+		<VN>List</VN>
+	</content>
+	<content id="9">
+		<KH>Add</KH>
+		<EN>Add</EN>
+		<CN>Add</CN>
+		<JP>Add</JP>
+		<KR>Add</KR>
+		<VN>Add</VN>
+	</content>
+	<content id="10">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CN>Subject</CN>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+		<VN>Subject</VN>
+	</content>
+	<content id="11">
+		<KH>Add Subject</KH>
+		<EN>Add Subject</EN>
+		<CN>Add Subject</CN>
+		<JP>Add Subject</JP>
+		<KR>Add Subject</KR>
+		<VN>Add Subject</VN>
+	</content>
+	<content id="12">
+		<KH>Hotel manager</KH>
+		<EN>Hotel manager</EN>
+		<CN>Hotel manager</CN>
+		<JP>Hotel manager</JP>
+		<KR>Hotel manager</KR>
+		<VN>Hotel manager</VN>
+	</content>
+	<content id="13">
+		<KH>Title</KH>
+		<EN>Title</EN>
+		<CN>Title</CN>
+		<JP>Title</JP>
+		<KR>Title</KR>
+		<VN>Title</VN>
+	</content>
+	<content id="14">
+		<KH>Are you sure to delete?</KH>
+		<EN>Are you sure to delete?</EN>
+		<CN>Are you sure to delete?</CN>
+		<JP>Are you sure to delete?</JP>
+		<KR>Are you sure to delete?</KR>
+		<VN>Are you sure to delete?</VN>
+	</content>
+	<content id="15">
+		<KH>New</KH>
+		<EN>New</EN>
+		<CN>New</CN>
+		<JP>New</JP>
+		<KR>New</KR>
+		<VN>New</VN>
+	</content>
+	<content id="16">
+		<KH>Content</KH>
+		<EN>Content</EN>
+		<CN>Content</CN>
+		<JP>Content</JP>
+		<KR>Content</KR>
+		<VN>Content</VN>
+	</content>
+	<content id="17">
+		<KH>Service</KH>
+		<EN>Service</EN>
+		<CN>Service</CN>
+		<JP>Service</JP>
+		<KR>Service</KR>
+		<VN>Service</VN>
+	</content>
+	<content id="18">
+		<KH>System</KH>
+		<EN>System</EN>
+		<CN>System</CN>
+		<JP>System</JP>
+		<KR>System</KR>
+		<VN>System</VN>
+	</content>
+	<content id="19">
+		<KH>Report</KH>
+		<EN>Report</EN>
+		<CN>Report</CN>
+		<JP>Report</JP>
+		<KR>Report</KR>
+		<VN>Report</VN>
+	</content>
+	<content id="20">
+		<KH>Live TV</KH>
+		<EN>Live TV</EN>
+		<CN>Live TV</CN>
+		<JP>Live TV</JP>
+		<KR>Live TV</KR>
+		<VN>Live TV</VN>
+	</content>
+	<content id="21">
+		<KH>Info</KH>
+		<EN>Info</EN>
+		<CN>Info</CN>
+		<JP>Info</JP>
+		<KR>Info</KR>
+		<VN>Info</VN>
+	</content>
+	<content id="22">
+		<KH>Config</KH>
+		<EN>Config</EN>
+		<CN>Config</CN>
+		<JP>Config</JP>
+		<KR>Config</KR>
+		<VN>Config</VN>
+	</content>
+	<content id="23">
+		<KH>Hotel</KH>
+		<EN>Hotel</EN>
+		<CN>Hotel</CN>
+		<JP>Hotel</JP>
+		<KR>Hotel</KR>
+		<VN>Hotel</VN>
+	</content>
+	<content id="price">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CN>Price</CN>
+		<JP>Price</JP>
+		<KR>Price</KR>
+		<VN>Price</VN>
+	</content>
+	<content id="stt">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CN>No</CN>
+		<JP>No</JP>
+		<KR>No</KR>
+		<VN>No</VN>
+	</content>
+	<content id="HotelMgn">
+		<KH>Hotel information management</KH>
+		<EN>Hotel information management</EN>
+		<CN>Hotel information management</CN>
+		<JP>Hotel information management</JP>
+		<KR>Hotel information management</KR>
+		<VN>Hotel information management</VN>
+	</content>
+	<content id="HotelSRMgn">
+		<KH>Sokha Siem Reap information management</KH>
+		<EN>Sokha Siem Reap information management</EN>
+		<CN>Sokha Siem Reap information management</CN>
+		<JP>Sokha Siem Reap information management</JP>
+		<KR>Sokha Siem Reap information management</KR>
+		<VN>Sokha Siem Reap information management</VN>
+	</content>
+	<content id="HotelPPMgn">
+		<KH>Sokha Phnom Penh information management</KH>
+		<EN>Sokha Phnom Penh information management</EN>
+		<CN>Sokha Phnom Penh information management</CN>
+		<JP>Sokha Phnom Penh information management</JP>
+		<KR>Sokha Phnom Penh information management</KR>
+		<VN>Sokha Phnom Penh information management</VN>
+	</content>
+	<content id="HotelBMgn">
+		<KH>Sokha Beach information management</KH>
+		<EN>Sokha Beach information management</EN>
+		<CN>Sokha Beach information management</CN>
+		<JP>Sokha Beach information management</JP>
+		<KR>Sokha Beach information management</KR>
+		<VN>Sokha Beach information management</VN>
+	</content>
+	<content id="HotelVCMgn">
+		<KH>Sokha Vegas Casino information management</KH>
+		<EN>Sokha Vegas Casino information management</EN>
+		<CN>Sokha Vegas Casino information management</CN>
+		<JP>Sokha Vegas Casino information management</JP>
+		<KR>Sokha Vegas Casino information management</KR>
+		<VN>Sokha Vegas Casino information management</VN>
+	</content>
+	<content id="HotelAMgn">
+		<KH>Sokha Angkor information management</KH>
+		<EN>Sokha Angkor information management</EN>
+		<CN>Sokha Angkor information management</CN>
+		<JP>Sokha Angkor information management</JP>
+		<KR>Sokha Angkor information management</KR>
+		<VN>Sokha Angkor information management</VN>
+	</content>
+	<content id="HotelTBMgn">
+		<KH>Sokha Thansur Bokor information management</KH>
+		<EN>Sokha Thansur Bokor information management</EN>
+		<CN>Sokha Thansur Bokor information management</CN>
+		<JP>Sokha Thansur Bokor information management</JP>
+		<KR>Sokha Thansur Bokor information management</KR>
+		<VN>Sokha Thansur Bokor information management</VN>
+	</content>
+	<content id="HotelOutlet">
+		<KH>Food and Beverage Outlets information management</KH>
+		<EN>Food and Beverage Outlets information management</EN>
+		<CN>Food and Beverage Outlets information management</CN>
+		<JP>Food and Beverage Outlets information management</JP>
+		<KR>Food and Beverage Outlets information management</KR>
+		<VN>Food and Beverage Outlets information management</VN>
+	</content>
+	<content id="HotelTransport">
+		<KH>Transportation information management</KH>
+		<EN>Transportation information management</EN>
+		<CN>Transportation information management</CN>
+		<JP>Transportation information management</JP>
+		<KR>Transportation information management</KR>
+		<VN>Transportation information management</VN>
+	</content>
+	<content id="HotelTour">
+		<KH>Tour information management</KH>
+		<EN>Tour information management</EN>
+		<CN>Tour information management</CN>
+		<JP>Tour information management</JP>
+		<KR>Tour information management</KR>
+		<VN>Tour information management</VN>
+	</content>
+	<content id="HotelConvention">
+		<KH>Convention Center information management</KH>
+		<EN>Convention Center information management</EN>
+		<CN>Convention Center information management</CN>
+		<JP>Convention Center information management</JP>
+		<KR>Convention Center information management</KR>
+		<VN>Convention Center information management</VN>
+	</content>
+	<content id="HotelHealth">
+		<KH>Health Club information management</KH>
+		<EN>Health Club information management</EN>
+		<CN>Health Club information management</CN>
+		<JP>Health Club information management</JP>
+		<KR>Health Club information management</KR>
+		<VN>Health Club information management</VN>
+	</content>
+	<content id="FolioMgn">
+		<KH>Folio and Stb management</KH>
+		<EN>Folio and Stb management</EN>
+		<CN>Folio and Stb management</CN>
+		<JP>Folio and Stb management</JP>
+		<KR>Folio and Stb management</KR>
+		<VN>Folio and Stb management</VN>
+	</content>
+	<content id="DiningMgn">
+		<KH>Dining information management</KH>
+		<EN>Dining information management</EN>
+		<CN>Dining information management</CN>
+		<JP>Dining information management</JP>
+		<KR>Dining information management</KR>
+		<VN>Dining information management</VN>
+	</content>
+	<content id="Attration-ActivitiesMgn">
+		<KH>Activiti-Attaraction management</KH>
+		<EN>Activiti-Attaraction management</EN>
+		<CN>Activiti-Attaraction management</CN>
+		<JP>Activiti-Attaraction management</JP>
+		<KR>Activiti-Attaraction management</KR>
+		<VN>Activiti-Attaraction management</VN>
+	</content>
+	<content id="TransportationMgn">
+		<KH>Transportation management</KH>
+		<EN>Transportation management</EN>
+		<CN>Transportation management</CN>
+		<JP>Transportation management</JP>
+		<KR>Transportation management</KR>
+		<VN>Transportation management</VN>
+	</content>
+	<content id="HousekeepingMgn">
+		<KH>Housekeeping management</KH>
+		<EN>Housekeeping management</EN>
+		<CN>Housekeeping management</CN>
+		<JP>Housekeeping management</JP>
+		<KR>Housekeeping management</KR>
+		<VN>Housekeeping management</VN>
+	</content>
+	<content id="MapMgn_map">
+		<KH>Map Direction management</KH>
+		<EN>Map Direction management</EN>
+		<CN>Map Direction management</CN>
+		<JP>Map Direction management</JP>
+		<KR>Map Direction management</KR>
+		<VN>Map Direction management</VN>
+	</content>
+	<content id="reset_pin">
+		<KH>Do you want to reset pincode?</KH>
+		<EN>Do you want to reset pincode?</EN>
+		<CN>Do you want to reset pincode?</CN>
+		<JP>Do you want to reset pincode?</JP>
+		<KR>Do you want to reset pincode?</KR>
+		<VN>Do you want to reset pincode?</VN>
+	</content>
+	<content id="OtherMgn">
+		<KH>Others management</KH>
+		<EN>Others management</EN>
+		<CN>Others management</CN>
+		<JP>Others management</JP>
+		<KR>Others management</KR>
+		<VN>Others management</VN>
+	</content>
+	<content id="Subject">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CN>Subject</CN>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+		<VN>Subject</VN>
+	</content>
+	<content id="AddSubject">
+		<KH>Add Subject</KH>
+		<EN>Add Subject</EN>
+		<CN>Add Subject</CN>
+		<JP>Add Subject</JP>
+		<KR>Add Subject</KR>
+		<VN>Add Subject</VN>
+	</content>
+	<content id="EditSubject">
+		<KH>Edit Subject</KH>
+		<EN>Edit Subject</EN>
+		<CN>Edit Subject</CN>
+		<JP>Edit Subject</JP>
+		<KR>Edit Subject</KR>
+		<VN>Edit Subject</VN>
+	</content>
+	<content id="pls_Subject">
+		<KH>Please enter the full name of the subject</KH>
+		<EN>Please enter the full name of the subject</EN>
+		<CN>Please enter the full name of the subject</CN>
+		<JP>Please enter the full name of the subject</JP>
+		<KR>Please enter the full name of the subject</KR>
+		<VN>Please enter the full name of the subject</VN>
+	</content>
+	<content id="DeleteSubject">
+		<KH>Delete Subject</KH>
+		<EN>Delete Subject</EN>
+		<CN>Delete Subject</CN>
+		<JP>Delete Subject</JP>
+		<KR>Delete Subject</KR>
+		<VN>Delete Subject</VN>
+	</content>
+	<content id="AddItem">
+		<KH>Add Item</KH>
+		<EN>Add Item</EN>
+		<CN>Add Item</CN>
+		<JP>Add Item</JP>
+		<KR>Add Item</KR>
+		<VN>Add Item</VN>
+	</content>
+	<content id="RemoveItem">
+		<KH>Delete Item</KH>
+		<EN>Delete Item</EN>
+		<CN>Delete Item</CN>
+		<JP>Delete Item</JP>
+		<KR>Delete Item</KR>
+		<VN>Delete Item</VN>
+	</content>
+	<content id="DetailItem">
+		<KH>View Item</KH>
+		<EN>View Item</EN>
+		<CN>View Item</CN>
+		<JP>View Item</JP>
+		<KR>View Item</KR>
+		<VN>View Item</VN>
+	</content>
+	<content id="ChangeSubject">
+		<KH>Change subject</KH>
+		<EN>Change subject</EN>
+		<CN>Change subject</CN>
+		<JP>Change subject</JP>
+		<KR>Change subject</KR>
+		<VN>Change subject</VN>
+	</content>
+	<content id="ChangeStatus">
+		<KH>Change status</KH>
+		<EN>Change status</EN>
+		<CN>Change status</CN>
+		<JP>Change status</JP>
+		<KR>Change status</KR>
+		<VN>Change status</VN>
+	</content>
+	<content id="Status">
+		<KH>Status</KH>
+		<EN>Status</EN>
+		<CN>Status</CN>
+		<JP>Status</JP>
+		<KR>Status</KR>
+		<VN>Status</VN>
+	</content>
+	<content id="No">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CN>No</CN>
+		<JP>No</JP>
+		<KR>No</KR>
+		<VN>No</VN>
+	</content>
+	<content id="room">
+		<KH>Room</KH>
+		<EN>Room</EN>
+		<CN>Room</CN>
+		<JP>Room</JP>
+		<KR>Room</KR>
+		<VN>Room</VN>
+	</content>
+	<content id="Name_guest">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CN>Name</CN>
+		<JP>Name</JP>
+		<KR>Name</KR>
+		<VN>Name</VN>
+	</content>
+	<content id="Description">
+		<KH>Description</KH>
+		<EN>Description</EN>
+		<CN>Description</CN>
+		<JP>Description</JP>
+		<KR>Description</KR>
+		<VN>Description</VN>
+	</content>
+	<content id="Image">
+		<KH>Image</KH>
+		<EN>Image</EN>
+		<CN>Image</CN>
+		<JP>Image</JP>
+		<KR>Image</KR>
+		<VN>Image</VN>
+	</content>
+	<content id="Background">
+		<KH>Background</KH>
+		<EN>Background</EN>
+		<CN>Background</CN>
+		<JP>Background</JP>
+		<KR>Background</KR>
+		<VN>Background</VN>
+	</content>
+	<content id="stb_assigned">
+		<KH>STB is assigned to room</KH>
+		<EN>STB is assigned to room</EN>
+		<CN>STB is assigned to room</CN>
+		<JP>STB is assigned to room</JP>
+		<KR>STB is assigned to room</KR>
+		<VN>STB is assigned to room</VN>
+	</content>
+	<content id="insert_stb">
+		<KH>Please select STB!</KH>
+		<EN>Please select STB!</EN>
+		<CN>Please select STB!</CN>
+		<JP>Please select STB!</JP>
+		<KR>Please select STB!</KR>
+		<VN>Please select STB!</VN>
+	</content>
+	<content id="remove_stb_check">
+		<KH>Please check any stb to remove.</KH>
+		<EN>Please check any stb to remove.</EN>
+		<CN>Please check any stb to remove.</CN>
+		<JP>Please check any stb to remove.</JP>
+		<KR>Please check any stb to remove.</KR>
+		<VN>Please check any stb to remove.</VN>
+	</content>
+	<content id="checkout">
+		<KH>Do you really want to check out?</KH>
+		<EN>Do you really want to check out?</EN>
+		<CN>Do you really want to check out?</CN>
+		<JP>Do you really want to check out?</JP>
+		<KR>Do you really want to check out?</KR>
+		<VN>Do you really want to check out?</VN>
+	</content>
+	<content id="remove_stb">
+		<KH>Do you really want to remove STB?</KH>
+		<EN>Do you really want to remove STB?</EN>
+		<CN>Do you really want to remove STB?</CN>
+		<JP>Do you really want to remove STB?</JP>
+		<KR>Do you really want to remove STB?</KR>
+		<VN>Do you really want to remove STB?</VN>
+	</content>
+	<content id="RoomList">
+		<KH>Rooms</KH>
+		<EN>Rooms</EN>
+		<CN>Rooms</CN>
+		<JP>Rooms</JP>
+		<KR>Rooms</KR>
+		<VN>Rooms</VN>
+	</content>
+	<content id="addSTBroom">
+		<KH>Assign STB to room</KH>
+		<EN>Assign STB to room</EN>
+		<CN>Assign STB to room</CN>
+		<JP>Assign STB to room</JP>
+		<KR>Assign STB to room</KR>
+		<VN>Assign STB to room</VN>
+	</content>
+	<content id="removestb">
+		<KH>Remove</KH>
+		<EN>Remove</EN>
+		<CN>Remove</CN>
+		<JP>Remove</JP>
+		<KR>Remove</KR>
+		<VN>Remove</VN>
+	</content>
+	<content id="dbclickaddSettopbox">
+		<KH>Double click to add STB to room</KH>
+		<EN>Double click to add STB to room</EN>
+		<CN>Double click to add STB to room</CN>
+		<JP>Double click to add STB to room</JP>
+		<KR>Double click to add STB to room</KR>
+		<VN>Double click to add STB to room</VN>
+	</content>
+	<content id="addstb">
+		<KH>Add</KH>
+		<EN>Add</EN>
+		<CN>Add</CN>
+		<JP>Add</JP>
+		<KR>Add</KR>
+		<VN>Add</VN>
+	</content>
+	<content id="STB">
+		<KH>Settop box</KH>
+		<EN>Settop box</EN>
+		<CN>Settop box</CN>
+		<JP>Settop box</JP>
+		<KR>Settop box</KR>
+		<VN>Settop box</VN>
+	</content>
+	<content id="Guest">
+		<KH>Guest Info</KH>
+		<EN>Guest Info</EN>
+		<CN>Guest Info</CN>
+		<JP>Guest Info</JP>
+		<KR>Guest Info</KR>
+		<VN>Guest Info</VN>
+	</content>
+	<content id="Message">
+		<KH>Messages</KH>
+		<EN>Messages</EN>
+		<CN>Messages</CN>
+		<JP>Messages</JP>
+		<KR>Messages</KR>
+		<VN>Messages</VN>
+	</content>
+	<content id="SetUp">
+		<KH>Setup</KH>
+		<EN>Setup</EN>
+		<CN>Setup</CN>
+		<JP>Setup</JP>
+		<KR>Setup</KR>
+		<VN>Setup</VN>
+	</content>
+	<content id="Bill">
+		<KH>Bill</KH>
+		<EN>Bill</EN>
+		<CN>Bill</CN>
+		<JP>Bill</JP>
+		<KR>Bill</KR>
+		<VN>Bill</VN>
+	</content>
+	<content id="Hotel">
+		<KH>Hotel</KH>
+		<EN>Hotel</EN>
+		<CN>Hotel</CN>
+		<JP>Hotel</JP>
+		<KR>Hotel</KR>
+		<VN>Hotel</VN>
+	</content>
+	<content id="Tour">
+		<KH>Tour</KH>
+		<EN>Tour</EN>
+		<CN>Tour</CN>
+		<JP>Tour</JP>
+		<KR>Tour</KR>
+		<VN>Tour</VN>
+	</content>
+	<content id="Convention">
+		<KH>Convention</KH>
+		<EN>Convention</EN>
+		<CN>Convention</CN>
+		<JP>Convention</JP>
+		<KR>Convention</KR>
+		<VN>Convention</VN>
+	</content>
+	<content id="Transportion">
+		<KH>Transportion</KH>
+		<EN>Transportion</EN>
+		<CN>Transportion</CN>
+		<JP>Transportion</JP>
+		<KR>Transportion</KR>
+		<VN>Transportion</VN>
+	</content>
+	<content id="Outlet">
+		<KH>Outlet</KH>
+		<EN>Outlet</EN>
+		<CN>Outlet</CN>
+		<JP>Outlet</JP>
+		<KR>Outlet</KR>
+		<VN>Outlet</VN>
+	</content>
+	<content id="Health">
+		<KH>Health</KH>
+		<EN>Health</EN>
+		<CN>Health</CN>
+		<JP>Health</JP>
+		<KR>Health</KR>
+		<VN>Health</VN>
+	</content>
+	<content id="Activites">
+		<KH>Activities</KH>
+		<EN>Activities</EN>
+		<CN>Activities</CN>
+		<JP>Activities</JP>
+		<KR>Activities</KR>
+		<VN>Activities</VN>
+	</content>
+	<content id="Attractions">
+		<KH>Attractions</KH>
+		<EN>Attractions</EN>
+		<CN>Attractions</CN>
+		<JP>Attractions</JP>
+		<KR>Attractions</KR>
+		<VN>Attractions</VN>
+	</content>
+	<content id="Promotions">
+		<KH>Promotions</KH>
+		<EN>Promotions</EN>
+		<CN>Promotions</CN>
+		<JP>Promotions</JP>
+		<KR>Promotions</KR>
+		<VN>Promotions</VN>
+	</content>
+	<content id="ExchangeRate">
+		<KH>Exchange</KH>
+		<EN>Exchange</EN>
+		<CN>Exchange</CN>
+		<JP>Exchange</JP>
+		<KR>Exchange</KR>
+		<VN>Exchange</VN>
+	</content>
+	<content id="Advertise">
+		<KH>Advertise</KH>
+		<EN>Advertise</EN>
+		<CN>Advertise</CN>
+		<JP>Advertise</JP>
+		<KR>Advertise</KR>
+		<VN>Advertise</VN>
+	</content>
+	<content id="Internet">
+		<KH>Internet</KH>
+		<EN>Internet</EN>
+		<CN>Internet</CN>
+		<JP>Internet</JP>
+		<KR>Internet</KR>
+		<VN>Internet</VN>
+	</content>
+	<content id="Feedback">
+		<KH>Feedback</KH>
+		<EN>Feedback</EN>
+		<CN>Feedback</CN>
+		<JP>Feedback</JP>
+		<KR>Feedback</KR>
+		<VN>Feedback</VN>
+	</content>
+	<content id="urllink">
+		<KH>Airline Information</KH>
+		<EN>Airline Information</EN>
+		<CN>Airline Information</CN>
+		<JP>Airline Information</JP>
+		<KR>Airline Information</KR>
+		<VN>Airline Information</VN>
+	</content>
+	<content id="Transport">
+		<KH>Transport</KH>
+		<EN>Transport</EN>
+		<CN>Transport</CN>
+		<JP>Transport</JP>
+		<KR>Transport</KR>
+		<VN>Transport</VN>
+	</content>
+	<content id="FolioType">
+		<KH>Room Type</KH>
+		<EN>Room Type</EN>
+		<CN>Room Type</CN>
+		<JP>Room Type</JP>
+		<KR>Room Type</KR>
+		<VN>Room Type</VN>
+	</content>
+	<content id="NameGuest">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CN>Name</CN>
+		<JP>Name</JP>
+		<KR>Name</KR>
+		<VN>Name</VN>
+	</content>
+	<content id="CheckInDate">
+		<KH>Checkin date</KH>
+		<EN>Checkin date</EN>
+		<CN>Checkin date</CN>
+		<JP>Checkin date</JP>
+		<KR>Checkin date</KR>
+		<VN>Checkin date</VN>
+	</content>
+	<content id="CheckOutDate">
+		<KH>Checkout date</KH>
+		<EN>Checkout date</EN>
+		<CN>Checkout date</CN>
+		<JP>Checkout date</JP>
+		<KR>Checkout date</KR>
+		<VN>Checkout date</VN>
+	</content>
+	<content id="MainGuest">
+		<KH>Main Guest</KH>
+		<EN>Main Guest</EN>
+		<CN>Main Guest</CN>
+		<JP>Main Guest</JP>
+		<KR>Main Guest</KR>
+		<VN>Main Guest</VN>
+	</content>
+	<content id="Content">
+		<KH>Content</KH>
+		<EN>Content</EN>
+		<CN>Content</CN>
+		<JP>Content</JP>
+		<KR>Content</KR>
+		<VN>Content</VN>
+	</content>
+	<content id="Sender">
+		<KH>Sender</KH>
+		<EN>Sender</EN>
+		<CN>Sender</CN>
+		<JP>Sender</JP>
+		<KR>Sender</KR>
+		<VN>Sender</VN>
+	</content>
+	<content id="subject_mess">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CN>Subject</CN>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+		<VN>Subject</VN>
+	</content>
+	<content id="SendDate">
+		<KH>Date</KH>
+		<EN>Date</EN>
+		<CN>Date</CN>
+		<JP>Date</JP>
+		<KR>Date</KR>
+		<VN>Date</VN>
+	</content>
+	<content id="Name">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CN>Name</CN>
+		<JP>Name</JP>
+		<KR>Name</KR>
+		<VN>Name</VN>
+	</content>
+	<content id="Price">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CN>Price</CN>
+		<JP>Price</JP>
+		<KR>Price</KR>
+		<VN>Price</VN>
+	</content>
+	<content id="Quantity">
+		<KH>Quantity</KH>
+		<EN>Quantity</EN>
+		<CN>Quantity</CN>
+		<JP>Quantity</JP>
+		<KR>Quantity</KR>
+		<VN>Quantity</VN>
+	</content>
+	<content id="Amount">
+		<KH>Amount</KH>
+		<EN>Amount</EN>
+		<CN>Amount</CN>
+		<JP>Amount</JP>
+		<KR>Amount</KR>
+		<VN>Amount</VN>
+	</content>
+	<content id="Unit">
+		<KH>Unit</KH>
+		<EN>Unit</EN>
+		<CN>Unit</CN>
+		<JP>Unit</JP>
+		<KR>Unit</KR>
+		<VN>Unit</VN>
+	</content>
+	<content id="Currency">
+		<KH>Currency</KH>
+		<EN>Currency</EN>
+		<CN>Currency</CN>
+		<JP>Currency</JP>
+		<KR>Currency</KR>
+		<VN>Currency</VN>
+	</content>
+	<content id="Code_money">
+		<KH>Code</KH>
+		<EN>Code</EN>
+		<CN>Code</CN>
+		<JP>Code</JP>
+		<KR>Code</KR>
+		<VN>Code</VN>
+	</content>
+	<content id="Buy">
+		<KH>Buy</KH>
+		<EN>Buy</EN>
+		<CN>Buy</CN>
+		<JP>Buy</JP>
+		<KR>Buy</KR>
+		<VN>Buy</VN>
+	</content>
+	<content id="Transfer">
+		<KH>Transfer</KH>
+		<EN>Transfer</EN>
+		<CN>Transfer</CN>
+		<JP>Transfer</JP>
+		<KR>Transfer</KR>
+		<VN>Transfer</VN>
+	</content>
+	<content id="Sell">
+		<KH>Sale</KH>
+		<EN>Sale</EN>
+		<CN>Sale</CN>
+		<JP>Sale</JP>
+		<KR>Sale</KR>
+		<VN>Sale</VN>
+	</content>
+	<content id="type">
+		<KH>Type</KH>
+		<EN>Type</EN>
+		<CN>Type</CN>
+		<JP>Type</JP>
+		<KR>Type</KR>
+		<VN>Type</VN>
+	</content>
+	<content id="create_date">
+		<KH>Create Date</KH>
+		<EN>Create Date</EN>
+		<CN>Create Date</CN>
+		<JP>Create Date</JP>
+		<KR>Create Date</KR>
+		<VN>Create Date</VN>
+	</content>
+	<content id="smartcard">
+		<KH>Smartcard</KH>
+		<EN>Smartcard</EN>
+		<CN>Smartcard</CN>
+		<JP>Smartcard</JP>
+		<KR>Smartcard</KR>
+		<VN>Smartcard</VN>
+	</content>
+	<content id="Address">
+		<KH>Address</KH>
+		<EN>Address</EN>
+		<CN>Address</CN>
+		<JP>Address</JP>
+		<KR>Address</KR>
+		<VN>Address</VN>
+	</content>
+	<content id="Transport">
+		<KH>Transport</KH>
+		<EN>Transport</EN>
+		<CN>Transport</CN>
+		<JP>Transport</JP>
+		<KR>Transport</KR>
+		<VN>Transport</VN>
+	</content>
+	<content id="label_cancel">
+		<KH>Cancel</KH>
+		<EN>Cancel</EN>
+		<CN>Cancel</CN>
+		<JP>Cancel</JP>
+		<KR>Cancel</KR>
+		<VN>Cancel</VN>
+	</content>
+	<content id="VOD">
+		<KH>VOD</KH>
+		<EN>VOD</EN>
+		<CN>VOD</CN>
+		<JP>VOD</JP>
+		<KR>VOD</KR>
+		<VN>VOD</VN>
+	</content>
+	<content id="lable_ok">
+		<KH>OK</KH>
+		<EN>OK</EN>
+		<CN>OK</CN>
+		<JP>OK</JP>
+		<KR>OK</KR>
+		<VN>OK</VN>
+	</content>
+	<content id="VodCntManager">
+		<KH>Video Service Management</KH>
+		<EN>Video Service Management</EN>
+		<CN>Video Service Management</CN>
+		<JP>Video Service Management</JP>
+		<KR>Video Service Management</KR>
+		<VN>Video Service Management</VN>
+	</content>
+	<content id="ConfigManager">
+		<KH>Config FTP Server</KH>
+		<EN>Config FTP Server</EN>
+		<CN>Config FTP Server</CN>
+		<JP>Config FTP Server</JP>
+		<KR>Config FTP Server</KR>
+		<VN>Config FTP Server</VN>
+	</content>
+	<content id="AudioCntManager">
+		<KH>Music Service Management</KH>
+		<EN>Music Service Management</EN>
+		<CN>Music Service Management</CN>
+		<JP>Music Service Management</JP>
+		<KR>Music Service Management</KR>
+		<VN>Music Service Management</VN>
+	</content>
+	<content id="LiveCntManager">
+		<KH>LiveTV Service Management</KH>
+		<EN>LiveTV Service Management</EN>
+		<CN>LiveTV Service Management</CN>
+		<JP>LiveTV Service Management</JP>
+		<KR>LiveTV Service Management</KR>
+		<VN>LiveTV Service Management</VN>
+	</content>
+	<content id="VodSvcManager">
+		<KH>Video Service Management</KH>
+		<EN>Video Service Management</EN>
+		<CN>Video Service Management</CN>
+		<JP>Video Service Management</JP>
+		<KR>Video Service Management</KR>
+		<VN>Video Service Management</VN>
+	</content>
+	<content id="AudioCntManager">
+		<KH>Music Service Management</KH>
+		<EN>Music Service Management</EN>
+		<CN>Music Service Management</CN>
+		<JP>Music Service Management</JP>
+		<KR>Music Service Management</KR>
+		<VN>Music Service Management</VN>
+	</content>
+	<content id="LiveCntManager">
+		<KH>LiveTV Service Management</KH>
+		<EN>LiveTV Service Management</EN>
+		<CN>LiveTV Service Management</CN>
+		<JP>LiveTV Service Management</JP>
+		<KR>LiveTV Service Management</KR>
+		<VN>LiveTV Service Management</VN>
+	</content>
+	<content id="List">
+		<KH>List</KH>
+		<EN>List</EN>
+		<CN>List</CN>
+		<JP>List</JP>
+		<KR>List</KR>
+		<VN>List</VN>
+	</content>
+	<content id="AddMovie">
+		<KH>Upload Movie</KH>
+		<EN>Upload Movie</EN>
+		<CN>Upload Movie</CN>
+		<JP>Upload Movie</JP>
+		<KR>Upload Movie</KR>
+		<VN>Upload Movie</VN>
+	</content>
+	<content id="Subject">
+		<KH>Subject</KH>
+		<EN>Subject</EN>
+		<CN>Subject</CN>
+		<JP>Subject</JP>
+		<KR>Subject</KR>
+		<VN>Subject</VN>
+	</content>
+	<content id="AddSubject">
+		<KH>Add Subject</KH>
+		<EN>Add Subject</EN>
+		<CN>Add Subject</CN>
+		<JP>Add Subject</JP>
+		<KR>Add Subject</KR>
+		<VN>Add Subject</VN>
+	</content>
+	<content id="EditSubject">
+		<KH>Edit Subject</KH>
+		<EN>Edit Subject</EN>
+		<CN>Edit Subject</CN>
+		<JP>Edit Subject</JP>
+		<KR>Edit Subject</KR>
+		<VN>Edit Subject</VN>
+	</content>
+	<content id="DeleteSubject">
+		<KH>Delete Subject</KH>
+		<EN>Delete Subject</EN>
+		<CN>Delete Subject</CN>
+		<JP>Delete Subject</JP>
+		<KR>Delete Subject</KR>
+		<VN>Delete Subject</VN>
+	</content>
+	<content id="ViewVideo">
+		<KH>View Movie</KH>
+		<EN>View Movie</EN>
+		<CN>View Movie</CN>
+		<JP>View Movie</JP>
+		<KR>View Movie</KR>
+		<VN>View Movie</VN>
+	</content>
+	<content id="DeleteVideo">
+		<KH>Delete Movie</KH>
+		<EN>Delete Movie</EN>
+		<CN>Delete Movie</CN>
+		<JP>Delete Movie</JP>
+		<KR>Delete Movie</KR>
+		<VN>Delete Movie</VN>
+	</content>
+	<content id="SetTitle">
+		<KH>Set Subtitle</KH>
+		<EN>Set Subtitle</EN>
+		<CN>Set Subtitle</CN>
+		<JP>Set Subtitle</JP>
+		<KR>Set Subtitle</KR>
+		<VN>Set Subtitle</VN>
+	</content>
+	<content id="SetTrailer">
+		<KH>Set Trailer</KH>
+		<EN>Set Trailer</EN>
+		<CN>Set Trailer</CN>
+		<JP>Set Trailer</JP>
+		<KR>Set Trailer</KR>
+		<VN>Set Trailer</VN>
+	</content>
+	<content id="ChangeSubject">
+		<KH>Change subject</KH>
+		<EN>Change subject</EN>
+		<CN>Change subject</CN>
+		<JP>Change subject</JP>
+		<KR>Change subject</KR>
+		<VN>Change subject</VN>
+	</content>
+	<content id="ChangeVisible">
+		<KH>Change status</KH>
+		<EN>Change status</EN>
+		<CN>Change status</CN>
+		<JP>Change status</JP>
+		<KR>Change status</KR>
+		<VN>Change status</VN>
+	</content>
+	<content id="changeimage">
+		<KH>to change image</KH>
+		<EN>to change image</EN>
+		<CN>to change image</CN>
+		<JP>to change image</JP>
+		<KR>to change image</KR>
+		<VN>to change image</VN>
+	</content>
+	<content id="setNewReleases">
+		<KH>Set New Releases</KH>
+		<EN>Set New Releases</EN>
+		<CN>Set New Releases</CN>
+		<JP>Set New Releases</JP>
+		<KR>Set New Releases</KR>
+		<VN>Set New Releases</VN>
+	</content>
+	<content id="Title">
+		<KH>Title</KH>
+		<EN>Title</EN>
+		<CN>Title</CN>
+		<JP>Title</JP>
+		<KR>Title</KR>
+		<VN>Title</VN>
+	</content>
+	<content id="movies_name">
+		<KH>Movies Name</KH>
+		<EN>Movies Name</EN>
+		<CN>Movies Name</CN>
+		<JP>Movies Name</JP>
+		<KR>Movies Name</KR>
+		<VN>Movies Name</VN>
+	</content>
+	<content id="Actors">
+		<KH>Actors</KH>
+		<EN>Actors</EN>
+		<CN>Actors</CN>
+		<JP>Actors</JP>
+		<KR>Actors</KR>
+		<VN>Actors</VN>
+	</content>
+	<content id="Director">
+		<KH>Director</KH>
+		<EN>Director</EN>
+		<CN>Director</CN>
+		<JP>Director</JP>
+		<KR>Director</KR>
+		<VN>Director</VN>
+	</content>
+	<content id="Trailer">
+		<KH>Trailer</KH>
+		<EN>Trailer</EN>
+		<CN>Trailer</CN>
+		<JP>Trailer</JP>
+		<KR>Trailer</KR>
+		<VN>Trailer</VN>
+	</content>
+	<content id="Subtitle">
+		<KH>Subtitle</KH>
+		<EN>Subtitle</EN>
+		<CN>Subtitle</CN>
+		<JP>Subtitle</JP>
+		<KR>Subtitle</KR>
+		<VN>Subtitle</VN>
+	</content>
+	<content id="Status">
+		<KH>Status</KH>
+		<EN>Status</EN>
+		<CN>Status</CN>
+		<JP>Status</JP>
+		<KR>Status</KR>
+		<VN>Status</VN>
+	</content>
+	<content id="NewReleases">
+		<KH>New Releases</KH>
+		<EN>New Releases</EN>
+		<CN>New Releases</CN>
+		<JP>New Releases</JP>
+		<KR>New Releases</KR>
+		<VN>New Releases</VN>
+	</content>
+	<content id="Name">
+		<KH>Name</KH>
+		<EN>Name</EN>
+		<CN>Name</CN>
+		<JP>Name</JP>
+		<KR>Name</KR>
+		<VN>Name</VN>
+	</content>
+	<content id="Language">
+		<KH>Language</KH>
+		<EN>Language</EN>
+		<CN>Language</CN>
+		<JP>Language</JP>
+		<KR>Language</KR>
+		<VN>Language</VN>
+	</content>
+	<content id="OK">
+		<KH>OK</KH>
+		<EN>OK</EN>
+		<CN>OK</CN>
+		<JP>OK</JP>
+		<KR>OK</KR>
+		<VN>OK</VN>
+	</content>
+	<content id="Cancel">
+		<KH>Cancel</KH>
+		<EN>Cancel</EN>
+		<CN>Cancel</CN>
+		<JP>Cancel</JP>
+		<KR>Cancel</KR>
+		<VN>Cancel</VN>
+	</content>
+	<content id="Delete">
+		<KH>Delete</KH>
+		<EN>Delete</EN>
+		<CN>Delete</CN>
+		<JP>Delete</JP>
+		<KR>Delete</KR>
+		<VN>Delete</VN>
+	</content>
+	<content id="image_">
+		<KH>Image</KH>
+		<EN>Image</EN>
+		<CN>Image</CN>
+		<JP>Image</JP>
+		<KR>Image</KR>
+		<VN>Image</VN>
+	</content>
+	<content id="Description">
+		<KH>Description</KH>
+		<EN>Description</EN>
+		<CN>Description</CN>
+		<JP>Description</JP>
+		<KR>Description</KR>
+		<VN>Description</VN>
+	</content>
+	<content id="FilePath">
+		<KH>Path</KH>
+		<EN>Path</EN>
+		<CN>Path</CN>
+		<JP>Path</JP>
+		<KR>Path</KR>
+		<VN>Path</VN>
+	</content>
+	<content id="Price_movie">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CN>Price</CN>
+		<JP>Price</JP>
+		<KR>Price</KR>
+		<VN>Price</VN>
+	</content>
+	<content id="MovieInfor">
+		<KH>Moive Information</KH>
+		<EN>Moive Information</EN>
+		<CN>Moive Information</CN>
+		<JP>Moive Information</JP>
+		<KR>Moive Information</KR>
+		<VN>Moive Information</VN>
+	</content>
+	<content id="MovieInfor">
+		<KH>Moive Information</KH>
+		<EN>Moive Information</EN>
+		<CN>Moive Information</CN>
+		<JP>Moive Information</JP>
+		<KR>Moive Information</KR>
+		<VN>Moive Information</VN>
+	</content>
+	<content id="CurrentSubject">
+		<KH>Current subject</KH>
+		<EN>Current subject</EN>
+		<CN>Current subject</CN>
+		<JP>Current subject</JP>
+		<KR>Current subject</KR>
+		<VN>Current subject</VN>
+	</content>
+	<content id="select_subject">
+		<KH>Select Subject</KH>
+		<EN>Select Subject</EN>
+		<CN>Select Subject</CN>
+		<JP>Select Subject</JP>
+		<KR>Select Subject</KR>
+		<VN>Select Subject</VN>
+	</content>
+	<content id="NewSubject">
+		<KH>New subject</KH>
+		<EN>New subject</EN>
+		<CN>New subject</CN>
+		<JP>New subject</JP>
+		<KR>New subject</KR>
+		<VN>New subject</VN>
+	</content>
+	<content id="lyric">
+		<KH>Lyric</KH>
+		<EN>Lyric</EN>
+		<CN>Lyric</CN>
+		<JP>Lyric</JP>
+		<KR>Lyric</KR>
+		<VN>Lyric</VN>
+	</content>
+	<content id="AudioTitle">
+		<KH>Title</KH>
+		<EN>Title</EN>
+		<CN>Title</CN>
+		<JP>Title</JP>
+		<KR>Title</KR>
+		<VN>Title</VN>
+	</content>
+	<content id="Singer">
+		<KH>Singer</KH>
+		<EN>Singer</EN>
+		<CN>Singer</CN>
+		<JP>Singer</JP>
+		<KR>Singer</KR>
+		<VN>Singer</VN>
+	</content>
+	<content id="edit_song">
+		<KH>Edit Song</KH>
+		<EN>Edit Song</EN>
+		<CN>Edit Song</CN>
+		<JP>Edit Song</JP>
+		<KR>Edit Song</KR>
+		<VN>Edit Song</VN>
+	</content>
+	<content id="Album">
+		<KH>Album</KH>
+		<EN>Album</EN>
+		<CN>Album</CN>
+		<JP>Album</JP>
+		<KR>Album</KR>
+		<VN>Album</VN>
+	</content>
+	<content id="DeleteSong">
+		<KH>Delete Song</KH>
+		<EN>Delete Song</EN>
+		<CN>Delete Song</CN>
+		<JP>Delete Song</JP>
+		<KR>Delete Song</KR>
+		<VN>Delete Song</VN>
+	</content>
+	<content id="DoubleClickToAdd">
+		<KH>Double click to add movie</KH>
+		<EN>Double click to add movie</EN>
+		<CN>Double click to add movie</CN>
+		<JP>Double click to add movie</JP>
+		<KR>Double click to add movie</KR>
+		<VN>Double click to add movie</VN>
+	</content>
+	<content id="detailMove">
+		<KH>Detail Movies</KH>
+		<EN>Detail Movies</EN>
+		<CN>Detail Movies</CN>
+		<JP>Detail Movies</JP>
+		<KR>Detail Movies</KR>
+		<VN>Detail Movies</VN>
+	</content>
+	<content id="delete_move">
+		<KH>Delete Movies</KH>
+		<EN>Delete Movies</EN>
+		<CN>Delete Movies</CN>
+		<JP>Delete Movies</JP>
+		<KR>Delete Movies</KR>
+		<VN>Delete Movies</VN>
+	</content>
+	<content id="set_subtitle">
+		<KH>Set Subtitle</KH>
+		<EN>Set Subtitle</EN>
+		<CN>Set Subtitle</CN>
+		<JP>Set Subtitle</JP>
+		<KR>Set Subtitle</KR>
+		<VN>Set Subtitle</VN>
+	</content>
+	<content id="set_trailer">
+		<KH>Set trailer</KH>
+		<EN>Set trailer</EN>
+		<CN>Set trailer</CN>
+		<JP>Set trailer</JP>
+		<KR>Set trailer</KR>
+		<VN>Set trailer</VN>
+	</content>
+	<content id="not_set">
+		<KH>Not set</KH>
+		<EN>Not set</EN>
+		<CN>Not set</CN>
+		<JP>Not set</JP>
+		<KR>Not set</KR>
+		<VN>Not set</VN>
+	</content>
+	<content id="info_movie">
+		<KH>Information Movies</KH>
+		<EN>Information Movies</EN>
+		<CN>Information Movies</CN>
+		<JP>Information Movies</JP>
+		<KR>Information Movies</KR>
+		<VN>Information Movies</VN>
+	</content>
+	<content id="movie_add_service">
+		<KH>Add movies to service</KH>
+		<EN>Add movies to service</EN>
+		<CN>Add movies to service</CN>
+		<JP>Add movies to service</JP>
+		<KR>Add movies to service</KR>
+		<VN>Add movies to service</VN>
+	</content>
+	<content id="click_add">
+		<KH>Double click to add to Service</KH>
+		<EN>Double click to add to Service</EN>
+		<CN>Double click to add to Service</CN>
+		<JP>Double click to add to Service</JP>
+		<KR>Double click to add to Service</KR>
+		<VN>Double click to add to Service</VN>
+	</content>
+	<content id="click_remove">
+		<KH>Double click remove Service</KH>
+		<EN>Double click remove Service</EN>
+		<CN>Double click remove Service</CN>
+		<JP>Double click remove Service</JP>
+		<KR>Double click remove Service</KR>
+		<VN>Double click remove Service</VN>
+	</content>
+	<content id="ctn_subject">
+		<KH>Content Subject</KH>
+		<EN>Content Subject</EN>
+		<CN>Content Subject</CN>
+		<JP>Content Subject</JP>
+		<KR>Content Subject</KR>
+		<VN>Content Subject</VN>
+	</content>
+	<content id="srv_subject">
+		<KH>Service Content</KH>
+		<EN>Service Content</EN>
+		<CN>Service Content</CN>
+		<JP>Service Content</JP>
+		<KR>Service Content</KR>
+		<VN>Service Content</VN>
+	</content>
+	<content id="pricelarge">
+		<KH>Price Large</KH>
+		<EN>Price Large</EN>
+		<CN>Price Large</CN>
+		<JP>Price Large</JP>
+		<KR>Price Large</KR>
+		<VN>Price Large</VN>
+	</content>
+	<content id="pricesmall">
+		<KH>Price Small</KH>
+		<EN>Price Small</EN>
+		<CN>Price Small</CN>
+		<JP>Price Small</JP>
+		<KR>Price Small</KR>
+		<VN>Price Small</VN>
+	</content>
+	<content id="price_pms">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CN>Price</CN>
+		<JP>Price</JP>
+		<KR>Price</KR>
+		<VN>Price</VN>
+	</content>
+	<content id="housekeeping">
+		<KH>House Keeping</KH>
+		<EN>House Keeping</EN>
+		<CN>House Keeping</CN>
+		<JP>House Keeping</JP>
+		<KR>House Keeping</KR>
+		<VN>House Keeping</VN>
+	</content>
+	<content id="login">
+		<KH>Login</KH>
+		<EN>Login</EN>
+		<CN>Login</CN>
+		<JP>Login</JP>
+		<KR>Login</KR>
+		<VN>Login</VN>
+	</content>
+	<content id="user">
+		<KH>User Name</KH>
+		<EN>User Name</EN>
+		<CN>User Name</CN>
+		<JP>User Name</JP>
+		<KR>User Name</KR>
+		<VN>User Name</VN>
+	</content>
+	<content id="restaurant">
+		<KH>Restaurant</KH>
+		<EN>Restaurant</EN>
+		<CN>Restaurant</CN>
+		<JP>Restaurant</JP>
+		<KR>Restaurant</KR>
+		<VN>Restaurant</VN>
+	</content>
+	<content id="dinning">
+		<KH>Dining</KH>
+		<EN>Dining</EN>
+		<CN>Dining</CN>
+		<JP>Dining</JP>
+		<KR>Dining</KR>
+		<VN>Dining</VN>
+	</content>
+	<content id="mod_toservice">
+		<KH>Double click to add to Service</KH>
+		<EN>Double click to add to Service</EN>
+		<CN>Double click to add to Service</CN>
+		<JP>Double click to add to Service</JP>
+		<KR>Double click to add to Service</KR>
+		<VN>Double click to add to Service</VN>
+	</content>
+	<content id="pls_name">
+		<KH>Please select Name.</KH>
+		<EN>Please select Name.</EN>
+		<CN>Please select Name.</CN>
+		<JP>Please select Name.</JP>
+		<KR>Please select Name.</KR>
+		<VN>Please select Name.</VN>
+	</content>
+	<content id="pls_address">
+		<KH>Please select address.</KH>
+		<EN>Please select address.</EN>
+		<CN>Please select address.</CN>
+		<JP>Please select address.</JP>
+		<KR>Please select address.</KR>
+		<VN>Please select address.</VN>
+	</content>
+	<content id="pls_ratename">
+		<KH>Please input rate name.</KH>
+		<EN>Please input rate name.</EN>
+		<CN>Please input rate name.</CN>
+		<JP>Please input rate name.</JP>
+		<KR>Please input rate name.</KR>
+		<VN>Please input rate name.</VN>
+	</content>
+	<content id="ple_ratecode">
+		<KH>Please input rate code.</KH>
+		<EN>Please input rate code.</EN>
+		<CN>Please input rate code.</CN>
+		<JP>Please input rate code.</JP>
+		<KR>Please input rate code.</KR>
+		<VN>Please input rate code.</VN>
+	</content>
+	<content id="pls_ratesell">
+		<KH>please input sell.</KH>
+		<EN>please input sell.</EN>
+		<CN>please input sell.</CN>
+		<JP>please input sell.</JP>
+		<KR>please input sell.</KR>
+		<VN>please input sell.</VN>
+	</content>
+	<content id="pls_ratetranfer">
+		<KH>Please input tranfer.</KH>
+		<EN>Please input tranfer.</EN>
+		<CN>Please input tranfer.</CN>
+		<JP>Please input tranfer.</JP>
+		<KR>Please input tranfer.</KR>
+		<VN>Please input tranfer.</VN>
+	</content>
+	<content id="pls_ratebuy">
+		<KH>Please input buy.</KH>
+		<EN>Please input buy.</EN>
+		<CN>Please input buy.</CN>
+		<JP>Please input buy.</JP>
+		<KR>Please input buy.</KR>
+		<VN>Please input buy.</VN>
+	</content>
+	<content id="pls_select">
+		<KH>Please select type.</KH>
+		<EN>Please select type.</EN>
+		<CN>Please select type.</CN>
+		<JP>Please select type.</JP>
+		<KR>Please select type.</KR>
+		<VN>Please select type.</VN>
+	</content>
+	<content id="pls_inputprice">
+		<KH>Please input price .</KH>
+		<EN>Please input price .</EN>
+		<CN>Please input price .</CN>
+		<JP>Please input price .</JP>
+		<KR>Please input price .</KR>
+		<VN>Please input price .</VN>
+	</content>
+	<content id="pls_price_small">
+		<KH>Please input price small.</KH>
+		<EN>Please input price small.</EN>
+		<CN>Please input price small.</CN>
+		<JP>Please input price small.</JP>
+		<KR>Please input price small.</KR>
+		<VN>Please input price small.</VN>
+	</content>
+	<content id="pls_price_large">
+		<KH>Please input price large.</KH>
+		<EN>Please input price large.</EN>
+		<CN>Please input price large.</CN>
+		<JP>Please input price large.</JP>
+		<KR>Please input price large.</KR>
+		<VN>Please input price large.</VN>
+	</content>
+	<content id="ple_namevod">
+		<KH>please input name of movies.</KH>
+		<EN>please input name of movies.</EN>
+		<CN>please input name of movies.</CN>
+		<JP>please input name of movies.</JP>
+		<KR>please input name of movies.</KR>
+		<VN>please input name of movies.</VN>
+	</content>
+	<content id="pls_selectsubject">
+		<KH>Please select subject !.</KH>
+		<EN>Please select subject !.</EN>
+		<CN>Please select subject !.</CN>
+		<JP>Please select subject !.</JP>
+		<KR>Please select subject !.</KR>
+		<VN>Please select subject !.</VN>
+	</content>
+	<content id="pls_price_input">
+		<KH>Please input price</KH>
+		<EN>Please input price</EN>
+		<CN>Please input price</CN>
+		<JP>Please input price</JP>
+		<KR>Please input price</KR>
+		<VN>Please input price</VN>
+	</content>
+	<content id="pls_selectmovies">
+		<KH>Please select movies.</KH>
+		<EN>Please select movies.</EN>
+		<CN>Please select movies.</CN>
+		<JP>Please select movies.</JP>
+		<KR>Please select movies.</KR>
+		<VN>Please select movies.</VN>
+	</content>
+	<content id="calenda_now">
+		<KH>Today is maximun day.</KH>
+		<EN>Today is maximun day.</EN>
+		<CN>Today is maximun day.</CN>
+		<JP>Today is maximun day.</JP>
+		<KR>Today is maximun day.</KR>
+		<VN>Today is maximun day.</VN>
+	</content>
+	<content id="notrole">
+		<KH>You do not have permission to access </KH>
+		<EN>You do not have permission to access </EN>
+		<CN>You do not have permission to access </CN>
+		<JP>You do not have permission to access </JP>
+		<KR>You do not have permission to access </KR>
+		<VN>You do not have permission to access </VN>
+	</content>
+	<content id="roomcode">
+		<KH>Room Code</KH>
+		<EN>Room Code</EN>
+		<CN>Room Code</CN>
+		<JP>Room Code</JP>
+		<KR>Room Code</KR>
+		<VN>Room Code</VN>
+	</content>
+	<content id="room_checkout">
+		<KH>Room is checkout.</KH>
+		<EN>Room is checkout.</EN>
+		<CN>Room is checkout.</CN>
+		<JP>Room is checkout.</JP>
+		<KR>Room is checkout.</KR>
+		<VN>Room is checkout.</VN>
+	</content>
+	<content id="ifo_notdelsub">
+		<KH>This subject is not allowed to delete.</KH>
+		<EN>This subject is not allowed to delete.</EN>
+		<CN>This subject is not allowed to delete.</CN>
+		<JP>This subject is not allowed to delete.</JP>
+		<KR>This subject is not allowed to delete.</KR>
+		<VN>This subject is not allowed to delete.</VN>
+	</content>
+	<content id="static_film">
+		<KH>Statistics of film</KH>
+		<EN>Statistics of film</EN>
+		<CN>Statistics of film</CN>
+		<JP>Statistics of film</JP>
+		<KR>Statistics of film</KR>
+		<VN>Statistics of film</VN>
+	</content>
+	<content id="static_audio">
+		<KH>Statistics of audio</KH>
+		<EN>Statistics of audio</EN>
+		<CN>Statistics of audio</CN>
+		<JP>Statistics of audio</JP>
+		<KR>Statistics of audio</KR>
+		<VN>Statistics of audio</VN>
+	</content>
+	<content id="static_livetv">
+		<KH>Statistics of livetv</KH>
+		<EN>Statistics of livetv</EN>
+		<CN>Statistics of livetv</CN>
+		<JP>Statistics of livetv</JP>
+		<KR>Statistics of livetv</KR>
+		<VN>Statistics of livetv</VN>
+	</content>
+	<content id="static_genres">
+		<KH>Statistics genres</KH>
+		<EN>Statistics genres</EN>
+		<CN>Statistics genres</CN>
+		<JP>Statistics genres</JP>
+		<KR>Statistics genres</KR>
+		<VN>Statistics genres</VN>
+	</content>
+	<content id="static_of_movies">
+		<KH>Statistics of movies</KH>
+		<EN>Statistics of movies</EN>
+		<CN>Statistics of movies</CN>
+		<JP>Statistics of movies</JP>
+		<KR>Statistics of movies</KR>
+		<VN>Statistics of movies</VN>
+	</content>
+	<content id="static_of_audios">
+		<KH>Statistics of audios</KH>
+		<EN>Statistics of audios</EN>
+		<CN>Statistics of audios</CN>
+		<JP>Statistics of audios</JP>
+		<KR>Statistics of audios</KR>
+		<VN>Statistics of audios</VN>
+	</content>
+	<content id="static_of_livetvs">
+		<KH>Statistics of livetv</KH>
+		<EN>Statistics of livetv</EN>
+		<CN>Statistics of livetv</CN>
+		<JP>Statistics of livetv</JP>
+		<KR>Statistics of livetv</KR>
+		<VN>Statistics of livetv</VN>
+	</content>
+	<content id="transportstatic">
+		<KH>Static transport</KH>
+		<EN>Static transport</EN>
+		<CN>Static transport</CN>
+		<JP>Static transport</JP>
+		<KR>Static transport</KR>
+		<VN>Static transport</VN>
+	</content>
+	<content id="reporttype">
+		<KH>Report type</KH>
+		<EN>Report type</EN>
+		<CN>Report type</CN>
+		<JP>Report type</JP>
+		<KR>Report type</KR>
+		<VN>Report type</VN>
+	</content>
+	<content id="select_year">
+		<KH>Select year</KH>
+		<EN>Select year</EN>
+		<CN>Select year</CN>
+		<JP>Select year</JP>
+		<KR>Select year</KR>
+		<VN>Select year</VN>
+	</content>
+	<content id="select_month">
+		<KH>Select month</KH>
+		<EN>Select month</EN>
+		<CN>Select month</CN>
+		<JP>Select month</JP>
+		<KR>Select month</KR>
+		<VN>Select month</VN>
+	</content>
+	<content id="to_date">
+		<KH>To date</KH>
+		<EN>To date</EN>
+		<CN>To date</CN>
+		<JP>To date</JP>
+		<KR>To date</KR>
+		<VN>To date</VN>
+	</content>
+	<content id="from_date">
+		<KH>From date</KH>
+		<EN>From date</EN>
+		<CN>From date</CN>
+		<JP>From date</JP>
+		<KR>From date</KR>
+		<VN>From date</VN>
+	</content>
+	<content id="Monthly">
+		<KH>Monthly</KH>
+		<EN>Monthly</EN>
+		<CN>Monthly</CN>
+		<JP>Monthly</JP>
+		<KR>Monthly</KR>
+		<VN>Monthly</VN>
+	</content>
+	<content id="static_month">
+		<KH>Yearly Statistics</KH>
+		<EN>Yearly Statistics</EN>
+		<CN>Yearly Statistics</CN>
+		<JP>Yearly Statistics</JP>
+		<KR>Yearly Statistics</KR>
+		<VN>Yearly Statistics</VN>
+	</content>
+	<content id="Weekly">
+		<KH>Weekly</KH>
+		<EN>Weekly</EN>
+		<CN>Weekly</CN>
+		<JP>Weekly</JP>
+		<KR>Weekly</KR>
+		<VN>Weekly</VN>
+	</content>
+	<content id="static_week">
+		<KH>Monthly Statistics</KH>
+		<EN>Monthly Statistics</EN>
+		<CN>Monthly Statistics</CN>
+		<JP>Monthly Statistics</JP>
+		<KR>Monthly Statistics</KR>
+		<VN>Monthly Statistics</VN>
+	</content>
+	<content id="numberl_service">
+		<KH>Number of times for using the service</KH>
+		<EN>Number of times for using the service</EN>
+		<CN>Number of times for using the service</CN>
+		<JP>Number of times for using the service</JP>
+		<KR>Number of times for using the service</KR>
+		<VN>Number of times for using the service</VN>
+	</content>
+	<content id="static_roomservice">
+		<KH>Room service Statistics</KH>
+		<EN>Room service Statistics</EN>
+		<CN>Room service Statistics</CN>
+		<JP>Room service Statistics</JP>
+		<KR>Room service Statistics</KR>
+		<VN>Room service Statistics</VN>
+	</content>
+	<content id="note_report">
+		<KH>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</KH>
+		<EN>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</EN>
+		<CN>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</CN>
+		<JP>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</JP>
+		<KR>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</KR>
+		<VN>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</VN>
+	</content>
+	<content id="listwaitingvod">
+		<KH>List movies </KH>
+		<EN>List movies </EN>
+		<CN>List movies </CN>
+		<JP>List movies </JP>
+		<KR>List movies </KR>
+		<VN>List movies </VN>
+	</content>
+	<content id="listaddvod">
+		<KH>List movie completed</KH>
+		<EN>List movie completed</EN>
+		<CN>List movie completed</CN>
+		<JP>List movie completed</JP>
+		<KR>List movie completed</KR>
+		<VN>List movie completed</VN>
+	</content>
+	<content id="SynVodStb">
+		<KH>Syn Vod</KH>
+		<EN>Syn Vod</EN>
+		<CN>Syn Vod</CN>
+		<JP>Syn Vod</JP>
+		<KR>Syn Vod</KR>
+		<VN>Syn Vod</VN>
+	</content>
+	<content id="exist_movie">
+		<KH>This movie exist.</KH>
+		<EN>This movie exist.</EN>
+		<CN>This movie exist.</CN>
+		<JP>This movie exist.</JP>
+		<KR>This movie exist.</KR>
+		<VN>This movie exist.</VN>
+	</content>
+	<content id="coord_x">
+		<KH>X</KH>
+		<EN>X</EN>
+		<CN>X</CN>
+		<JP>X</JP>
+		<KR>X</KR>
+		<VN>X</VN>
+	</content>
+	<content id="coord_y">
+		<KH>Y</KH>
+		<EN>Y</EN>
+		<CN>Y</CN>
+		<JP>Y</JP>
+		<KR>Y</KR>
+		<VN>Y</VN>
+	</content>
+	<content id="update">
+		<KH>Update</KH>
+		<EN>Update</EN>
+		<CN>Update</CN>
+		<JP>Update</JP>
+		<KR>Update</KR>
+		<VN>Update</VN>
+	</content>
+	<content id="search">
+		<KH>Search</KH>
+		<EN>Search</EN>
+		<CN>Search</CN>
+		<JP>Search</JP>
+		<KR>Search</KR>
+		<VN>Search</VN>
+	</content>
+	<content id="distance">
+		<KH>Distance</KH>
+		<EN>Distance</EN>
+		<CN>Distance</CN>
+		<JP>Distance</JP>
+		<KR>Distance</KR>
+		<VN>Distance</VN>
+	</content>
+	<content id="add">
+		<KH>Add</KH>
+		<EN>Add</EN>
+		<CN>Add</CN>
+		<JP>Add</JP>
+		<KR>Add</KR>
+		<VN>Add</VN>
+	</content>
+	<content id="checkName">
+		<KH>Name is empty</KH>
+		<EN>Name is empty</EN>
+		<CN>Name is empty</CN>
+		<JP>Name is empty</JP>
+		<KR>Name is empty</KR>
+		<VN>Name is empty</VN>
+	</content>
+	<content id="checkDistance">
+		<KH>Distance is empty</KH>
+		<EN>Distance is empty</EN>
+		<CN>Distance is empty</CN>
+		<JP>Distance is empty</JP>
+		<KR>Distance is empty</KR>
+		<VN>Distance is empty</VN>
+	</content>
+	<content id="checkX">
+		<KH>X is empty</KH>
+		<EN>X is empty</EN>
+		<CN>X is empty</CN>
+		<JP>X is empty</JP>
+		<KR>X is empty</KR>
+		<VN>X is empty</VN>
+	</content>
+	<content id="checkY">
+		<KH>Y is empty</KH>
+		<EN>Y is empty</EN>
+		<CN>Y is empty</CN>
+		<JP>Y is empty</JP>
+		<KR>Y is empty</KR>
+		<VN>Y is empty</VN>
+	</content>
+	<content id="checkAdd">
+		<KH>Add failed</KH>
+		<EN>Add failed</EN>
+		<CN>Add failed</CN>
+		<JP>Add failed</JP>
+		<KR>Add failed</KR>
+		<VN>Add failed</VN>
+	</content>
+	<content id="checkCoord">
+		<KH>Update coordinates</KH>
+		<EN>Update coordinates</EN>
+		<CN>Update coordinates</CN>
+		<JP>Update coordinates</JP>
+		<KR>Update coordinates</KR>
+		<VN>Update coordinates</VN>
+	</content>
+	<content id="changLocation">
+		<KH>Update Location</KH>
+		<EN>Update Location</EN>
+		<CN>Update Location</CN>
+		<JP>Update Location</JP>
+		<KR>Update Location</KR>
+		<VN>Update Location</VN>
+	</content>
+	<content id="checkUpdate">
+		<KH>Updated failed</KH>
+		<EN>Updated failed</EN>
+		<CN>Updated failed</CN>
+		<JP>Updated failed</JP>
+		<KR>Updated failed</KR>
+		<VN>Updated failed</VN>
+	</content>
+	<content id="changeWay">
+		<KH>Way</KH>
+		<EN>Way</EN>
+		<CN>Way</CN>
+		<JP>Way</JP>
+		<KR>Way</KR>
+		<VN>Way</VN>
+	</content>
+	<content id="changeMap">
+		<KH>My Location</KH>
+		<EN>My Location</EN>
+		<CN>My Location</CN>
+		<JP>My Location</JP>
+		<KR>My Location</KR>
+		<VN>My Location</VN>
+	</content>
+	<content id="changeLocation">
+		<KH>Locations</KH>
+		<EN>Locations</EN>
+		<CN>Locations</CN>
+		<JP>Locations</JP>
+		<KR>Locations</KR>
+		<VN>Locations</VN>
+	</content>
+	<content id="changeMapTap">
+		<KH>Hotel Information</KH>
+		<EN>Hotel Information</EN>
+		<CN>Hotel Information</CN>
+		<JP>Hotel Information</JP>
+		<KR>Hotel Information</KR>
+		<VN>Hotel Information</VN>
+	</content>
+	<content id="changeLocationTap">
+		<KH>Location Information</KH>
+		<EN>Location Information</EN>
+		<CN>Location Information</CN>
+		<JP>Location Information</JP>
+		<KR>Location Information</KR>
+		<VN>Location Information</VN>
+	</content>
+	<content id="no">
+		<KH>No</KH>
+		<EN>No</EN>
+		<CN>No</CN>
+		<JP>No</JP>
+		<KR>No</KR>
+		<VN>No</VN>
+	</content>
+	<content id="department">
+		<KH>Department</KH>
+		<EN>Department</EN>
+		<CN>Department</CN>
+		<JP>Department</JP>
+		<KR>Department</KR>
+		<VN>Department</VN>
+	</content>
+	<content id="createDate">
+		<KH>CreateDate</KH>
+		<EN>CreateDate</EN>
+		<CN>CreateDate</CN>
+		<JP>CreateDate</JP>
+		<KR>CreateDate</KR>
+		<VN>CreateDate</VN>
+	</content>
+	<content id="active">
+		<KH>Active</KH>
+		<EN>Active</EN>
+		<CN>Active</CN>
+		<JP>Active</JP>
+		<KR>Active</KR>
+		<VN>Active</VN>
+	</content>
+	<content id="totalUser">
+		<KH>List of Users</KH>
+		<EN>List of Users</EN>
+		<CN>List of Users</CN>
+		<JP>List of Users</JP>
+		<KR>List of Users</KR>
+		<VN>List of Users</VN>
+	</content>
+	<content id="createNewUser">
+		<KH>Create new user</KH>
+		<EN>Create new user</EN>
+		<CN>Create new user</CN>
+		<JP>Create new user</JP>
+		<KR>Create new user</KR>
+		<VN>Create new user</VN>
+	</content>
+	<content id="account">
+		<KH>Account</KH>
+		<EN>Account</EN>
+		<CN>Account</CN>
+		<JP>Account</JP>
+		<KR>Account</KR>
+		<VN>Account</VN>
+	</content>
+	<content id="password">
+		<KH>Password</KH>
+		<EN>Password</EN>
+		<CN>Password</CN>
+		<JP>Password</JP>
+		<KR>Password</KR>
+		<VN>Password</VN>
+	</content>
+	<content id="cfPassword">
+		<KH>Re-enter Password</KH>
+		<EN>Re-enter Password</EN>
+		<CN>Re-enter Password</CN>
+		<JP>Re-enter Password</JP>
+		<KR>Re-enter Password</KR>
+		<VN>Re-enter Password</VN>
+	</content>
+	<content id="checkAccount">
+		<KH>Account is empty</KH>
+		<EN>Account is empty</EN>
+		<CN>Account is empty</CN>
+		<JP>Account is empty</JP>
+		<KR>Account is empty</KR>
+		<VN>Account is empty</VN>
+	</content>
+	<content id="checkPass">
+		<KH>Password is empty</KH>
+		<EN>Password is empty</EN>
+		<CN>Password is empty</CN>
+		<JP>Password is empty</JP>
+		<KR>Password is empty</KR>
+		<VN>Password is empty</VN>
+	</content>
+	<content id="checkcfPass">
+		<KH>Confirm Password is empty</KH>
+		<EN>Confirm Password is empty</EN>
+		<CN>Confirm Password is empty</CN>
+		<JP>Confirm Password is empty</JP>
+		<KR>Confirm Password is empty</KR>
+		<VN>Confirm Password is empty</VN>
+	</content>
+	<content id="checkMachPass">
+		<KH>Password do not match</KH>
+		<EN>Password do not match</EN>
+		<CN>Password do not match</CN>
+		<JP>Password do not match</JP>
+		<KR>Password do not match</KR>
+		<VN>Password do not match</VN>
+	</content>
+	<content id="userInfo">
+		<KH>User Information</KH>
+		<EN>User Information</EN>
+		<CN>User Information</CN>
+		<JP>User Information</JP>
+		<KR>User Information</KR>
+		<VN>User Information</VN>
+	</content>
+	<content id="checkDelete">
+		<KH>Deleted failed</KH>
+		<EN>Deleted failed</EN>
+		<CN>Deleted failed</CN>
+		<JP>Deleted failed</JP>
+		<KR>Deleted failed</KR>
+		<VN>Deleted failed</VN>
+	</content>
+	<content id="checkAddEx">
+		<KH>Account exists!</KH>
+		<EN>Account exists!</EN>
+		<CN>Account exists!</CN>
+		<JP>Account exists!</JP>
+		<KR>Account exists!</KR>
+		<VN>Account exists!</VN>
+	</content>
+	<content id="checkDeleteFrom">
+		<KH>Are you sure delete !</KH>
+		<EN>Are you sure delete !</EN>
+		<CN>Are you sure delete !</CN>
+		<JP>Are you sure delete !</JP>
+		<KR>Are you sure delete !</KR>
+		<VN>Are you sure delete !</VN>
+	</content>
+	<content id="NewSubjectMenu">
+		<KH>Create New Group</KH>
+		<EN>Create New Group</EN>
+		<CN>Create New Group</CN>
+		<JP>Create New Group</JP>
+		<KR>Create New Group</KR>
+		<VN>Create New Group</VN>
+	</content>
+	<content id="checkAddMenuEx">
+		<KH>Group exists!</KH>
+		<EN>Group exists!</EN>
+		<CN>Group exists!</CN>
+		<JP>Group exists!</JP>
+		<KR>Group exists!</KR>
+		<VN>Group exists!</VN>
+	</content>
+	<content id="checkUpdateMenuEx">
+		<KH>Update group</KH>
+		<EN>Update group</EN>
+		<CN>Update group</CN>
+		<JP>Update group</JP>
+		<KR>Update group</KR>
+		<VN>Update group</VN>
+	</content>
+	<content id="NamePms">
+		<KH>Group Permission</KH>
+		<EN>Group Permission</EN>
+		<CN>Group Permission</CN>
+		<JP>Group Permission</JP>
+		<KR>Group Permission</KR>
+		<VN>Group Permission</VN>
+	</content>
+	<content id="errorStatus">
+		<KH>Change status error</KH>
+		<EN>Change status error</EN>
+		<CN>Change status error</CN>
+		<JP>Change status error</JP>
+		<KR>Change status error</KR>
+		<VN>Change status error</VN>
+	</content>
+	<content id="NameGrant">
+		<KH>Grant permission</KH>
+		<EN>Grant permission</EN>
+		<CN>Grant permission</CN>
+		<JP>Grant permission</JP>
+		<KR>Grant permission</KR>
+		<VN>Grant permission</VN>
+	</content>
+	<content id="NameAssigned">
+		<KH>Role is assigned</KH>
+		<EN>Role is assigned</EN>
+		<CN>Role is assigned</CN>
+		<JP>Role is assigned</JP>
+		<KR>Role is assigned</KR>
+		<VN>Role is assigned</VN>
+	</content>
+	<content id="NameNotAssigned">
+		<KH>Role not is assigned</KH>
+		<EN>Role not is assigned</EN>
+		<CN>Role not is assigned</CN>
+		<JP>Role not is assigned</JP>
+		<KR>Role not is assigned</KR>
+		<VN>Role not is assigned</VN>
+	</content>
+	<content id="AddUser">
+		<KH>Add User</KH>
+		<EN>Add User</EN>
+		<CN>Add User</CN>
+		<JP>Add User</JP>
+		<KR>Add User</KR>
+		<VN>Add User</VN>
+	</content>
+	<content id="AccountLength">
+		<KH>Account only up to 6 characters</KH>
+		<EN>Account only up to 6 characters</EN>
+		<CN>Account only up to 6 characters</CN>
+		<JP>Account only up to 6 characters</JP>
+		<KR>Account only up to 6 characters</KR>
+		<VN>Account only up to 6 characters</VN>
+	</content>
+	<content id="group">
+		<KH>Group</KH>
+		<EN>Group</EN>
+		<CN>Group</CN>
+		<JP>Group</JP>
+		<KR>Group</KR>
+		<VN>Group</VN>
+	</content>
+	<content id="list">
+		<KH>List</KH>
+		<EN>List</EN>
+		<CN>List</CN>
+		<JP>List</JP>
+		<KR>List</KR>
+		<VN>List</VN>
+	</content>
+	<content id="changegroup">
+		<KH>Change group</KH>
+		<EN>Change group</EN>
+		<CN>Change group</CN>
+		<JP>Change group</JP>
+		<KR>Change group</KR>
+		<VN>Change group</VN>
+	</content>
+	<content id="addgroup">
+		<KH>Add group</KH>
+		<EN>Add group</EN>
+		<CN>Add group</CN>
+		<JP>Add group</JP>
+		<KR>Add group</KR>
+		<VN>Add group</VN>
+	</content>
+	<content id="creategroup">
+		<KH>Create new group</KH>
+		<EN>Create new group</EN>
+		<CN>Create new group</CN>
+		<JP>Create new group</JP>
+		<KR>Create new group</KR>
+		<VN>Create new group</VN>
+	</content>
+	<content id="deletegroup">
+		<KH>Delete group</KH>
+		<EN>Delete group</EN>
+		<CN>Delete group</CN>
+		<JP>Delete group</JP>
+		<KR>Delete group</KR>
+		<VN>Delete group</VN>
+	</content>
+	<content id="updategroup">
+		<KH>Edit group</KH>
+		<EN>Edit group</EN>
+		<CN>Edit group</CN>
+		<JP>Edit group</JP>
+		<KR>Edit group</KR>
+		<VN>Edit group</VN>
+	</content>
+	<content id="pmsgroup">
+		<KH>Group permission</KH>
+		<EN>Group permission</EN>
+		<CN>Group permission</CN>
+		<JP>Group permission</JP>
+		<KR>Group permission</KR>
+		<VN>Group permission</VN>
+	</content>
+	<content id="grantPms">
+		<KH>Grant permission</KH>
+		<EN>Grant permission</EN>
+		<CN>Grant permission</CN>
+		<JP>Grant permission</JP>
+		<KR>Grant permission</KR>
+		<VN>Grant permission</VN>
+	</content>
+	<content id="detailuser">
+		<KH>Detail user</KH>
+		<EN>Detail user</EN>
+		<CN>Detail user</CN>
+		<JP>Detail user</JP>
+		<KR>Detail user</KR>
+		<VN>Detail user</VN>
+	</content>
+	<content id="deleteuserg">
+		<KH>Delete user from group</KH>
+		<EN>Delete user from group</EN>
+		<CN>Delete user from group</CN>
+		<JP>Delete user from group</JP>
+		<KR>Delete user from group</KR>
+		<VN>Delete user from group</VN>
+	</content>
+	<content id="deleteusers">
+		<KH>Delete user from system</KH>
+		<EN>Delete user from system</EN>
+		<CN>Delete user from system</CN>
+		<JP>Delete user from system</JP>
+		<KR>Delete user from system</KR>
+		<VN>Delete user from system</VN>
+	</content>
+	<content id="changeStatus">
+		<KH>Change status</KH>
+		<EN>Change status</EN>
+		<CN>Change status</CN>
+		<JP>Change status</JP>
+		<KR>Change status</KR>
+		<VN>Change status</VN>
+	</content>
+	<content id="changegroupPms">
+		<KH>Change group</KH>
+		<EN>Change group</EN>
+		<CN>Change group</CN>
+		<JP>Change group</JP>
+		<KR>Change group</KR>
+		<VN>Change group</VN>
+	</content>
+	<content id="userNameGroup">
+		<KH>User name</KH>
+		<EN>User name</EN>
+		<CN>User name</CN>
+		<JP>User name</JP>
+		<KR>User name</KR>
+		<VN>User name</VN>
+	</content>
+	<content id="NameGroupPMS">
+		<KH>Group</KH>
+		<EN>Group</EN>
+		<CN>Group</CN>
+		<JP>Group</JP>
+		<KR>Group</KR>
+		<VN>Group</VN>
+	</content>
+	<content id="changePass">
+		<KH>Change password</KH>
+		<EN>Change password</EN>
+		<CN>Change password</CN>
+		<JP>Change password</JP>
+		<KR>Change password</KR>
+		<VN>Change password</VN>
+	</content>
+	<content id="code">
+		<KH>Code</KH>
+		<EN>Code</EN>
+		<CN>Code</CN>
+		<JP>Code</JP>
+		<KR>Code</KR>
+		<VN>Code</VN>
+	</content>
+	<content id="liveTV">
+		<KH>liveTV</KH>
+		<EN>liveTV</EN>
+		<CN>liveTV</CN>
+		<JP>liveTV</JP>
+		<KR>liveTV</KR>
+		<VN>liveTV</VN>
+	</content>
+	<content id="addLiveTv">
+		<KH>Add LiveTV</KH>
+		<EN>Add LiveTV</EN>
+		<CN>Add LiveTV</CN>
+		<JP>Add LiveTV</JP>
+		<KR>Add LiveTV</KR>
+		<VN>Add LiveTV</VN>
+	</content>
+	<content id="deleteLiveTv">
+		<KH>Delete LiveTV</KH>
+		<EN>Delete LiveTV</EN>
+		<CN>Delete LiveTV</CN>
+		<JP>Delete LiveTV</JP>
+		<KR>Delete LiveTV</KR>
+		<VN>Delete LiveTV</VN>
+	</content>
+	<content id="updateLiveTv">
+		<KH>Edit LiveTV</KH>
+		<EN>Edit LiveTV</EN>
+		<CN>Edit LiveTV</CN>
+		<JP>Edit LiveTV</JP>
+		<KR>Edit LiveTV</KR>
+		<VN>Edit LiveTV</VN>
+	</content>
+	<content id="detailLiveTv">
+		<KH>Detail LiveTV</KH>
+		<EN>Detail LiveTV</EN>
+		<CN>Detail LiveTV</CN>
+		<JP>Detail LiveTV</JP>
+		<KR>Detail LiveTV</KR>
+		<VN>Detail LiveTV</VN>
+	</content>
+	<content id="editLiveTV">
+		<KH>Edit Live</KH>
+		<EN>Edit Live</EN>
+		<CN>Edit Live</CN>
+		<JP>Edit Live</JP>
+		<KR>Edit Live</KR>
+		<VN>Edit Live</VN>
+	</content>
+	<content id="checkEditEx">
+		<KH>Name exists!</KH>
+		<EN>Name exists!</EN>
+		<CN>Name exists!</CN>
+		<JP>Name exists!</JP>
+		<KR>Name exists!</KR>
+		<VN>Name exists!</VN>
+	</content>
+	<content id="serviceName">
+		<KH>Service name</KH>
+		<EN>Service name</EN>
+		<CN>Service name</CN>
+		<JP>Service name</JP>
+		<KR>Service name</KR>
+		<VN>Service name</VN>
+	</content>
+	<content id="content">
+		<KH>Content</KH>
+		<EN>Content</EN>
+		<CN>Content</CN>
+		<JP>Content</JP>
+		<KR>Content</KR>
+		<VN>Content</VN>
+	</content>
+	<content id="contentSubject">
+		<KH>Service Subject</KH>
+		<EN>Service Subject</EN>
+		<CN>Service Subject</CN>
+		<JP>Service Subject</JP>
+		<KR>Service Subject</KR>
+		<VN>Service Subject</VN>
+	</content>
+	<content id="total">
+		<KH>Total</KH>
+		<EN>Total</EN>
+		<CN>Total</CN>
+		<JP>Total</JP>
+		<KR>Total</KR>
+		<VN>Total</VN>
+	</content>
+	<content id="changeIma">
+		<KH>to change image</KH>
+		<EN>to change image</EN>
+		<CN>to change image</CN>
+		<JP>to change image</JP>
+		<KR>to change image</KR>
+		<VN>to change image</VN>
+	</content>
+	<content id="dbclickaddchannel">
+		<KH>Double click to add channel</KH>
+		<EN>Double click to add channel</EN>
+		<CN>Double click to add channel</CN>
+		<JP>Double click to add channel</JP>
+		<KR>Double click to add channel</KR>
+		<VN>Double click to add channel</VN>
+	</content>
+	<content id="dbclickremovechannel">
+		<KH>Double click to remove channel</KH>
+		<EN>Double click to remove channel</EN>
+		<CN>Double click to remove channel</CN>
+		<JP>Double click to remove channel</JP>
+		<KR>Double click to remove channel</KR>
+		<VN>Double click to remove channel</VN>
+	</content>
+	<content id="subjectLength">
+		<KH>Subject only up to 30 characters</KH>
+		<EN>Subject only up to 30 characters</EN>
+		<CN>Subject only up to 30 characters</CN>
+		<JP>Subject only up to 30 characters</JP>
+		<KR>Subject only up to 30 characters</KR>
+		<VN>Subject only up to 30 characters</VN>
+	</content>
+	<content id="subjectName">
+		<KH>Please input subject name</KH>
+		<EN>Please input subject name</EN>
+		<CN>Please input subject name</CN>
+		<JP>Please input subject name</JP>
+		<KR>Please input subject name</KR>
+		<VN>Please input subject name</VN>
+	</content>
+	<content id="subjectInfo">
+		<KH>Subject Infomation</KH>
+		<EN>Subject Infomation</EN>
+		<CN>Subject Infomation</CN>
+		<JP>Subject Infomation</JP>
+		<KR>Subject Infomation</KR>
+		<VN>Subject Infomation</VN>
+	</content>
+	<content id="subjectInfoLive">
+		<KH>Livetv Information</KH>
+		<EN>Livetv Information</EN>
+		<CN>Livetv Information</CN>
+		<JP>Livetv Information</JP>
+		<KR>Livetv Information</KR>
+		<VN>Livetv Information</VN>
+	</content>
+	<content id="selectItem">
+		<KH>Please select item !</KH>
+		<EN>Please select item !</EN>
+		<CN>Please select item !</CN>
+		<JP>Please select item !</JP>
+		<KR>Please select item !</KR>
+		<VN>Please select item !</VN>
+	</content>
+	<content id="activeanddeactive">
+		<KH>Active/Deactive</KH>
+		<EN>Active/Deactive</EN>
+		<CN>Active/Deactive</CN>
+		<JP>Active/Deactive</JP>
+		<KR>Active/Deactive</KR>
+		<VN>Active/Deactive</VN>
+	</content>
+	<content id="running">
+		<KH>Running</KH>
+		<EN>Running</EN>
+		<CN>Running</CN>
+		<JP>Running</JP>
+		<KR>Running</KR>
+		<VN>Running</VN>
+	</content>
+	<content id="stop">
+		<KH>Stopped</KH>
+		<EN>Stopped</EN>
+		<CN>Stopped</CN>
+		<JP>Stopped</JP>
+		<KR>Stopped</KR>
+		<VN>Stopped</VN>
+	</content>
+	<content id="frompage">
+		<KH>From page</KH>
+		<EN>From page</EN>
+		<CN>From page</CN>
+		<JP>From page</JP>
+		<KR>From page</KR>
+		<VN>From page</VN>
+	</content>
+	<content id="topage">
+		<KH>To page</KH>
+		<EN>To page</EN>
+		<CN>To page</CN>
+		<JP>To page</JP>
+		<KR>To page</KR>
+		<VN>To page</VN>
+	</content>
+	<content id="processall">
+		<KH>Process all</KH>
+		<EN>Process all</EN>
+		<CN>Process all</CN>
+		<JP>Process all</JP>
+		<KR>Process all</KR>
+		<VN>Process all</VN>
+	</content>
+	<content id="view">
+		<KH>View</KH>
+		<EN>View</EN>
+		<CN>View</CN>
+		<JP>View</JP>
+		<KR>View</KR>
+		<VN>View</VN>
+	</content>
+	<content id="date">
+		<KH>Date</KH>
+		<EN>Date</EN>
+		<CN>Date</CN>
+		<JP>Date</JP>
+		<KR>Date</KR>
+		<VN>Date</VN>
+	</content>
+	<content id="start">
+		<KH>Start</KH>
+		<EN>Start</EN>
+		<CN>Start</CN>
+		<JP>Start</JP>
+		<KR>Start</KR>
+		<VN>Start</VN>
+	</content>
+	<content id="stop">
+		<KH>Stop</KH>
+		<EN>Stop</EN>
+		<CN>Stop</CN>
+		<JP>Stop</JP>
+		<KR>Stop</KR>
+		<VN>Stop</VN>
+	</content>
+	<content id="configtimeout">
+		<KH>Timeout Config</KH>
+		<EN>Timeout Config</EN>
+		<CN>Timeout Config</CN>
+		<JP>Timeout Config</JP>
+		<KR>Timeout Config</KR>
+		<VN>Timeout Config</VN>
+	</content>
+	<content id="checkVideo">
+		<KH>Check video</KH>
+		<EN>Check video</EN>
+		<CN>Check video</CN>
+		<JP>Check video</JP>
+		<KR>Check video</KR>
+		<VN>Check video</VN>
+	</content>
+	<content id="checkAudio">
+		<KH>Check audio</KH>
+		<EN>Check audio</EN>
+		<CN>Check audio</CN>
+		<JP>Check audio</JP>
+		<KR>Check audio</KR>
+		<VN>Check audio</VN>
+	</content>
+	<content id="checkLinkLiveTV">
+		<KH>Check LiveTV link</KH>
+		<EN>Check LiveTV link</EN>
+		<CN>Check LiveTV link</CN>
+		<JP>Check LiveTV link</JP>
+		<KR>Check LiveTV link</KR>
+		<VN>Check LiveTV link</VN>
+	</content>
+	<content id="serviceSystem">
+		<KH>Service</KH>
+		<EN>Service</EN>
+		<CN>Service</CN>
+		<JP>Service</JP>
+		<KR>Service</KR>
+		<VN>Service</VN>
+	</content>
+	<content id="action">
+		<KH>Action</KH>
+		<EN>Action</EN>
+		<CN>Action</CN>
+		<JP>Action</JP>
+		<KR>Action</KR>
+		<VN>Action</VN>
+	</content>
+	<content id="detailApk">
+		<KH>Apk detail</KH>
+		<EN>Apk detail</EN>
+		<CN>Apk detail</CN>
+		<JP>Apk detail</JP>
+		<KR>Apk detail</KR>
+		<VN>Apk detail</VN>
+	</content>
+	<content id="updateorder">
+		<KH>Update order</KH>
+		<EN>Update order</EN>
+		<CN>Update order</CN>
+		<JP>Update order</JP>
+		<KR>Update order</KR>
+		<VN>Update order</VN>
+	</content>
+	<content id="updateapkvalue">
+		<KH>Update APK</KH>
+		<EN>Update APK</EN>
+		<CN>Update APK</CN>
+		<JP>Update APK</JP>
+		<KR>Update APK</KR>
+		<VN>Update APK</VN>
+	</content>
+	<content id="updatestatus">
+		<KH>Update status</KH>
+		<EN>Update status</EN>
+		<CN>Update status</CN>
+		<JP>Update status</JP>
+		<KR>Update status</KR>
+		<VN>Update status</VN>
+	</content>
+	<content id="updateservice">
+		<KH>Update service</KH>
+		<EN>Update service</EN>
+		<CN>Update service</CN>
+		<JP>Update service</JP>
+		<KR>Update service</KR>
+		<VN>Update service</VN>
+	</content>
+	<content id="servicesysteminformation">
+		<KH>Service System Information</KH>
+		<EN>Service System Information</EN>
+		<CN>Service System Information</CN>
+		<JP>Service System Information</JP>
+		<KR>Service System Information</KR>
+		<VN>Service System Information</VN>
+	</content>
+	<content id="serviceorder">
+		<KH>Order</KH>
+		<EN>Order</EN>
+		<CN>Order</CN>
+		<JP>Order</JP>
+		<KR>Order</KR>
+		<VN>Order</VN>
+	</content>
+	<content id="numberonly">
+		<KH>Please enter number only</KH>
+		<EN>Please enter number only</EN>
+		<CN>Please enter number only</CN>
+		<JP>Please enter number only</JP>
+		<KR>Please enter number only</KR>
+		<VN>Please enter number only</VN>
+	</content>
+	<content id="daemon">
+		<KH>Daemon</KH>
+		<EN>Daemon</EN>
+		<CN>Daemon</CN>
+		<JP>Daemon</JP>
+		<KR>Daemon</KR>
+		<VN>Daemon</VN>
+	</content>
+	<content id="xemlog">
+		<KH>Log</KH>
+		<EN>Log</EN>
+		<CN>Log</CN>
+		<JP>Log</JP>
+		<KR>Log</KR>
+		<VN>Log</VN>
+	</content>
+	<content id="notinsubject">
+		<KH>All subject </KH>
+		<EN>All subject </EN>
+		<CN>All subject </CN>
+		<JP>All subject </JP>
+		<KR>All subject </KR>
+		<VN>All subject </VN>
+	</content>
+	<content id="shoppingtitle">
+		<KH>Shopping</KH>
+		<EN>Shopping</EN>
+		<CN>Shopping</CN>
+		<JP>Shopping</JP>
+		<KR>Shopping</KR>
+		<VN>Shopping</VN>
+	</content>
+	<content id="shoppingtableft">
+		<KH>Shopping</KH>
+		<EN>Shopping</EN>
+		<CN>Shopping</CN>
+		<JP>Shopping</JP>
+		<KR>Shopping</KR>
+		<VN>Shopping</VN>
+	</content>
+	<content id="checkpingip">
+		<KH>Check ping</KH>
+		<EN>Check ping</EN>
+		<CN>Check ping</CN>
+		<JP>Check ping</JP>
+		<KR>Check ping</KR>
+		<VN>Check ping</VN>
+	</content>
+	<content id="pingsuccess">
+		<KH>Ping ip success!</KH>
+		<EN>Ping ip success!</EN>
+		<CN>Ping ip success!</CN>
+		<JP>Ping ip success!</JP>
+		<KR>Ping ip success!</KR>
+		<VN>Ping ip success!</VN>
+	</content>
+	<content id="pingunsuccess">
+		<KH>Ping ip unsuccess!</KH>
+		<EN>Ping ip unsuccess!</EN>
+		<CN>Ping ip unsuccess!</CN>
+		<JP>Ping ip unsuccess!</JP>
+		<KR>Ping ip unsuccess!</KR>
+		<VN>Ping ip unsuccess!</VN>
+	</content>
+	<content id="hostftp">
+		<KH>Host</KH>
+		<EN>Host</EN>
+		<CN>Host</CN>
+		<JP>Host</JP>
+		<KR>Host</KR>
+		<VN>Host</VN>
+	</content>
+	<content id="portftp">
+		<KH>Port</KH>
+		<EN>Port</EN>
+		<CN>Port</CN>
+		<JP>Port</JP>
+		<KR>Port</KR>
+		<VN>Port</VN>
+	</content>
+	<content id="userftp">
+		<KH>User</KH>
+		<EN>User</EN>
+		<CN>User</CN>
+		<JP>User</JP>
+		<KR>User</KR>
+		<VN>User</VN>
+	</content>
+	<content id="passftp">
+		<KH>Pass</KH>
+		<EN>Pass</EN>
+		<CN>Pass</CN>
+		<JP>Pass</JP>
+		<KR>Pass</KR>
+		<VN>Pass</VN>
+	</content>
+	<content id="config">
+		<KH>Config</KH>
+		<EN>Config</EN>
+		<CN>Config</CN>
+		<JP>Config</JP>
+		<KR>Config</KR>
+		<VN>Config</VN>
+	</content>
+	<content id="reset">
+		<KH>Reset</KH>
+		<EN>Reset</EN>
+		<CN>Reset</CN>
+		<JP>Reset</JP>
+		<KR>Reset</KR>
+		<VN>Reset</VN>
+	</content>
+	<content id="newprice">
+		<KH>Sale</KH>
+		<EN>Sale</EN>
+		<CN>Sale</CN>
+		<JP>Sale</JP>
+		<KR>Sale</KR>
+		<VN>Sale</VN>
+	</content>
+	<content id="oldprice">
+		<KH>Price</KH>
+		<EN>Price</EN>
+		<CN>Price</CN>
+		<JP>Price</JP>
+		<KR>Price</KR>
+		<VN>Price</VN>
+	</content>
+	<content id="channel">
+		<KH>Channel</KH>
+		<EN>Channel</EN>
+		<CN>Channel</CN>
+		<JP>Channel</JP>
+		<KR>Channel</KR>
+		<VN>Channel</VN>
+	</content>
+	
+	logocn
+	browselogo
+	channelname
+	addchannel
+	<content id="filename">
+		<KH>File name</KH>
+		<EN>File name</EN>
+		<CN>File name</CN>
+		<JP>File name</JP>
+		<KR>File name</KR>
+		<VN>File name</VN>
+	</content>
+	<content id="logocn">
+		<KH>Logo channel</KH>
+		<EN>Logo channel</EN>
+		<CN>Logo channel</CN>
+		<JP>Logo channel</JP>
+		<KR>Logo channel</KR>
+		<VN>Logo channel</VN>
+	</content>
+	<content id="browselogo">
+		<KH>Choose logo</KH>
+		<EN>Choose logo</EN>
+		<CN>Choose logo</CN>
+		<JP>Choose logo</JP>
+		<KR>Choose logo</KR>
+		<VN>Choose logo</VN>
+	</content>
+	<content id="channelname">
+		<KH>Channel name</KH>
+		<EN>Channel name</EN>
+		<CN>Channel name</CN>
+		<JP>Channel name</JP>
+		<KR>Channel name</KR>
+		<VN>Channel name</VN>
+	</content>
+	<content id="addchannel">
+		<KH>Update</KH>
+		<EN>Update</EN>
+		<CN>Update</CN>
+		<JP>Update</JP>
+		<KR>Update</KR>
+		<VN>Update</VN>
+	</content>
+</lang>

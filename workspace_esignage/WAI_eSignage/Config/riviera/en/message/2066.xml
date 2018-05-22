@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="9767094">
+        <numNo>0</numNo>
+        <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Cam Ranh Riviera Beach Resort & Spa welcome !]]></content>
+        <content_bottom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Administrator]]></content_bottom>
+        <content_top xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Cam Ranh Riviera Beach Resort & Spa welcome !]]></content_top>
+        <enterDate>29/01/2015 06:28:13</enterDate>
+        <room>707</room>
+        <isConfirm>0</isConfirm>
+        <isRead>1</isRead>
+        <sender>Admin</sender>
+        <subject>Welcome</subject>
+        <type>NORMAL</type>
+    </item>
+</ehotel>

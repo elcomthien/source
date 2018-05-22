@@ -44,6 +44,8 @@ public class eSmileDao {
 		}
 		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_LOGIN, params, "uaername,password", outParam.size());
 		HashMap<String, String> hm = new HashMap<>();
+//		for (int i = 0; i < outParam.size(); i++)
+//			System.out.println(i + "---" + outParam.get(i));
 		if (outParam.get(0).equals("-1")) {
 			hm.put("status", outParam.get(0));
 			hm.put("message", outParam.get(1));
@@ -1550,7 +1552,7 @@ public class eSmileDao {
 	}
 
 	@SuppressWarnings("unchecked")
-	public HashMap<String, String> changePassword(String username, String oldpass, String newpass,String fullname, String avatar) {
+	public HashMap<String, String> changePassword(String username, String oldpass, String newpass, String fullname, String avatar) {
 		int rs = -1;
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new String(username), 0);
@@ -1587,6 +1589,68 @@ public class eSmileDao {
 		return hm;
 	}
 
+	@SuppressWarnings("unchecked")
+	public HashMap<String, String> addRating(String smileid, String name, String image) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(smileid), 0);
+		params.add(in);
+		in = new SubProParam(new String(name), 0);
+		params.add(in);
+		in = new SubProParam(new String(image), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.ADD_RATING, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(3);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.ADD_RATING, params, "smileid,name,image", rs);
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("status", String.valueOf(rs));
+		if (rs == 1)
+			hm.put("message", "OK");
+		else if (rs == -2)
+			hm.put("message", "Rating already existed");
+		else
+			hm.put("message", "ERROR");
+		return hm;
+	}
+
+	@SuppressWarnings("unchecked")
+	public HashMap<String, String> deleteRating(String ratingid) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(ratingid), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.DELETE_RATING, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(1);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.DELETE_RATING, params, "ratingid", rs);
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("status", String.valueOf(rs));
+		if (rs == 1)
+			hm.put("message", "OK");
+		else
+			hm.put("message", "ERROR");
+		return hm;
+	}
+
 	public static void main(String[] args) {
 		eSmileDao e = new eSmileDao();
 
@@ -1616,6 +1680,6 @@ public class eSmileDao {
 		// "2"));
 
 		// System.out.println(e.getWelcomeSurvey("1|12234234234|asdasdasd|123|"));
-		System.out.println(e.getLogin("elcom", "caf1a3dfb505ffed0d024130f58c5cfa"));
+		System.out.println(e.getLogin("ecopark", "caf1a3dfb505ffed0d024130f58c5cfa"));
 	}
 }

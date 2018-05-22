@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="12">
+        <name>Tour</name>
+        <url>/ePMS2.0/elcom/resources/image/Local/LocalTour.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Local/bg/LocalTour_bg.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Local/LocalTour.png</urlIcon>
+    </item>
+    <item id="13">
+        <name>Shopping</name>
+        <url>/ePMS2.0/elcom/resources/image/Local/1421742166722.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Local/1421742175551.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Local/1421742175551.png</urlIcon>
+    </item>
+</ehotel>

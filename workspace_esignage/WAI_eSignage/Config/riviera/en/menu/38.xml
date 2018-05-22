@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-9999">
+        <name>Tổng quan</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864222002.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864228033.png</urlIcon>
+    </item>
+    <item id="-1">
+        <name>Thực đơn sáng</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1363864394100.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1363864397749.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1363864397749.png</urlIcon>
+    </item>
+    <item id="-2">
+        <name>Trưa và chiều</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlIcon>
+    </item>
+</ehotel>

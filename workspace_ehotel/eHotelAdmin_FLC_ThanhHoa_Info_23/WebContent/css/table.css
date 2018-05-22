@@ -1,0 +1,78 @@
+.mytable {
+	background: white;
+}
+
+.mytable th {
+	height: 30px;
+}
+
+.mytable_row {
+	height: 30px;
+}
+
+.mytable_row1 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row1.png") repeat-x
+		center bottom;
+}
+
+.mytable_row2 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row2.png") repeat-x
+		center bottom;
+}
+
+.mytable_row11 {
+	cursor: pointer;
+	color: #878888;
+	height: 40px;
+	background: transparent url("../images/bg_table_row1.png") repeat-x
+		center bottom;
+}
+
+.mytable_row12 {
+	cursor: pointer;
+	color: #878888;
+	height: 40px;
+	background: transparent url("../images/bg_table_row2.png") repeat-x
+		center bottom;
+}
+
+.mytable_row_sel {
+	background-color: #e1e3dd;
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+}
+
+.mytable_header {
+	color: #666666;
+	height: 31px;
+	background: transparent url("../images/bg_table_header.png") repeat-x
+		center bottom;
+}
+
+.classItem0 {
+	font-weight: 800;
+	color: #9aa685;
+}
+
+.classItem3 {
+	font-weight: 800;
+	color: #9aa685;
+	text-align: left;
+	text-indent: 15px;
+}
+
+.classItem1 {
+	color: #A7800A;
+}
+
+.header0 {
+	text-align: left;
+	text-indent: 15px;
+}

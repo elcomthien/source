@@ -1,0 +1,91 @@
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+6     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+189   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+191   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+192   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+192   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+322   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+122   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+124   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+124   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+124   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.75
+151   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+116   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+118   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+119   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+119   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:127.0.0.1
+391   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+129   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+131   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+131   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+132   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:127.0.0.1
+216   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+131   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+133   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+133   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+134   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:127.0.0.1
+197   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+6     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+117103 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+117108 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+117109 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+117110 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:127.0.0.1
+117199 ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+8     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+213   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+215   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+215   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+215   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.106
+281   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+113   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+115   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+116   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+116   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.106
+146   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+119   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+121   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+122   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+122   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.106
+163   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+6     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+124   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+126   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+127   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+127   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:0:0:0:0:0:0:0:1
+173   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://localhost:11001/DBInterface
+116   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+118   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+118   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+118   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:0:0:0:0:0:0:0:1
+154   ERROR [main] dao.eUserDao - 
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+5     INFO  [main] connect.DBIManager - url =rmi://10.10.16.182:11002/DBInterface
+129   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+131   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+132   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+132   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:0:0:0:0:0:0:0:1
+167   INFO  [main] dao.eUserDao - [login(sql={call eUser.login(?,?,?,?)})  -->returnValue=true,userId=2]
+0     INFO  [main] connect.PathDef - D:\workspace_eclipse\eHotelAdmin/Config/eodapp.properties
+6     INFO  [main] connect.DBIManager - url =rmi://172.16.9.151:11002/DBInterface
+197   INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+199   INFO  [main] util.UnicodeConverter - 	 param 1 after encode:toanhv
+200   INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+200   INFO  [main] util.UnicodeConverter - 	 param 3 after encode:0:0:0:0:0:0:0:1
+367   INFO  [main] dao.eUserDao - [login(sql={call eUser.login(?,?,?,?)})  -->returnValue=true,userId=2]

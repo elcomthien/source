@@ -291,4 +291,5 @@ public interface eSmileService {
 
 	@WebMethod
 	String getTrendSmile(String object);
+
 }

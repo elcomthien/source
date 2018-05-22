@@ -183,4 +183,10 @@ public interface eSmileService {
 	
 	@WebMethod
 	String getVoteSurvey(String object);
+	
+	@WebMethod
+	String getListWelcome(String object);
+	
+	@WebMethod
+	String editWelcome(String object);
 }

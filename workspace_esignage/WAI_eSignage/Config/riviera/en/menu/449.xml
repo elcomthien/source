@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="450">
+        <name>OVER-NIGHT MENU</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421662560354.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421662564904.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421662560354.png</urlIcon>
+    </item>
+    <item id="451">
+        <name>APPETIZERS</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421662588046.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421662592557.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421662588046.png</urlIcon>
+    </item>
+    <item id="453">
+        <name>SOUP</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421719133113.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421719138224.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421719133113.png</urlIcon>
+    </item>
+    <item id="458">
+        <name>DESSERTS</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421721895477.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421721900780.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421721895477.png</urlIcon>
+    </item>
+    <item id="455">
+        <name>ASIAN DELICACY</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421720482229.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421720485925.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421720482229.png</urlIcon>
+    </item>
+    <item id="456">
+        <name>WESTERN FAVOURITES</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421720895434.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421720899568.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421720895434.png</urlIcon>
+    </item>
+    <item id="457">
+        <name>GOURMET PIZZA</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421721449868.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421721454675.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421721449868.png</urlIcon>
+    </item>
+    <item id="454">
+        <name>SANDWICHES AND BURGERS</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421719592687.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421719596627.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421719592687.png</urlIcon>
+    </item>
+</ehotel>

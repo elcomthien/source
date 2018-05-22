@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item ICode="82">
+        <def>&lt;div id=&quot;_mcePaste&quot; class=&quot;mcePaste&quot;&gt;Enjoy a relaxing day at Jasmine Spa and receive the best treatment for your body, mind and soul. Jasmine Spa offers a wide variety of services which you will enjoy and experience the best spa therapy.&lt;/div&gt;&lt;div id=&quot;_mcePaste&quot; class=&quot;mcePaste&quot;&gt;Jasmine Spa Sokha Angkor Resort offers 16 private treatment rooms with attractive decoration and private space.&lt;/div&gt;</def>
+        <name>Overview</name>
+    </item>
+    <item ICode="84">
+        <def>&lt;p&gt;Nuad Boran Massage&lt;/p&gt;&lt;p&gt;Sokha's Signature Massage&lt;/p&gt;&lt;p&gt;Serenity Body Massage&lt;/p&gt;&lt;p&gt;Awaken Muscle&lt;/p&gt;&lt;p&gt;Re-energize Me&lt;/p&gt;&lt;p&gt;Blissful Unity&lt;/p&gt;&lt;p&gt;Herbal Hot Compress&lt;/p&gt;&lt;p&gt;Mineralized Stone Therapy&lt;/p&gt;</def>
+        <name>Body Message</name>
+    </item>
+    <item ICode="85">
+        <def>&lt;p&gt;Skin Smoothing Mask&lt;/p&gt;&lt;p&gt;Slim &amp;amp; Trim&lt;/p&gt;&lt;p&gt;Vanquish My Pain&lt;/p&gt;&lt;p&gt;Water lily After Sun Soothing wrap&lt;/p&gt;&lt;p&gt;Tropical Escape Wrap&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</def>
+        <name>Body Wrap</name>
+    </item>
+    <item ICode="86">
+        <def>&lt;p&gt;Skin Refining Body Scrub&lt;/p&gt;&lt;p&gt;Silky skin Scrub with Micronized Seaweed&lt;/p&gt;&lt;p&gt;Tropical mango &amp;amp; Papaya&lt;/p&gt;&lt;p&gt;Aroma Salt Glow&lt;/p&gt;&lt;p&gt;Jasmine Salt Scrub&lt;/p&gt;&lt;p&gt;Natural Khmer herbal scrub&lt;/p&gt;</def>
+        <name>Body Scrub</name>
+    </item>
+    <item ICode="91">
+        <def>&lt;p&gt;Hand and Foot&lt;/p&gt;&lt;p&gt;Hair&lt;/p&gt;&lt;p&gt;Waxing&lt;/p&gt;&lt;p&gt;Make-up&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</def>
+        <name>Beauty Treatment</name>
+    </item>
+    <item ICode="88">
+        <def>&lt;p&gt;Mini Facial Treatment&lt;/p&gt;&lt;p&gt;Eye Wrinkle Treatment&lt;/p&gt;&lt;p&gt;Spa Botanical Facial Treatment&lt;/p&gt;&lt;p&gt;Aromatherapy Facial Treatment&lt;/p&gt;&lt;p&gt;Myoxy-Caviar for Her&lt;/p&gt;&lt;p&gt;SkinFit Caviar for Him&lt;/p&gt;&lt;p&gt;Plantomer mask treatment&lt;/p&gt;&lt;p&gt;Oxygenating Facial with Vitamin C&lt;/p&gt;</def>
+        <name>Facial Treatment</name>
+    </item>
+    <item ICode="89">
+        <def>&lt;p&gt;Back Relief&lt;/p&gt;&lt;p&gt;Ultimate Back Massage&lt;/p&gt;&lt;p&gt;Chakra head and shoulder Massage&lt;/p&gt;&lt;p&gt;Foot Massage&lt;/p&gt;&lt;p&gt;Caviar Hand &amp;amp; Foot Treatment&lt;/p&gt;</def>
+        <name>Special Treatment</name>
+    </item>
+    <item ICode="90">
+        <def>&lt;p&gt;Discovery Journey&lt;/p&gt;&lt;p&gt;Khmer Journey&lt;/p&gt;&lt;p&gt;Tropical Escape Journey&lt;/p&gt;&lt;p&gt;De-stress Journey&lt;/p&gt;&lt;p&gt;Perfect Journey&lt;/p&gt;&lt;p&gt;Luxury Collection&lt;/p&gt;&lt;p&gt;Royal Rejuvenation Journey&lt;/p&gt;</def>
+        <name>Spa Journey</name>
+    </item>
+    <item ICode="87">
+        <def>&lt;p&gt;Bath Contour Therapy&lt;/p&gt;&lt;p&gt;Jasmine Salt Bath&lt;/p&gt;&lt;p&gt;Stress Away Bath Therapy&lt;/p&gt;&lt;p&gt;Sweet Dream Bath therapy&lt;/p&gt;&lt;p&gt;Detoxify bath therapy&lt;/p&gt;</def>
+        <name>Aromatherapy Bath</name>
+    </item>
+</ehotel>

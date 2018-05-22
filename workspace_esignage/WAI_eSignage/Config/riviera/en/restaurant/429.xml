@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1822">
+        <def>&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p&gt;Pork,Chicken,Beef or Seafood Congee &#160;&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;90,000&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p&gt;Rice with Shrimps and Egg&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;90,000&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p&gt;Fried noodles with vegetables&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p&gt;Spaghetti with tomato sauce&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;339&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;td valign=&quot;top&quot; width=&quot;87&quot;&gt;&lt;p align=&quot;center&quot;&gt;&#160;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</def>
+        <name>Children’s menu</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652027682.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652027682.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652027682.png</urlIcon>
+    </item>
+</ehotel>

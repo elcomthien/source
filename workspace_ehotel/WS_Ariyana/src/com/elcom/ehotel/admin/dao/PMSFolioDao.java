@@ -330,12 +330,13 @@ public class PMSFolioDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_LIST_SMARTCARD, params, "none", outParam.size() / 3);
-		for (int i = 0; i < outParam.size(); i = i + 3) {
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_LIST_SMARTCARD, params, "none", outParam.size() / 4);
+		for (int i = 0; i < outParam.size(); i = i + 4) {
 			HashMap<String, String> hmap = new HashMap<String, String>();
 			hmap.put("serinumber", outParam.get(i));
 			hmap.put("idaddress", outParam.get(i + 1));
 			hmap.put("room", outParam.get(i + 2));
+			hmap.put("status", outParam.get(i + 3));
 			list.add(hmap);
 		}
 		return list;
@@ -369,6 +370,28 @@ public class PMSFolioDao {
 			list.add(order);
 		}
 		return list;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public int changeStatusReboot(String serinumber) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(serinumber), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.CHANGE_STATUS_REBOOT, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(1);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.CHANGE_STATUS_REBOOT, params, "serinumber", rs);
+		return rs;
 	}
 
 	public static void main(String[] args) {

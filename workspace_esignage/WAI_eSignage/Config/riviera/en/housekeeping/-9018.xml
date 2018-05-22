@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item iCode="128" menuid="-9018">
+        <currency>70000</currency>
+        <IUnit>VND</IUnit>
+        <name>Dress</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421920701348.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="129" menuid="-9018">
+        <currency>90000</currency>
+        <IUnit>VND</IUnit>
+        <name>Evening Dress</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421920760559.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="130" menuid="-9018">
+        <currency>90000</currency>
+        <IUnit>VND</IUnit>
+        <name>Ao Dai (set)</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421920875823.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="131" menuid="-9018">
+        <currency>75000</currency>
+        <IUnit>VND</IUnit>
+        <name>Jacket</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421920903344.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

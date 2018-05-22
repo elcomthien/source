@@ -1,0 +1,327 @@
+$(document).ready(function () {
+	removejscssfile("group-style-table.css", "css");
+	removejscssfile("styletable.css", "css");
+//	removejscssfile("jquery-1.11.1.js", "js");
+//	replacejscssfile("jquery-1.11.1.js", "jquery-2.1.3.js", "js");
+});
+
+function getAllData(){
+	var idsubject = $("#subjectbox").val();
+	var datajson = {"idsubject":idsubject};
+	var jdata = JSON.stringify(datajson);
+	$.post("allmedia.elcom",{data : jdata}, function(data){
+		writeDataTable(data.content);
+	});
+}
+function writeDataTable(data) {
+	var body = "";
+	for ( var i = 0; i < data.length; i++) {
+		body += "<tr>";
+		body += "<td title='" + data[i].name + "'>" + checkLengthView(data[i].name) + "</td>";
+		body += "<td title='" + data[i].url + "'>" + checkLengthView(data[i].url) + "</td>";
+		body += "<td style='text-align: center;'>" + data[i].time + "</td>";
+		body += "<td style='text-align: center;'>" +
+				"<img src='css/images/icon-delete-media.png' class='img-icon-table' title='Delete media content' " +
+				"onclick=deleteMediaCotent("+"'"+ data[i].id +"'"+","+"'"+ data[i].name +"'"+")></td>";
+		body += "</tr>";
+	}
+	var table = "<table id='table-list-meida-content' class='table table-striped'><thead>" +
+			"<tr><th style='width: 30%'>TÃªn</th><th style='width: 30%'>Ná»™i Dung</th><th >Thá»�i lÆ°á»£ng</th><th >Thao tÃ¡c</th></tr></thead>" +
+			"<tbody id='tbody-list-web-content'>"+body+"</tbody></table>";
+	$("#div-table-list-media").html("");
+	$("#div-table-list-media").html(table);
+	drawDataTable();
+}
+
+function deleteMediaCotent(id, name){
+	confirm("Xóa nội dung đa phương tiện","Bạn có chắc muốn xóa nội dung '<span style='color:red;'>"+ name +"</span>' ?","Không","Đồng ý",function(){
+		var datajson = {"id":id, "name":name};
+		var jdata = JSON.stringify(datajson);
+		$.post("deletemedia.elcom",{data : jdata},function(r){
+			if(r.data == "true"){
+				jSuccess("Success",{
+		            HorizontalPosition:'center',
+		            VerticalPosition:'top' 
+		        });
+				getAllData();
+			}else{
+				jError("Error",{
+		            HorizontalPosition:'center',
+		            VerticalPosition:'top' 
+		        });
+			}
+		}).error(function(){
+			jError("Error",{
+	            HorizontalPosition:'center',
+	            VerticalPosition:'top'
+	        });
+		});
+	});
+}
+
+function removejscssfile(filename, filetype) {
+	var targetelement = (filetype == "js") ? "script"
+			: (filetype == "css") ? "link" : "none";
+	var targetattr = (filetype == "js") ? "src" : (filetype == "css") ? "href"
+			: "none";
+	var allsuspects = document.getElementsByTagName(targetelement);
+	for ( var i = allsuspects.length; i >= 0; i--) {
+		if (allsuspects[i]
+				&& allsuspects[i].getAttribute(targetattr) != null
+				&& allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1)
+			allsuspects[i].parentNode.removeChild(allsuspects[i]);
+	}
+}
+
+function drawDataTable(){
+	$("#table-list-meida-content")
+	.dataTable(
+			{
+				"bFilter" : true,
+				"iDisplayLength" : 10,
+				"sPaginationType" : "full_numbers",
+				"sDom" : 'T<"clear">lfrtip',
+				"bAutoWidth" : true,
+				"bStateSave" : true,
+				"bRetrieve" : true,
+				"oTableTools" : {
+					"sSwfPath" : "<%=request.getContextPath()%>/js/copy_csv_xls_pdf.swf"
+				},"oLanguage": {
+					"oPaginate": {
+				        "sFirst": "Ä�áº§u",
+				        "sLast": "Cuá»‘i",
+				        "sNext": "Tá»›i",
+				        "sPrevious": "LÃ¹i"
+				      },
+						"sLengthMenu": "Hiá»ƒn thá»‹ _MENU_ dÃ²ng trÃªn báº£ng",
+                       "sInfo": "Hiá»ƒn thá»‹ tá»« _START_ Ä‘áº¿n _END_ cá»§a _TOTAL_ dÃ²ng",
+                       "sZeroRecords": "KhÃ´ng cÃ³ ná»™i dung trong báº£ng",
+                       "sInfoEmpty": "KhÃ´ng cÃ³ dá»¯ liá»‡u hiá»ƒn thá»‹",
+           			 	"sSearch":"TÃ¬m nhanh:"
+   	         	},"aLengthMenu" : [ [ 10, 20, 50, 100, 200, -1 ],
+						[ 10, 20, 50, 100, 200, "All" ] ]
+			});
+}
+
+$(function(){
+	$("#btn-add-new-media").click(function(){
+//		var path ="";
+//		var datajson = {"path":path};
+//		var jdata = JSON.stringify(datajson);
+//		$.get("getfileftp.elcom",{data : jdata}, function(data){
+//			writeTableListFile(data.content, "-1");
+//		});
+		var idsubject = $("#subjectbox").val();
+		if(idsubject == null){
+			confirm("Thông báo","Bạn chưa có chủ đề nội dung, bạn có muốn tạo chủ đề cho nội dung?","Không","Đồng ý",function(){
+				$("#content-alert-error-sub").hide();
+				$("#add-subject-name").val("");
+				$("#add-subject-description").val("");
+				$("#modal-add-subject-content").modal("show");
+			});
+		}else{
+			var username = $('.userlogin').attr('data-user');
+			var parent = getParentCreator();
+			var host = window.location.host;
+			var url = "http://"+host+"/aBopUploadFile/";
+			url = url + "#" + username+ "#" + parent + "#" + idsubject;
+			var html = "<iframe src='"+url+"' id='iframe_upload' style='width: 99%; height: 60px; border: 0;'></iframe>";
+			$("#iframe_upload").remove();
+			$("#div_iframe_upload").append(html);
+			$("#content-alert-error").hide();
+			$("#modal-add-meida-content-upload").modal("show");
+		}
+	});
+});
+
+function changeiFrame(){
+	var url = $("#iframe_upload").get(0).contentWindow.location;
+	alert(url);
+}
+
+function replacejscssfile(oldfilename, newfilename, filetype){
+    var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none"; //determine element type to create nodelist using
+    var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none"; //determine corresponding attribute to test for
+    var allsuspects=document.getElementsByTagName(targetelement);
+    for (var i=allsuspects.length; i>=0; i--){ //search backwards within nodelist for matching elements to remove
+        if (allsuspects[i] && allsuspects[i].getAttribute(targetattr)!=null && allsuspects[i].getAttribute(targetattr).indexOf(oldfilename)!=-1){
+            var newelement=createjscssfile(newfilename, filetype);
+            allsuspects[i].parentNode.replaceChild(newelement, allsuspects[i]);
+        }
+    }
+}
+function createjscssfile(filename, filetype){
+    if (filetype=="js"){ //if filename is a external JavaScript file
+        var fileref=document.createElement('script');
+        fileref.setAttribute("type","text/javascript");
+        fileref.setAttribute("src", filename);
+    }
+    else if (filetype=="css"){ //if filename is an external CSS file
+        var fileref=document.createElement("link");
+        fileref.setAttribute("rel", "stylesheet");
+        fileref.setAttribute("type", "text/css");
+        fileref.setAttribute("href", filename);
+    }
+    return fileref;
+}
+
+
+$(function(){
+	$("#add-media-btn").click(function(){
+		$("#modal-add-meida-content-upload").modal("hide");
+//		location.reload();
+		getAllData();
+//	    var iframe = $('#iframe_upload').contents();
+//		iframe.find("#uploadbtn").click();
+	});
+});
+
+function writeTableListFile(data, parent){
+	var body = "";
+	var back = "";
+	back += "<tr>";
+	back += "<td title='Back to parent folder' onclick=backFolder("+"'"+""+encodeURIComponent(parent)+""+"'"+") style='cursor: pointer;'><a onclick=backFolder("+"'"+""+parent+""+"'"+")>...</a></td>";
+	back += "<td></td>";
+	back += "<td style='text-align: center;'></td>";
+	back += "</tr>";
+	for ( var i = 0; i < data.length; i++) {
+		if(data[i].type=="1"){
+			var name = data[i].name;
+			name = name.substring(name.lastIndexOf("/")-(-1), name.length);
+			body += "<tr>";
+			body += "<td style='cursor: pointer;' onclick=intoFolder("+"'"+"" + encodeURIComponent(data[i].name) + ""+"'"+")><a onclick=intoFolder("+"'"+"" + data[i].name + ""+"'"+") title='"+name+"'>" + checkLengthName(name) + "</a></td>";
+			body += "<td>" + data[i].size + "</td>";
+			body += "<td style='text-align: center;'></td>";
+			body += "</tr>";
+		}
+	}
+	if(parent != "-1"){
+		body = back + body;
+	}
+	for ( var i = 0; i < data.length; i++) {
+		if(data[i].type=="0"){
+			var name = data[i].name;
+			name = name.substring(name.lastIndexOf("/")-(-1), name.length);
+			body += "<tr>";
+			body += "<td title='"+name+"'>" + checkLengthName(name) + "</td>";
+			body += "<td>" + (data[i].size/ (1024 * 1024)).toFixed(3) + " Mb</td>";
+			body += "<td style='text-align: center;'>" +
+					"<img src='css/images/icon-transfer-file.png' class='img-icon-table' title='Transfer file to server' " +
+					"onclick=transferFileFTP("+"'"+ encodeURIComponent(data[i].name) +"'"+")></td>";
+			body += "</tr>";
+		}
+	}
+	var table = "<table id='table-list-meida-file' class='table table-striped'><thead>" +
+			"<tr><th style='width: '>Tên file</th><th style='width: '>Dung lÆ°á»£ng</th><th >Thao tác</th></tr></thead>" +
+			"<tbody id='tbody-list-media-content'>"+body+"</tbody></table>";
+	$("#div_table_list_file").html("");
+	$("#div_table_list_file").html(table);
+	$("#table-list-meida-file")
+	.dataTable(
+			{
+				"bFilter" : true,
+				"iDisplayLength" : 10,
+				"sPaginationType" : "full_numbers",
+				"sDom" : 'T<"clear">lfrtip',
+				"bAutoWidth" : true,
+				"bStateSave" : true,
+				"bRetrieve" : true,
+				"oTableTools" : {
+					"sSwfPath" : "<%=request.getContextPath()%>/js/copy_csv_xls_pdf.swf"
+				},"oLanguage": {
+					"oPaginate": {
+				        "sFirst": "Ä�áº§u",
+				        "sLast": "Cuá»‘i",
+				        "sNext": "Tá»›i",
+				        "sPrevious": "LÃ¹i"
+				      },
+						"sLengthMenu": "Hiá»ƒn thá»‹ _MENU_ dÃ²ng trÃªn báº£ng",
+                       "sInfo": "Hiá»ƒn thá»‹ tá»« _START_ Ä‘áº¿n _END_ cá»§a _TOTAL_ dÃ²ng",
+                       "sZeroRecords": "KhÃ´ng cÃ³ ná»™i dung trong báº£ng",
+                       "sInfoEmpty": "KhÃ´ng cÃ³ dá»¯ liá»‡u hiá»ƒn thá»‹",
+           			 	"sSearch":"TÃ¬m nhanh:"
+   	         	},"aLengthMenu" : [ [ 10, 20, 50, 100, 200, -1 ],
+						[ 10, 20, 50, 100, 200, "All" ] ]
+			});
+}
+
+function transferFileFTP(name){
+	var type = name.substring(name.lastIndexOf(".") - (-1), name.length);
+	if(checkFileType(type) == 0){
+		confirm("XÃ³a ná»™i dung media","Báº¡n cÃ³ cháº¯c muá»‘n xÃ³a ná»™i dung '<span style='color:red;'>"+ name +"</span>' ?"," Yes ",function(){
+			return false;
+		});
+	}
+	
+	name = decodeURIComponent(name);
+	if(name.indexOf("/") == 0)
+		name = name.substring(1, name.length);
+	var idsubject = $("#subjectbox").val();
+	var datajson = {"name":name,"idsubject":idsubject};
+	var jdata = JSON.stringify(datajson);
+	$("#modal-loading").modal("show");
+	$.post("newmedia.elcom",{data : jdata},function(r){
+		$("#modal-loading").modal("hide");
+		if(r.data == "true"){
+			jSuccess("Success",{
+	            HorizontalPosition:'center',
+	            VerticalPosition:'top' 
+	        });
+			getAllData();
+		}else{
+			jError("Error",{
+	            HorizontalPosition:'center',
+	            VerticalPosition:'top' 
+	        });
+		}
+	}).error(function(){
+		jError("Error",{
+            HorizontalPosition:'center',
+            VerticalPosition:'top' 
+        });
+	});
+}
+
+function backFolder(path){
+	path = decodeURIComponent(path);
+	var parent = path.substring(0,path.lastIndexOf("/"));
+	if(path == "")
+		parent = "-1";
+	var datajson = {"path":path};
+	var jdata = JSON.stringify(datajson);
+	$.get("getfileftp.elcom",{data : jdata}, function(data){
+		writeTableListFile(data.content, parent);
+	});
+}
+
+function intoFolder(path){
+	path = decodeURIComponent(path);
+	var parent = path.substring(0,path.lastIndexOf("/"));
+	var datajson = {"path":path};
+	var jdata = JSON.stringify(datajson);
+	$.get("getfileftp.elcom",{data : jdata}, function(data){
+		writeTableListFile(data.content, parent);
+	});
+}
+
+function checkLengthName(name){
+	name = decodeURIComponent(name);
+	if(name.length>30)
+		name = name.substring(0, 30) + "...";
+	return name;
+}
+function checkLengthView(name){
+	name = decodeURIComponent(name);
+	if(name.length>30)
+		name = name.substring(0, 30) + "...";
+	return name;
+}
+
+function checkFileType(type) {
+	if (type == "mp4" || type == "mkv" || type == "3gp" || type == "mp3"
+			|| type == "m4a" || type == "wav" || type == "mp4" || type == "png"
+			|| type == "jpg" || type == "gif" || type == "bmp"
+			|| type == "webp")
+		return 1;
+	return 0;
+}

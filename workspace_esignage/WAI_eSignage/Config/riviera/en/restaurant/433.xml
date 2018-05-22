@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1829">
+        <def>&lt;p align=&quot;center&quot;&gt;Classic Venetian&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Dalat Strawberry&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Passion Mango&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Pina Colada&#160;&lt;/p&gt;</def>
+        <name>Tiramisu Delights</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</urlIcon>
+    </item>
+</ehotel>

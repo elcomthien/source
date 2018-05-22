@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1390">
+        <def>&lt;p&gt;Gi vay troi&lt;/p&gt;</def>
+        <name>khong biet loi</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlIcon>
+    </item>
+    <item id="1391">
+        <def>&lt;p&gt;null&lt;/p&gt;</def>
+        <name>default_camxoa</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/coffee_middayafternoon.png</urlIcon>
+    </item>
+</ehotel>

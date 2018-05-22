@@ -56,7 +56,7 @@ public class UnicodeConverter {
 //		B&#7878;NH VI&#7878;N &#272;&#7840;I H&#7884;C Y D&#431;&#7906;C
 //		B&#7878;NH VI&#7878;N &#272;&#7840;I H&#7884;C Y D&#431;&#7906;C
 //		B&amp;#7878;NH VI&amp;#7878;N &amp;#272;&amp;#7840;I H&amp;#7884;C Y D&amp;#431;&amp;#7906;C;
-		System.out.println(decodeUnicode("B&#7878;NH VI&#7878;N &#272;&#7840;I H&#7884;C Y D&#431;&#7906;C"));
+		System.out.println(decodeUnicode("Nhi&#7873;u &#273;&#432;&#7901;ng"));
 		System.out.println(decodeUnicode("B&amp;#7878;NH VI&amp;#7878;N &amp;#272;&amp;#7840;I H&amp;#7884;C Y D&amp;#431;&amp;#7906;C"));
 	}
 }

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item iCode="104" menuid="-9014">
+        <currency>10000</currency>
+        <IUnit>VND</IUnit>
+        <name>Coca Cola</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891396468.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="105" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Lemonade</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891507775.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="106" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Tonic Water</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891600225.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="107" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Soda Water</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891673235.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="108" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Ginger Ale</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891698343.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="109" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Tiger Beer</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891718307.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="110" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Heineken Beer</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891736542.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="111" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Still</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891753764.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="112" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Sparkling</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891771782.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="113" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Vodka</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891789890.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="114" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Gin</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891812509.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="115" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>USD</IUnit>
+        <name>Rum</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891846432.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="116" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Cognac</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891862035.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="117" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Scotch Whisky</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891882968.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="118" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Irish Whiskey</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891905562.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="119" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Bourbon</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891922823.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="120" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Tequila</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891942521.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="121" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Red Wine</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421891973180.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="122" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>White Wine</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892000931.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="123" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Champagne</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892021030.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="124" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Potato Chips</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892040873.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="125" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Signature Riviera  Chocolate</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892062003.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="126" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Imported Cookies</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892077405.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item iCode="127" menuid="-9014">
+        <currency>0</currency>
+        <IUnit>VND</IUnit>
+        <name>Berroca Tablets</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1421892094009.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

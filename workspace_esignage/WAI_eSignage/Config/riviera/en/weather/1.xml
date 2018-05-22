@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="24277">
+        <def>Light rain shower</def>
+        <maxTemperature>26</maxTemperature>
+        <minTemperature>22</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>02/03/2015</postedDate>
+        <sday>3</sday>
+        <seatemp>0</seatemp>
+        <temperature>26</temperature>
+    </item>
+    <item id="24278">
+        <def>Patchy rain nearby</def>
+        <maxTemperature>27</maxTemperature>
+        <minTemperature>22</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>02/04/2015</postedDate>
+        <sday>4</sday>
+        <seatemp>0</seatemp>
+        <temperature>27</temperature>
+    </item>
+    <item id="24279">
+        <def>Light rain shower</def>
+        <maxTemperature>25</maxTemperature>
+        <minTemperature>22</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>02/05/2015</postedDate>
+        <sday>5</sday>
+        <seatemp>0</seatemp>
+        <temperature>25</temperature>
+    </item>
+    <item id="24280">
+        <def>Patchy rain nearby</def>
+        <maxTemperature>27</maxTemperature>
+        <minTemperature>21</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>02/06/2015</postedDate>
+        <sday>6</sday>
+        <seatemp>0</seatemp>
+        <temperature>27</temperature>
+    </item>
+    <item id="24281">
+        <def>Sunny</def>
+        <maxTemperature>27</maxTemperature>
+        <minTemperature>22</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>02/07/2015</postedDate>
+        <sday>7</sday>
+        <seatemp>0</seatemp>
+        <temperature>27</temperature>
+    </item>
+</ehotel>

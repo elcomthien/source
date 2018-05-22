@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1779">
+        <def>&lt;p align=&quot;center&quot;&gt;Dried Fruits: Raisins,Apricots,Figs,Prunes,Candied Fruits&#160;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Fresh Fruits: Banana,Mango,Strawberry,Pineapple,Dragonfruit&#160;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Roasted Nuts:Cashew nuts,Peanuts,Almonds,Walnuts&#160;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Cookies n&#8217;Candys: Chocolate chip cookies,Italian Biscotti,M &amp;amp; M&#8217;s&#160;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Sauces: Chocolate,Strawberry,Mango,Caramel,Vanilla&lt;/p&gt;</def>
+        <name>Toppings per item 25,000</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421639218610.png</urlIcon>
+    </item>
+</ehotel>

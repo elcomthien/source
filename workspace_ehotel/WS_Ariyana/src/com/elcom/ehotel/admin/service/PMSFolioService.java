@@ -69,4 +69,8 @@ public class PMSFolioService {
 	public List<OrderModel> getListOrder(String folionum, String from, String to) {
 		return pmsFolioDao.getListOrder(folionum, from, to);
 	}
+	
+	public int changeStatusReboot(String serinumber) {
+		return pmsFolioDao.changeStatusReboot(serinumber);
+	}
 }

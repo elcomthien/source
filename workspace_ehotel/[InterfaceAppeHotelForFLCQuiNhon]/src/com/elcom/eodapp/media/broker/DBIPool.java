@@ -83,11 +83,11 @@ public class DBIPool
     while (attemptNo < config.conn_tries_numbers)
     {
       try{
-        dbi = (DBI)Naming.lookup("rmi://" +
-                                 config.dbihostname + ":" +
-                                 config.dbiport + "/" +
-                                 config.dbiservicename);
-//        dbi = (DBI)Naming.lookup("rmi://localhost:10002/DBInterface");
+//        dbi = (DBI)Naming.lookup("rmi://" +
+//                                 config.dbihostname + ":" +
+//                                 config.dbiport + "/" +
+//                                 config.dbiservicename);
+        dbi = (DBI)Naming.lookup("rmi://localhost:10002/DBInterface");
         //No Errors accur, ie, a connection to the DBI Ok, break while
         break;
 

@@ -1,0 +1,77 @@
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+21097 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21102 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21102 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21103 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42106 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+21094 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21098 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21098 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21098 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42101 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+21094 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21098 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21098 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21099 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42101 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+21088 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21092 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21093 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21093 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42103 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:10002/DBInterface
+21091 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21095 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21095 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21096 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42099 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:10002/DBInterface
+21088 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21092 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21092 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21093 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42098 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:10002/DBInterface
+21095 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21099 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21099 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21100 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42097 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:10002/DBInterface
+21090 INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+21094 INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+21094 INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+21095 INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+42095 ERROR [main] dao.eUserDao - java.net.ConnectException: Connection timed out: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+4     INFO  [main] connect.DBIManager - url =rmi://192.168.0.159:11002/DBInterface
+1093  INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+1097  INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+1097  INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+1098  INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+2099  ERROR [main] dao.eUserDao - java.net.ConnectException: Connection refused: connect
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+89    INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+90    INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+91    INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+91    INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+122   INFO  [main] dao.eUserDao - [login(sql={call eUser.login(?,?,?,?)})  -->returnValue=true,userId=948]
+0     INFO  [main] connect.PathDef - D:\project\eHotelAdmin/Config/eodapp.properties
+3     INFO  [main] connect.DBIManager - url =rmi://172.16.9.36:11002/DBInterface
+92    INFO  [main] dao.eBaseDao - {call eUser.login(?,?,?,?)}
+93    INFO  [main] util.UnicodeConverter - 	 param 1 after encode:vuonghoa
+94    INFO  [main] util.UnicodeConverter - 	 param 2 after encode:202cb962ac59075b964b07152d234b70
+94    INFO  [main] util.UnicodeConverter - 	 param 3 after encode:172.16.9.36
+110   INFO  [main] dao.eUserDao - [login(sql={call eUser.login(?,?,?,?)})  -->returnValue=true,userId=948]

@@ -1,0 +1,198 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<head>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet"
+	type="text/css" />
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/dataTables.tableTools.css" rel="stylesheet"
+	type="text/css" />
+<link href="css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+<link href="css/publicmain.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/jscolor/jscolor.js"></script>
+<script type="text/javascript" src="js/content-qms.js"></script>
+<%-- <script type="text/javascript" src="js/left-subject-content.js"></script> --%>
+
+</head>
+<div class="div-content">
+	<h2 class="h2-title-content">QMS Config</h2>
+	<div style="margin-top: 10px;">
+<!-- 		<button id="btn-add-new-text" class="btn buntton-add-new-text"> -->
+<!-- 			<img class="" src="css/images/icon-new-text.png" width="24px"> -->
+<!-- 			Tạo văn bản mới -->
+<!-- 		</button> -->
+	</div>
+	<div id="div-table" style="margin-top: 10px; width: 60%; float: left;"></div>
+	<div id="div-edit" style="margin-top: 0px; width: 40%; float: right;">
+	
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Background header</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<input id="input-background-header" type="text" class="color"
+					value="" onchange="changeBackgroundHeader()"
+					style="float: right; width: 138px; margin-top: 7px;" />
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Background even</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<input id="input-background-body-even" type="text" class="color"
+					value="" onchange="changeBackgroundBodyEven()"
+					style="float: right; width: 138px; margin-top: 7px;" />
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Background odd</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<input id="input-background-body-odd" type="text" class="color"
+					value="" onchange="changeBackgroundBodyOdd()"
+					style="float: right; width: 138px; margin-top: 7px;" />
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Font color header</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<input id="input-color-header" type="text" class="color"
+					value="" onchange="changeColorHeader()"
+					style="float: right; width: 138px; margin-top: 7px;" />
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Font color body</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<input id="input-color-body" type="text" class="color"
+					value="" onchange="changeColorBody()"
+					style="float: right; width: 138px; margin-top: 7px;" />
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Font size header</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<select id="select-fontsize-header" class="form-control bfh-fontsizes" data-fontsize="12" style="width: 150px; float: right; margin-top: 7px;" onchange="changeFontSizeHeader()">
+					<option value="8">8px</option>
+					<option value="9">9px</option>
+					<option value="10">10px</option>
+					<option value="11">11px</option>
+					<option value="12">12px</option>
+					<option value="14">14px</option>
+					<option value="16">16px</option>
+					<option value="18">18px</option>
+					<option value="20">20px</option>
+					<option value="24">24px</option>
+					<option value="28">28px</option>
+					<option value="36">36px</option>
+					<option value="48">48px</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Font size body</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<select id="select-fontsize-body" class="form-control bfh-fontsizes" data-fontsize="12" style="width: 150px; float: right; margin-top: 7px;" onchange="changeFontSizeBody()">
+					<option value="8">8px</option>
+					<option value="9">9px</option>
+					<option value="10">10px</option>
+					<option value="11">11px</option>
+					<option value="12">12px</option>
+					<option value="14">14px</option>
+					<option value="16">16px</option>
+					<option value="18">18px</option>
+					<option value="20">20px</option>
+					<option value="24">24px</option>
+					<option value="28">28px</option>
+					<option value="36">36px</option>
+					<option value="48">48px</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2" style="width: 200px;">
+				<h4 style="margin-left: 20px;">Font family</h4>
+			</div>
+			<div class="span1" style="float: right;">
+				<select id="select-font" class="form-control bfh-fonts" data-font="Arial" style="width: 150px; float: right; margin-top: 7px;" onchange="changeFont()">
+					<option value="Andale Mono">Andale Mono</option>
+					<option value="Arial">Arial</option>
+					<option value="Arial Black">Arial Black</option>
+					<option value="Arial Narrow">Arial Narrow</option>
+					<option value="Arial Rounded MT Bold">Arial Rounded MT Bold</option>
+					<option value="Avant Garde">Avant Garde</option>
+					<option value="Baskerville">Baskerville</option>
+					<option value="Big Caslon">Big Caslon</option>
+					<option value="Bodoni MT">Bodoni MT</option>
+					<option value="Book Antiqua">Book Antiqua</option>
+					<option value="Brush Script MT">Brush Script MT</option>
+					<option value="Calibri">Calibri</option>
+					<option value="Calisto MT">Calisto MT</option>
+					<option value="Cambrio">Cambrio</option>
+					<option value="Candara">Candara</option>
+					<option value="Century Gothic">Century Gothic</option>
+					<option value="Consolas">Consolas</option>
+					<option value="Copperplate">Copperplate</option>
+					<option value="Courier New">Courier New</option>
+					<option value="Didot">Didot</option>
+					<option value="Franklin Gothic Medium">Franklin Gothic
+						Medium</option>
+					<option value="Futura">Futura</option>
+					<option value="Garamond">Garamond</option>
+					<option value="Geneva">Geneva</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Gill Sans">Gill Sans</option>
+					<option value="Goudy Old Style">Goudy Old Style</option>
+					<option value="Helvetica">Helvetica</option>
+					<option value="Hoefler Text">Hoefler Text</option>
+					<option value="Impact">Impact</option>
+					<option value="Lucida Bright">Lucida Bright</option>
+					<option value="Lucida Console">Lucida Console</option>
+					<option value="Lucida Sans Typewriter">Lucida Sans
+						Typewriter</option>
+					<option value="Lucida Grande">Lucida Grande</option>
+					<option value="Monaco">Monaco</option>
+					<option value="Optima">Optima</option>
+					<option value="Palatino">Palatino</option>
+					<option value="Papyrus">Papyrus</option>
+					<option value="Perpetua">Perpetua</option>
+					<option value="Rockwell">Rockwell</option>
+					<option value="Rockwell Extra Bold">Rockwell Extra Bold</option>
+					<option value="Segoe UI">Segoe UI</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Trebuchet MS">Trebuchet MS</option>
+					<option value="Verdana">Verdana</option>
+				</select>
+			</div>
+		</div>
+		
+		<div style="margin-left: 130px; margin-top: 10px;">
+			<button class="btn btn-primary" id="qms-config" onclick="configQMS()">Config</button>
+			<button class="btn btn-inverse" id="qms-reset" onclick="getAllData()">Reset</button>
+		</div>
+	</div>
+</div>

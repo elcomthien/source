@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-1">
+        <name>Vietnam Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/VnAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/VnAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/VnAirlines.png</urlIcon>
+        <urlLink>http://www.vietnamairlines.com.vn/wps/portal/en/site/home?lang=en&amp;country=vietnam&amp;country_code=VN</urlLink>
+    </item>
+    <item id="-2">
+        <name>Jetstar Pacific Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/jetstar.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/jetstar.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/jetstar.png</urlIcon>
+        <urlLink>http://www.jetstar.com/vn/vi/home</urlLink>
+    </item>
+    <item id="-3">
+        <name>Air Mekong  </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AirMekong.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AirMekong.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AirMekong.png</urlIcon>
+        <urlLink>http://www.airmekong.vn/Sites/Web/vi-Vn/Trang-Chu</urlLink>
+    </item>
+    <item id="-4">
+        <name>Air France </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AirFrance.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AirFrance.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AirFrance.png</urlIcon>
+        <urlLink>http://www.airfrance.com/cgi-bin/AF/VN/en/common/home/flights/ticket-plane.do</urlLink>
+    </item>
+    <item id="-5">
+        <name>All Nippon Airways </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AllNipponAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AllNipponAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AllNipponAirways.png</urlIcon>
+        <urlLink>http://www.ana.co.jp/asw/wws/vn/e/</urlLink>
+    </item>
+    <item id="-6">
+        <name>Cathay Pacific </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/CathayPacific.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/CathayPacific.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/CathayPacific.png</urlIcon>
+        <urlLink>http://www.cathaypacific.com/cpa/en_VN/homepage?CX_FCN=CXHOME0_CountryChange</urlLink>
+    </item>
+    <item id="-7">
+        <name>Austrian Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AutrianAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AutrianAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AutrianAirlines.png</urlIcon>
+        <urlLink>http://www.austrian.com/?cc=TH&amp;sc_lang=en</urlLink>
+    </item>
+    <item id="-8">
+        <name>American Airlines</name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AmericanAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AmericanAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AmericanAirlines.png</urlIcon>
+        <urlLink>http://www.aa.com/homePage.do?locale=en_US</urlLink>
+    </item>
+    <item id="-9">
+        <name>Qatar Airways  </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/QatarAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/QatarAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/QatarAirways.png</urlIcon>
+        <urlLink>http://www.qatarairways.com/vn/en/homepage.page</urlLink>
+    </item>
+    <item id="-10">
+        <name>China Airlines  </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/ChinaAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/ChinaAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/ChinaAirlines.png</urlIcon>
+        <urlLink>http://www.china-airlines.com/en/index.htm</urlLink>
+    </item>
+    <item id="-11">
+        <name>Thai Airways </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/ThaiAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/ThaiAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/ThaiAirways.png</urlIcon>
+        <urlLink>http://www.thaiairways.com/</urlLink>
+    </item>
+    <item id="-12">
+        <name>Lion Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/LionAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/LionAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/LionAirways.png</urlIcon>
+        <urlLink>http://www.lionair.co.id/</urlLink>
+    </item>
+    <item id="-13">
+        <name>Philippine Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/PhilippineAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/PhilippineAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/PhilippineAirlines.png</urlIcon>
+        <urlLink>http://www.philippineairlines.com/home/home.jsp</urlLink>
+    </item>
+    <item id="-14">
+        <name>Singapore Airlines </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/SingaporeAirlines.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/SingaporeAirlines.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/SingaporeAirlines.png</urlIcon>
+        <urlLink>http://www.singaporeair.com/SAA-flow.form?execution=e3s1</urlLink>
+    </item>
+    <item id="-15">
+        <name>British Airways </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/BritishAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/BritishAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/BritishAirways.png</urlIcon>
+        <urlLink>http://www.britishairways.com/travel/home/public/en_vn</urlLink>
+    </item>
+    <item id="-17">
+        <name>Air Canada </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/AirCanada.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/AirCanada.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/AirCanada.png</urlIcon>
+        <urlLink>http://www.aircanada.com/en/home.html</urlLink>
+    </item>
+    <item id="-16">
+        <name>Tiger Airways </name>
+        <url>/ePMS2.0/elcom/resources/image/Transportion/TigerAirways.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Transportion/TigerAirways.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Transportion/TigerAirways.png</urlIcon>
+        <urlLink>http://www.tigerairways.com/vn/en/index.php</urlLink>
+    </item>
+</ehotel>

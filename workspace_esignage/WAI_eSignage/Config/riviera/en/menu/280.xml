@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="283">
+        <name>Test 02</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1403149903073.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1403149906555.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1403149903073.png</urlIcon>
+    </item>
+</ehotel>

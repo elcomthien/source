@@ -1,0 +1,1217 @@
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+17    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+533   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1036  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1538  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2039  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2541  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3043  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3545  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+4047  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:91)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+87    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+589   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1093  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+1594  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2095  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+2596  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3098  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+3599  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+4143  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:795)
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 92
+14    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+516   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+1017  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+1518  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+2019  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+2522  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+3023  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+3525  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+4027  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:69)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:360)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:796)
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_getadminListStbGroup(?,?)} | param: 105
+31    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+546   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1048  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1550  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2052  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2554  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3056  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3558  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+4060  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+16    ERROR [main] broker.ConPool - Connect to the Database failed in times: 1
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+518   ERROR [main] broker.ConPool - Connect to the Database failed in times: 2
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1020  ERROR [main] broker.ConPool - Connect to the Database failed in times: 3
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+1522  ERROR [main] broker.ConPool - Connect to the Database failed in times: 4
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2023  ERROR [main] broker.ConPool - Connect to the Database failed in times: 5
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+2526  ERROR [main] broker.ConPool - Connect to the Database failed in times: 6
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3027  ERROR [main] broker.ConPool - Connect to the Database failed in times: 7
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+3529  ERROR [main] broker.ConPool - Connect to the Database failed in times: 8
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+4030  ERROR [main] broker.ConPool - Connect to the Database failed in times: 9
+java.sql.SQLException: No suitable driver found for 172.16.9.188:3306/ABOPDB?user=adcenter&password=adcenter&useUnicode=true&characterEncoding=utf8
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getNewConn(ConPool.java:95)
+	at com.elcom.adcenter.rvcadv.broker.ConPool.getConn(ConPool.java:44)
+	at com.elcom.adcenter.rvcadv.broker.IMBroker.executeSubPro(IMBroker.java:187)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStringGeneral(GroupDao.java:70)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.getStbGroup(GroupDao.java:356)
+	at com.elcom.adcenter.rvcadv.group.GroupDao.main(GroupDao.java:766)
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call dbadcenter.sp_admingetContentGroup(?,?,?)} | param size: 2
+2     INFO  [main] group.GroupDao - pram 0 = 105
+3     INFO  [main] group.GroupDao - pram 1 = 0
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call dbadcenter.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] layout.LayoutDao - query: {call ABOPDB.sp_admingetLayoutName(?,?,?)} | param size: 2
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetConfig(?,?)} | param size: 1
+2     INFO  [main] group.GroupDao - pram 0 = 
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminGetAllContent(?,?)} | param: 5
+361   INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_getadminListStbGroup(?,?)} | param: 105
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+3744  INFO  [main] group.GroupDao - pram 0 = 105
+11215 INFO  [main] group.GroupDao - pram 1 = Playlist_new
+13206 INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = 105
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+40    INFO  [main] group.GroupDao - pram 0 = 105
+40    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+40    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = 105
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = 105
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = thisis
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+5322  INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+320   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+250   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+289   INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+379   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 101 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+370   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+0     INFO  [main] group.GroupDao - pram 0 = -1
+0     INFO  [main] group.GroupDao - pram 1 = Playlist_new
+0     INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 105 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+360   INFO  [main] group.GroupDao - 101 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_adminNewPlaylistName(?,?,?,?)} | param size: 3
+10    INFO  [main] group.GroupDao - pram 0 = -1
+10    INFO  [main] group.GroupDao - pram 1 = Playlist_new
+10    INFO  [main] group.GroupDao - pram 2 = this
+280   INFO  [main] group.GroupDao - 110 | 53 | 55 | AVATAR_PANDORA_TRAILER.mp4 | 00:00:20 | 00:04:26
+360   INFO  [main] group.GroupDao - 110 | 53 | 421 | CHITIEU_SANPHAM7.png | 00:00:00 | 00:02:25
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyName(?,?)} | param size: 2
+30    INFO  [main] content.ServiceContentDao - pram 0 = 0
+30    INFO  [main] content.ServiceContentDao - pram 1 = 0
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyName(?,?)} | param size: 2
+0     INFO  [main] content.ServiceContentDao - pram 0 = 2
+0     INFO  [main] content.ServiceContentDao - pram 1 = HaNoi_Daily_tmdang
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+30    INFO  [main] content.ServiceContentDao - pram 0 = 2
+30    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+30    INFO  [main] content.ServiceContentDao - pram 2 = 19:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_admingetScheduleDailyGroup(?,?)} | param size: 1
+0     INFO  [main] content.ServiceContentDao - pram 0 = 2
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+0     INFO  [main] content.ServiceContentDao - pram 0 = 15
+0     INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+0     INFO  [main] content.ServiceContentDao - pram 2 = 22:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+211   INFO  [main] content.ServiceContentDao - pram 0 = 15
+211   INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+211   INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+0     INFO  [main] content.ServiceContentDao - pram 0 = 15
+0     INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+0     INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+50    INFO  [main] content.ServiceContentDao - pram 0 = 16
+50    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+50    INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     INFO  [main] content.ServiceContentDao - id:16
+30    INFO  [main] content.ServiceContentDao - starttime:07:00:00
+30    INFO  [main] content.ServiceContentDao - stoptime:10:10:00
+30    INFO  [main] content.ServiceContentDao - query: {call ABOPDB.sp_adminUpdateScheduleDailyTime(?,?,?)} | param size: 3
+30    INFO  [main] content.ServiceContentDao - pram 0 = 16
+30    INFO  [main] content.ServiceContentDao - pram 1 = 07:00:00
+30    INFO  [main] content.ServiceContentDao - pram 2 = 10:10:00
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@15dfd77
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@1abc7b9
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@1abc7b9
+0     DEBUG [main] context.AbstractContext - OnDemandLogger initialized for class org.apache.axis2.context.AbstractContext is:org.apache.commons.logging.impl.Log4JLogger@c55e36
+0     INFO  [main] group.GroupDao - query: {call ABOPDB.sp_admingetConfig(?,?)} | param size: 1
+20    INFO  [main] group.GroupDao - pram 0 = 
+442   ERROR [main] group.GroupDao - 
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+10    INFO  [main] group.GroupDao - pram 0 = 816
+90    ERROR [main] group.GroupDao - 
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+10    INFO  [main] group.GroupDao - pram 0 = 816
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+20    INFO  [main] group.GroupDao - pram 0 = 816
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+10    INFO  [main] group.GroupDao - pram 0 = 816
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetPlaylistIDByDaily(?,?)} | param size: 1
+28    INFO  [main] group.GroupDao - pram 0 = 33
+14557 INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByPlaylist(?,?)} | param size: 1
+14559 INFO  [main] group.GroupDao - pram 0 = 45
+27343 INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+27346 INFO  [main] group.GroupDao - pram 0 = 1191
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetPlaylistIDByDaily(?,?)} | param size: 1
+5     INFO  [main] group.GroupDao - pram 0 = 33
+1826  INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByPlaylist(?,?)} | param size: 1
+1829  INFO  [main] group.GroupDao - pram 0 = 45
+36120 INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+36123 INFO  [main] group.GroupDao - pram 0 = 1191
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetPlaylistIDByDaily(?,?)} | param size: 1
+14    INFO  [main] group.GroupDao - pram 0 = 33
+1038  INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByPlaylist(?,?)} | param size: 1
+1041  INFO  [main] group.GroupDao - pram 0 = 45
+3648  INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+3651  INFO  [main] group.GroupDao - pram 0 = 1191
+11847 INFO  [main] group.GroupDao - query: {call sp_adminGetIdSTBInGroup(?,?)} | param size: 1
+11848 INFO  [main] group.GroupDao - pram 0 = 143
+11933 INFO  [main] group.GroupDao - query: {call sp_admingetContentStb(?,?)} | param size: 1
+11933 INFO  [main] group.GroupDao - pram 0 = 176
+12046 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12046 INFO  [main] group.GroupDao - pram 0 = 176
+12046 INFO  [main] group.GroupDao - pram 1 = 1144
+12085 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12086 INFO  [main] group.GroupDao - pram 0 = 176
+12086 INFO  [main] group.GroupDao - pram 1 = 1145
+12130 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12131 INFO  [main] group.GroupDao - pram 0 = 176
+12131 INFO  [main] group.GroupDao - pram 1 = 1146
+12173 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12174 INFO  [main] group.GroupDao - pram 0 = 176
+12174 INFO  [main] group.GroupDao - pram 1 = 1147
+12211 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12211 INFO  [main] group.GroupDao - pram 0 = 176
+12212 INFO  [main] group.GroupDao - pram 1 = 1149
+12258 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12258 INFO  [main] group.GroupDao - pram 0 = 176
+12259 INFO  [main] group.GroupDao - pram 1 = 1150
+12307 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12307 INFO  [main] group.GroupDao - pram 0 = 176
+12307 INFO  [main] group.GroupDao - pram 1 = 1190
+12362 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12362 INFO  [main] group.GroupDao - pram 0 = 176
+12362 INFO  [main] group.GroupDao - pram 1 = 1152
+12411 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12411 INFO  [main] group.GroupDao - pram 0 = 176
+12411 INFO  [main] group.GroupDao - pram 1 = 1153
+12488 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12488 INFO  [main] group.GroupDao - pram 0 = 176
+12489 INFO  [main] group.GroupDao - pram 1 = 1154
+12558 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12559 INFO  [main] group.GroupDao - pram 0 = 176
+12559 INFO  [main] group.GroupDao - pram 1 = 1155
+12605 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12605 INFO  [main] group.GroupDao - pram 0 = 176
+12605 INFO  [main] group.GroupDao - pram 1 = 1156
+12659 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12660 INFO  [main] group.GroupDao - pram 0 = 176
+12661 INFO  [main] group.GroupDao - pram 1 = 1157
+12711 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12711 INFO  [main] group.GroupDao - pram 0 = 176
+12711 INFO  [main] group.GroupDao - pram 1 = 1158
+12752 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12752 INFO  [main] group.GroupDao - pram 0 = 176
+12752 INFO  [main] group.GroupDao - pram 1 = 1159
+12801 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12802 INFO  [main] group.GroupDao - pram 0 = 176
+12802 INFO  [main] group.GroupDao - pram 1 = 1160
+12839 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12839 INFO  [main] group.GroupDao - pram 0 = 176
+12839 INFO  [main] group.GroupDao - pram 1 = 1161
+12881 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12881 INFO  [main] group.GroupDao - pram 0 = 176
+12881 INFO  [main] group.GroupDao - pram 1 = 1162
+12923 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12923 INFO  [main] group.GroupDao - pram 0 = 176
+12923 INFO  [main] group.GroupDao - pram 1 = 1163
+12989 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+12990 INFO  [main] group.GroupDao - pram 0 = 176
+12990 INFO  [main] group.GroupDao - pram 1 = 1164
+13022 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13022 INFO  [main] group.GroupDao - pram 0 = 176
+13022 INFO  [main] group.GroupDao - pram 1 = 1165
+13059 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13059 INFO  [main] group.GroupDao - pram 0 = 176
+13060 INFO  [main] group.GroupDao - pram 1 = 1166
+13115 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13116 INFO  [main] group.GroupDao - pram 0 = 176
+13116 INFO  [main] group.GroupDao - pram 1 = 1167
+13190 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13190 INFO  [main] group.GroupDao - pram 0 = 176
+13190 INFO  [main] group.GroupDao - pram 1 = 1168
+13268 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13268 INFO  [main] group.GroupDao - pram 0 = 176
+13269 INFO  [main] group.GroupDao - pram 1 = 1169
+13327 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13327 INFO  [main] group.GroupDao - pram 0 = 176
+13328 INFO  [main] group.GroupDao - pram 1 = 1170
+13362 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13363 INFO  [main] group.GroupDao - pram 0 = 176
+13363 INFO  [main] group.GroupDao - pram 1 = 1171
+13400 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13400 INFO  [main] group.GroupDao - pram 0 = 176
+13401 INFO  [main] group.GroupDao - pram 1 = 1172
+13441 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13441 INFO  [main] group.GroupDao - pram 0 = 176
+13441 INFO  [main] group.GroupDao - pram 1 = 1173
+13473 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13474 INFO  [main] group.GroupDao - pram 0 = 176
+13474 INFO  [main] group.GroupDao - pram 1 = 1174
+13539 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13539 INFO  [main] group.GroupDao - pram 0 = 176
+13540 INFO  [main] group.GroupDao - pram 1 = 1175
+13575 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13575 INFO  [main] group.GroupDao - pram 0 = 176
+13575 INFO  [main] group.GroupDao - pram 1 = 1176
+13607 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13607 INFO  [main] group.GroupDao - pram 0 = 176
+13607 INFO  [main] group.GroupDao - pram 1 = 1177
+13654 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13654 INFO  [main] group.GroupDao - pram 0 = 176
+13654 INFO  [main] group.GroupDao - pram 1 = 1178
+13704 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13705 INFO  [main] group.GroupDao - pram 0 = 176
+13705 INFO  [main] group.GroupDao - pram 1 = 1179
+13750 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13750 INFO  [main] group.GroupDao - pram 0 = 176
+13750 INFO  [main] group.GroupDao - pram 1 = 1180
+13803 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13803 INFO  [main] group.GroupDao - pram 0 = 176
+13803 INFO  [main] group.GroupDao - pram 1 = 1181
+13835 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13835 INFO  [main] group.GroupDao - pram 0 = 176
+13835 INFO  [main] group.GroupDao - pram 1 = 1182
+13893 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13894 INFO  [main] group.GroupDao - pram 0 = 176
+13895 INFO  [main] group.GroupDao - pram 1 = 1183
+13930 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13930 INFO  [main] group.GroupDao - pram 0 = 176
+13930 INFO  [main] group.GroupDao - pram 1 = 1184
+13982 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+13983 INFO  [main] group.GroupDao - pram 0 = 176
+13983 INFO  [main] group.GroupDao - pram 1 = 1185
+14024 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14025 INFO  [main] group.GroupDao - pram 0 = 176
+14025 INFO  [main] group.GroupDao - pram 1 = 1186
+14064 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14065 INFO  [main] group.GroupDao - pram 0 = 176
+14065 INFO  [main] group.GroupDao - pram 1 = 1187
+14108 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14108 INFO  [main] group.GroupDao - pram 0 = 176
+14108 INFO  [main] group.GroupDao - pram 1 = 1191
+14140 INFO  [main] group.GroupDao - query: {call sp_adminUpdateDownloadStatusSTB(?)} | param size: 1
+14141 INFO  [main] group.GroupDao - pram 0 = 176
+14179 INFO  [main] group.GroupDao - query: {call sp_admingetContentStb(?,?)} | param size: 1
+14179 INFO  [main] group.GroupDao - pram 0 = 175
+14258 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14259 INFO  [main] group.GroupDao - pram 0 = 175
+14259 INFO  [main] group.GroupDao - pram 1 = 1144
+14298 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14299 INFO  [main] group.GroupDao - pram 0 = 175
+14299 INFO  [main] group.GroupDao - pram 1 = 1145
+14331 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14332 INFO  [main] group.GroupDao - pram 0 = 175
+14332 INFO  [main] group.GroupDao - pram 1 = 1146
+14368 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14368 INFO  [main] group.GroupDao - pram 0 = 175
+14368 INFO  [main] group.GroupDao - pram 1 = 1147
+14400 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14401 INFO  [main] group.GroupDao - pram 0 = 175
+14401 INFO  [main] group.GroupDao - pram 1 = 1149
+14435 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14435 INFO  [main] group.GroupDao - pram 0 = 175
+14436 INFO  [main] group.GroupDao - pram 1 = 1150
+14477 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14477 INFO  [main] group.GroupDao - pram 0 = 175
+14477 INFO  [main] group.GroupDao - pram 1 = 1190
+14510 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14510 INFO  [main] group.GroupDao - pram 0 = 175
+14510 INFO  [main] group.GroupDao - pram 1 = 1152
+14567 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14567 INFO  [main] group.GroupDao - pram 0 = 175
+14567 INFO  [main] group.GroupDao - pram 1 = 1153
+14600 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14600 INFO  [main] group.GroupDao - pram 0 = 175
+14600 INFO  [main] group.GroupDao - pram 1 = 1154
+14633 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14633 INFO  [main] group.GroupDao - pram 0 = 175
+14633 INFO  [main] group.GroupDao - pram 1 = 1155
+14682 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14683 INFO  [main] group.GroupDao - pram 0 = 175
+14683 INFO  [main] group.GroupDao - pram 1 = 1156
+14716 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14717 INFO  [main] group.GroupDao - pram 0 = 175
+14717 INFO  [main] group.GroupDao - pram 1 = 1157
+14752 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14752 INFO  [main] group.GroupDao - pram 0 = 175
+14752 INFO  [main] group.GroupDao - pram 1 = 1158
+14792 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14792 INFO  [main] group.GroupDao - pram 0 = 175
+14793 INFO  [main] group.GroupDao - pram 1 = 1159
+14850 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14851 INFO  [main] group.GroupDao - pram 0 = 175
+14851 INFO  [main] group.GroupDao - pram 1 = 1160
+14885 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14885 INFO  [main] group.GroupDao - pram 0 = 175
+14886 INFO  [main] group.GroupDao - pram 1 = 1161
+14920 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14920 INFO  [main] group.GroupDao - pram 0 = 175
+14921 INFO  [main] group.GroupDao - pram 1 = 1162
+14967 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+14967 INFO  [main] group.GroupDao - pram 0 = 175
+14967 INFO  [main] group.GroupDao - pram 1 = 1163
+15005 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15005 INFO  [main] group.GroupDao - pram 0 = 175
+15006 INFO  [main] group.GroupDao - pram 1 = 1164
+15056 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15056 INFO  [main] group.GroupDao - pram 0 = 175
+15057 INFO  [main] group.GroupDao - pram 1 = 1165
+15100 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15101 INFO  [main] group.GroupDao - pram 0 = 175
+15101 INFO  [main] group.GroupDao - pram 1 = 1166
+15150 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15150 INFO  [main] group.GroupDao - pram 0 = 175
+15151 INFO  [main] group.GroupDao - pram 1 = 1167
+15184 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15184 INFO  [main] group.GroupDao - pram 0 = 175
+15184 INFO  [main] group.GroupDao - pram 1 = 1168
+15237 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15237 INFO  [main] group.GroupDao - pram 0 = 175
+15237 INFO  [main] group.GroupDao - pram 1 = 1169
+15283 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15283 INFO  [main] group.GroupDao - pram 0 = 175
+15283 INFO  [main] group.GroupDao - pram 1 = 1170
+15315 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15316 INFO  [main] group.GroupDao - pram 0 = 175
+15316 INFO  [main] group.GroupDao - pram 1 = 1171
+15347 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15348 INFO  [main] group.GroupDao - pram 0 = 175
+15348 INFO  [main] group.GroupDao - pram 1 = 1172
+15384 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15385 INFO  [main] group.GroupDao - pram 0 = 175
+15385 INFO  [main] group.GroupDao - pram 1 = 1173
+15426 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15426 INFO  [main] group.GroupDao - pram 0 = 175
+15426 INFO  [main] group.GroupDao - pram 1 = 1174
+15468 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15469 INFO  [main] group.GroupDao - pram 0 = 175
+15469 INFO  [main] group.GroupDao - pram 1 = 1175
+15510 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15510 INFO  [main] group.GroupDao - pram 0 = 175
+15510 INFO  [main] group.GroupDao - pram 1 = 1176
+15560 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15560 INFO  [main] group.GroupDao - pram 0 = 175
+15560 INFO  [main] group.GroupDao - pram 1 = 1177
+15601 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15601 INFO  [main] group.GroupDao - pram 0 = 175
+15602 INFO  [main] group.GroupDao - pram 1 = 1178
+15635 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15635 INFO  [main] group.GroupDao - pram 0 = 175
+15636 INFO  [main] group.GroupDao - pram 1 = 1179
+15668 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15668 INFO  [main] group.GroupDao - pram 0 = 175
+15669 INFO  [main] group.GroupDao - pram 1 = 1180
+15719 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15719 INFO  [main] group.GroupDao - pram 0 = 175
+15720 INFO  [main] group.GroupDao - pram 1 = 1181
+15776 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15777 INFO  [main] group.GroupDao - pram 0 = 175
+15777 INFO  [main] group.GroupDao - pram 1 = 1182
+15811 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15812 INFO  [main] group.GroupDao - pram 0 = 175
+15812 INFO  [main] group.GroupDao - pram 1 = 1183
+15853 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15853 INFO  [main] group.GroupDao - pram 0 = 175
+15854 INFO  [main] group.GroupDao - pram 1 = 1184
+15897 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15897 INFO  [main] group.GroupDao - pram 0 = 175
+15898 INFO  [main] group.GroupDao - pram 1 = 1185
+15931 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15931 INFO  [main] group.GroupDao - pram 0 = 175
+15932 INFO  [main] group.GroupDao - pram 1 = 1186
+15984 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+15985 INFO  [main] group.GroupDao - pram 0 = 175
+15985 INFO  [main] group.GroupDao - pram 1 = 1187
+16020 INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+16020 INFO  [main] group.GroupDao - pram 0 = 175
+16021 INFO  [main] group.GroupDao - pram 1 = 1191
+16052 INFO  [main] group.GroupDao - query: {call sp_adminUpdateDownloadStatusSTB(?)} | param size: 1
+16052 INFO  [main] group.GroupDao - pram 0 = 175
+0     INFO  [main] group.GroupDao - query: {call sp_adminGetPlaylistIDByDaily(?,?)} | param size: 1
+2     INFO  [main] group.GroupDao - pram 0 = 33
+248   INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByPlaylist(?,?)} | param size: 1
+248   INFO  [main] group.GroupDao - pram 0 = 45
+299   INFO  [main] group.GroupDao - query: {call sp_adminGetContentIDByForSlide(?,?)} | param size: 1
+299   INFO  [main] group.GroupDao - pram 0 = 1191
+363   INFO  [main] group.GroupDao - query: {call sp_adminGetIdSTBInGroup(?,?)} | param size: 1
+363   INFO  [main] group.GroupDao - pram 0 = 143
+430   INFO  [main] group.GroupDao - query: {call sp_admingetContentStb(?,?)} | param size: 1
+431   INFO  [main] group.GroupDao - pram 0 = 176
+478   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+479   INFO  [main] group.GroupDao - pram 0 = 176
+480   INFO  [main] group.GroupDao - pram 1 = 1144
+532   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+532   INFO  [main] group.GroupDao - pram 0 = 176
+533   INFO  [main] group.GroupDao - pram 1 = 1145
+575   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+575   INFO  [main] group.GroupDao - pram 0 = 176
+575   INFO  [main] group.GroupDao - pram 1 = 1146
+629   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+630   INFO  [main] group.GroupDao - pram 0 = 176
+631   INFO  [main] group.GroupDao - pram 1 = 1147
+688   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+688   INFO  [main] group.GroupDao - pram 0 = 176
+688   INFO  [main] group.GroupDao - pram 1 = 1149
+726   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+726   INFO  [main] group.GroupDao - pram 0 = 176
+727   INFO  [main] group.GroupDao - pram 1 = 1150
+802   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+803   INFO  [main] group.GroupDao - pram 0 = 176
+803   INFO  [main] group.GroupDao - pram 1 = 1190
+859   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+860   INFO  [main] group.GroupDao - pram 0 = 176
+860   INFO  [main] group.GroupDao - pram 1 = 1152
+905   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+905   INFO  [main] group.GroupDao - pram 0 = 176
+906   INFO  [main] group.GroupDao - pram 1 = 1153
+976   INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+976   INFO  [main] group.GroupDao - pram 0 = 176
+977   INFO  [main] group.GroupDao - pram 1 = 1154
+1032  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1032  INFO  [main] group.GroupDao - pram 0 = 176
+1033  INFO  [main] group.GroupDao - pram 1 = 1155
+1098  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1099  INFO  [main] group.GroupDao - pram 0 = 176
+1099  INFO  [main] group.GroupDao - pram 1 = 1156
+1141  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1141  INFO  [main] group.GroupDao - pram 0 = 176
+1141  INFO  [main] group.GroupDao - pram 1 = 1157
+1177  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1177  INFO  [main] group.GroupDao - pram 0 = 176
+1177  INFO  [main] group.GroupDao - pram 1 = 1158
+1230  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1230  INFO  [main] group.GroupDao - pram 0 = 176
+1230  INFO  [main] group.GroupDao - pram 1 = 1159
+1263  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1264  INFO  [main] group.GroupDao - pram 0 = 176
+1264  INFO  [main] group.GroupDao - pram 1 = 1160
+1307  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1307  INFO  [main] group.GroupDao - pram 0 = 176
+1308  INFO  [main] group.GroupDao - pram 1 = 1161
+1344  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1344  INFO  [main] group.GroupDao - pram 0 = 176
+1345  INFO  [main] group.GroupDao - pram 1 = 1162
+1404  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1405  INFO  [main] group.GroupDao - pram 0 = 176
+1405  INFO  [main] group.GroupDao - pram 1 = 1163
+1466  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1466  INFO  [main] group.GroupDao - pram 0 = 176
+1467  INFO  [main] group.GroupDao - pram 1 = 1164
+1517  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1517  INFO  [main] group.GroupDao - pram 0 = 176
+1517  INFO  [main] group.GroupDao - pram 1 = 1165
+1551  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1552  INFO  [main] group.GroupDao - pram 0 = 176
+1552  INFO  [main] group.GroupDao - pram 1 = 1166
+1587  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1587  INFO  [main] group.GroupDao - pram 0 = 176
+1588  INFO  [main] group.GroupDao - pram 1 = 1167
+1640  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1641  INFO  [main] group.GroupDao - pram 0 = 176
+1641  INFO  [main] group.GroupDao - pram 1 = 1168
+1693  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1694  INFO  [main] group.GroupDao - pram 0 = 176
+1694  INFO  [main] group.GroupDao - pram 1 = 1169
+1737  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1737  INFO  [main] group.GroupDao - pram 0 = 176
+1737  INFO  [main] group.GroupDao - pram 1 = 1170
+1774  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1774  INFO  [main] group.GroupDao - pram 0 = 176
+1774  INFO  [main] group.GroupDao - pram 1 = 1171
+1819  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1820  INFO  [main] group.GroupDao - pram 0 = 176
+1820  INFO  [main] group.GroupDao - pram 1 = 1172
+1854  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1855  INFO  [main] group.GroupDao - pram 0 = 176
+1855  INFO  [main] group.GroupDao - pram 1 = 1173
+1897  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1897  INFO  [main] group.GroupDao - pram 0 = 176
+1897  INFO  [main] group.GroupDao - pram 1 = 1174
+1942  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+1942  INFO  [main] group.GroupDao - pram 0 = 176
+1942  INFO  [main] group.GroupDao - pram 1 = 1175
+2003  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2003  INFO  [main] group.GroupDao - pram 0 = 176
+2003  INFO  [main] group.GroupDao - pram 1 = 1176
+2040  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2041  INFO  [main] group.GroupDao - pram 0 = 176
+2041  INFO  [main] group.GroupDao - pram 1 = 1177
+2111  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2111  INFO  [main] group.GroupDao - pram 0 = 176
+2111  INFO  [main] group.GroupDao - pram 1 = 1178
+2156  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2157  INFO  [main] group.GroupDao - pram 0 = 176
+2157  INFO  [main] group.GroupDao - pram 1 = 1179
+2210  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2211  INFO  [main] group.GroupDao - pram 0 = 176
+2211  INFO  [main] group.GroupDao - pram 1 = 1180
+2247  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2247  INFO  [main] group.GroupDao - pram 0 = 176
+2247  INFO  [main] group.GroupDao - pram 1 = 1181
+2301  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2302  INFO  [main] group.GroupDao - pram 0 = 176
+2302  INFO  [main] group.GroupDao - pram 1 = 1182
+2378  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2378  INFO  [main] group.GroupDao - pram 0 = 176
+2379  INFO  [main] group.GroupDao - pram 1 = 1183
+2428  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2428  INFO  [main] group.GroupDao - pram 0 = 176
+2428  INFO  [main] group.GroupDao - pram 1 = 1184
+2468  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2469  INFO  [main] group.GroupDao - pram 0 = 176
+2469  INFO  [main] group.GroupDao - pram 1 = 1185
+2521  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2521  INFO  [main] group.GroupDao - pram 0 = 176
+2522  INFO  [main] group.GroupDao - pram 1 = 1186
+2564  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2564  INFO  [main] group.GroupDao - pram 0 = 176
+2564  INFO  [main] group.GroupDao - pram 1 = 1187
+2650  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2650  INFO  [main] group.GroupDao - pram 0 = 176
+2651  INFO  [main] group.GroupDao - pram 1 = 1191
+2685  INFO  [main] group.GroupDao - query: {call sp_adminUpdateDownloadStatusSTB(?)} | param size: 1
+2686  INFO  [main] group.GroupDao - pram 0 = 176
+2723  INFO  [main] group.GroupDao - query: {call sp_admingetContentStb(?,?)} | param size: 1
+2723  INFO  [main] group.GroupDao - pram 0 = 175
+2759  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2760  INFO  [main] group.GroupDao - pram 0 = 175
+2760  INFO  [main] group.GroupDao - pram 1 = 1144
+2795  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2795  INFO  [main] group.GroupDao - pram 0 = 175
+2796  INFO  [main] group.GroupDao - pram 1 = 1145
+2833  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2834  INFO  [main] group.GroupDao - pram 0 = 175
+2834  INFO  [main] group.GroupDao - pram 1 = 1146
+2867  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2867  INFO  [main] group.GroupDao - pram 0 = 175
+2867  INFO  [main] group.GroupDao - pram 1 = 1147
+2900  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2900  INFO  [main] group.GroupDao - pram 0 = 175
+2901  INFO  [main] group.GroupDao - pram 1 = 1149
+2943  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2944  INFO  [main] group.GroupDao - pram 0 = 175
+2944  INFO  [main] group.GroupDao - pram 1 = 1150
+2988  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+2989  INFO  [main] group.GroupDao - pram 0 = 175
+2989  INFO  [main] group.GroupDao - pram 1 = 1190
+3042  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3043  INFO  [main] group.GroupDao - pram 0 = 175
+3043  INFO  [main] group.GroupDao - pram 1 = 1152
+3076  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3076  INFO  [main] group.GroupDao - pram 0 = 175
+3077  INFO  [main] group.GroupDao - pram 1 = 1153
+3128  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3129  INFO  [main] group.GroupDao - pram 0 = 175
+3129  INFO  [main] group.GroupDao - pram 1 = 1154
+3161  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3161  INFO  [main] group.GroupDao - pram 0 = 175
+3161  INFO  [main] group.GroupDao - pram 1 = 1155
+3196  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3197  INFO  [main] group.GroupDao - pram 0 = 175
+3197  INFO  [main] group.GroupDao - pram 1 = 1156
+3249  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3249  INFO  [main] group.GroupDao - pram 0 = 175
+3250  INFO  [main] group.GroupDao - pram 1 = 1157
+3283  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3284  INFO  [main] group.GroupDao - pram 0 = 175
+3284  INFO  [main] group.GroupDao - pram 1 = 1158
+3336  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3337  INFO  [main] group.GroupDao - pram 0 = 175
+3337  INFO  [main] group.GroupDao - pram 1 = 1159
+3381  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3381  INFO  [main] group.GroupDao - pram 0 = 175
+3382  INFO  [main] group.GroupDao - pram 1 = 1160
+3437  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3437  INFO  [main] group.GroupDao - pram 0 = 175
+3438  INFO  [main] group.GroupDao - pram 1 = 1161
+3470  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3470  INFO  [main] group.GroupDao - pram 0 = 175
+3470  INFO  [main] group.GroupDao - pram 1 = 1162
+3530  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3530  INFO  [main] group.GroupDao - pram 0 = 175
+3530  INFO  [main] group.GroupDao - pram 1 = 1163
+3570  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3571  INFO  [main] group.GroupDao - pram 0 = 175
+3571  INFO  [main] group.GroupDao - pram 1 = 1164
+3603  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3603  INFO  [main] group.GroupDao - pram 0 = 175
+3604  INFO  [main] group.GroupDao - pram 1 = 1165
+3644  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3644  INFO  [main] group.GroupDao - pram 0 = 175
+3644  INFO  [main] group.GroupDao - pram 1 = 1166
+3686  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3711  INFO  [main] group.GroupDao - pram 0 = 175
+3713  INFO  [main] group.GroupDao - pram 1 = 1167
+3768  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3768  INFO  [main] group.GroupDao - pram 0 = 175
+3769  INFO  [main] group.GroupDao - pram 1 = 1168
+3830  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3830  INFO  [main] group.GroupDao - pram 0 = 175
+3830  INFO  [main] group.GroupDao - pram 1 = 1169
+3881  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3881  INFO  [main] group.GroupDao - pram 0 = 175
+3881  INFO  [main] group.GroupDao - pram 1 = 1170
+3912  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3913  INFO  [main] group.GroupDao - pram 0 = 175
+3913  INFO  [main] group.GroupDao - pram 1 = 1171
+3956  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+3956  INFO  [main] group.GroupDao - pram 0 = 175
+3956  INFO  [main] group.GroupDao - pram 1 = 1172
+4007  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4008  INFO  [main] group.GroupDao - pram 0 = 175
+4008  INFO  [main] group.GroupDao - pram 1 = 1173
+4058  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4058  INFO  [main] group.GroupDao - pram 0 = 175
+4059  INFO  [main] group.GroupDao - pram 1 = 1174
+4088  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4089  INFO  [main] group.GroupDao - pram 0 = 175
+4089  INFO  [main] group.GroupDao - pram 1 = 1175
+4136  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4136  INFO  [main] group.GroupDao - pram 0 = 175
+4136  INFO  [main] group.GroupDao - pram 1 = 1176
+4174  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4174  INFO  [main] group.GroupDao - pram 0 = 175
+4174  INFO  [main] group.GroupDao - pram 1 = 1177
+4205  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4206  INFO  [main] group.GroupDao - pram 0 = 175
+4206  INFO  [main] group.GroupDao - pram 1 = 1178
+4238  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4239  INFO  [main] group.GroupDao - pram 0 = 175
+4239  INFO  [main] group.GroupDao - pram 1 = 1179
+4271  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4272  INFO  [main] group.GroupDao - pram 0 = 175
+4272  INFO  [main] group.GroupDao - pram 1 = 1180
+4340  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4340  INFO  [main] group.GroupDao - pram 0 = 175
+4340  INFO  [main] group.GroupDao - pram 1 = 1181
+4382  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4383  INFO  [main] group.GroupDao - pram 0 = 175
+4383  INFO  [main] group.GroupDao - pram 1 = 1182
+4432  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4433  INFO  [main] group.GroupDao - pram 0 = 175
+4433  INFO  [main] group.GroupDao - pram 1 = 1183
+4488  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4488  INFO  [main] group.GroupDao - pram 0 = 175
+4488  INFO  [main] group.GroupDao - pram 1 = 1184
+4520  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4520  INFO  [main] group.GroupDao - pram 0 = 175
+4520  INFO  [main] group.GroupDao - pram 1 = 1185
+4559  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4560  INFO  [main] group.GroupDao - pram 0 = 175
+4560  INFO  [main] group.GroupDao - pram 1 = 1186
+4609  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4610  INFO  [main] group.GroupDao - pram 0 = 175
+4610  INFO  [main] group.GroupDao - pram 1 = 1187
+4643  INFO  [main] group.GroupDao - query: {call sp_adminPushContentIntoSTB(?,?)} | param size: 2
+4643  INFO  [main] group.GroupDao - pram 0 = 175
+4643  INFO  [main] group.GroupDao - pram 1 = 1191
+4692  INFO  [main] group.GroupDao - query: {call sp_adminUpdateDownloadStatusSTB(?)} | param size: 1
+4692  INFO  [main] group.GroupDao - pram 0 = 175

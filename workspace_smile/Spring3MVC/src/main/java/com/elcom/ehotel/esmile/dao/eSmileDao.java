@@ -37,7 +37,7 @@ public interface eSmileDao {
 
 	public HashMap<String, Object> postRating(Params params);
 
-	public HashMap<String, Object> getZone(Params params);
+	public HashMap<String, Object> getListZone(Params params);
 
 	public HashMap<String, Object> resetPassword(Params params);
 
@@ -108,26 +108,48 @@ public interface eSmileDao {
 	public HashMap<String, Object> deleteZone(Params params);
 
 	public HashMap<String, Object> updateStatusZone(Params params);
-	
+
 	public HashMap<String, Object> getListLayout(Params params);
-	
+
 	public HashMap<String, Object> saveReport(Params params);
 
 	public HashMap<String, Object> getSaveReport(Params params);
-	
+
 	public HashMap<String, Object> deleteScheduleReport(Params params);
-	
+
 	public HashMap<String, Object> getScheduleReport(Params params);
-	
+
 	public HashMap<String, Object> getRespondent(Params params);
-	
+
 	public HashMap<String, Object> addTagsRespondent(String session_id, DataPostRatingModel params);
-	
+
 	public HashMap<String, Object> updateFlag(String session_id, DataPostRatingModel params);
-	
+
 	public HashMap<String, Object> updateImportant(String session_id, DataPostRatingModel params);
-	
+
 	public HashMap<String, Object> deleteRespondent(Params params);
-	
+
 	public HashMap<String, Object> getReportDevice(Params params);
+
+	public HashMap<String, Object> getRespondentDetail(Params params);
+
+	public HashMap<String, Object> getZone(Params params);
+
+	public HashMap<String, Object> getGeoLocationDevice(Params params);
+
+	public HashMap<String, Object> getDashboardDevice(Params params);
+
+	public HashMap<String, Object> getDashboardOverview(Params params);
+
+	public HashMap<String, Object> renewalSession(Params params);
+
+	public HashMap<String, Object> boxGetInfo(Params params);
+	
+	public HashMap<String, Object> setBackground(Params params);
+	
+	public HashMap<String, Object> getNotification(Params params);
+	
+	public HashMap<String, Object> getLayoutEmail(Params params);
+	
+	public HashMap<String, Object> setSendEmail(Params params);
 }

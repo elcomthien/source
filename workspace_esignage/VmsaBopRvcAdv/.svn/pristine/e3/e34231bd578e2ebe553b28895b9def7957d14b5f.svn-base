@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from AdcenterAdminServiceService WSDL service -->
+
+  <service name="AdcenterAdminService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.rvcadv.adcenter.elcom.com"/>
+      <parameter name="wsdlServiceElement" value="AdcenterAdminServiceService"/>
+      <parameter name="schemaQualified" value="http://service.rvcadv.adcenter.elcom.com"/>
+      <parameter name="wsdlServicePort" value="AdcenterAdminService"/>
+      <parameter name="className" value="com.elcom.adcenter.rvcadv.service.AdcenterAdminService"/>
+      <parameter name="wsdlPortType" value="AdcenterAdminService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getContentGroup" qname="operNS:getContentGroup" returnQName="retNS:getContentGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdateDirecGroup" qname="operNS:adminUpdateDirecGroup" returnQName="retNS:adminUpdateDirecGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminCheckStb" qname="operNS:adminCheckStb" returnQName="retNS:adminCheckStbReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelStb" qname="operNS:adminDelStb" returnQName="retNS:adminDelStbReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetContentNoGroup" qname="operNS:admingetContentNoGroup" returnQName="retNS:admingetContentNoGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetLayoutGroup" qname="operNS:admingetLayoutGroup" returnQName="retNS:admingetLayoutGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdateLayoutCoor" qname="operNS:adminUpdateLayoutCoor" returnQName="retNS:adminUpdateLayoutCoorReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdatePlayListName" qname="operNS:adminUpdatePlayListName" returnQName="retNS:adminUpdatePlayListNameReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdatePlaylistTime" qname="operNS:adminUpdatePlaylistTime" returnQName="retNS:adminUpdatePlaylistTimeReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelItemPlaylist" qname="operNS:adminDelItemPlaylist" returnQName="retNS:adminDelItemPlaylistReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetListGroup" qname="operNS:admingetListGroup" returnQName="retNS:admingetListGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetListGroups" qname="operNS:admingetListGroups" returnQName="retNS:admingetListGroupsReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminNewGroup" qname="operNS:adminNewGroup" returnQName="retNS:adminNewGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelGroup" qname="operNS:adminDelGroup" returnQName="retNS:adminDelGroupReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminMoveGroup" qname="operNS:adminMoveGroup" returnQName="retNS:adminMoveGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdateGroup" qname="operNS:adminUpdateGroup" returnQName="retNS:adminUpdateGroupReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getStbGroup" qname="operNS:getStbGroup" returnQName="retNS:getStbGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetListStbAll" qname="operNS:admingetListStbAll" returnQName="retNS:admingetListStbAllReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetListStbAlls" qname="operNS:admingetListStbAlls" returnQName="retNS:admingetListStbAllsReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUdateStb" qname="operNS:adminUdateStb" returnQName="retNS:adminUdateStbReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminStbPush" qname="operNS:adminStbPush" returnQName="retNS:adminStbPushReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminAddStbIntoGroup" qname="operNS:adminAddStbIntoGroup" returnQName="retNS:adminAddStbIntoGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetPlaylistItem" qname="operNS:admingetPlaylistItem" returnQName="retNS:admingetPlaylistItemReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetPlayListLayout" qname="operNS:admingetPlayListLayout" returnQName="retNS:admingetPlayListLayoutReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminRemoveStbGroup" qname="operNS:adminRemoveStbGroup" returnQName="retNS:adminRemoveStbGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetPlayListGroup" qname="operNS:admingetPlayListGroup" returnQName="retNS:admingetPlayListGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetPlayList" qname="operNS:admingetPlayList" returnQName="retNS:admingetPlayListReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminInsertLayout" qname="operNS:adminInsertLayout" returnQName="retNS:adminInsertLayoutReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminInsertLayoutName" qname="operNS:adminInsertLayoutName" returnQName="retNS:adminInsertLayoutNameReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetLayoutContainContent" qname="operNS:admingetLayoutContainContent" returnQName="retNS:admingetLayoutContainContentReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getSessionid" qname="operNS:getSessionid" returnQName="retNS:getSessionidReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:server" type="tns:string"/>
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:port" type="tns:int"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminInsertPlaylistCore" qname="operNS:adminInsertPlaylistCore" returnQName="retNS:adminInsertPlaylistCoreReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelPlaylist" qname="operNS:adminDelPlaylist" returnQName="retNS:adminDelPlaylistReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminNewPlaylistName" qname="operNS:adminNewPlaylistName" returnQName="retNS:adminNewPlaylistNameReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetLayoutName" qname="operNS:admingetLayoutName" returnQName="retNS:admingetLayoutNameReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdateLayoutName" qname="operNS:adminUpdateLayoutName" returnQName="retNS:adminUpdateLayoutNameReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminNewLayoutContent" qname="operNS:adminNewLayoutContent" returnQName="retNS:adminNewLayoutContentReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelLayOutItem" qname="operNS:adminDelLayOutItem" returnQName="retNS:adminDelLayOutItemReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelLayoutName" qname="operNS:adminDelLayoutName" returnQName="retNS:adminDelLayoutNameReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetTypeLayout" qname="operNS:admingetTypeLayout" returnQName="retNS:admingetTypeLayoutReturn" returnType="rtns:string" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="pushContentIntoStb" qname="operNS:pushContentIntoStb" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="removeContentStb" qname="operNS:removeContentStb" returnQName="retNS:removeContentStbReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="removeContentStbEach" qname="operNS:removeContentStbEach" returnQName="retNS:removeContentStbEachReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:mac" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetContentStb" qname="operNS:admingetContentStb" returnQName="retNS:admingetContentStbReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminInserContentIntoGroup" qname="operNS:adminInserContentIntoGroup" returnQName="retNS:adminInserContentIntoGroupReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDeleteContentIntoGroup" qname="operNS:adminDeleteContentIntoGroup" returnQName="retNS:adminDeleteContentIntoGroupReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetScheduleDailyGroup" qname="operNS:admingetScheduleDailyGroup" returnQName="retNS:admingetScheduleDailyGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminUpdateScheduleDailyTime" qname="operNS:adminUpdateScheduleDailyTime" returnQName="retNS:adminUpdateScheduleDailyTimeReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminDelSchduledailyTime" qname="operNS:adminDelSchduledailyTime" returnQName="retNS:adminDelSchduledailyTimeReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetSchedulePeriGroup" qname="operNS:admingetSchedulePeriGroup" returnQName="retNS:admingetSchedulePeriGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetItemScheduleDailyForPerio" qname="operNS:admingetItemScheduleDailyForPerio" returnQName="retNS:admingetItemScheduleDailyForPerioReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewScheduleDaily" qname="operNS:adminNewScheduleDaily" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewSchedulePeri" qname="operNS:adminNewSchedulePeri" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewSchedulePeriName" qname="operNS:adminNewSchedulePeriName" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminDelSchedulePeri" qname="operNS:adminDelSchedulePeri" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminDelSchedulePeriItem" qname="operNS:adminDelSchedulePeriItem" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminUpdateSchedulePeri" qname="operNS:adminUpdateSchedulePeri" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetScheduleDailyNamGroup" qname="operNS:admingetScheduleDailyNamGroup" returnQName="retNS:admingetScheduleDailyNamGroupReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="admingetConfig" qname="operNS:admingetConfig" returnQName="retNS:admingetConfigReturn" returnType="rtns:string" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminNewContent" qname="operNS:adminNewContent" returnQName="retNS:adminNewContentReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewScheduleDailyName" qname="operNS:adminNewScheduleDailyName" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminDelScheduleDailyName" qname="operNS:adminDelScheduleDailyName" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewContentLogic" qname="operNS:adminNewContentLogic" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewContentText" qname="operNS:adminNewContentText" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminUpdateConfig" qname="operNS:adminUpdateConfig" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminDelContentText" qname="operNS:adminDelContentText" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminUpdateContentText" qname="operNS:adminUpdateContentText" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportLayout" qname="operNS:adminReportLayout" returnQName="retNS:adminReportLayoutReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportContentAll" qname="operNS:adminReportContentAll" returnQName="retNS:adminReportContentAllReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportPlaylist" qname="operNS:adminReportPlaylist" returnQName="retNS:adminReportPlaylistReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportDaily" qname="operNS:adminReportDaily" returnQName="retNS:adminReportDailyReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportSchedulePeriod" qname="operNS:adminReportSchedulePeriod" returnQName="retNS:adminReportSchedulePeriodReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" xmlns:retNS="http://service.rvcadv.adcenter.elcom.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="adminReportStb" qname="operNS:adminReportStb" returnQName="retNS:adminReportStbReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparam" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminUpdateStbDefaultHome" qname="operNS:adminUpdateStbDefaultHome" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://service.rvcadv.adcenter.elcom.com" name="adminNewContentWithDuration" qname="operNS:adminNewContentWithDuration" soapAction="">
+        <parameter xmlns:pns="http://service.rvcadv.adcenter.elcom.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:xmlparamter" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="adminNewPlaylistName adminUpdateContentText admingetConfig adminDelScheduleDailyName adminNewScheduleDaily adminReportDaily adminAddStbIntoGroup admingetListStbAlls adminReportPlaylist adminReportStb getStbGroup adminDelLayoutName admingetContentStb adminUpdatePlaylistTime admingetPlayListGroup adminDelPlaylist adminStbPush adminRemoveStbGroup adminReportSchedulePeriod getSessionid adminDelStb admingetLayoutContainContent admingetContentNoGroup adminUpdateStbDefaultHome adminDelGroup admingetPlayList adminUpdateGroup admingetScheduleDailyGroup admingetPlayListLayout adminInsertPlaylistCore adminNewSchedulePeriName adminDelItemPlaylist removeContentStb adminInsertLayout admingetListStbAll adminNewContent adminDeleteContentIntoGroup admingetScheduleDailyNamGroup adminNewLayoutContent adminUpdatePlayListName adminUdateStb adminReportLayout admingetSchedulePeriGroup adminDelSchedulePeriItem adminMoveGroup admingetListGroup adminNewContentText admingetListGroups adminNewScheduleDailyName getContentGroup adminUpdateScheduleDailyTime adminUpdateConfig adminDelLayOutItem adminCheckStb admingetLayoutName adminInsertLayoutName adminNewSchedulePeri adminDelSchduledailyTime adminNewGroup adminDelSchedulePeri adminUpdateDirecGroup admingetTypeLayout adminNewContentLogic admingetPlaylistItem adminUpdateLayoutCoor admingetItemScheduleDailyForPerio admingetLayoutGroup pushContentIntoStb adminUpdateLayoutName adminReportContentAll removeContentStbEach adminDelContentText adminUpdateSchedulePeri adminNewContentWithDuration adminInserContentIntoGroup"/>
+
+  </service>
+</deployment>

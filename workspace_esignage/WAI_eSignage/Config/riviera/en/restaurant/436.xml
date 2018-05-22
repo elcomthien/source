@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1835">
+        <def>&lt;p align=&quot;center&quot;&gt;Chocolate Cranberry&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Green Apple Raspberry&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Banana Passion Mango&lt;/p&gt;&lt;p&gt;Black Forest&lt;/p&gt;</def>
+        <name>Trifle Treats</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</urlIcon>
+    </item>
+</ehotel>

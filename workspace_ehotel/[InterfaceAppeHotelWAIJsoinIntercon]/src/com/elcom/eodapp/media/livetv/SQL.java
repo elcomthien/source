@@ -5,7 +5,7 @@ public interface SQL {
 	
 	public static final String sqlGetSubjects = "select bc_subject.bcsubjectid,bc_subject.subjectname,(select ehotel_config.value from ehotel_config where key = 'path_image_livetv') || bc_subject.urlimage"
 			   + " FROM bc_subject ,pms_smartcard "
-			   + " where bc_subject.lang_id =  pms_smartcard.lang_id and bc_subject.style_id = 1 and bc_subject.status = 0 "
+			   + " where bc_subject.lang_id =  pms_smartcard.lang_id and bc_subject.style_id = 1 "
 			   + " and pms_smartcard.serinumber =? order by ORDERBY";  //bc left join pms_imageurl url  on bc.urlimage = url.image_id(+) order by bc.ORDERBY
 	
 	  /*public static final String sqlGetSubjects =
@@ -25,7 +25,5 @@ public interface SQL {
 	          " where bc_service_channel.subjectid = ? and bc_channels.channelid = bc_service_channel.channelid and bc_service_channel.status = 1  ORDER BY bc_channels.channelcode ";
 		  
 	  public static final String countLiveTv = "begin ? := vod.countLiveTv(?); end;";
-	  public static final String GET_ALL_CHANNEL = "BEGIN PMSAPP.getAllChannel(?); END;";
-	  public static final String GET_CHANNEL_ADVERTISE = "BEGIN PMSAPP.getChannelAdvertise(?); END;";
 
 }

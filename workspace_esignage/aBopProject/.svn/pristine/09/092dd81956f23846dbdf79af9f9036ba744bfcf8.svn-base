@@ -1,0 +1,40 @@
+.div-content-text{
+	margin-top: -20px;
+}
+.h2-title-content{
+	text-align: inherit;
+	height: 30px;
+	margin-bottom: 3px;
+	padding: 6px 0px 2px 25px;
+	color: #ffffff;
+	background-color: #006666;
+	border-radius: 5px;
+	vertical-align: middle;
+	line-height: 30px;
+	font: menu;
+	font-weight: bold;
+	font-size: 20px;
+}
+.buntton-add-new-text{
+	height: 35px;
+	text-align: right;
+	border-color: #006666;	
+	font-size: 18px;
+	font-weight: bold;
+	color: #006666;
+}
+.div-margin-top{
+	margin-top: 10px;
+/* 	width: 92%; */
+	margin-left: 10px;
+}
+.text-align-right{
+	text-align: right;
+	margin-top: 7px;
+}
+#htmlbox_wrap{
+/* 	width: 200px; */
+}
+.td-stt {
+	width: 20px;
+}

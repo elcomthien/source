@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="432">
+        <name>Crème Brulee Variations</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652317773.png</urlIcon>
+    </item>
+    <item id="433">
+        <name>Tiramisu Delights</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652342549.png</urlIcon>
+    </item>
+    <item id="436">
+        <name>Trifle Treats</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652420428.png</urlIcon>
+    </item>
+    <item id="435">
+        <name>Exotic Tartlet Selection</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652399353.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652399353.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652399353.png</urlIcon>
+    </item>
+    <item id="434">
+        <name>Australian Cheese Cake Temptations</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421652378586.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421652378586.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421652378586.png</urlIcon>
+    </item>
+</ehotel>

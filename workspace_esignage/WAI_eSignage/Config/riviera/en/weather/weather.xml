@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="24977">
+        <def>Patchy rain nearby</def>
+        <maxTemperature>27</maxTemperature>
+        <minTemperature>22</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>02/05/2015</postedDate>
+        <sday>5</sday>
+        <seatemp>0</seatemp>
+        <temperature>27</temperature>
+    </item>
+</ehotel>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="220" menuid="411">
+        <currency>60,000</currency>
+        <currency_large>60,000</currency_large>
+        <currency_small>60,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Freshly Brewed Coffee</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Freshly Brewed Coffee]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421642236195.png</imageicon>
+        <printname>Freshly Brewed Coffee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421642942838.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421642236195.png</imagebg>
+    </item>
+    <item icode="221" menuid="411">
+        <currency>70,000</currency>
+        <currency_large>70,000</currency_large>
+        <currency_small>70,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Espresso</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Espresso]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421642987410.png</imageicon>
+        <printname>Espresso</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643284823.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421642987410.png</imagebg>
+    </item>
+    <item icode="222" menuid="411">
+        <currency>80,000</currency>
+        <currency_large>80,000</currency_large>
+        <currency_small>80,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Double Espresso</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Double Espresso]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643233432.png</imageicon>
+        <printname>Double Espresso</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643301807.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643233432.png</imagebg>
+    </item>
+    <item icode="223" menuid="411">
+        <currency>80,000</currency>
+        <currency_large>80,000</currency_large>
+        <currency_small>80,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Cappuccino</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Cappuccino]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643368640.png</imageicon>
+        <printname>Cappuccino</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643574227.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643368640.png</imagebg>
+    </item>
+    <item icode="224" menuid="411">
+        <currency>80,000</currency>
+        <currency_large>80,000</currency_large>
+        <currency_small>80,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Cafe Latte</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Cafe Latte]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643421053.png</imageicon>
+        <printname>Cafe Latte</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643611825.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643421053.png</imagebg>
+    </item>
+    <item icode="225" menuid="411">
+        <currency>80,000</currency>
+        <currency_large>80,000</currency_large>
+        <currency_small>80,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Macchiato</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Macchiato]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643451835.png</imageicon>
+        <printname>Macchiato</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643621077.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643451835.png</imagebg>
+    </item>
+    <item icode="226" menuid="411">
+        <currency>50,000</currency>
+        <currency_large>50,000</currency_large>
+        <currency_small>50,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Vietnamese Coffee</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Vietnamese Coffee]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643481696.png</imageicon>
+        <printname>Vietnamese Coffee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643630815.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643481696.png</imagebg>
+    </item>
+    <item icode="227" menuid="411">
+        <currency>60,000</currency>
+        <currency_large>60,000</currency_large>
+        <currency_small>60,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Decaffeinate Coffee</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Decaffeinate Coffee]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/1421643527739.png</imageicon>
+        <printname>Decaffeinate Coffee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421643642598.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/1421643527739.png</imagebg>
+    </item>
+</ehotel>

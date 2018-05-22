@@ -1,0 +1,40 @@
+package elcom.abop.common;
+
+public interface BasicAction {
+	/**
+	 * ROLE_ADMIN = "admin"
+	 */
+	public final static String ROLE_ADMIN = "ROLE_ADMIN";
+	/**
+	 * ROLE_USER = "user"
+	 */
+	public final static String ROLE_USER = "ROLE_USER";
+	/**
+	 * ROLE_CONTENT = "content"
+	 */
+	public final static String ROLE_CONTENT = "ROLE_CONTENT";
+	/**
+	 * ROLE_SETTOPBOX = "player"
+	 */
+	public final static String ROLE_SETTOPBOX = "ROLE_SETTOPBOX";
+	/**
+	 * SUCCESS = "success"
+	 */
+	public final static String SUCCESS = "success";
+	/**
+	 * ERROR = "error"
+	 */
+	public final static String ERROR = "error";
+	/**
+	 * FAIL = "fail"
+	 */
+	public final static String FAIL = "fail";
+	/**
+	 * LOGIN = "login"
+	 */
+	public final static String LOGIN = "login";
+	/**
+	 * LOGOUT = "logout"
+	 */
+	public final static String LOGOUT = "logout";
+}

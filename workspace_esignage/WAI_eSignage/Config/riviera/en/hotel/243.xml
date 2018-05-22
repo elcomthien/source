@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1714">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Adapter and transformers are available upon request. Please contact our Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adapter]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421398896810.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1715">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>The in-room thermostat allows you to adjust the temperature and airflow.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Air Conditioning]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421399010404.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1716">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>For airline reservations and confirmations, please contact our Guest Service Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Airline Reservations]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421399030172.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1717">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Baby cots are free of charge. Please contact our Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Baby Cots]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421399056794.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1718">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Babysitting is chargeable service. Please contact Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Babysitting]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421399104293.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1726">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Private Barbeque can be arranged either on your balcony or at the beach. Please contact our In Room Dining.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Barbeque]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400653854.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1727">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>The use of the beach is at your own risk. For your added safety and comfort, we provide trained lifeguard service from 6:00 am to 6:00 pm daily. Swimming in the ocean at night is prohibited. Beach towels are available directly on the beach, please contact our Recreation Team.</p><p> </p><p>Please do not bring your bathroom towels to the pool or beach.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Beach]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400697489.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1728">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Check-out time is 12:00 pm. Late Check-out is available upon availability and additional charge will be applied. We also provide express Check-out at the lobby.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Check-out]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400732277.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1729">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Our helpful and courteous Concierge Team offers information about activities, restaurants, shopping and directions, assist guests in handling luggages. Located in our Main Lobby. Please dial 5515 for information.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Concierge]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400793196.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1730">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>We accept American Express, JCB, Master Card, Visa, Diners Club.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Credit Card Facilities]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400807155.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1731">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Foreign Currency can be exchanged at the Front Desk.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Currency Exchange]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400839369.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1732">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>If you do not wish to be disturbed, please indicate this by hanging the “Do not disturb” pillow (behind door) on the outside door-knob of your room or turn on the “Do not disturb” light.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Do Not Disturb]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400860919.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1733">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Guests are requested to wear smart casual clothes within the resort premises. Bathing suits should only be worn at the beach and swimming pool areas.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Dress code]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400883587.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1734">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>The standard supply of electricity at the resort is 220V/50 Hertz. Should you request a step-down/up transformers, please contact our Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Electricity]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400905781.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1735">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Environmental awareness is a major focus of Riviera. Currently, an eco-friendly washing machine system is being run at Riviera. If you would like us to have your bed linen changed, please place Fredda - our Environment Mascot on your bed. We kindly ask for your assistance by placing towels and wash cloths you would like to change on the floor. Otherwise we will leave them for additional use.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Environment]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400966745.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1736">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Extra bed is upon availability. Please contact our Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Extra bed]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421400997055.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1737">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Riviera Fitness Center is well-equipped with lockers and offer Taichi &amp; Yoga classes. Opening hours: 6:00 am – 10:00 pm everyday.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Fitness Center]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401019751.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1738">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Location: Next to Kid Clubs, near the restaurant. Opening Hours: 8:00 am - 8:00 pm.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Giftshop]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401129618.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1739">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Should you request Printing/Fascimile facilities, please contact our Guest Service Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Secretarial Support]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401157738.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1740">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Our Guest Contact Department, located in the Lobby, will assist you with all requests and inquiries. Please see us in person or press the Guest Contact button on your telephone.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Guest Contact Department]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401178210.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1741">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Guest Service Department will be in charge of all requests and inquiries related to front desk. Please contact Guest Contact Department for more information.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Guest Service Department]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401201407.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1742">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>A Hair Salon &amp; Manicure Boutique is located in the Rinata Oasis Spa. Reservations are recommended via our Guest Contact Department.</p><p>Operating hours:  8:30 am to 20:00 pm.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Hair Salon & Manicure Boutique]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401271416.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1743">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>-        Rooms will be serviced daily between 8:00 am and 17:00 pm. Should you require an other time, please contact our Guest Contact Department.</p><p>-        Turn down services are provided for all guest rooms after 18:00 pm daily.</p><p>-        Toiletries - For your convenience, the following complimentary amenities are available at the Guest Contact Department desk: toothbrushes, toothpaste, combs, shaving cream, razors, sewing kits, and wine openers on request.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Housekeeping]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401317106.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1744">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>24-hour in-room dining is available. Please refer to the creative menus of international and local cuisines in your room for available selections or press In room dining button on the telephone for more information.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[In room dining]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401340450.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1745">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Wireless internet is available complimentary resort-wide.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Internet]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401360714.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1746">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Kid’s Club is located close to the gift shop and swimming pool. Contact Guest Contact Department in case you might request for baby sitting services.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Adventure Kid’s Club]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401442177.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1747">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Please complete the laundry/pressing list when requesting laundry and place it in the laundry basket located in the bathroom, together with your laundry. Laundry picked up before 10:00 am will be returned the same day. Please inform our Guest Contact Department for laundry pick up.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Laundry, dry cleaning and pressing]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401469255.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1748">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Please contact our Guest Contact Department for assistance.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Lost and Found]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401504467.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1749">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Your minibar is replenished daily and all items consumed will be charged to your account automatically. For a larger selection of food and drinks kindly contact In Room Dining.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Mini bar]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401528588.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1750">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Our resort features approximately 1,000 sq. m. large public Swimming Pool. Pool towels are located poolside. Children 12 and under must be accompanied by an adult. Please do not bring any glass bottles or glass containers in the pool area.</p><p> </p><p>Pools are open until from 06:00 am to 21:00 pm and supervised by our Lifeguards team.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Swimming Pool]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401591973.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1751">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>-        Pets - For general hygiene reasons, please do not bring pets into the hotel.</p><p> </p><p>-        Smoking - Smoking is not allowed in guest rooms and interior areas of the restaurant.</p><p> </p><p>-        Visitor regulations - According to Vietnamese laws and regulations, all visitors must inform their arrival at the Resort and before departure to any Guest Rooms at the Front Desk . Visitors must present their ID cards or Passports and complete the registration procedures for recording purposes. Visitors are not permitted in guest rooms after 10:00 pm or before 8:00 am. Maximum visitors are 2.</p><p> </p><p>-        Food in room – Smelly food such as durian, jack fruit, mangos teen, dried squid, fish sauce, is not permitted in the guest room. Cleaning and deodorizing fees can be charged to your account.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Regulations]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401623443.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1752">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>-        Rosone, our signature restaurant, serves the a wide range of A la Carte and buffet dishes. We provide the freshest of local seafood or savor Mediterranean and International recipes cooked to exceedingly high standards while overlooking the magnificient view of Cam Ranh Beach.  </p><p class="Body">Operating hours:</p><p class="Body">Breakfast: 7:00 am – 11:00 am.</p><p class="Body">Lunch: 11:00 am – 14:00 pm.</p><p class="Body">Dinner: 17:00 pm - 10:30 pm.</p><p> </p><p class="Body">-        The Ardora Cocktail Bar &amp; Lounge, located above Rosone Restaurant, presents a panoramic ocean view where guests can enjoy a vast variety of refreshment. Entertainment is provided until late night.</p><p class="Body">Operating hours: 17:00 pm - late.</p><p class="Body"> </p><p class="Body">-        The Poor Bar, with its ‘swim-up bar service’, offers relief from the sun while sipping on  a long cool refreshing drink.<b></b></p><p class="Body">Operating hours: 10:00 am – 20:00 pm.</p><p> </p><p> </p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Restaurants & Bars]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401683662.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1753">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>For your convenience, each guestroom features a personal safe. Please use this facility for your valuable belongings as the resort cannot be held responsible for any lost or damage property. For further information, please contact Guest Contact Department.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Safety box]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401770876.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1754">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>In case of a fire or other emergency, please exit your room and proceed to the beach. Please refer to the fire evacuation plan at the back of the room directory.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Fire safety]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401790234.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1755">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Gift shop is available close to the Recreation Center.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Shop]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/noimage.gif</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1756">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>We provide complimentary Airport / Resort / Nha Trang City mini-bus shuttle services. Please contact Guest Service Department for schedules and reservations.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Shuttle bus]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401869139.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1757">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Please refer to the Smart TV directory at the back of the room directory for instructions.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Smart TV instruction]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401892896.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1758">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Escape and unwind at Rinata Oasis Spa. Choose from an array of soothing massages, signature facials and body treatments as well as professional hair, nail and makeup services. Soak up all of the benefits our spa has to offer with expert therapists and imported organic products. Please refer to the Spa menu at the back or press Spa button or Guest Contact Department on the telephone for further information and reservations.</p><p> </p><p> Operating hours: 10:00 am - 22:00 pm.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Spa]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401919138.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1759">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Resort number                                                                                    (+84) 58 3989 898</p><p>Guest Fax                                                                                (+84) 58 3989 899</p><p> </p><p>Room-to-room dialing:                                                          Dial 8 + Room number</p><p>Local calls:                                                                             Dial 9 + Number</p><p>International calls:                             Dial 9 + 00 + Country code + City code + Number</p><p> </p><p><i><u>Example</u></i>: if calling 235 – 6450 in New York, USA, dial 9-00-1-212-235-6450.</p><p> </p><p>Telephone charges are based on the published rates of the Vietnam Telecommunication company. A margin of 5% for hotel services and 10% government tax is added.</p><p> </p><p><i><u>Note:</u></i> Please make sure that the receiver of your telephone is placed correctly on its cradle after completing your call. Additional charges may occur if the call is not disconnected properly.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Telephones  Dialing Instructions]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421401963591.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1760">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Australia         61        Indonesia        62        Spain                           34</p><p>Austria                        43        Italy                 39        Switzerland                 41</p><p>China              86        Japan               81        Taiwan                                    886</p><p>France             33        Korea              82        Thailand                      66</p><p>Germany         49        Malaysia         60        United Kingdom         44</p><p>Hong Kong     852      Singapore        65        USA/Canada               1</p><p> </p><p>For additional country codes, kindly contact the resort Guest Contact Department. </p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Country Codes]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421402032040.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1761">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Surrounded in the area of 700 sq. m, tennis court is located besides the Reception.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Tennis Court]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421402208205.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1762">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Please refer to our Guest Service Department in the Lobby for suggestion options and instructions.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Tour desk]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421402302973.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1763">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Please contact Guest Contact Department to arrange wake up calls on request.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Wake up call]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421402325902.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="1764">
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Have ‘fun in the sun’ - with an array of both offshore and onshore sporting activities. Our Guest Contact Department will be delighted to assist you with your viewing options.</p>]]></def>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Watersport]]></name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1421402343423.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

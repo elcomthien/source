@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Schedule day="2012-01-01">
+	<item id="17">
+		<name>17</name>
+		<start_day>2012-01-01</start_day>
+		<stop_day>2012-02-01</stop_day>
+	</item>
+	<item id="18">
+		<name>18</name>
+		<start_day>2012-02-01</start_day>
+		<stop_day>2012-04-01</stop_day>
+	</item>
+	<item id="19">
+		<name>19</name>
+		<start_time>2012-04-01</start_time>
+		<stop_time>2012-05-01</stop_time>
+	</item>
+</Schedule>

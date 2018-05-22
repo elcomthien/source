@@ -961,4 +961,39 @@ public class eSmileServiceImpl implements eSmileService {
 		System.out.println("result: " + list);
 		return new Gson().toJson(list);
 	}
+
+	@Override
+	public String getListWelcome(String object) {
+		System.out.println("------>getListWelcome");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object);
+		List<HashMap<String, String>> list = new ArrayList<>();
+		String langid = map.get("lang_id");
+		list = eSmileDao.getListWelcome(langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String editWelcome(String object) {
+		System.out.println("------>editWelcome");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object);
+		String id = map.get("id");
+		String langid = map.get("lang_id");
+		String name = map.get("name");
+		map = eSmileDao.editWelcome(id, name, langid);
+		System.out.println("result: " + map);
+		return new Gson().toJson(map);
+	}
 }

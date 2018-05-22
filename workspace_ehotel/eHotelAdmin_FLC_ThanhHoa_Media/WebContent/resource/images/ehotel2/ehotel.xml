@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehotel><!--Store language ID and license key -->
+	<room id="111" />
+	<key id="2001" />
+	<lang id="1" />
+	<ischecked id="1" />
+	<linkweb id="http://www.google.com/" />
+	<pass id="123" />
+	<path_iamge id="/mnt/flash/elcom/" />
+</ehotel>

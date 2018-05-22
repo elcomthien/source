@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.action.extension" value="elcom" />
+	<package name="aBop" extends="struts-default, json-default">
+		<!-- on top important -->
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+
+		<interceptors>
+			<interceptor name="authentication"
+				class="elcom.abop.authentication.AuthenticationInterceptor">
+			</interceptor>
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="authentication"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="json">
+					<param name="enableSMD">true</param>
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="authStack"></default-interceptor-ref>
+	
+		<global-results>
+			<result name="login" type="redirect">welcome.elcom</result>
+			
+			<result name="exception" type="dispatcher">PAGE/ELCOM_COMMON/error.jsp</result>
+			<result name="runtime_exception" type="dispatcher">PAGE/ELCOM_COMMON/error.jsp</result>
+			<result name="error" type="dispatcher">PAGE/ELCOM_COMMON/error.jsp</result>
+			<result name="404_exception" type="dispatcher">PAGE/ELCOM_COMMON/error.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="exception"></exception-mapping>
+			<exception-mapping exception="java.lang.Error"
+				result="error"></exception-mapping>
+			<exception-mapping exception="java.lang.RuntimeException"
+				result="runtime_exception"></exception-mapping>
+			<exception-mapping exception="com.opensymphony.xwork2.UnknownHandler"
+				result="404_exception"></exception-mapping>
+		</global-exception-mappings>
+		
+		<action name="welcome" class="elcom.abop.action.Authentication"
+			method="login">
+			<result name="login" type="tiles">login</result>
+			<result name="player" type="redirect">player.elcom</result>
+			<result name="content" type="redirect">content.elcom</result>
+			<result name="user" type="redirect">user.elcom</result>
+			<result name="success" type="redirect">player.elcom</result>
+		</action>
+
+		<action name="login" class="elcom.abop.action.Authentication"
+			method="login">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="login" type="tiles">login</result>
+			<result name="player" type="redirect">player.elcom</result>
+			<result name="content" type="redirect">text.elcom</result>
+			<result name="user" type="redirect">user.elcom</result>
+			<result name="success" type="redirect">player.elcom</result>
+		</action>
+		
+		
+		<action name="logout" class="elcom.abop.action.Authentication"
+			method="logout">
+			<result name="login" type="tiles">login</result>
+		</action>
+		<action name="layout" class="elcom.abop.action.LayoutAction"
+			method="layout">
+			<result name="success" type="tiles">layout</result>
+		</action>
+
+		<action name="ajaxlayout" class="elcom.abop.action.LayoutAction"
+			method="ajaxlayout">
+			<result name="success" type="json">layout</result>
+		</action>
+
+		<action name="ajaxSaveLayout" class="elcom.abop.action.LayoutAction"
+			method="ajaxSaveLayout">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxUpdateLayout" class="elcom.abop.action.LayoutAction"
+			method="ajaxUpdateLayout">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxDeleteLayout" class="elcom.abop.action.LayoutAction"
+			method="ajaxDeleteLayout">
+			<result name="success" type="json">layout</result>
+		</action>
+
+		<action name="player" class="elcom.abop.action.PlayerAction"
+			method="player">
+			<result name="success" type="tiles">player</result>
+		</action>
+
+		<action name="ajaxplayer" class="elcom.abop.action.PlayerAction"
+			method="ajaxplayer">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxMonitor" class="elcom.abop.action.PlayerAction"
+			method="ajaxMonitor">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxAddToList" class="elcom.abop.action.PlayerAction"
+			method="ajaxAddToList">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxRemoveFromList" class="elcom.abop.action.PlayerAction"
+			method="ajaxRemoveFromList">
+			<result name="success" type="json">player</result>
+		</action>
+		<action name="ajaxDetailPlayer" class="elcom.abop.action.PlayerAction"
+			method="ajaxDetailPlayer">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxUpdatePlayer" class="elcom.abop.action.PlayerAction"
+			method="ajaxUpdatePlayer">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxSaveNameGroup" class="elcom.abop.action.PlayerAction"
+			method="ajaxSaveNameGroup">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxChangeNameGroup" class="elcom.abop.action.PlayerAction"
+			method="ajaxChangeNameGroup">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxDetailGroup" class="elcom.abop.action.PlayerAction"
+			method="ajaxDetailGroup">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxPlaylistDialog" class="elcom.abop.action.PlayerAction"
+			method="ajaxPlaylistDialog">
+			<result name="success" type="json">player</result>
+		</action>
+		<action name="ajaxDeleteSTB" class="elcom.abop.action.PlayerAction"
+			method="ajaxDeleteSTB">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxDeleteGroup" class="elcom.abop.action.PlayerAction"
+			method="ajaxDeleteGroup">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxDeleteContentPlayer" class="elcom.abop.action.PlayerAction"
+			method="ajaxDeleteContentPlayer">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="ajaxMonitoring" class="elcom.abop.action.PlayerAction"
+			method="ajaxMonitoring">
+			<result name="success" type="json">player</result>
+		</action>
+
+		<action name="schedule" class="elcom.abop.action.ScheduleAction"
+			method="playlist">
+			<result name="success" type="tiles">schedule</result>
+		</action>
+
+		<action name="ajaxDeleteItemDaily" class="elcom.abop.action.ScheduleAction"
+			method="ajaxDeleteItemDaily">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxDeletePlaylist" class="elcom.abop.action.ScheduleAction"
+			method="ajaxDeletePlaylist">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="content" class="elcom.abop.action.ContentAction"
+			method="content">
+			<result name="success" type="tiles">content</result>
+		</action>
+		<action name="ajaxContent" class="elcom.abop.action.ContentAction"
+			method="ajaxContent">
+			<result name="success" type="json">content</result>
+		</action>
+		<action name="ajaxAddContent" class="elcom.abop.action.ContentAction"
+			method="ajaxAddContent">
+			<result name="success" type="json">content</result>
+		</action>
+		<action name="ajaxRemoveContent" class="elcom.abop.action.ContentAction"
+			method="ajaxRemoveContent">
+			<result name="success" type="json">content</result>
+		</action>
+
+		<action name="ajaxPlaylist" class="elcom.abop.action.ScheduleAction"
+			method="ajaxPlaylist">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxGetContentByType" class="elcom.abop.action.ScheduleAction"
+			method="ajaxGetContentByType">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxAutoComplete" class="elcom.abop.action.ScheduleAction"
+			method="ajaxAutoComplete">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxGetLayout" class="elcom.abop.action.ScheduleAction"
+			method="ajaxGetLayout">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxGetLayoutItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxGetLayoutItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxSavePlaylistItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxSavePlaylistItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxUpdatePlaylistItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxUpdatePlaylistItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxDailyScheduleItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxDailyScheduleItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxSaveScheduleDaily" class="elcom.abop.action.ScheduleAction"
+			method="ajaxSaveScheduleDaily">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxUpdateScheduleDailyName" class="elcom.abop.action.ScheduleAction"
+			method="ajaxUpdateScheduleDailyName">
+			<result name="success" type="json">schedule</result>
+		</action>
+		<action name="ajaxUpdateScheduleDailyItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxUpdateScheduleDailyItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+		<action name="getSlide" class="elcom.abop.action.ScheduleAction"
+			method="getSlide">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="ajaxDeleteDaily" class="elcom.abop.action.ScheduleAction"
+			method="ajaxDeleteDaily">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxPeriodicScheduleItem" class="elcom.abop.action.ScheduleAction"
+			method="ajaxPeriodicScheduleItem">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxSaveSchedulePeriodic" class="elcom.abop.action.ScheduleAction"
+			method="ajaxSaveSchedulePeriodic">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxUpdatePeriodic" class="elcom.abop.action.ScheduleAction"
+			method="ajaxUpdatePeriodic">
+			<result name="success" type="json">schedule</result>
+		</action>
+
+		<action name="ajaxDeletePeriodic" class="elcom.abop.action.ScheduleAction"
+			method="ajaxDeletePeriodic">
+			<result name="success" type="json">schedule</result>
+		</action>
+		<!-- logout action -->
+		<action name="logout" class="elcom.abop.action.Authentication"
+			method="logout">
+			<result name="success" type="tiles">login</result>
+		</action>
+
+		<action name="group" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">group</result>
+		</action>
+
+		<!-- action user manager -->
+		<action name="user" class="elcom.abop.action.UserManagerAction"
+			method="execute">
+			<result name="success" type="tiles">user</result>
+		</action>
+		<action name="ajaxGetListUser" class="elcom.abop.action.UserManagerAction"
+			method="getListUser">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxUpdateUser" class="elcom.abop.action.UserManagerAction"
+			method="ajaxUpdateUser">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxDeleteUser" class="elcom.abop.action.UserManagerAction"
+			method="ajaxDeleteUser">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxGetStb" class="elcom.abop.action.UserManagerAction"
+			method="ajaxGetStb">
+			<result name="success" type="json"/>
+		</action>
+		<action name="ajaxAddStbUser" class="elcom.abop.action.UserManagerAction"
+			method="ajaxAddStbUser">
+			<result name="success" type="json"/>
+		</action>
+		<!-- action config ftp server -->
+		<action name="config" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">config</result>
+		</action>
+		<action name="getconfig" class="elcom.abop.action.ConfigFTPAction"
+			method="getConfig">
+			<result name="success" type="json" />
+		</action>
+		<action name="updateconfig" class="elcom.abop.action.ConfigFTPAction"
+			method="updateConfig">
+			<result name="success" type="json" />
+		</action>
+
+		<!-- action text content manager -->
+		<action name="text" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">text</result>
+		</action>
+
+		<action name="alltext" class="elcom.abop.action.TextAction"
+			method="getAllText">
+			<result name="success" type="json" />
+		</action>
+		<action name="deletetext" class="elcom.abop.action.TextAction"
+			method="deleteText">
+			<result name="success" type="json" />
+		</action>
+		<action name="addtext" class="elcom.abop.action.TextAction"
+			method="addNewText">
+			<result name="success" type="json" />
+		</action>
+		<action name="gettext" class="elcom.abop.action.TextAction"
+			method="getTextById">
+			<result name="success" type="json" />
+		</action>
+		<action name="updatetext" class="elcom.abop.action.TextAction"
+			method="updateText">
+			<result name="success" type="json" />
+		</action>
+
+
+		<!-- action web content manager -->
+		<action name="web" class="elcom.abop.action.HomeAction" method="execute">
+			<result name="success" type="tiles">web</result>
+		</action>
+		<action name="allweb" class="elcom.abop.action.WebAction"
+			method="getAllWeb">
+			<result name="success" type="json" />
+		</action>
+		<action name="addweb" class="elcom.abop.action.WebAction"
+			method="addNewWeb">
+			<result name="success" type="json" />
+		</action>
+		<action name="updateweb" class="elcom.abop.action.WebAction"
+			method="updateWeb">
+			<result name="success" type="json" />
+		</action>
+		<action name="deleteweb" class="elcom.abop.action.WebAction"
+			method="deleteWeb">
+			<result name="success" type="json" />
+		</action>
+
+		<!-- action media content manager -->
+		<action name="media" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">media</result>
+		</action>
+		<action name="allmedia" class="elcom.abop.action.MediaAction"
+			method="getAllMedia">
+			<result name="success" type="json" />
+		</action>
+		<action name="deletemedia" class="elcom.abop.action.MediaAction"
+			method="deleteMedia">
+			<result name="success" type="json" />
+		</action>
+		<action name="getfileftp" class="elcom.abop.action.MediaAction"
+			method="getFileFtpServer">
+			<result name="success" type="json" />
+		</action>
+		<action name="newmedia" class="elcom.abop.action.MediaAction"
+			method="newMediaContent">
+			<result name="success" type="json" />
+		</action>
+
+		<!-- action background content manager -->
+		<action name="background" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">background</result>
+		</action>
+		<action name="allbackground" class="elcom.abop.action.BackgroundAction"
+			method="getAllBackground">
+			<result name="success" type="json" />
+		</action>
+		<action name="deletebackground" class="elcom.abop.action.BackgroundAction"
+			method="deleteBackground">
+			<result name="success" type="json" />
+		</action>
+		<action name="getallimages" class="elcom.abop.action.BackgroundAction"
+			method="getListImage">
+			<result name="success" type="json" />
+		</action>
+		<action name="addnewbg" class="elcom.abop.action.BackgroundAction"
+			method="addNewBackground">
+			<result name="success" type="json" />
+		</action>
+		<action name="editbg" class="elcom.abop.action.BackgroundAction"
+			method="editBackground">
+			<result name="success" type="json" />
+		</action>
+
+		<!-- action subject content -->
+		<action name="addsubject" class="elcom.abop.action.SubjectAction"
+			method="addSubject">
+			<result name="success" type="json" />
+		</action>
+		<action name="allsubject" class="elcom.abop.action.SubjectAction"
+			method="allSubject">
+			<result name="success" type="json" />
+		</action>
+		<action name="updatesubject" class="elcom.abop.action.SubjectAction"
+			method="updateSubject">
+			<result name="success" type="json" />
+		</action>
+		<action name="deletesubject" class="elcom.abop.action.SubjectAction"
+			method="deleteSubject">
+			<result name="success" type="json" />
+		</action>
+
+		<!-- action slide image content -->
+		<action name="slide" class="elcom.abop.action.HomeAction"
+			method="execute">
+			<result name="success" type="tiles">slide</result>
+		</action>
+		<action name="getimages" class="elcom.abop.action.SlideAction"
+			method="getImages">
+			<result name="success" type="json" />
+		</action>
+		<action name="newslide" class="elcom.abop.action.SlideAction"
+			method="newSlide">
+			<result name="success" type="json" />
+		</action>
+		<action name="allslide" class="elcom.abop.action.SlideAction"
+			method="allSlide">
+			<result name="success" type="json" />
+		</action>
+		<action name="deleteslide" class="elcom.abop.action.SlideAction"
+			method="deleteSlide">
+			<result name="success" type="json" />
+		</action>
+		<action name="contentforslide" class="elcom.abop.action.SlideAction"
+			method="getContentForSlide">
+			<result name="success" type="json" />
+		</action>
+		<action name="updateslide" class="elcom.abop.action.SlideAction"
+			method="updateSlide">
+			<result name="success" type="json" />
+		</action>
+
+		
+		<action name="ajaxCreateUser" class="elcom.abop.action.UserManagerAction"
+			method="ajaxCreateUser">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxGetRole" class="elcom.abop.action.UserManagerAction"
+			method="ajaxGetRole">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxCheckUsername" class="elcom.abop.action.UserManagerAction"
+			method="ajaxCheckUsername">
+			<result name="success" type="json">user</result>
+		</action>
+		<action name="ajaxUserUpdate" class="elcom.abop.action.UserManagerAction"
+			method="ajaxUserUpdate">
+			<result name="success" type="json">user</result>
+		</action>
+	</package>
+</struts>

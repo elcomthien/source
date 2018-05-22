@@ -88,8 +88,8 @@ public class eSmileServiceImpl implements eSmileService {
 	}
 
 	@Override
-	public HashMap<String, Object> getZone(Params params) {
-		return esmileDao.getZone(params);
+	public HashMap<String, Object> getListZone(Params params) {
+		return esmileDao.getListZone(params);
 	}
 
 	@Override
@@ -300,7 +300,7 @@ public class eSmileServiceImpl implements eSmileService {
 			data = esmileDao.getReportOverview(params);
 		else if (params.getReport_type().equals("feedback"))
 			data = esmileDao.getReportFeedback(params);
-		else if (params.getReport_type().equals("respone"))
+		else if (params.getReport_type().equals("response"))
 			data = esmileDao.getReportResponse(params);
 		FileUtil.writeFileJson(params.getPathsave() + map.get("report_id") + ".json", data);
 		return map;
@@ -368,5 +368,60 @@ public class eSmileServiceImpl implements eSmileService {
 	@Override
 	public HashMap<String, Object> getReportDevice(Params params) {
 		return esmileDao.getReportDevice(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getRespondentDetail(Params params) {
+		return esmileDao.getRespondentDetail(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getZone(Params params) {
+		return esmileDao.getZone(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getGeoLocationDevice(Params params) {
+		return esmileDao.getGeoLocationDevice(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getDashboardDevice(Params params) {
+		return esmileDao.getDashboardDevice(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getDashboardOverview(Params params) {
+		return esmileDao.getDashboardOverview(params);
+	}
+
+	@Override
+	public HashMap<String, Object> renewalSession(Params params) {
+		return esmileDao.renewalSession(params);
+	}
+
+	@Override
+	public HashMap<String, Object> boxGetInfo(Params params) {
+		return esmileDao.boxGetInfo(params);
+	}
+
+	@Override
+	public HashMap<String, Object> setBackground(Params params) {
+		return esmileDao.setBackground(params);
+	}
+
+	@Override
+	public HashMap<String, Object> getNotification(Params params) {
+		return esmileDao.getNotification(params);
+	}
+	
+	@Override
+	public HashMap<String, Object> getLayoutEmail(Params params) {
+		return esmileDao.getLayoutEmail(params);
+	}
+	
+	@Override
+	public HashMap<String, Object> setSendEmail(Params params) {
+		return esmileDao.setSendEmail(params);
 	}
 }

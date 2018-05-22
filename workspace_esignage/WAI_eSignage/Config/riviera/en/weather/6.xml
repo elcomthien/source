@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="12841">
+        <def>Partly Cloudy</def>
+        <maxTemperature>37</maxTemperature>
+        <minTemperature>28</minTemperature>
+        <picImage>wsymbol_0002_sunny_intervals.png</picImage>
+        <postedDate>05/26/2014</postedDate>
+        <sday>2</sday>
+        <seatemp>0</seatemp>
+        <temperature>37</temperature>
+    </item>
+    <item id="12842">
+        <def>Partly Cloudy</def>
+        <maxTemperature>38</maxTemperature>
+        <minTemperature>28</minTemperature>
+        <picImage>wsymbol_0002_sunny_intervals.png</picImage>
+        <postedDate>05/27/2014</postedDate>
+        <sday>3</sday>
+        <seatemp>0</seatemp>
+        <temperature>38</temperature>
+    </item>
+    <item id="12843">
+        <def>Patchy rain nearby</def>
+        <maxTemperature>37</maxTemperature>
+        <minTemperature>28</minTemperature>
+        <picImage>wsymbol_0009_light_rain_showers.png</picImage>
+        <postedDate>05/28/2014</postedDate>
+        <sday>4</sday>
+        <seatemp>0</seatemp>
+        <temperature>37</temperature>
+    </item>
+</ehotel>

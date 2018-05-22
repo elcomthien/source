@@ -1,0 +1,5 @@
+package com.elcom.eodapp.ehotel.store;
+
+public interface SQL {
+	static final String sp_qmsinsert_rawdata = "{call ESURVEY_QMS_INSERT(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)}";
+}

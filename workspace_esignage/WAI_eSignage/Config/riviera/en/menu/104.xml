@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="105">
+        <name>Haha</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</urlIcon>
+    </item>
+    <item id="106">
+        <name>Haha01</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/dining_1.png</urlIcon>
+    </item>
+    <item id="103">
+        <name>TEST</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1358792083962.jpg</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1358792086191.jpg</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1358792086191.jpg</urlIcon>
+    </item>
+</ehotel>

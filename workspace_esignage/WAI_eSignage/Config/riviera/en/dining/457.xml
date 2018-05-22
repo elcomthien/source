@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="309" menuid="457">
+        <currency>310,000</currency>
+        <currency_large>310,000</currency_large>
+        <currency_small>310,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes, mozzarella ,parmigiano shavings , fresh&#160; basil&#160;</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Margherita (V)]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Margherita (V)</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748060841.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="310" menuid="457">
+        <currency>340,000</currency>
+        <currency_large>340,000</currency_large>
+        <currency_small>340,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Mozzarella,baby spinach,potatoes,garlic,pine nuts</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Fiorentina &#160;(V)]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Fiorentina &#160;(V)</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748070283.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="311" menuid="457">
+        <currency>345,000</currency>
+        <currency_large>345,000</currency_large>
+        <currency_small>345,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes,mozzarella,button mushrooms, bone ham, olives, anchovies</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Capricciosa]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Capricciosa</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748079907.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="312" menuid="457">
+        <currency>350,000</currency>
+        <currency_large>350,000</currency_large>
+        <currency_small>350,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes,mozzarella,pepperoni,anchovies,capers,olives,fresh chili</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Diavolo]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Diavolo</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748089991.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="313" menuid="457">
+        <currency>355,000</currency>
+        <currency_large>355,000</currency_large>
+        <currency_small>355,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes, mozzarella, fresh yellow fin tuna,onions,kernel corn</p><div>&#160;</div><p>&#160;</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Tonno]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Tonno</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748099530.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="314" menuid="457">
+        <currency>360,000</currency>
+        <currency_large>360,000</currency_large>
+        <currency_small>360,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes ,mozzarella,tiger prawns, squid, snapper,blue mussels,&#160;</p><p>onions,fresh basil</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Riviera]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Riviera</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748108241.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="315" menuid="457">
+        <currency>370,000</currency>
+        <currency_large>370,000</currency_large>
+        <currency_small>370,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes,burrata,smoked salmon,arugula,...</p><div>&#160;</div>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Salmone]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Salmone</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748034431.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="316" menuid="457">
+        <currency>370,000</currency>
+        <currency_large>370,000</currency_large>
+        <currency_small>370,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Roma tomatoes,mozzarella,artichokes,parma ham</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Parma]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Parma</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421748044481.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+</ehotel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1776">
+        <def>&lt;p align=&quot;center&quot;&gt;Tiramisu&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Biscotto&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Crunchy Peanut&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Malibu Coconut&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Salty Caramel Sesame&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Orange Chocolate Chip&lt;/p&gt;&lt;p&gt;&#160;&lt;/p&gt;</def>
+        <name>Creative Premium Gelato per scoop 45,000</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/1421639181373.png</urlIcon>
+    </item>
+</ehotel>

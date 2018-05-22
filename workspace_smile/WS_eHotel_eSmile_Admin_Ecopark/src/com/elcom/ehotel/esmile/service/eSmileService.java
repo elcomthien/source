@@ -279,4 +279,10 @@ public interface eSmileService {
 
 	@WebMethod
 	String changePassword(String object);
+
+	@WebMethod
+	String addRating(String object);
+	
+	@WebMethod
+	String deleteRating(String object);
 }

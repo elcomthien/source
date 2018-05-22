@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="12851">
+        <def>Sunny</def>
+        <maxTemperature>35</maxTemperature>
+        <minTemperature>29</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>05/26/2014</postedDate>
+        <sday>2</sday>
+        <seatemp>0</seatemp>
+        <temperature>35</temperature>
+    </item>
+    <item id="12852">
+        <def>Sunny</def>
+        <maxTemperature>35</maxTemperature>
+        <minTemperature>28</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>05/27/2014</postedDate>
+        <sday>3</sday>
+        <seatemp>0</seatemp>
+        <temperature>35</temperature>
+    </item>
+    <item id="12853">
+        <def>Sunny</def>
+        <maxTemperature>36</maxTemperature>
+        <minTemperature>28</minTemperature>
+        <picImage>wsymbol_0001_sunny.png</picImage>
+        <postedDate>05/28/2014</postedDate>
+        <sday>4</sday>
+        <seatemp>0</seatemp>
+        <temperature>36</temperature>
+    </item>
+</ehotel>

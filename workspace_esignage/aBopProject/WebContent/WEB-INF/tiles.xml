@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+	       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="login" template="/PAGE/ELCOM_AUTHEN/login.jsp">
+		<put-attribute name="title" value="Signage | Đăng Nhập" />
+		<put-attribute name="logo" value="/PAGE/ELCOM_COMMON/logo.jsp" />
+	</definition>
+	<definition name="baselayout" template="/PAGE/ELCOM_COMMON/common.jsp">
+		<put-attribute name="header" value="/PAGE/ELCOM_COMMON/header.jsp" />
+		<put-attribute name="logo" value="/PAGE/ELCOM_COMMON/logo.jsp" />
+		<put-attribute name="footer" value="/PAGE/ELCOM_COMMON/footer.jsp" />
+	</definition>
+
+	<definition name="layout" extends="baselayout">
+		<put-attribute name="title" value="Signage | Bố Cục" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT/left-layout.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT/content-createlayout.jsp" />
+	</definition>
+	
+	<definition name="player" extends="baselayout">
+		<put-attribute name="title" value="Signage | Player" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT/left-player.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT/content-player.jsp" />
+	</definition>
+	<definition name="content" extends="baselayout">
+		<put-attribute name="title" value="Signage | Nội Dung" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT/left-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT/content-content.jsp" />
+	</definition>
+	<definition name="schedule" extends="baselayout">
+		<put-attribute name="title" value="Signage | Lập Lịch" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT/left-schedule.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT/content-createschedule.jsp" />
+	</definition>
+	<definition name="group" extends="baselayout">
+		<put-attribute name="title" value="Signage | Group Manager" />
+		<put-attribute name="left" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="detail" value="/PAGE/ELCOM_USER/group-manager.jsp" />
+	</definition>
+	<definition name="user" extends="baselayout">
+		<put-attribute name="title" value="Signage | User Manager" />
+		<put-attribute name="left" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="detail" value="/PAGE/ELCOM_USER/user-manager.jsp" />
+	</definition>
+	<definition name="config" extends="baselayout">
+		<put-attribute name="title" value="Signage | Config Ftp Server" />
+		<put-attribute name="left" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="detail" value="/PAGE/ELCOM_SYSTEM/config-ftp-server.jsp" />
+	</definition>
+	<definition name="text" extends="baselayout">
+		<put-attribute name="title" value="Signage | Text Content Manager" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/content-text.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	
+	<definition name="media" extends="baselayout">
+		<put-attribute name="title" value="Signage | Media Content Manager" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/content-media.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	<definition name="background" extends="baselayout">
+		<put-attribute name="title" value="Signage | Background Content Manager" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/content-bg.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	<definition name="web" extends="baselayout">
+		<put-attribute name="title" value="Signage | Web Content Manager" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/content-web.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	<definition name="slide" extends="baselayout">
+		<put-attribute name="title" value="Signage | Slide Image Content Manager" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/slide-image-content.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	<definition name="qms" extends="baselayout">
+		<put-attribute name="title" value="Signage | QMS" />
+		<put-attribute name="left" value="/PAGE/ELCOM_CONTENT_SERVER/left-subject-content.jsp" />
+		<put-attribute name="content" value="/PAGE/ELCOM_CONTENT_SERVER/content-qms.jsp" />
+		<put-attribute name="detail" value="" />
+	</definition>
+	<definition name="test" extends="baselayout">
+		<put-attribute name="title" value="Test" />
+		<put-attribute name="left" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="detail" value="/PAGE/ELCOM_CONTENT_SERVER/test.jsp" />
+	</definition>
+</tiles-definitions>

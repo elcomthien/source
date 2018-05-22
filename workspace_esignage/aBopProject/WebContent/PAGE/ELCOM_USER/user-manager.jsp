@@ -1,0 +1,187 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<head>
+	<link href="css/user-manager.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/user-manager.js"></script>
+</head>
+<div style="margin-top: -20px;">
+	<h2 class="h2-title-user">User Manager</h2>
+</div>
+
+<div id="div-add-user" style="margin-top: 10px; margin-bottom: 10px">
+	<button id="btn-add-user" class="btn buntton-add-user" onclick="return createUserClick()">
+		<img class="img-button-add-user" src="css/images/add-user-icon.png"
+			width="24px"> <span>Tạo Mới</span>
+	</button>
+	
+</div>
+
+<div class="user-manager-table">
+	<table>
+		<thead>
+			<tr>
+				<th>Tên Đăng Nhập</th>
+				<th>Quyền</th>
+				<th>Trạng Thái</th>
+				<th>Box Quản Lý</th>
+				<th>Thao Tác</th>
+			</tr>
+		</thead>
+		<tbody id="scrolling" class="user-manager">
+		</tbody>
+	</table>
+</div>
+<div style="clear: both;">&nbsp;</div>
+<!---------------------- Dialog --------------------->
+<div class="dialog-create-user" style="display: none">
+	<div class="info-detail-left-dialog">
+		<form action="" method="post" class="ui-form" onclick="return false">
+			<div class='error-create'></div>
+			<label> 
+				<span>Tên Đăng Nhập :</span> 
+				<input required='required' id="user-username" onblur="checkUserName()" type="text" /> 
+				
+			</label> 
+			
+			<label> 
+				<span>Mật Khẩu :</span> 
+				<input required='required' id="user-password" type="password" onblur="checkCreateUser()"/> 
+				
+			</label>
+			
+			<label> 
+				<span>Xác Nhận Mật Khẩu :</span> 
+				<input required='required' id="user-confirm-pass" type="password" onblur="checkCreateUser()" /> 
+				
+			</label>
+			
+			<label> 
+				<span>Trạng Thái :</span> 
+				<select id='user-status'>
+					<option value='1'>Hoạt động</option>
+					<option value='0'>Khóa</option>
+				</select>
+			</label>
+			
+			<div class="dialog-button" style='float: right;'>
+				<div style="float: left">
+					<input type='submit' class='button' value='Thêm Mới' onclick='return createUser_Click("<s:property value='%{#session.USER.creator}'/>")'>
+				</div>
+				<div style="float: left; margin-left: 5px;">
+					<input type='submit' class='button' value='Hủy' onclick='return unLockUI()'
+						style="width: 97px;">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="info-detail-right-dialog">
+		<div class="select-role-left">
+			<h2 class="title-content">Quyền Được Cấp</h2>
+			<select class="role-left" id="role-left" multiple="multiple"></select>
+		</div>
+		<div class="dialog-button-center">
+			<div style="margin-bottom: 10px;">
+				<a href="javascript:void(0)" class="btnmove" onclick="return roleLeftRightClick()"> &gt;&gt; </a>
+			</div>
+			<div>
+				<a href="javascript:void(0)" class="btnmove" onclick="return roleRightLeftClick()"> &lt;&lt; </a>
+			</div>
+		</div>
+		<div class="select-role-right">
+			<h2 class="title-content">Quyền Còn Lại</h2>
+			<select class="role-right" id="role-right" multiple="multiple"></select>
+		</div>
+	</div>
+</div>
+<!-- Dialog update user -->
+<div class="dialog-update-user" style="display: none">
+	<div class="info-detail-left-dialog">
+		<form action="" method="post" class="ui-form" onclick="return false">
+			<div class='error-update'></div>
+			<label> 
+				<span>Tên Đăng Nhập :</span> 
+				<input readonly="readonly" id="user-username-update" type="text" /> 
+			</label> 
+
+			<label> 
+				<span>Trạng Thái :</span> 
+				<select id='user-status-update'>
+					<option value='1'>Hoạt động</option>
+					<option value='0'>Khóa</option>
+				</select>
+			</label>
+			<!--<label style='margin: 0px 23px 5px 5px; text-align: right'> 
+				<span></span> 
+				<a href='javascript:void(0)' onclick="return changePassClick()" style='text-decoration: none;'>Đổi mật khẩu</a>
+			</label>
+			<div class='change-pass' style='display: none'>
+				<label> 
+					<span>Mật Khẩu :</span> 
+					<input required='required' id="user-password-update" type="password" onblur="checkUpdateUser()"/> 
+				</label>
+				<label> 
+					<span>Xác Nhận Mật Khẩu :</span> 
+					<input required='required' id="user-confirm-pass-update" type="password" onblur="checkUpdateUser()" /> 
+				</label>
+			</div>
+			--><div class="dialog-button" style='float: right;'>
+				<div style="float: left">
+					<input type='submit' class='button' value='Cập Nhật' onclick='return createUpdate_Click("<s:property value='%{#session.USER.username}'/>")'>
+				</div>
+				<div style="float: left; margin-left: 5px;">
+					<input type='submit' class='button' value='Hủy' onclick='return unLockUI()'
+						style="width: 97px;">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="info-detail-right-dialog">
+		<div class="select-role-left">
+			<h2 class="title-content">Quyền Được Cấp</h2>
+			<select class="role-left-update" multiple="multiple"></select>
+		</div>
+		<div class="dialog-button-center">
+			<div style="margin-bottom: 10px;">
+				<a href="javascript:void(0)" class="btnmove" onclick="return roleLeftRightUpdateClick()"> &gt;&gt; </a>
+			</div>
+			<div>
+				<a href="javascript:void(0)" class="btnmove" onclick="return roleRightLeftUpdateClick()"> &lt;&lt; </a>
+			</div>
+		</div>
+		<div class="select-role-right">
+			<h2 class="title-content">Quyền Còn Lại</h2>
+			<select class="role-right-update" multiple="multiple"></select>
+		</div>
+	</div>
+</div>
+<!-- Dialog add stb -->
+<div data-user="" class="dialog-add-stb" style="display: none">
+	<div class="info-detail-right-dialog">
+		<div class="select-role-left">
+			<h2 class="title-content">Box Quản Lý </h2>
+			<select class="stb-left" multiple="multiple"></select>
+		</div>
+		<div class="dialog-button-center">
+			<div style="margin-bottom: 10px;">
+				<a href="javascript:void(0)" class="btnmove" onclick="return stbLeftRightClick()"> &gt;&gt; </a>
+			</div>
+			<div>
+				<a href="javascript:void(0)" class="btnmove" onclick="return stbRightLeftClick()"> &lt;&lt; </a>
+			</div>
+		</div>
+		<div class="select-role-right">
+			<h2 class="title-content">Box Còn Lại</h2>
+			<select class="stb-right" multiple="multiple"></select>
+		</div>
+		<div class="dialog-button" style='padding-top: 40px;'>
+				<div style="">
+					<input type='submit' class='button' value='Lưu' onclick='return saveSTB_Click("<s:property value='%{#session.USER.username}'/>")' style="width: 97px;">
+				</div>
+				<div style="margin-top: 5px;">
+					<input type='submit' class='button' value='Hủy' onclick='return unLockUI()'
+						style="width: 97px;">
+				</div>
+		</div>
+	</div>
+</div>
+

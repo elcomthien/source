@@ -37,20 +37,27 @@ public class eSmileDaoImpl implements eSmileDao {
 		params.add(in);
 		in = new SubProParam(new String(param.getLayout_html()), 0);
 		params.add(in);
+		in = new SubProParam(new String(param.getNegative()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getNeutral()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getPositive()), 0);
+		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
 		params.add(subOut);
 		try {
 			params = SQL.broker.executeSubPro(SQL.ADD_LAYOUT_URL, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(8);
+				SubProParam paramOUT = (SubProParam) params.get(11);
 				rs = paramOUT.getString().trim();
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.EDIT_LAYOUT, params,
-				"userid,layoutid,layoutname,layoutdesc,direction,sessionid,url,html", ConvertUtil.convertToInteger(rs));
+				"userid,layoutid,layoutname,layoutdesc,direction,sessionid,url,html,negative,neutral,positive",
+				ConvertUtil.convertToInteger(rs));
 		if (rs.equals("-1")) {
 			map.put("status_code", 500);
 			map.put("message", "Internal Server Error");
@@ -85,20 +92,26 @@ public class eSmileDaoImpl implements eSmileDao {
 		params.add(in);
 		in = new SubProParam(new String(param.getUser_id()), 0);
 		params.add(in);
+		in = new SubProParam(new String(param.getNegative()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getNeutral()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getPositive()), 0);
+		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
 		params.add(subOut);
 		try {
 			params = SQL.broker.executeSubPro(SQL.EDIT_LAYOUT, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(7);
+				SubProParam paramOUT = (SubProParam) params.get(10);
 				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.EDIT_LAYOUT, params,
-				"layoutid,layoutname,layoutdesc,layouturl,layoutchange,sessionid,userid", rs);
+				"layoutid,layoutname,layoutdesc,layouturl,layoutchange,sessionid,userid,negative,neutral,positive", rs);
 		if (rs == 1) {
 			map.put("status_code", 200);
 			map.put("message", "OK");
@@ -776,26 +789,34 @@ public class eSmileDaoImpl implements eSmileDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public HashMap<String, Object> getZone(Params param) {
+	public HashMap<String, Object> getListZone(Params param) {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getParent_id()), 0);
 		params.add(in);
 
 		Vector<String> outParam = new Vector<String>();
 		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
 		params.add(subOut);
 		try {
-			params = SQL.broker.executeSubPro(SQL.GET_ZONE, params);
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_ZONE, params);
 			if ((params != null) & (params.size() > 0)) {
-				subOut = (SubProParam) params.get(1);
+				subOut = (SubProParam) params.get(2);
 				outParam = subOut.getVector();
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_ZONE, params, "sessionid", outParam.size());
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_LIST_ZONE, params, "sessionid,parentid", outParam.size());
 		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		if (outParam.size() == 0) {
+			map.put("status_code", "200");
+			map.put("message", "OK");
+			map.put("list_zone", list);
+			return map;
+		}
 		if (outParam.get(0).equals("-2")) {
 			map.put("status_code", 408);
 			map.put("message", "Request Timeout");
@@ -1458,19 +1479,23 @@ public class eSmileDaoImpl implements eSmileDao {
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new String(param.getSerinumber()), 0);
 		params.add(in);
+		in = new SubProParam(new String(param.getLatitude()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getLongitude()), 0);
+		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
 		params.add(subOut);
 		try {
 			params = SQL.broker.executeSubPro(SQL.BOX_LOGIN, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(1);
+				SubProParam paramOUT = (SubProParam) params.get(3);
 				rs = paramOUT.getString().trim();
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.BOX_LOGIN, params, "serinumber", Integer.parseInt(rs));
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.BOX_LOGIN, params, "serinumber,latitude,longitude", Integer.parseInt(rs));
 		if (rs.equals("-1")) {
 			map.put("status_code", 500);
 			map.put("message", "Internal Server Error");
@@ -1795,6 +1820,12 @@ public class eSmileDaoImpl implements eSmileDao {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_PLUGIN_BY_ID, params, "sessionid,userid,appid", outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", "200");
+			map.put("message", "OK");
+			map.put("plugin", new HashMap<String, Object>());
+			return map;
+		}
 		if (outParam.get(0).equals("-2")) {
 			map.put("status_code", 408);
 			map.put("message", "Request Timeout");
@@ -1842,7 +1873,7 @@ public class eSmileDaoImpl implements eSmileDao {
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_day())), 0);
 		params.add(in);
-		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_time())), 0);
+		in = new SubProParam(new String(ConvertUtil.convertArrayTime(param.getFilter_time())), 0);
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_tags())), 0);
 		params.add(in);
@@ -1867,6 +1898,9 @@ public class eSmileDaoImpl implements eSmileDao {
 		}
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_REPORT_OVERVIEW, params,
 				"sessionid,layoutid,from,to,day,time,tags,source,device,type", outParam.size());
+		// for (int i = 0; i < outParam.size(); i++) {
+		// System.out.println(i + "---" + outParam.get(i));
+		// }
 		if (outParam.get(0).equals("-2")) {
 			map.put("status_code", 408);
 			map.put("message", "Request Timeout");
@@ -1921,8 +1955,9 @@ public class eSmileDaoImpl implements eSmileDao {
 			response.put("data", listdatareponse);
 
 			int countvote = ConvertUtil.convertToInteger(outParam.get(5 + countdate * 2));
-			// for (int i = 5 + countdate * 2 + 1; i < 5 + countdate * 2 + 1 + countvote * 2; i += 2) {
-			for (int i = 6 + countdate * 2; i < 6 + (countdate + countvote) * 2; i += 2) {
+			for (int i = 5 + countdate * 2 + 1; i < 5 + countdate * 2 + 1 + countvote * 2; i += 2) {
+				// for (int i = 6 + countdate * 2; i < 6 + (countdate + countvote) * 2; i += 2) {
+				datascore = new HashMap<String, Object>();
 				datascore.put("date", outParam.get(i));
 				datascore.put("num", outParam.get(i + 1));
 				listdatascore.add(datascore);
@@ -1930,9 +1965,8 @@ public class eSmileDaoImpl implements eSmileDao {
 			score.put("data", listdatascore);
 
 			int countobject = ConvertUtil.convertToInteger(outParam.get(5 + countdate * 2 + 1 + countvote * 2));
-			// for (int i = 5 + countdate * 2 + 1 + countvote * 2 + 1; i < 5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4; i +=
-			// 4) {
-			for (int i = 7 + (countdate + countvote) * 2; i < 7 + (countdate + countvote) * 2 + countobject * 4; i += 4) {
+			for (int i = 5 + countdate * 2 + 1 + countvote * 2 + 1; i < 5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4; i += 4) {
+				// for (int i = 7 + (countdate + countvote) * 2; i < 7 + (countdate + countvote) * 2 + countobject * 4; i += 4) {
 				dataquesttion = new HashMap<String, Object>();
 				dataquesttion.put("id", outParam.get(i));
 				dataquesttion.put("name", outParam.get(i + 1));
@@ -1942,11 +1976,12 @@ public class eSmileDaoImpl implements eSmileDao {
 			}
 			question.put("data", listdataquestion);
 
-			int countanswer = ConvertUtil.convertToInteger(outParam.get(5 + countdate * 2 + 1 + countobject * 4));
-			// for (int i = 5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4 + 1; i < 5 + countdate * 2 + 1 + countvote * 2 + 1 +
-			// countobject * 4 + 1 + countanswer * 4; i += 4) {
-			for (int i = 8 + (countdate + countvote) * 2 + countobject * 4; i < 8 + (countdate + countvote) * 2
-					+ (countobject + countanswer) * 4; i += 4) {
+			int countanswer = ConvertUtil.convertToInteger(outParam.get(5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4));
+			// System.out.println(5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4);
+			for (int i = 5 + countdate * 2 + 1 + countvote * 2 + 1 + countobject * 4 + 1; i < 5 + countdate * 2 + 1 + countvote * 2 + 1
+					+ countobject * 4 + 1 + countanswer * 4; i += 4) {
+				// for (int i = 8 + (countdate + countvote) * 2 + countobject * 4; i < 8 + (countdate + countvote) * 2
+				// + (countobject + countanswer) * 4; i += 4) {
 				dataanswer = new HashMap<String, Object>();
 				dataanswer.put("id", outParam.get(i));
 				dataanswer.put("name", outParam.get(i + 1));
@@ -1984,7 +2019,7 @@ public class eSmileDaoImpl implements eSmileDao {
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_day())), 0);
 		params.add(in);
-		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_time())), 0);
+		in = new SubProParam(new String(ConvertUtil.convertArrayTime(param.getFilter_time())), 0);
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_tags())), 0);
 		params.add(in);
@@ -2007,6 +2042,8 @@ public class eSmileDaoImpl implements eSmileDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		// for (int i = 0; i < outParam.size(); i++)
+		// System.out.println(i + "---" + outParam.get(i));
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_REPORT_RESPONSE, params,
 				"sessionid,layoutid,from,to,day,time,tags,source,device,type", outParam.size());
 		if (outParam.get(0).equals("-2")) {
@@ -2049,12 +2086,13 @@ public class eSmileDaoImpl implements eSmileDao {
 				if (count > 0) {
 					if (outParam.get(i + 2).equals("question")) {
 						listquestion = new ArrayList<HashMap<String, Object>>();
-						for (int j = i + 8; j < i + 8 + count * 2; j += 2) {
-							question = new HashMap<String, Object>();
-							question.put("date", outParam.get(j));
-							question.put("text", outParam.get(j + 1));
-							listquestion.add(question);
-						}
+						// for (int j = i + 8; j < i + 8 + count * 2; j += 2) {
+						int j = i + 8;
+						question = new HashMap<String, Object>();
+						question.put("date", outParam.get(j));
+						question.put("text", outParam.get(j + 1));
+						listquestion.add(question);
+						// }
 						object.put("data", listquestion);
 						i = i + count * 2;
 					} else if (outParam.get(i + 2).equals("survey")) {
@@ -2082,14 +2120,15 @@ public class eSmileDaoImpl implements eSmileDao {
 						i = i + 2 + countrow * 2;
 					} else {
 						listother = new ArrayList<HashMap<String, Object>>();
-						for (int j = i + 8; j < i + 8 + count * 4; j += 4) {
-							other = new HashMap<String, Object>();
-							other.put("id", outParam.get(j));
-							other.put("name", outParam.get(j + 1));
-							other.put("sum", outParam.get(j + 2));
-							other.put("score", outParam.get(j + 3));
-							listother.add(other);
-						}
+						// for (int j = i + 8; j < i + 8 + count * 4; j += 4) {
+						int j = i + 8;
+						other = new HashMap<String, Object>();
+						other.put("id", outParam.get(j));
+						other.put("name", outParam.get(j + 1));
+						other.put("num", outParam.get(j + 2));
+						other.put("score", outParam.get(j + 3));
+						listother.add(other);
+						// }
 						object.put("data", listother);
 						i = i + count * 4;
 					}
@@ -2118,7 +2157,7 @@ public class eSmileDaoImpl implements eSmileDao {
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_day())), 0);
 		params.add(in);
-		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_time())), 0);
+		in = new SubProParam(new String(ConvertUtil.convertArrayTime(param.getFilter_time())), 0);
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_tags())), 0);
 		params.add(in);
@@ -2518,6 +2557,8 @@ public class eSmileDaoImpl implements eSmileDao {
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
 		params.add(in);
+		in = new SubProParam(new String(param.getLayout_id()), 0);
+		params.add(in);
 		in = new SubProParam(new String(param.getFrom()), 0);
 		params.add(in);
 		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getTo())), 0);
@@ -2534,13 +2575,13 @@ public class eSmileDaoImpl implements eSmileDao {
 		try {
 			params = SQL.broker.executeSubPro(SQL.ADD_LAYOUT_EMAIL, params);
 			if ((params != null) & (params.size() > 0)) {
-				SubProParam paramOUT = (SubProParam) params.get(6);
+				SubProParam paramOUT = (SubProParam) params.get(7);
 				rs = paramOUT.getString().trim();
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.ADD_LAYOUT_EMAIL, params, "sessionid,from,to,cc,subject,url",
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.ADD_LAYOUT_EMAIL, params, "sessionid,layoutid,from,to,cc,subject,url",
 				Integer.parseInt(rs));
 		if (rs.equals("-1")) {
 			map.put("status_code", 500);
@@ -2810,6 +2851,12 @@ public class eSmileDaoImpl implements eSmileDao {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_LIST_ACTIVITY, params, "sessionid,from,to", outParam.size() / 4);
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("list_activity", new ArrayList<HashMap<String, Object>>());
+			return map;
+		}
 		if (outParam.get(0).equals("-2")) {
 			map.put("status_code", 408);
 			map.put("message", "Request Timeout");
@@ -3105,8 +3152,8 @@ public class eSmileDaoImpl implements eSmileDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-//		for (int i = 0; i < params.size(); i++)
-//			System.out.println(i + ": " + params.get(i).getValue().toString());
+		// for (int i = 0; i < params.size(); i++)
+		// System.out.println(i + ": " + params.get(i).getValue().toString());
 		LogUtil.logDao(
 				eSmileDaoImpl.class.toString(),
 				SQL.SAVE_REPORT,
@@ -3460,7 +3507,7 @@ public class eSmileDaoImpl implements eSmileDao {
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
 		params.add(in);
-		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getRespondent_id())), 0);
+		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getList_id())), 0);
 		params.add(in);
 
 		SubProParam subOut = new SubProParam(new String(), 1);
@@ -3490,7 +3537,7 @@ public class eSmileDaoImpl implements eSmileDao {
 			map.put("status_code", 200);
 			map.put("message", "OK");
 			map.put("error_list", arr);
-			logActivity(param.getSession_id(), "delete", "respondent", ConvertUtil.convertArrayToString(param.getRespondent_id()), "");
+			logActivity(param.getSession_id(), "delete", "respondent", ConvertUtil.convertArrayToString(param.getList_id()), "");
 		}
 		return map;
 	}
@@ -3534,15 +3581,697 @@ public class eSmileDaoImpl implements eSmileDao {
 			return map;
 		}
 		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
-		for (int i = 0; i < outParam.size(); i += 2) {
+		HashMap<String, Object> device = new HashMap<String, Object>();
+		device.put("name", "Phone");
+		device.put("num", outParam.get(0));
+		list.add(device);
+		device = new HashMap<String, Object>();
+		device.put("name", "Tablet");
+		device.put("num", outParam.get(1));
+		list.add(device);
+		device = new HashMap<String, Object>();
+		device.put("name", "Other");
+		device.put("num", outParam.get(2));
+		list.add(device);
+
+		// for (int i = 0; i < outParam.size(); i += 2) {
+		// HashMap<String, Object> device = new HashMap<String, Object>();
+		// device.put("name", outParam.get(i));
+		// device.put("num", outParam.get(i + 1));
+		// list.add(device);
+		// }
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("report", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getRespondentDetail(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getRespondent_id()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_RESPONDENT_DETAIL, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_RESPONDENT_DETAIL, params, "sessionid,respondentid", outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("respondent", new ArrayList<HashMap<String, String>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		// List<HashMap<String, Object>> listselect = new ArrayList<HashMap<String, Object>>();
+		map.put("score", outParam.get(0));
+		map.put("question", outParam.get(1));
+		map.put("answer", outParam.get(2));
+		List<String> selected = new ArrayList<String>();
+		int count = 0;
+		for (int i = 3; i < outParam.size(); i += 4) {
+			HashMap<String, Object> res = new HashMap<String, Object>();
+			// listselect = new ArrayList<HashMap<String, Object>>();
+			selected = new ArrayList<String>();
+			res.put("object_id", outParam.get(i));
+			res.put("object_name", outParam.get(i + 1));
+			res.put("object_type", outParam.get(i + 2));
+			count = ConvertUtil.convertToInteger(outParam.get(i + 3));
+			for (int j = i + 4; j < i + 4 + count * 3; j += 3) {
+				if (outParam.get(i + 2).equals("question"))
+					selected.add(outParam.get(j + 2));
+				else if (outParam.get(i + 2).equals("survey"))
+					selected.add(outParam.get(j + 1) + " - " + outParam.get(j + 2));
+				else
+					selected.add(outParam.get(j + 1));
+				// HashMap<String, Object> select = new HashMap<String, Object>();
+				// select.put("selected_id", outParam.get(j));
+				// select.put("selected_name", outParam.get(j + 1));
+				// select.put("selected_value", outParam.get(j + 2));
+				// listselect.add(select);
+			}
+			res.put("selected", selected);
+			i = i + count * 3;
+			list.add(res);
+		}
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("respondent", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getZone(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_ZONE, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_ZONE, params, "sessionid,userid", outParam.size());
+		// for (int i = 0; i < outParam.size(); i++)
+		// System.out.println(i + "---" + outParam.get(i));
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("zones", new ArrayList<HashMap<String, String>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		List<HashMap<String, Object>> listloc = new ArrayList<HashMap<String, Object>>();
+		List<HashMap<String, Object>> listdev = new ArrayList<HashMap<String, Object>>();
+		List<HashMap<String, Object>> listacc = new ArrayList<HashMap<String, Object>>();
+		int countloc = 0;
+		int countdev = 0;
+		int countacc = 0;
+		for (int i = 0; i < outParam.size(); i += 6) {
+			HashMap<String, Object> zone = new HashMap<String, Object>();
+			listloc = new ArrayList<HashMap<String, Object>>();
+			listdev = new ArrayList<HashMap<String, Object>>();
+			listacc = new ArrayList<HashMap<String, Object>>();
+			zone.put("zone_id", outParam.get(i));
+			zone.put("zone_name", outParam.get(i + 1));
+			zone.put("zone_image", outParam.get(i + 2));
+			zone.put("status", outParam.get(i + 3));
+			zone.put("last_update", outParam.get(i + 4));
+			countloc = ConvertUtil.convertToInteger(outParam.get(i + 5));
+			for (int j = i + 6; j < i + 5 + countloc * 2; j += 2) {
+				HashMap<String, Object> location = new HashMap<String, Object>();
+				location.put("location_id", outParam.get(j));
+				location.put("location_name", outParam.get(j + 1));
+				listloc.add(location);
+			}
+			countdev = ConvertUtil.convertToInteger(outParam.get(i + 6 + countloc * 2));
+			for (int j = i + 6 + countloc * 2 + 1; j < i + 6 + countloc * 2 + 1 + countdev * 2; j += 2) {
+				HashMap<String, Object> device = new HashMap<String, Object>();
+				device.put("device_id", outParam.get(j));
+				device.put("device_name", outParam.get(j + 1));
+				listdev.add(device);
+			}
+			countacc = ConvertUtil.convertToInteger(outParam.get(i + 6 + countloc * 2 + 1 + countdev * 2));
+			for (int j = i + 6 + countloc * 2 + 1 + countdev * 2 + 1; j < i + 6 + countloc * 2 + 1 + countdev * 2 + 1 + countacc * 2; j += 2) {
+				HashMap<String, Object> acc = new HashMap<String, Object>();
+				acc.put("account_id", outParam.get(j));
+				acc.put("account_name", outParam.get(j + 1));
+				listacc.add(acc);
+			}
+			zone.put("locations", listloc);
+			zone.put("devices", listdev);
+			zone.put("accounts", listacc);
+			list.add(zone);
+			i = i + countloc * 2 + 1 + countdev * 2 + 1 + countacc * 2;
+		}
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("zones", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getGeoLocationDevice(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_GEO_LOCATION_DEVICE, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_GEO_LOCATION_DEVICE, params, "sessionid,userid", outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("list_device", new ArrayList<HashMap<String, String>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		for (int i = 0; i < outParam.size(); i += 13) {
 			HashMap<String, Object> device = new HashMap<String, Object>();
-			device.put("name", outParam.get(i));
-			device.put("num", outParam.get(i + 1));
+			HashMap<String, Object> info = new HashMap<String, Object>();
+			HashMap<String, Object> location = new HashMap<String, Object>();
+			device.put("device_id", outParam.get(i));
+			device.put("device_name", outParam.get(i + 1));
+			device.put("device_ip", outParam.get(i + 2));
+			device.put("layout_id", outParam.get(i + 3));
+			device.put("layout_name", outParam.get(i + 4));
+			device.put("status", outParam.get(i + 5));
+			location.put("lat", outParam.get(i + 6));
+			location.put("long", outParam.get(i + 7));
+			device.put("network", outParam.get(i + 8));
+			info.put("pin", outParam.get(i + 9));
+			info.put("cpu", outParam.get(i + 10));
+			info.put("ram", outParam.get(i + 11));
+			info.put("storage", outParam.get(i + 12));
+			device.put("location", location);
+			device.put("info", info);
 			list.add(device);
 		}
 		map.put("status_code", "200");
 		map.put("message", "OK");
-		map.put("report", list);
+		map.put("list_device", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getDashboardDevice(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(ConvertUtil.convertArrayToString(param.getFilter_type())), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getStatus()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_DASHBOEARD_DEVICE, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(4);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_DASHBOEARD_DEVICE, params, "sessionid,userid,filtertype,status",
+				outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("num_device", new ArrayList<HashMap<String, String>>());
+			map.put("list_device", new ArrayList<HashMap<String, String>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> num = new HashMap<String, Object>();
+		num.put("total", outParam.get(0));
+		num.put("online", outParam.get(1));
+		num.put("offline", outParam.get(2));
+		for (int i = 3; i < outParam.size(); i += 13) {
+			HashMap<String, Object> device = new HashMap<String, Object>();
+			HashMap<String, Object> info = new HashMap<String, Object>();
+			HashMap<String, Object> location = new HashMap<String, Object>();
+			device.put("device_id", outParam.get(i));
+			device.put("device_name", outParam.get(i + 1));
+			device.put("device_ip", outParam.get(i + 2));
+			device.put("layout_id", outParam.get(i + 3));
+			device.put("layout_name", outParam.get(i + 4));
+			device.put("status", outParam.get(i + 5));
+			location.put("lat", outParam.get(i + 6));
+			location.put("long", outParam.get(i + 7));
+			device.put("network", outParam.get(i + 8));
+			info.put("pin", outParam.get(i + 9));
+			info.put("cpu", outParam.get(i + 10));
+			info.put("ram", outParam.get(i + 11));
+			info.put("storage", outParam.get(i + 12));
+			device.put("location", location);
+			device.put("info", info);
+			list.add(device);
+		}
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("num_device", num);
+		map.put("list_device", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getDashboardOverview(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getDate_from()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getDate_to()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_DASHBOEARD_OVERVIEW, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(4);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_DASHBOEARD_OVERVIEW, params, "sessionid,userid,from,to", outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("zone", new ArrayList<HashMap<String, Object>>());
+			map.put("overview", new ArrayList<HashMap<String, String>>());
+			map.put("response", new ArrayList<HashMap<String, Object>>());
+			map.put("layouts", new ArrayList<HashMap<String, Object>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		HashMap<String, Object> overview = new HashMap<String, Object>();
+		HashMap<String, Object> storage = new HashMap<String, Object>();
+		HashMap<String, Object> sub_account = new HashMap<String, Object>();
+		HashMap<String, Object> feedback = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listzone = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> zone = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listresponse = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> response = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listlayout = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> layout = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listquestion = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> question = new HashMap<String, Object>();
+		HashMap<String, Object> answer = new HashMap<String, Object>();
+
+		overview.put("response", outParam.get(0));
+		overview.put("score", outParam.get(1));
+		storage.put("used", outParam.get(2));
+		storage.put("total", outParam.get(3));
+		overview.put("storage", storage);
+		sub_account.put("used", outParam.get(4));
+		sub_account.put("total", outParam.get(5));
+		overview.put("sub_account", sub_account);
+		feedback.put("bad", outParam.get(6));
+		feedback.put("good", outParam.get(7));
+		feedback.put("total", outParam.get(0));
+		overview.put("feedback", feedback);
+		map.put("overview", overview);
+		zone.put("zone_id", outParam.get(8));
+		zone.put("zone_name", outParam.get(9));
+		zone.put("score", outParam.get(10));
+		listzone.add(zone);
+		map.put("zone", listzone);
+		int countdate = ConvertUtil.convertToInteger(outParam.get(11));
+		for (int i = 12; i < 12 + countdate * 2; i += 2) {
+			response = new HashMap<String, Object>();
+			response.put("date", outParam.get(i));
+			response.put("num", outParam.get(i + 1));
+			listresponse.add(response);
+		}
+		map.put("response", listresponse);
+		int countlayout = ConvertUtil.convertToInteger(outParam.get(12 + countdate * 2));
+		for (int i = 12 + countdate * 2 + 1; i < 12 + countdate * 2 + 1 + countlayout * 2; i += 2) {
+			layout = new HashMap<String, Object>();
+			listresponse = new ArrayList<HashMap<String, Object>>();
+			layout.put("layout_id", outParam.get(i));
+			layout.put("layout_name", outParam.get(i + 1));
+			for (int j = i + 2; j < i + 2 + countdate * 2; j += 2) {
+				response = new HashMap<String, Object>();
+				response.put("date", outParam.get(j));
+				response.put("num", outParam.get(j + 1));
+				listresponse.add(response);
+			}
+			layout.put("responses", listresponse);
+			int countobject = ConvertUtil.convertToInteger(outParam.get(i + 2 + countdate * 2));
+			for (int j = i + 2 + countdate * 2 + 1; j < i + 2 + countdate * 2 + 1 + countobject * 4; j += 4) {
+				question = new HashMap<String, Object>();
+				answer = new HashMap<String, Object>();
+				question.put("question_id", outParam.get(j));
+				question.put("question_name", outParam.get(j + 1));
+				answer.put("good", outParam.get(j + 2));
+				answer.put("total", outParam.get(j + 3));
+				question.put("answer", answer);
+				listquestion.add(question);
+			}
+			layout.put("questions", listquestion);
+			listlayout.add(layout);
+			i = i + countdate * 2 + 1 + countobject * 4;
+		}
+		map.put("layouts", listlayout);
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> renewalSession(Params param) {
+		String rs = "0";
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_name()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.RENEWAL_SESSION, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = paramOUT.getString().trim();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.RENEWAL_SESSION, params, "sessionid,username", 1);
+		if (rs.equals("-1")) {
+			map.put("status_code", 500);
+			map.put("message", "Internal Server Error");
+		} else if (rs.equals("-2")) {
+			map.put("status_code", 500);
+			map.put("message", "Session not exist");
+		} else {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+		}
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> boxGetInfo(Params param) {
+		String rs = "0";
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSerinumber()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getCpu()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getTotal_cpu()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getRam()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getTotal_ram()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getHdd()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getTotal_hdd()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getPin()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.BOX_GET_INFO, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(8);
+				rs = paramOUT.getString().trim();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.BOX_GET_INFO, params, "serinumber,cpu,totalcpu,ram,totalram,hdd,totalhdd,pin", 1);
+		if (rs.equals("-1")) {
+			map.put("status_code", 500);
+			map.put("message", "Internal Server Error");
+		} else if (rs.equals("-2")) {
+			map.put("status_code", 500);
+			map.put("message", "Device not exist");
+		} else {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("status", rs);
+		}
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> setBackground(Params param) {
+		String rs = "0";
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getImage()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.SET_BACKGROUND, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(3);
+				rs = paramOUT.getString().trim();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.SET_BACKGROUND, params, "session,userid,image", 1);
+		if (rs.equals("-1")) {
+			map.put("status_code", 500);
+			map.put("message", "Internal Server Error");
+		} else if (rs.equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request timeout");
+		} else {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+		}
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getNotification(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getUser_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getGood()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_NOTIFICATION, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(3);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_NOTIFICATION, params, "sessionid,userid,good", outParam.size() / 2);
+		if (outParam.size() == 0) {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+			map.put("notification", new ArrayList<HashMap<String, String>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		for (int i = 0; i < outParam.size(); i += 2) {
+			HashMap<String, Object> notify = new HashMap<String, Object>();
+			notify.put("device_id", outParam.get(i));
+			notify.put("device_name", outParam.get(i + 1));
+			list.add(notify);
+		}
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("notification", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> getLayoutEmail(Params param) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getIssend()), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LAYOUT_EMAIL, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.GET_LAYOUT_EMAIL, params, "sessionid,issend", outParam.size());
+		if (outParam.size() == 0) {
+			map.put("status_code", "200");
+			map.put("message", "OK");
+			map.put("mails", new ArrayList<HashMap<String, Object>>());
+			return map;
+		}
+		if (outParam.get(0).equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request Timeout");
+			return map;
+		}
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		for (int i = 0; i < outParam.size(); i += 8) {
+			HashMap<String, Object> mail = new HashMap<String, Object>();
+			mail.put("id", outParam.get(i));
+			mail.put("layout_id", outParam.get(i + 1));
+			mail.put("from", outParam.get(i + 2));
+			mail.put("to", outParam.get(i + 3));
+			mail.put("cc", outParam.get(i + 4));
+			mail.put("subject", outParam.get(i + 5));
+			mail.put("url", outParam.get(i + 6));
+			mail.put("issend", outParam.get(i + 7));
+			list.add(mail);
+		}
+		map.put("status_code", "200");
+		map.put("message", "OK");
+		map.put("mails", list);
+		return map;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public HashMap<String, Object> setSendEmail(Params param) {
+		String rs = "0";
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(param.getSession_id()), 0);
+		params.add(in);
+		in = new SubProParam(new String(param.getEmail_id()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.SET_SEND_EMAIL, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = paramOUT.getString().trim();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDaoImpl.class.toString(), SQL.SET_SEND_EMAIL, params, "session,emailid", 1);
+		if (rs.equals("-1")) {
+			map.put("status_code", 500);
+			map.put("message", "Internal Server Error");
+		} else if (rs.equals("-2")) {
+			map.put("status_code", 408);
+			map.put("message", "Request timeout");
+		} else {
+			map.put("status_code", 200);
+			map.put("message", "OK");
+		}
 		return map;
 	}
 
@@ -3550,29 +4279,40 @@ public class eSmileDaoImpl implements eSmileDao {
 		eSmileDaoImpl l = new eSmileDaoImpl();
 		Params params = new Params();
 		params.setSession_id("-999");
-		params.setUser_id("43");
-		params.setLayout_id("1340");
+		params.setUser_id("1");
+		params.setLayout_id("1547");
 		params.setParent_id("1");
-		params.setDate_from("01-04-2018");
-		params.setDate_to("04-04-2018");
-		String[] day = { "1", "2", "3", "4", "5", "6", "7" };
-		params.setFilter_day(day);
+		params.setDate_from("15-04-2018");
+		params.setDate_to("16-04-2018");
+		String[] day = { "2", };
+		// params.setFilter_day(day);
 		String[] time = {};
-		params.setFilter_time(time);
+		// params.setFilter_time(time);
 		String[] tags = {};
-		params.setFilter_tags(tags);
+		// params.setFilter_tags(tags);
 		String[] source = { "URL", "APP" };
-		params.setFilter_source(source);
+		// params.setFilter_source(source);
 		String[] device = { "Windows 7/Chrome 64.0.3282.186", "Android 4.4.4/Chrome 33.0.0.0" };
 		// String[] device = {};
-		params.setFilter_device(device);
+		// params.setFilter_device(device);
 		String[] type = { "score", "multiple", "icon", "smile" };
-		params.setFilter_type(type);
+		// params.setFilter_type(type);
 		String[] list_user = { "1", "44", "41", "46", "43", "27" };
-		params.setList_user(list_user);
+		// params.setList_user(list_user);
 		String[] privileges = { "1", "2", "3", "5" };
-		params.setPrivileges(privileges);
+		// params.setPrivileges(privileges);
+		params.setRespondent_id("243");
+		params.setParent_id("1");
+		params.setApp_id("92109224060474");
+		params.setIssend("-1");
 
+		System.out.println(l.getLayoutEmail(params));
+
+		// System.out.println(l.getFeedbackPlugin(params));
+		// System.out.println(l.getDashboardOverview(params));
+		// System.out.println(l.getListZone(params));
+
+		// System.out.println(l.getRespondentDetail(params));
 		// System.out.println(l.getReportFeedback(params));
 
 		// System.out.println(l.getPlugin(params));
@@ -3581,7 +4321,9 @@ public class eSmileDaoImpl implements eSmileDao {
 
 		// System.out.println(l.getListAccount(params));
 		// FileUtil.writeFileJson("D://list_account.json", l.getListAccount(params));
-		System.out.println(l.getReportOverview(params));
+		// System.out.println(l.getReportOverview(params));
+		// System.out.println(l.getReportResponse(params));
+		// System.out.println(l.getPluginById(params));
 
 		// System.out.println(l.getInfoFilter(params));
 
@@ -3647,9 +4389,9 @@ public class eSmileDaoImpl implements eSmileDao {
 		// String testString = Arrays.toString(testArray);
 		// System.out.println(testString);
 
-//		String a = "1,2,3,4";
-//		System.out.println(a.substring(1, a.length()));
-//		String[] arr = a.substring(1, a.length()).split(",");
-//		System.out.println(arr.length);
+		// String a = "1,2,3,4";
+		// System.out.println(a.substring(1, a.length()));
+		// String[] arr = a.substring(1, a.length()).split(",");
+		// System.out.println(arr.length);
 	}
 }

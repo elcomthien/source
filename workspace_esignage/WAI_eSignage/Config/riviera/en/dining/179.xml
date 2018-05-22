@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="92" menuid="179">
+        <currency>74</currency>
+        <currency_large>0</currency_large>
+        <currency_small>0</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Nike Free Run+ 3 Mens Running Shoes 510642-002</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Shoes]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363281840439.jpg</imageicon>
+        <printname>Shoes</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363281840439.jpg</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363281840439.jpg</imagebg>
+    </item>
+    <item icode="93" menuid="179">
+        <currency>20</currency>
+        <currency_large>0</currency_large>
+        <currency_small>0</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Nike Golf Men's Tech Essentials Web Belt</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Nike Golf]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363282081428.jpg</imageicon>
+        <printname>Nike Golf</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363282081428.jpg</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363282081428.jpg</imagebg>
+    </item>
+    <item icode="94" menuid="179">
+        <currency>169</currency>
+        <currency_large>0</currency_large>
+        <currency_small>0</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Nike+ SportWatch GPS Powered by TomTom (Black/Volt)</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[SportWatch]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363282171160.jpg</imageicon>
+        <printname>SportWatch</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363282171160.jpg</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363282171160.jpg</imagebg>
+    </item>
+    <item icode="95" menuid="179">
+        <currency>40</currency>
+        <currency_large>0</currency_large>
+        <currency_small>0</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>NIKE WMNS NIKE INITIATOR WOMEN</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[NIKE WMNS]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363282260902.jpg</imageicon>
+        <printname>NIKE WMNS</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363282260902.jpg</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363282260902.jpg</imagebg>
+    </item>
+</ehotel>

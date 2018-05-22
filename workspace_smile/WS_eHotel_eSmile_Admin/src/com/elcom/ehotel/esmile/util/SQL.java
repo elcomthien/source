@@ -75,4 +75,7 @@ public class SQL {
 	
 	public static final String GET_VOTE_SURVEY = "BEGIN EADMIN.getVoteSurvey(?,?,?,?,?); END;";
 	
+	public static final String GET_WELCOME = "BEGIN EADMIN.getListWelcome(?,?); END;";
+	public static final String EDIT_WELCOME = "BEGIN EADMIN.editWelcome(?,?,?,?); END;";
+	
 }

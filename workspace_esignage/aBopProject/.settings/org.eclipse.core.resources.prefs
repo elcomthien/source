@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/PAGE/ELCOM_COMMON/header.jsp=UTF-8
+encoding//WebContent/PAGE/ELCOM_CONTENT/content-createlayout.jsp=UTF-8
+encoding//WebContent/PAGE/ELCOM_CONTENT/content-detail.jsp=UTF-8
+encoding//WebContent/PAGE/ELCOM_CONTENT/content-player.jsp=UTF-8
+encoding//WebContent/PAGE/ELCOM_CONTENT/left-layout.jsp=UTF-8
+encoding//WebContent/js/content-media.js=UTF-8
+encoding//WebContent/js/content-qms.js=UTF-8
+encoding//src/elcom/abop/util/UnicodeConverter.java=UTF-8

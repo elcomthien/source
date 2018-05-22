@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item menuid="202" icode="152">
+        <currency>15</currency>
+        <currency_large>15</currency_large>
+        <currency_small>15</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Pinot Grigio, Pighin, Grave&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Pinot Grigio, Pighin, Grave]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858895052.png</imageicon>
+        <printname>Pinot Grigio, Pighin, Grave</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858895052.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858895052.png</imagebg>
+    </item>
+    <item menuid="202" icode="153">
+        <currency>14</currency>
+        <currency_large>14</currency_large>
+        <currency_small>14</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Chardonnay, Jordan, Russi&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Chardonnay, Jordan, Russi]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363858966334.png</imageicon>
+        <printname>Chardonnay, Jordan, Russi</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363858966334.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363858966334.png</imagebg>
+    </item>
+    <item menuid="202" icode="154">
+        <currency>15</currency>
+        <currency_large>15</currency_large>
+        <currency_small>15</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[&lt;p&gt;Chardonnay, Grand Estates&lt;/p&gt;]]&gt;</def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">&lt;![CDATA[Chardonnay, Grand Estates]]&gt;</name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/1363859047361.png</imageicon>
+        <printname>Chardonnay, Grand Estates</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1363859047361.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/1363859047361.png</imagebg>
+    </item>
+</ehotel>

@@ -9,6 +9,9 @@ public interface Command {
 	public static int com_getountilm = 4;
 	public static int com_getlisturlsub = 5;
 	public static int com_getFilmCode = 6;
+	
+	public static int com_getSystemDate = 7;
+	
 	//com cho mod
 	public static int com_getmodsubject = 11;
 	public static int com_getModListSongSubject = 12;
@@ -29,6 +32,7 @@ public interface Command {
 	public static int com_stbftpapk = 47;
 	public static int com_updatestatusstbftpapk = 48;
 	public static int com_setKeyStbIntoRoom = 49;
+	public static int com_updatestatusbox = 50;
 	//them cho phan welcome khach
 	public static int com_getwelcome = 34;
 	//them cho phan dong bo gio cho cac stb khong the nho thoi gian
@@ -51,7 +55,7 @@ public interface Command {
 	public static int com_getHomeService = 104;
 	public static int com_getMainMenu = 105;
 	public static int com_getOultetImage = 106;
-	public static int com_getSubMenu = 107;     //danh sach của chu đề cấp con serivece dining
+	public static int com_getSubMenu = 107;     //danh sach con serivece dining
 	public static int com_getItemOfService = 108; //danh sach cac non an thuoc chu de nao do
 	public static int com_getBills = 109; 
 	public static int com_getItemOfAttractions = 110;  //danh sach item thuoc Attractons
@@ -64,5 +68,10 @@ public interface Command {
 	public static int com_getCountries = 118;    
 	public static int com_getWeatherToday = 119;
 	public static int com_getWeatherInWeek = 120;
+	
+	public static int com_getListAirport = 121;
+	public static int com_getFlightSchedule = 122;
+	public static int com_getClock = 123;
+	public static int com_getFilterFlight = 124;
 	
 }

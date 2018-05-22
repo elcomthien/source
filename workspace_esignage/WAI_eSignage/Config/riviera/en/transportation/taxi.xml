@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <def>STRETCH LIMOUSINE FORD</def>
+        <name>STRETCH LIMOUSINE FORD</name>
+    </item>
+    <item id="2">
+        <def>CAMARY 2009</def>
+        <name>CAMARY 2009</name>
+    </item>
+    <item id="3">
+        <def>TOYOTA HIACE 12 Seats</def>
+        <name>TOYOTA HIACE 12 Seats</name>
+    </item>
+</ehotel>

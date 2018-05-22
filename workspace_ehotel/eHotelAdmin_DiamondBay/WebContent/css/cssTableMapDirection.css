@@ -1,0 +1,207 @@
+.divTable {
+	width: 100%;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.divRow {
+	width: 99%;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.divColumn {
+	float: left;
+	width: 60%;
+	display: block;
+}
+
+.form_detail_Movie {
+	width: 380;
+	height: 300;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.left_Title_movie {
+	float: left;
+	width: 315px;
+	margin-top: 10;
+	margin-left: 10px;
+}
+
+.right_Title_movie {
+	float: left;
+	width: 200px;
+	height: 150px;
+	text-align: center;
+}
+
+.div_name_movie {
+	float: left;
+	width: 60px;
+	height: 20px;
+}
+
+.div_inbox_detail {
+	margin-top: 5px;
+	height: 23px;
+	float: left;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.div_des_textare {
+	float: left;
+	margin-left: 10px;
+}
+
+.div_info_movie {
+	width: 100%;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.div_des_movie {
+	width: 100%;
+	height: 230px;
+	margin-top: 5px;
+	float: left;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.div_desc_detail {
+	float: left;
+}
+
+.form_addContent {
+	width: 680px;
+	min-height: 350px;
+	height: auto;
+}
+
+.left_form_addContent {
+	float: left;
+	width: 330px;
+	min-height: 150p;
+	border: 1px solid #a0a0a0;
+	height: auto;
+}
+
+.right_form_addContent {
+	margin-left: 5px;
+	float: left;
+	width: 330px;
+	min-height: 150p;
+	border: 1px solid #a0a0a0;
+}
+
+.table2 {
+	margin-top: 3px;
+	margin-left: 2px;
+	width: 98%;
+	background-color: white;
+}
+
+.table2 th {
+	height: 31px;
+	background: transparent url("../images/bg_table_header.png") repeat-x
+		center bottom;
+	color: #666666;
+}
+
+.table2 td {
+	
+}
+
+.mytable2_row1 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row1.png") repeat-x
+		center bottom;
+}
+
+.mytable2_row2 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row2.png") repeat-x
+		center bottom;
+}
+
+.div_drop_subject {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	background: transparent url("../images/contextmenu.png") repeat-x left
+		top;
+	background-color: white;
+	border: 1px solid #DDDDDD;
+}
+
+.div_page_add {
+	width: 150px;
+	height: 20px;
+}
+
+.div_name_pms {
+	width: 100%;
+	height: 30px;
+}
+
+.form_detail_Movie_Edit {
+	width: 400;
+	height: 220;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}
+
+.MenuBoder {
+	border: 2px solid red;
+}
+
+.mytable_row1 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_row1.png") repeat-x
+		center bottom;
+}
+
+.mytable_row_sel2 {
+	cursor: pointer;
+	color: #878888;
+	height: 30px;
+	background: transparent url("../images/bg_table_rowsel.png") repeat-x
+		center bottom;
+}
+
+.div_name_movie_pms {
+	float: left;
+	width: 100px;
+	height: 20px;
+}
+
+.form_detail_Movie_pms {
+	width: 430;
+	height: 280;
+	background-color: white;
+	z-index: 1002;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 3px solid #A7800A;
+}

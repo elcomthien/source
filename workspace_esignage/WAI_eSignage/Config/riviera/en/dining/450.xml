@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="256" menuid="450">
+        <currency>150,000</currency>
+        <currency_large>150,000</currency_large>
+        <currency_small>150,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>With your choice of beef,chicken,pork or seafood served with condiments</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Rice Congee]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Rice Congee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421662983419.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="257" menuid="450">
+        <currency>180,000</currency>
+        <currency_large>180,000</currency_large>
+        <currency_small>180,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Deep fried prawns, squid and fish with taro wrapped in rice paper rolls</p><p>with fresh herbs and fish sauce</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Vietnamese seafood spring rolls]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Vietnamese seafood spring rolls</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421663043915.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="258" menuid="450">
+        <currency>190,000</currency>
+        <currency_large>190,000</currency_large>
+        <currency_small>190,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Cold fresh spring rolls filled with tiger prawns, smoked salmon,crab meat,</p><p>noodles and vietnamese herbs&#160; served with chili fish sauce&#160;</p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Riviera &#160;hand rolls]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Riviera &#160;hand rolls</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421663092262.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="265" menuid="450">
+        <currency>190,000</currency>
+        <currency_large>190,000</currency_large>
+        <currency_small>190,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Pork dumplings served in a light clear broth with baby bok choy</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Hong Kong wonton mee]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Hong Kong wonton mee</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718143735.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="266" menuid="450">
+        <currency>190,000</currency>
+        <currency_large>190,000</currency_large>
+        <currency_small>190,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Flat white noodle soup with sliced beef, Vietnamese herbs and bean sprouts</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Pho bo saigon]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Pho bo saigon</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718155777.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="267" menuid="450">
+        <currency>190,000</currency>
+        <currency_large>190,000</currency_large>
+        <currency_small>190,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">A clear fish soup served with rice noodles,fish cake and</u></p><p class="p1"><span class="s1">Vietnamese herbs and bean sprouts</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Banh canh nha trang]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Banh canh nha trang</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718165448.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="268" menuid="450">
+        <currency>250000</currency>
+        <currency_large>250000</currency_large>
+        <currency_small>250000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Organic dalat romaine lettuce tossed in a creamy caesar dressing&#160;</u></p><p class="p1"><span class="s1">with crispy bacon,anchovies,parmigiano shavings,garlic crostini and poached egg</u></p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Caesar salad]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Caesar salad</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718180452.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="269" menuid="450">
+        <currency>280000</currency>
+        <currency_large>280000</currency_large>
+        <currency_small>280000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Char grilled chicken skewer with kalamata olives,cherry tomatoes,capsicum,salad greens and feta cheese on home baked pita bread and garlic&#160; cucumber yoghurt.</u></p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Greek chicken souvlaki]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Greek chicken souvlaki</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718192326.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="270" menuid="450">
+        <currency>290000</currency>
+        <currency_large>290000</currency_large>
+        <currency_small>290000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Succulent&#160; black angus beef burger with grilled pineapple, fried egg, pickled beetroot,</u></p><p class="p1"><span class="s1">crunchy lettuce and plum tomato&#160; on a fresh baked&#160; bun&#160;</u></p><p class="p1"><span class="s1">served with&#160; jumbo potato wedges</u></p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[The Aussie burger]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>The Aussie burger</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718203695.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="271" menuid="450">
+        <currency>360,000</currency>
+        <currency_large>360,000</currency_large>
+        <currency_small>360,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Toasted triple decker sandwich with choice of white or brown bread filled&#160;</u></p><p class="p1"><span class="s1">with Nha Trang&#160; lobster tail, smoked chicken, roma tomato, egg,&#160;</u></p><p class="p1"><span class="s1">serrano ham,&#160; cheddar cheese and iceberg lettuce<b>&#160;</b></u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Riviera lobster club sandwich]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Riviera lobster club sandwich</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718213698.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+    <item icode="272" menuid="450">
+        <currency>380,000</currency>
+        <currency_large>380,000</currency_large>
+        <currency_small>380,000</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p class="p1"><span class="s1">Rib eye steak with caramelized&#160; onions, sauteed button mushrooms ,salad greens and</u></p><p class="p1"><span class="s1">beef tomatoes on a warm crunchy baguette served with&#160; chunky potato wedges</u></p>]]></def>
+        <iunit>VND</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Australian black angus &#160;steak sandwich]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/null</imageicon>
+        <printname>Australian black angus &#160;steak sandwich</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1421718224709.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/null</imagebg>
+    </item>
+</ehotel>

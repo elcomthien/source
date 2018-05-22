@@ -1,0 +1,4460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.rvcadv.adcenter.elcom.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.rvcadv.adcenter.elcom.com" xmlns:intf="http://service.rvcadv.adcenter.elcom.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://service.rvcadv.adcenter.elcom.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getContentGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getContentGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="getContentGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateDirecGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateDirecGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdateDirecGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminCheckStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminCheckStbResponse">
+    <complexType>
+     <sequence>
+      <element name="adminCheckStbReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelStbResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelStbReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetContentNoGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetContentNoGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetContentNoGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetLayoutGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateLayoutCoor">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateLayoutCoorResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdateLayoutCoorReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdatePlayListName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdatePlayListNameResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdatePlayListNameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdatePlaylistTime">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdatePlaylistTimeResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdatePlaylistTimeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelItemPlaylist">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelItemPlaylistResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelItemPlaylistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetListGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListGroups">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListGroupsResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetListGroupsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminNewGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelGroupReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminMoveGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminMoveGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminMoveGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdateGroupReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getStbGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getStbGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="getStbGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListStbAll">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListStbAllResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetListStbAllReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListStbAlls">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetListStbAllsResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetListStbAllsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUdateStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUdateStbResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUdateStbReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminStbPush">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminStbPushResponse">
+    <complexType>
+     <sequence>
+      <element name="adminStbPushReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminAddStbIntoGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminAddStbIntoGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminAddStbIntoGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlaylistItem">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlaylistItemResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetPlaylistItemReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayListLayout">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayListLayoutResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetPlayListLayoutReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminRemoveStbGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminRemoveStbGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminRemoveStbGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayListGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayListGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetPlayListGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayList">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetPlayListResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetPlayListReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertLayout">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertLayoutResponse">
+    <complexType>
+     <sequence>
+      <element name="adminInsertLayoutReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertLayoutName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertLayoutNameResponse">
+    <complexType>
+     <sequence>
+      <element name="adminInsertLayoutNameReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutContainContent">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutContainContentResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetLayoutContainContentReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSessionid">
+    <complexType>
+     <sequence>
+      <element name="server" type="xsd:string"/>
+      <element name="port" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getSessionidResponse">
+    <complexType>
+     <sequence>
+      <element name="getSessionidReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertPlaylistCore">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInsertPlaylistCoreResponse">
+    <complexType>
+     <sequence>
+      <element name="adminInsertPlaylistCoreReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelPlaylist">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelPlaylistResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelPlaylistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewPlaylistName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewPlaylistNameResponse">
+    <complexType>
+     <sequence>
+      <element name="adminNewPlaylistNameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetLayoutNameResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetLayoutNameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateLayoutName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateLayoutNameResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdateLayoutNameReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewLayoutContent">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewLayoutContentResponse">
+    <complexType>
+     <sequence>
+      <element name="adminNewLayoutContentReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelLayOutItem">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelLayOutItemResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelLayOutItemReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelLayoutName">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelLayoutNameResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelLayoutNameReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetTypeLayout">
+    <complexType/>
+   </element>
+   <element name="admingetTypeLayoutResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetTypeLayoutReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pushContentIntoStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pushContentIntoStbResponse">
+    <complexType/>
+   </element>
+   <element name="removeContentStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeContentStbResponse">
+    <complexType>
+     <sequence>
+      <element name="removeContentStbReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeContentStbEach">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+      <element name="mac" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeContentStbEachResponse">
+    <complexType>
+     <sequence>
+      <element name="removeContentStbEachReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetContentStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetContentStbResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetContentStbReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInserContentIntoGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminInserContentIntoGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminInserContentIntoGroupReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDeleteContentIntoGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDeleteContentIntoGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDeleteContentIntoGroupReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetScheduleDailyGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetScheduleDailyGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetScheduleDailyGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateScheduleDailyTime">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateScheduleDailyTimeResponse">
+    <complexType>
+     <sequence>
+      <element name="adminUpdateScheduleDailyTimeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelSchduledailyTime">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelSchduledailyTimeResponse">
+    <complexType>
+     <sequence>
+      <element name="adminDelSchduledailyTimeReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetSchedulePeriGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetSchedulePeriGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetSchedulePeriGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetItemScheduleDailyForPerio">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetItemScheduleDailyForPerioResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetItemScheduleDailyForPerioReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewScheduleDaily">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewScheduleDailyResponse">
+    <complexType/>
+   </element>
+   <element name="adminNewSchedulePeri">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewSchedulePeriResponse">
+    <complexType/>
+   </element>
+   <element name="adminNewSchedulePeriName">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewSchedulePeriNameResponse">
+    <complexType/>
+   </element>
+   <element name="adminDelSchedulePeri">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelSchedulePeriResponse">
+    <complexType/>
+   </element>
+   <element name="adminDelSchedulePeriItem">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelSchedulePeriItemResponse">
+    <complexType/>
+   </element>
+   <element name="adminUpdateSchedulePeri">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateSchedulePeriResponse">
+    <complexType/>
+   </element>
+   <element name="admingetScheduleDailyNamGroup">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetScheduleDailyNamGroupResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetScheduleDailyNamGroupReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="admingetConfig">
+    <complexType/>
+   </element>
+   <element name="admingetConfigResponse">
+    <complexType>
+     <sequence>
+      <element name="admingetConfigReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewContent">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewContentResponse">
+    <complexType>
+     <sequence>
+      <element name="adminNewContentReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewScheduleDailyName">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewScheduleDailyNameResponse">
+    <complexType/>
+   </element>
+   <element name="adminDelScheduleDailyName">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelScheduleDailyNameResponse">
+    <complexType/>
+   </element>
+   <element name="adminNewContentLogic">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewContentLogicResponse">
+    <complexType/>
+   </element>
+   <element name="adminNewContentText">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewContentTextResponse">
+    <complexType/>
+   </element>
+   <element name="adminUpdateConfig">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateConfigResponse">
+    <complexType/>
+   </element>
+   <element name="adminDelContentText">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminDelContentTextResponse">
+    <complexType/>
+   </element>
+   <element name="adminUpdateContentText">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateContentTextResponse">
+    <complexType/>
+   </element>
+   <element name="adminReportLayout">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportLayoutResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportLayoutReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportContentAll">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportContentAllResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportContentAllReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportPlaylist">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportPlaylistResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportPlaylistReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportDaily">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportDailyResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportDailyReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportSchedulePeriod">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportSchedulePeriodResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportSchedulePeriodReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportStb">
+    <complexType>
+     <sequence>
+      <element name="xmlparam" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminReportStbResponse">
+    <complexType>
+     <sequence>
+      <element name="adminReportStbReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateStbDefaultHome">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminUpdateStbDefaultHomeResponse">
+    <complexType/>
+   </element>
+   <element name="adminNewContentWithDuration">
+    <complexType>
+     <sequence>
+      <element name="xmlparamter" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="adminNewContentWithDurationResponse">
+    <complexType/>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="adminStbPushRequest">
+
+      <wsdl:part element="impl:adminStbPush" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListGroupsResponse">
+
+      <wsdl:part element="impl:admingetListGroupsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutGroupResponse">
+
+      <wsdl:part element="impl:admingetLayoutGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetContentStbResponse">
+
+      <wsdl:part element="impl:admingetContentStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutGroupRequest">
+
+      <wsdl:part element="impl:admingetLayoutGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelContentTextRequest">
+
+      <wsdl:part element="impl:adminDelContentText" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateStbDefaultHomeResponse">
+
+      <wsdl:part element="impl:adminUpdateStbDefaultHomeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertLayoutNameResponse">
+
+      <wsdl:part element="impl:adminInsertLayoutNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutContainContentRequest">
+
+      <wsdl:part element="impl:admingetLayoutContainContent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateLayoutNameRequest">
+
+      <wsdl:part element="impl:adminUpdateLayoutName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListGroupRequest">
+
+      <wsdl:part element="impl:admingetListGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListRequest">
+
+      <wsdl:part element="impl:admingetPlayList" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelGroupResponse">
+
+      <wsdl:part element="impl:adminDelGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListResponse">
+
+      <wsdl:part element="impl:admingetPlayListResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminAddStbIntoGroupResponse">
+
+      <wsdl:part element="impl:adminAddStbIntoGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportStbResponse">
+
+      <wsdl:part element="impl:adminReportStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportLayoutRequest">
+
+      <wsdl:part element="impl:adminReportLayout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInserContentIntoGroupRequest">
+
+      <wsdl:part element="impl:adminInserContentIntoGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentWithDurationRequest">
+
+      <wsdl:part element="impl:adminNewContentWithDuration" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportContentAllResponse">
+
+      <wsdl:part element="impl:adminReportContentAllResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdatePlayListNameRequest">
+
+      <wsdl:part element="impl:adminUpdatePlayListName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminRemoveStbGroupResponse">
+
+      <wsdl:part element="impl:adminRemoveStbGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetScheduleDailyNamGroupRequest">
+
+      <wsdl:part element="impl:admingetScheduleDailyNamGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateContentTextRequest">
+
+      <wsdl:part element="impl:adminUpdateContentText" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelItemPlaylistResponse">
+
+      <wsdl:part element="impl:adminDelItemPlaylistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewPlaylistNameResponse">
+
+      <wsdl:part element="impl:adminNewPlaylistNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInserContentIntoGroupResponse">
+
+      <wsdl:part element="impl:adminInserContentIntoGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutContainContentResponse">
+
+      <wsdl:part element="impl:admingetLayoutContainContentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateDirecGroupRequest">
+
+      <wsdl:part element="impl:adminUpdateDirecGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateStbDefaultHomeRequest">
+
+      <wsdl:part element="impl:adminUpdateStbDefaultHome" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminStbPushResponse">
+
+      <wsdl:part element="impl:adminStbPushResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDeleteContentIntoGroupRequest">
+
+      <wsdl:part element="impl:adminDeleteContentIntoGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportLayoutResponse">
+
+      <wsdl:part element="impl:adminReportLayoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdatePlaylistTimeRequest">
+
+      <wsdl:part element="impl:adminUpdatePlaylistTime" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelContentTextResponse">
+
+      <wsdl:part element="impl:adminDelContentTextResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewScheduleDailyResponse">
+
+      <wsdl:part element="impl:adminNewScheduleDailyResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelGroupRequest">
+
+      <wsdl:part element="impl:adminDelGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListStbAllRequest">
+
+      <wsdl:part element="impl:admingetListStbAll" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertPlaylistCoreRequest">
+
+      <wsdl:part element="impl:adminInsertPlaylistCore" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateConfigResponse">
+
+      <wsdl:part element="impl:adminUpdateConfigResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSessionidRequest">
+
+      <wsdl:part element="impl:getSessionid" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListGroupRequest">
+
+      <wsdl:part element="impl:admingetPlayListGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewGroupRequest">
+
+      <wsdl:part element="impl:adminNewGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewPlaylistNameRequest">
+
+      <wsdl:part element="impl:adminNewPlaylistName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUdateStbResponse">
+
+      <wsdl:part element="impl:adminUdateStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelLayoutNameRequest">
+
+      <wsdl:part element="impl:adminDelLayoutName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelLayoutNameResponse">
+
+      <wsdl:part element="impl:adminDelLayoutNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertLayoutResponse">
+
+      <wsdl:part element="impl:adminInsertLayoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchduledailyTimeRequest">
+
+      <wsdl:part element="impl:adminDelSchduledailyTime" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminAddStbIntoGroupRequest">
+
+      <wsdl:part element="impl:adminAddStbIntoGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdatePlayListNameResponse">
+
+      <wsdl:part element="impl:adminUpdatePlayListNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelItemPlaylistRequest">
+
+      <wsdl:part element="impl:adminDelItemPlaylist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportDailyRequest">
+
+      <wsdl:part element="impl:adminReportDaily" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetConfigRequest">
+
+      <wsdl:part element="impl:admingetConfig" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchedulePeriRequest">
+
+      <wsdl:part element="impl:adminDelSchedulePeri" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListStbAllsResponse">
+
+      <wsdl:part element="impl:admingetListStbAllsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentTextRequest">
+
+      <wsdl:part element="impl:adminNewContentText" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUdateStbRequest">
+
+      <wsdl:part element="impl:adminUdateStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminMoveGroupResponse">
+
+      <wsdl:part element="impl:adminMoveGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetConfigResponse">
+
+      <wsdl:part element="impl:admingetConfigResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetTypeLayoutRequest">
+
+      <wsdl:part element="impl:admingetTypeLayout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelPlaylistRequest">
+
+      <wsdl:part element="impl:adminDelPlaylist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeContentStbEachRequest">
+
+      <wsdl:part element="impl:removeContentStbEach" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetSchedulePeriGroupRequest">
+
+      <wsdl:part element="impl:admingetSchedulePeriGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewLayoutContentRequest">
+
+      <wsdl:part element="impl:adminNewLayoutContent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetScheduleDailyGroupResponse">
+
+      <wsdl:part element="impl:admingetScheduleDailyGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertLayoutNameRequest">
+
+      <wsdl:part element="impl:adminInsertLayoutName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewLayoutContentResponse">
+
+      <wsdl:part element="impl:adminNewLayoutContentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelLayOutItemRequest">
+
+      <wsdl:part element="impl:adminDelLayOutItem" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetScheduleDailyGroupRequest">
+
+      <wsdl:part element="impl:admingetScheduleDailyGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentWithDurationResponse">
+
+      <wsdl:part element="impl:adminNewContentWithDurationResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportSchedulePeriodResponse">
+
+      <wsdl:part element="impl:adminReportSchedulePeriodResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetContentNoGroupRequest">
+
+      <wsdl:part element="impl:admingetContentNoGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportPlaylistRequest">
+
+      <wsdl:part element="impl:adminReportPlaylist" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertLayoutRequest">
+
+      <wsdl:part element="impl:adminInsertLayout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminCheckStbRequest">
+
+      <wsdl:part element="impl:adminCheckStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchedulePeriItemResponse">
+
+      <wsdl:part element="impl:adminDelSchedulePeriItemResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getStbGroupRequest">
+
+      <wsdl:part element="impl:getStbGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pushContentIntoStbRequest">
+
+      <wsdl:part element="impl:pushContentIntoStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getSessionidResponse">
+
+      <wsdl:part element="impl:getSessionidResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateConfigRequest">
+
+      <wsdl:part element="impl:adminUpdateConfig" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewGroupResponse">
+
+      <wsdl:part element="impl:adminNewGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateDirecGroupResponse">
+
+      <wsdl:part element="impl:adminUpdateDirecGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewSchedulePeriNameRequest">
+
+      <wsdl:part element="impl:adminNewSchedulePeriName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelPlaylistResponse">
+
+      <wsdl:part element="impl:adminDelPlaylistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentLogicResponse">
+
+      <wsdl:part element="impl:adminNewContentLogicResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateSchedulePeriResponse">
+
+      <wsdl:part element="impl:adminUpdateSchedulePeriResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListLayoutRequest">
+
+      <wsdl:part element="impl:admingetPlayListLayout" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminRemoveStbGroupRequest">
+
+      <wsdl:part element="impl:adminRemoveStbGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeContentStbResponse">
+
+      <wsdl:part element="impl:removeContentStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentRequest">
+
+      <wsdl:part element="impl:adminNewContent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelStbRequest">
+
+      <wsdl:part element="impl:adminDelStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateScheduleDailyTimeRequest">
+
+      <wsdl:part element="impl:adminUpdateScheduleDailyTime" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportSchedulePeriodRequest">
+
+      <wsdl:part element="impl:adminReportSchedulePeriod" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchedulePeriItemRequest">
+
+      <wsdl:part element="impl:adminDelSchedulePeriItem" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateScheduleDailyTimeResponse">
+
+      <wsdl:part element="impl:adminUpdateScheduleDailyTimeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewSchedulePeriNameResponse">
+
+      <wsdl:part element="impl:adminNewSchedulePeriNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewSchedulePeriResponse">
+
+      <wsdl:part element="impl:adminNewSchedulePeriResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminCheckStbResponse">
+
+      <wsdl:part element="impl:adminCheckStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListGroupResponse">
+
+      <wsdl:part element="impl:admingetListGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getContentGroupRequest">
+
+      <wsdl:part element="impl:getContentGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListStbAllResponse">
+
+      <wsdl:part element="impl:admingetListStbAllResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlaylistItemResponse">
+
+      <wsdl:part element="impl:admingetPlaylistItemResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateContentTextResponse">
+
+      <wsdl:part element="impl:adminUpdateContentTextResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetTypeLayoutResponse">
+
+      <wsdl:part element="impl:admingetTypeLayoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateLayoutCoorRequest">
+
+      <wsdl:part element="impl:adminUpdateLayoutCoor" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportContentAllRequest">
+
+      <wsdl:part element="impl:adminReportContentAll" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminInsertPlaylistCoreResponse">
+
+      <wsdl:part element="impl:adminInsertPlaylistCoreResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutNameRequest">
+
+      <wsdl:part element="impl:admingetLayoutName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentTextResponse">
+
+      <wsdl:part element="impl:adminNewContentTextResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetContentStbRequest">
+
+      <wsdl:part element="impl:admingetContentStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelLayOutItemResponse">
+
+      <wsdl:part element="impl:adminDelLayOutItemResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDeleteContentIntoGroupResponse">
+
+      <wsdl:part element="impl:adminDeleteContentIntoGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListGroupsRequest">
+
+      <wsdl:part element="impl:admingetListGroups" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetItemScheduleDailyForPerioRequest">
+
+      <wsdl:part element="impl:admingetItemScheduleDailyForPerio" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getContentGroupResponse">
+
+      <wsdl:part element="impl:getContentGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportStbRequest">
+
+      <wsdl:part element="impl:adminReportStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetContentNoGroupResponse">
+
+      <wsdl:part element="impl:admingetContentNoGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelScheduleDailyNameRequest">
+
+      <wsdl:part element="impl:adminDelScheduleDailyName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getStbGroupResponse">
+
+      <wsdl:part element="impl:getStbGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewScheduleDailyNameResponse">
+
+      <wsdl:part element="impl:adminNewScheduleDailyNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelStbResponse">
+
+      <wsdl:part element="impl:adminDelStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeContentStbRequest">
+
+      <wsdl:part element="impl:removeContentStb" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentLogicRequest">
+
+      <wsdl:part element="impl:adminNewContentLogic" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminMoveGroupRequest">
+
+      <wsdl:part element="impl:adminMoveGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportPlaylistResponse">
+
+      <wsdl:part element="impl:adminReportPlaylistResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateSchedulePeriRequest">
+
+      <wsdl:part element="impl:adminUpdateSchedulePeri" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewScheduleDailyRequest">
+
+      <wsdl:part element="impl:adminNewScheduleDaily" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateLayoutCoorResponse">
+
+      <wsdl:part element="impl:adminUpdateLayoutCoorResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewScheduleDailyNameRequest">
+
+      <wsdl:part element="impl:adminNewScheduleDailyName" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListGroupResponse">
+
+      <wsdl:part element="impl:admingetPlayListGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchedulePeriResponse">
+
+      <wsdl:part element="impl:adminDelSchedulePeriResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlaylistItemRequest">
+
+      <wsdl:part element="impl:admingetPlaylistItem" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetListStbAllsRequest">
+
+      <wsdl:part element="impl:admingetListStbAlls" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelSchduledailyTimeResponse">
+
+      <wsdl:part element="impl:adminDelSchduledailyTimeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminReportDailyResponse">
+
+      <wsdl:part element="impl:adminReportDailyResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetItemScheduleDailyForPerioResponse">
+
+      <wsdl:part element="impl:admingetItemScheduleDailyForPerioResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetLayoutNameResponse">
+
+      <wsdl:part element="impl:admingetLayoutNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateGroupRequest">
+
+      <wsdl:part element="impl:adminUpdateGroup" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateGroupResponse">
+
+      <wsdl:part element="impl:adminUpdateGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdatePlaylistTimeResponse">
+
+      <wsdl:part element="impl:adminUpdatePlaylistTimeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetScheduleDailyNamGroupResponse">
+
+      <wsdl:part element="impl:admingetScheduleDailyNamGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pushContentIntoStbResponse">
+
+      <wsdl:part element="impl:pushContentIntoStbResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetPlayListLayoutResponse">
+
+      <wsdl:part element="impl:admingetPlayListLayoutResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewSchedulePeriRequest">
+
+      <wsdl:part element="impl:adminNewSchedulePeri" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="admingetSchedulePeriGroupResponse">
+
+      <wsdl:part element="impl:admingetSchedulePeriGroupResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminDelScheduleDailyNameResponse">
+
+      <wsdl:part element="impl:adminDelScheduleDailyNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeContentStbEachResponse">
+
+      <wsdl:part element="impl:removeContentStbEachResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminNewContentResponse">
+
+      <wsdl:part element="impl:adminNewContentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="adminUpdateLayoutNameResponse">
+
+      <wsdl:part element="impl:adminUpdateLayoutNameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="AdcenterAdminService">
+
+      <wsdl:operation name="getContentGroup">
+
+         <wsdl:input message="impl:getContentGroupRequest" name="getContentGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getContentGroupResponse" name="getContentGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateDirecGroup">
+
+         <wsdl:input message="impl:adminUpdateDirecGroupRequest" name="adminUpdateDirecGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateDirecGroupResponse" name="adminUpdateDirecGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminCheckStb">
+
+         <wsdl:input message="impl:adminCheckStbRequest" name="adminCheckStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminCheckStbResponse" name="adminCheckStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelStb">
+
+         <wsdl:input message="impl:adminDelStbRequest" name="adminDelStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelStbResponse" name="adminDelStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetContentNoGroup">
+
+         <wsdl:input message="impl:admingetContentNoGroupRequest" name="admingetContentNoGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetContentNoGroupResponse" name="admingetContentNoGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutGroup">
+
+         <wsdl:input message="impl:admingetLayoutGroupRequest" name="admingetLayoutGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetLayoutGroupResponse" name="admingetLayoutGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateLayoutCoor">
+
+         <wsdl:input message="impl:adminUpdateLayoutCoorRequest" name="adminUpdateLayoutCoorRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateLayoutCoorResponse" name="adminUpdateLayoutCoorResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdatePlayListName">
+
+         <wsdl:input message="impl:adminUpdatePlayListNameRequest" name="adminUpdatePlayListNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdatePlayListNameResponse" name="adminUpdatePlayListNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdatePlaylistTime">
+
+         <wsdl:input message="impl:adminUpdatePlaylistTimeRequest" name="adminUpdatePlaylistTimeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdatePlaylistTimeResponse" name="adminUpdatePlaylistTimeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelItemPlaylist">
+
+         <wsdl:input message="impl:adminDelItemPlaylistRequest" name="adminDelItemPlaylistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelItemPlaylistResponse" name="adminDelItemPlaylistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListGroup">
+
+         <wsdl:input message="impl:admingetListGroupRequest" name="admingetListGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetListGroupResponse" name="admingetListGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListGroups">
+
+         <wsdl:input message="impl:admingetListGroupsRequest" name="admingetListGroupsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetListGroupsResponse" name="admingetListGroupsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewGroup">
+
+         <wsdl:input message="impl:adminNewGroupRequest" name="adminNewGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewGroupResponse" name="adminNewGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelGroup">
+
+         <wsdl:input message="impl:adminDelGroupRequest" name="adminDelGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelGroupResponse" name="adminDelGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminMoveGroup">
+
+         <wsdl:input message="impl:adminMoveGroupRequest" name="adminMoveGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminMoveGroupResponse" name="adminMoveGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateGroup">
+
+         <wsdl:input message="impl:adminUpdateGroupRequest" name="adminUpdateGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateGroupResponse" name="adminUpdateGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getStbGroup">
+
+         <wsdl:input message="impl:getStbGroupRequest" name="getStbGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getStbGroupResponse" name="getStbGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListStbAll">
+
+         <wsdl:input message="impl:admingetListStbAllRequest" name="admingetListStbAllRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetListStbAllResponse" name="admingetListStbAllResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListStbAlls">
+
+         <wsdl:input message="impl:admingetListStbAllsRequest" name="admingetListStbAllsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetListStbAllsResponse" name="admingetListStbAllsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUdateStb">
+
+         <wsdl:input message="impl:adminUdateStbRequest" name="adminUdateStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUdateStbResponse" name="adminUdateStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminStbPush">
+
+         <wsdl:input message="impl:adminStbPushRequest" name="adminStbPushRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminStbPushResponse" name="adminStbPushResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminAddStbIntoGroup">
+
+         <wsdl:input message="impl:adminAddStbIntoGroupRequest" name="adminAddStbIntoGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminAddStbIntoGroupResponse" name="adminAddStbIntoGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlaylistItem">
+
+         <wsdl:input message="impl:admingetPlaylistItemRequest" name="admingetPlaylistItemRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetPlaylistItemResponse" name="admingetPlaylistItemResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayListLayout">
+
+         <wsdl:input message="impl:admingetPlayListLayoutRequest" name="admingetPlayListLayoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetPlayListLayoutResponse" name="admingetPlayListLayoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminRemoveStbGroup">
+
+         <wsdl:input message="impl:adminRemoveStbGroupRequest" name="adminRemoveStbGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminRemoveStbGroupResponse" name="adminRemoveStbGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayListGroup">
+
+         <wsdl:input message="impl:admingetPlayListGroupRequest" name="admingetPlayListGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetPlayListGroupResponse" name="admingetPlayListGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayList">
+
+         <wsdl:input message="impl:admingetPlayListRequest" name="admingetPlayListRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetPlayListResponse" name="admingetPlayListResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertLayout">
+
+         <wsdl:input message="impl:adminInsertLayoutRequest" name="adminInsertLayoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminInsertLayoutResponse" name="adminInsertLayoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertLayoutName">
+
+         <wsdl:input message="impl:adminInsertLayoutNameRequest" name="adminInsertLayoutNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminInsertLayoutNameResponse" name="adminInsertLayoutNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutContainContent">
+
+         <wsdl:input message="impl:admingetLayoutContainContentRequest" name="admingetLayoutContainContentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetLayoutContainContentResponse" name="admingetLayoutContainContentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSessionid">
+
+         <wsdl:input message="impl:getSessionidRequest" name="getSessionidRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getSessionidResponse" name="getSessionidResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertPlaylistCore">
+
+         <wsdl:input message="impl:adminInsertPlaylistCoreRequest" name="adminInsertPlaylistCoreRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminInsertPlaylistCoreResponse" name="adminInsertPlaylistCoreResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelPlaylist">
+
+         <wsdl:input message="impl:adminDelPlaylistRequest" name="adminDelPlaylistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelPlaylistResponse" name="adminDelPlaylistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewPlaylistName">
+
+         <wsdl:input message="impl:adminNewPlaylistNameRequest" name="adminNewPlaylistNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewPlaylistNameResponse" name="adminNewPlaylistNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutName">
+
+         <wsdl:input message="impl:admingetLayoutNameRequest" name="admingetLayoutNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetLayoutNameResponse" name="admingetLayoutNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateLayoutName">
+
+         <wsdl:input message="impl:adminUpdateLayoutNameRequest" name="adminUpdateLayoutNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateLayoutNameResponse" name="adminUpdateLayoutNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewLayoutContent">
+
+         <wsdl:input message="impl:adminNewLayoutContentRequest" name="adminNewLayoutContentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewLayoutContentResponse" name="adminNewLayoutContentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelLayOutItem">
+
+         <wsdl:input message="impl:adminDelLayOutItemRequest" name="adminDelLayOutItemRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelLayOutItemResponse" name="adminDelLayOutItemResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelLayoutName">
+
+         <wsdl:input message="impl:adminDelLayoutNameRequest" name="adminDelLayoutNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelLayoutNameResponse" name="adminDelLayoutNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetTypeLayout">
+
+         <wsdl:input message="impl:admingetTypeLayoutRequest" name="admingetTypeLayoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetTypeLayoutResponse" name="admingetTypeLayoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pushContentIntoStb">
+
+         <wsdl:input message="impl:pushContentIntoStbRequest" name="pushContentIntoStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:pushContentIntoStbResponse" name="pushContentIntoStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeContentStb">
+
+         <wsdl:input message="impl:removeContentStbRequest" name="removeContentStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeContentStbResponse" name="removeContentStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeContentStbEach">
+
+         <wsdl:input message="impl:removeContentStbEachRequest" name="removeContentStbEachRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeContentStbEachResponse" name="removeContentStbEachResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetContentStb">
+
+         <wsdl:input message="impl:admingetContentStbRequest" name="admingetContentStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetContentStbResponse" name="admingetContentStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInserContentIntoGroup">
+
+         <wsdl:input message="impl:adminInserContentIntoGroupRequest" name="adminInserContentIntoGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminInserContentIntoGroupResponse" name="adminInserContentIntoGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDeleteContentIntoGroup">
+
+         <wsdl:input message="impl:adminDeleteContentIntoGroupRequest" name="adminDeleteContentIntoGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDeleteContentIntoGroupResponse" name="adminDeleteContentIntoGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetScheduleDailyGroup">
+
+         <wsdl:input message="impl:admingetScheduleDailyGroupRequest" name="admingetScheduleDailyGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetScheduleDailyGroupResponse" name="admingetScheduleDailyGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateScheduleDailyTime">
+
+         <wsdl:input message="impl:adminUpdateScheduleDailyTimeRequest" name="adminUpdateScheduleDailyTimeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateScheduleDailyTimeResponse" name="adminUpdateScheduleDailyTimeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchduledailyTime">
+
+         <wsdl:input message="impl:adminDelSchduledailyTimeRequest" name="adminDelSchduledailyTimeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelSchduledailyTimeResponse" name="adminDelSchduledailyTimeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetSchedulePeriGroup">
+
+         <wsdl:input message="impl:admingetSchedulePeriGroupRequest" name="admingetSchedulePeriGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetSchedulePeriGroupResponse" name="admingetSchedulePeriGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetItemScheduleDailyForPerio">
+
+         <wsdl:input message="impl:admingetItemScheduleDailyForPerioRequest" name="admingetItemScheduleDailyForPerioRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetItemScheduleDailyForPerioResponse" name="admingetItemScheduleDailyForPerioResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewScheduleDaily">
+
+         <wsdl:input message="impl:adminNewScheduleDailyRequest" name="adminNewScheduleDailyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewScheduleDailyResponse" name="adminNewScheduleDailyResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewSchedulePeri">
+
+         <wsdl:input message="impl:adminNewSchedulePeriRequest" name="adminNewSchedulePeriRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewSchedulePeriResponse" name="adminNewSchedulePeriResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewSchedulePeriName">
+
+         <wsdl:input message="impl:adminNewSchedulePeriNameRequest" name="adminNewSchedulePeriNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewSchedulePeriNameResponse" name="adminNewSchedulePeriNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchedulePeri">
+
+         <wsdl:input message="impl:adminDelSchedulePeriRequest" name="adminDelSchedulePeriRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelSchedulePeriResponse" name="adminDelSchedulePeriResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchedulePeriItem">
+
+         <wsdl:input message="impl:adminDelSchedulePeriItemRequest" name="adminDelSchedulePeriItemRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelSchedulePeriItemResponse" name="adminDelSchedulePeriItemResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateSchedulePeri">
+
+         <wsdl:input message="impl:adminUpdateSchedulePeriRequest" name="adminUpdateSchedulePeriRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateSchedulePeriResponse" name="adminUpdateSchedulePeriResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetScheduleDailyNamGroup">
+
+         <wsdl:input message="impl:admingetScheduleDailyNamGroupRequest" name="admingetScheduleDailyNamGroupRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetScheduleDailyNamGroupResponse" name="admingetScheduleDailyNamGroupResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetConfig">
+
+         <wsdl:input message="impl:admingetConfigRequest" name="admingetConfigRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:admingetConfigResponse" name="admingetConfigResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContent">
+
+         <wsdl:input message="impl:adminNewContentRequest" name="adminNewContentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewContentResponse" name="adminNewContentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewScheduleDailyName">
+
+         <wsdl:input message="impl:adminNewScheduleDailyNameRequest" name="adminNewScheduleDailyNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewScheduleDailyNameResponse" name="adminNewScheduleDailyNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelScheduleDailyName">
+
+         <wsdl:input message="impl:adminDelScheduleDailyNameRequest" name="adminDelScheduleDailyNameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelScheduleDailyNameResponse" name="adminDelScheduleDailyNameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentLogic">
+
+         <wsdl:input message="impl:adminNewContentLogicRequest" name="adminNewContentLogicRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewContentLogicResponse" name="adminNewContentLogicResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentText">
+
+         <wsdl:input message="impl:adminNewContentTextRequest" name="adminNewContentTextRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewContentTextResponse" name="adminNewContentTextResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateConfig">
+
+         <wsdl:input message="impl:adminUpdateConfigRequest" name="adminUpdateConfigRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateConfigResponse" name="adminUpdateConfigResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelContentText">
+
+         <wsdl:input message="impl:adminDelContentTextRequest" name="adminDelContentTextRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminDelContentTextResponse" name="adminDelContentTextResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateContentText">
+
+         <wsdl:input message="impl:adminUpdateContentTextRequest" name="adminUpdateContentTextRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateContentTextResponse" name="adminUpdateContentTextResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportLayout">
+
+         <wsdl:input message="impl:adminReportLayoutRequest" name="adminReportLayoutRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportLayoutResponse" name="adminReportLayoutResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportContentAll">
+
+         <wsdl:input message="impl:adminReportContentAllRequest" name="adminReportContentAllRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportContentAllResponse" name="adminReportContentAllResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportPlaylist">
+
+         <wsdl:input message="impl:adminReportPlaylistRequest" name="adminReportPlaylistRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportPlaylistResponse" name="adminReportPlaylistResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportDaily">
+
+         <wsdl:input message="impl:adminReportDailyRequest" name="adminReportDailyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportDailyResponse" name="adminReportDailyResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportSchedulePeriod">
+
+         <wsdl:input message="impl:adminReportSchedulePeriodRequest" name="adminReportSchedulePeriodRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportSchedulePeriodResponse" name="adminReportSchedulePeriodResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportStb">
+
+         <wsdl:input message="impl:adminReportStbRequest" name="adminReportStbRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminReportStbResponse" name="adminReportStbResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateStbDefaultHome">
+
+         <wsdl:input message="impl:adminUpdateStbDefaultHomeRequest" name="adminUpdateStbDefaultHomeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminUpdateStbDefaultHomeResponse" name="adminUpdateStbDefaultHomeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentWithDuration">
+
+         <wsdl:input message="impl:adminNewContentWithDurationRequest" name="adminNewContentWithDurationRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:adminNewContentWithDurationResponse" name="adminNewContentWithDurationResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="AdcenterAdminServiceSoapBinding" type="impl:AdcenterAdminService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getContentGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getContentGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getContentGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateDirecGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateDirecGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateDirecGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminCheckStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminCheckStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminCheckStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetContentNoGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetContentNoGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetContentNoGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetLayoutGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetLayoutGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateLayoutCoor">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateLayoutCoorRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateLayoutCoorResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdatePlayListName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdatePlayListNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdatePlayListNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdatePlaylistTime">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdatePlaylistTimeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdatePlaylistTimeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelItemPlaylist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelItemPlaylistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelItemPlaylistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetListGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetListGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListGroups">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetListGroupsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetListGroupsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminMoveGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminMoveGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminMoveGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getStbGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getStbGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getStbGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListStbAll">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetListStbAllRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetListStbAllResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetListStbAlls">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetListStbAllsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetListStbAllsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUdateStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUdateStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUdateStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminStbPush">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminStbPushRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminStbPushResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminAddStbIntoGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminAddStbIntoGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminAddStbIntoGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlaylistItem">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetPlaylistItemRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetPlaylistItemResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayListLayout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetPlayListLayoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetPlayListLayoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminRemoveStbGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminRemoveStbGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminRemoveStbGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayListGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetPlayListGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetPlayListGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetPlayList">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetPlayListRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetPlayListResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertLayout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminInsertLayoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminInsertLayoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertLayoutName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminInsertLayoutNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminInsertLayoutNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutContainContent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetLayoutContainContentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetLayoutContainContentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getSessionid">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getSessionidRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getSessionidResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInsertPlaylistCore">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminInsertPlaylistCoreRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminInsertPlaylistCoreResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelPlaylist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelPlaylistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelPlaylistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewPlaylistName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewPlaylistNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewPlaylistNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetLayoutName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetLayoutNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetLayoutNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateLayoutName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateLayoutNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateLayoutNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewLayoutContent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewLayoutContentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewLayoutContentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelLayOutItem">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelLayOutItemRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelLayOutItemResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelLayoutName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelLayoutNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelLayoutNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetTypeLayout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetTypeLayoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetTypeLayoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pushContentIntoStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="pushContentIntoStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="pushContentIntoStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeContentStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeContentStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeContentStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeContentStbEach">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeContentStbEachRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeContentStbEachResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetContentStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetContentStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetContentStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminInserContentIntoGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminInserContentIntoGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminInserContentIntoGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDeleteContentIntoGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDeleteContentIntoGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDeleteContentIntoGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetScheduleDailyGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetScheduleDailyGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetScheduleDailyGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateScheduleDailyTime">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateScheduleDailyTimeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateScheduleDailyTimeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchduledailyTime">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelSchduledailyTimeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelSchduledailyTimeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetSchedulePeriGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetSchedulePeriGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetSchedulePeriGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetItemScheduleDailyForPerio">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetItemScheduleDailyForPerioRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetItemScheduleDailyForPerioResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewScheduleDaily">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewScheduleDailyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewScheduleDailyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewSchedulePeri">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewSchedulePeriRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewSchedulePeriResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewSchedulePeriName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewSchedulePeriNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewSchedulePeriNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchedulePeri">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelSchedulePeriRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelSchedulePeriResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelSchedulePeriItem">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelSchedulePeriItemRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelSchedulePeriItemResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateSchedulePeri">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateSchedulePeriRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateSchedulePeriResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetScheduleDailyNamGroup">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetScheduleDailyNamGroupRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetScheduleDailyNamGroupResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="admingetConfig">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="admingetConfigRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="admingetConfigResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewContentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewContentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewScheduleDailyName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewScheduleDailyNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewScheduleDailyNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelScheduleDailyName">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelScheduleDailyNameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelScheduleDailyNameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentLogic">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewContentLogicRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewContentLogicResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentText">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewContentTextRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewContentTextResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateConfig">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateConfigRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateConfigResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminDelContentText">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminDelContentTextRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminDelContentTextResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateContentText">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateContentTextRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateContentTextResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportLayout">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportLayoutRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportLayoutResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportContentAll">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportContentAllRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportContentAllResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportPlaylist">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportPlaylistRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportPlaylistResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportDaily">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportDailyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportDailyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportSchedulePeriod">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportSchedulePeriodRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportSchedulePeriodResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminReportStb">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminReportStbRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminReportStbResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminUpdateStbDefaultHome">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminUpdateStbDefaultHomeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminUpdateStbDefaultHomeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="adminNewContentWithDuration">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="adminNewContentWithDurationRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="adminNewContentWithDurationResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="AdcenterAdminServiceService">
+
+      <wsdl:port binding="impl:AdcenterAdminServiceSoapBinding" name="AdcenterAdminService">
+
+         <wsdlsoap:address location="http://localhost:8080/VmsaBopRvcAdv/services/AdcenterAdminService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-39">
+        <def>&lt;p&gt;Do not admit unknown persons in your room without properly identifying them.&lt;br /&gt;Any concerns regarding a persons identify should be conveyed to our Security Team.&lt;/p&gt;</def>
+        <name>Admittance</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/mainternance1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-41">
+        <def>&lt;p&gt;- For additional security while in your guest room please utilize the dead bolt as well as all door locking features.&lt;br /&gt;- This will prevent the door from being opened from the outside.&lt;br /&gt;A Do Not Disturb hanger is also available for your added privacy.&lt;/p&gt;</def>
+        <name>Room Locks</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/mainternance3.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+    <item id="-42">
+        <def>For your convenience, a complimentary safe is located in every guest room.</def>
+        <name>In-Room Safe</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</urlIcon>
+    </item>
+    <item id="-43">
+        <def>Additional safe deposit boxes are available by the Front Desk at no additional cost.</def>
+        <name>Safe Deposit Boxes</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/griddle2.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/griddle_2.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/griddle2.png</urlIcon>
+    </item>
+    <item id="-44">
+        <def>Promptly report any suspicious or indecent telephone calls to our Security Team.</def>
+        <name>Telephone Calls</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/griddle3.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/griddle_3.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/griddle3.png</urlIcon>
+    </item>
+    <item id="-45">
+        <def>&lt;p&gt;- In the event of a &quot;Life Threatening Emergency&quot; please call 113 from any phone inside the hotel.&lt;br /&gt;- Immediately after calling 113 please report the emergency to the Security Team by calling Ext. 55.&lt;br /&gt;- A security officer will respond immediately to assist you.&lt;/p&gt;</def>
+        <name>Emergency Assistance</name>
+        <url>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Dining/griddle_1.png</urlIcon>
+    </item>
+    <item id="-46">
+        <def>&lt;p&gt;- For non-emergency assistance from the Security Department (to report minor injuries, losses, noise complaints and other disturbances) please call Ext. 55.&lt;br /&gt;- Please give your full name and room number when calling.&lt;br /&gt;A security officer will respond to assist you as soon as possible.&lt;/p&gt;</def>
+        <name>Non-Emergency Assistence</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/AUD.png</urlIcon>
+    </item>
+    <item id="-47">
+        <def>&lt;p&gt;- When there is a file alarm, the strobe lights in your guest room will flash and a public announcement regarding the alarm investigation will be made.&lt;br /&gt;- Please listen carefully to all public announcements for further instruction.&lt;/p&gt;</def>
+        <name>Fire Alarm</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/CAD.png</urlIcon>
+    </item>
+    <item id="-48">
+        <def>&lt;p&gt;- Do not use elevators.&lt;br /&gt;- There are guest stairwells for the guest floors.&lt;br /&gt;- When an evacuation is necessary and evacuation announcement will sound over the PA system.&lt;br /&gt;- Go to the nearest stairwell and walk calmly down the stairs, exit the building and stand by to receive further instructions.&lt;br /&gt;- Please also refer to the evacuation map placed on the back of each guest room entry door.&lt;/p&gt;</def>
+        <name>Fire Evacuation</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/EUR.png</urlIcon>
+    </item>
+    <item id="-49">
+        <def>In the event of severe weather emergency, an annoucement will be made over th PA system.</def>
+        <name>Severe Weather Emergency</name>
+        <url>/ePMS2.0/elcom/resources/image/Exchange/GBP.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Exchange/GBP_.png</urlIcon>
+    </item>
+</ehotel>

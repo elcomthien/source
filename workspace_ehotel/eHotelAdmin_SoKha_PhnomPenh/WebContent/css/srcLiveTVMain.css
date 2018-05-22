@@ -153,3 +153,47 @@ thead.fixedHeader tr {
 	text-indent: 10px;
 	height: 35px;
 }
+.ul_ftp_file {
+	color: #878888;
+	float: left;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding-left: 0px;
+}
+
+.ul_ftp_file li {
+	float: left;
+	width: auto;
+	height: 25px;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.ul_ftp_file li a {
+	text-decoration: none;
+	min-width: 700;
+	height: 25px;
+}
+
+.itemfolder {
+	width: 700;
+	height: 100%;
+	float: left;
+	color: #878888;
+	text-align: left;
+	text-indent: 20px;
+	background: transparent url("../icon/filder_close.png") no-repeat left
+		center;
+}
+
+.itemfile {
+	width: 700;
+	height: 100%;
+	float: left;
+	color: #878888;
+	text-align: left;
+	text-indent: 20px;
+	background: transparent url("../icon/blank_document.png") no-repeat left
+		center;
+}

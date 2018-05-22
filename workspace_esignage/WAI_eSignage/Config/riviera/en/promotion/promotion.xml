@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="388">
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[RIVIERA BEACH RESORT & SPA]]></name>
+        <name_vn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[RIVIERA BEACH RESORT & SPA]]></name_vn>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p><span>Cam Ranh Riviera Beach Resort &amp; Spa is the ultimate beach holiday resort for travelers searching for that classic beach vacation...!</u></p>]]></def>
+        <url>/ePMS2.0/elcom/resources/image/Promotion/1421729977964.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Promotion/1403593497050.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Promotion/1403593497050.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,7 @@
+SCMBranch=eHotel_2.0_ELC
+SCMRepository=eHotel_2.0_ELC/App/DBIGateway/src/ehotel/connect
+DBIManager.java;4110665174;2;1319082362;
+ConfigReader.java;2794743182;2;1319791356;
+PmsConnection.java;2633042850;1;1320123010;
+PathDef.java;576729038;3;1320734884;
+DBIConnection.java;2753691697;1;1325932070;

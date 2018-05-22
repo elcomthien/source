@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Properties;
 
 import javax.servlet.ServletException;
@@ -24,6 +25,7 @@ import com.elcom.eodapp.media.record.RecordContent;
 import com.elcom.eodapp.media.util.DAOFactory;
 import com.elcom.eodapp.media.util.DateHelper;
 import com.elcom.eodapp.media.vod.VodContentDAO2;
+import com.google.gson.Gson;
 
 public class CoreMedia extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -59,7 +61,7 @@ public class CoreMedia extends HttpServlet {
 	@SuppressWarnings("unused")
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// FileLog log;
-		String keystb, subid, current, langid, room, ip, channelid,typetvbox;
+		String keystb, subid, current, langid, room, ip, channelid, typetvbox;
 		String ipClient = request.getRemoteAddr();
 		HttpSession session = request.getSession(true);
 		session.setMaxInactiveInterval(5);
@@ -76,10 +78,12 @@ public class CoreMedia extends HttpServlet {
 		channelid = request.getParameter(Param.channelid);
 		typetvbox = request.getParameter(Param.typetvbox);
 
-		// logger.write("Ip: " + ip + " - keystb: " + keystb + " - curent time stb: ");
+		// logger.write("Ip: " + ip + " - keystb: " + keystb +
+		// " - curent time stb: ");
 		System.out.println("Ip: " + ip + " - keystb: " + keystb + " - lenh : " + lenh);
 		// log = new FileLog(ip + ".log");
-		// log.write("=> Yeu cau lenh: " + DateHelper.convertLenh(lenh) + " - " + lenh);
+		// log.write("=> Yeu cau lenh: " + DateHelper.convertLenh(lenh) + " - "
+		// + lenh);
 		// log.flush();
 		// Cac chuc nang danh cho Record
 		if (lenh == Command.com_getListRecordStb) {
@@ -192,7 +196,7 @@ public class CoreMedia extends HttpServlet {
 			return;
 		} else if (lenh == Command.com_getLangs) {
 			System.out.println("Ip: " + ip + " - SN: " + keystb);
-			String json = casdao.getLangs(keystb,ip);
+			String json = casdao.getLangs(keystb, ip);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -261,10 +265,11 @@ public class CoreMedia extends HttpServlet {
 		} else
 		// lay danh sach chu de phim theo tung stb
 		if (lenh == Command.com_getlistsubjectvod) {
-			// int folderid = new Integer(request.getParameter(Param.folderid)).intValue();
+			// int folderid = new
+			// Integer(request.getParameter(Param.folderid)).intValue();
 			System.out.println("Ip: " + ip + " - In getAllNorSubjects(" + keystb + ")");
 			String type = request.getParameter(Param.type);
-			String json = voddao.getAllNorSubjects(keystb,type);
+			String json = voddao.getAllNorSubjects(keystb, type);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -274,8 +279,8 @@ public class CoreMedia extends HttpServlet {
 			short subjectid = new Short(request.getParameter(Param.subjectid)).shortValue();
 			int fromRow = new Integer(request.getParameter(Param.fromRow)).intValue();
 			int noRows = new Integer(request.getParameter(Param.noRows)).intValue();
-			System.out.println("Ip: " + ip + " - In getMODCtnIDsOfSubjectNew(" + keystb + "," + subjectid + "," + fromRow + ","
-					+ noRows + ")");
+			System.out.println("Ip: " + ip + " - In getMODCtnIDsOfSubjectNew(" + keystb + "," + subjectid + "," + fromRow + "," + noRows
+					+ ")");
 			String json = voddao.getMODCtnIDsOfSubjectNew(keystb, subjectid, fromRow, noRows);
 			System.out.println(json);
 			out.println(json);
@@ -287,12 +292,12 @@ public class CoreMedia extends HttpServlet {
 			int count = voddao.countFilm(vodsubjectid);
 			out.println(count);
 			return;
-		} else
-		if (lenh == Command.com_getdetailfilm) {  /**  **/
+		} else if (lenh == Command.com_getdetailfilm) {
+			/**  **/
 			int contentid = new Integer(request.getParameter(Param.contentid)).intValue();
-			String xml ="";
+			String xml = "";
 			try {
-				xml = voddao.getByPrimaryKey(keystb,contentid);
+				xml = voddao.getByPrimaryKey(keystb, contentid);
 			} catch (ModCtnNotFoundAppException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -300,7 +305,7 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else	
+		} else
 		// Lay danh sach link url ngon ngu
 		if (lenh == Command.com_getlisturlsub) {
 			System.out.println("Ip: " + ip + " - In getUrlSub(" + request.getParameter(Param.contentid) + ")");
@@ -323,8 +328,8 @@ public class CoreMedia extends HttpServlet {
 			short subjectid = new Short(request.getParameter(Param.subjectid)).shortValue();
 			int fromRow = new Integer(request.getParameter(Param.fromRow)).intValue();
 			int noRows = new Integer(request.getParameter(Param.noRows)).intValue();
-			System.out.println("Ip: " + ip + " - In getModListSongSubject(" + keystb + "," + subjectid + "," + fromRow + "," + noRows
-					+ ")");
+			System.out
+					.println("Ip: " + ip + " - In getModListSongSubject(" + keystb + "," + subjectid + "," + fromRow + "," + noRows + ")");
 			String xml = moddao.getModListSongSubject(keystb, subjectid, fromRow, noRows);
 			System.out.println(xml);
 			out.println(xml);
@@ -379,14 +384,12 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else
-		if (lenh == Command.com_getMessage) {
+		} else if (lenh == Command.com_getMessage) {
 			String xml = pmsdao.getFolioMessages(keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else
-		if (lenh == Command.com_getPromotions) {
+		} else if (lenh == Command.com_getPromotions) {
 			String xml = pmsdao.getPromotions(keystb);
 			System.out.println(xml);
 			out.println(xml);
@@ -400,7 +403,7 @@ public class CoreMedia extends HttpServlet {
 			return;
 		} else if (lenh == Command.com_getWelcomeMessage) {
 			System.out.println("lenh getWelcomeMessage: " + lenh + " - keystb: " + keystb);
-			String json = pmsdao.getWelcomeMessage(keystb,typetvbox);
+			String json = pmsdao.getWelcomeMessage(keystb, typetvbox);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -417,9 +420,9 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getExchangeRate) {
+		} else if (lenh == Command.com_getExchangeRate) {
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
-			String xml = pmsdao.getExchangeRates(-1,-1);
+			String xml = pmsdao.getExchangeRates(-1, -1);
 			System.out.println(xml);
 			out.println(xml);
 			return;
@@ -452,60 +455,106 @@ public class CoreMedia extends HttpServlet {
 			String ffrom = request.getParameter(Param.fromRow);
 			String tto = request.getParameter(Param.noRows);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + subMenuId);
-			
+
 			String json = pmsdao.getItemOfService(subMenuId, keystb, ffrom, tto);
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getBills) {
-			System.out.println("lenh: " + lenh + " - keystb: " + keystb );
-			
+		} else if (lenh == Command.com_getBills) {
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+
 			String json = pmsdao.getBills(keystb);
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getItemOfAttractions) {
+		} else if (lenh == Command.com_getItemOfAttractions) {
 			String mainMenuId = request.getParameter(Param.mainnenuid);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + mainMenuId);
-			
-			String xml = pmsdao.getItemOfAttractions(mainMenuId,keystb);
+
+			String xml = pmsdao.getItemOfAttractions(mainMenuId, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
 		} else if (lenh == Command.com_getItemOfScheduleActivity) {
 			String mainMenuId = request.getParameter(Param.mainnenuid);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + mainMenuId);
-			
-			String xml = pmsdao.getItemOfActivities(mainMenuId,keystb);
+
+			String xml = pmsdao.getItemOfActivities(mainMenuId, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getCountries) {
+		} else if (lenh == Command.com_getCountries) {
 			String level = "2";
 			System.out.println("pmsdao.getCountries");
 			String xml = pmsdao.getCountries(level);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getWeatherToday) {
+		} else if (lenh == Command.com_getWeatherToday) {
 			String day = request.getParameter(Param.day);
 			String xml = pmsdao.getWeatherToday(day);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getWeatherInWeek) {
+		} else if (lenh == Command.com_getWeatherInWeek) {
 			String coutrid = request.getParameter(Param.coutrid);
-			String xml = pmsdao.getWeatherInWeek(coutrid,keystb);
+			String xml = pmsdao.getWeatherInWeek(coutrid, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_postedItemToBill) {
-			String items = request.getParameter(Param.items); 
+		} else if (lenh == Command.com_postedItemToBill) {
+			String items = request.getParameter(Param.items);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
-			
-			String xml = pmsdao.postedItemToBill(items,keystb);
+
+			String xml = pmsdao.postedItemToBill(items, keystb);
 			System.out.println(xml);
 			out.println(xml);
+			return;
+		} else if (lenh == Command.com_getListAirport) {
+			response.setContentType("application/json");
+			response.setCharacterEncoding("UTF-8");
+			keystb = request.getParameter(Param.keystb);
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+
+			HashMap<String, Object> map = new HashMap<String, Object>();
+			map.put("airport", pmsdao.getListAirport(keystb));
+			map.put("airline", pmsdao.getAirline());
+			map.put("station", pmsdao.getStation());
+			response.getWriter().write(new Gson().toJson(map));
+			return;
+		} else if (lenh == Command.com_getFlightSchedule) {
+			String location = request.getParameter(Param.location);
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+			response.getWriter().write(new Gson().toJson(pmsdao.getFlightSchedule(location)));
+			return;
+		} else if (lenh == Command.com_getClock) {
+			System.out.println("lenh: " + lenh);
+			response.getWriter().write(new Gson().toJson(pmsdao.getClock()));
+			return;
+		} else if (lenh == Command.com_getFilterFlight) {
+			String location = request.getParameter(Param.location);
+			String station = request.getParameter(Param.station);
+			String date = request.getParameter(Param.date);
+			String route = request.getParameter(Param.route);
+			String airline = request.getParameter(Param.airline);
+			String flighttype = request.getParameter(Param.flighttype);
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+			response.getWriter().write(new Gson().toJson(pmsdao.filterFlight(location, station, date, route, airline, flighttype)));
+			return;
+		} else if (lenh == Command.com_updatestatusbox) {
+			String status = request.getParameter(Param.status);
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " status: " + status);
+
+			String xml = casdao.updatestatusbox(keystb, status);
+			System.out.println(xml);
+			out.println(xml);
+			return;
+		} else if (lenh == Command.com_getSystemDate) {
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+			HashMap<String, String> map = new HashMap<String, String>();
+			map = casdao.getSystemDate();
+			System.out.println(map);
+			response.getWriter().write(new Gson().toJson(map));
 			return;
 		}
 

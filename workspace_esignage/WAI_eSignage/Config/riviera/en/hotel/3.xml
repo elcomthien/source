@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="16">
+        <def>&lt;p&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;&lt;b&gt;Daewoo Hotel&lt;/b&gt; offers a variety of services and amenities including: &lt;br /&gt;- Babysitting&lt;br /&gt;- Barber/beauty shop&lt;br /&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;- Buffer breakfast&lt;br /&gt;- Car Rental&lt;br /&gt;- Coffee/tea in-room&lt;br /&gt;- Game room&lt;br /&gt;- Gift/newsstand&lt;br /&gt;- Newspaper delivered to room, on request&lt;br /&gt;- Newspaper in lobby&lt;br /&gt;- Room service&lt;br /&gt;- Safe deposit box&lt;br /&gt;- Front desk&lt;br /&gt;- Shoeshine&lt;br /&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;- Valet dry-cleaning&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Overview</name>
+        <url>/ePMS2.0/elcom/resources/image/Hotel/1305521380626.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/null</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/null</urlIcon>
+    </item>
+</ehotel>

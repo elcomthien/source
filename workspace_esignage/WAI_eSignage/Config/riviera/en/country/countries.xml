@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="1">
+        <def>VN</def>
+        <name>Nha Trang</name>
+        <url>/ePMS2.0/elcom/resources/image/Weather/nhatrang.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Weather/nhatrang.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Weather/nhatrang.png</urlICon>
+    </item>
+    <item id="2">
+        <def>VN</def>
+        <name>Ho Chi Minh</name>
+        <url>/ePMS2.0/elcom/resources/image/Weather/tphcm.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Weather/tphcm.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Weather/tphcm.png</urlICon>
+    </item>
+    <item id="3">
+        <def>VN</def>
+        <name>Ha Noi</name>
+        <url>/ePMS2.0/elcom/resources/image/Weather/hanoi.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Weather/hanoi.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Weather/hanoi.png</urlICon>
+    </item>
+    <item id="4">
+        <def>VN</def>
+        <name>Da Nang</name>
+        <url>/ePMS2.0/elcom/resources/image/Weather/danang.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Weather/danang.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Weather/danang.png</urlICon>
+    </item>
+    <item id="5">
+        <def>VN</def>
+        <name>Da Lat</name>
+        <url>/ePMS2.0/elcom/resources/image/Weather/lam_dong.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Weather/lam_dong.png</urlBg>
+        <urlICon>/ePMS2.0/elcom/resources/image/Weather/lam_dong.png</urlICon>
+    </item>
+</ehotel>

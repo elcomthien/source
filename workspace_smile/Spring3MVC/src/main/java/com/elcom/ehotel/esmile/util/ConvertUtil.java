@@ -41,11 +41,41 @@ public class ConvertUtil {
 		return String.valueOf(number);
 	}
 
+	public static String getListHour(String str) {
+		String rs = "";
+		String[] arr = str.split("-");
+		int from = convertToInteger(arr[0].substring(0, 2));
+		int to = convertToInteger(arr[1].substring(0, 2));
+		if (to > from) {
+			for (int i = from; i < to; i++)
+				rs += i + ",";
+		} else {
+			for (int i = from; i < 24; i++)
+				rs += i + ",";
+			for (int i = 0; i < to; i++)
+				rs += i + ",";
+		}
+		// rs = rs.substring(0, rs.length() - 1);
+		return rs;
+	}
+
+	public static String convertArrayTime(String[] arr) {
+		String rs = "";
+		for (int i = 0; i < arr.length; i++)
+			rs += getListHour(arr[i]);
+		if (!rs.equals(""))
+			rs = rs.substring(0, rs.length() - 1);
+		return rs;
+	}
+
 	public static void main(String[] args) {
-		String rs = "1,2,3,4,5,";
-		rs = rs.substring(0, rs.length() - 1);
-		System.out.println(rs);
-		
-		System.out.println(getDurationString(5));
+		// String rs = "1,2,3,4,5,";
+		// rs = rs.substring(0, rs.length() - 1);
+		// System.out.println(rs);
+		//
+		// System.out.println(getDurationString(5));
+		String[] arr = { "21:00-03:00", "15:00-19:00", "19:00-20:00" };
+		// System.out.println(getListHour("21:00-03:00"));
+		System.out.println(convertArrayTime(arr));
 	}
 }

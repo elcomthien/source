@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item id="21">
+        <name>Daily Activities</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/bg/1421741426072.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/1421741432073.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/bg/1421741432073.png</urlIcon>
+    </item>
+    <item id="245">
+        <name>Daily Recreation</name>
+        <url>/ePMS2.0/elcom/resources/image/Activities/bg/1421639772054.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Activities/bg/1421639783061.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Activities/bg/1421639783061.png</urlIcon>
+    </item>
+</ehotel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel version="1.0" code="A0002" cache="1">
+    <name>ELCOM-HCM</name>
+    <item id="-34">
+        <def>&lt;p&gt;&lt;b&gt;Small plates&lt;/b&gt;&lt;span&gt;&amp;lt;br/&amp;gt;- Peekytoe crab fritter, red and golden beets, creole remoulade, vanilla oil $14&amp;lt;br/&amp;gt;- Spicy shrimp bruschetta $10&lt;span&gt;&amp;lt;br/&amp;gt;- Crispy calamari, grilled lemon tzatziki sauce $9&lt;span&gt;&amp;lt;br/&amp;gt;- Trio of spreads, hummus, artichoke, eggplant $6&lt;span&gt;&amp;lt;br/&amp;gt;- Grilled asparagus, walnut crama, parmesan, rugula $9&lt;span&gt;&amp;lt;br/&amp;gt;- Soups and Salads&lt;span&gt;&amp;lt;br/&amp;gt;- Soup du jour $7&lt;span&gt;&amp;lt;br/&amp;gt;- Chicken tortilla soup $7&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/u&gt;&lt;/p&gt;</def>
+        <name>Dinner</name>
+        <url>/ePMS2.0/elcom/resources/image/Housekeeping/1375180881441.png</url>
+        <urlBg>/ePMS2.0/elcom/resources/image/Housekeeping/Laundry.png</urlBg>
+        <urlIcon>/ePMS2.0/elcom/resources/image/Housekeeping/Laundry.png</urlIcon>
+    </item>
+</ehotel>

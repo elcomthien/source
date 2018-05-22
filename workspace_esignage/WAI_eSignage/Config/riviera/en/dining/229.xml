@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ehotel cache="1" code="A0002" version="1.0">
+    <name>ELCOM-HCM</name>
+    <item icode="145" menuid="229">
+        <currency>12</currency>
+        <currency_large>12</currency_large>
+        <currency_small>12</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Green Mango is much love in Cambodia. Crisp with a slightly sour flavour it makes a great palate cleanser. Throw in some lime juice, peanuts, fresh herbs and chili and you have a combination of flavour and textures to mouth-watering.</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Green Mango with Prawn Salad]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imageicon>
+        <printname>Green Mango with Prawn Salad</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1375100976498.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imagebg>
+    </item>
+    <item icode="144" menuid="229">
+        <currency>12</currency>
+        <currency_large>12</currency_large>
+        <currency_small>12</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Amok is a coconut curry steamed gently in banana leaves and is considered by many to be the national dish of Cambodia. The curry base of amok is a deeply fragrant paste known as Kroeung, and it comprises a mix of fresh lemongrass, kaffir lime zest and leaves, galangal, turmeric, ginger, garlic, shallots, and dried red chillies pounded or blitzed together.</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Amok Fish]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imageicon>
+        <printname>Amok Fish</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1375100966859.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imagebg>
+    </item>
+    <item icode="146" menuid="229">
+        <currency>12</currency>
+        <currency_large>12</currency_large>
+        <currency_small>12</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<p>Black glutinous rice cooked in sweetened coconut milk. The sweet sticky rice was then cooked in a ramekin and topped with ripe mango.</p>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Glutinous Rice with Mango]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imageicon>
+        <printname>Glutinous Rice with Mango</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1375100983184.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imagebg>
+    </item>
+    <item icode="147" menuid="229">
+        <currency>12</currency>
+        <currency_large>12</currency_large>
+        <currency_small>12</currency_small>
+        <def xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[<div id="_mcePaste" class="mcePaste">Needless to say, Cambodia - as a tropical country - has a wealth of fresh fruits on daily offer. Guests can enjoy many tastes of fresh fruit with sweet and juicy to sour taste.</div><div> </div>]]></def>
+        <iunit>USD</iunit>
+        <name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string"><![CDATA[Fresh fruits]]></name>
+        <imageicon>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imageicon>
+        <printname>Fresh fruits</printname>
+        <image>/ePMS2.0/elcom/resources/image/Dining/1375100998593.png</image>
+        <imagebg>/ePMS2.0/elcom/resources/image/Dining/sanwiches_1.png</imagebg>
+    </item>
+</ehotel>

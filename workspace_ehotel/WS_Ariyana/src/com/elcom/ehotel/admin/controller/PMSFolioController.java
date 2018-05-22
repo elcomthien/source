@@ -194,6 +194,15 @@ public class PMSFolioController extends HttpServlet {
 			int rs = pmsFolioService.deleteSmartcard(serinumber);
 			out.println(rs);
 		}
+		
+		if (action.equals("reboottv")) {
+			String serinumber = request.getParameter("serinumber");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "reboottv", "serinumber,,," + serinumber);
+
+			int rs = pmsFolioService.changeStatusReboot(serinumber);
+			out.println(rs);
+		}
 	}
 
 }

@@ -94,7 +94,21 @@ public class Params {
 	String ischedule = "";
 	String pathsave = "";
 	String schedule_id = "";
-	String[] respondent_id = {};
+	String[] list_id = {};
+	String respondent_id = "";
+	String cpu = "";
+	String ram = "";
+	String hdd = "";
+	String total_cpu = "";
+	String total_ram = "";
+	String total_hdd = "";
+	String pin = "";
+	String negative = "";
+	String neutral = "";
+	String positive = "";
+	String good = "";
+	String issend = "";
+	String email_id = "";
 
 	public String getUser_name() {
 		return user_name;
@@ -808,12 +822,124 @@ public class Params {
 		this.schedule_id = schedule_id;
 	}
 
-	public String[] getRespondent_id() {
+	public String[] getList_id() {
+		return list_id;
+	}
+
+	public void setList_id(String[] list_id) {
+		this.list_id = list_id;
+	}
+
+	public String getRespondent_id() {
 		return respondent_id;
 	}
 
-	public void setRespondent_id(String[] respondent_id) {
+	public void setRespondent_id(String respondent_id) {
 		this.respondent_id = respondent_id;
+	}
+
+	public String getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(String cpu) {
+		this.cpu = cpu;
+	}
+
+	public String getRam() {
+		return ram;
+	}
+
+	public void setRam(String ram) {
+		this.ram = ram;
+	}
+
+	public String getHdd() {
+		return hdd;
+	}
+
+	public void setHdd(String hdd) {
+		this.hdd = hdd;
+	}
+
+	public String getTotal_cpu() {
+		return total_cpu;
+	}
+
+	public void setTotal_cpu(String total_cpu) {
+		this.total_cpu = total_cpu;
+	}
+
+	public String getTotal_ram() {
+		return total_ram;
+	}
+
+	public void setTotal_ram(String total_ram) {
+		this.total_ram = total_ram;
+	}
+
+	public String getTotal_hdd() {
+		return total_hdd;
+	}
+
+	public void setTotal_hdd(String total_hdd) {
+		this.total_hdd = total_hdd;
+	}
+
+	public String getPin() {
+		return pin;
+	}
+
+	public void setPin(String pin) {
+		this.pin = pin;
+	}
+
+	public String getNegative() {
+		return negative;
+	}
+
+	public void setNegative(String negative) {
+		this.negative = negative;
+	}
+
+	public String getNeutral() {
+		return neutral;
+	}
+
+	public void setNeutral(String neutral) {
+		this.neutral = neutral;
+	}
+
+	public String getPositive() {
+		return positive;
+	}
+
+	public void setPositive(String positive) {
+		this.positive = positive;
+	}
+
+	public String getGood() {
+		return good;
+	}
+
+	public void setGood(String good) {
+		this.good = good;
+	}
+
+	public String getIssend() {
+		return issend;
+	}
+
+	public void setIssend(String issend) {
+		this.issend = issend;
+	}
+
+	public String getEmail_id() {
+		return email_id;
+	}
+
+	public void setEmail_id(String email_id) {
+		this.email_id = email_id;
 	}
 
 	@Override
@@ -842,7 +968,10 @@ public class Params {
 				+ Arrays.toString(tags) + ", location=" + Arrays.toString(location) + ", account=" + Arrays.toString(account)
 				+ ", zone_name=" + zone_name + ", zone_image=" + zone_image + ", save_name=" + save_name + ", report_type=" + report_type
 				+ ", repeat=" + repeat + ", isfinish=" + isfinish + ", ischedule=" + ischedule + ", pathsave=" + pathsave
-				+ ", schedule_id=" + schedule_id + ", respondent_id=" + Arrays.toString(respondent_id) + "]";
+				+ ", schedule_id=" + schedule_id + ", list_id=" + Arrays.toString(list_id) + ", respondent_id=" + respondent_id + ", cpu="
+				+ cpu + ", ram=" + ram + ", hdd=" + hdd + ", total_cpu=" + total_cpu + ", total_ram=" + total_ram + ", total_hdd="
+				+ total_hdd + ", pin=" + pin + ", negative=" + negative + ", neutral=" + neutral + ", positive=" + positive + ", good="
+				+ good + ", issend=" + issend + ", email_id=" + email_id + "]";
 	}
 
 	public static void main(String[] args) {
