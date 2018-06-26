@@ -3,6 +3,7 @@ package com.elcom.eodapp.media.pms;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.Vector;
 
 import org.apache.log4j.LogManager;
@@ -56,15 +57,13 @@ public class PmsContent {
 		Vector<eMessage> eMessages = new Vector<eMessage>();
 		Vector<SubProParam> params = new Vector<SubProParam>();
 		Vector<String> outParam = new Vector<String>();
-		SubProParam subIn = new SubProParam(new java.math.BigDecimal(messId),
-				SubProParam.IN);
+		SubProParam subIn = new SubProParam(new java.math.BigDecimal(messId), SubProParam.IN);
 		params.add(subIn);
 
 		subIn = new SubProParam(smartcard, SubProParam.IN);
 		params.add(subIn);
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		String outScreen = ("getMessageInfo with messId=" + messId + "] ");
@@ -85,22 +84,13 @@ public class PmsContent {
 
 		xml = xml + "<item id='" + aMessage.getId() + "'>\r\n";
 		xml = xml + "<numNo>" + aMessage.getCheckNo() + "</numNo>\r\n";
-		xml = xml + "<content><![CDATA["
-				+ UnicodeConverter.encodeUnicode(aMessage.getContent())
-				+ "]]></content>\r\n";
-		xml = xml + "<content_bottom><![CDATA["
-				+ UnicodeConverter.encodeUnicode(aMessage.getContent_bottom())
-				+ "]]></content_bottom>\r\n";
-		xml = xml + "<content_top><![CDATA["
-				+ UnicodeConverter.encodeUnicode(aMessage.getContent_top())
-				+ "]]></content_top>\r\n";
-		xml = xml + "<enterDate>" + aMessage.getEnterDate()
-				+ "</enterDate>\r\n";
-		xml = xml + "<enterTime>" + aMessage.getEnterTime()
-				+ "</enterTime>\r\n";
+		xml = xml + "<content><![CDATA[" + UnicodeConverter.encodeUnicode(aMessage.getContent()) + "]]></content>\r\n";
+		xml = xml + "<content_bottom><![CDATA[" + UnicodeConverter.encodeUnicode(aMessage.getContent_bottom()) + "]]></content_bottom>\r\n";
+		xml = xml + "<content_top><![CDATA[" + UnicodeConverter.encodeUnicode(aMessage.getContent_top()) + "]]></content_top>\r\n";
+		xml = xml + "<enterDate>" + aMessage.getEnterDate() + "</enterDate>\r\n";
+		xml = xml + "<enterTime>" + aMessage.getEnterTime() + "</enterTime>\r\n";
 		xml = xml + "<room>" + aMessage.getFolioNum() + "</room>\r\n";
-		xml = xml + "<isConfirm>" + aMessage.getIsConfirm()
-				+ "</isConfirm>\r\n";
+		xml = xml + "<isConfirm>" + aMessage.getIsConfirm() + "</isConfirm>\r\n";
 		xml = xml + "<isRead>" + aMessage.getIsRead() + "</isRead>\r\n";
 		xml = xml + "<sender>" + aMessage.getSender() + "</sender>\r\n";
 		xml = xml + "<subject>" + aMessage.getSubject() + "</subject>\r\n";
@@ -120,8 +110,7 @@ public class PmsContent {
 		SubProParam subIn = new SubProParam(smartcard, SubProParam.IN);
 		params.add(subIn);
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -143,22 +132,13 @@ public class PmsContent {
 			eMessage item = eMessages.get(i);
 			xml = xml + "<item id='" + item.getId() + "'>\r\n";
 			xml = xml + "<numNo>" + item.getCheckNo() + "</numNo>\r\n";
-			xml = xml + "<content><![CDATA["
-					+ UnicodeConverter.encodeUnicode(item.getContent())
-					+ "]]></content>\r\n";
-			xml = xml + "<content_bottom><![CDATA["
-					+ UnicodeConverter.encodeUnicode(item.getContent_bottom())
-					+ "]]></content_bottom>\r\n";
-			xml = xml + "<content_top><![CDATA["
-					+ UnicodeConverter.encodeUnicode(item.getContent_top())
-					+ "]]></content_top>\r\n";
-			xml = xml + "<enterDate>" + item.getEnterDate()
-					+ "</enterDate>\r\n";
-			xml = xml + "<enterTime>" + item.getEnterTime()
-					+ "</enterTime>\r\n";
+			xml = xml + "<content><![CDATA[" + UnicodeConverter.encodeUnicode(item.getContent()) + "]]></content>\r\n";
+			xml = xml + "<content_bottom><![CDATA[" + UnicodeConverter.encodeUnicode(item.getContent_bottom()) + "]]></content_bottom>\r\n";
+			xml = xml + "<content_top><![CDATA[" + UnicodeConverter.encodeUnicode(item.getContent_top()) + "]]></content_top>\r\n";
+			xml = xml + "<enterDate>" + item.getEnterDate() + "</enterDate>\r\n";
+			xml = xml + "<enterTime>" + item.getEnterTime() + "</enterTime>\r\n";
 			xml = xml + "<room>" + item.getFolioNum() + "</room>\r\n";
-			xml = xml + "<isConfirm>" + item.getIsConfirm()
-					+ "</isConfirm>\r\n";
+			xml = xml + "<isConfirm>" + item.getIsConfirm() + "</isConfirm>\r\n";
 			xml = xml + "<isRead>" + item.getIsRead() + "</isRead>\r\n";
 			xml = xml + "<sender>" + item.getSender() + "</sender>\r\n";
 			xml = xml + "<subject>" + item.getSubject() + "</subject>\r\n";
@@ -214,8 +194,7 @@ public class PmsContent {
 
 	// -----------------get welcome guest----------------------
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getWelcomeMessage(String stbkey, String typetvbox)
-			throws IOException {
+	public String getWelcomeMessage(String stbkey, String typetvbox) throws IOException {
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		Vector params = new Vector(2);
@@ -224,8 +203,7 @@ public class PmsContent {
 
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 0 IN
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -250,8 +228,7 @@ public class PmsContent {
 			obj = new JSONObject();
 			obj.put("room_code", "ROOM" + guest.getRoom_code());
 			obj.put("name", UnicodeConverter.encodeUnicode(guest.getName()));
-			obj.put("welcome",
-					UnicodeConverter.encodeUnicode(guest.getWelcome()));
+			obj.put("welcome", UnicodeConverter.encodeUnicode(guest.getWelcome()));
 			obj.put("arrival", guest.getArrival());
 			obj.put("depature", guest.getDepature());
 			obj.put("langCode", guest.getLangCode());
@@ -264,8 +241,7 @@ public class PmsContent {
 
 	// -----------------get Image ADV ----------------------
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getAdverImages(String stbkey, String types)
-			throws IOException {
+	public String getAdverImages(String stbkey, String types) throws IOException {
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
@@ -277,8 +253,7 @@ public class PmsContent {
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -297,8 +272,7 @@ public class PmsContent {
 			eImage image = new eImage();
 			image = images.get(i);
 			obj.put("id", image.getImageId());
-			obj.put("name",
-					UnicodeConverter.encodeUnicode(image.getImageName()));
+			obj.put("name", UnicodeConverter.encodeUnicode(image.getImageName()));
 			obj.put("url", UnicodeConverter.encodeUnicode(image.getImageUrl()));
 
 			ja.add(obj);
@@ -319,8 +293,7 @@ public class PmsContent {
 
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 0 IN
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -342,15 +315,9 @@ public class PmsContent {
 			ePromotion promo = new ePromotion();
 			promo = promotion.get(i);
 			xml = xml + "<item id='" + promo.getPromotionId() + "'>\r\n";
-			xml = xml + "<proName><![CDATA["
-					+ UnicodeConverter.encodeUnicode(promo.getProName())
-					+ "]]></proName>\r\n";
-			xml = xml + "<name><![CDATA["
-					+ UnicodeConverter.encodeUnicode(promo.getName())
-					+ "]]></name>\r\n";
-			xml = xml + "<proDef><![CDATA["
-					+ UnicodeConverter.encodeUnicode(promo.getProDef())
-					+ "]]></proDef>\r\n";
+			xml = xml + "<proName><![CDATA[" + UnicodeConverter.encodeUnicode(promo.getProName()) + "]]></proName>\r\n";
+			xml = xml + "<name><![CDATA[" + UnicodeConverter.encodeUnicode(promo.getName()) + "]]></name>\r\n";
+			xml = xml + "<proDef><![CDATA[" + UnicodeConverter.encodeUnicode(promo.getProDef()) + "]]></proDef>\r\n";
 			xml = xml + "<url>" + promo.getUrl() + "</url>\r\n";
 			xml = xml + "<urlBg>" + promo.getUrlBg() + "</urlBg>\r\n";
 			xml = xml + "<urlIcon>" + promo.getUrlIcon() + "</urlIcon>\r\n";
@@ -374,8 +341,7 @@ public class PmsContent {
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 0 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -393,8 +359,7 @@ public class PmsContent {
 			eService service = new eService();
 			service = services.get(i);
 			obj.put("id", service.getService_id());
-			obj.put("name",
-					UnicodeConverter.encodeUnicode(service.getService_name()));
+			obj.put("name", UnicodeConverter.encodeUnicode(service.getService_name()));
 			obj.put("service_code", service.getService_code());
 			obj.put("apk_code", service.getApk_code());
 			obj.put("apk_ver", service.getVerapk());
@@ -414,8 +379,7 @@ public class PmsContent {
 
 	// ---------------------Get chu de thuoc info
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public String getMainMenu(String serviceid, String stbkey)
-			throws IOException {
+	public String getMainMenu(String serviceid, String stbkey) throws IOException {
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
@@ -423,14 +387,12 @@ public class PmsContent {
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
 
-		param = new SubProParam(new java.math.BigDecimal(serviceid),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(serviceid), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 		// System.out.println(params.get(0).toString());
 		try {
@@ -465,26 +427,22 @@ public class PmsContent {
 
 	// ------------get image def getOultetImage
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getOultetImage(String outletid, String outletType,
-			String stbkey) throws IOException {
-		System.out.println("id: " + outletid + " - type: " + outletType
-				+ " - key: " + stbkey);
+	public String getOultetImage(String outletid, String outletType, String stbkey) throws IOException {
+		System.out.println("id: " + outletid + " - type: " + outletType + " - key: " + stbkey);
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector(4);
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
-		param = new SubProParam(new java.math.BigDecimal(outletid),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(outletid), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
 		param = new SubProParam(outletType, SubProParam.IN);
 		params.add(param); // 2 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -518,22 +476,19 @@ public class PmsContent {
 
 	// -------------------lay danh sach chu de con cua chu de dining
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getSubMenu(String mainMenuId, String stbkey)
-			throws IOException {
+	public String getSubMenu(String mainMenuId, String stbkey) throws IOException {
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector(3);
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
-		param = new SubProParam(new java.math.BigDecimal(mainMenuId),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(mainMenuId), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -570,8 +525,7 @@ public class PmsContent {
 
 	// ---------------------Lay danh sach cac mon an thuoc dining
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getItemOfService(String subMenuId, String stbkey,
-			String ffrom, String tto) throws IOException {
+	public String getItemOfService(String subMenuId, String stbkey, String ffrom, String tto) throws IOException {
 		String jsonText = "";
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
@@ -579,8 +533,7 @@ public class PmsContent {
 		Vector params = new Vector(5);
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
-		param = new SubProParam(new java.math.BigDecimal(subMenuId),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(subMenuId), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
@@ -589,8 +542,7 @@ public class PmsContent {
 		param = new SubProParam(new java.math.BigDecimal(tto), SubProParam.IN);
 		params.add(param); // 3 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -611,8 +563,7 @@ public class PmsContent {
 
 			obj.put("id", icon.getItemCode());
 			obj.put("name", UnicodeConverter.encodeUnicode(icon.getItemNname()));
-			obj.put("printname",
-					UnicodeConverter.encodeUnicode(icon.getPrintName()));
+			obj.put("printname", UnicodeConverter.encodeUnicode(icon.getPrintName()));
 			obj.put("def", UnicodeConverter.encodeUnicode(icon.getPrintName()));
 			obj.put("menuno", icon.getPrintName());
 			obj.put("itemunit", icon.getItemUnit());
@@ -638,14 +589,12 @@ public class PmsContent {
 		Vector params = new Vector(3);
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
-		param = new SubProParam(new java.math.BigDecimal(subMenuId),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(subMenuId), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -667,15 +616,9 @@ public class PmsContent {
 			icon = bill.get(i);
 			xml = xml + "<item id='" + icon.getIcode() + "'>\r\n";
 			xml = xml + "<menuid>" + icon.getMenuId() + "</menuid>\r\n";
-			xml = xml + "<name>"
-					+ UnicodeConverter.encodeUnicode(icon.getName())
-					+ "</name>\r\n";
-			xml = xml + "<address>"
-					+ UnicodeConverter.encodeUnicode(icon.getAddress())
-					+ "</address>\r\n";
-			xml = xml + "<description>"
-					+ UnicodeConverter.encodeUnicode(icon.getDescription())
-					+ "</description>\r\n";
+			xml = xml + "<name>" + UnicodeConverter.encodeUnicode(icon.getName()) + "</name>\r\n";
+			xml = xml + "<address>" + UnicodeConverter.encodeUnicode(icon.getAddress()) + "</address>\r\n";
+			xml = xml + "<description>" + UnicodeConverter.encodeUnicode(icon.getDescription()) + "</description>\r\n";
 			xml = xml + "<urlImage>" + icon.getUrlImage() + "</urlImage>\r\n";
 			xml = xml + "<urlBg>" + icon.getUrlBg() + "</urlBg>\r\n";
 			xml = xml + "<urlIcon>" + icon.getUrlIcon() + "</urlIcon>\r\n";
@@ -694,18 +637,15 @@ public class PmsContent {
 		Vector params = new Vector(3);
 		SubProParam param = null;
 		Vector<String> outParam = new Vector<String>();
-		param = new SubProParam(new java.math.BigDecimal(subMenuId),
-				SubProParam.IN);
+		param = new SubProParam(new java.math.BigDecimal(subMenuId), SubProParam.IN);
 		params.add(param); // 0 IN
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 1 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 		try {
-			params = broker.executeSubPro(SQL.sqlgetItemOfScheduleActivity,
-					params);
+			params = broker.executeSubPro(SQL.sqlgetItemOfScheduleActivity, params);
 			if (params != null & params.size() > 0) {
 				out_data = (SubProParam) params.get(2);
 				outParam = out_data.getVector();
@@ -722,11 +662,8 @@ public class PmsContent {
 			eActivities icon = new eActivities();
 			icon = activitis.get(i);
 			xml = xml + "<item id='" + icon.getId() + "'>\r\n";
-			xml = xml + "<name>"
-					+ UnicodeConverter.encodeUnicode(icon.getName())
-					+ "</name>\r\n";
-			xml = xml + "<description>" + icon.getDescription()
-					+ "</description>\r\n";
+			xml = xml + "<name>" + UnicodeConverter.encodeUnicode(icon.getName()) + "</name>\r\n";
+			xml = xml + "<description>" + icon.getDescription() + "</description>\r\n";
 
 			xml = xml + "</item>\r\n";
 		}
@@ -746,8 +683,7 @@ public class PmsContent {
 		param = new SubProParam(stbkey, SubProParam.IN);
 		params.add(param); // 0 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -800,8 +736,7 @@ public class PmsContent {
 	// --------------------------------------------------------------------------------
 	@SuppressWarnings({ "unused", "unchecked", "rawtypes" })
 	public String orderRoomService(eItemOrder item, String smartcard) {
-		System.out.println("--------Processing orderRoomService[smartcard="
-				+ smartcard + "]");
+		System.out.println("--------Processing orderRoomService[smartcard=" + smartcard + "]");
 		String Rs = "0";
 		Vector params = new Vector(5);
 		SubProParam param = null;
@@ -848,20 +783,16 @@ public class PmsContent {
 		Vector<eCurrency> veCurrency = new Vector<eCurrency>();
 		Vector<SubProParam> params = new Vector<SubProParam>();
 
-		SubProParam subIFrom = new SubProParam(
-				new java.math.BigDecimal(fromRow), SubProParam.IN);
+		SubProParam subIFrom = new SubProParam(new java.math.BigDecimal(fromRow), SubProParam.IN);
 		params.add(subIFrom);
 
-		SubProParam subITo = new SubProParam(new java.math.BigDecimal(noRows),
-				SubProParam.IN);
+		SubProParam subITo = new SubProParam(new java.math.BigDecimal(noRows), SubProParam.IN);
 		params.add(subITo);
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
-		String outScreen = "getExchangeRates with params:[fromRow=" + fromRow
-				+ "noRows=" + noRows + "] ";
+		String outScreen = "getExchangeRates with params:[fromRow=" + fromRow + "noRows=" + noRows + "] ";
 		try {
 			params = broker.executeSubPro(SQL.sqlGetExchangeRates, params);
 
@@ -886,8 +817,7 @@ public class PmsContent {
 			xml = xml + "<name>" + icon.getName() + "</name>\r\n";
 			xml = xml + "<sellRate>" + icon.getSellRate() + "</sellRate>\r\n";
 			xml = xml + "<symbol>" + icon.getSymbol() + "</symbol>\r\n";
-			xml = xml + "<transferRate>" + icon.getTransferRate()
-					+ "</transferRate>\r\n";
+			xml = xml + "<transferRate>" + icon.getTransferRate() + "</transferRate>\r\n";
 			xml = xml + "<url>" + icon.getUrl() + "</url>\r\n";
 			xml = xml + "<urlBg>" + icon.getUrlBg() + "</urlBg>\r\n";
 			xml = xml + "<urlICon>" + icon.getUrlICon() + "</urlICon>\r\n";
@@ -909,8 +839,7 @@ public class PmsContent {
 		param = new SubProParam(level, SubProParam.IN);
 		params.add(param); // 0 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -931,9 +860,7 @@ public class PmsContent {
 			eCountries service = new eCountries();
 			service = services.get(i);
 			xml = xml + "<item id='" + service.getId() + "'>\r\n";
-			xml = xml + "<name><![CDATA["
-					+ UnicodeConverter.encodeUnicode(service.getName())
-					+ "]]></name>\r\n";
+			xml = xml + "<name><![CDATA[" + UnicodeConverter.encodeUnicode(service.getName()) + "]]></name>\r\n";
 			xml = xml + "<code>" + service.getCode() + "</code>\r\n";
 			xml = xml + "<urlIcon>" + service.getIcon() + "</urlIcon>\r\n";
 			xml = xml + "<urlImage>" + service.getImage() + "</urlImage>\r\n";
@@ -955,8 +882,7 @@ public class PmsContent {
 		param = new SubProParam(day, SubProParam.IN);
 		params.add(param); // 0 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -977,15 +903,13 @@ public class PmsContent {
 			eWether service = new eWether();
 			service = services.get(i);
 			xml = xml + "<item id='" + service.getId() + "'>\r\n";
-			xml = xml + "<datetime>" + service.getDatetime()
-					+ "</datetime>\r\n";
+			xml = xml + "<datetime>" + service.getDatetime() + "</datetime>\r\n";
 			xml = xml + "<temp>" + service.getTemp() + "</temp>\r\n";
 			xml = xml + "<tempmin>" + service.getTempmin() + "</tempmin>\r\n";
 			xml = xml + "<tempmax>" + service.getTempmax() + "</tempmax>\r\n";
 			xml = xml + "<day>" + service.getDay() + "</day>\r\n";
 			xml = xml + "<urlImage>" + service.getImage() + "</urlImage>\r\n";
-			xml = xml + "<description>" + service.getDescription()
-					+ "</description>\r\n";
+			xml = xml + "<description>" + service.getDescription() + "</description>\r\n";
 			xml = xml + "</item>\r\n";
 		}
 		xml = xml + "</ehotel>";
@@ -1005,8 +929,7 @@ public class PmsContent {
 		param = new SubProParam(sn, SubProParam.IN);
 		params.add(param); // 1 IN
 
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1027,15 +950,13 @@ public class PmsContent {
 			eWether service = new eWether();
 			service = services.get(i);
 			xml = xml + "<item id='" + service.getId() + "'>\r\n";
-			xml = xml + "<datetime>" + service.getDatetime()
-					+ "</datetime>\r\n";
+			xml = xml + "<datetime>" + service.getDatetime() + "</datetime>\r\n";
 			xml = xml + "<temp>" + service.getTemp() + "</temp>\r\n";
 			xml = xml + "<tempmin>" + service.getTempmin() + "</tempmin>\r\n";
 			xml = xml + "<tempmax>" + service.getTempmax() + "</tempmax>\r\n";
 			xml = xml + "<day>" + service.getDay() + "</day>\r\n";
 			xml = xml + "<urlImage>" + service.getImage() + "</urlImage>\r\n";
-			xml = xml + "<description>" + service.getDescription()
-					+ "</description>\r\n";
+			xml = xml + "<description>" + service.getDescription() + "</description>\r\n";
 			xml = xml + "</item>\r\n";
 		}
 		xml = xml + "</ehotel>";
@@ -1378,8 +1299,7 @@ public class PmsContent {
 		param = new SubProParam(keystb, SubProParam.IN);
 		params.add(param);
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1411,8 +1331,7 @@ public class PmsContent {
 		param = new SubProParam(location, SubProParam.IN);
 		params.add(param);
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1448,8 +1367,7 @@ public class PmsContent {
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector();
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1479,8 +1397,7 @@ public class PmsContent {
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector();
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1506,8 +1423,7 @@ public class PmsContent {
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector();
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {
@@ -1526,9 +1442,36 @@ public class PmsContent {
 		}
 		return ja;
 	}
-	
+
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public JSONArray filterFlight(String location, String station, String date, String route, String airline, String flighttype) throws IOException {
+	public HashMap<String, String> getNotifyChannel(String key) throws IOException {
+		HashMap<String, String> obj = new HashMap<String, String>();
+		Vector params = new Vector();
+		SubProParam in = new SubProParam(new String(key), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
+		params.add(out_data);
+
+		try {
+			params = broker.executeSubPro(SQL.sqlgetNotifyChannel, params);
+			if ((params != null) & (params.size() > 0)) {
+				out_data = (SubProParam) params.get(1);
+				outParam = out_data.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		obj.put("size", outParam.get(0));
+		obj.put("color", outParam.get(1));
+		obj.put("text", outParam.get(2));
+		return obj;
+	}
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public JSONArray filterFlight(String location, String station, String date, String route, String airline, String flighttype)
+			throws IOException {
 		JSONObject obj = new JSONObject();
 		JSONArray ja = new JSONArray();
 		Vector params = new Vector();
@@ -1545,10 +1488,9 @@ public class PmsContent {
 		params.add(param);
 		param = new SubProParam(flighttype, SubProParam.IN);
 		params.add(param);
-		
+
 		Vector<String> outParam = new Vector<String>();
-		SubProParam out_data = new SubProParam(outParam, "STRING_ARR",
-				SubProParam.OUT);
+		SubProParam out_data = new SubProParam(outParam, "STRING_ARR", SubProParam.OUT);
 		params.add(out_data);
 
 		try {

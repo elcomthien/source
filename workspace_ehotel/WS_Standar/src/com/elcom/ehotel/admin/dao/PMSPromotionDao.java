@@ -92,8 +92,8 @@ public class PMSPromotionDao {
 		params.add(in);
 		in = new SubProParam(new String(pro.getImage()), 0);
 		params.add(in);
-		in = new SubProParam(new String(pro.getInvisible()), 0);
-		params.add(in);
+//		in = new SubProParam(new String(pro.getInvisible()), 0);
+//		params.add(in);
 		in = new SubProParam(new String(pro.getLangid()), 0);
 		params.add(in);
 

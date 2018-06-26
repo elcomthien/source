@@ -1,9 +1,19 @@
 package com.elcom.ehotel.esmile.util;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.TimeZone;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -158,20 +168,20 @@ public class Util {
 			while (keys.hasNext()) {
 				String key = (String) keys.next();
 				String value = "";
-				if ((key.equals("location") || key.equals("times") || key.equals("user_id") || checkKey(key, listname)) && object.indexOf("]", object.indexOf(key)) > 0) {
-//					if () {
-						String temp = "{" + object.substring(object.indexOf(key) - 1, object.indexOf("]", object.indexOf(key) - 1) + 1)
-								+ "}";
-						JSONObject json = new JSONObject(temp);
-						JSONArray location = json.getJSONArray(key);
-						int length = location.length();
-						String vl = "";
-						for (int i = 0; i < length; i++) {
-							vl += location.get(i).toString() + ",";
-						}
-						vl = vl.substring(0, vl.length() - 1);
-						value = vl;
-//					}
+				if ((key.equals("location") || key.equals("times") || key.equals("user_id") || checkKey(key, listname))
+						&& object.indexOf("]", object.indexOf(key)) > 0) {
+					// if () {
+					String temp = "{" + object.substring(object.indexOf(key) - 1, object.indexOf("]", object.indexOf(key) - 1) + 1) + "}";
+					JSONObject json = new JSONObject(temp);
+					JSONArray location = json.getJSONArray(key);
+					int length = location.length();
+					String vl = "";
+					for (int i = 0; i < length; i++) {
+						vl += location.get(i).toString() + ",";
+					}
+					vl = vl.substring(0, vl.length() - 1);
+					value = vl;
+					// }
 				} else
 					value = jObject.getString(key);
 				map.put(key, value);
@@ -213,7 +223,56 @@ public class Util {
 		return "";
 	}
 
-	public static void main(String[] args) throws JSONException {
+	public static String getTypeTime(String from, String to) throws Exception {
+		from = from.substring(0, from.lastIndexOf(" "));
+		to = to.substring(0, to.lastIndexOf(" "));
+		if (from.equals(to))
+			return "hour";
+		Date dfr = new SimpleDateFormat("dd-MM-yyyy").parse(from);
+		Date dt = new SimpleDateFormat("dd-MM-yyyy").parse(to);
+		if (differenceInMonths(dfr, dt) > 3)
+			return "month";
+		return "day";
+	}
+
+	private static int differenceInMonths(Date d1, Date d2) {
+		Calendar c1 = Calendar.getInstance();
+		c1.setTime(d1);
+		Calendar c2 = Calendar.getInstance();
+		c2.setTime(d2);
+		int diff = 0;
+		if (c2.after(c1)) {
+			while (c2.after(c1)) {
+				c1.add(Calendar.MONTH, 1);
+				if (c2.after(c1)) {
+					diff++;
+				}
+			}
+		} else if (c2.before(c1)) {
+			while (c2.before(c1)) {
+				c1.add(Calendar.MONTH, -1);
+				if (c1.before(c2)) {
+					diff--;
+				}
+			}
+		}
+		return diff;
+	}
+
+	public static void main(String[] args) throws JSONException, Exception {
+		SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+		Date d1 = f.parse("2012-01-01");
+		Date d2 = f.parse("2012-02-02");
+		int n = differenceInMonths(d1, d2);
+		System.out.println(n);
+		// String from = "12-12-2018 01:02:00";
+		//
+		// System.out.println(from.substring(0, from.lastIndexOf(" ")));
+
+		// long daysBetween = ChronoUnit.MONTHS.between(
+		// LocalDate.parse("2016-08-31").withDayOfMonth(1),
+		// LocalDate.parse("2016-11-30").withDayOfMonth(1));
+		// System.out.println(daysBetween); //3
 		// String str =
 		// "{"date_from":"04-05-2017","date_to":"04-05-2017","location":"[\"243\", \"242\", \"2\", \"3\", \"1\"]","smile_id":"1","lang_id":"2"}"";
 		// String text = "{\"date_from\":\"04-05-2017\",\"date_to\":\"04-05-2017\",\"location\":\"[243, 242, 2, 3, 1]\"}";
@@ -293,16 +352,18 @@ public class Util {
 		// for (int i = 0; i < length; i++) {
 		// System.out.println(location.get(i).toString());
 		// }
-		String t = "{\"user_id\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"9\"],\"date_from\":\"19-07-2017 06:00\",\"date_to\":\"25-07-2017 12:00\",\"location\":\"389\",\"lang_id\":\"1\"}";
+		// String t =
+		// "{\"user_id\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"9\"],\"date_from\":\"19-07-2017 06:00\",\"date_to\":\"25-07-2017 12:00\",\"location\":\"389\",\"lang_id\":\"1\"}";
 		// String t = "{\"user_id\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\"]}";
-		System.out.println(t);
-		System.out.println(convertObject(t, "user_id,location"));
+		// System.out.println(t);
+		// System.out.println(convertObject(t, "user_id,location"));
 		// System.out.println(t.indexOf("user_id") - 1);
 		// System.out.println(t.indexOf("]") + 1);
 		// System.out.println(t.indexOf("]" + 1, t.indexOf("user_id") - 1));
 
 		// String temp = "{" + t.substring(t.indexOf("user_id") - 1, t.indexOf("]") + 1) + "}";
 		// System.out.println(temp);
+
 	}
 
 }

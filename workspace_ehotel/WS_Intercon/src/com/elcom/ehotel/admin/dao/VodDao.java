@@ -396,7 +396,7 @@ public class VodDao {
 		for (int i = 0; i < outParam.size(); i = i + 3) {
 			HashMap<String, String> hmap = new HashMap<String, String>();
 			hmap.put("langid", outParam.get(i));
-			String url =  outParam.get(i + 1);
+			String url = outParam.get(i + 1);
 			if (url == null)
 				hmap.put("filepath", "");
 			else
@@ -450,6 +450,298 @@ public class VodDao {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(VodDao.class.toString(), SQL.DELETE_SUBTITLE, params, "subId", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<VodSubjectModel> getListSubjectVodGroup(int langId, String type, String idGroup) {
+		List<VodSubjectModel> list = new ArrayList<VodSubjectModel>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(langId), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(idGroup), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_VOD_SUBJECT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(3);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.GET_LIST_VOD_SUBJECT_GROUP, params, "langid,type,idgroup", outParam.size() / 8);
+		for (int i = 0; i < outParam.size(); i = i + 8) {
+			VodSubjectModel vod = new VodSubjectModel();
+			vod.setId(outParam.get(i));
+			vod.setName(outParam.get(i + 1));
+			vod.setCreatedate(outParam.get(i + 2));
+			vod.setImage(outParam.get(i + 3));
+			vod.setImageIC(outParam.get(i + 4));
+			vod.setIndex(outParam.get(i + 5));
+			vod.setParent(outParam.get(i + 6));
+			vod.setInvisible(outParam.get(i + 7));
+			list.add(vod);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int addVodSubjectGroup(VodSubjectModel vod) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(vod.getName()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getImage()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getImageIC()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getInvisible()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getType()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getIdGroup()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), SubProParam.OUT);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.ADD_VOD_SUBJECT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(6);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.ADD_VOD_SUBJECT_GROUP, params, "name,image,imageic,invisible,type,idgroup", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int editVodSubjectGroup(VodSubjectModel vod) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(vod.getId()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getName()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getImage()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getImageIC()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(vod.getLangid()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(vod.getInvisible()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(vod.getIdGroup()), 0);
+		params.add(in);
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.EDIT_VOD_SUBJECT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(7);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.EDIT_VOD_SUBJECT_GROUP, params, "idsubject,name,image,imageic,invisible,type,idgroup",
+				rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int deleteVodSubjectGroup(int idSubject, String idGroup) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(idSubject), 0);
+		params.add(in);
+		in = new SubProParam(new String(idGroup), 0);
+		params.add(in);
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.DELETE_VOD_SUBJECT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.DELETE_VOD_SUBJECT_GROUP, params, "idsubject,idgroup", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<VodContentModel> getListContentGroup(VodContentModel vod) {
+		List<VodContentModel> list = new ArrayList<VodContentModel>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(vod.getIdSubject()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(vod.getLangid()), 0);
+		params.add(in);
+		in = new SubProParam(new String(vod.getIdgroup()), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_VOD_CONTENT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(3);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.GET_LIST_VOD_CONTENT_GROUP, params, "idsubject,langid,idgroup", outParam.size() / 15);
+		for (int i = 0; i < outParam.size(); i = i + 15) {
+			VodContentModel con = new VodContentModel();
+			con.setIdSubject(outParam.get(i));
+			con.setIdContent(outParam.get(i + 1));
+			con.setName(outParam.get(i + 2));
+			con.setProductor(outParam.get(i + 3));
+			con.setDirector(outParam.get(i + 4));
+			con.setActor(outParam.get(i + 5));
+			con.setPoster(outParam.get(i + 6));
+			con.setPlot(outParam.get(i + 7));
+			con.setPrice(outParam.get(i + 8));
+			con.setIunit(outParam.get(i + 9));
+			con.setUrl(outParam.get(i + 10));
+			con.setInvisible(outParam.get(i + 11));
+			con.setIsnew(outParam.get(i + 12));
+			con.setLangid(outParam.get(i + 13));
+			con.setSubtitle(outParam.get(i + 14));
+			list.add(con);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int addNewMovieGroup(VodContentModel con) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(con.getIdSubject()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getName()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getProductor()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getDirector()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getActor()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPoster()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPlot()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPrice()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getIunit()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getUrl()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getInvisible()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getIsnew()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getIdgroup()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.ADD_VOD_CONTENT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(13);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.ADD_VOD_CONTENT_GROUP, params,
+				"idsubject,name,production,director,actor,poster,plot,price,iunit,url,invisible,isnew,idgroup", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int editMovieGroup(VodContentModel con) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(con.getIdSubject()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getIdContent()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getName()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getProductor()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getDirector()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getActor()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPoster()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPlot()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getPrice()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getIunit()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getInvisible()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getIsnew()), 0);
+		params.add(in);
+		in = new SubProParam(new BigDecimal(con.getLangid()), 0);
+		params.add(in);
+		in = new SubProParam(new String(con.getIdgroup()), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.EDIT_VOD_CONTENT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(14);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.EDIT_VOD_CONTENT_GROUP, params,
+				"idsubject,idcontent,name,production,director,actor,poster,plot,price,iunit,invisible,isnew,langid,idgroup", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int deleteMovieGroup(int idContent, String idgroup) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new BigDecimal(idContent), 0);
+		params.add(in);
+		in = new SubProParam(new String(idgroup), 0);
+		params.add(in);
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.DELETE_VOD_CONTENT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(VodDao.class.toString(), SQL.DELETE_VOD_CONTENT_GROUP, params, "idcontent,idgroup", rs);
 		return rs;
 	}
 

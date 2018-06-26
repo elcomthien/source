@@ -1085,7 +1085,7 @@ public class PmsContent {
 			icon.setUrlBg((String) vTmp.get(i + 3));
 			icon.setUrlIcon((String) vTmp.get(i + 4));
 			icon.setIlevel((String) vTmp.get(i + 5));
-			System.out.print((String) vTmp.get(i + 5));
+//			System.out.print((String) vTmp.get(i + 5));
 			ret.add(icon);
 		}
 		return ret;

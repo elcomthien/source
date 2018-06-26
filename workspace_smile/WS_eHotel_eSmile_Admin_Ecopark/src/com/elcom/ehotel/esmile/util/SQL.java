@@ -124,5 +124,7 @@ public class SQL {
 	public static final String CHANGE_PASSWORD = "BEGIN EADMIN.changePassword(?,?,?,?,?,?); END;";
 	
 	public static final String ADD_RATING = "BEGIN EADMIN.addRating(?,?,?,?); END;";
+	
+	
 
 }

@@ -54,6 +54,21 @@ public class PMSInfoController extends HttpServlet {
 
 			response.getWriter().write(new Gson().toJson(list));
 		}
+
+		if (action.equals("getsubjectinfogroup")) {
+			String serviceId = request.getParameter("serviceid");
+			String langId = request.getParameter("langid");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(PMSInfoController.class.toString(), "getsubjectinfogroup", "serviceId,,," + serviceId + ",,,langId,,,"
+					+ langId + ",,,idgroup,,," + idgroup);
+
+			List<PMSInfoSubjectModel> list = new ArrayList<PMSInfoSubjectModel>();
+			list = pmsInfoService.getListSubjectInfoGroup(serviceId, langId, idgroup);
+
+			response.getWriter().write(new Gson().toJson(list));
+
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -171,6 +186,32 @@ public class PMSInfoController extends HttpServlet {
 			LogUtil.logControl(PMSInfoController.class.toString(), "deletecontentinfo", "contentId,,," + contentId);
 
 			int rs = pmsInfoService.deleteContentInfo(contentId);
+			out.print(rs);
+		}
+
+		if (action.equals("addsubjectinfogroup")) {
+			String serviceId = request.getParameter("serviceid");
+			String subjectName = request.getParameter("subjectname");
+			String image = request.getParameter("image");
+			String imageIC = request.getParameter("imageic");
+			String invisible = request.getParameter("invisible");
+			String index = request.getParameter("index");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(PMSInfoController.class.toString(), "addsubjectinfogroup", "serviceId,,," + serviceId + ",,,subjectName,,,"
+					+ subjectName + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,index,,,"
+					+ index + ",,,idgroup,,," + idgroup);
+
+			PMSInfoSubjectModel info = new PMSInfoSubjectModel();
+			info.setServiceId(serviceId);
+			info.setSubjectName(UnicodeConverter.encodeUnicode(subjectName));
+			info.setImage(image);
+			info.setImageIC(imageIC);
+			info.setInvisible(invisible);
+			info.setIndex(index);
+			info.setIdgroup(idgroup);
+
+			int rs = pmsInfoService.addSubjectInfoGroup(info);
 			out.print(rs);
 		}
 

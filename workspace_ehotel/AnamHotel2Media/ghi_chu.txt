@@ -1,0 +1,2 @@
+Module Ehotel2 thuc hien cho du an Phi Lao.
+La module app nhan va xu ly cac ket noi tu stb

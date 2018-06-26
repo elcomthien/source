@@ -17,6 +17,7 @@ public class VodContentModel {
 	private String subtitle = "";
 	private String isnew = "";
 	private String listSub = "";
+	private String idgroup = "";
 
 	public String getIdSubject() {
 		return idSubject;
@@ -146,11 +147,19 @@ public class VodContentModel {
 		this.listSub = listSub;
 	}
 
+	public String getIdgroup() {
+		return idgroup;
+	}
+
+	public void setIdgroup(String idgroup) {
+		this.idgroup = idgroup;
+	}
+
 	@Override
 	public String toString() {
-		return "VodContentModel [idSubject=" + idSubject + ", idContent=" + idContent + ", name=" + name + ", iunit=" + iunit + ", productor="
-				+ productor + ", director=" + director + ", actor=" + actor + ", poster=" + poster + ", plot=" + plot + ", price=" + price
-				+ ", langid=" + langid + ", url=" + url + ", invisible=" + invisible + ", subtitle=" + subtitle + ", isnew=" + isnew + ", listSub="
-				+ listSub + "]";
+		return "VodContentModel [idSubject=" + idSubject + ", idContent=" + idContent + ", name=" + name + ", iunit=" + iunit
+				+ ", productor=" + productor + ", director=" + director + ", actor=" + actor + ", poster=" + poster + ", plot=" + plot
+				+ ", price=" + price + ", langid=" + langid + ", url=" + url + ", invisible=" + invisible + ", subtitle=" + subtitle
+				+ ", isnew=" + isnew + ", listSub=" + listSub + ", idgroup=" + idgroup + "]";
 	}
 }

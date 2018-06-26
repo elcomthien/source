@@ -108,8 +108,8 @@ public class PMSFolioDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.ADD_OR_UPDATE_GUEST, params, "folionum,clientid,firstname,lastname,clientname,roomsharer",
-				rs);
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.ADD_OR_UPDATE_GUEST, params,
+				"folionum,clientid,firstname,lastname,clientname,roomsharer", rs);
 		return rs;
 	}
 
@@ -204,7 +204,7 @@ public class PMSFolioDao {
 		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.ADD_MESSAGE_LIST_FOLIO, params, "folionum,title,content,sender,short", rs);
 		return rs;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public int editMessageFolio(PMSFolioMessageModel mess) {
 		int rs = -1;
@@ -235,7 +235,8 @@ public class PMSFolioDao {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.EDIT_MESSAGE_FOLIO, params, "folionum,messageid,title,content,sender,short,langid", rs);
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.EDIT_MESSAGE_FOLIO, params,
+				"folionum,messageid,title,content,sender,short,langid", rs);
 		return rs;
 	}
 
@@ -341,7 +342,7 @@ public class PMSFolioDao {
 		}
 		return list;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public List<OrderModel> getListOrder(String folionum, String from, String to) {
 		List<OrderModel> list = new ArrayList<OrderModel>();
@@ -366,12 +367,13 @@ public class PMSFolioDao {
 		}
 		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_LIST_ORDER, params, "folionum,from,to", outParam.size() / 9);
 		for (int i = 0; i < outParam.size(); i = i + 9) {
-			OrderModel order = new OrderModel(outParam.get(i), outParam.get(i+1), outParam.get(i+2), outParam.get(i+3), outParam.get(i+4), outParam.get(i+5), outParam.get(i+6), outParam.get(i+7), outParam.get(i+8));
+			OrderModel order = new OrderModel(outParam.get(i), outParam.get(i + 1), outParam.get(i + 2), outParam.get(i + 3),
+					outParam.get(i + 4), outParam.get(i + 5), outParam.get(i + 6), outParam.get(i + 7), outParam.get(i + 8));
 			list.add(order);
 		}
 		return list;
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public int changeStatusReboot(String serinumber) {
 		int rs = -1;
@@ -391,6 +393,30 @@ public class PMSFolioDao {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.CHANGE_STATUS_REBOOT, params, "serinumber", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int updateStatusTV(String serinumber, String status) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(serinumber), 0);
+		params.add(in);
+		in = new SubProParam(new String(status), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.CHANGE_ACTION_TV, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.CHANGE_ACTION_TV, params, "serinumber,status", rs);
 		return rs;
 	}
 

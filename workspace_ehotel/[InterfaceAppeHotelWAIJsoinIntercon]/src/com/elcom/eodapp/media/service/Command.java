@@ -23,6 +23,7 @@ public interface Command {
 	public static int com_getlivesubject = 21;
 	public static int com_getlivechannel = 22;
 	public static int com_getlivecount = 23;
+	public static int com_getlivenotify = 26;
 	//com danh cho phan cas
 	public static int com_getlang = 31;
 	public static int com_getlogin = 32;

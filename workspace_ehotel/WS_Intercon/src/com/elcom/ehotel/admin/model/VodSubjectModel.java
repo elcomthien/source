@@ -13,6 +13,7 @@ public class VodSubjectModel {
 	private String listadd = "";
 	private String listremove = "";
 	private String type = "";
+	private String idGroup = "";
 
 	public String getId() {
 		return id;
@@ -28,9 +29,9 @@ public class VodSubjectModel {
 
 	@Override
 	public String toString() {
-		return "VodSubjectModel [id=" + id + ", name=" + name + ", createdate=" + createdate + ", parent=" + parent + ", invisible=" + invisible
-				+ ", image=" + image + ", imageIC=" + imageIC + ", langid=" + langid + ", index=" + index + ", listadd=" + listadd + ", listremove="
-				+ listremove + ", type=" + type + "]";
+		return "VodSubjectModel [id=" + id + ", name=" + name + ", createdate=" + createdate + ", parent=" + parent + ", invisible="
+				+ invisible + ", image=" + image + ", imageIC=" + imageIC + ", langid=" + langid + ", index=" + index + ", listadd="
+				+ listadd + ", listremove=" + listremove + ", type=" + type + ", idGroup=" + idGroup + "]";
 	}
 
 	public void setName(String name) {
@@ -116,4 +117,13 @@ public class VodSubjectModel {
 	public void setImageIC(String imageIC) {
 		this.imageIC = imageIC;
 	}
+
+	public String getIdGroup() {
+		return idGroup;
+	}
+
+	public void setIdGroup(String idGroup) {
+		this.idGroup = idGroup;
+	}
+
 }

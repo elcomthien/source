@@ -2065,31 +2065,316 @@ public class eSmileDao {
 			ex.printStackTrace();
 		}
 		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_TREND_SMILE, params, "from,to,type,langid", outParam.size());
-			int count = Integer.parseInt(outParam.get(0));
+		int count = Integer.parseInt(outParam.get(0));
 
-			String temp = "";
-			HashMap<String, Object> date = new HashMap<String, Object>();
-			List<HashMap<String, Object>> listsmile = new ArrayList<HashMap<String, Object>>();
-			for (int i = 1; i < outParam.size(); i += (count * 6) + 1) {
-				listsmile = new ArrayList<HashMap<String, Object>>();
-				date = new HashMap<String, Object>();
-				// if ((i - 1) % 11 == 0) {
-				temp = outParam.get(i);
-				for (int j = i + 1; j < i + 1 + (count * 6); j += 6) {
-					HashMap<String, Object> table = new HashMap<String, Object>();
-					table.put("id", outParam.get(j));
-					table.put("name", outParam.get(j+1));
-					table.put("image", outParam.get(j+2));
-					table.put("key", outParam.get(j+3));
-					table.put("num", outParam.get(j+4));
-					table.put("sum", outParam.get(j+5));
-					listsmile.add(table);
-				}
-				date.put("date", temp);
-				date.put("rating", listsmile);
-				list.add(date);
-				// }
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listsmile = new ArrayList<HashMap<String, Object>>();
+		for (int i = 1; i < outParam.size(); i += (count * 6) + 1) {
+			listsmile = new ArrayList<HashMap<String, Object>>();
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 6); j += 6) {
+				HashMap<String, Object> table = new HashMap<String, Object>();
+				table.put("id", outParam.get(j));
+				table.put("name", outParam.get(j + 1));
+				table.put("image", outParam.get(j + 2));
+				table.put("key", outParam.get(j + 3));
+				table.put("num", outParam.get(j + 4));
+				table.put("sum", outParam.get(j + 5));
+				listsmile.add(table);
 			}
+			date.put("date", temp);
+			date.put("smile", listsmile);
+			list.add(date);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, Object>> getCheckinLocation(String listlocation, String from, String to, String type, String langid) {
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(listlocation), 0);
+		params.add(in);
+		in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_CHECKIN_LOCATION, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_CHECKIN_LOCATION, params, "listlocation,from,to,type,langid", outParam.size());
+		int count = Integer.parseInt(outParam.get(0));
+
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listloc = new ArrayList<HashMap<String, Object>>();
+		for (int i = 1; i < outParam.size(); i += (count * 4) + 1) {
+			listloc = new ArrayList<HashMap<String, Object>>();
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 4); j += 4) {
+				HashMap<String, Object> table = new HashMap<String, Object>();
+				table.put("id", outParam.get(j));
+				table.put("name", outParam.get(j + 1));
+				table.put("num", outParam.get(j + 2));
+				table.put("sum", outParam.get(j + 3));
+				listloc.add(table);
+			}
+			date.put("date", temp);
+			date.put("check_in", listloc);
+			list.add(date);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, Object>> getCheckinStaff(String liststaff, String from, String to, String type, String langid) {
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(liststaff), 0);
+		params.add(in);
+		in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_CHECKIN_STAFF, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_CHECKIN_STAFF, params, "liststaff,from,to,type,langid", outParam.size());
+		int count = Integer.parseInt(outParam.get(0));
+
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listloc = new ArrayList<HashMap<String, Object>>();
+		for (int i = 1; i < outParam.size(); i += (count * 4) + 1) {
+			listloc = new ArrayList<HashMap<String, Object>>();
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 4); j += 4) {
+				HashMap<String, Object> table = new HashMap<String, Object>();
+				table.put("id", outParam.get(j));
+				table.put("name", outParam.get(j + 1));
+				table.put("num", outParam.get(j + 2));
+				table.put("sum", outParam.get(j + 3));
+				listloc.add(table);
+			}
+			date.put("date", temp);
+			date.put("check_in", listloc);
+			list.add(date);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, Object>> getStatisticSmileLoction(String listlocation, String from, String to, String type, String langid) {
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(listlocation), 0);
+		params.add(in);
+		in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_STATISTIC_SMILE_LOCATION, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_STATISTIC_SMILE_LOCATION, params, "listlocation,from,to,type,langid",
+				outParam.size());
+		int count = Integer.parseInt(outParam.get(0));
+
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		for (int i = 1; i < outParam.size(); i += (count * 2) + 1) {
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 2); j += 2) {
+				date.put(outParam.get(j), outParam.get(j + 1));
+			}
+			date.put("date", temp);
+			list.add(date);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, Object>> getStatisticSmileStaff(String liststaff, String from, String to, String type, String langid) {
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(liststaff), 0);
+		params.add(in);
+		in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_STATISTIC_SMILE_STAFF, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_STATISTIC_SMILE_STAFF, params, "liststaff,from,to,type,langid", outParam.size());
+		int count = Integer.parseInt(outParam.get(0));
+
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		for (int i = 1; i < outParam.size(); i += (count * 2) + 1) {
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 2); j += 2) {
+				date.put(outParam.get(j), outParam.get(j + 1));
+			}
+			date.put("date", temp);
+			list.add(date);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, Object>> getTrendRating(String from, String to, String type, String langid, String smileid) {
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(type), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		in = new SubProParam(new String(smileid), 0);
+		params.add(in);
+		
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_TREND_RATING, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_TREND_RATING, params, "from,to,type,langid,smileid", outParam.size());
+		int count = Integer.parseInt(outParam.get(0));
+
+		String temp = "";
+		HashMap<String, Object> date = new HashMap<String, Object>();
+		List<HashMap<String, Object>> listsmile = new ArrayList<HashMap<String, Object>>();
+		for (int i = 1; i < outParam.size(); i += (count * 5) + 1) {
+			listsmile = new ArrayList<HashMap<String, Object>>();
+			date = new HashMap<String, Object>();
+			temp = outParam.get(i);
+			for (int j = i + 1; j < i + 1 + (count * 5); j += 5) {
+				HashMap<String, Object> table = new HashMap<String, Object>();
+				table.put("id", outParam.get(j));
+				table.put("name", outParam.get(j + 1));
+				table.put("image", outParam.get(j + 2));
+				table.put("num", outParam.get(j + 3));
+				table.put("sum", outParam.get(j + 4));
+				listsmile.add(table);
+			}
+			date.put("date", temp);
+			date.put("rating", listsmile);
+			list.add(date);
+		}
+		return list;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, String>> getDataCheckin(String liststaff, String listlocation,String from, String to, String langid) {
+		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(liststaff), 0);
+		params.add(in);
+		in = new SubProParam(new String(listlocation), 0);
+		params.add(in);
+		in = new SubProParam(new String(from), 0);
+		params.add(in);
+		in = new SubProParam(new String(to), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_DATA_CHECKIN, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(5);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(eSmileDao.class.toString(), SQL.GET_DATA_CHECKIN, params, "liststaff,listlocation,from,to,langid", outParam.size());
+		for(int i = 0;i<outParam.size();i+=11){
+			HashMap<String, String> map = new HashMap<String, String>();
+			map.put("store_id", outParam.get(i));
+			map.put("store_name", outParam.get(i+1));
+			map.put("employee_id", outParam.get(i+2));
+			map.put("employee_name", outParam.get(i+3));
+			map.put("board_name", outParam.get(i+4));
+			map.put("from_city", outParam.get(i+5));
+			map.put("to_city", outParam.get(i+6));
+			map.put("name_air", outParam.get(i+7));
+			map.put("num_air", outParam.get(i+8));
+			map.put("num_seat", outParam.get(i+9));
+			map.put("date", outParam.get(i+10));
+		}
 		return list;
 	}
 
@@ -2117,6 +2402,6 @@ public class eSmileDao {
 		// System.out.println(e.getRatingAll("2,3", "389", "19-07-2017 06:00", "26-07-2017 12:00", "2"));
 		// System.out.println(e.getDataStandard("24,26,27,1,2,3,4,5,6,7,22", "421,419,420", "22-09-2017 06:00", "29-09-2017 23:00", "1"));
 
-		System.out.println(e.getTrendSmile("22-11-2017 06:00:00", "25-01-2018 23:00:00", "day", "2"));
+		System.out.println(e.getTrendRating("25-06-2018 09:15", "26-06-2018 09:15", "hour", "1","1"));
 	}
 }

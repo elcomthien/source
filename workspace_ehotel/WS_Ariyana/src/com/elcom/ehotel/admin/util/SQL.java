@@ -172,4 +172,6 @@ public class SQL {
 	public static final String GET_LIST_ORDER = "BEGIN EPMS.getListOrder(?,?,?,?); END;";
 	
 	public static final String CHANGE_STATUS_REBOOT = "BEGIN EPMS.changeStatusReboot(?,?); END;";
+	
+	public static final String CHANGE_ACTION_TV = "BEGIN EPMS.updateStatusTivi(?,?,?); END;";
 }

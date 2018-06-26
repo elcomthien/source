@@ -10,6 +10,7 @@ import com.elcom.ehotel.esmile.dao.DiningDao;
 import com.elcom.ehotel.esmile.dao.InfoDao;
 import com.elcom.ehotel.esmile.dao.SpeedBoatDao;
 import com.elcom.ehotel.esmile.dao.StaffDao;
+import com.elcom.ehotel.esmile.dao.SystemDao;
 import com.elcom.ehotel.esmile.dao.UserDao;
 import com.elcom.ehotel.esmile.dao.eSmileDao;
 import com.elcom.ehotel.esmile.model.AllRatingModel;
@@ -49,6 +50,7 @@ public class eSmileServiceImpl implements eSmileService {
 	private SpeedBoatDao speedBoatDao = new SpeedBoatDao();
 	private StaffDao staffDao = new StaffDao();
 	private UserDao userDao = new UserDao();
+	private SystemDao systemDao = new SystemDao();
 
 	@Override
 	public String getLogin(String object) {
@@ -1647,6 +1649,84 @@ public class eSmileServiceImpl implements eSmileService {
 		list = eSmileDao.getDataStandard(employee, location, from, to, langid);
 		System.out.println("result: " + list);
 		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getWelcome(String object) {
+		System.out.println("------>getWelcome");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "");
+		String id = map.get("id");
+		String langid = map.get("langid");
+		List<HashMap<String, String>> list = new ArrayList<>();
+		list = systemDao.getTextWelcome(id, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String editWelcome(String object) {
+		System.out.println("------>editWelcome");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "");
+		String id = map.get("id");
+		String name = map.get("name");
+		String langid = map.get("langid");
+		map = systemDao.editTextWelcome(id, name, langid);
+		System.out.println("result: " + map);
+		return new Gson().toJson(map);
+	}
+	
+	@Override
+	public String getTextWelcome(String object) {
+//		System.out.println("------>getTextWelcome");
+//		System.out.println("object: " + object);
+//		HashMap<String, String> map = new HashMap<String, String>();
+//		if (!Util.checkObject(object)) {
+//			map = Util.noneParam();
+//			return new Gson().toJson(map);
+//		}
+//		map = Util.convertObject(object, "");
+//		String id = map.get("id");
+//		String langid = map.get("langid");
+//		List<HashMap<String, String>> list = new ArrayList<>();
+//		list = eSmileDao.getTextWelcome(id, langid);
+//		System.out.println("result: " + list);
+//		return new Gson().toJson(list);
+		System.out.println("------>getTextWelcome --> getBackground");
+		System.out.println("object: " + object);
+		List<ConfigModel> list = new ArrayList<ConfigModel>();
+		list = eSmileDao.getBackground();
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String editTextWelcome(String object) {
+		System.out.println("------>editTextWelcome");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "");
+		String id = map.get("id");
+		String name = map.get("name");
+		String langid = map.get("langid");
+		map = eSmileDao.editTextWelcome(id, name, langid);
+		System.out.println("result: " + map);
+		return new Gson().toJson(map);
 	}
 
 }

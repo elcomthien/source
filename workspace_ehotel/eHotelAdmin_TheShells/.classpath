@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/ReqInfoApp.jar"/>
+	<classpathentry kind="lib" path="lib/gnujaxp.jar"/>
+	<classpathentry kind="lib" path="lib/iText-2.1.5.jar"/>
+	<classpathentry kind="lib" path="lib/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.14-experimental.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.14-swt.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="lib/jxl.jar"/>
+	<classpathentry kind="lib" path="lib/EodHelper.2011.06.24.jar"/>
+	<classpathentry kind="lib" path="lib/ganymed-ssh2-build210.jar"/>
+	<classpathentry kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-client-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-common-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-server-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/jsch-0.1.42.jar"/>
+	<classpathentry kind="lib" path="lib/servlet.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/DBIGateway.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-fileupload-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-1.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-net-3.0.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/DBI.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ftp-upload.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ftp4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jstl-impl-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/slf4j-api-1.7.2-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xdoclet-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xjavadoc-1.0.3.jar"/>
+	<classpathentry kind="output" path="eHotelAdmin/WEB-INF/classes"/>
+</classpath>

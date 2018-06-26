@@ -56,16 +56,40 @@ public class PMSFolioService {
 	public List<HashMap<String, String>> getListSmartcard() {
 		return pmsFolioDao.getListSmartcard();
 	}
-	
+
 	public Map<String, Object> getListFolioPreview() {
 		return pmsFolioDao.getListFolioPreview();
 	}
-	
+
 	public int updatePreview(String room, String ispreview) {
 		return pmsFolioDao.updatePreview(room, ispreview);
 	}
-	
+
 	public int publicPreview() {
 		return pmsFolioDao.publicPreview();
+	}
+
+	public List<HashMap<String, String>> getListGroup() {
+		return pmsFolioDao.getListGroup();
+	}
+
+	public List<PMSFolioRoomModel> getListFolioGroup(String id) {
+		return pmsFolioDao.getListFolioGroup(id);
+	}
+
+	public int addGroup(String name) {
+		return pmsFolioDao.addGroup(name);
+	}
+
+	public int changeFolioGroup(String leftGroup, String listLeft, String rightGroup, String listRight) {
+		return pmsFolioDao.changeFolioGroup(leftGroup, listLeft, rightGroup, listRight);
+	}
+
+	public int editGroup(String id, String name) {
+		return pmsFolioDao.editGroup(id, name);
+	}
+
+	public int deleteGroup(String id) {
+		return pmsFolioDao.deleteGroup(id);
 	}
 }

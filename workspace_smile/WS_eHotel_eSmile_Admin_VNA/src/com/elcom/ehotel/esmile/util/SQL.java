@@ -129,6 +129,14 @@ public class SQL {
 	public static final String GET_DATA_DETAIL = "BEGIN EADMIN.getDataDetail(?,?,?,?,?,?); END;";
 	public static final String GET_DATA_STANDARD = "BEGIN EADMIN.getDataStandard(?,?,?,?,?,?); END;";
 	public static final String GET_TREND_SMILE = "BEGIN EADMIN.getTrendSmile(?,?,?,?,?); END;";
+	public static final String GET_TREND_RATING = "BEGIN EADMIN.getTrendRating(?,?,?,?,?,?); END;";
+	
+	public static final String GET_CHECKIN_LOCATION = "BEGIN EADMIN.getCheckinLocation(?,?,?,?,?,?); END;";
+	public static final String GET_CHECKIN_STAFF = "BEGIN EADMIN.getCheckinStaff(?,?,?,?,?,?); END;";
+	public static final String GET_STATISTIC_SMILE_LOCATION = "BEGIN EADMIN.getStaticSmileLocation(?,?,?,?,?,?); END;";
+	public static final String GET_STATISTIC_SMILE_STAFF = "BEGIN EADMIN.getStaticSmileStaff(?,?,?,?,?,?); END;";
+	
+	public static final String GET_DATA_CHECKIN = "BEGIN EADMIN.getDataCheckin(?,?,?,?,?,?); END;";
 }
 
 

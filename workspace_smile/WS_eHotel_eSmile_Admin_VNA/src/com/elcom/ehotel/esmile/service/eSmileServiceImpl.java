@@ -1669,4 +1669,150 @@ public class eSmileServiceImpl implements eSmileService {
 		return new Gson().toJson(list);
 	}
 
+	@Override
+	public String getCheckinLocation(String object) {
+		System.out.println("------>getCheckinLocation");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "location");
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		String listlocation = map.get("location");
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String langid = map.get("langid");
+		String type = "day";
+		try {
+			type = Util.getTypeTime(from, to);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		list = eSmileDao.getCheckinLocation(listlocation, from, to, type, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getCheckinStaff(String object) {
+		System.out.println("------>getCheckinStaff");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "employee");
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		String liststaff = map.get("employee");
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String langid = map.get("langid");
+		String type = "day";
+		try {
+			type = Util.getTypeTime(from, to);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		list = eSmileDao.getCheckinStaff(liststaff, from, to, type, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getStatisticSmileLoction(String object) {
+		System.out.println("------>getStatisticSmileLoction");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "location");
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		String listlocation = map.get("location");
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String langid = map.get("langid");
+		String type = "day";
+		try {
+			type = Util.getTypeTime(from, to);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		list = eSmileDao.getStatisticSmileLoction(listlocation, from, to, type, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getStatisticSmileStaff(String object) {
+		System.out.println("------>getStatisticSmileStaff");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "employee");
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		String liststaff = map.get("employee");
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String langid = map.get("langid");
+		String type = "day";
+		try {
+			type = Util.getTypeTime(from, to);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		list = eSmileDao.getStatisticSmileStaff(liststaff, from, to, type, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getTrendRating(String object) {
+		System.out.println("------>getTrendRating");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "");
+		List<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String type = map.get("type");
+		String langid = map.get("langid");
+		String smileid = map.get("smile_id");
+		list = eSmileDao.getTrendRating(from, to, type, langid, smileid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
+	@Override
+	public String getDataCheckin(String object) {
+		System.out.println("------>getDataCheckin");
+		System.out.println("object: " + object);
+		HashMap<String, String> map = new HashMap<String, String>();
+		if (!Util.checkObject(object)) {
+			map = Util.noneParam();
+			return new Gson().toJson(map);
+		}
+		map = Util.convertObject(object, "employee,location");
+		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		String listlocation = map.get("location");
+		String liststaff = map.get("employee");
+		String from = map.get("date_from");
+		String to = map.get("date_to");
+		String langid = map.get("langid");
+		list = eSmileDao.getDataCheckin(liststaff, listlocation, from, to, langid);
+		System.out.println("result: " + list);
+		return new Gson().toJson(list);
+	}
+
 }

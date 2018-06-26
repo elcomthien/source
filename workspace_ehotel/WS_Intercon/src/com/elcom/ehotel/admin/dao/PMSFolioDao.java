@@ -378,6 +378,159 @@ public class PMSFolioDao {
 		return rs;
 	}
 
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, String>> getListGroup() {
+		List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(0);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_LIST_GROUP, params, "none", outParam.size() / 3);
+		for (int i = 0; i < outParam.size(); i = i + 3) {
+			HashMap<String, String> group = new HashMap<String, String>();
+			group.put("id", outParam.get(i));
+			group.put("name", outParam.get(i + 1));
+			group.put("status", outParam.get(i + 2));
+			list.add(group);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<PMSFolioRoomModel> getListFolioGroup(String id) {
+		List<PMSFolioRoomModel> list = new ArrayList<PMSFolioRoomModel>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_LIST_FOLIO_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(1);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.GET_LIST_FOLIO_GROUP, params, "id", outParam.size() / 3);
+		for (int i = 0; i < outParam.size(); i = i + 3) {
+			PMSFolioRoomModel folio = new PMSFolioRoomModel();
+			folio.setRoom(outParam.get(i));
+			folio.setType(outParam.get(i + 1));
+			folio.setStatus(outParam.get(i + 2));
+			list.add(folio);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int addGroup(String name) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(name), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.ADD_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(1);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.ADD_GROUP, params, "name", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int changeFolioGroup(String leftGroup, String listLeft, String rightGroup, String listRight) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(leftGroup), 0);
+		params.add(in);
+		in = new SubProParam(new String(listLeft), 0);
+		params.add(in);
+		in = new SubProParam(new String(rightGroup), 0);
+		params.add(in);
+		in = new SubProParam(new String(listRight), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.CHANGE_FOLIO_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(4);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.CHANGE_FOLIO_GROUP, params, "leftgroup,listleft,rightgroup,listright", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int editGroup(String id, String name) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+		in = new SubProParam(new String(name), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.EDIT_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(2);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.EDIT_GROUP, params, "id,name", rs);
+		return rs;
+	}
+
+	@SuppressWarnings("unchecked")
+	public int deleteGroup(String id) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.DELETE_GROUP, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(1);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(PMSFolioDao.class.toString(), SQL.DELETE_GROUP, params, "id", rs);
+		return rs;
+	}
+
 	public static void main(String[] args) {
 		PMSFolioDao p = new PMSFolioDao();
 		System.out.println(p.getListSmartcard());

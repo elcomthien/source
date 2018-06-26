@@ -7,6 +7,7 @@ public class ModContentModel {
 	private String url = "";
 	private String langid = "";
 	private String invisible = "";
+	private String idGroup = "";
 
 	public String getIdSubject() {
 		return idSubject;
@@ -54,6 +55,20 @@ public class ModContentModel {
 
 	public void setInvisible(String invisible) {
 		this.invisible = invisible;
+	}
+
+	public String getIdGroup() {
+		return idGroup;
+	}
+
+	public void setIdGroup(String idGroup) {
+		this.idGroup = idGroup;
+	}
+
+	@Override
+	public String toString() {
+		return "ModContentModel [idSubject=" + idSubject + ", idContent=" + idContent + ", name=" + name + ", url=" + url + ", langid="
+				+ langid + ", invisible=" + invisible + ", idGroup=" + idGroup + "]";
 	}
 
 }

@@ -162,10 +162,10 @@ public interface eSmileService {
 
 	@WebMethod
 	String getRoom(String object);
-	
+
 	@WebMethod
 	String editSmile(String object);
-	
+
 	@WebMethod
 	String getService(String object);
 
@@ -177,115 +177,127 @@ public interface eSmileService {
 
 	@WebMethod
 	String deleteService(String object);
-	
+
 	@WebMethod
 	String editRating(String object);
-	
+
 	@WebMethod
 	String getVoteSurvey(String object);
-	
+
 	@WebMethod
 	String getListStaff(String object);
-	
+
 	@WebMethod
 	String addStaff(String object);
-	
+
 	@WebMethod
 	String editStaff(String object);
-	
+
 	@WebMethod
 	String deleteStaff(String object);
-	
+
 	@WebMethod
 	String getListTablet(String object);
-	
+
 	@WebMethod
 	String editTablet(String object);
-	
+
 	@WebMethod
 	String getCompareStaff(String object);
-	
+
 	@WebMethod
 	String getRatingChild(String object);
-	
+
 	@WebMethod
 	String getRatingAll(String object);
-	
+
 	@WebMethod
 	String getCompareLocation(String object);
-	
+
 	@WebMethod
 	String getStatisticSmile(String object);
-	
+
 	@WebMethod
 	String getStatisticRating(String object);
-	
+
 	@WebMethod
 	String getListUser(String object);
-	
+
 	@WebMethod
 	String addUser(String object);
-	
+
 	@WebMethod
 	String editUser(String object);
-	
+
 	@WebMethod
 	String deleteUser(String object);
-	
+
 	@WebMethod
 	String changePassword(String object);
-	
+
 	@WebMethod
 	String getListStore(String object);
-	
+
 	@WebMethod
 	String getSmileStaff(String object);
-	
+
 	@WebMethod
 	String getRatingStaff(String object);
-	
+
 	@WebMethod
 	String getRatingChildStaff(String object);
-	
+
 	@WebMethod
 	String getRatingSmileStaff(String object);
-	
+
 	@WebMethod
 	String getRatingChildSmileStaff(String object);
-	
+
 	@WebMethod
 	String getRatingSmileLocation(String object);
-	
+
 	@WebMethod
 	String getRatingChildSmileLocation(String object);
-	
+
 	@WebMethod
 	String getHistory(String object);
-	
+
 	@WebMethod
 	String getRatingDetail(String object);
-	
+
 	@WebMethod
 	String addRatingDetail(String object);
-	
+
 	@WebMethod
 	String editRatingDetail(String object);
-	
+
 	@WebMethod
 	String deleteRatingDetail(String object);
-	
+
 	@WebMethod
 	String getRatingDetailStaff(String object);
-	
+
 	@WebMethod
 	String getRatingDetailLocation(String object);
-	
+
 	@WebMethod
 	String getRatingDetailReport(String object);
-	
+
 	@WebMethod
 	String getDataDetail(String object);
-	
+
 	@WebMethod
 	String getDataStandard(String object);
+
+	@WebMethod
+	String getWelcome(String object);
+
+	@WebMethod
+	String editWelcome(String object);
+	
+	@WebMethod
+	String getTextWelcome(String object);
+
+	@WebMethod
+	String editTextWelcome(String object);
 }

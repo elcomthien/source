@@ -77,6 +77,39 @@ public class VodController extends HttpServlet {
 			list = vodService.getSubtitle(vodId);
 			response.getWriter().write(new Gson().toJson(list));
 		}
+
+		if (action.equals("getlistsubjectgroup")) {
+			String langid = request.getParameter("langid");
+			// phim type = VOD; MV type = MOD
+			String type = request.getParameter("type");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "getlistsubjectgroup", "langId,,," + langid + ",,,type,,," + type
+					+ ",,,idgroup,,," + idgroup);
+
+			List<VodSubjectModel> list = new ArrayList<VodSubjectModel>();
+			list = vodService.getListSubjectGroup(langid, type, idgroup);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getlistcontentgroup")) {
+			String idSubject = request.getParameter("idsubject");
+			String langid = request.getParameter("langid");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "getlistcontentgroup", "idSubject,,," + idSubject + ",,,langid,,," + langid
+					+ ",,,idgroup,,," + idgroup);
+
+			VodContentModel vod = new VodContentModel();
+			vod.setIdSubject(idSubject);
+			vod.setLangid(langid);
+			vod.setIdgroup(idgroup);
+
+			List<VodContentModel> list = new ArrayList<VodContentModel>();
+			list = vodService.getListContentGroup(vod);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -90,8 +123,8 @@ public class VodController extends HttpServlet {
 			String invisible = request.getParameter("invisible");
 			String type = request.getParameter("type");
 
-			LogUtil.logControl(VodController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible
-					+ ",,,type,,," + type);
+			LogUtil.logControl(VodController.class.toString(), "addsubject", "name,,," + name + ",,,image,,," + image + ",,,imageic,,,"
+					+ imageIC + ",,,invisible,,," + invisible + ",,,type,,," + type);
 
 			VodSubjectModel vod = new VodSubjectModel();
 			vod.setName(name);
@@ -112,8 +145,8 @@ public class VodController extends HttpServlet {
 			String langid = request.getParameter("langid");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(VodController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,image,,," + image  + ",,,imageic,,," + imageIC
-					+ ",,,langid,,," + langid + ",,,invisible,,," + invisible);
+			LogUtil.logControl(VodController.class.toString(), "editsubject", "idSubject,,," + idSubject + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,langid,,," + langid + ",,,invisible,,," + invisible);
 
 			VodSubjectModel vod = new VodSubjectModel();
 			vod.setId(idSubject);
@@ -165,9 +198,10 @@ public class VodController extends HttpServlet {
 			isnew = request.getParameter("isnew");
 			uuid = request.getParameter("uuid");
 
-			LogUtil.logControl(VodController.class.toString(), "addmovie", "idSubject,,," + idSubject + ",,,name,,," + name + ",,,productor,,," + productor
-					+ ",,,director,,," + director + ",,,actor,,," + actor + ",,,poster,,," + poster + ",,,plot,,," + plot + ",,,price,,," + price + ",,,iunit,,," + iunit
-					+ ",,,url,,," + url + ",,,invisible,,," + invisible + ",,,isnew,,," + isnew + ",,,uuid,,," + uuid);
+			LogUtil.logControl(VodController.class.toString(), "addmovie", "idSubject,,," + idSubject + ",,,name,,," + name
+					+ ",,,productor,,," + productor + ",,,director,,," + director + ",,,actor,,," + actor + ",,,poster,,," + poster
+					+ ",,,plot,,," + plot + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,url,,," + url + ",,,invisible,,,"
+					+ invisible + ",,,isnew,,," + isnew + ",,,uuid,,," + uuid);
 
 			VodContentModel con = new VodContentModel();
 			con.setIdSubject(idSubject);
@@ -216,9 +250,10 @@ public class VodController extends HttpServlet {
 			isnew = request.getParameter("isnew");
 			langid = request.getParameter("langid");
 
-			LogUtil.logControl(VodController.class.toString(), "addmovie", "idSubject,,," + idSubject + ",,,idContent,,," + idContent + ",,,name,,," + name
-					+ ",,,productor,,," + productor + ",,,director,,," + director + ",,,actor,,," + actor + ",,,poster,,," + poster + ",,,plot,,," + plot + ",,,price,,,"
-					+ price + ",,,iunit,,," + iunit + ",,,invisible,,," + invisible + ",,,isnew,,," + isnew + ",,,langid,,," + langid);
+			LogUtil.logControl(VodController.class.toString(), "addmovie", "idSubject,,," + idSubject + ",,,idContent,,," + idContent
+					+ ",,,name,,," + name + ",,,productor,,," + productor + ",,,director,,," + director + ",,,actor,,," + actor
+					+ ",,,poster,,," + poster + ",,,plot,,," + plot + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,invisible,,,"
+					+ invisible + ",,,isnew,,," + isnew + ",,,langid,,," + langid);
 
 			VodContentModel con = new VodContentModel();
 			con.setIdSubject(idSubject);
@@ -244,7 +279,8 @@ public class VodController extends HttpServlet {
 			String uuid = request.getParameter("uuid");
 			String ipserver = request.getParameter("ipserver");
 
-			LogUtil.logControl(VodController.class.toString(), "deletemovie", "idContent,,," + idContent + ",,,uuid,,," + uuid + ",,,ipserver,,," + ipserver);
+			LogUtil.logControl(VodController.class.toString(), "deletemovie", "idContent,,," + idContent + ",,,uuid,,," + uuid
+					+ ",,,ipserver,,," + ipserver);
 
 			int rs = vodService.deleteMovie(idContent, uuid, ipserver);
 			out.println(rs);
@@ -255,7 +291,8 @@ public class VodController extends HttpServlet {
 			String uuid = request.getParameter("uuid");
 			String name = request.getParameter("name");
 
-			LogUtil.logControl(VodController.class.toString(), "adduuid", "filename,,," + filename + ",,,uuid,,," + uuid + ",,,name,,," + name);
+			LogUtil.logControl(VodController.class.toString(), "adduuid", "filename,,," + filename + ",,,uuid,,," + uuid + ",,,name,,,"
+					+ name);
 
 			VodPercentModel per = new VodPercentModel();
 			per.setFilename(filename);
@@ -289,13 +326,196 @@ public class VodController extends HttpServlet {
 			int rs = vodService.addOrEditSubtitle(vodId, listSub);
 			out.print(rs);
 		}
-		
+
 		if (action.equals("deletesubtitle")) {
 			String subId = request.getParameter("uuid");
 
 			LogUtil.logControl(VodController.class.toString(), "deletesubtitle", "subId,,," + subId);
 
 			int rs = vodService.deleteSubtitle(subId);
+			out.println(rs);
+		}
+
+		if (action.equals("addsubjectgroup")) {
+			String name = request.getParameter("name");
+			String image = request.getParameter("image");
+			String imageIC = request.getParameter("imageic");
+			String invisible = request.getParameter("invisible");
+			String type = request.getParameter("type");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "addsubjectgroup", "name,,," + name + ",,,image,,," + image
+					+ ",,,imageic,,," + imageIC + ",,,invisible,,," + invisible + ",,,type,,," + type + ",,,idgroup,,," + idgroup);
+
+			VodSubjectModel vod = new VodSubjectModel();
+			vod.setName(name);
+			vod.setImage(image);
+			vod.setImageIC(imageIC);
+			vod.setInvisible(invisible);
+			vod.setType(type);
+			vod.setIdGroup(idgroup);
+
+			int rs = vodService.addVodSubjectGroup(vod);
+			out.println(rs);
+		}
+
+		if (action.equals("editsubjectgroup")) {
+			String idSubject = request.getParameter("idsubject");
+			String name = request.getParameter("name");
+			String image = request.getParameter("image");
+			String imageIC = request.getParameter("imageic");
+			String langid = request.getParameter("langid");
+			String invisible = request.getParameter("invisible");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "editsubjectgroup", "idSubject,,," + idSubject + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,imageic,,," + imageIC + ",,,langid,,," + langid + ",,,invisible,,," + invisible
+					+ ",,,idgroup,,," + idgroup);
+
+			VodSubjectModel vod = new VodSubjectModel();
+			vod.setId(idSubject);
+			vod.setName(name);
+			vod.setImage(image);
+			vod.setImageIC(imageIC);
+			vod.setLangid(langid);
+			vod.setInvisible(invisible);
+			vod.setIdGroup(idgroup);
+
+			int rs = vodService.editVodSubjectGroup(vod);
+			out.println(rs);
+		}
+
+		if (action.equals("deletesubjectgroup")) {
+			String idSubject = request.getParameter("idsubject");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "deletesubjectgroup", "idSubject,,," + idSubject + ",,,idgroup,,," + idgroup);
+
+			int rs = vodService.deleteVodSubjectGroup(idSubject, idgroup);
+			out.println(rs);
+		}
+
+		if (action.equals("addmoviegroup")) {
+			String idSubject = "";
+			String name = "";
+			String productor = "";
+			String director = "";
+			String actor = "";
+			String poster = "";
+			String plot = "";
+			String price = "";
+			String iunit = "";
+			String url = "";
+			String invisible = "";
+			String isnew = "";
+			String uuid = "";
+			String idgroup = "";
+
+			idSubject = request.getParameter("idsubject");
+			name = request.getParameter("name");
+			productor = request.getParameter("productor");
+			director = request.getParameter("director");
+			actor = request.getParameter("actor");
+			poster = request.getParameter("poster");
+			plot = request.getParameter("plot");
+			price = request.getParameter("price");
+			iunit = request.getParameter("iunit");
+			url = request.getParameter("url");
+			invisible = request.getParameter("invisible");
+			isnew = request.getParameter("isnew");
+			uuid = request.getParameter("uuid");
+			idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "addmoviegroup", "idSubject,,," + idSubject + ",,,name,,," + name
+					+ ",,,productor,,," + productor + ",,,director,,," + director + ",,,actor,,," + actor + ",,,poster,,," + poster
+					+ ",,,plot,,," + plot + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,url,,," + url + ",,,invisible,,,"
+					+ invisible + ",,,isnew,,," + isnew + ",,,uuid,,," + uuid + ",,,idgroup,,," + idgroup);
+
+			VodContentModel con = new VodContentModel();
+			con.setIdSubject(idSubject);
+			con.setName(name);
+			con.setProductor(productor);
+			con.setDirector(director);
+			con.setActor(actor);
+			con.setPoster(poster);
+			con.setPlot(plot);
+			con.setPrice(price);
+			con.setIunit(iunit);
+			con.setUrl(url);
+			con.setInvisible(invisible);
+			con.setIsnew(isnew);
+			con.setIdgroup(idgroup);
+
+			int rs = vodService.addNewMovieGroup(con, uuid);
+			out.println(rs);
+		}
+
+		if (action.equals("editmoviegroup")) {
+			String idContent = "";
+			String idSubject = "";
+			String name = "";
+			String productor = "";
+			String director = "";
+			String actor = "";
+			String poster = "";
+			String plot = "";
+			String price = "";
+			String iunit = "";
+			String invisible = "";
+			String isnew = "";
+			String langid = "";
+			String idgroup = "";
+
+			idSubject = request.getParameter("idsubject");
+			idContent = request.getParameter("idcontent");
+			name = request.getParameter("name");
+			productor = request.getParameter("productor");
+			director = request.getParameter("director");
+			actor = request.getParameter("actor");
+			poster = request.getParameter("poster");
+			plot = request.getParameter("plot");
+			price = request.getParameter("price");
+			iunit = request.getParameter("iunit");
+			invisible = request.getParameter("invisible");
+			isnew = request.getParameter("isnew");
+			langid = request.getParameter("langid");
+			idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "editmoviegroup", "idSubject,,," + idSubject + ",,,idContent,,," + idContent
+					+ ",,,name,,," + name + ",,,productor,,," + productor + ",,,director,,," + director + ",,,actor,,," + actor
+					+ ",,,poster,,," + poster + ",,,plot,,," + plot + ",,,price,,," + price + ",,,iunit,,," + iunit + ",,,invisible,,,"
+					+ invisible + ",,,isnew,,," + isnew + ",,,langid,,," + langid + ",,,idgroup,,," + idgroup);
+
+			VodContentModel con = new VodContentModel();
+			con.setIdSubject(idSubject);
+			con.setIdContent(idContent);
+			con.setName(name);
+			con.setProductor(productor);
+			con.setDirector(director);
+			con.setActor(actor);
+			con.setPoster(poster);
+			con.setPlot(plot);
+			con.setPrice(price);
+			con.setIunit(iunit);
+			con.setInvisible(invisible);
+			con.setIsnew(isnew);
+			con.setLangid(langid);
+			con.setIdgroup(idgroup);
+
+			int rs = vodService.editMovieGroup(con);
+			out.println(rs);
+		}
+
+		if (action.equals("deletemoviegroup")) {
+			String idContent = request.getParameter("idcontent");
+			String uuid = request.getParameter("uuid");
+			String ipserver = request.getParameter("ipserver");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(VodController.class.toString(), "deletemoviegroup", "idContent,,," + idContent + ",,,uuid,,," + uuid
+					+ ",,,ipserver,,," + ipserver + ",,,idgroup,,," + idgroup);
+
+			int rs = vodService.deleteMovieGroup(idContent, uuid, ipserver, idgroup);
 			out.println(rs);
 		}
 

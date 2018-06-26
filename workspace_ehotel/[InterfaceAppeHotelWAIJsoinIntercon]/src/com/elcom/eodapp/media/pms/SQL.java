@@ -26,5 +26,6 @@ public interface SQL {
 	public static final String sqlgetAirline = "{call PMSAPP.getAirline(?)}";
 	public static final String sqlgetStation = "{call PMSAPP.getStation(?)}";
 	public static final String sqlfilterFlight = "{call PMSAPP.filterFlight(?,?,?,?,?,?,?)}";
+	public static final String sqlgetNotifyChannel = "{call PMSAPP.getNotifyChannel(?,?)}";
 	
 }

@@ -7,6 +7,7 @@ public class WelcomeMediaModel {
 	private String index = "";
 	private String status = "";
 	private String type = "";
+	private String idgroup = "";
 
 	public String getId() {
 		return id;
@@ -56,10 +57,18 @@ public class WelcomeMediaModel {
 		this.type = type;
 	}
 
+	public String getIdgroup() {
+		return idgroup;
+	}
+
+	public void setIdgroup(String idgroup) {
+		this.idgroup = idgroup;
+	}
+
 	@Override
 	public String toString() {
 		return "WelcomeMediaModel [id=" + id + ", name=" + name + ", filename=" + filename + ", index=" + index + ", status=" + status
-				+ ", type=" + type + "]";
+				+ ", type=" + type + ", idgroup=" + idgroup + "]";
 	}
 
 }

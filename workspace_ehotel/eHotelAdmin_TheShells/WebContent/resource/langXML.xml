@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lang xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<content id="1">
+		<VN>Quản lý content movie</VN>
+		<EN>Movie content manager</EN>
+	</content>
+	<content id="2">
+		<VN>Tên</VN>
+		<EN>Name</EN>
+	</content>
+	<content id="3">
+		<VN>Diễn viên</VN>
+		<EN>Actors</EN>
+	</content>
+	<content id="4">
+		<VN>Đạo diễn</VN>
+		<EN>Director</EN>
+	</content>
+	<content id="5">
+		<VN>Tỉ giá</VN>
+		<EN>Exchange.Rate</EN>
+	</content>
+	<content id="6">
+		<VN>Cài đặt</VN>
+		<EN>Setting</EN>
+	</content>
+	<content id="7">
+		<VN>Danh sách phim</VN>
+		<EN>List of Movies</EN>
+	</content>
+	<content id="8">
+		<VN>Danh sách</VN>
+		<EN>List</EN>
+	</content>
+	<content id="9">
+		<VN>Thêm</VN>
+		<EN>Add</EN>
+	</content>
+	<content id="10">
+		<VN>Chủ đề</VN>
+		<EN>Subject</EN>
+	</content>
+	<content id="11">
+		<VN>Thêm chủ đề</VN>
+		<EN>Add Subject</EN>
+	</content>
+	<content id="12">
+		<VN>Quản lý phòng</VN>
+		<EN>Hotel manager</EN>
+	</content>
+	<content id="13">
+		<VN>Chủ đề</VN>
+		<EN>Title</EN>
+	</content>
+	<content id="14">
+		<VN>Bạn chắc có muốn xóa không?</VN>
+		<EN>Are you sure to delete?</EN>
+	</content>
+	<content id="15">
+		<VN>Mới</VN>
+		<EN>New</EN>
+	</content>
+	<content id="16">
+		<VN>Phim</VN>
+		<EN>Movie</EN>
+	</content>
+	<content id="17">
+		<VN>Nhạc</VN>
+		<EN>Music</EN>
+	</content>
+	<content id="18">
+		<VN>Hệ thống</VN>
+		<EN>System</EN>
+	</content>
+	<content id="19">
+		<VN>Báo cáo</VN>
+		<EN>Report</EN>
+	</content>
+	<content id="stt">
+		<VN>STT</VN>
+		<EN>NO</EN>
+	</content>
+	<content id="HotelMgn">
+		<VN>Quản lý thông tin khách sạn</VN>
+		<EN>Hotel information management</EN>
+	</content>
+	<content id="FolioMgn">
+		<VN>Quản lý phòng và thiết bị</VN>
+		<EN>Folio and Stb management</EN>
+	</content>
+	<content id="DiningMgn">
+		<VN>Quản lý thông tin ẩm thực</VN>
+		<EN>Dining information management</EN>
+	</content>
+	<content id="Attration-ActivitiesMgn">
+		<VN>Quản lý Điểm đến-Hoạt động</VN>
+		<EN>Activiti-Attaraction management</EN>
+	</content>
+	<content id="TransportationMgn">
+		<VN>Quản lý phương tiện di chuyển</VN>
+		<EN>Transportation management</EN>
+	</content>
+	<content id="HousekeepingMgn">
+		<VN>Quản lý dịch vụ phòng</VN>
+		<EN>Housekeeping management</EN>
+	</content>
+	<content id="MapMgn_map">
+		<VN>Quản lý phương tiện di chuyển</VN>
+		<EN>Map Direction management</EN>
+	</content>
+	<content id="reset_pin">
+		<VN>Bạn có chắc muốn tạo lại mã pin?</VN>
+		<EN>Do you want to reset pincode?</EN>
+	</content>
+	<content id="OtherMgn">
+		<VN>Quản lý dịch vụ khác</VN>
+		<EN>Others management</EN>
+	</content>
+	<content id="Subject">
+		<VN>Chủ đề</VN>
+		<EN>Subject</EN>
+	</content>
+	<content id="AddSubject">
+		<VN>Thêm chủ đề</VN>
+		<EN>Add Subject</EN>
+	</content>
+	<content id="EditSubject">
+		<VN>Sửa chủ đề</VN>
+		<EN>Edit Subject</EN>
+	</content>
+	<content id="pls_Subject">
+		<VN>Vui lòng chọn tên chủ đề.</VN>
+		<EN>Please enter the full name of the subject</EN>
+	</content>
+	<content id="DeleteSubject">
+		<VN>Xóa chủ đề</VN>
+		<EN>Delete Subject</EN>
+	</content>
+	<content id="AddItem">
+		<VN>Thêm mới đối tượng</VN>
+		<EN>Add Item</EN>
+	</content>
+	<content id="RemoveItem">
+		<VN>Xóa đối tượng</VN>
+		<EN>Delete Item</EN>
+	</content>
+	<content id="DetailItem">
+		<VN>Xem thông tin</VN>
+		<EN>View Item</EN>
+	</content>
+	<content id="ChangeSubject">
+		<VN>Chuyển chủ đề</VN>
+		<EN>Change subject</EN>
+	</content>
+	<content id="ChangeStatus">
+		<VN>Chuyển trạng thái</VN>
+		<EN>Change status</EN>
+	</content>
+	<content id="Status">
+		<VN>Trạng thái</VN>
+		<EN>Status</EN>
+	</content>
+	<content id="No">
+		<VN>STT</VN>
+		<EN>No</EN>
+	</content>
+	<content id="room">
+		<VN>Mã phòng</VN>
+		<EN>Room</EN>
+	</content>
+	<content id="Name_guest">
+		<VN>Tên</VN>
+		<EN>Name</EN>
+	</content>
+	<content id="Description">
+		<VN>Mô tả</VN>
+		<EN>Description</EN>
+	</content>
+	<content id="Image">
+		<VN>Hình ảnh</VN>
+		<EN>Image</EN>
+	</content>
+	<content id="Background">
+		<VN>Hình nền</VN>
+		<EN>Background</EN>
+	</content>
+	<content id="stb_assigned">
+		<VN>STB đã gán cho phòng</VN>
+		<EN>STB is assigned to room</EN>
+	</content>
+	<content id="insert_stb">
+		<VN>Vui lòng chọn STB để thêm.</VN>
+		<EN>Please select STB!</EN>
+	</content>
+	<content id="remove_stb_check">
+		<VN>Vui lòng chọn STB để xóa.</VN>
+		<EN>Please check any stb to remove.</EN>
+	</content>
+	<content id="checkout">
+		<VN>Bạn có muốn check out không?</VN>
+		<EN>Do you really want to check out?</EN>
+	</content>
+	<content id="remove_stb">
+		<VN>Bạn có chắc muốn xóa STB này?</VN>
+		<EN>Do you really want to remove STB?</EN>
+	</content>
+	<content id="RoomList">
+		<VN>Phòng</VN>
+		<EN>Rooms</EN>
+	</content>
+	<content id="addSTBroom">
+		<VN>Gán thiết bị vào phòng.</VN>
+		<EN>Assign STB to room</EN>
+	</content>
+	<content id="removestb">
+		<VN>Xóa</VN>
+		<EN>Remove</EN>
+	</content>
+	<content id="dbclickaddSettopbox">
+		<VN>Nhấp chuột 2 lần để thêm STB vào phòng</VN>
+		<EN>Double click to add STB to room</EN>
+	</content>
+	<content id="addstb">
+		<VN>Thêm</VN>
+		<EN>Add</EN>
+	</content>
+	<content id="STB">
+		<VN>Thiết bi STB</VN>
+		<EN>Settop box</EN>
+	</content>
+	<content id="Guest">
+		<VN>Thông tin</VN>
+		<EN>Guest Info</EN>
+	</content>
+	<content id="Message">
+		<VN>Tin nhắn</VN>
+		<EN>Messages</EN>
+	</content>
+	<content id="SetUp">
+		<VN>Cấu hình</VN>
+		<EN>Setup</EN>
+	</content>
+	<content id="Bill">
+		<VN>Hóa đơn</VN>
+		<EN>Bill</EN>
+	</content>
+	<content id="Hotel">
+		<VN>Khách sạn</VN>
+		<EN>Hotel</EN>
+	</content>
+	<content id="Activites">
+		<VN>Hoạt Động</VN>
+		<EN>Activities</EN>
+	</content>
+	<content id="Attractions">
+		<VN>Điểm đến</VN>
+		<EN>Attractions</EN>
+	</content>
+	<content id="Promotions">
+		<VN>Khuyến mãi</VN>
+		<EN>Promotions</EN>
+	</content>
+	<content id="ExchangeRate">
+		<VN>Ngoại tệ</VN>
+		<EN>Exchange</EN>
+	</content>
+	<content id="Advertise">
+		<VN>Quảng cáo</VN>
+		<EN>Advertise</EN>
+	</content>
+	<content id="urllink">
+		<VN>Thông tin hàng không</VN>
+		<EN>Airline Information</EN>
+	</content>
+	<content id="Transport">
+		<VN>Vận Chuyển</VN>
+		<EN>Transport</EN>
+	</content>
+	<content id="FolioType">
+		<VN>Loại phòng</VN>
+		<EN>Room Type</EN>
+	</content>
+	<content id="NameGuest">
+		<VN>Tên khách</VN>
+		<EN>Name</EN>
+	</content>
+	<content id="CheckInDate">
+		<VN>Ngày đến</VN>
+		<EN>Checkin date</EN>
+	</content>
+	<content id="CheckOutDate">
+		<VN>Ngày đi</VN>
+		<EN>Checkout date</EN>
+	</content>
+	<content id="MainGuest">
+		<VN>Khách chính</VN>
+		<EN>Main Guest</EN>
+	</content>
+	<content id="Content">
+		<VN>Nội dung</VN>
+		<EN>Content</EN>
+	</content>
+	<content id="Sender">
+		<VN>Người gửi</VN>
+		<EN>Sender</EN>
+	</content>
+	<content id="subject_mess">
+		<VN>Tiêu đề</VN>
+		<EN>Subject</EN>
+	</content>
+	<content id="SendDate">
+		<VN>Ngày gửi</VN>
+		<EN>Date</EN>
+	</content>
+	<content id="Name">
+		<VN>Tên</VN>
+		<EN>Name</EN>
+	</content>
+	<content id="Price">
+		<VN>Giá</VN>
+		<EN>Price</EN>
+	</content>
+	<content id="Quantity">
+		<VN>Số lượng</VN>
+		<EN>Quantity</EN>
+	</content>
+	<content id="Amount">
+		<VN>Thành tiền</VN>
+		<EN>Amount</EN>
+	</content>
+	<content id="Unit">
+		<VN>Đơn vị</VN>
+		<EN>Unit</EN>
+	</content>
+	<content id="Currency">
+		<VN>Tiền tệ</VN>
+		<EN>Currency</EN>
+	</content>
+	<content id="Code_money">
+		<VN>Mã tiền tệ</VN>
+		<EN>Code</EN>
+	</content>
+	<content id="Buy">
+		<VN>Mua</VN>
+		<EN>Buy</EN>
+	</content>
+	<content id="Transfer">
+		<VN>Chuyển khoản</VN>
+		<EN>Transfer</EN>
+	</content>
+	<content id="Sell">
+		<VN>Bán</VN>
+		<EN>Sale</EN>
+	</content>
+	<content id="type">
+		<VN>Thể loại</VN>
+		<EN>Type</EN>
+	</content>
+	<content id="create_date">
+		<VN>Ngày tạo</VN>
+		<EN>Create Date</EN>
+	</content>
+	<content id="smartcard">
+		<VN>Mã STB</VN>
+		<EN>Smartcard</EN>
+	</content>
+	<content id="Address">
+		<VN>Địa chỉ</VN>
+		<EN>Address</EN>
+	</content>
+	<content id="Transport">
+		<VN>Phương tiện</VN>
+		<EN>Transport</EN>
+	</content>
+	<content id="label_cancel">
+		<VN>Hủy</VN>
+		<EN>Cancel</EN>
+	</content>
+	<content id="VOD">
+		<VN>VOD</VN>
+		<EN>VOD</EN>
+	</content>
+	<content id="lable_ok">
+		<VN>Đồng ý</VN>
+		<EN>OK</EN>
+	</content>
+	<content id="VodCntManager">
+		<VN>Quản lý nội dung phim</VN>
+		<EN>Video Service Management</EN>
+	</content>
+	<content id="AudioCntManager">
+		<VN>Quản lý nội dung nhạc</VN>
+		<EN>Music Service Management</EN>
+	</content>
+	<content id="LiveCntManager">
+		<VN>Quản lý nội dung liveTV</VN>
+		<EN>LiveTV Service Management</EN>
+	</content>
+	<content id="VodSvcManager">
+		<VN>Quản lý dịch vụ phim</VN>
+		<EN>Video Service Management</EN>
+	</content>
+	<content id="AudioCntManager">
+		<VN>Quản lý dịch vụ nhạc</VN>
+		<EN>Music Service Management</EN>
+	</content>
+	<content id="LiveCntManager">
+		<VN>Quản lý dịch vụ liveTV</VN>
+		<EN>LiveTV Service Management</EN>
+	</content>
+	<content id="List">
+		<VN>Danh sách</VN>
+		<EN>List</EN>
+	</content>
+	<content id="AddMovie">
+		<VN>Chuyển phim</VN>
+		<EN>Upload Movie</EN>
+	</content>
+	<content id="Subject">
+		<VN>Chủ đề</VN>
+		<EN>Subject</EN>
+	</content>
+	<content id="AddSubject">
+		<VN>Thêm chủ đề</VN>
+		<EN>Add Subject</EN>
+	</content>
+	<content id="EditSubject">
+		<VN>Sửa chủ đề</VN>
+		<EN>Edit Subject</EN>
+	</content>
+	<content id="DeleteSubject">
+		<VN>Xóa chủ đề</VN>
+		<EN>Delete Subject</EN>
+	</content>
+	<content id="ViewVideo">
+		<VN>Thông tin phim</VN>
+		<EN>View Movie</EN>
+	</content>
+	<content id="DeleteVideo">
+		<VN>Xóa phim</VN>
+		<EN>Delete Movie</EN>
+	</content>
+	<content id="SetTitle">
+		<VN>Thay đổi phụ đề</VN>
+		<EN>Set Subtitle</EN>
+	</content>
+	<content id="SetTrailer">
+		<VN>Thay đổi quảng cáo</VN>
+		<EN>Set Trailer</EN>
+	</content>
+	<content id="ChangeSubject">
+		<VN>Thay đổi chủ đề</VN>
+		<EN>Change subject</EN>
+	</content>
+	<content id="ChangeVisible">
+		<VN>Thay đổi trạng thái</VN>
+		<EN>Change status</EN>
+	</content>
+	<content id="changeimage">
+		<VN>thay đổi hình</VN>
+		<EN>to change image</EN>
+	</content>
+	<content id="setNewReleases">
+		<VN>Cập nhật phiên bản mới</VN>
+		<EN>Set New Releases</EN>
+	</content>
+	<content id="Title">
+		<VN>Tên phim</VN>
+		<EN>Title</EN>
+	</content>
+	<content id="movies_name">
+		<VN>Tên phim</VN>
+		<EN>Movies Name</EN>
+	</content>
+	<content id="Actors">
+		<VN>Diễn viên</VN>
+		<EN>Actors</EN>
+	</content>
+	<content id="Director">
+		<VN>Đạo diễn</VN>
+		<EN>Director</EN>
+	</content>
+	<content id="Trailer">
+		<VN>Phim quảng cáo</VN>
+		<EN>Trailer</EN>
+	</content>
+	<content id="Subtitle">
+		<VN>Phụ đề</VN>
+		<EN>Subtitle</EN>
+	</content>
+	<content id="Status">
+		<VN>Trạng thái</VN>
+		<EN>Status</EN>
+	</content>
+	<content id="NewReleases">
+		<VN>Phiên bản mới</VN>
+		<EN>New Releases</EN>
+	</content>
+	<content id="Name">
+		<VN>Tên</VN>
+		<EN>Name</EN>
+	</content>
+	<content id="Language">
+		<VN>Ngôn ngữ</VN>
+		<EN>Language</EN>
+	</content>
+	<content id="OK">
+		<VN>Đồng ý</VN>
+		<EN>OK</EN>
+	</content>
+	<content id="Cancel">
+		<VN>Hủy</VN>
+		<EN>Cancel</EN>
+	</content>
+	<content id="Delete">
+		<VN>Xóa</VN>
+		<EN>Delete</EN>
+	</content>
+	<content id="image_">
+		<VN>Hình</VN>
+		<EN>Image</EN>
+	</content>
+	<content id="Description">
+		<VN>Mô tả</VN>
+		<EN>Description</EN>
+	</content>
+	<content id="FilePath">
+		<VN>Đường dẫn</VN>
+		<EN>Path</EN>
+	</content>
+	<content id="Price_movie">
+		<VN>Giá phim</VN>
+		<EN>Price</EN>
+	</content>
+	<content id="MovieInfor">
+		<VN>Thông tin phim</VN>
+		<EN>Moive Information</EN>
+	</content>
+	<content id="MovieInfor">
+		<VN>Thông tin phim</VN>
+		<EN>Moive Information</EN>
+	</content>
+	<content id="CurrentSubject">
+		<VN>Chủ đề hiện tại</VN>
+		<EN>Current subject</EN>
+	</content>
+	<content id="select_subject">
+		<VN>Chọn chủ đề</VN>
+		<EN>Select Subject</EN>
+	</content>
+	<content id="NewSubject">
+		<VN>Chủ đề mới</VN>
+		<EN>New subject</EN>
+	</content>
+	<content id="lyric">
+		<VN>Lời bài hát</VN>
+		<EN>Lyric</EN>
+	</content>
+	<content id="AudioTitle">
+		<VN>Tên bài hát</VN>
+		<EN>Title</EN>
+	</content>
+	<content id="Singer">
+		<VN>Ca sỹ</VN>
+		<EN>Singer</EN>
+	</content>
+	<content id="edit_song">
+		<VN>Sửa bài hát</VN>
+		<EN>Edit Song</EN>
+	</content>
+	<content id="Album">
+		<VN>Tập nhạc</VN>
+		<EN>Album</EN>
+	</content>
+	<content id="DeleteSong">
+		<VN>Xóa bài hát</VN>
+		<EN>Delete Song</EN>
+	</content>
+	<content id="DoubleClickToAdd">
+		<VN>Thêm phim</VN>
+		<EN>Double click to add movie</EN>
+	</content>
+	<content id="detailMove">
+		<VN>Chi tiết phim</VN>
+		<EN>Detail Movies</EN>
+	</content>
+	<content id="delete_move">
+		<VN>Xóa phim</VN>
+		<EN>Delete Movies</EN>
+	</content>
+	<content id="set_subtitle">
+		<VN>Đặt phụ đề</VN>
+		<EN>Set Subtitle</EN>
+	</content>
+	<content id="set_trailer">
+		<VN>Đặt trailer</VN>
+		<EN>Set trailer</EN>
+	</content>
+	<content id="not_set">
+		<VN>Chưa Có</VN>
+		<EN>Not set</EN>
+	</content>
+	<content id="info_movie">
+		<VN>Thông tin phim</VN>
+		<EN>Information Movies</EN>
+	</content>
+	<content id="movie_add_service">
+		<VN>Thêm phim vào dịch vụ</VN>
+		<EN>Add movies to service</EN>
+	</content>
+	<content id="click_add">
+		<VN>Chọn phim để thêm</VN>
+		<EN>Double click to add to Service</EN>
+	</content>
+	<content id="click_remove">
+		<VN>Nhấp 2 lần để xóa</VN>
+		<EN>Double click remove Service</EN>
+	</content>
+	<content id="ctn_subject">
+		<VN>Chủ đề nội dung</VN>
+		<EN>Content Subject</EN>
+	</content>
+	<content id="srv_subject">
+		<VN>Chủ đề dịch vụ</VN>
+		<EN>Service Content</EN>
+	</content>
+	<content id="pricelarge">
+		<VN>Giá lớn</VN>
+		<EN>Price Large</EN>
+	</content>
+	<content id="pricesmall">
+		<VN>Giá nhỏ</VN>
+		<EN>Price Small</EN>
+	</content>
+	<content id="price_pms">
+		<VN>Giá</VN>
+		<EN>Price</EN>
+	</content>
+	<content id="housekeeping">
+		<VN>Dịch vụ phòng</VN>
+		<EN>House Keeping</EN>
+	</content>
+	<content id="login">
+		<VN>Đăng nhập</VN>
+		<EN>Login</EN>
+	</content>
+	<content id="user">
+		<VN>Người dùng</VN>
+		<EN>User Name</EN>
+	</content>
+	<content id="restaurant">
+		<VN>Nhà hàng</VN>
+		<EN>Restaurant</EN>
+	</content>
+	<content id="dinning">
+		<VN>Ẩm thực</VN>
+		<EN>Dining</EN>
+	</content>
+	<content id="mod_toservice">
+		<VN>nhấp 2 lần để thêm vào dịch vụ</VN>
+		<EN>Double click to add to Service</EN>
+	</content>
+	<content id="pls_name">
+		<VN>Vui lòng nhập tên.</VN>
+		<EN>Please select Name.</EN>
+	</content>
+	<content id="pls_address">
+		<VN>Vui lòng điền địa chỉ</VN>
+		<EN>Please select address.</EN>
+	</content>
+	<content id="pls_ratename">
+		<VN>Vui lòng điền tên tiền tệ</VN>
+		<EN>Please input rate name.</EN>
+	</content>
+	<content id="ple_ratecode">
+		<VN>Vui lòng điền mã tiền tệ.</VN>
+		<EN>Please input rate code.</EN>
+	</content>
+	<content id="pls_ratesell">
+		<VN>Vui lòng nhập giá bán tiền tệ.</VN>
+		<EN>please input sell.</EN>
+	</content>
+	<content id="pls_ratetranfer">
+		<VN>Vui lòng nhập chuyển khoản</VN>
+		<EN>Please input tranfer.</EN>
+	</content>
+	<content id="pls_ratebuy">
+		<VN>Vui lòng nhập giá mua.</VN>
+		<EN>Please input buy.</EN>
+	</content>
+	<content id="pls_select">
+		<VN>Vui lòng chọn thể loại</VN>
+		<EN>Please select type.</EN>
+	</content>
+	<content id="pls_inputprice">
+		<VN>Vui lòng nhập giá sản phẩm</VN>
+		<EN>Please input price .</EN>
+	</content>
+	<content id="pls_price_small">
+		<VN>Vui lòng nhập giá Sản phẩm nhỏ.</VN>
+		<EN>Please input price small.</EN>
+	</content>
+	<content id="pls_price_large">
+		<VN>Vui lòng nhập giá Sản phẩm lớn</VN>
+		<EN>Please input price large.</EN>
+	</content>
+	<content id="ple_namevod">
+		<VN>Vui lòng nhập tên phim</VN>
+		<EN>please input name of movies.</EN>
+	</content>
+	<content id="pls_selectsubject">
+		<VN>Vui lòng chọn chủ đề !</VN>
+		<EN>Please select subject !.</EN>
+	</content>
+	<content id="pls_price_input">
+		<VN>Vui lòng nhập giá.</VN>
+		<EN>Please input price</EN>
+	</content>
+	<content id="pls_selectmovies">
+		<VN>Vui lòng chọn phim để thêm.</VN>
+		<EN>Please select movies.</EN>
+	</content>
+	<content id="calenda_now">
+		<VN>Ngày kết thúc không vược hôm nay.</VN>
+		<EN>Today is maximun day.</EN>
+	</content>
+	<content id="notrole">
+		<VN>Bạn không có quyền truy cập</VN>
+		<EN>You do not have permission to access </EN>
+	</content>
+	<content id="roomcode">
+		<VN>Mã phòng</VN>
+		<EN>Room Code</EN>
+	</content>
+	<content id="room_checkout">
+		<VN>Phòng đang trống</VN>
+		<EN>Room is checkout.</EN>
+	</content>
+	<content id="ifo_notdelsub">
+		<VN>Chủ đề không xóa được.</VN>
+		<EN>This subject is not allowed to delete.</EN>
+	</content>
+	<content id="static_film">
+		<VN>Thống kê phim</VN>
+		<EN>Statistics of film</EN>
+	</content>
+
+	<content id="static_audio">
+		<VN>Thống kê nhạc</VN>
+		<EN>Statistics of audio</EN>
+	</content>
+	<content id="static_livetv">
+		<VN>Thống kê truyền hình</VN>
+		<EN>Statistics of livetv</EN>
+	</content>
+
+	<content id="static_genres">
+		<VN>Thống kê dịch vụ theo thể loại</VN>
+		<EN>Statistics genres</EN>
+	</content>
+	<content id="static_of_movies">
+		<VN>Thống kê dịch vụ phim</VN>
+		<EN>Statistics of movies</EN>
+	</content>
+
+	<content id="static_of_audios">
+		<VN>Thống kê dịch vụ nhạc</VN>
+		<EN>Statistics of audios</EN>
+	</content>
+	<content id="static_of_livetvs">
+		<VN>Thống kê dịch vụ truyền hình</VN>
+		<EN>Statistics of livetv</EN>
+	</content>
+
+	<content id="transportstatic">
+		<VN>Thống kê vận chuyển</VN>
+		<EN>Static transport</EN>
+	</content>
+	<content id="reporttype">
+		<VN>Loại báo cáo</VN>
+		<EN>Report type</EN>
+	</content>
+	<content id="select_year">
+		<VN>Chọn năm</VN>
+		<EN>Select year</EN>
+	</content>
+	<content id="select_month">
+		<VN>Chọn tháng</VN>
+		<EN>Select month</EN>
+	</content>
+	<content id="to_date">
+		<VN>Đến ngày</VN>
+		<EN>To date</EN>
+	</content>
+	<content id="from_date">
+		<VN>Ngày bắt đầu</VN>
+		<EN>From date</EN>
+	</content>
+	<content id="Monthly">
+		<VN>Tháng</VN>
+		<EN>Monthly</EN>
+	</content>
+	<content id="static_month">
+		<VN>Thống kê dịch vụ theo hàng tháng</VN>
+		<EN>Monthly Statistics</EN>
+	</content>
+	<content id="Weekly">
+		<VN>Tuần</VN>
+		<EN>Weekly</EN>
+	</content>
+	<content id="static_week">
+		<VN>Thống kê dịch vụ theo hàng tuần</VN>
+		<EN>Weekly Statistics</EN>
+	</content>
+	<content id="numberl_service">
+		<VN>Số lần sử dụng dịch vụ</VN>
+		<EN>Number of times for using the service</EN>
+	</content>
+	<content id="static_roomservice">
+		<VN>Thống kê dịch vụ phòng</VN>
+		<EN>Room service Statistics</EN>
+	</content>
+	<content id="note_report">
+		<VN>Đây là bảng thống kê về số lượng sử dụng dịch vụ cho mỗi tháng.Sau
+			mỗi lần chọn xem được tính 1 lần</VN>
+		<EN>Note: This is a statistical quantity for each month are using the
+			service or viewing movie.Just be counted at once after being chosing
+			to view.</EN>
+	</content>
+	<content id="listwaitingvod">
+		<VN>Danh sách phim chờ thêm</VN>
+		<EN>List movies </EN>
+	</content>
+	<content id="listaddvod">
+		<VN>Danh sách phim đã thêm</VN>
+		<EN>List movie completed</EN>
+	</content>
+	<content id="SynVodStb">
+		<VN>Đồng bộ phim</VN>
+		<EN>Syn Vod</EN>
+	</content>
+	<content id="exist_movie">
+		<VN>Phim đã được thêm</VN>
+		<EN>This movie exist.</EN>
+	</content>
+	<content id="coord_x">
+		<VN>Toạ độ X</VN>
+		<EN>X</EN>
+	</content>
+	<content id="coord_y">
+		<VN>Toạ độ Y</VN>
+		<EN>Y</EN>
+	</content>
+	<content id="update">
+		<VN>Cập nhật</VN>
+		<EN>Update</EN>
+	</content>
+	<content id="search">
+		<VN>Tìm kiếm</VN>
+		<EN>Search</EN>
+	</content>
+	<content id="distance">
+		<VN>Khoảng cách</VN>
+		<EN>Distance</EN>
+	</content>
+	<content id="add">
+		<VN>Thêm mới</VN>
+		<EN>Add</EN>
+	</content>
+	<content id="checkName">
+		<VN>Chưa nhập tên</VN>
+		<EN>Name is empty</EN>
+	</content>
+	<content id="checkDistance">
+		<VN>Chưa nhập khoảng cách</VN>
+		<EN>Distance is empty</EN>
+	</content>
+	<content id="checkX">
+		<VN>Chưa nhập toạ độ X</VN>
+		<EN>X is empty</EN>
+	</content>
+	<content id="checkY">
+		<VN>Chưa nhập toạ độ Y</VN>
+		<EN>Y is empty</EN>
+	</content>
+	<content id="checkAdd">
+		<VN>Thêm bị lỗi</VN>
+		<EN>Add failed</EN>
+	</content>
+	<content id="checkCoord">
+		<VN>Thay đổi thông tin tọa độ ( x,y)</VN>
+		<EN>Update coordinates</EN>
+	</content>
+	<content id="changLocation">
+		<VN>Thay đổi thông tin vị trí</VN>
+		<EN>Update Location</EN>
+	</content>
+	<content id="checkUpdate">
+		<VN>Cập nhật bị lỗi</VN>
+		<EN>Updated failed</EN>
+	</content>
+	<content id="changeWay">
+		<VN>Tìm đường</VN>
+		<EN>Way</EN>
+	</content>
+	<content id="changeMap">
+		<VN>Vị trí</VN>
+		<EN>My Location</EN>
+	</content>
+	<content id="changeLocation">
+		<VN>Địa điểm</VN>
+		<EN>Locations</EN>
+	</content>
+	<content id="changeMapTap">
+		<VN>Thông tin khách sạn</VN>
+		<EN>Hotel Information</EN>
+	</content>
+	<content id="changeLocationTap">
+		<VN>Thông tin đia điểm</VN>
+		<EN>Location Information</EN>
+	</content>
+	<content id="no">
+		<VN>No</VN>
+		<EN>No</EN>
+	</content>
+	<content id="department">
+		<VN>Phòng ban</VN>
+		<EN>Department</EN>
+	</content>
+	<content id="createDate">
+		<VN>Ngày tạo</VN>
+		<EN>CreateDate</EN>
+	</content>
+	<content id="active">
+		<VN>Trạng thái</VN>
+		<EN>Active</EN>
+	</content>
+	<content id="totalUser">
+		<VN>Tổng số Users</VN>
+		<EN>List of Users</EN>
+	</content>
+	<content id="createNewUser">
+		<VN>Tạo mới User</VN>
+		<EN>Create new user</EN>
+	</content>
+	<content id="account">
+		<VN>Tài khoản</VN>
+		<EN>Account</EN>
+	</content>
+	<content id="password">
+		<VN>Mật khẩu</VN>
+		<EN>Password</EN>
+	</content>
+	<content id="cfPassword">
+		<VN>Nhập lại mật khẩu</VN>
+		<EN>Re-enter Password</EN>
+	</content>
+	<content id="checkAccount">
+		<VN>Tài khoản chưa nhập</VN>
+		<EN>Account is empty</EN>
+	</content>
+	<content id="checkPass">
+		<VN>Chưa nhập mật khẩu</VN>
+		<EN>Password is empty</EN>
+	</content>
+	<content id="checkcfPass">
+		<VN>Chưa nhập lại mật khẩu</VN>
+		<EN>Confirm Password is empty</EN>
+	</content>
+	<content id="checkMachPass">
+		<VN>Mật khẩu không khớp</VN>
+		<EN>Password do not match</EN>
+	</content>
+	<content id="userInfo">
+		<VN>Thông tin User</VN>
+		<EN>User Information</EN>
+	</content>
+	<content id="checkDelete">
+		<VN>Xoá bị lỗi </VN>
+		<EN>Deleted failed</EN>
+	</content>
+	<content id="checkAddEx">
+		<VN>Tài khoản bị trùng </VN>
+		<EN>Account exists!</EN>
+	</content>
+	<content id="checkDeleteFrom">
+		<VN>Bạn có muốn xoá không !</VN>
+		<EN>Are you sure delete !</EN>
+	</content>
+	<content id="NewSubjectMenu">
+		<VN>Tạo nhóm mới</VN>
+		<EN>Create New Group</EN>
+	</content>
+	<content id="checkAddMenuEx">
+		<VN>Tên nhóm bị trùng</VN>
+		<EN>Group exists!</EN>
+	</content>
+	<content id="checkUpdateMenuEx">
+		<VN>Cập nhật nhóm</VN>
+		<EN>Update group</EN>
+	</content>
+	<content id="NamePms">
+		<VN>Gán quyền</VN>
+		<EN>Group Permission</EN>
+	</content>
+	<content id="errorStatus">
+		<VN>Không thành công</VN>
+		<EN>Change status error</EN>
+	</content>
+	<content id="NameGrant">
+		<VN>Gán quyền</VN>
+		<EN>Grant permission</EN>
+	</content>
+	<content id="NameAssigned">
+		<VN>Quyền được gán</VN>
+		<EN>Role is assigned</EN>
+	</content>
+	<content id="NameNotAssigned">
+		<VN>Quyền chưa được gán</VN>
+		<EN>Role not is assigned</EN>
+	</content>
+	<content id="AddUser">
+		<VN>Thêm User</VN>
+		<EN>Add User</EN>
+	</content>
+	<content id="AccountLength">
+		<VN>Tài khoản chỉ tối đa 6 ký tự</VN>
+		<EN>Account only up to 6 characters</EN>
+	</content>
+	<content id="group">
+		<VN>Nhóm</VN>
+		<EN>Group</EN>
+	</content>
+	<content id="list">
+		<VN>Danh sách</VN>
+		<EN>List</EN>
+	</content>
+	<content id="changegroup">
+		<VN>Thay đổi nhóm</VN>
+		<EN>Change group</EN>
+	</content>
+	<content id="addgroup">
+		<VN>Thêm nhóm</VN>
+		<EN>Add group</EN>
+	</content>
+	<content id="creategroup">
+		<VN>Thêm nhóm mới</VN>
+		<EN>Create new group</EN>
+	</content>
+	<content id="deletegroup">
+		<VN>Xoá nhóm</VN>
+		<EN>Delete group</EN>
+	</content>
+	<content id="updategroup">
+		<VN>Sửa nhóm</VN>
+		<EN>Edit group</EN>
+	</content>
+	<content id="pmsgroup">
+		<VN>Gán quyền nhóm</VN>
+		<EN>Group permission</EN>
+	</content>
+	<content id="grantPms">
+		<VN>Gán quyền</VN>
+		<EN>Grant permission</EN>
+	</content>
+	<content id="detailuser">
+		<VN>Xem chi tiết</VN>
+		<EN>Detail user</EN>
+	</content>
+	<content id="deleteuserg">
+		<VN>Xoá user khỏi nhóm</VN>
+		<EN>Delete user from group</EN>
+	</content>
+	<content id="deleteusers">
+		<VN>Xoá user khỏi hệ thống</VN>
+		<EN>Delete user from system</EN>
+	</content>
+	<content id="changeStatus">
+		<VN>Thay đổi trạng thái</VN>
+		<EN>Change status</EN>
+	</content>
+	<content id="changegroupPms">
+		<VN>Gán nhóm cho user</VN>
+		<EN>Change group</EN>
+	</content>
+	<content id="userNameGroup">
+		<VN>Tên đăng nhập</VN>
+		<EN>User name</EN>
+	</content>
+	<content id="NameGroupPMS">
+		<VN>Nhóm quyền</VN>
+		<EN>Group</EN>
+	</content>
+	<content id="changePass">
+		<VN>Thay đổi mật khẩu</VN>
+		<EN>Change password</EN>
+	</content>
+	<content id="code">
+		<VN>Mã</VN>
+		<EN>Code</EN>
+	</content>
+	<content id="liveTV">
+		<VN>liveTV</VN>
+		<EN>liveTV</EN>
+	</content>
+	<content id="addLiveTv">
+		<VN>Thêm kênh</VN>
+		<EN>Add LiveTV</EN>
+	</content>
+	<content id="deleteLiveTv">
+		<VN>Xoá kênh</VN>
+		<EN>Delete LiveTV</EN>
+	</content>
+	<content id="updateLiveTv">
+		<VN>Sửa kênh</VN>
+		<EN>Edit LiveTV</EN>
+	</content>
+	<content id="detailLiveTv">
+		<VN>Xem chi tiết</VN>
+		<EN>Detail LiveTV</EN>
+	</content>
+	<content id="editLiveTV">
+		<VN>Sửa LiveTV</VN>
+		<EN>Edit Live</EN>
+	</content>
+	<content id="checkEditEx">
+		<VN>Tên đã tồn tại </VN>
+		<EN>Name exists!</EN>
+	</content>
+	<content id="serviceName">
+		<VN>Dịch vụ</VN>
+		<EN>Service name</EN>
+	</content>
+	<content id="content">
+		<VN>Nội dung </VN>
+		<EN>Content</EN>
+	</content>
+	<content id="contentSubject">
+		<VN>Chủ đề phía dịch vụ</VN>
+		<EN>Service Subject</EN>
+	</content>
+	<content id="total">
+		<VN>Tổng</VN>
+		<EN>Total</EN>
+	</content>
+	<content id="changeIma">
+		<VN>để thay đổi hình</VN>
+		<EN>to change image</EN>
+	</content>
+	<content id="dbclickaddchannel">
+		<VN> Nhấp chuột 2 lần để thêm kênh</VN>
+		<EN>Double click to add channel</EN>
+	</content>
+	<content id="dbclickremovechannel">
+		<VN>Nhấp chuột 2 lần để gỡ kênh </VN>
+		<EN>Double click to remove channel</EN>
+	</content>
+	<content id="subjectLength">
+		<VN>Chủ đề chỉ tối đa 30 ký tự</VN>
+		<EN>Subject only up to 30 characters</EN>
+	</content>
+	<content id="subjectName">
+		<VN>Xin vui lòng nhập tên</VN>
+		<EN>Please input subject name</EN>
+	</content>
+	<content id="subjectInfo">
+		<VN>Thông tin chủ đề</VN>
+		<EN>Subject Infomation</EN>
+	</content>
+	<content id="subjectInfoLive">
+		<VN>Thông tin kênh</VN>
+		<EN>Livetv Information</EN>
+	</content>
+	<content id="selectItem">
+		<VN>Xin vui lòng chọn item</VN>
+		<EN>Please select item !</EN>
+	</content>
+	<content id="activeanddeactive">
+		<VN>Kích hoạt/Chưa kích hoạt</VN>
+		<EN>Active/Deactive</EN>
+	</content>
+	<content id="running">
+		<VN>Đang chạy</VN>
+		<EN>Running</EN>
+	</content>
+	<content id="stop">
+		<VN>Dừng</VN>
+		<EN>Stopped</EN>
+	</content>
+	<content id="frompage">
+		<VN>Từ trang</VN>
+		<EN>From page</EN>
+	</content>
+	<content id="topage">
+		<VN>Đến trang </VN>
+		<EN>To page</EN>
+	</content>
+	<content id="processall">
+		<VN>Đồng bộ tất cả</VN>
+		<EN>Process all</EN>
+	</content>
+	<content id="view">
+		<VN>Xem</VN>
+		<EN>View</EN>
+	</content>
+	<content id="date">
+		<VN>Ngày</VN>
+		<EN>Date</EN>
+	</content>
+	<content id="start">
+		<VN>Chạy</VN>
+		<EN>Start</EN>
+	</content>
+	<content id="stop">
+		<VN>Dừng</VN>
+		<EN>Stop</EN>
+	</content>
+	<content id="configtimeout">
+		<VN>Cấu hình timeout</VN>
+		<EN>Timeout Config</EN>
+	</content>
+	<content id="checkVideo">
+		<VN>Xem phim</VN>
+		<EN>Check video</EN>
+	</content>
+	<content id="checkAudio">
+		<VN>Nghe nhạc</VN>
+		<EN>Check audio</EN>
+	</content>
+	<content id="checkLinkLiveTV">
+		<VN>Kiểm tra link</VN>
+		<EN>Check LiveTV link</EN>
+	</content>
+	<content id="serviceSystem">
+		<VN>Service System</VN>
+		<EN>Service System</EN>
+	</content>
+	<content id="action">
+		<VN>Mã xử lý</VN>
+		<EN>Action</EN>
+	</content>
+	<content id="detailApk">
+		<VN>Apk detail</VN>
+		<EN>Apk detail</EN>
+	</content>
+	<content id="updateorder">
+		<VN>Update order</VN>
+		<EN>Update order</EN>
+	</content>
+	<content id="updateapkvalue">
+		<VN>Update APK</VN>
+		<EN>Update APK</EN>
+	</content>
+	<content id="updatestatus">
+		<VN>Update status</VN>
+		<EN>Update status</EN>
+	</content>
+	<content id="updateservice">
+		<VN>Update service</VN>
+		<EN>Update service</EN>
+	</content>
+	<content id="servicesysteminformation">
+		<VN>Service System Information</VN>
+		<EN>Service System Information</EN>
+	</content>
+	<content id="serviceorder">
+		<VN>Thứ tự</VN>
+		<EN>Order</EN>
+	</content>
+	<content id="numberonly">
+		<VN>Chỉ chấp nhận số</VN>
+		<EN>Please enter number only</EN>
+	</content>
+	<content id="daemon">
+		<VN>Dịch vụ</VN>
+		<EN>Daemon</EN>
+	</content>
+	<content id="xemlog">
+		<VN>Log</VN>
+		<EN>Log</EN>
+	</content>
+	<content id="notinsubject">
+		<VN>Tất cả chủ đề</VN>
+		<EN>All subject </EN>
+	</content>
+	<content id="shoppingtitle">
+		<VN>Mua sắm</VN>
+		<EN>Shopping</EN>
+	</content>
+	<content id="shoppingtableft">
+		<VN>Mua sắm</VN>
+		<EN>Shopping</EN>
+	</content>
+</lang>

@@ -24,4 +24,20 @@ public class WelcomeMediaService {
 		return welcomeMediaDao.deleteWelcomeMedia(id);
 	}
 
+	public List<WelcomeMediaModel> getWelcomeMediaGroup(String type, String idgroup) {
+		return welcomeMediaDao.getWelcomeMediaGroup(type, idgroup);
+	}
+
+	public int addWelcomeMediaGroup(WelcomeMediaModel wlc) {
+		return welcomeMediaDao.addWelcomeMediaGroup(wlc);
+	}
+
+	public int editWelcomeMediaGroup(WelcomeMediaModel wlc) {
+		return welcomeMediaDao.editWelcomeMediaGroup(wlc);
+	}
+
+	public int deleteWelcomeMediaGroup(String id, String idgroup) {
+		return welcomeMediaDao.deleteWelcomeMediaGroup(id, idgroup);
+	}
+
 }

@@ -87,6 +87,25 @@ public class PMSFolioController extends HttpServlet {
 			map = pmsFolioService.getListFolioPreview();
 			response.getWriter().write(new Gson().toJson(map));
 		}
+
+		if (action.equals("getlistgroup")) {
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "getlistgroup", "none");
+
+			List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
+			list = pmsFolioService.getListGroup();
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getfoliogroup")) {
+			String id = request.getParameter("idgroup");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "getfoliogroup", "groupid,,," + id);
+
+			List<PMSFolioRoomModel> list = new ArrayList<PMSFolioRoomModel>();
+			list = pmsFolioService.getListFolioGroup(id);
+			response.getWriter().write(new Gson().toJson(list));
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -175,12 +194,54 @@ public class PMSFolioController extends HttpServlet {
 		}
 
 		if (action.equals("publicpreview")) {
-
 			LogUtil.logControl(PMSFolioController.class.toString(), "publicpreview", "none");
 
 			int rs = pmsFolioService.publicPreview();
 			out.println(rs);
 		}
+
+		if (action.equals("addgroup")) {
+			String name = request.getParameter("name");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "setroompreview", "name,,," + name);
+
+			int rs = pmsFolioService.addGroup(name);
+			out.println(rs);
+		}
+
+		if (action.equals("changefoliogroup")) {
+			String leftGroup = request.getParameter("leftGroup");
+			String listLeft = request.getParameter("listLeft");
+			String rightGroup = request.getParameter("rightGroup");
+			String listRight = request.getParameter("listRight");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "setroompreview", "leftGroup,,," + leftGroup + ",,,listLeft,,,"
+					+ listLeft + ",,,rightGroup,,," + rightGroup + ",,,listRight,,," + listRight);
+
+			int rs = pmsFolioService.changeFolioGroup(leftGroup, listLeft, rightGroup, listRight);
+			out.println(rs);
+		}
+
+		if (action.equals("editgroup")) {
+			String id = request.getParameter("idgroup");
+			String name = request.getParameter("name");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "setroompreview", "id,,," + id + ",,,name,,," + name);
+
+			int rs = pmsFolioService.editGroup(id, name);
+			out.println(rs);
+		}
+
+		if (action.equals("deletegroup")) {
+			String id = request.getParameter("idgroup");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "setroompreview", "id,,," + id);
+
+			int rs = pmsFolioService.deleteGroup(id);
+			out.println(rs);
+		}
+		
+		
 	}
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- configuration file for LogBack (slf4J implementation) See here for more 
+	details: http://gordondickens.com/wordpress/2013/03/27/sawing-through-the-java-loggers/ -->
+<configuration scan="true" scanPeriod="10 seconds">
+
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+
+	<jmxConfigurator />
+
+	<property name="USER_HOME" value="logs" />
+	<timestamp key="Date" datePattern="dd-MM-yyyy" />
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>${USER_HOME}/logback_${Date}.log</file>
+		<encoder>
+			<outputPatternAsHeader>true</outputPatternAsHeader>
+			<pattern>[%p] [%d] [%thread] [%c] - %msg%n </pattern>
+		</encoder>
+		<append>false</append>
+	</appender>
+
+	<!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter"> <level>DEBUG</level> 
+		</filter> -->
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<!-- <onMatch>ACCEPT</onMatch> -->
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<encoder>
+			<outputPatternAsHeader>true</outputPatternAsHeader>
+			<pattern>[%p] [%d] [%thread] [%-5c] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level = "DEBUG">
+		<appender-ref ref="FILE" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="EMAIL" />
+	</root>
+
+</configuration>

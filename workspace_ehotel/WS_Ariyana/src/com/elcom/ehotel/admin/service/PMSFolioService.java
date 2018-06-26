@@ -41,7 +41,7 @@ public class PMSFolioService {
 		mess.setTop(UnicodeConverter.encodeUnicode(mess.getTop()));
 		return pmsFolioDao.addMessageFolio(mess);
 	}
-	
+
 	public int editMessageFolio(PMSFolioMessageModel mess) {
 		mess.setTitle(UnicodeConverter.encodeUnicode(mess.getTitle()));
 		mess.setContent(UnicodeConverter.encodeUnicode(mess.getContent()));
@@ -65,12 +65,16 @@ public class PMSFolioService {
 	public List<HashMap<String, String>> getListSmartcard() {
 		return pmsFolioDao.getListSmartcard();
 	}
-	
+
 	public List<OrderModel> getListOrder(String folionum, String from, String to) {
 		return pmsFolioDao.getListOrder(folionum, from, to);
 	}
-	
+
 	public int changeStatusReboot(String serinumber) {
 		return pmsFolioDao.changeStatusReboot(serinumber);
+	}
+
+	public int updateStatusTV(String serinumber, String status) {
+		return pmsFolioDao.updateStatusTV(serinumber, status);
 	}
 }

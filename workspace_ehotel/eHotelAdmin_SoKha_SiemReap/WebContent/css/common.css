@@ -1,0 +1,202 @@
+.menu {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	width: 236;
+	height: auto;
+}
+
+.menu_header {
+	width: 100%;
+	height: 44px;
+	background: transparent url("../images/menu_header.png") no-repeat
+		center top;
+}
+
+.menu_center {
+	width: 236;
+	min-height: 200px;
+	height: auto;
+	float: left;
+	background: transparent url("../images/menu_center.png") repeat-y center
+		top;
+}
+
+.menu_bottom {
+	float: left;
+	width: 100%;
+	height: 7;
+	background: transparent url("../images/menu_bottom.png") no-repeat
+		center top;
+}
+
+.div_contextMenu {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	z-index: 1000;
+	background: transparent url("../images/contextmenu.png") repeat-x left
+		top;
+	background-color: white;
+	border: 1px solid gray;
+}
+
+.div_contextMenu ul {
+	width: 200px;
+	float: left;
+	padding-left: 0px;
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+.div_contextMenu li {
+	height: 35px;
+	width: 100%;
+	list-style-type: none;
+	float: left;
+	margin-left: 10;
+}
+
+.div_contextMenu li a {
+	color: #A7800A;
+	cursor: pointer;
+	float: left;
+	margin-left: 25px;
+	margin-top: 8px;
+	text-align: left;
+	width: 100%;
+}
+
+.div_menuitem {
+	color: #A7800A;
+	margin-top: 8px;
+	float: left;
+	margin-left: 35px;
+	cursor: pointer;
+}
+
+.div_menuitemover {
+	color: blue;
+	font-weight: 800;
+}
+
+.icon_contextmenuAdd {
+	background: transparent url("../icon/16-square-green-add.png") no-repeat
+		left center;
+}
+
+.icon_contextmenuDel {
+	background: transparent url("../icon/16-square-green-remove.png")
+		no-repeat left center;
+}
+
+.icon_contextmenuEdit {
+	background: transparent url("../icon/edit.png") no-repeat left center;
+}
+
+.icon_contextmenuUpdate {
+	background: transparent url("../icon/updateota.png") no-repeat left
+		center;
+}
+
+.icon_contextmenuplay {
+	background: transparent url("../icon/16-square-green-add.png") no-repeat
+		left center;
+}
+
+.icon_contextmenuinfo {
+	background: transparent url("../icon/green_info .png") no-repeat left
+		center;
+}
+
+.icon_contextmenucopy {
+	background: transparent url("../icon/app_double.png") no-repeat left
+		center;
+}
+
+.icon_NewReleased1 {
+	background: transparent url("../icon/156.png") no-repeat left center;
+}
+
+.icon_NewReleased2 {
+	background: transparent url("../icon/159.png") no-repeat left center;
+}
+
+.icon_visibility1 {
+	background: transparent url("../icon/16-square-green.png") no-repeat
+		left center;
+}
+
+.icon_resetpin {
+	background: transparent url("../icon/reset_pin.jpg") no-repeat left
+		center;
+}
+
+.icon_visibility2 {
+	background: transparent url("../icon/16-square-red.png") no-repeat left
+		center;
+}
+
+.icon_send_message {
+	background: transparent url("../icon/send-message.png") no-repeat left
+		center;
+}
+
+.div_buton {
+	width: 60px;
+	margin-left: 10px;
+	float: left;
+	font-weight: 500;
+}
+
+.tab_menu {
+	list-style-type: none;
+	width: 230px;
+	height: 30px;
+	margin-top: 16px;
+}
+
+.tab_menu_item {
+	color: #ffffff;
+	font-weight: 600;
+	float: left;
+	height: 100%;
+	float: left;
+	width: 105px;
+	margin-left: 2px;
+	background: transparent url("../images/tab_unsel.png") no-repeat center
+		bottom;
+	cursor: pointer;
+}
+
+.tab_menu_item_sel {
+	color: gray;
+	font-weight: 600;
+	float: left;
+	height: 100%;
+	float: left;
+	width: 105px;
+	margin-left: 2px;
+	background: transparent url("../images/tab_sel.png") no-repeat center
+		bottom;
+	cursor: pointer;
+}
+
+.textbox_input {
+	border: 1px solid #DDDDDD;
+	height: 20px;
+	float: left;
+}
+
+.div_waiting {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	background: transparent url("../images/loading.gif") no-repeat center;
+}
+
+select.icon-menu option {
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	padding-left: 30px;
+}

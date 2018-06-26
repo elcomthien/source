@@ -7,6 +7,7 @@ import com.elcom.ehotel.admin.dao.SystemDao;
 import com.elcom.ehotel.admin.model.SystemAdvertiseModel;
 import com.elcom.ehotel.admin.model.SystemServiceModel;
 import com.elcom.ehotel.admin.util.ConvertUtil;
+import com.elcom.ehotel.admin.util.Encryptor;
 import com.elcom.ehotel.admin.util.UnicodeConverter;
 
 public class SystemService {
@@ -56,5 +57,11 @@ public class SystemService {
 
 	public List<SystemServiceModel> getListServiceForParent(String langid, String parentid) {
 		return systemDao.getServiceForParent(ConvertUtil.convertToInteger(langid), ConvertUtil.convertToInteger(parentid));
+	}
+	
+	public int changePassword(String userId, String oldPass, String newPass) {
+		oldPass = Encryptor.encryptPassword(oldPass);
+		newPass = Encryptor.encryptPassword(newPass);
+		return systemDao.changePassword(userId, oldPass, newPass);
 	}
 }

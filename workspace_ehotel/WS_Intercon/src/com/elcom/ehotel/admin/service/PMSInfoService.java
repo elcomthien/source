@@ -45,4 +45,12 @@ public class PMSInfoService {
 		return pmsInfoDao.deleteContentInfo(ConvertUtil.convertToInteger(contentId));
 	}
 
+	public List<PMSInfoSubjectModel> getListSubjectInfoGroup(String serviceId, String langId, String idgroup) {
+		return pmsInfoDao.getListSubjectInfoGroup(ConvertUtil.convertToInteger(serviceId), ConvertUtil.convertToInteger(langId), idgroup);
+	}
+
+	public int addSubjectInfoGroup(PMSInfoSubjectModel info) {
+		return pmsInfoDao.addSubjectInfoGroup(info);
+	}
+
 }

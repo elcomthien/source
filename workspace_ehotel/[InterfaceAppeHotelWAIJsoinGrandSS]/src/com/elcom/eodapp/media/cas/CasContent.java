@@ -46,12 +46,10 @@ public class CasContent {
 		try {
 			Vector params = new Vector(2);
 
-			SubProParam ketstb_ = new SubProParam(new String(keystb),
-					SubProParam.IN);
+			SubProParam ketstb_ = new SubProParam(new String(keystb), SubProParam.IN);
 			params.add(ketstb_); // 1 IN
 
-			SubProParam out_data = new SubProParam(new Vector(), "STRING_ARR",
-					SubProParam.OUT);
+			SubProParam out_data = new SubProParam(new Vector(), "STRING_ARR", SubProParam.OUT);
 			params.add(out_data);
 
 			params = broker.executeSubPro(SQL.sqlgetInfoVasc, params);
@@ -91,8 +89,7 @@ public class CasContent {
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
 
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 
 		SubProParam ip_ = new SubProParam(new String(ipin), SubProParam.IN);
@@ -101,8 +98,7 @@ public class CasContent {
 		params = broker.executeSubPro(SQL.getIpStb, params);
 		out_data = (SubProParam) params.get(0);
 		String ip = out_data.getString();
-		System.out.println("CasContent.checkStbOnline(" + keystb + ") => ip: "
-				+ ip);
+		System.out.println("CasContent.checkStbOnline(" + keystb + ") => ip: " + ip);
 		// keystbonline = DateHelper.pingStb(ip);
 		keystbonline = false;
 		return keystbonline;
@@ -132,12 +128,10 @@ public class CasContent {
 			stbvo.setKeystb(keystb);
 			stbvo.setFolio("-1");
 		} else {
-			SubProParam out_data = new SubProParam(new String(),
-					SubProParam.OUT);
+			SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 			params.add(out_data);
 
-			SubProParam keystb_ = new SubProParam(new String(keystb),
-					SubProParam.IN);
+			SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 			params.add(keystb_);
 
 			SubProParam ip_ = new SubProParam(new String(ip), SubProParam.IN);
@@ -161,10 +155,8 @@ public class CasContent {
 			}
 		}// ens else
 		/*
-		 * xml = "<?xml version='1.0' encoding='UTF-8'?>\r\n<Stb>\r\n"; xml =
-		 * xml + "<item>"; xml = xml + "<key>" + stbvo.getKeystb() +
-		 * "</key>\r\n"; xml = xml + "<room>" + stbvo.getFolio() +
-		 * "</room>\r\n"; xml = xml + "</item>"; xml = xml + "</Stb>";
+		 * xml = "<?xml version='1.0' encoding='UTF-8'?>\r\n<Stb>\r\n"; xml = xml + "<item>"; xml = xml + "<key>" + stbvo.getKeystb() +
+		 * "</key>\r\n"; xml = xml + "<room>" + stbvo.getFolio() + "</room>\r\n"; xml = xml + "</item>"; xml = xml + "</Stb>";
 		 */
 		obj.put("key", stbvo.getKeystb());
 		obj.put("room", stbvo.getFolio());
@@ -178,8 +170,7 @@ public class CasContent {
 
 	// ------------------------------------------------------------------
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public int register(String keystb, String folio, String ip,
-			String vascuser, String vascpass) {
+	public int register(String keystb, String folio, String ip, String vascuser, String vascpass) {
 		int retur = -9999;
 		String ip_ = "localhost";
 		Vector params = new Vector(5);
@@ -188,8 +179,7 @@ public class CasContent {
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
 
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 
 		SubProParam folio_ = new SubProParam(new String(folio), SubProParam.IN);
@@ -200,12 +190,10 @@ public class CasContent {
 		SubProParam ipi = new SubProParam(new String(ip_), SubProParam.IN);
 		params.add(ipi);
 
-		SubProParam vascuser_ = new SubProParam(new String(vascuser),
-				SubProParam.IN);
+		SubProParam vascuser_ = new SubProParam(new String(vascuser), SubProParam.IN);
 		params.add(vascuser_);
 
-		SubProParam vascpass_ = new SubProParam(new String(vascpass),
-				SubProParam.IN);
+		SubProParam vascpass_ = new SubProParam(new String(vascpass), SubProParam.IN);
 		params.add(vascpass_);
 
 		params = broker.executeSubPro(SQL.sqlsetFolioStbVasc, params);
@@ -227,8 +215,7 @@ public class CasContent {
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
 
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 
 		SubProParam folio_ = new SubProParam(new String(folio), SubProParam.IN);
@@ -260,8 +247,7 @@ public class CasContent {
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
 
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 
 		SubProParam folio_ = new SubProParam(new String(folio), SubProParam.IN);
@@ -293,12 +279,10 @@ public class CasContent {
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
 
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 
-		SubProParam langid_ = new SubProParam(new BigDecimal(langid),
-				SubProParam.IN);
+		SubProParam langid_ = new SubProParam(new BigDecimal(langid), SubProParam.IN);
 		params.add(langid_);
 
 		params = broker.executeSubPro(SQL.sqlsetLang, params);
@@ -318,11 +302,9 @@ public class CasContent {
 
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
-		SubProParam keystb_ = new SubProParam(new String(sernum),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(sernum), SubProParam.IN);
 		params.add(keystb_);
-		SubProParam id_content_ = new SubProParam(new BigDecimal(id_content),
-				SubProParam.IN);
+		SubProParam id_content_ = new SubProParam(new BigDecimal(id_content), SubProParam.IN);
 		params.add(id_content_);
 		SubProParam type_ = new SubProParam(new String(type), SubProParam.IN);
 		params.add(type_);
@@ -335,17 +317,18 @@ public class CasContent {
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public String getLangs(String keystb, String ip) {
+	public String getLangs(String keystb, String ip, String mac) {
 		String Rs = "";
 		Vector params = new Vector(3);
 
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
 		SubProParam ip_ = new SubProParam(new String(ip), SubProParam.IN);
 		params.add(ip_);
+		SubProParam mac_ = new SubProParam(new String(mac), SubProParam.IN);
+		params.add(mac_);
 
 		params = broker.executeSubPro(SQL.sqlgetLangs, params);
 		out_data = (SubProParam) params.get(0);
@@ -359,8 +342,7 @@ public class CasContent {
 		String Rs = "";
 		Vector params = new Vector(2);
 
-		SubProParam keystb_ = new SubProParam(new String(sernum),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(sernum), SubProParam.IN);
 		params.add(keystb_);
 
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
@@ -377,8 +359,7 @@ public class CasContent {
 		String Rs = "";
 		Vector params = new Vector(2);
 
-		SubProParam keystb_ = new SubProParam(new String(sernum),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(sernum), SubProParam.IN);
 		params.add(keystb_);
 		SubProParam idapk_ = new SubProParam(new String(idapk), SubProParam.IN);
 		params.add(idapk_);
@@ -393,11 +374,9 @@ public class CasContent {
 		Vector params = new Vector(2);
 		SubProParam out_data = new SubProParam(new String(), SubProParam.OUT);
 		params.add(out_data);
-		SubProParam keystb_ = new SubProParam(new String(keystb),
-				SubProParam.IN);
+		SubProParam keystb_ = new SubProParam(new String(keystb), SubProParam.IN);
 		params.add(keystb_);
-		SubProParam status_ = new SubProParam(new BigDecimal(status),
-				SubProParam.IN);
+		SubProParam status_ = new SubProParam(new BigDecimal(status), SubProParam.IN);
 		params.add(status_);
 
 		params = broker.executeSubPro(SQL.sqlupdatestatusbox, params);

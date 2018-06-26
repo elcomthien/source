@@ -136,6 +136,7 @@ public class SQL {
 
 	// user
 	public static final String CHECK_LOGIN = "BEGIN EUSER.checkLogin(?,?,?); END;";
+	public static final String CHANGE_PASSWORD = "BEGIN EUSER.changePassword(?,?,?,?); END;";
 	
 	// custom object
 	public static final String ADD_CUS_OBJECT = "BEGIN ECUS.addCusObject(?,?,?,?,?,?,?,?,?,?,?,?,?); END;";

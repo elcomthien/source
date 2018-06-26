@@ -1,0 +1,36 @@
+.form_detail_dinning {
+	width: 600;
+	height: 500;
+	background-color: white;
+	z-index: 1002;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border: 3px solid #A7800A;
+}
+
+.div_listdining {
+	float: left;
+	margin-left: 1px;
+	width: 99%;
+	height: 210px;
+	margin-top: 5px;
+}
+
+.div_dinningimage {
+	float: left;
+	height: 150px;
+	width: 200px;
+	margin-top: 50px;
+	margin-left: 250px;
+}
+
+.form_add_user_housekeeping {
+    width: 470;
+    height: 270;
+    background-color: white;
+    z-index: 1002;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #A7800A;

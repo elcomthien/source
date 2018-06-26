@@ -1,0 +1,52 @@
+.form_subject_inbox {
+	width: 400px;
+	float: left;
+	margin-top: 20px;
+	border: 1px solid #dddddd;
+	margin-left: 20px;
+}
+
+.form_detail_hotel {
+	width: 600;
+	height: 450;
+	background-color: white;
+	z-index: 1002;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border: 3px solid #A7800A;
+}
+
+.div_addeImage {
+	color: #999999;
+}
+
+.div_name_pms {
+	border: 1px solid red;
+	width: 100%;
+	float: left;
+}
+
+.formSubject {
+	position: absolute;
+	width: 330px;
+	height: 150px;
+	background-color: white;
+	z-index: 1001;
+	border: 2px solid #A7800A;
+}
+
+.titleSubject {
+	height: 30;
+	width: 100%;
+	float: left;
+	color: #000066;
+	font-size: 20px;
+	text-align: left;
+	text-indent: 15px;
+	background-color: #D3D0BE;
+}
+
+.div_listhotel {
+	height: 240px;
+}

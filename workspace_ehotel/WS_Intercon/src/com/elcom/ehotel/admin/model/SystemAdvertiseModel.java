@@ -10,6 +10,7 @@ public class SystemAdvertiseModel {
 	private String type = "";
 	// 0: is slide, 1: is bg
 	private String background = "";
+	private String idGroup = "";
 
 	public String getId() {
 		return id;
@@ -53,9 +54,8 @@ public class SystemAdvertiseModel {
 
 	@Override
 	public String toString() {
-		return "SystemAdvertiseModel [id=" + id + ", name=" + name + ", image="
-				+ image + ", invisible=" + invisible + ", type=" + type
-				+ ", background=" + background + "]";
+		return "SystemAdvertiseModel [id=" + id + ", name=" + name + ", image=" + image + ", invisible=" + invisible + ", type=" + type
+				+ ", background=" + background + ", idGroup=" + idGroup + "]";
 	}
 
 	public String getName() {
@@ -65,4 +65,13 @@ public class SystemAdvertiseModel {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public String getIdGroup() {
+		return idGroup;
+	}
+
+	public void setIdGroup(String idGroup) {
+		this.idGroup = idGroup;
+	}
+
 }

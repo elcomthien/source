@@ -291,5 +291,23 @@ public interface eSmileService {
 
 	@WebMethod
 	String getTrendSmile(String object);
+	
+	@WebMethod
+	String getCheckinLocation(String object);
+	
+	@WebMethod
+	String getCheckinStaff(String object);
+	
+	@WebMethod
+	String getStatisticSmileLoction(String object);
+	
+	@WebMethod
+	String getStatisticSmileStaff(String object);
+	
+	@WebMethod
+	String getTrendRating(String object);
+	
+	@WebMethod
+	String getDataCheckin(String object);
 
 }

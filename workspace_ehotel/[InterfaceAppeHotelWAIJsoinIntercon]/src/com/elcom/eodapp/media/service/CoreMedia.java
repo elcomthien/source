@@ -363,7 +363,8 @@ public class CoreMedia extends HttpServlet {
 		// Danh sach kenh thuoc chu de livetv
 		if (lenh == Command.com_getlivechannel) {
 			System.out.println("Ip: " + ip + " - In getLiveTvSubject(" + channelid + ")");
-			String json = livedao.getLivetvChannelList(new Integer(channelid).intValue());
+//			String json = livedao.getLivetvChannelList(new Integer(channelid).intValue());
+			String json = livedao.getListChannel(keystb, channelid);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -553,6 +554,13 @@ public class CoreMedia extends HttpServlet {
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
 			HashMap<String, String> map = new HashMap<String, String>();
 			map = casdao.getSystemDate();
+			System.out.println(map);
+			response.getWriter().write(new Gson().toJson(map));
+			return;
+		} else if (lenh == Command.com_getlivenotify) {
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+			HashMap<String, String> map = new HashMap<String, String>();
+			map = pmsdao.getNotifyChannel(keystb);
 			System.out.println(map);
 			response.getWriter().write(new Gson().toJson(map));
 			return;

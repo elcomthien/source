@@ -94,6 +94,64 @@ public class SystemController extends HttpServlet {
 			list = welcomeMediaService.getWelcomeMedia(type);
 			response.getWriter().write(new Gson().toJson(list));
 		}
+
+		if (action.equals("gettextwelcomegroup")) {
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "gettextwelcomegroup", "groupid,,," + idgroup);
+
+			HashMap<String, String> hmap = new HashMap<String, String>();
+			hmap = systemService.getTextWelcomeGroup(idgroup);
+			response.getWriter().write(new Gson().toJson(hmap));
+		}
+
+		if (action.equals("getlistadvertisegroup")) {
+			String type = request.getParameter("type");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "getlistadvertisegroup", "type,,," + type + ",,,idgroup,,," + idgroup);
+
+			List<SystemAdvertiseModel> list = new ArrayList<SystemAdvertiseModel>();
+			list = systemService.getListAdvertiseGroup(type, idgroup);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getlistservicegroup")) {
+			String langId = request.getParameter("langid");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "getlistservice", "langId,,," + langId + ",,,idgroup,,," + idgroup);
+
+			List<SystemServiceModel> list = new ArrayList<SystemServiceModel>();
+			list = systemService.getListServiceGroup(langId, idgroup);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getwelcomemediagroup")) {
+			String type = request.getParameter("type");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "getwelcomemediagroup", "type,,," + type + ",,,idgroup,,," + idgroup);
+
+			List<WelcomeMediaModel> list = new ArrayList<WelcomeMediaModel>();
+			list = welcomeMediaService.getWelcomeMediaGroup(type, idgroup);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
+		if (action.equals("getservicegroup")) {
+			String langId = request.getParameter("langid");
+			// parentid = -1: service main; != -1 service child
+			String parentId = request.getParameter("parentid");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "getservice", "langId,,," + langId + ",,,parentid,,," + parentId
+					+ ",,,idgroup,,," + idgroup);
+
+			List<SystemServiceModel> list = new ArrayList<SystemServiceModel>();
+			list = systemService.getListServiceForParentGroup(langId, parentId, idgroup);
+			response.getWriter().write(new Gson().toJson(list));
+		}
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -144,6 +202,20 @@ public class SystemController extends HttpServlet {
 			out.println(rs);
 		}
 
+		if (action.equals("updatetextwelcomegroup")) {
+			String line01 = request.getParameter("line01");
+			String line02 = request.getParameter("line02");
+			String logo = request.getParameter("logo");
+			String logosmall = request.getParameter("logosmall");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02
+					+ ",,,logo,,," + logo + ",,,logosmall,,," + logosmall + ",,,idgroup,,," + idgroup);
+
+			int rs = systemService.updateTextWelcomeGroup(line01, line02, logo, logosmall, idgroup);
+			out.println(rs);
+		}
+
 		if (action.equals("addadvertise")) {
 			String name = request.getParameter("name");
 			String image = request.getParameter("image");
@@ -162,6 +234,29 @@ public class SystemController extends HttpServlet {
 			adv.setInvisible(invisible);
 
 			int rs = systemService.addAdvertise(adv);
+			out.println(rs);
+		}
+
+		if (action.equals("addadvertisegroup")) {
+			String name = request.getParameter("name");
+			String image = request.getParameter("image");
+			String type = request.getParameter("type");
+			String setbg = request.getParameter("setbg");
+			String invisible = request.getParameter("invisible");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "addadvertisegroup", "name,,," + name + ",,,image,,," + image
+					+ ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible + ",,,idgroup,,," + idgroup);
+
+			SystemAdvertiseModel adv = new SystemAdvertiseModel();
+			adv.setName(name);
+			adv.setImage(image);
+			adv.setType(type);
+			adv.setBackground(setbg);
+			adv.setInvisible(invisible);
+			adv.setIdGroup(idgroup);
+
+			int rs = systemService.addAdvertiseGroup(adv);
 			out.println(rs);
 		}
 
@@ -188,12 +283,49 @@ public class SystemController extends HttpServlet {
 			out.println(rs);
 		}
 
+		if (action.equals("editadvertisegroup")) {
+			String advid = request.getParameter("advid");
+			String name = request.getParameter("name");
+			String image = request.getParameter("image");
+			String type = request.getParameter("type");
+			String setbg = request.getParameter("setbg");
+			String invisible = request.getParameter("invisible");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "editadvertisegroup", "advertiseid,,," + advid + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible + ",,,idgroup,,,"
+					+ idgroup);
+
+			SystemAdvertiseModel adv = new SystemAdvertiseModel();
+			adv.setId(advid);
+			adv.setName(name);
+			adv.setImage(image);
+			adv.setType(type);
+			adv.setBackground(setbg);
+			adv.setInvisible(invisible);
+			adv.setIdGroup(idgroup);
+
+			int rs = systemService.editAdvertiseGroup(adv);
+			out.println(rs);
+		}
+
 		if (action.equals("deleteadvertise")) {
 			String advid = request.getParameter("id");
 
 			LogUtil.logControl(SystemController.class.toString(), "deleteadvertise", "idservice,,," + advid);
 
 			int rs = systemService.deleteAdvertise(advid);
+			out.println(rs);
+		}
+
+		if (action.equals("deleteadvertisegroup")) {
+			String advid = request.getParameter("id");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "deleteadvertisegroup", "idservice,,," + advid + ",,,idgroup,,,"
+					+ idgroup);
+
+			int rs = systemService.deleteAdvertiseGroup(advid, idgroup);
 			out.println(rs);
 		}
 
@@ -241,6 +373,94 @@ public class SystemController extends HttpServlet {
 			LogUtil.logControl(SystemController.class.toString(), "deletewelcomemedia", "id,,," + id);
 
 			int rs = welcomeMediaService.deleteWelcomeMedia(id);
+			out.println(rs);
+		}
+
+		if (action.equals("editsystemservicegroup")) {
+			String id = request.getParameter("idservice");
+			String name = request.getParameter("name");
+			String image = request.getParameter("image");
+			String langid = request.getParameter("langid");
+			String index = request.getParameter("index");
+			String invisible = request.getParameter("invisible");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "editsystemservice", "idservice,,," + id + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,langid,,," + langid + ",,,index,,," + index + ",,,invisible,,," + invisible
+					+ ",,,idgroup,,," + idgroup);
+
+			SystemServiceModel service = new SystemServiceModel();
+			service.setId(id);
+			service.setName(name);
+			service.setImage(image);
+			service.setIndex(index);
+			service.setInvisible(invisible);
+			service.setIdgroup(idgroup);
+
+			int rs = systemService.editSystemServiceGroup(service, langid);
+			out.println(rs);
+		}
+
+		if (action.equals("updateinviservicegroup")) {
+			String idservice = request.getParameter("idservice");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "updateinviservice", "idservice,,," + idservice + ",,,idgroup,,,"
+					+ idgroup);
+
+			int rs = systemService.updateStatusSystemSerivceGroup(idservice, idgroup);
+			out.println(rs);
+		}
+
+		if (action.equals("addwelcomemediagroup")) {
+			String name = request.getParameter("name");
+			String filename = request.getParameter("filename");
+			String type = request.getParameter("type");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "addwelcomemediagroup", "name,,," + name + ",,,filename,,," + filename
+					+ ",,,type,,," + type + ",,,idgroup,,," + idgroup);
+
+			WelcomeMediaModel wlc = new WelcomeMediaModel();
+			wlc.setName(name);
+			wlc.setFilename(filename);
+			wlc.setType(type);
+			wlc.setIdgroup(idgroup);
+
+			int rs = welcomeMediaService.addWelcomeMediaGroup(wlc);
+			out.println(rs);
+		}
+
+		if (action.equals("editwelcomemediagroup")) {
+			String id = request.getParameter("id");
+			String name = request.getParameter("name");
+			String filename = request.getParameter("filename");
+			String index = request.getParameter("index");
+			String status = request.getParameter("status");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "editwelcomemediagroup", "name,,," + name + ",,,filename,,," + filename
+					+ ",,,index,,," + index + ",,,status,,," + status + ",,,id,,," + id + ",,,idgroup,,," + idgroup);
+
+			WelcomeMediaModel wlc = new WelcomeMediaModel();
+			wlc.setName(name);
+			wlc.setFilename(filename);
+			wlc.setId(id);
+			wlc.setIndex(index);
+			wlc.setStatus(status);
+			wlc.setIdgroup(idgroup);
+
+			int rs = welcomeMediaService.editWelcomeMediaGroup(wlc);
+			out.println(rs);
+		}
+
+		if (action.equals("deletewelcomemediagroup")) {
+			String id = request.getParameter("id");
+			String idgroup = request.getParameter("idgroup");
+
+			LogUtil.logControl(SystemController.class.toString(), "deletewelcomemediagroup", "id,,," + id + ",,,idgroup,,," + idgroup);
+
+			int rs = welcomeMediaService.deleteWelcomeMediaGroup(id, idgroup);
 			out.println(rs);
 		}
 

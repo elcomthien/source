@@ -39,7 +39,7 @@ public interface Param {
 	public static String typetvbox = "typetvbox";
 	public static String day = "day";
 	public static String coutrid = "coutrid";
-	
+	public static String mac_address = "macaddress";
 	
 	
 }

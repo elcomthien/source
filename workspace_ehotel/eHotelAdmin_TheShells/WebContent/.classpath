@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src" />
+	<classpathentry kind="con"
+		path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JRE 1.5.0_11" />
+	<classpathentry kind="con"
+		path="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER" />
+	<classpathentry kind="lib" path="lib/log4j.jar" />
+	<classpathentry kind="lib" path="lib/commons-net-3.0.1.jar" />
+	<classpathentry kind="lib" path="lib/ReqInfoApp.jar" />
+	<classpathentry kind="lib" path="lib/gnujaxp.jar" />
+	<classpathentry kind="lib" path="lib/iText-2.1.5.jar" />
+	<classpathentry kind="lib" path="lib/jcommon-1.0.17.jar" />
+	<classpathentry kind="lib"
+		path="lib/jfreechart-1.0.14-experimental.jar" />
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.14-swt.jar" />
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.14.jar" />
+	<classpathentry kind="lib" path="lib/junit.jar" />
+	<classpathentry kind="lib" path="lib/swtgraphics2d.jar" />
+	<classpathentry kind="lib" path="lib/jxl.jar" />
+	<classpathentry kind="output" path="eHotelAdmin/WEB-INF/classes" />
+</classpath>

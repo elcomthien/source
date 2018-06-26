@@ -79,7 +79,7 @@ public class PMSFolioController extends HttpServlet {
 			list = pmsFolioService.getListSmartcard();
 			response.getWriter().write(new Gson().toJson(list));
 		}
-		
+
 		if (action.equals("getlistorder")) {
 			String folionum = request.getParameter("folionum");
 			String from = request.getParameter("from_date");
@@ -105,8 +105,9 @@ public class PMSFolioController extends HttpServlet {
 			String personal = request.getParameter("personal");
 			String roomShare = request.getParameter("roomshare");
 
-			LogUtil.logControl(PMSFolioController.class.toString(), "addorupdateguest", "folionum,,," + folionum + ",,,clientId,,," + clientId
-					+ ",,,firstName,,," + firstName + ",,,lastName,,," + lastName + ",,,personal,,," + personal + ",,,roomShare,,," + roomShare);
+			LogUtil.logControl(PMSFolioController.class.toString(), "addorupdateguest", "folionum,,," + folionum + ",,,clientId,,,"
+					+ clientId + ",,,firstName,,," + firstName + ",,,lastName,,," + lastName + ",,,personal,,," + personal
+					+ ",,,roomShare,,," + roomShare);
 
 			PMSFolioGuestModel guest = new PMSFolioGuestModel();
 			guest.setFolionum(folionum);
@@ -150,7 +151,7 @@ public class PMSFolioController extends HttpServlet {
 			int rs = pmsFolioService.addMessageFolio(mess);
 			out.println(rs);
 		}
-		
+
 		if (action.equals("editmessage")) {
 			String folionum = request.getParameter("folionum");
 			String messageid = request.getParameter("messageid");
@@ -160,8 +161,8 @@ public class PMSFolioController extends HttpServlet {
 			String top = request.getParameter("short");
 			String langid = request.getParameter("langid");
 
-			LogUtil.logControl(PMSFolioController.class.toString(), "editmessage", "folionum|" + folionum + "|messageid|" + messageid + "|title|" + title + "|content|"
-					+ content + "|sender|" + sender + "|short|" + top + "|langid|" + langid);
+			LogUtil.logControl(PMSFolioController.class.toString(), "editmessage", "folionum|" + folionum + "|messageid|" + messageid
+					+ "|title|" + title + "|content|" + content + "|sender|" + sender + "|short|" + top + "|langid|" + langid);
 
 			PMSFolioMessageModel mess = new PMSFolioMessageModel();
 			mess.setRoomId(folionum);
@@ -194,13 +195,23 @@ public class PMSFolioController extends HttpServlet {
 			int rs = pmsFolioService.deleteSmartcard(serinumber);
 			out.println(rs);
 		}
-		
+
 		if (action.equals("reboottv")) {
 			String serinumber = request.getParameter("serinumber");
 
 			LogUtil.logControl(PMSFolioController.class.toString(), "reboottv", "serinumber,,," + serinumber);
 
 			int rs = pmsFolioService.changeStatusReboot(serinumber);
+			out.println(rs);
+		}
+
+		if (action.equals("updatestatus")) {
+			String serinumber = request.getParameter("serinumber");
+			String status = request.getParameter("status");
+
+			LogUtil.logControl(PMSFolioController.class.toString(), "reboottv", "serinumber,,," + serinumber + ",,,status,,," + status);
+
+			int rs = pmsFolioService.updateStatusTV(serinumber, status);
 			out.println(rs);
 		}
 	}

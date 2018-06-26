@@ -59,7 +59,7 @@ public class CoreMedia extends HttpServlet {
 	@SuppressWarnings("unused")
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// FileLog log;
-		String keystb, subid, current, langid, room, ip, channelid,typetvbox;
+		String keystb, subid, current, langid, room, ip, channelid, typetvbox;
 		String ipClient = request.getRemoteAddr();
 		HttpSession session = request.getSession(true);
 		session.setMaxInactiveInterval(5);
@@ -192,7 +192,8 @@ public class CoreMedia extends HttpServlet {
 			return;
 		} else if (lenh == Command.com_getLangs) {
 			System.out.println("Ip: " + ip + " - SN: " + keystb);
-			String json = casdao.getLangs(keystb,ip);
+			String mac = request.getParameter(Param.mac_address);
+			String json = casdao.getLangs(keystb, ip, mac);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -264,7 +265,7 @@ public class CoreMedia extends HttpServlet {
 			// int folderid = new Integer(request.getParameter(Param.folderid)).intValue();
 			System.out.println("Ip: " + ip + " - In getAllNorSubjects(" + keystb + ")");
 			String type = request.getParameter(Param.type);
-			String json = voddao.getAllNorSubjects(keystb,type);
+			String json = voddao.getAllNorSubjects(keystb, type);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -274,8 +275,8 @@ public class CoreMedia extends HttpServlet {
 			short subjectid = new Short(request.getParameter(Param.subjectid)).shortValue();
 			int fromRow = new Integer(request.getParameter(Param.fromRow)).intValue();
 			int noRows = new Integer(request.getParameter(Param.noRows)).intValue();
-			System.out.println("Ip: " + ip + " - In getMODCtnIDsOfSubjectNew(" + keystb + "," + subjectid + "," + fromRow + ","
-					+ noRows + ")");
+			System.out.println("Ip: " + ip + " - In getMODCtnIDsOfSubjectNew(" + keystb + "," + subjectid + "," + fromRow + "," + noRows
+					+ ")");
 			String json = voddao.getMODCtnIDsOfSubjectNew(keystb, subjectid, fromRow, noRows);
 			System.out.println(json);
 			out.println(json);
@@ -287,12 +288,12 @@ public class CoreMedia extends HttpServlet {
 			int count = voddao.countFilm(vodsubjectid);
 			out.println(count);
 			return;
-		} else
-		if (lenh == Command.com_getdetailfilm) {  /**  **/
+		} else if (lenh == Command.com_getdetailfilm) {
+			/**  **/
 			int contentid = new Integer(request.getParameter(Param.contentid)).intValue();
-			String xml ="";
+			String xml = "";
 			try {
-				xml = voddao.getByPrimaryKey(keystb,contentid);
+				xml = voddao.getByPrimaryKey(keystb, contentid);
 			} catch (ModCtnNotFoundAppException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -300,7 +301,7 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else	
+		} else
 		// Lay danh sach link url ngon ngu
 		if (lenh == Command.com_getlisturlsub) {
 			System.out.println("Ip: " + ip + " - In getUrlSub(" + request.getParameter(Param.contentid) + ")");
@@ -323,8 +324,8 @@ public class CoreMedia extends HttpServlet {
 			short subjectid = new Short(request.getParameter(Param.subjectid)).shortValue();
 			int fromRow = new Integer(request.getParameter(Param.fromRow)).intValue();
 			int noRows = new Integer(request.getParameter(Param.noRows)).intValue();
-			System.out.println("Ip: " + ip + " - In getModListSongSubject(" + keystb + "," + subjectid + "," + fromRow + "," + noRows
-					+ ")");
+			System.out
+					.println("Ip: " + ip + " - In getModListSongSubject(" + keystb + "," + subjectid + "," + fromRow + "," + noRows + ")");
 			String xml = moddao.getModListSongSubject(keystb, subjectid, fromRow, noRows);
 			System.out.println(xml);
 			out.println(xml);
@@ -379,14 +380,12 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else
-		if (lenh == Command.com_getMessage) {
+		} else if (lenh == Command.com_getMessage) {
 			String xml = pmsdao.getFolioMessages(keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		} else
-		if (lenh == Command.com_getPromotions) {
+		} else if (lenh == Command.com_getPromotions) {
 			String xml = pmsdao.getPromotions(keystb);
 			System.out.println(xml);
 			out.println(xml);
@@ -400,7 +399,7 @@ public class CoreMedia extends HttpServlet {
 			return;
 		} else if (lenh == Command.com_getWelcomeMessage) {
 			System.out.println("lenh getWelcomeMessage: " + lenh + " - keystb: " + keystb);
-			String json = pmsdao.getWelcomeMessage(keystb,typetvbox);
+			String json = pmsdao.getWelcomeMessage(keystb, typetvbox);
 			System.out.println(json);
 			out.println(json);
 			return;
@@ -417,9 +416,9 @@ public class CoreMedia extends HttpServlet {
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getExchangeRate) {
+		} else if (lenh == Command.com_getExchangeRate) {
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
-			String xml = pmsdao.getExchangeRates(-1,-1);
+			String xml = pmsdao.getExchangeRates(-1, -1);
 			System.out.println(xml);
 			out.println(xml);
 			return;
@@ -452,66 +451,66 @@ public class CoreMedia extends HttpServlet {
 			String ffrom = request.getParameter(Param.fromRow);
 			String tto = request.getParameter(Param.noRows);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + subMenuId);
-			
+
 			String json = pmsdao.getItemOfService(subMenuId, keystb, ffrom, tto);
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getBills) {
-			System.out.println("lenh: " + lenh + " - keystb: " + keystb );
-			
+		} else if (lenh == Command.com_getBills) {
+			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
+
 			String json = pmsdao.getBills(keystb);
 			System.out.println(json);
 			out.println(json);
 			return;
-		}else if (lenh == Command.com_getItemOfAttractions) {
+		} else if (lenh == Command.com_getItemOfAttractions) {
 			String mainMenuId = request.getParameter(Param.mainnenuid);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + mainMenuId);
-			
-			String xml = pmsdao.getItemOfAttractions(mainMenuId,keystb);
+
+			String xml = pmsdao.getItemOfAttractions(mainMenuId, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
 		} else if (lenh == Command.com_getItemOfScheduleActivity) {
 			String mainMenuId = request.getParameter(Param.mainnenuid);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " - mainMenuId: " + mainMenuId);
-			
-			String xml = pmsdao.getItemOfActivities(mainMenuId,keystb);
+
+			String xml = pmsdao.getItemOfActivities(mainMenuId, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getCountries) {
+		} else if (lenh == Command.com_getCountries) {
 			String level = "2";
 			System.out.println("pmsdao.getCountries");
 			String xml = pmsdao.getCountries(level);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getWeatherToday) {
+		} else if (lenh == Command.com_getWeatherToday) {
 			String day = request.getParameter(Param.day);
 			String xml = pmsdao.getWeatherToday(day);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_getWeatherInWeek) {
+		} else if (lenh == Command.com_getWeatherInWeek) {
 			String coutrid = request.getParameter(Param.coutrid);
-			String xml = pmsdao.getWeatherInWeek(coutrid,keystb);
+			String xml = pmsdao.getWeatherInWeek(coutrid, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_postedItemToBill) {
-			String items = request.getParameter(Param.items); 
+		} else if (lenh == Command.com_postedItemToBill) {
+			String items = request.getParameter(Param.items);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb);
-			
-			String xml = pmsdao.postedItemToBill(items,keystb);
+
+			String xml = pmsdao.postedItemToBill(items, keystb);
 			System.out.println(xml);
 			out.println(xml);
 			return;
-		}else if (lenh == Command.com_updatestatusbox) {
-			String status = request.getParameter(Param.status); 
+		} else if (lenh == Command.com_updatestatusbox) {
+			String status = request.getParameter(Param.status);
 			System.out.println("lenh: " + lenh + " - keystb: " + keystb + " status: " + status);
-			
-			String xml = casdao.updatestatusbox(keystb,status);
+
+			String xml = casdao.updatestatusbox(keystb, status);
 			System.out.println(xml);
 			out.println(xml);
 			return;

@@ -11,6 +11,7 @@ public class LiveTVChannelModel {
 	private String maxindex = "";
 	private String language = "";
 	private String subtitle = "";
+	private String idgroup = "";
 
 	public String getIdChannel() {
 		return idChannel;
@@ -62,10 +63,9 @@ public class LiveTVChannelModel {
 
 	@Override
 	public String toString() {
-		return "LiveTVChannelModel [idChannel=" + idChannel + ", name=" + name
-				+ ", code=" + code + ", link=" + link + ", status=" + status
-				+ ", image=" + image + ", maxindex=" + maxindex + ", language="
-				+ language + ", subtitle=" + subtitle + "]";
+		return "LiveTVChannelModel [idChannel=" + idChannel + ", name=" + name + ", code=" + code + ", link=" + link + ", status=" + status
+				+ ", image=" + image + ", maxindex=" + maxindex + ", language=" + language + ", subtitle=" + subtitle + ", idgroup="
+				+ idgroup + "]";
 	}
 
 	public String getMaxindex() {
@@ -90,6 +90,14 @@ public class LiveTVChannelModel {
 
 	public void setSubtitle(String subtitle) {
 		this.subtitle = subtitle;
+	}
+
+	public String getIdgroup() {
+		return idgroup;
+	}
+
+	public void setIdgroup(String idgroup) {
+		this.idgroup = idgroup;
 	}
 
 }

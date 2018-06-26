@@ -11,24 +11,45 @@ public class SQL {
 	public static final String ADD_LIVETV_SUBJECT = "BEGIN ELIVETV.addSubject(?,?,?,?,?); END;";
 	public static final String EDIT_LIVETV_SUBJECT = "BEGIN ELIVETV.editSubject(?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_LIVETV_SUBJECT = "BEGIN ELIVETV.removeSubject(?,?); END;";
+	
+	public static final String GET_NOTIFY = "BEGIN ELIVETV.getNotify(?,?); END;";
+	public static final String EDIT_NOTIFY = "BEGIN ELIVETV.editNotify(?,?,?,?,?,?); END;";
+	
+	public static final String GET_NOTIFY_GROUP = "BEGIN ELIVETV.getNotifyGroup(?,?,?); END;";
+	public static final String EDIT_NOTIFY_GROUP = "BEGIN ELIVETV.editNotifyGroup(?,?,?,?,?,?,?); END;";
 
 	// livetv channel
 	public static final String GET_LIST_LIVETV_CHANNEL = "BEGIN ELIVETV.getChannels(?,?); END;";
 	public static final String ADD_LIVETV_CHANNEL = "BEGIN ELIVETV.addNewChannel(?,?,?,?,?,?,?,?,?); END;";
 	public static final String EDIT_LIVETV_CHANNEL = "BEGIN ELIVETV.editChannel(?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_LIVETV_CHANNEL = "BEGIN ELIVETV.deleteChannel(?,?); END;";
+	
+	public static final String GET_LIST_LIVETV_CHANNEL_GROUP = "BEGIN ELIVETV.getChannelsGroup(?,?,?); END;";
+	public static final String ADD_LIVETV_CHANNEL_GROUP = "BEGIN ELIVETV.addNewChannelGroup(?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String EDIT_LIVETV_CHANNEL_GROUP = "BEGIN ELIVETV.editChannelGroup(?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String DELETE_LIVETV_CHANNEL_GROUP = "BEGIN ELIVETV.deleteChannelGroup(?,?,?); END;";
 
 	// livetivi channel advertise
 	public static final String GET_LIST_CHANNEL_ADVERTISE = "BEGIN ELIVETV.getChannelAdvertise(?); END;";
 	public static final String ADD_CHANNEL_ADVERTISE = "BEGIN ELIVETV.addChannelAdvertise(?,?,?,?,?); END;";
 	public static final String EDIT_CHANNEL_ADVERTISE = "BEGIN ELIVETV.editChannelAdvertise(?,?,?,?,?); END;";
 	public static final String DELETE_CHANNEL_ADVERTISE = "BEGIN ELIVETV.deleteChannelAdvertise(?,?); END;";
+	
+	public static final String GET_LIST_CHANNEL_ADVERTISE_GROUP = "BEGIN ELIVETV.getChannelAdvertiseGroup(?,?); END;";
+	public static final String ADD_CHANNEL_ADVERTISE_GROUP = "BEGIN ELIVETV.addChannelAdvertiseGroup(?,?,?,?,?,?); END;";
+	public static final String EDIT_CHANNEL_ADVERTISE_GROUP = "BEGIN ELIVETV.editChannelAdvertiseGroup(?,?,?,?,?,?); END;";
+	public static final String DELETE_CHANNEL_ADVERTISE_GROUP = "BEGIN ELIVETV.deleteChannelAdvertiseGroup(?,?,?); END;";
 
 	// pms advertise
 	public static final String GET_LIST_ADVERTISE = "BEGIN EPMS.getImageAdverties(?,?); END;";
 	public static final String ADD_ADVERTISE = "BEGIN EPMS.addAdvertise(?,?,?,?,?,?); END;";
 	public static final String EDIT_ADVERTISE = "BEGIN EPMS.editAdvertise(?,?,?,?,?,?,?); END;";
 	public static final String DELETE_ADVERTISE = "BEGIN EPMS.removeAdvertie(?,?); END;";
+	
+	public static final String GET_LIST_ADVERTISE_GROUP = "BEGIN EPMS.getImageAdvertiesGroup(?,?,?); END;";
+	public static final String ADD_ADVERTISE_GROUP = "BEGIN EPMS.addAdvertiseGroup(?,?,?,?,?,?,?); END;";
+	public static final String EDIT_ADVERTISE_GROUP = "BEGIN EPMS.editAdvertiseGroup(?,?,?,?,?,?,?,?); END;";
+	public static final String DELETE_ADVERTISE_GROUP = "BEGIN EPMS.removeAdvertieGroup(?,?,?); END;";
 
 	// pms folio
 	public static final String GET_LIST_FOLIO = "BEGIN EPMS.getFolioList2(?); END;";
@@ -38,6 +59,13 @@ public class SQL {
 	public static final String GET_LIST_FOLIO_PREVIEW = "BEGIN EPMS.getListRoomPreview(?); END;";
 	public static final String UPDATE_FOLIO_PREVIEW = "BEGIN EPMS.updateIsPreview(?,?,?); END;";
 	public static final String PUBLIC_PREVIEW = "BEGIN EPMS.publicContent(?); END;";
+	
+	public static final String GET_LIST_GROUP = "BEGIN EPMS.getGroupFolio(?); END;";
+	public static final String GET_LIST_FOLIO_GROUP = "BEGIN EPMS.getFolioGroup(?,?); END;";
+	public static final String ADD_GROUP = "BEGIN EPMS.addGroupFolio(?,?); END;";
+	public static final String CHANGE_FOLIO_GROUP = "BEGIN EPMS.changeFolioGroup(?,?,?,?,?); END;";
+	public static final String EDIT_GROUP = "BEGIN EPMS.editGroup(?,?,?); END;";
+	public static final String DELETE_GROUP = "BEGIN EPMS.deleteGroup(?,?); END;";
 
 	// pms folio message
 	public static final String GET_LIST_MESSAGE = "BEGIN EPMS.getMessages(?,?,?); END;";
@@ -55,7 +83,10 @@ public class SQL {
 	public static final String ADD_SUBJECT_INFO = "BEGIN EPMS.addMainMenu(?,?,?,?,?,?,?); END;";
 	public static final String EDIT_SUBJECT_INFO = "BEGIN EPMS.editMainMenu(?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_SUBJECT_INFO = "BEGIN EPMS.deleteMainMenu(?,?,?); END;";
-
+	
+	public static final String GET_SUBJECT_INFO_GROUP = "BEGIN EPMS.getMainMenuGroup(?,?,?,?); END;";
+	public static final String ADD_SUBJECT_INFO_GROUP = "BEGIN EPMS.addMainMenuGroup(?,?,?,?,?,?,?,?); END;";
+	
 	// pms hotel infomation content
 	public static final String GET_CONTENT_INFO = "BEGIN EPMS.getItemsOfHotelInfo(?,?,?); END;";
 	public static final String ADD_CONTENT_INFO = "BEGIN EPMS.addItemInfo(?,?,?,?,?,?); END;";
@@ -96,12 +127,22 @@ public class SQL {
 	public static final String ADD_VOD_SUBJECT = "BEGIN EVOD.addSubject(?,?,?,?,?,?); END;";
 	public static final String DELETE_VOD_SUBJECT = "BEGIN EVOD.removeSubject(?,?); END;";
 	public static final String EDIT_VOD_SUBJECT = "BEGIN EVOD.editSubject(?,?,?,?,?,?,?); END;";
+	
+	public static final String GET_LIST_VOD_SUBJECT_GROUP = "BEGIN EVOD.getSubjectsGroup(?,?,?,?); END;";
+	public static final String ADD_VOD_SUBJECT_GROUP = "BEGIN EVOD.addSubjectGroup(?,?,?,?,?,?,?); END;";
+	public static final String DELETE_VOD_SUBJECT_GROUP = "BEGIN EVOD.removeSubjectGroup(?,?,?); END;";
+	public static final String EDIT_VOD_SUBJECT_GROUP = "BEGIN EVOD.editSubjectGroup(?,?,?,?,?,?,?,?); END;";
 
 	// vod content
 	public static final String GET_LIST_VOD_CONTENT = "BEGIN EVOD.getVodContent(?,?,?); END;";
 	public static final String ADD_VOD_CONTENT = "BEGIN EVOD.addVod(?,?,?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String EDIT_VOD_CONTENT = "BEGIN EVOD.updateVod(?,?,?,?,?,?,?,?,?,?,?,?,?,?); END;";
 	public static final String DELETE_VOD_CONTENT = "BEGIN EVOD.removeVod(?,?); END;";
+	
+	public static final String GET_LIST_VOD_CONTENT_GROUP = "BEGIN EVOD.getVodContentGroup(?,?,?,?); END;";
+	public static final String ADD_VOD_CONTENT_GROUP = "BEGIN EVOD.addVodGroup(?,?,?,?,?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String EDIT_VOD_CONTENT_GROUP = "BEGIN EVOD.updateVodGroup(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); END;";
+	public static final String DELETE_VOD_CONTENT_GROUP = "BEGIN EVOD.removeVodGroup(?,?,?); END;";
 
 	// vod subtitle
 	public static final String GET_SUBTITLE = "BEGIN EVOD.getSubtitles(?,?); END;";
@@ -118,12 +159,22 @@ public class SQL {
 	public static final String ADD_MOD_SUBJECT = "BEGIN EMOD.addSubject(?,?,?,?,?); END;";
 	public static final String DELETE_MOD_SUBJECT = "BEGIN EMOD.removeSubject(?,?); END;";
 	public static final String EDIT_MOD_SUBJECT = "BEGIN EMOD.editSubject(?,?,?,?,?,?,?); END;";
+	
+	public static final String GET_LIST_MOD_SUBJECT_GROUP = "BEGIN EMOD.getSubjectsGroup(?,?,?); END;";
+	public static final String ADD_MOD_SUBJECT_GROUP = "BEGIN EMOD.addSubjectGroup(?,?,?,?,?,?); END;";
+	public static final String DELETE_MOD_SUBJECT_GROUP = "BEGIN EMOD.removeSubjectGroup(?,?,?); END;";
+	public static final String EDIT_MOD_SUBJECT_GROUP = "BEGIN EMOD.editSubjectGroup(?,?,?,?,?,?,?,?); END;";
 
 	// mod content
 	public static final String GET_LIST_MOD_CONTENT = "BEGIN EMOD.getMods(?,?,?); END;";
 	public static final String ADD_MOD_CONTENT = "BEGIN EMOD.addMod(?,?,?,?,?); END;";
 	public static final String EDIT_MOD_CONTENT = "BEGIN EMOD.updateMod(?,?,?,?,?,?); END;";
 	public static final String DELETE_MOD_CONTENT = "BEGIN EMOD.removeMod(?,?); END;";
+	
+	public static final String GET_LIST_MOD_CONTENT_GROUP = "BEGIN EMOD.getModsGroup(?,?,?,?); END;";
+	public static final String ADD_MOD_CONTENT_GROUP = "BEGIN EMOD.addModGroup(?,?,?,?,?,?); END;";
+	public static final String EDIT_MOD_CONTENT_GROUP = "BEGIN EMOD.updateModGroup(?,?,?,?,?,?,?); END;";
+	public static final String DELETE_MOD_CONTENT_GROUP = "BEGIN EMOD.removeModGroup(?,?,?); END;";
 
 	// system
 	public static final String GET_LIST_SERVICE = "BEGIN EMAIN.getAllServices(?,?); END;";
@@ -132,6 +183,14 @@ public class SQL {
 	public static final String GET_TEXT_WELCOME = "BEGIN EMAIN.getTextWelcome(?); END;";
 	public static final String UPDATE_TEXT_WELCOME = "BEGIN EMAIN.updateTextWelcome(?,?,?,?,?); END;";
 	public static final String GET_SERVICE = "BEGIN EMAIN.getServices(?,?,?); END;";
+	
+	public static final String GET_TEXT_WELCOME_GROUP = "BEGIN EMAIN.getTextWelcomeGroup(?,?); END;";
+	public static final String UPDATE_TEXT_WELCOME_GROUP = "BEGIN EMAIN.updateTextWelcomeGroup(?,?,?,?,?,?); END;";
+	
+	public static final String GET_SERVICE_GROUP = "BEGIN EMAIN.getServicesGroup(?,?,?,?); END;";
+	public static final String GET_LIST_SERVICE_GROUP = "BEGIN EMAIN.getAllServicesGroup(?,?,?); END;";
+	public static final String EDIT_SYSTEM_SERVICE_GROUP = "BEGIN EMAIN.updateServiceMainGroup(?,?,?,?,?,?,?,?); END;";
+	public static final String UPDATE_STATUS_SERVICE_GROUP = "BEGIN EMAIN.changeVisbleServiceGroup(?,?,?); END;";
 
 	// ftp config
 	public static final String GET_FTP_CONFIG = "BEGIN EPMS.getConfigFTP(?); END;";
@@ -154,6 +213,11 @@ public class SQL {
 	public static final String ADD_WELCOME_MEDIA = "BEGIN EPMS.addMediaWelcome(?,?,?,?); END;";
 	public static final String EDIT_WELCOME_MEDIA = "BEGIN EPMS.editMediaWelcome(?,?,?,?,?,?); END;";
 	public static final String DELETE_WELCOME_MEDIA = "BEGIN EPMS.deleteMediaWelcome(?,?); END;";
+	
+	public static final String GET_WELCOME_MEDIA_GROUP = "BEGIN EPMS.getMediaWelcomeGroup(?,?,?); END;";
+	public static final String ADD_WELCOME_MEDIA_GROUP = "BEGIN EPMS.addMediaWelcomeGroup(?,?,?,?,?); END;";
+	public static final String EDIT_WELCOME_MEDIA_GROUP = "BEGIN EPMS.editMediaWelcomeGroup(?,?,?,?,?,?,?); END;";
+	public static final String DELETE_WELCOME_MEDIA_GROUP = "BEGIN EPMS.deleteMediaWelcomeGroup(?,?,?); END;";
 
 	// user manager
 	public static final String GET_LIST_USER = "BEGIN EUSER.getListUser(?); END;";

@@ -2039,6 +2039,68 @@ public class eSmileDao {
 		}
 		return list;
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<HashMap<String, String>> getTextWelcome(String id, String langid) {
+		List<HashMap<String, String>> list = new ArrayList<>();
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		Vector<String> outParam = new Vector<String>();
+		SubProParam subOut = new SubProParam(outParam, "STRING_ARR", 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.GET_TEXT_WELCOME, params);
+			if ((params != null) & (params.size() > 0)) {
+				subOut = (SubProParam) params.get(2);
+				outParam = subOut.getVector();
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(SystemDao.class.toString(), SQL.GET_TEXT_WELCOME, params, "id,langid", outParam.size() / 2);
+		for (int i = 0; i < outParam.size(); i = i + 2) {
+			HashMap<String, String> map = new HashMap<>();
+			map.put("id", outParam.get(i));
+			map.put("name", outParam.get(i + 1));
+			map.put("langid", langid);
+			list.add(map);
+		}
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	public HashMap<String, String> editTextWelcome(String id, String name, String langid) {
+		int rs = -1;
+		Vector<SubProParam> params = new Vector<SubProParam>();
+		SubProParam in = new SubProParam(new String(id), 0);
+		params.add(in);
+		in = new SubProParam(new String(name), 0);
+		params.add(in);
+		in = new SubProParam(new String(langid), 0);
+		params.add(in);
+		SubProParam subOut = new SubProParam(new String(), 1);
+		params.add(subOut);
+		try {
+			params = SQL.broker.executeSubPro(SQL.EDIT_TEXT_WELCOME, params);
+			if ((params != null) & (params.size() > 0)) {
+				SubProParam paramOUT = (SubProParam) params.get(3);
+				rs = ConvertUtil.convertToInteger(paramOUT.getString().trim());
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		LogUtil.logDao(SystemDao.class.toString(), SQL.EDIT_TEXT_WELCOME, params, "id,name,langid", rs);
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("status", String.valueOf(rs));
+		if (rs == 1)
+			hm.put("message", "OK");
+		else
+			hm.put("message", "ERROR");
+		return hm;
+	}
 
 	// String liststaff, String listlocation, String from, String to, String langid
 	public static void main(String[] args) {

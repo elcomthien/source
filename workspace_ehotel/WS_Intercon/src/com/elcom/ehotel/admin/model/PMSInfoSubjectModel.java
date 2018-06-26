@@ -10,6 +10,7 @@ public class PMSInfoSubjectModel {
 	private String type = "";
 	private String index = "";
 	private String langId = "";
+	private String idgroup = "";
 
 	public String getSubjectId() {
 		return subjectId;
@@ -70,7 +71,8 @@ public class PMSInfoSubjectModel {
 	@Override
 	public String toString() {
 		return "PMSInfoSubjectModel [subjectId=" + subjectId + ", subjectName=" + subjectName + ", serviceId=" + serviceId + ", invisible="
-				+ invisible + ", image=" + image + ", imageic=" + imageIC + ", type=" + type + ", index=" + index + ", langId=" + langId + "]";
+				+ invisible + ", image=" + image + ", imageIC=" + imageIC + ", type=" + type + ", index=" + index + ", langId=" + langId
+				+ ", idgroup=" + idgroup + "]";
 	}
 
 	public String getIndex() {
@@ -87,6 +89,14 @@ public class PMSInfoSubjectModel {
 
 	public void setImageIC(String imageIC) {
 		this.imageIC = imageIC;
+	}
+
+	public String getIdgroup() {
+		return idgroup;
+	}
+
+	public void setIdgroup(String idgroup) {
+		this.idgroup = idgroup;
 	}
 
 }

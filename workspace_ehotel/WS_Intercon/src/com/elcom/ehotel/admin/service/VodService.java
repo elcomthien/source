@@ -79,7 +79,8 @@ public class VodService {
 				FTPGatewayInterface ftpgateway;
 
 				ftpgateway = (FTPGatewayInterface) Naming.lookup("rmi://" + ipserver + ":2099/elc_ftpgateway");
-				if (ftpgateway.getStatus(uuid) == FTPServerStruct.STATUS_NOT_EXIST || ftpgateway.getStatus(uuid) == FTPServerStruct.STATUS_NONE) {
+				if (ftpgateway.getStatus(uuid) == FTPServerStruct.STATUS_NOT_EXIST
+						|| ftpgateway.getStatus(uuid) == FTPServerStruct.STATUS_NONE) {
 					deleteVodRemotePercent(list.get(i).getUuid());
 					list.remove(i);
 					i--;
@@ -114,6 +115,58 @@ public class VodService {
 
 	public int deleteSubtitle(String subId) {
 		return vodDao.deleteSubtitle(ConvertUtil.convertToInteger(subId));
+	}
+
+	public List<VodSubjectModel> getListSubjectGroup(String langid, String type, String idGroup) {
+		return vodDao.getListSubjectVodGroup(ConvertUtil.convertToInteger(langid), type, idGroup);
+	}
+
+	public int addVodSubjectGroup(VodSubjectModel vod) {
+		return vodDao.addVodSubjectGroup(vod);
+	}
+
+	public int editVodSubjectGroup(VodSubjectModel vod) {
+		return vodDao.editVodSubjectGroup(vod);
+	}
+
+	public int deleteVodSubjectGroup(String idSubject, String idGroup) {
+		return vodDao.deleteVodSubjectGroup(ConvertUtil.convertToInteger(idSubject), idGroup);
+	}
+
+	public List<VodContentModel> getListContentGroup(VodContentModel vod) {
+		return vodDao.getListContentGroup(vod);
+	}
+
+	public int addNewMovieGroup(VodContentModel con, String uuid) {
+		VodPercentModel per = new VodPercentModel();
+		per.setNameview(con.getName());
+		per.setFilename(con.getUrl());
+		per.setUuid(uuid);
+		vodDao.insertVodRemote(per);
+		return vodDao.addNewMovieGroup(con);
+	}
+
+	public int editMovieGroup(VodContentModel con) {
+		return vodDao.editMovieGroup(con);
+	}
+
+	public int deleteMovieGroup(String idContent, String uuid, String ipserver, String idgroup) {
+		boolean flag = true;
+		if (!uuid.equals("")) {
+			try {
+				FTPGatewayInterface ftpgateway;
+				ftpgateway = (FTPGatewayInterface) Naming.lookup("rmi://" + ipserver + ":2099/elc_ftpgateway");
+				flag = ftpgateway.StopUrl(UUID.fromString(uuid));
+				if (flag) {
+					vodDao.deleteVodRemotePercent(uuid);
+					System.out.println("Stop transfer vod: " + idContent + " with uuid: " + uuid + " success!!!");
+				} else
+					System.out.println("Stop transfer vod: " + idContent + " with uuid: " + uuid + " unsuccess???");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return vodDao.deleteMovieGroup(ConvertUtil.convertToInteger(idContent), idgroup);
 	}
 
 	public static void main(String[] args) {

@@ -1344,7 +1344,7 @@ public class PmsContent {
 	public static Vector<eService> LoadService(Vector<String> vTmp) {
 		Vector<eService> ret = new Vector<eService>();
 		eService service = null;
-		for (int i = 0; i < vTmp.size(); i = i + 13) {
+		for (int i = 0; i < vTmp.size(); i = i + 11) {
 			service = new eService();
 			service.setService_id(Integer.parseInt((String) vTmp.get(i)));
 			service.setService_name((String) vTmp.get(i + 1));
@@ -1356,8 +1356,8 @@ public class PmsContent {
 			service.setUrl_picbg((String) vTmp.get(i + 8));
 			service.setIlevel((String) vTmp.get(i + 9));
 			service.setVerapk((String) vTmp.get(i + 10));
-			service.setItype((String) vTmp.get(i + 11));
-			service.setColorbg((String) vTmp.get(i + 12));
+//			service.setItype((String) vTmp.get(i + 11));
+//			service.setColorbg((String) vTmp.get(i + 12));
 			ret.add(service);
 		}
 		return ret;

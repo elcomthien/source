@@ -8,6 +8,7 @@ public class ModSubjectModel {
 	private String index = "";
 	private String invisible = "";
 	private String langid = "";
+	private String idGroup = "";
 
 	public String getIdSubject() {
 		return idSubject;
@@ -65,10 +66,18 @@ public class ModSubjectModel {
 		this.imageIC = imageIC;
 	}
 
+	public String getIdGroup() {
+		return idGroup;
+	}
+
+	public void setIdGroup(String idGroup) {
+		this.idGroup = idGroup;
+	}
+
 	@Override
 	public String toString() {
-		return "ModSubjectModel [idSubject=" + idSubject + ", name=" + name + ", image=" + image + ", imageIC=" + imageIC + ", index=" + index
-				+ ", invisible=" + invisible + ", langid=" + langid + "]";
+		return "ModSubjectModel [idSubject=" + idSubject + ", name=" + name + ", image=" + image + ", imageIC=" + imageIC + ", index="
+				+ index + ", invisible=" + invisible + ", langid=" + langid + ", idGroup=" + idGroup + "]";
 	}
 
 }

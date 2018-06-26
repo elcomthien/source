@@ -6,6 +6,7 @@ public class SystemServiceModel {
 	private String index = "";
 	private String image = "";
 	private String invisible = "";
+	private String idgroup = "";
 
 	public String getId() {
 		return id;
@@ -47,10 +48,18 @@ public class SystemServiceModel {
 		this.invisible = invisible;
 	}
 
+	public String getIdgroup() {
+		return idgroup;
+	}
+
+	public void setIdgroup(String idgroup) {
+		this.idgroup = idgroup;
+	}
+
 	@Override
 	public String toString() {
-		return "SystemServiceModel [id=" + id + ", name=" + name + ", index="
-				+ index + ", image=" + image + ", invisible=" + invisible + "]";
+		return "SystemServiceModel [id=" + id + ", name=" + name + ", index=" + index + ", image=" + image + ", invisible=" + invisible
+				+ ", idgroup=" + idgroup + "]";
 	}
 
 }

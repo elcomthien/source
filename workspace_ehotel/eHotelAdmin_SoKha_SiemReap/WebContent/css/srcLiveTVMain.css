@@ -1,0 +1,155 @@
+.treeviewleaves_src {
+	float: left;
+	background: transparent url("../icon/16-arrow-right.png") no-repeat left
+		center;
+	text-align: left;
+	text-indent: 20px;
+}
+
+.left_textbox_src {
+	float: left;
+	height: 100px;
+	width: 250;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+.form_1_src {
+	float: left;
+	width: 250;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.form_addContent {
+	width: 680px;
+	min-height: 350px;
+	height: auto;
+}
+
+.left_form_addContent {
+	float: left;
+	width: 307px;
+	min-height: 150p;
+	border: 1px solid #a0a0a0;
+	height: auto;
+}
+
+.right_form_addContent {
+	float: left;
+	width: 307px;
+	min-height: 150p;
+	border: 1px solid #a0a0a0;
+}
+
+.table2 {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 98%;
+	background-color: white;
+}
+
+.scroll_box {
+	height: 120px;
+	width: 400px;
+	display: auto;
+	border: 1px solid #CCCCCC;
+	margin: 1em 0;
+}
+
+.add_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 40px;
+	background: transparent url("../icon/arrow_right.png") no-repeat top
+		center;
+}
+
+.remove_subject_src {
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+	background: transparent url("../icon/arrow_left.png") no-repeat top
+		center;
+}
+
+div.tableContainer {
+	clear: both;
+	height: 290px;
+	overflow: auto;
+}
+
+tbody.scrollContent {
+	display: block;
+	height: 256px;
+	overflow: auto;
+}
+/* Reset overflow value to hidden for all non-IE browsers. */
+div.tableContainer {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+}
+
+tbody.scrollContent td,tbody.scrollContent tr.normalRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+tbody.scrollContent tr.alternateRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+thead.fixedHeader th {
+	width: 60px;
+}
+
+thead.fixedHeader th+th {
+	width: 200px
+}
+
+thead.fixedHeader th+th+th {
+	width: 90px
+}
+
+tbody.scrollContent td {
+	width: 60px
+}
+
+tbody.scrollContent td+td {
+	width: 200px;
+}
+
+tbody.scrollContent td+td+td {
+	width: 90px
+}
+
+thead.fixedHeader tr {
+	position: relative
+}
+
+thead.fixedHeader tr {
+	display: block
+}
+
+.div_title_form_new_src {
+	margin-top: 0px;
+	font-size: 20px;
+	color: #000066;
+	width: 100%;
+	text-align: left;
+	text-indent: 10px;
+	height: 35px;
+}

@@ -1,0 +1,59 @@
+.table2 {
+	margin-top: 0px;
+	margin-left: 0px;
+	height: 98%;
+	background-color: white;
+}
+
+.table2 th {
+	height: 31px;
+	background: transparent url("../images/bg_table_header.png") repeat-x
+		center bottom;
+	color: #666666;
+}
+
+div.tableContainer {
+	clear: both;
+	height: 180px;
+	overflow: auto;
+}
+
+tbody.scrollContent {
+	display: block;
+	height: 180px;
+	overflow: auto;
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+}
+
+tbody.scrollContent td,tbody.scrollContent tr.normalRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px;
+	width: auto;
+}
+
+tbody.scrollContent tr.alternateRow td {
+	border-bottom: none;
+	border-left: none;
+	padding: 2px 3px 3px 4px
+}
+
+thead.fixedHeader th {
+	width: 500px;
+}
+
+tbody.scrollContent td {
+	width: 500px
+}
+
+thead.fixedHeader tr {
+	position: relative
+}
+
+thead.fixedHeader tr {
+	display: block
+}

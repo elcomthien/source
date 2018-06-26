@@ -83,8 +83,8 @@ public class SystemController extends HttpServlet {
 			String index = request.getParameter("index");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(SystemController.class.toString(), "editsystemservice", "idservice,,," + id + ",,,name,,," + name + ",,,image,,,"
-					+ image + ",,,langid,,," + langid + ",,,index,,," + index + ",,,invisible,,," + invisible);
+			LogUtil.logControl(SystemController.class.toString(), "editsystemservice", "idservice,,," + id + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,langid,,," + langid + ",,,index,,," + index + ",,,invisible,,," + invisible);
 
 			SystemServiceModel service = new SystemServiceModel();
 			service.setId(id);
@@ -119,9 +119,9 @@ public class SystemController extends HttpServlet {
 			// LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02 +
 			// ",,,logo,,,"
 			// + logo + ",,,logosmall,,," + logosmall);
-			LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02 + ",,,logo,,,"
-					+ logo + ",,,logosmall,,," + logosmall + ",,,logo02,,," + logo02 + ",,,logosmall02,,," + logosmall02 + ",,,welcome0,,,"
-					+ welcome0 + ",,,welcome1,,," + welcome1);
+			LogUtil.logControl(SystemController.class.toString(), "updatetextwelcome", "line01,,," + line01 + ",,,line02,,," + line02
+					+ ",,,logo,,," + logo + ",,,logosmall,,," + logosmall + ",,,logo02,,," + logo02 + ",,,logosmall02,,," + logosmall02
+					+ ",,,welcome0,,," + welcome0 + ",,,welcome1,,," + welcome1);
 
 			int rs = systemService.updateTextWelcome(line01, line02, logo, logosmall, logo02, logosmall02, welcome0, welcome1);
 			out.println(rs);
@@ -134,8 +134,8 @@ public class SystemController extends HttpServlet {
 			String setbg = request.getParameter("setbg");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(SystemController.class.toString(), "addadvertise", "name,,," + name + ",,,image,,," + image + ",,,type,,," + type
-					+ ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
+			LogUtil.logControl(SystemController.class.toString(), "addadvertise", "name,,," + name + ",,,image,,," + image + ",,,type,,,"
+					+ type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
 
 			SystemAdvertiseModel adv = new SystemAdvertiseModel();
 			adv.setName(name);
@@ -156,8 +156,8 @@ public class SystemController extends HttpServlet {
 			String setbg = request.getParameter("setbg");
 			String invisible = request.getParameter("invisible");
 
-			LogUtil.logControl(SystemController.class.toString(), "editadvertise", "advertiseid,,," + advid + ",,,name,,," + name + ",,,image,,,"
-					+ image + ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
+			LogUtil.logControl(SystemController.class.toString(), "editadvertise", "advertiseid,,," + advid + ",,,name,,," + name
+					+ ",,,image,,," + image + ",,,type,,," + type + ",,,setbg,,," + setbg + ",,,invisible,,," + invisible);
 
 			SystemAdvertiseModel adv = new SystemAdvertiseModel();
 			adv.setId(advid);
@@ -177,6 +177,18 @@ public class SystemController extends HttpServlet {
 			LogUtil.logControl(SystemController.class.toString(), "deleteadvertise", "idservice,,," + advid);
 
 			int rs = systemService.deleteAdvertise(advid);
+			out.println(rs);
+		}
+
+		if (action.equals("changepassword")) {
+			String userId = request.getParameter("userid");
+			String oldPass = request.getParameter("oldpass");
+			String newPass = request.getParameter("newpass");
+
+			LogUtil.logControl(SystemController.class.toString(), "changepassword", "userid,,," + userId + ",,,oldPass,,," + oldPass
+					+ ",,,newPass,,," + newPass);
+
+			int rs = systemService.changePassword(userId, oldPass, newPass);
 			out.println(rs);
 		}
 

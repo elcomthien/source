@@ -1,0 +1,315 @@
+package ehotel.admin.pms;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Vector;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import ehotel.abs.pms.PromotionPMS;
+import ehotel.admin.Service.ServiceParent;
+import ehotel.admin.dao.FolioServiceDBI;
+import ehotel.admin.dao.PMSServiceDBI;
+import ehotel.admin.util.Config;
+import ehotel.admin.util.ConfigLoader;
+import ehotel.admin.util.Def;
+import ehotel.admin.util.ManagerFile;
+import ehotel.admin.util.UtilString;
+import ehotel.domain.pms.ePromotion;
+
+public class ServicePromotion extends ServiceParent {
+	private static final long serialVersionUID = 1L;
+	private PMSServiceDBI pmsServiceDBI = new PMSServiceDBI();
+
+	public ServicePromotion() {
+		super();
+	}
+
+	public void destroy() {
+		super.destroy(); // Just puts "destroy" string in log
+	}
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		super.doGet(request, response);
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		int cmd = -1;
+		if (request.getParameter("CMD") != null) {
+			try {
+				cmd = Integer.parseInt(request.getParameter("CMD").toString());
+			} catch (Exception e) {
+			}
+		}
+		switch (cmd) {
+		case -1: {
+			int subId = -1;
+			int menuid = -1;
+			if (request.getParameter(Def.MenuId) != null) {
+				menuid = Integer.parseInt(request.getParameter(Def.MenuId).toString());
+			}
+			if (request.getParameter(Def.SubId) != null) {
+				subId = Integer.parseInt(request.getParameter(Def.SubId).toString());
+			}
+			request.setAttribute(Def.MenuId, menuid);
+			request.setAttribute(Def.SubId, subId);
+			request.setAttribute("fileJSP", "../pmsMng/promotion/promotion.jsp");
+			this.showJSPpage(request, response, "/include/Mainpage.jsp");
+			break;
+		}
+		case 1:// get list promotion
+		{
+			int index = 0;
+			int page = 6;
+			if (request.getParameter("pageIndex") != null) {
+				index = Integer.parseInt(request.getParameter("pageIndex").toString().trim());
+			}
+			if (request.getParameter("page") != null) {
+				page = Integer.parseInt(request.getParameter("page").toString().trim());
+			}
+			response.setContentType("text/xml");
+			String st = getContent(index, page);
+			out.print(st);
+			break;
+		}
+		case 2:// show form detail
+		{
+			int id = -1;
+			if (request.getParameter("id") != null) {
+				id = Integer.parseInt(request.getParameter("id").toString().trim());
+			}
+			PromotionPMS promtion = new PromotionPMS();
+			ePromotion item = promtion.getPromotionInfo(id, LangID);
+			String link = FolioServiceDBI.getURLPromotion(id, LangID);
+			if (!link.equals(""))
+				item.setLinkWeb(link);
+			request.setAttribute("eItem", item);
+
+			this.showJSPpage(request, response, "/pmsMng/Other/detailPromotion.jsp");
+			break;
+		}
+		case 3:// delete promotion
+		{
+			int id = -1;
+			int i = 0;
+			Vector<Integer> list = new Vector<Integer>();
+			while (request.getParameter("id" + i) != null) {
+				int subid = Integer.parseInt(request.getParameter("id" + i).toString().trim());
+				list.add(subid);
+				i++;
+			}
+			String param = "(";
+			for (i = 0; i < list.size(); i++) {
+				param += list.get(i) + ",";
+			}
+			param = param.substring(0, param.length() - 1) + ")";
+			System.out.println("Delete promotion " + param);
+			PromotionPMS promtion = new PromotionPMS();
+			promtion.removePromotion(param);
+			break;
+		}
+		case 4:// /promotion
+		{
+			System.out.println("Change status");
+			int id = -1;
+			if (request.getParameter("id") != null) {
+				id = Integer.parseInt(request.getParameter("id").toString().trim());
+			}
+			PromotionPMS promtion = new PromotionPMS();
+			promtion.changeStatus(id);
+			break;
+		}
+		case 5:// /promotion
+		{
+			System.out.println("get time promotion");
+			response.setContentType("text/xml");
+			String st = pmsServiceDBI.getTimePromotion();
+			System.out.println(st);
+			out.print(st);
+			break;
+		}
+		default:
+			break;
+		}
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		super.doPost(request, response);
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		int cmd = -1;
+		ConfigLoader loader = new ConfigLoader();
+		Config config = loader.getConfig();
+		if (request.getParameter("CMD") != null) {
+			try {
+				cmd = Integer.parseInt(request.getParameter("CMD").toString());
+			} catch (Exception e) {
+			}
+		}
+		switch (cmd) {
+		case 1:// insert
+		{
+			String name = "";
+			String image = "";
+			String def = "";
+			int status = 1;
+			String link = "";
+			if (request.getParameter("name") != null) {
+				name = request.getParameter("name").toString().trim();
+			}
+			if (request.getParameter("image") != null) {
+				image = request.getParameter("image").toString().trim();
+			}
+			if (request.getParameter("link") != null) {
+				link = request.getParameter("link").toString().trim();
+			}
+			if (request.getParameter("des") != null) {
+				def = request.getParameter("des").toString();
+				def = def.replaceAll("<strong>", "<b>");
+				def = def.replaceAll("</strong>", "</b>");
+				def = def.replaceAll("<em>", "<i>");
+				def = def.replaceAll("</em>", "</i>");
+				def = def.replaceAll("<span style=\"text-decoration: underline;\">", "<u>");
+				def = def.replaceAll("</span>", "</u>");
+			}
+			if (request.getParameter("status") != null) {
+				status = Integer.parseInt(request.getParameter("status").toString().trim());
+			}
+			PromotionPMS promotion = new PromotionPMS();
+			ePromotion item = new ePromotion();
+			item.setContent(def);
+			item.setName(name);
+			item.setUrlImage(config._promotion + "/" + image);
+			item.setInvisible(status);
+			item.setLinkWeb(link);
+			int b = promotion.addPromotion(item);
+			if (b > 0) {
+				ManagerFile file = new ManagerFile();
+				// String type = link.substring(link.lastIndexOf("."));
+				// String linkpath = config._temp + "/" + link;
+				// String linkpro = "/ehotel/service/app/apache-tomcat-6.0.29/webapps/Promotion/"
+				// + b + type;
+				//
+				// file.copy(linkpath, linkpro);
+				// String pathhtml = "/ehotel/service/app/apache-tomcat-6.0.29/webapps/Promotion/Promotion.html";
+				// String pathpro = "/ehotel/service/app/apache-tomcat-6.0.29/webapps/Promotion/"
+				// + b + ".html";
+				// file.copy(pathhtml, pathpro);
+
+				String path1 = config._temp + "/" + image;
+				String path2 = config._pathImage + config._promotion + "/" + image;
+				file.copy(path1, path2);
+				file.deletefile(path1);
+			}
+			break;
+		}
+		case 2:// update
+		{
+			System.out.println("Update promotion");
+			String name = "";
+			String image = "";
+			String def = "";
+			String link = "";
+			int status = 1;
+			int id = -1;
+			if (request.getParameter("id") != null) {
+				id = Integer.parseInt(request.getParameter("id").toString().trim());
+			}
+			if (request.getParameter("name") != null) {
+				name = request.getParameter("name").toString().trim();
+			}
+			if (request.getParameter("link") != null) {
+				link = request.getParameter("link").toString().trim();
+			}
+			if (request.getParameter("image") != null) {
+				image = request.getParameter("image").toString().trim();
+			}
+			if (request.getParameter("des") != null) {
+				def = request.getParameter("des").toString();
+				def = def.replaceAll("<strong>", "<b>");
+				def = def.replaceAll("</strong>", "</b>");
+				def = def.replaceAll("<em>", "<i>");
+				def = def.replaceAll("</em>", "</i>");
+				def = def.replaceAll("<span style=\"text-decoration: underline;\">", "<u>");
+				def = def.replaceAll("</span>", "</u>");
+			}
+			if (request.getParameter("status") != null) {
+				status = Integer.parseInt(request.getParameter("status").toString().trim());
+			}
+			PromotionPMS promotion = new PromotionPMS();
+			ePromotion item = new ePromotion();
+			item.setId(id);
+			item.setContent(def);
+			item.setName(name);
+			item.setUrlImage(config._promotion + "/" + image);
+			item.setInvisible(status);
+			item.setLinkWeb(link);
+			boolean b = promotion.editPromotion(item, LangID);
+			if (b) {
+				ManagerFile file = new ManagerFile();
+				// String type = link.substring(link.lastIndexOf("."));
+				// String linkpath = config._temp + "/" + link;
+				// String linkpro = "/ehotel/service/app/apache-tomcat-6.0.29/webapps/Promotion/"
+				// + id + type;
+				// file.copy(linkpath, linkpro);
+
+				String path1 = config._temp + "/" + image;
+				String path2 = config._pathImage + config._promotion + "/" + image;
+				file.copy(path1, path2);
+				file.deletefile(path1);
+			}
+			break;
+		}
+		case 3: {
+			String timeshow = "";
+			String timehide = "";
+			timeshow = request.getParameter("timeshow").trim();
+			timehide = request.getParameter("timehide").trim();
+			boolean flag = pmsServiceDBI.updateTimePromotion(timeshow, timehide);
+			out.print(flag);
+		}
+		default:
+			break;
+		}
+	}
+
+	public void init() throws ServletException {
+	}
+
+	private String getContent(int index, int page) {
+		PromotionPMS promotion = new PromotionPMS();
+		int fr = index * page;
+		fr += 1;
+		int to = (index + 1) * page;
+		Vector<ePromotion> info = promotion.getPromotions(LangID, fr, to);
+		String mData = "";
+		int count = promotion.countItem();
+		mData += "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"yes\" ?>\n";
+		mData += "<xml  count=\"" + count + "\">";
+		for (int i = 0; i < info.size(); i++) {
+			ePromotion item = info.get(i);
+			mData += "<Item>";
+			mData += "<name>";
+			mData += "<![CDATA[" + item.getName() + "]]>";
+			mData += "</name>";
+			mData += "<id>\n";
+			mData += item.getId();
+			mData += "</id>";
+			mData += "<Des>";
+			if (item.getContent() != null) {
+				mData += "<![CDATA[" + UtilString.converString(item.getContent()) + "]]>";
+			} else {
+				mData += "<![CDATA[]]>";
+			}
+			mData += "</Des>";
+			mData += "<status>";
+			mData += "<![CDATA[" + item.getInvisible() + "]]>";
+			mData += "</status>";
+			mData += "<image>";
+			mData += "<![CDATA[" + item.getUrlImage() + "]]>";
+			mData += "</image>";
+			mData += "</Item>";
+		}
+		mData += "</xml>";
+		return mData;
+	}
+}
